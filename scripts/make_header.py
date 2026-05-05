@@ -13,6 +13,7 @@ def make_header():
             d.a("Cart", href="/cart.html")
 
         d.img(
+            cls="rim",
             src="/assets/logo.svg",
             alt="Black Pepper Publishing Logo",
         )
