@@ -12,7 +12,7 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Crimson+Text&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text&amp;display=swap"
             rel="stylesheet"
         />
     </head>
@@ -21,23 +21,30 @@
             <header>
                 <div class="top">
                     <nav>
-                        <a href="/titles.html">Titles</a>
-                        <a href="/authors.html">Authors</a>
-                        <a href="/multimedia.html">Multimedia</a>
-                        <a href="/about.html">About Us</a>
-                        <a href="/submissions.html">Submissions</a>
-                        <a href="/cart.html">Cart</a>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html">Cart</a>
                     </nav>
                     <img
                         alt="Black Pepper Publishing Logo"
-                        class="rim"
-                        src="/assets/logo.svg"
+                        src="/assets/logo-rim.svg"
                     />
                 </div>
                 <input placeholder="Search books &amp; more" type="search" />
             </header>
             <main>
-                <div class="featured">
+                <article>
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/featured.svg&quot;);
+                        "
+                    >
+                        Featured
+                    </h2>
                     <section>
                         <div class="images">
                             <img
@@ -89,7 +96,7 @@
                             </p>
                         </div>
                     </section>
-                </div>
+                </article>
             </main>
         </div>
     </body>
