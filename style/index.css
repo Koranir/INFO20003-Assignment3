@@ -49,6 +49,7 @@ h3 {
     font-size: 20px;
     color: #e7ceba;
 
+    width: fit-content;
     margin: 0;
 }
 
@@ -59,6 +60,7 @@ address {
     font-size: 14px;
     color: #e7ceba;
 
+    width: fit-content;
     margin: 0;
 }
 
@@ -80,6 +82,12 @@ nav a {
 
     color: #fff5eae3;
     text-decoration: none;
+}
+
+/* Top-level component effect. */
+section {
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 16px black;
 }
 
 div.content-area {
@@ -158,6 +166,17 @@ button {
     font-style: normal;
     font-size: 12px;
     color: #e7ceba;
+}
+button:hover {
+    background-color: #54514b;
+}
+button:active::before {
+    border-style: none solid solid none;
+    border-color: #c2aa96;
+}
+button:active {
+    background-color: #47443e;
+    border-style: solid none none solid;
 }
 
 article {
@@ -241,4 +260,12 @@ div.details {
 }
 
 div.details-text {
+    display: flex;
+    flex-direction: column;
+}
+.featured section:nth-child(odd) div.details-text {
+    align-items: flex-start;
+}
+.featured section:nth-child(even) div.details-text {
+    align-items: flex-end;
 }
