@@ -17,10 +17,12 @@ def make_featured(title, feature):
                 alt=f"Cover of {title}",
             )
     with d.div(cls="details"):
-        d.h3(title)
-        d.address(feature["author"])
+        with d.div(cls="details-text"):
+            d.h3(title)
+            d.address(feature["author"])
 
-        d.p(feature["description"])
+            d.p(feature["description"])
+        d.button("Read more »")
 
 
 def make_all_featured():

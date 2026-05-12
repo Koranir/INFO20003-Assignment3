@@ -17,7 +17,7 @@ with doc.head:
     d.link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin=True)
     d.link(
         rel="stylesheet",
-        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Crimson+Text&display=swap",
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Crimson+Text:wght@400;600&family=Roboto&display=swap",
     )
 
 with doc.body:
@@ -31,6 +31,8 @@ with doc.body:
                     cls="section-title",
                     style="--styled-asset-path: url('/assets/featured.svg')",
                 )
-                make_all_featured()
+
+                with d.div(cls="featured"):
+                    make_all_featured()
 
 print(doc)
