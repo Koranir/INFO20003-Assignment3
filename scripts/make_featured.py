@@ -1,6 +1,6 @@
 import dominate.tags as d
 import yaml
-from paths import cover_path, portrait_path
+from paths import cover_path, portrait_path, product_page_path
 
 
 @d.section
@@ -22,7 +22,7 @@ def make_featured(title, feature):
             d.address(feature["author"])
 
             d.p(feature["description"])
-        d.button("Read more »")
+        d.a("Read more »", cls="bold", href=product_page_path(name=title))
 
 
 def make_all_featured():

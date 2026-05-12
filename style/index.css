@@ -131,7 +131,7 @@ nav a:nth-child(n + 2)::before {
 }
 
 .rim,
-button {
+.bold {
     filter: drop-shadow(1px 1px 9.5px rgba(0, 0, 0, 0.5));
 }
 
@@ -139,7 +139,7 @@ button {
     text-shadow: 0.2px 0.2px 0px #ffe8cf;
 }
 
-button::before {
+.bold::before {
     content: "";
     display: block;
     position: absolute;
@@ -148,18 +148,16 @@ button::before {
     width: 100%;
     height: 100%;
     border-radius: 999px;
-    border: 0.75px #e7ceba;
+    border: 0.75px #ffe8cf;
     border-style: solid none none solid;
 }
 
-button {
+.bold {
     background-color: #5d5a54;
     border-radius: 999px;
     border-radius: 999px;
     border: 0.5px #161616;
     border-style: none solid solid none;
-
-    padding: 10px 0;
 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -167,16 +165,20 @@ button {
     font-size: 12px;
     color: #e7ceba;
 }
-button:hover {
+a.bold:hover {
     background-color: #54514b;
 }
-button:active::before {
+a.bold:active::before {
     border-style: none solid solid none;
-    border-color: #c2aa96;
+    border-color: #e7ceba;
 }
-button:active {
+a.bold:active {
     background-color: #47443e;
     border-style: solid none none solid;
+}
+
+a.bold {
+    padding: 10px 0;
 }
 
 article {
@@ -190,6 +192,7 @@ article {
 .featured {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 
     gap: 22px;
@@ -197,7 +200,7 @@ article {
 
 section {
     display: flex;
-    flex-basis: 0;
+    flex-basis: 300px;
     flex-grow: 1;
     box-sizing: border-box;
 
@@ -268,4 +271,40 @@ div.details-text {
 }
 .featured section:nth-child(even) div.details-text {
     align-items: flex-end;
+}
+
+.search {
+    display: flex;
+
+    gap: 6px;
+    padding: 6px;
+    align-items: center;
+
+    min-width: 300px;
+    width: 50%;
+}
+
+.search button {
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+
+    padding: 0;
+}
+svg {
+    color: #dccebd;
+    filter: drop-shadow(0.5px 0.5px 0px #161616);
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    color: #dccebd;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+
+    padding: 4px 0;
 }

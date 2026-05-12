@@ -1,4 +1,5 @@
 import dominate.tags as d
+import dominate.util as du
 
 
 @d.header
@@ -16,4 +17,9 @@ def make_header():
             src="/assets/logo-rim.svg",
             alt="Black Pepper Publishing Logo",
         )
-    d.input_(type="search", placeholder="Search books & more")
+    with d.div(cls="search bold"):
+        with d.button(cls="search-button"):
+            du.raw(
+                '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>'
+            )
+        d.input_(type="search", placeholder="Search books & more")

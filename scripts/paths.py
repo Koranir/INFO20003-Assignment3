@@ -12,3 +12,7 @@ def portrait_path(name):
 
 def cover_path(name):
     return f"{book_assets_path(name)}/cover.jpg"
+
+
+def product_page_path(name):
+    return f"/products/{name.lower().replace(' ', '-')}.html"
