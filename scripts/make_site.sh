@@ -7,3 +7,4 @@ prettier -w site/index.html
 
 ln -rs ./assets ./site/
 ln -rs ./style ./site/
+ln -rs ./sources/js ./site/

@@ -21,6 +21,7 @@ with doc.head:
         rel="stylesheet",
         href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&family=Crimson+Text:wght@400;600&family=Roboto&display=swap",
     )
+    d.script(src="/js/cart.js")
 
 with doc.body:
     with d.div(cls="content-area"):

@@ -11,7 +11,7 @@ def make_header():
             d.a("Multimedia", href="/multimedia.html", cls="rim")
             d.a("About Us", href="/about.html", cls="rim")
             d.a("Submissions", href="/submissions.html", cls="rim")
-            d.a("Cart", href="/cart.html", cls="rim")
+            d.a("Cart", href="/cart.html", cls="rim", id="cart-link")
 
         d.img(
             src="/assets/logo-rim.svg",
