@@ -7,6 +7,10 @@ def make_recents():
     books = yaml.full_load(open("sources/books.yaml", "r"))
     recents = yaml.full_load(open("sources/recents.yaml", "r"))
 
+    with d.div(cls="recent-wheel"):
+        for key, book in [(key, books[key]) for key in recents]:
+            d.button(book["title"], cls="recent-title")
+
     for key, book in [(key, books[key]) for key in recents]:
         d.img(
             cls="recent-cover",

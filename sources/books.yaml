@@ -1,57 +1,81 @@
 botany-bay-document:
   title: Botany Bay Document
   author: Jordie Albiston
-  description: ''
+  description: Jordie Albiston’s Botany Bay Document is a sudden breakthrough from her first prize-winning collection Nervous
+    Arcs. Using ship log books, legal records, paintings, etchings and maps, newspapers, private correspondence and diaries
+    she re-creates the lives and times of the first women of white settlement. Their hardships, social concerns and triumphs
+    emerge to confront us now.
   price: 20.95
 the-hanging-of-jean-lee:
   title: The Hanging of Jean Lee
   author: Jordie Albiston
-  description: ''
+  description: The Hanging of Jean Lee follows Jean Lee from adventurous girl to hanged woman, capturing the period around
+    the completion of the Harbour Bridge, milk-bar youth culture, American servicemen during the war, and the petty criminals
+    drawn to the 1949 Melbourne Cup.
   price: 22.95
 the-inheritors:
   title: The Inheritors
   author: Amanda Anastasi
-  description: ''
+  description: The inheritors are those who will suffer the ravages of climate change, be they human, creature or plant.
   price: 20.95
 the-forest-set-out-like-the-night:
   title: The forest set out like the night
   author: John Anderson
-  description: ''
+  description: There is nothing here that is unfinished or carries an excess. Every word counts. This poetry is mature and
+    burnished, a highly wrought work of art that deserves to be celebrated by the community from which it has sprung. the
+    forest set out like the night is Australian poetry at its very best.
   price: 24.95
 the-shadows-keep:
   title: The shadow’s keep
   author: John Anderson
-  description: ''
+  description: Les Murray described John Anderson ’ s the forest set out like the night as ‘ a distinctive experimental text,
+    one which is bound to be influential ’.
   price: 19.95
 the-blue-gate:
   title: The Blue Gate
   author: Alison Croggon
-  description: ''
+  description: Shortlisted for the Victorian Premier's Poetry Prize
   price: 19.95
 sentences-of-earth-stone-goban-cre-is-cloth:
   title: Sentences of Earth & Stone / Gobán Cré is Cloth
   author: Louis de Paor
-  description: ''
+  description: Gobán Cré is Cloth/Sentences of Earth & Stone is Louis de Paor’s second collection of his Irish poetry accompanied
+    by his English translations. These poems of love, history and memory have been critically acclaimed and are now reprinted
+    for the first time. This collection was nominated for The Irish Times Literary Award in 1997. The terror of distance from
+    family or language invades the everyday. Individual moments are suddenly alert with protest, loss or larger possibility.
+    In our times of the fashionably cool, he writes poems of cruelly informed warmth. Love poems of such a passionate tenderness
+    as to take one's breath away. Tim Thorne His sense of the special in the ordinary... his capacity to tap beneath consciousness,
+    allows an energetic compassion that strikes deeper than sympathy. Lynette Kirby Louis de Paor can make a genuine claim
+    on greatness. Pete Hay
   price: 21.95
 cork-other-poems-corcach-agus-danta-eiles:
   title: Cork & Other Poems / Corcach agus Dánta Eiles
   author: Louis de Paor
-  description: ''
+  description: 'Louis de Paor was born in Cork, or Corcach, in 1961. The name means literally ‘a marshy place’ and is the
+    origin of the term ‘bog Irish’. His subtle poems deny the insult of that term. Cork & Other Poems starts with a dockland
+    farewell set in drenching rain. But it is leavetaking seen in recollection: he remembers his departure from Ireland and
+    family. The turmoil of the storm is internal. And it introduces the theme of his book: the powerful impact of his homecoming
+    and the echo of his Australian years. The Gaelic only version, released in Ireland, won the Seán Ó Riordáin Prize, the
+    premier prize for Irish poetry. This volume also won the Lawrence O’Shaughnessy poetry prize in the USA in 2000.'
   price: 23.95
 agamemnons-poppies:
   title: Agamemnon’s Poppies
   author: Adrienne Eberhard
-  description: ''
+  description: Adrienne Eberhard’s poetry is attached to her native Tasmanian landscape and attracted to the mythical landscapes
+    of other ancient lands. Her poems move from sexual intimacy and birth to events of exile, travel and consequence.
   price: 24.95
 jane-lady-franklin:
   title: Jane, Lady Franklin
   author: Adrienne Eberhard
-  description: ''
+  description: When Adrienne Eberhard assumes the persona of Jane, Lady Franklin, wife of the colonial Governor Sir John Franklin,
+    she follows Jane Franklin's Tasmanian years through poems concerned with water, rocks, fossils, step-daughters, desire,
+    guilt, betrayal and the physical world.
   price: 24.95
 this-woman:
   title: This Woman
   author: Adrienne Eberhard
-  description: ''
+  description: In This Woman Eberhard gets personal with Tasmania’s coast, its mud and mountains and snow, and it is wholly
+    sensual...
   price: 25.95
 chasing-marie-antoinette-all-over-paris:
   title: Chasing Marie Antoinette All Over Paris
@@ -66,27 +90,33 @@ chasing-marie-antoinette-all-over-paris:
 other-summers:
   title: Other Summers
   author: Stephen Edgar
-  description: ''
+  description: Other Summers is a collection of Stephen Edgar’s lyric poetry in which knowledge and emotion are contained
+    within formal structures, technical intricacy and conversational speech.
   price: 24.95
 history-of-the-day:
   title: History of the Day
   author: Stephen Edgar
-  description: ''
+  description: Stephen Edgar is acknowledged as one of the most elegant and technically astonishing poets currently writing.
+    The poems in History of the Day
   price: 24.95
 eldershaw:
   title: Eldershaw
   author: Stephen Edgar
-  description: ''
+  description: A children’s game in an overgrown garden is the first hint of a troubling presence in the old house ‘Eldershaw’.
+    But is the haunting a memory of the past inscribed in the stonework or a discord the occupants have brought with them?
   price: 23.95
 exhibits-of-the-sun:
   title: Exhibits of the Sun
   author: Stephen Edgar
-  description: ''
+  description: Exhibits of the Sun moves from Saturn’s rings to a beach pavilion during Sydney’s dust storm, from glimpses
+    of a lover’s body in moonlight to a vision of a whole lifetime between one eye blink and the next.
   price: 22.95
 transparencies:
   title: Transparencies
   author: Stephen Edgar
-  description: ''
+  description: Stephen Edgar’s Transparencies extends his exploration of the world’s visual aspect, both in itself and as
+    a screen for the mind’s projections. The transparencies of the title are daylit images of the natural world and occasions
+    to look through them into deep time.
   price: 24.0
 the-strangest-place:
   title: The Strangest Place
@@ -97,22 +127,32 @@ the-strangest-place:
 an-australian-conference-of-the-birds:
   title: An Australian Conference of the Birds
   author: Anne Fairbairn
-  description: ''
+  description: At the invitation of her Middle Eastern cousin the Hoopoe Bird, the Spinifex Pigeon calls together a gathering
+    of Australian birds. They will go on a journey. They will confront the world and themselves. They will seek the path of
+    the aware and will find the truth. Faird un-Din Attar ’ s Manteq at-Tair (The Conference of the Birds) is a glittering
+    work of the Sufi tradition, the mystical school that is at the heart of Islam. Anne Fairbairn has flawlessly blended Middle
+    Eastern and Australian imagery and counsciousness in this classical tale of discovery. Our poets and shared deserts come
+    together with a natural ease in her narrative. An Australian Conference of the Birds is a delightful tribute to Attar
+    ’ s famous poem. It is a story for young and old.
   price: 15.0
 paths-of-flight:
   title: Paths of Flight
   author: Luke Fischer
-  description: ''
+  description: Paths of Flight is Luke Fischer’s first collection. The poems attend to visual detail, the natural world, and
+    imaginative vision.
   price: 22.95
 bread:
   title: Bread
   author: Philip Hammial
-  description: ''
+  description: 'Bread was short-listed for the New South Wales Premier’s Literary Awards, Kenneth Slessor Prize for Poetry,
+    in 2001. The judges commented:'
   price: 21.95
 the-poets-stairwell:
   title: The Poets' Stairwell
   author: Alan Gould
-  description: ''
+  description: Behind this company lives a virtual one of poets and philosophers from Yeats to Plato, attending as time and
+    place invoke them. Our picaros’ adventures allow Alan Gould to discuss poetic inspiration from womb to self-conscious
+    maturity.
   price: 27.95
 sideshow-history:
   title: Sideshow History
@@ -124,237 +164,370 @@ sideshow-history:
 michelangelos-prisoners:
   title: Michelangelo’s Prisoners
   author: Jennifer Harrison
-  description: ''
+  description: Michelangelo’s Prisoners announces the arrival of a significant new poetic voice. Black Pepper’s second title,
+    and its first book of poetry, it won the 1995 Anne Elder Award.
   price: 19.95
 cabramatta-cudmirrah:
   title: Cabramatta / Cudmirrah
   author: Jennifer Harrison
-  description: ''
+  description: is an intense meditation on desire, memory and forgetting. As the place names of its double title imply, it
+    locates us in the sites of those experiences. To understand, Jennifer Harrison would first have us feel.
   price: 19.95
 mosaics-and-mirrors-composite-poems:
   title: Mosaics and Mirrors; Composite Poems
   author: Jennifer Harrison, Graham Henderson and K.F. Pearson
-  description: ''
+  description: Three discretely distinguished poets Jennifer Harrison, Graham Henderson and K.F. Pearson have conjointly composed
+    a collection of fearless intense works. There is nothing satirical here. Their composite sensibility rejoices in our contemporary,
+    if troubled, world.
   price: 19.95
 dear-b:
   title: Dear B
   author: Jennifer Harrison
-  description: ''
+  description: Jennifer Harrison, in Dear B , writes as if poetry were invented to put dressings on poetic wounds, while all
+    along the poet is serving language and its properly selfish concerns. There is a strange formality of her own in this
+    book.
   price: 22.95
 folly-grief:
   title: Folly & Grief
   author: Jennifer Harrison
-  description: ''
+  description: Like her funambulist, Jennifer Harrison produces from her new book Folly & Grief
   price: 25.95
 colombine-new-selected-poems:
   title: Colombine, New & Selected Poems
   author: Jennifer Harrison
-  description: ''
+  description: A major contribution to Australian poetry which demonstrates Harrison’s evolving career and mastery. Its depth
+    of intellectual and emotional registers, in addition to its sustained craft, makes this poetry demanding yet also immensely
+    rewarding and enjoyable. Judges comments, Western Australian Premier’s Book Awards
   price: 28.95
 anywhy:
   title: Anywhy
   author: Jennifer Harrison
-  description: ''
+  description: 'Anywhy considers the world: its ecology, history, fragilities and resilience. Jennifer Harrison’s poems invite
+    the imagination to consider the inner life of birds, the emotive pull of hardware, Emma Hamilton, and a reverie at Blackwood
+    Village.'
   price: 24.0
 the-genius-of-human-imperfection:
   title: The Genius of Human Imperfection
   author: Jack Hibberd
-  description: ''
+  description: 'a scabrous sequence which imagines from moral Melbourne a Sydney bequeathed by Cavafy. I recommend all into
+    whose hands these poems pass to read The Genius of Human Imperfection with care. As Peter Porter writes: ‘ A distinctly
+    original and enjoyable collection of poems - his poetic is to do with rhythm, sharpedged language, proverbial utterance,
+    oracle. His humour is wry and sensual... the raunchy side of this collection gets broader as it progresses. ’'
   price: 21.95
 madrigals-for-a-misanthrope:
   title: Madrigals for a Misanthrope
   author: Jack Hibberd
-  description: ''
+  description: by Eve and Adam but haunted by the depravity of the Third Reich, Madrigals for a Misanthrope
   price: 24.95
 chiaroscuro:
   title: Chiaroscuro
   author: Sandy Jeffs
-  description: ''
+  description: Celebrity and the economic market are equally dismantled in poems that examine the absurdity and cravenness
+    of their power. She feels how we are compromised by our own selfishness when we make a Sophie’s choice to buy a book of
+    Rilke’s poems rather than a copy of Big Issue from a homeless vendor. She breaks out from her own darkness and light,
+    her personal chiaroscuro, to reveal a poet with a keen sense of observation and a soft sensitivity. It allows her to bring
+    a bristling anger to bear on social injustice. Chiaroscuro
   price: 23.0
 nomadic:
   title: Nomadic
   author: Judy Johnson
-  description: ''
+  description: The poems in Nomadic fuse myth, culture, history and emotion. Judy Johnston is alert to the complex interplay
+    between the external world and the often terrifying inner one we carry with us. An earlier version of this book won the
+    Wesley Michael Wright Prize. This powerful collection deals eloquently and humanely with the difficulties of experience.
+    There are many fine psychological studies taking us into worlds of childhood and adult pain, while being equally sensitive
+    to private rapture. I am struck by how much gets into these poems - how much openness, how much imagination.
   price: 24.95
 nebuchadnezzar:
   title: Nebuchadnezzar
   author: Shelton Lea
-  description: ''
+  description: Shelton Lea is a poet of the streets. His Fitzroy, Redfern and Oxford Street are inhabited by figures who arise
+    in their oppression, while Nebuchadnezzar brings together poems of place, love, advice and confrontation.
   price: 24.95
 all-travellers-we:
   title: All Travellers We
   author: Shelton Lea
-  description: ''
+  description: 'As Shelton lay ill, many friends (among them poets, musicians, actors, family, and friends from every walk
+    of life) arrived with all types of presents. Many of these gifts were poems. Some were kept at the time, others arrived
+    after his death, and many had been written (either for or about him) in previous years. Jen Jewel Brown encouraged me
+    to keep these for a possible book. Kerry Scuffins pushed hard for its birth, and with the rest of the gang: Jordie Albiston,
+    Lyn Boughton, Martin Downey, Ian McBryde, Peter Tiernan, Raffaella Torresan, and myself, joined together to bring this
+    to fruition. To those who may not be represented here, this book simply fell into its own space and time, and was virtually
+    born of itself. Our credo was immediate and simple: to publish a collection which honours Shelley’s unique journey and
+    work, by those who shared his life and loved him to the end.'
   price: 20.0
 the-wild-reply:
   title: The Wild Reply
   author: Emma Lew
-  description: ''
+  description: In The Wild Reply , Lew projects the cinematic mystery and baroque wit of Cocteau and Buñuel.
   price: 21.95
 the-sea-palace-hotel:
   title: The Sea Palace Hotel
   author: Patrick McCauley and Raffaella Torresan
-  description: ''
+  description: a group of nine paintings, three photographs and twenty poems which explore Patrick and Raff's three week visit
+    to Colaba in Mumbai, India, during February 2016. The Sea Palace Hotel is just down the road from the Taj Mahal Hotel,
+    and the site of the Islamist terrorist killings in 2008. The Gateway To India, a huge and magnificent arch built by the
+    Indians to welcome the English and The East India Company to India, was also the place where Raff camped for a few weeks
+    free accommodation - back in the mists of time, when she was on the hippy trail.
   price: 25.0
 the-bearded-chameleon:
   title: The Bearded Chameleon
   author: Chris Mooney-Singh
-  description: ''
+  description: The Bearded Chameleon is a new collection from Chris Mooney-Singh, an Australian poet who commutes between
+    Australia, Singapore and India. The poems are set in India, his country of inspiration, which beguiled him in 1989 to
+    adopt the Sikh way of life. The title poem is a witty study of the lizard that can adapt its colours to any circumstance.
+    Mooney-Singh speaks from his perspective as a Westerner who now sports a beard, turban and Indian dress, and by doing
+    so merges with the landscape of Indian society. He witnesses an ancient world turning modern as a resident, not merely
+    as a traveller or tourist. These are poems of sharp visual detail and comic irony. There are sparkling character portraits,
+    such as that of Mrs Pritima Devi. He has a story-teller’s eye and a lyricist’s sense of music. After Octavio Paz, Mooney-Singh
+    is the only poet who writes about the paradoxes of Indian landscape with great passion.
   price: 25.95
 the-complete-apparition:
   title: The Complete Apparition
   author: K.F. Pearson
-  description: ''
+  description: The Apparition is only there when perceived. Many who may evoke him, mostly fail. When he arrives he has a
+    presence. Or he is there unannounced—in boudoir, viaduct, United Nations or outback, backyard or shopping strip, by mantel-piece,
+    on dancefloor, in the Islands, on flatbed truck—or amongst plants or creatures. Not being there for long, there’s a tear
+    in his eye, a catch in his breath for what will be gone, almost as quickly as him.
   price: 27.0
 messages-of-things:
   title: Messages of Things
   author: K.F. Pearson
-  description: ''
+  description: K.F. Pearson, in a collection that includes some of his well-known translations, writes a sensuous poetry with
+    an irony that leaves intact his exotic imagery... Pearson offers us what Mark O ’ Connor might regard as ‘ open verse
+    ’ , except that it is too controlled and economic to allow self indulgence... carefully delineated images, from which
+    the reader must make his own meaning. John McLaren, The Australian Book Review Poetic precision in images so clean you
+    can hang them on a wall. Geoffrey Dutton, The Bulletin
   price: 11.95
 the-history-of-colour:
   title: The History of Colour
   author: K.F. Pearson
-  description: ''
+  description: She is complete and in her beauty ’ s complete. That which is outside her face ’ s beauty is less than the
+    sum of beauty. Above all a resourceful shape-shifter, the South Australian poet K.F. Pearson keeps trying, and succeeding
+    with, different modes and pitches of poetry. From imitations of Polynesian chant and Arabic ghazal to a delicious satire
+    on applying for funding, from auto-biographical sketches to highly worked portraits, and equally in richly rewarding examples
+    of that intense meditation on particulars which tests a good poet by being so well-worked a field, Pearson displays a
+    versatility and a freshness well worthy of the abundant life in his chosen topics.
   price: 15.95
 the-apparitions-daybook:
   title: The Apparition’s Daybook
   author: K.F. Pearson
-  description: ''
+  description: K.F. Pearson’s fourth collection is exuberant departure from his earlier work. This book-length lyric sequence
+    creates the equivocal inviting figure of the apparition. Precariously, he only exists when perceived.
   price: 19.95
 passion-war:
   title: Passion & War
   author: K.F. Pearson
-  description: ''
+  description: Passion & War; A Flamenco Libretto is a work of great simplicity, terror and hope. It dramatizes the human
+    events and consequences of the Spanish Civil War. K.F. Pearson knits his translations of Spanish poets of the time (Juan
+    Ramón Jiminéz, Frederico García Lorca, Miguel Hernández and others) into a narrative of the war. Each poet is a separate
+    character. Their ringing words reach out to us now. Passion & War is a plea for peace, understanding and civic co-operation.
+    I found myself moved by your translations and evocations of those Spanish Civil War poets, many of them dead so young,
+    and I was intrigued by the way you stitched their poems together into a grand AIDS-like quilt with the threads of your
+    own lines - a book both original and yet within the tradition of homenajes which has been explored more in Spanish than
+    in English. John Ridland (US academic and poet)
   price: 19.95
 melbourne-elegies:
   title: Melbourne Elegies
   author: K.F. Pearson
-  description: ''
+  description: '...Pearson is a complex figure and has in these Melbourne Elegies produced an equally complex text....'
   price: 21.95
 the-apparition-at-large:
   title: The Apparition At Large
   author: K.F. Pearson
-  description: ''
+  description: The ghost is back in K.F. Pearson’s The Apparition At Large . Sexy without a body, caustic without a cause,
+    a stateless commentator on an unfortunate eternity – it is through his deceased eyes that contemporary Australia ironically
+    becomes alive. Enjoy his epigrams, his wit, his spiritual insights and aphorisms. With little poetry of this ilk produced
+    today, The Apparition At Large deserves posthumous celebrity.
   price: 24.95
 the-dining-car-scene:
   title: The Dining Car Scene
   author: Homer Rieth
-  description: ''
+  description: Any poet who enchants, writing of the outer suburb of Mount Waverley, or the music of Vaughan Williams, clearly
+    has the skills. Homer Rieth’s first collection has been long awaited. The collection was shortlisted for the 2002 Adelaide
+    Festival Awards for Literature.
   price: 19.95
 wimmera:
   title: Wimmera
   author: Homer Rieth
-  description: ''
+  description: Replacing the battles of heroes and gods with the struggle of mortal humans with time and space, Homer Rieth
+    in Wimmera re-invents the epic. All the classical elements are there but they are now democratic, and ours. The narrator’s
+    anonymous informant knows a thing or two. Objective and personal, learned and demotic, local and vast, Wimmera is the
+    history of a region and seedbed of a vision where ‘the bunyip indeed lays down with the manticore.’ There is nothing like
+    it anywhere.
   price: 54.95
 150-motets:
   title: 150 Motets
   author: Homer Rieth
-  description: ''
+  description: 'Motet: a composition adapted to sacred words in the elaborate polyphonic church style; an emblem. Addressed
+    to and inspired by the time-honoured figure of a mistress or muse, Homer Rieth’s sonnets cascade into each other across
+    rocks of autobiography, memory and desire.'
   price: 24.95
 the-garden-of-earth:
   title: The Garden of Earth
   author: Homer Rieth
-  description: ''
+  description: The Garden of Earth is a hymn to and argument in defence of the future of the planet. It is the poet's final
+    assay of our age-old dream vision of the world, only here it is as something at once luminous and exceptionally Australian.
   price: 65.0
 midden-places:
   title: Midden Places
   author: Kirsty Sangster
-  description: ''
+  description: Kirsty Sangster lures us in by beguiling narratives. An artist recalls a Russian baroness who posed for her
+    during the War. A black dog gives birth in the shadow of thousand year old temples. A mother’s ghost becomes halo and
+    dust. A girl begs in Athens, cathedrals are built. Saints and sailors throw standing stones into the sea. Erasmus walks
+    in the High Country and a tale is refashioned from Tolstoy. These stories occupy her midden places which are a dumping
+    ground where / all graced and abandoned things gather . In such common locales, and to their folk, transformation happens.
+    They experience change or a rare luminescence. This is quiet but disturbing religious poetry of a high order. Kirsty Sangster
+    has, as
   price: 24.95
 album-of-domestic-exiles:
   title: Album of Domestic Exiles
   author: Andrew Sant
-  description: ''
+  description: Album of Domestic Exiles is Andrew Sant's fifth collection. Umbrellas banned by Benito Mussolini, a time-traveller,
+    migrants, an English meadow, and LPs are among the exiles which inhabit his poetry. Whether in Hong Kong or Australia,
+    Indonesia or New York, dislocation is seen as commonplace and yet there ’ s conciliation, too. The London-born poet ’
+    s own migrant experience reinforces this sense. With his eye for intrinsic and offbeat detail, Sant brings into question
+    the nature of the place we call home.
   price: 19.95
 russian-ink:
   title: Russian Ink
   author: Andrew Sant
-  description: ''
+  description: Like the KGB, the poems in Russian Ink work beneath respectable surfaces. In his expansive new collection,
+    Andrew Sant’s language is often charged with wit, and is always incisive. There’s characteristic playfulness in ‘Anthony
+    Sant’, a comic take on Graham Greene’s unpublished first novel, and in a vibrant series featuring the folkloric Green
+    Man on a contemporary mission. But beneath surface detail there are powerful, controlled emotions. His ‘Stories of My
+    Father’ is like Turgenev on holidays. Above all, these are enjoyable poems, rich in imaginative diversity.
   price: 25.95
 tremors-new-and-selected-poems:
   title: Tremors, New and Selected Poems
   author: Andrew Sant
-  description: ''
+  description: Tremors, New and Selected Poems distils Andrew Sant’s poetry published over twenty-five years. The poems move
+    from seriousness to wit, with subjects including music, marine biology, Martian meteorites and fresh perceptual territories.
   price: 27.95
 fuel:
   title: Fuel
   author: Andrew Sant
-  description: ''
+  description: 'In poems that are sometimes celebratory and at other times darkly comic, Andrew Sant’s Fuel is concerned with
+    energy as a creative and destructive force: speed, desire, food, thought, geologic time and survival.'
   price: 24.95
 the-bicycle-thief-other-poems:
   title: The Bicycle Thief & Other Poems
   author: Andrew Sant
-  description: ''
+  description: Energy, natural and man-made, is at the heart of Andrew Sant’s The Bicycle Thief & Other Poems - energy released
+    at the speed of an escaping cyclist or through the planet’s eruptions and metamorphoses in geologic time. Either way,
+    here is the second law of thermodynamics writ large, creation and destruction in a binary tussle. The mischievous title
+    poem, a fast-moving narrative, is a robust celebration of ‘good-for-the-planet transport’, while elsewhere motor vehicles
+    depicted in a ‘personal history’ are drolly seen as harbingers of an apocalypse. Many poems are monologues that give voice
+    to characters whose identities are fluid and circumstantial. These are poems that get about - lively, unfettered and expansive.
   price: 22.95
 the-weight-of-irises:
   title: The Weight of Irises
   author: Nicolette Stasko
-  description: ''
+  description: then we realize this is a floating world the weight of irises pulling everthing away from the centre in spite
+    of the red heart pinning it like an arrow Nicolette Stasko’s poetry invites us in by its contradictory surprises. Deliberately
+    cool, it uncovers emotional depth. The lightness and deftness of her touch can expose our darkness. In her hands an iris
+    can shift the world or illuminate the corner of a room. Her control, both emotional and poetic, is awesome... a triumph
+    of critical and creative distance from the autobiographical self. At times, her poems recall the high points of Imagism.
+    Don Anderson, Sydney Morning Herald Stasko is one of our finest and most sophisticated female voices. Suzy Baldwin, Voices
+    ...while being controlled and poised, the poems unswervingly confront the terrible and sad in life... an individual who
+    is deeply affected by her experiences. Adrian Wiggins, Southerly A painterly quality in poems that make the mundane shine.
+    Larry Schwartz, The Sunday Age
   price: 24.95
 filth-and-other-poems:
   title: Filth and Other Poems
   author: Hugh Tolhurst
-  description: ''
+  description: Filth and Other Poems is witty, talented and accomplished.
   price: 21.95
 rockling-king:
   title: Rockling King
   author: Hugh Tolhurst
-  description: ''
+  description: Through the accident of residing on Broadway, Elwood, Hugh Tolhurst has a song and dance verve. Rockling King
   price: 25.95
 woodsmoke:
   title: Woodsmoke
   author: Todd Turner
-  description: ''
+  description: Woodsmoke, an occasional motif throughout Todd Turner’s collection, refers to the ancient resins that fire
+    draws upon in burning. The smoke becomes a signal for poems concerned with death, loss, craft and memory.
   price: 22.95
 hidden:
   title: Hidden
   author: Mirranda Burton
-  description: ''
+  description: At first glance, Mirranda Burton’s art room is a hidden world full of strange eccentric characters and mysterious
+    minds. The stories move through joy and sadness, pain and comfort, community and art.
   price: 22.0
 a-picture-out-of-frame:
   title: A Picture Out Of Frame
   author: Mammad Aidani
-  description: ''
+  description: In A Picture Out Of Frame our sympathy is wholly engaged. A boy grows up in poverty in Iran; he goes to the
+    capital; he receives a letter from a friend; he is in exile. Nothing else happens. It will break your heart.
   price: 21.95
 fear-of-tennis:
   title: Fear of Tennis
   author: David Cohen
-  description: ''
+  description: An anxious sighting marks the re-appearance of high-school friend Jason Bunt in Mike Planner’s ordered life
+    as a courtroom sound-recordist. Mike is a cool obsessive – an avid spectator of criminal trials and a connoisseur of restrooms,
+    both public and domestic. A lighthouse-related disaster in Year Ten has left him with a debt to Jason. Jason has meanwhile
+    taken up tennis with evangelical zeal, and Mike seizes on this in an ill-advised attempt to wipe the slate clean. Further
+    complications arise when Mike’s Bible-reading co-worker Fiona introduces him to the Old Testament, and he grapples with
+    questions of guilt, redemption, the Patriarch Abraham, and former Wimbledon champion Pete Sampras. Fear of Tennis – a
+    novel about the impossibility of avoiding sport.
   price: 26.95
 thicker-than-water:
   title: Thicker than Water
   author: Judith Colquhoun
-  description: ''
+  description: As her mother Kate lay dying, Lucy O’Connell had learnt of a rape committed in Carlton by a young Italian boy.
+    Not the best introduction to the parent she had never known and, yes, it was a long time ago, but Lucy believes it is
+    never too late for justice.
   price: 27.95
 the-gentle-art-of-tossing:
   title: The Gentle Art of Tossing
   author: Alan Cornell
-  description: ''
+  description: This was more than a simple sporting contest. This was a tilt at a dream. The little guy against the odds.
+    Daisy and Goliath. Ches Fanning is a downsized sports broadcaster reduced to calling sheep dog trials in rural Gippsland.
+    He stops for counter tea at the rundown Fish Creek pub. It is the night of the local darts finals. There he spots in languid
+    action the willowy Sam Alley, a twenty-year-old girl. Despite her parents’ reservations, he takes her under his wing.
+    He becomes her player manager and promoter but her Australian run is derailed by power brokers. Ches decides to take Sam
+    to England. She competes against Britain’s finest in the Pay-TV series Double Tops . He and Sam must contend with his
+    ex and would-be wives, Helen and Hollie, the fierce local champ Tiger Magee and a hostile dartocracy. As Ches says, ‘People
+    are going to lap up the story of the small town country girl who went to the Old Dart and whipped them on their own patch
+    of lager-sodden axminster.’ Whether you’re a sports tragic or not, Alan Cornell’s The Gentle Art of Tossing aims straight
+    for your funny bone and hits the target.
   price: 27.95
 navigatio:
   title: Navigatio
   author: Alison Croggon
-  description: ''
+  description: is a story of double migration. Told in alternative chapters, it is part family memoir drawing on her own childhood
+    arrival from South Africa, part dramatized account of nineteenth century sea-voyage and arrival. It is a feat of memory
+    and imagination, finally drawing together the two tales, like twine through canvass, to reveal the individual caught in
+    the cruel flow of history.
   price: 19.95
 mothers-claw:
   title: Mother’s Claw
   author: Louise Davenport
-  description: ''
+  description: The launch will be followed by a party at her home at 7.00 PM at Unit 6/10 Clark St, Richmond 3121 (9421 3739).
+    Pizzas and alcohol will be provided. Copies of Mother’s Claw will be available at the special
   price: 21.95
 digging-in-dark-places:
   title: Digging In Dark Places
   author: Colin Duckworth
-  description: ''
+  description: When Janet Crompton, a young and beautiful research student, goes from Melbourne to Brittany to find out the
+    facts behind a local legend, she unearths unexpected truths about herself, her mysterious parents, and several strange,
+    sinister, colourful, courageous and eccentric people.
   price: 20.95
 summer-symphony:
   title: Summer Symphony
   author: Colin Duckworth
-  description: ''
+  description: 'Mongrel Jazz, an imprint of Black Pepper, launched Summer Symphony: A Novel In Four Movements , by Colin Duckworth
+    on 8 August 2005 at The Stork Hotel, Melbourne, with a speech from Dr David Kram, Associate of the Royal College of Music,
+    composer, librettist, conductor and Head of Opera, Victorian College of the Arts. Colin Duckworth’s third novel tells
+    of the power of love to encourage and inspire, and music’s power to move and heal. But music can also be immensely destructive.
+    A battle between good and evil is fought, with music as the weapon.'
   price: 28.95
 cairo-paris-melbourne:
   title: Cairo Paris Melbourne
   author: Maher Abou Elsaoud
-  description: ''
+  description: Cairo is an old man crossing a crowded road. Paris is a pretty girl in search of a hero. Melbourne is an innocent
+    child playing in a vast land. Our first person narrator has a naïve knowingness. Zoheir who becomes known as ‘Prince’
+    and takes on the persona of Zoheir Oqla, the inventor of tales, has a touch of Scheherazade about him. Cairo Paris Melbourne
   price: 44.95
 two-that-got-away:
   title: Two That Got Away
@@ -375,62 +548,113 @@ two-that-got-away:
 the-butterfly-stalker:
   title: The Butterfly Stalker
   author: Robyn Friend
-  description: ''
+  description: The Butterfly Stalker is rich in symbolism and layers of meaning. It marks Robyn Friend ’ s anticipated return
+    to fiction after the controversial success of her first novel Eva .
   price: 26.95
 sailing-through-the-amber:
   title: Sailing Through the Amber
   author: Susan Hancock
-  description: ''
+  description: Loss and change and the sudden exhilaration the gaps in our lives give are at the heart of Susan Hancock’s
+    fiction. The cities she creates are thronged with people telling their own stories. At times, strangely silent and deserted,
+    they become the sites of an oddly visionary grace. Her prose, seemingly casual and airy, is structured and considered.
+    A keen balance of dialogue and description develops into metaphor and image. It embraces heartbreak and angels.
   price: 19.95
 the-peastick-girl:
   title: The Peastick Girl
   author: Susan Hancock
-  description: ''
+  description: The Peastick Girl evokes Wellington and the force of the natural world. The novel brings Teresa Matheson back
+    to Wellington after five years in Australia, where she begins to write a film version of Webster’s The Duchess of Malfi
+    and links the play’s vision of treachery and destruction to New Zealand history.
   price: 49.95
 diary-of-a-dwarf:
   title: Diary of a Dwarf
   author: Graham Henderson
-  description: ''
+  description: Ironmonger, the dwarf of the title novella, is an inventor of unlikely board games. Foote, of ‘Foote’s Last
+    Stand’, is either a 117 year old neglected novelist or failed pornographer. Boot is factotum to Dr Hieronymous Bladder,
+    a psychiatrist in improbable disguise, pursued by his patients Bones and Ophul. In these novellas Henderson takes comedic
+    invention to its extreme; he reveals the tragic scope of the clown. ‘Nocturnal Emanations of Fish’ tells many stories
+    in one. Story-telling is a ploy to stave off the narrator’s suicide. The ‘death of the author’ is declared from within.
+    De Sade is a wimp, the anti-novel like Jane Austen when the demented author makes his final great plea for sanity. His
+    control is extraordinary. ‘Fish’ alone would confirm Henderson as a radical and significant writer.
   price: 24.95
 place-of-the-paintings-and-other-stories:
   title: Place of the Paintings and Other Stories
   author: Graham Henderson
-  description: ''
+  description: After all the Napoleons had betrayed themselves, there was always love. Graham Henderson collects in Place
+    of the Paintings his favourite stories of the last twenty years. He moves from the mythic tales of the early 1980s to
+    his later magical imagery, and confesses, in a postscript, the wellspring of his imagination. His work is unique in our
+    fiction. His imagination creates a remarkable cosmos - a man coughs up fragments of glass in a sideshow, a neanderthal
+    woman in 19th century Russia, a letter from exile to an unknown man, an alien from the extinct planet of Manao, the biblical
+    Lazarus and a female Odysseus in ‘Sand ’ . His stories are hauntingly unfamiliar but they visit our unconscious.
   price: 25.95
 the-colony:
   title: The Colony
   author: Graham Henderson
-  description: ''
+  description: Set in a leper colony on an unnamed equatorial island our narrator struggles with delirium and memory as he
+    chronicles his state. He is fascinated by a strange cast of characters as they live out their destinies towards the grave,
+    pursued by music, dance and song. Desire and redemption entwine like snakes as his companions invent charmed pasts, as
+    with Minstrel Joe’s tales of jamming with dead blues legends. Part prose poem, part journal, part cri du coeur, part meditation
+    on the last things, The Colony is a novella that stands intransigently beyond history and time, assembling a polyglot
+    dramatis personae of outcasts. There is an urgent poetry and profundity in this book, but at its heart, floundering against
+    the odds, there is the struggle to live. Henderson writes big, risky fictions. His best stories combine imaginative flair
+    and luminous, rhythmical prose with a readiness to exploit the mythopoetic. Andrew Peak, Island
   price: 22.95
 meditations-of-a-flawed-groom:
   title: Meditations of a Flawed Groom
   author: Vivian Hopkirk
-  description: ''
+  description: Art begins with puberty, with seduction. Ask the lyrebird. Meditations of a Flawed Groom is an unashamedly
+    philosophical novel, its language a cool display of a fabulous pyrotechnic. It is set in a Sydney jail. The narrator Stephen
+    West, arrested for disorderly behaviour, is obliged to stay to discharge accumulated fines. From this point on the forceful
+    and satirical action often takes place within the landscape of Stephen West's mind. The bride implied by the groom of
+    the title is unrestrained imagination. The hero is the prototype of the Romantic and Modernist artist. The author is a
+    nephew of the painter Brett Whiteley, who decisively intervenes as a character in the novel.
   price: 19.95
 running-dogs:
   title: Running Dogs
   author: Barry Klemm
-  description: ''
+  description: Klemm’s company tries to survive with laconic forbearance amid their Apocalypse Then . In its determined unsentimentality,
+    Running Dogs both moves and chills as it evokes life with a Catch-22 edginess where death is always imminent.
   price: 25.95
 by-way-of-water:
   title: By Way of Water
   author: Phil Leask
-  description: ''
+  description: When her Italian mother takes up with the builder Tony Tomaselli, Leonora Stanislavski finds herself at a loose
+    end in Cairns. Known there as ‘the Englishwoman’ because of her London upbringing, she meets Vic Townsend, a tour boat
+    operator fleeing his past. Leonora has been investigating her own past, in particular, the mysterious death by drowning
+    of her Russian father in Berlin. Their pasts seem destined to keep them apart. But when Tomaselli sends them on a journey
+    to the far north to deliver an Aboriginal painting to the derelict cattle station of old Albert Winters, their buried
+    love surfaces. Then Leonora reveals the horrific things she's done to uncover her father’s past.
   price: 22.95
 the-slow-death-of-patrick-oreilly:
   title: The Slow Death of Patrick O’Reilly
   author: Phil Leask
-  description: ''
+  description: Patrick O’Reilly, it seems, has roamed the Tasmanian forests for 150 years. He knew Lake Pedder before it was
+    flooded for hydro-electricity. A scourge of the local community, he has raided farms and apple orchards. But is he involved
+    with a lost child? And with Bernard Laurent, a French sailor who has jumped ship? Bernard, having started an affair with
+    a farmer’s wife, is sheltered by a collector of historical documents. She gives him a journal of an earlier Frenchman,
+    a deserter from Nicolas Baudin’s 1802 naval expedition. The journal tells an almost parallel story of tenderness and brutality.
+    Bernard’s translation leads to a startling and violent revelation.
   price: 24.95
 olhovsky-prince-of-hamburg:
   title: Olhovsky, Prince of Hamburg
   author: Phil Leask
-  description: ''
+  description: Hamburg, in Phil Leask’s third novel, is a city of the displaced. Accidents of personal history throw together
+    an odd collection of strangers - English poet Michael Rothney, a Polish dancer, a German sculptor. They find themselves
+    locked within the hypnotic orbit of Olhovsky, ambiguous, charismatic, sensual, a sailor and wanderer with a dubious past.
+    Even before Olhovsky passes bay leaves crushed in his palm beneath the nostrils of his friends during their love-making,
+    we know he is influential.
   price: 28.95
 anne-of-the-iron-door:
   title: Anne of the Iron Door
   author: Alan Loney
-  description: ''
+  description: In the city of Strasbourg in 1436, a woman sued the father of printing, Johann Gutenberg, for breach of promise.
+    Her name was Ennelin zu der Iserin Tur, in English, Anne of the Iron Door. The outcome of the court case is not known,
+    but it is known that Gutenberg never married, and he did pay taxes for ‘another person’ in Strasbourg sometime before
+    1440. Not much is known of Gutenberg the man, although a number of official documents still exist that mention him. Of
+    Anne we know practically nothing beyond her remarkable name. In Alan Loney’s extraordinary fable he uses the historical
+    records to weave a fictional life for Anne, almost purely for the purpose of keeping her name alive. In Anne of the Iron
+    Door Loney creates a world of deceit and betrayal, disease, unicorns, playing cards, the birth of printing, and a strange
+    tale of mutually unrequited love.
   price: 26.95
 blueprints-for-a-barbed-wire-canoe:
   title: Blueprints for a Barbed-Wire Canoe
@@ -443,105 +667,165 @@ blueprints-for-a-barbed-wire-canoe:
 caravan-story:
   title: Caravan Story
   author: Wayne Macauley
-  description: One morning, without warning, the narrator wakes into a nightmare. He and his female companion are put in
-    a caravan and driven to a football oval in a faraway country town. There they join scores of other caravan-dwellers
-    in a seemingly closed community, where they are divided into groups and given tasks. Then the narrator escapes to an
-    abandoned school in a big country town.
+  description: One morning, without warning, the narrator wakes into a nightmare. He and his female companion are put in a
+    caravan and driven to a football oval in a faraway country town. There they join scores of other caravan-dwellers in a
+    seemingly closed community, where they are divided into groups and given tasks. Then the narrator escapes to an abandoned
+    school in a big country town.
   price: null
 other-stories:
   title: Other Stories
   author: Wayne Macauley
-  description: ''
+  description: Wayne Macauley’s Other Stories is a much-awaited collection. Here at last Macauley’s peculiar take on the world
+    is gathered together in short stories, satires, fables and anecdotes. Many are set in the hinterland of the outer suburbs
+    where big cars, big driveways, big houses and big skies make small people feel lost and strange. This familiar world seems
+    eerie, like a Jeffrey Smart painting. His yarns of the margins are at the centre of our culture.
   price: 26.95
 room-for-delusion:
   title: Room for Delusion
   author: Margaret Mathews
-  description: ''
+  description: Told through the lens of Bronwen’s lusting for Bella, Margaret Mathews Room for Delusion
   price: 28.0
 posing-in-vast-spaces:
   title: Posing in Vast Spaces
   author: Peter Murk
-  description: ''
+  description: As much a travelling salon as a road novel, Posing in Vast Spaces is an object lesson in the art of digression.
+    Our narrator, a poet, is an aesthete. He is given to frivolity, drinking, ogling, cloudwatching, research into town bakeries
+    and japes. His fellow traveller is a landscape painter, upright and dedicated to his immortal daubs. Their common companion
+    is My Darling Chevrolet. Together they head inland to sing and paint the dead lakes. On the drought-stricken land the
+    locals are resilient in their good humour. Our Dionysian and Apollonian heroes are like vagabond wraiths in comparison.
+    Peter Murk’s picaresque novel is a love song to his country. He dotes on the vernacular as though he has discovered a
+    lost dialect. Posing in Vast Spaces is seriously funny.
   price: 28.95
 the-prisoner-gains-a-blurred-skin:
   title: The Prisoner Gains a Blurred Skin
   author: Nicholas Playford
-  description: ''
+  description: These stories are subtle and innovative. They are clinically satirical and have a miniaturist visual style.
+    His Canberra, Melbourne and Adelaide are places we have not yet seen. The ontological flux of the everyday is suddenly
+    revealed as overwhelmingly fantastic. The Prisoner Gains a Blurred Skin is the work of a rational being contending with
+    the tumult of emotion. If his world is seen through a magnifying lens, that lens is also trained on us. The Prisoner Gains
+    a Blurred Skin was the first title released by Black Pepper.
   price: 21.95
 gifts-sorrows:
   title: Gifts & Sorrows
   author: Raphaëlle Pomian
-  description: ''
+  description: French author Raphaëlle Pomian’s Gifts & Sorrows [ Don et Miseres ] is a delightful and slightly anguished
+    collection about girls. Each story has as its title the name of its young hero. They are arranged in ascending order of
+    age, so we gain the subtle impression of watching the general growth of a girl in France in the late 1960s. These bittersweet
+    stories bring to life both school and home life, particularly the troubled relationships between the girls and their mothers
+    and siblings. They are poignant tales to appeal to adults and adolescents.
   price: 19.95
 the-invention-of-everyday-life:
   title: The Invention of Everyday Life
   author: Nicolette Stasko
-  description: ''
+  description: 'The Invention of Everyday Life is a sparkling novel of observation. There is no central character and barely
+    any speech or dialogue. It is a group portrait with persons, locales, fruits, creatures, vegetations and sand. We meet
+    Mrs Caminiti the only female butcher, the photographer dreaming of a lost Prague, the six year old prodigy who speaks
+    solely in mathematical formulae, Zoltan Blum the sad drycleaner, Ivanka a young girl fascinated by the lives of the saints.
+    The canvas shifts through the ravages of time in human life and its environs. The Invention of Everyday Life reveals a
+    community: unpretentious, tinged with sadness and Stasko’s great feel for beauty in the natural world. It inveigles us
+    like a Cup-goer’s fascinator. It dazzles because it floodlights the ordinary.'
   price: 25.95
 the-set-up:
   title: The Set-Up
   author: John Vasilakakos
-  description: ''
+  description: It is 1978. This is the Sydney that refuses to know, Australia refuses to know. Lakis is caught up in the notorious
+    Social Security Greek Prosecutions Scandal. John Vasilakakos’ remarkable novel takes us into that nightmare. The Set-Up
+    is a psychological thriller that questions the assumptions of the migrant experience. It is like Peter Corris re-imagined
+    by Kafka.
   price: 19.95
 kicking-in-danger:
   title: Kicking in Danger
   author: Alan Wearne
-  description: ''
+  description: 'Alan Wearne is one of the great masters of what can be done with the Australian vernacular. This is an alternative
+    history of Australian Rules, rendered rich and strange by one of the great connoisseurs of suburban Melbourne. Damien
+    Chubb and Johnny Moomba are great acquisitions to the rogues'' gallery of football myth. The ghosts of everyone from John
+    Elliot to Dermott Brereton flit through this comic extravaganza which provides us with every possible archetype you could
+    poke a stick at: a rich brew of sporting Australia as it is and as comic nostalgia can refashion it.'
   price: 19.95
 letters-from-byron:
   title: Letters from Byron
   author: Jim Williams
-  description: ''
+  description: 'Jim Williams’ letters, written over a period of eighteen months to friends, acquaintances and antagonists,
+    reveal his natural talent as a storyteller. Setting out to detail the day-to-day life amongst the humal flotsam and jetsam
+    of Byron Bay he discovers unexpected tales: the mysterious influence of the Lighthouse, Pedro’s Gaucho history, the uncanny
+    Beach Burial, the sinister Carers or the powerful Dice-thrower. He intrigues, jokes with, disquiets and enchants his addressees.
+    It is almost unprecedented that a writer’s letters are'
   price: 19.95
 the-truth-is-longer-than-a-lie:
   title: The Truth is Longer Than a Lie
   author: Kieran Carrol
-  description: ''
+  description: The Truth is Longer than a Lie tells the crossover stories of the separate families of Amy and Spiderman, and
+    of an anonymous child, whose story we hear in voiceover. It is a family drama.
   price: 23.0
 dont-ever-let-them-get-you:
   title: Don’t Ever Let Them Get You!
   author: George Dreyfus
-  description: ''
+  description: As ever, he is restless and irascible. Don’t Ever Let Them Get You!
   price: 25.95
 said-the-rat-writers-at-the-water-rat-2000-2003:
   title: Said The Rat! Writers at The Water Rat 2000-2003
   author: Jennifer Harrison and Phil Ilton
-  description: ''
+  description: 'The readings at the Water Rat Hotel at the edge of the city in South Melbourne lived in interesting times.
+    They broke the lull. Writers responded to September 11, Tampa and paused to watch Cathy Freeman run. Audience and readers
+    came from all over: country Victoria, interstate and overseas. Said the Rat! celebrates those nights.'
   price: 15.0
 to-whom-it-may-concern-and-other-plays:
   title: To Whom It May Concern and other plays
   author: Daniel Keene
-  description: ''
+  description: Described by the author as A Little Bumper Book of Plays, To Whom It May Concern is a collection of eight plays
+    by multi-award winning dramatist Daniel Keene. All works are from the acclaimed Keene/Taylor Theatre Project. Their stories
+    forge what Geoffrey Milne has called "a poetics of dignity in despair." Occasionally theatre delivers something quite
+    extraordinary. Sitting in the poverty-marked surrounds of The Brotherhood of St Lawrence furniture warehouse, watching
+    three more of Daniel Keene's plays in his collaborative project with director Ariette Taylor, more than tears were brought
+    to my eyes. It was as if a hand had reached into my chest and squeezed my heart until it hurt. These plays are so everyday
+    on the surface yet they articulate in their gaps and silences a profound sense of human worth. Helen Thompson, The Age
   price: 22.95
 the-falling:
   title: The Falling
   author: Alan Loney
-  description: ''
+  description: The Tangiwai rail disaster of Christmas Eve 1953 touched the lives of thousands of New Zealanders. Alan Loney
+    was 13 years old at that time, and the deaths of a schoolboy friend, Robert Hale, and his mother Eileen Hale, have haunted
+    the life and often the writing of the poet for over 45 years.
   price: 25.95
 the-printing-of-a-masterpiece:
   title: The printing of a masterpiece
   author: Alan Loney
-  description: ''
+  description: 'Alan Loney ’s interview about The printing of a masterpiece was broadcast on NSW Radio 2SER on the 14 July
+    2008 episode of ‘Final Draft: Books and Writing.’ In a charming interview with Benedic t Taylor former New Zealander and
+    Australian resident Alan Loney reveals insights into his philosophy and art (click here for podcast: note - the Loney
+    interview starts at 17 minutes 05 seconds into the show)'
   price: 26.95
 in-the-cleft-of-the-rock:
   title: In the Cleft of the Rock
   author: Deborah Masel
-  description: ''
+  description: DEBORAH MASEL APPEARED AT THE PARLIAMENT OF THE WORLD’S RELIGIONS IN MELBOURNE ON MONDAY 7 DECEMBER 2009 Deborah
+    spoke on The Torah through Paintings and Poetry and appeared in a panel discussion with Victor Majzner, Deborah Masel,
+    Rosemary Crumlin and Helen Light focusing on the visual depiction of the Torah.
   price: 27.95
 the-humming-tree:
   title: The Humming Tree
   author: Bron Nicholls
-  description: ''
+  description: The Humming Tree, Memories of an Eccentric Childhood is a captivating collection of stories about childhood.
+    It is a companion volume to Bron Nicholl’s earlier An Imaginary Mother . Now the focus is on the father of the family,
+    and his disturbing transition from an easy-going, jovial man, into somebody inflexible, harsh and oppressive.
   price: 25.0
 an-imaginary-mother:
   title: An Imaginary Mother
   author: Bron Nicholls
-  description: ''
+  description: Bron was Phyllis Nicholls’ first child. An Imaginary Mother is an open-hearted memoir of her mother and their
+    intense relationship over fifty-six years. Phyllis was a secretive, complex and unpredictable woman. Before her marriage,
+    Phyllis worked happily as a designer in Vida Turner’s pioneering textile company. After World War II, with a young family,
+    she had to cope with the isolation of a struggling subsistence farm, the tumult of her husband’s conversion to a rigid
+    religion, and her own increasing mood changes between despair, melancholy and joy. Yet to the end of almost eighty years,
+    Phyll was also a stoic. She saw her ‘madnesses’ as the inevitable ups and downs of a full life, to be worked around with
+    a mixture of courage, stealth, ingenuity and, whenever possible, with humour. An Imaginary Mother is a portrait in which
+    the sitter and the painter are both revealed.
   price: 24.95
 there-a-lot-of-it-going-around:
   title: There'a a lot of it going around
   author: Leon Piterman
-  description: ''
+  description: Leon Piterman weaves anecdotes about his patients into a critical account of contemporary general practice.
+    The stories show the compassion that sits alongside medical training and diagnostic skill in the work of a good doctor.
   price: 24.0
 living-in-covid-times:
   title: Living in COVID Times
@@ -554,20 +838,36 @@ living-in-covid-times:
 brunswick-street-art-revolution:
   title: Brunswick Street, Art & Revolution
   author: Anne Rittman and Maz Wilson
-  description: ''
+  description: 'is the story of a street that became a culture. Written by Anne Rittman and Maz Wilson, it consists of a series
+    of interviews and colour photographs with and of the people who brought about that transformation. It teems with characters:
+    baristas, hair-cutters, potters, comedians, painters, singers, poets, restaurateurs and more.'
   price: 88.0
 la-ragazza:
   title: La Ragazza
   author: Raffaella Torresan
-  description: ''
+  description: is a confessional work of fiction—Raffaella Torresan’s central character, La Ragazza (The Girl) can’t settle
+    in to suburban school life so she leaves home at age fifteen and hits the mean streets of the city. She finds it. Sex,
+    drugs, the whole damn thing. The Girl wants to see The World and The Big Bad World loves nothing more than to lead innocence
+    astray. By the time. much much later, when The Girl returns to her origins she has seen the wonderful and terrible sights
+    of the Far Shores, found love and loss, and the wonderful/terrible world of drugs. She has learned to sacrifice everything
+    and everyone—mainly herself—for The Hit. Will the needle eat into her soul? Can she see that The Drug will take everything
+    from you... even life itself?
   price: 27.0
 and-the-winner-is:
   title: And The Winner Is...
   author: Jon Weaving
-  description: ''
+  description: When Jon Weaving compiled And The Winner Is... , an anthology of Nillumbik Shire Council's Alan Marshall Short
+    Story Award, he also wrote a practical book about Writing. The anthology itself is unique. As well as the prize-winning
+    stories, both in the Open and Youth sections, it incorporates interviews with the authors on their craft, judges’ comments
+    and biographies of the authors. It is a full history of the Alan Marshall Award. As importantly, it is a handbook for
+    creative writing. Using each year's winning stories to illustrate his points, Weaving guides us through the making of
+    a work of fiction. He discusses character, imagery, metaphor, dialogue and other components of successful storytelling.
+    He teaches us the 'one-percenters,' those little things that make the difference in our writing. And The Winner Is...
+    is an enjoyable anthology. It could make you a winner.
   price: 19.95
 shelter-an-oral-history-of-marjorie-oke-house:
   title: Shelter, An Oral History of Marjorie Oke House
   author: Rhonda Wilson
-  description: ''
+  description: What’s great about the Pokies are the pretty pictures and the music, The Black Rhino or Wild Africa and the
+    Cougar one, they’ve got beautiful animals on them.
   price: 27.95
