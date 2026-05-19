@@ -1,5 +1,6 @@
 html {
     width: 100%;
+    height: 100%;
     background-color: black;
 }
 
@@ -7,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: stretch;
     margin: 0;
     width: 100%;
     min-height: 100%;
@@ -88,6 +90,7 @@ nav a {
 section {
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 16px black;
+    min-height: 100%;
 }
 
 div.content-area {
@@ -142,18 +145,20 @@ nav a:nth-child(n + 2)::before {
 .bold::before {
     content: "";
     display: block;
+    border-radius: 999px;
+    border: 0.75px #ffe8cf;
+    border-style: solid none none solid;
+
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    border-radius: 999px;
-    border: 0.75px #ffe8cf;
-    border-style: solid none none solid;
+    pointer-events: none;
 }
 
-.bold {
-    background-color: #5d5a54;
+.bold,
+.bold-input {
     border-radius: 999px;
     border-radius: 999px;
     border: 0.5px #161616;
@@ -164,6 +169,9 @@ nav a:nth-child(n + 2)::before {
     font-style: normal;
     font-size: 12px;
     color: #e7ceba;
+}
+.bold {
+    background-color: #5d5a54;
 }
 a.bold:hover {
     background-color: #54514b;
@@ -179,6 +187,8 @@ a.bold:active {
 
 a.bold {
     padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
 }
 
 article {
@@ -276,22 +286,21 @@ div.details-text {
 .search {
     display: flex;
 
-    gap: 6px;
-    padding: 6px;
-    align-items: center;
+    align-items: stretch;
 
     min-width: 300px;
     width: 50%;
+
+    background-color: #5d5a54;
 }
 
 .search button {
     background-color: transparent;
     border: none;
-    width: 24px;
-    height: 24px;
-
-    padding: 0;
+    display: flex;
+    align-items: center;
 }
+
 svg {
     color: #dccebd;
     filter: drop-shadow(0.5px 0.5px 0px #161616);
@@ -306,5 +315,15 @@ svg {
     font-style: normal;
     font-size: 12px;
 
-    padding: 4px 0;
+    width: 100%;
+
+    padding: 0;
+    margin: 5px 1px 3px 1px;
+
+    outline: none;
+    box-sizing: border-box;
+}
+
+.search input::placeholder {
+    color: #dccebd99;
 }
