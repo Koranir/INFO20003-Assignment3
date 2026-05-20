@@ -42,6 +42,6 @@ with doc.body:
                     with d.div(cls="bestsellers"):
                         make_bestsellers()
 
-        make_footer()
+    make_footer()
 
 print(doc)

@@ -22,5 +22,5 @@ def make_product(key, product):
                 with d.div(cls="content-with-sidebar"):
                     pass
 
-            make_footer()
+        make_footer()
     return doc
