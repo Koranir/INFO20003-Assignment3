@@ -2,6 +2,7 @@ import dominate.tags as d
 from make_bestsellers import make_bestsellers
 from make_doc import make_doc
 from make_featured import make_all_featured
+from make_footer import make_footer
 from make_header import make_header
 from make_recents import make_recents
 
@@ -40,5 +41,7 @@ with doc.body:
 
                     with d.div(cls="bestsellers"):
                         make_bestsellers()
+
+        make_footer()
 
 print(doc)
