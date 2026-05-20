@@ -364,9 +364,17 @@ svg {
 }
 
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "links mailing"
+        "links socials"
+        "links copyright";
+
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    /*row-gap: 10px;*/
 
     justify-content: stretch;
     padding: 15px;
@@ -375,6 +383,8 @@ footer {
 }
 
 .footer-links {
+    grid-area: links;
+
     display: flex;
     flex-direction: column;
     /*justify-content: space-between;*/
@@ -383,7 +393,8 @@ footer {
 }
 
 .footer-socials {
-    display: flex;
+    display: contents;
+
     flex-direction: column;
     justify-content: space-between;
     align-items: end;
@@ -391,13 +402,15 @@ footer {
 }
 
 .footer-mailing {
+    grid-area: mailing;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-form.footer-mailing-form {
+.footer-mailing-form {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -405,8 +418,43 @@ form.footer-mailing-form {
 }
 
 .footer-social-icons {
+    grid-area: socials;
+    justify-self: end;
+    align-self: center;
+
     display: flex;
     flex-direction: row;
     gap: 25px;
     padding: 10px;
+}
+
+.footer-socials > p {
+    grid-area: copyright;
+    justify-self: end;
+    align-self: end;
+}
+
+@media (max-width: 550px) {
+    footer {
+        grid-template-areas:
+            "mailing mailing"
+            "links socials"
+            "links copyright";
+        row-gap: 10px;
+    }
+
+    .footer-mailing {
+        justify-self: center;
+        text-align: center;
+
+        width: 100%;
+    }
+
+    .footer-mailing-form {
+        width: 100%;
+    }
+
+    .footer-mailing-form > div.bold {
+        flex-grow: 1;
+    }
 }
