@@ -7,7 +7,7 @@ from make_header import make_header
 from make_recents import make_recents
 
 
-def make_product(product):
+def make_product(key, product):
     doc = make_doc(product["title"])
     with doc.body:
         with d.div(cls="content-area"):
@@ -18,29 +18,9 @@ def make_product(product):
                     d.h2(
                         "Featured",
                         cls="section-title",
-                        style="--styled-asset-path: url('/assets/featured.svg')",
+                        style=f"--styled-asset-path: url('/assets/headers/{key}.svg')",
                     )
 
-                    with d.div(cls="featured"):
-                        make_all_featured()
-
                 with d.div(cls="content-with-sidebar"):
-                    with d.article():
-                        d.h2(
-                            "Recent Releases",
-                            cls="section-title",
-                            style="--styled-asset-path: url('/assets/recent-releases.svg')",
-                        )
-
-                        with d.div(cls="recent-releases"):
-                            make_recents()
-                    with d.article(cls="sidebar"):
-                        d.h2(
-                            "Bestsellers",
-                            cls="section-title",
-                            style="--styled-asset-path: url('/assets/bestsellers.svg')",
-                        )
-
-                        with d.div(cls="bestsellers"):
-                            make_bestsellers()
+                    pass
     return doc

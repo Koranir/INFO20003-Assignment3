@@ -1,125 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Black Pepper Publishing - Diary of a Dwarf</title>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="/style/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap" rel="stylesheet">
-    <script src="/js/cart.js"></script>
-  </head>
-  <body>
-    <div class="content-area">
-      <header>
-        <div class="top">
-          <nav>
-            <a class="rim" href="/titles.html">Titles</a>
-            <a class="rim" href="/authors.html">Authors</a>
-            <a class="rim" href="/multimedia.html">Multimedia</a>
-            <a class="rim" href="/about.html">About Us</a>
-            <a class="rim" href="/submissions.html">Submissions</a>
-            <a class="rim" href="/cart.html" id="cart-link">Cart</a>
-          </nav>
-          <img alt="Black Pepper Publishing Logo" src="/assets/logo-rim.svg">
+    <head>
+        <title>Black Pepper Publishing - Diary of a Dwarf</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="/style/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="/js/cart.js"></script>
+    </head>
+    <body>
+        <div class="content-area">
+            <header>
+                <div class="top">
+                    <nav>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </nav>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                </div>
+                <div class="search bold">
+                    <button class="search-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search"
+                        >
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                    </button>
+                    <input
+                        id="search-input"
+                        placeholder="Search books &amp; more"
+                        type="search"
+                    />
+                </div>
+            </header>
+            <main>
+                <article>
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/headers/diary-of-a-dwarf.svg&quot;);
+                        "
+                    >
+                        Featured
+                    </h2>
+                </article>
+                <div class="content-with-sidebar"></div>
+            </main>
         </div>
-        <div class="search bold">
-          <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></button>
-          <input id="search-input" placeholder="Search books &amp; more" type="search">
-        </div>
-      </header>
-      <main>
-        <article>
-          <h2 class="section-title" style="--styled-asset-path: url('/assets/featured.svg')">Featured</h2>
-          <div class="featured">
-            <section>
-              <div class="images">
-                <img alt="Portrait of Jennifer Harrison" class="author-portrait" src="/assets/authors/jennifer-harrison/portrait.jpg">
-                <img alt="Cover of Sideshow History" class="cover" src="/assets/books/sideshow-history/cover.jpg">
-              </div>
-              <div class="details">
-                <div class="details-text">
-                  <h3>Sideshow History</h3>
-                  <address>Jennifer Harrison</address>
-                  <p>Jennifer Harrison has always been interested in performers, their choices and vulnerabilities. In her new collection, Sideshow History, she shows us the risk of being a public performer where the artist is continually under pressure of being seen to fail or succeed.</p>
-                </div>
-                <a class="bold" href="/products/sideshow-history.html">Read more »</a>
-              </div>
-            </section>
-            <section>
-              <div class="images">
-                <img alt="Portrait of Stephen Edgar" class="author-portrait" src="/assets/authors/stephen-edgar/portrait.jpg">
-                <img alt="Cover of The Strangest Place" class="cover" src="/assets/books/the-strangest-place/cover.jpg">
-              </div>
-              <div class="details">
-                <div class="details-text">
-                  <h3>The Strangest Place</h3>
-                  <address>Stephen Edgar</address>
-                  <p>The strangest place, this world of fact and figment we astonishingly find ourselves inhabiting, is the territory that Stephen Edgar’s poetry has been probing and framing for over four decades now.</p>
-                </div>
-                <a class="bold" href="/products/the-strangest-place.html">Read more »</a>
-              </div>
-            </section>
-          </div>
-        </article>
-        <div class="content-with-sidebar">
-          <article>
-            <h2 class="section-title" style="--styled-asset-path: url('/assets/recent-releases.svg')">Recent Releases</h2>
-            <div class="recent-releases">
-              <div class="recent-wheel">
-                <button class="recent-title">Living in COVID Times</button>
-                <button class="recent-title">Chasing Marie Antoinette All Over Paris</button>
-                <button class="recent-title">Two That Got Away</button>
-              </div>
-              <img alt="Cover of Living in COVID Times" class="recent-cover" src="/assets/books/living-in-covid-times/cover.jpg">
-              <div class="recent-description">
-                <p>The COVID-19 pandemic has devastated lives and livelihoods. Some 12 months after its declaration by the WHO, COVID-19 has left over 105 million people infected and more than 2 million dead, around 450,000 of these in the USA alone. Australia has been fortunate. We are an island, our leaders have listened to and largely acted on the science, and our population responded.</p>
-                <a class="bold" href="/products/living-in-covid-times.html">Read more »</a>
-              </div>
-              <img alt="Cover of Chasing Marie Antoinette All Over Paris" class="recent-cover" src="/assets/books/chasing-marie-antoinette-all-over-paris/cover.jpg">
-              <div class="recent-description">
-                <p>Adrienne Eberhard’s new collection Chasing Marie Antoinette all Over Paris forges connections between past and present, public and private, and human and non-human, exploring what it means to be truly at home in the world, whether her beloved Tasmania, France or Indonesia. Ranging in subject matter from native grasses, ducklings and footy games, to cave paintings, family and 9000 years-deep ancestry, she draws on personal, as well as cultural, history to investigate possibility, love and loss. With their focus on the small and the precious, these poems draw our attention to what is often overlooked, enabling us to see the extraordinary in the ordinary.</p>
-                <a class="bold" href="/products/chasing-marie-antoinette-all-over-paris.html">Read more »</a>
-              </div>
-              <img alt="Cover of Two That Got Away" class="recent-cover" src="/assets/books/two-that-got-away/cover.jpg">
-              <div class="recent-description">
-                <p>William James 'Walrus' Rose's long-term relationship with volatile ex-erotic dancer Jill has finally turned turtle. As an unsuccessful actor/author/playwright, he's also had a gutful of The Arts with its anus-lickers and parasites.
-Better a dinkum profession where a bloke's only ambitions are to catch lobster and avoid drowning. Within a day of arrival in Port Gong the locals reduce his nickname 'Walrus' to just 'Rus', and he finds work as a deckie with Possum Wright, eccentric skipper of the local fishing fleet's smallest vessel.
-Possum is a delightful fellow with whom to fish, but Rus has been warned he can be dangerously erratic. Rus therefore seldom completely relaxes when they are offshore.
-The Southern Ocean is a wondrous but challenging workplace. When its waters turn murderous it is not the spot to be in a small craft beside a bloke, by now far more your cobber than your boss, who appears to be losing his mind.</p>
-                <a class="bold" href="/products/two-that-got-away.html">Read more »</a>
-              </div>
-            </div>
-          </article>
-          <article class="sidebar">
-            <h2 class="section-title" style="--styled-asset-path: url('/assets/bestsellers.svg')">Bestsellers</h2>
-            <div class="bestsellers">
-              <div class="bestseller">
-                <img alt="Cover of Eldershaw" src="/assets/books/eldershaw/cover.jpg">
-                <div class="bestseller-details">
-                  <h3>Eldershaw</h3>
-                  <address>Stephen Edgar</address>
-                </div>
-              </div>
-              <div class="bestseller">
-                <img alt="Cover of The Hanging of Jean Lee" src="/assets/books/the-hanging-of-jean-lee/cover.jpg">
-                <div class="bestseller-details">
-                  <h3>The Hanging of Jean Lee</h3>
-                  <address>Jordie Albiston</address>
-                </div>
-              </div>
-              <div class="bestseller">
-                <img alt="Cover of Hidden" src="/assets/books/hidden/cover.jpg">
-                <div class="bestseller-details">
-                  <h3>Hidden</h3>
-                  <address>Mirranda Burton</address>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </main>
-    </div>
-  </body>
+    </body>
 </html>

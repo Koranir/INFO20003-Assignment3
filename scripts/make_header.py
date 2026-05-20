@@ -13,9 +13,12 @@ def make_header():
             d.a("Submissions", href="/submissions.html", cls="rim")
             d.a("Cart", href="/cart.html", cls="rim", id="cart-link")
 
-        d.img(
-            src="/assets/logo-rim.svg",
-            alt="Black Pepper Publishing Logo",
+        d.a(
+            d.img(
+                src="/assets/logo-rim.svg",
+                alt="Black Pepper Publishing Logo",
+            ),
+            href="/index.html",
         )
     with d.div(cls="search bold"):
         with d.button(cls="search-button"):
