@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,756 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-bicycle-thief-other-poems.svg&quot;);
                         "
                     >
-                        Featured
+                        The Bicycle Thief &amp; Other Poems
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Andrew Sant</h3>
+                </div>
+                <img
+                    alt="Cover of The Bicycle Thief &amp; Other Poems"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-bicycle-thief-other-poems/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Bicycle Thief &amp; Other Poems"
+                        class="product-cover"
+                        src="/assets/books/the-bicycle-thief-other-poems/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Energy, natural and man-made, is at the heart of Andrew
+                        Sant’s The Bicycle Thief &amp; Other Poems - energy
+                        released at the speed of an escaping cyclist or through
+                        the planet’s eruptions and metamorphoses in geologic
+                        time. Either way, here is the second law of
+                        thermodynamics writ large, creation and destruction in a
+                        binary tussle. The mischievous title poem, a fast-moving
+                        narrative, is a robust celebration of
+                        ‘good-for-the-planet transport’, while elsewhere motor
+                        vehicles depicted in a ‘personal history’ are drolly
+                        seen as harbingers of an apocalypse. Many poems are
+                        monologues that give voice to characters whose
+                        identities are fluid and circumstantial. These are poems
+                        that get about - lively, unfettered and expansive.
+                        Praise for his previous collection Fuel: This poetry
+                        wants to situate us: what one might call biological
+                        positioning. But there are many others. And one of the
+                        most attractive throughout the poems of Fuel is the
+                        drive towards fitting us into geological frameworks. The
+                        first, very fine, poem ‘Revisiting Cliffs’ specifically
+                        contrasts our sense of the elapsing of time with
+                        geological time. Martin Duwell, Australian Poetry Review
+                        Sant’s linguistic exuberance, a delight in handling
+                        words makes Fuel a bravura performance... It is
+                        certainly the work of someone in love with what poetry
+                        can do... I had to read Fuel twice before grasping how
+                        subtly Sant handles this serious matter, how the
+                        collection in fact makes a distinguished contribution to
+                        what is now often called ecocentric poetry. John Lucas,
+                        Critical Survey
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-bicycle-thief-other-poems.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-bicycle-thief-other-poems/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044763</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>84</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Andrew Sant was born in London in 1950 and educated
+                            there and in Melbourne after his family emigrated to
+                            Australia in 1962.
+                        </p>
+                        <a class="bold" href="/authors/andrew-sant.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Cordite Review</summary>
+                        <p>
+                            Reviews The Bicycle Thief &amp; Other Poems Lucy Van
+                            Cordite , 9 January 2014 It’s no current reference,
+                            but reading Andrew Sant’s recent collection, The
+                            Bicycle Thief, Andrew McGahan’s Praise springs to
+                            mind. When I studied McGahan’s novel, a more astute
+                            student than I pointed out that Gordon’s only
+                            romantic relationship was with his car, and that,
+                            accordingly, his only romantic response was towards
+                            the sad demise of that Holden. His relationship with
+                            Cynthia (who he develops a relationship with) was
+                            conversely defined by emotional inertia and moral
+                            detachment. This observation struck me as highly
+                            sophisticated. It did not endorse a clichéd view of
+                            Australian men and their cars, rather it subtly
+                            suggested a masculine romance for an idyll of
+                            mobility. I think that for all the mischief and
+                            conversational flare of The Bicycle Thief , Sant is
+                            a romantic. Sant constructs a romantic idiom around
+                            various modes of transport that is not simply
+                            commodity fetishism, but as with McGahan, a desire
+                            for transcendence through acceleration and movement.
+                            There is no strict narrative progression yet the
+                            collection does riff around the twinned themes of
+                            movement and stasis. Somewhere in the middle of the
+                            book the speaker presents an Ur -scene in ‘Jack and
+                            Yves and Their Many Transports’, where children are
+                            observed locking language to movement: Train! Jack
+                            calls out once and once again. He lives near a
+                            railway station. He stops. His index finger is a
+                            little wand. Transport attracts his first
+                            vocabulary. One of Sant’s great gifts is this
+                            ability to wed naturalness with thematic
+                            abstraction. The allusion to a kernel of the poetic
+                            form - metaphor, language in movement – is light and
+                            unburdened, and always keening to the particular
+                            rather than the general truth. Sant’s poetry also
+                            insists on nearness - ‘I,’ ‘you’ and ‘we’ surround
+                            the reader as she is increasingly embedded in the
+                            personal address. This address reaches an early
+                            climax in the eight-page ‘The Motor Car: A Personal
+                            History’, which delivers on the promise of its title
+                            through a catalogue of cars that have come into the
+                            speaker’s life. It’s part David Copperfield, part
+                            confessional poem: I was three, if I’m correct, when
+                            I saw parked in the street what we now owned - a
+                            Morris Minor, green as leaves... There’s a lovely
+                            unreliable charm here that is consistent with the
+                            collection’s allergy to seriousness, even as the
+                            task of personal reconstruction invites unflinching
+                            rigour. The playfulness applied to these
+                            undertakings is underscored by Sant’s subtle half
+                            rhyme, which appears throughout the poem: ‘Number
+                            plate / 177 EMG. It was code // to enter the quick,
+                            slow / everlasting story of British roads.’ Yet the
+                            poem is no folly. The tone is often self-deprecating
+                            but the method is attentive and thoughtful: ‘Skip
+                            some years - the panic attacks / in traffic jams.
+                            This / is an accelerated, partial history.’ Charting
+                            a life through this conceit is fruitful and
+                            constructive, illuminating the speaker’s impatience
+                            with stasis as the verse careens from one vehicle to
+                            the next. Appearing at the end of the collection,
+                            the title poem literalises the crisis of Sant’s
+                            mobility narrative. The theft of the speaker’s
+                            bicycle brings about a moment of truth, or at least
+                            a confrontation with what stasis might signify. The
+                            drama of ‘The Bicycle Thief’ unfolds in casual
+                            class-phobic speculation (‘You know the type. He
+                            needs a bike’), but as the poem develops, it locates
+                            the problem of mobility precisely at the
+                            intersection of class and race in suburban
+                            Australia. Although the speaker is initially
+                            helpless before ‘[t]he absence, next to the wall, /
+                            […] exactly the size / of my bike,’ it is the young
+                            man who is profoundly stuck, caught by the web of
+                            class and race expectation: ‘You’re a bad lot, you
+                            Muldoon’s, corrosive.’ The bicycle thief becomes the
+                            speaker’s fantastic other, upon which accelerant
+                            desires may be projected but perhaps poignantly left
+                            unfulfilled: So is getting in various measures,
+                            quickly, fame, the girl, and the money - with my
+                            best wishes. The gesture of good will here is
+                            earnestly made, signifying a transmission of romance
+                            - a young man’s wild dreams - across generations.
+                            Perhaps this exuberant paternalism is a major
+                            feature of the collection, Sant’s twelfth. But it is
+                            no easy task to decide upon one defining aspect of
+                            what is a pleasingly loose gathering of works, which
+                            along with mobility pursues themes around loss,
+                            ecology, temporality and personhood. This last is
+                            richly explored through recurring figures of
+                            anthropomorphised animals and animalised humans,
+                            mixed in poems such as ‘Animalia’, ‘Loose at the
+                            Zoo’ and ‘In the Villa Gorilla’. Sant’s framing of
+                            women is at times unsettling, where, rather than the
+                            bicycle thief, it is an abstract ‘woman’ so often
+                            poised to doom the dream of mobility. Nowhere is
+                            this more apparent than in the tongue-in-cheek ‘The
+                            First and Last Ballad’: I lived with a woman in a
+                            luxury flat where she criticised this and she
+                            criticised that In strict abcb form, the poem is the
+                            only piece in the collection that adheres to full
+                            rhyme, and the cyclic effect is claustrophobic and
+                            deadening. Is this playful sour grapes, or a more
+                            pessimistic broad view of the feminine? Overall, the
+                            collection is a wide-ranging account of a rich life,
+                            awake to the possibilities of unfettered energy, but
+                            ironical, self-deprecating. But for all the doubts
+                            aired Sant writes with confidence and charm. The
+                            first line of the collection, in ‘Lost Things’,
+                            cannily predicts the fate of The Bicycle Thief in a
+                            moment of reflexivity: A book, often lent to whom?
+                            Some friend! This is characteristic Sant - warmly
+                            welcoming his reader to the mischief. The Bicycle
+                            Thief presents Sant’s delight with the possibilities
+                            of language in transit, language as vehicle. This is
+                            poetry for lending, sharing, travelling – this
+                            collection wants to move.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Westerly Review</summary>
+                        <p>
+                            Aspects of Australian Poetry in 2012 Michelle Cahill
+                            Westerly, Issue 58:1, June 2013 Andrew Sant’s
+                            twelfth collection The Bicycle Thief is a witty,
+                            lyrical exploration of travel, transit and writing
+                            as forms of exile from existential gloom as well as
+                            from the inescapably mundane. From its opening verse
+                            ‘Postcard to Hamburg’, with its intrigue of names,
+                            nouns and addresses, somewhat redolent of Derrida’s
+                            La Carte Postale , human meanings and connections
+                            occur accidentally and are postponed by writing.
+                            Childhood, in a fabled tableau of poems like ‘The
+                            Motor Car’, is satirised, ‘Tame as a cliché,
+                            made/for postwar, predictable British / Sundays.’
+                            Collusions between travel and writing are
+                            acknowledged in many poems juxtaposing remote
+                            tundras or geological terrains with the digressions
+                            and exaggerations of words. In ‘Speed and Other
+                            Liberties’ the speaker seeks ‘liberty to finish the
+                            new book quickly’ while ‘Addicted to Islands’
+                            interplays a multiplicity of destinations, dalliance
+                            and parenthetical departures. Poems like ‘Animalia’
+                            and ‘The First and Last Ballad’ are humorously
+                            misanthropic in tone, yet overall The Bicycle Thief
+                            is a refined and most enjoyable collection to read.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sydney Morning Herald Review</summary>
+                        <p>
+                            Classy vehicle for entertaining verse Geoff Page
+                            Sydney Morning Herald, 8 June 2013 Andrew Sant moved
+                            with his parents from London to Melbourne, aged 12,
+                            in 1962 and has since lived in both countries for
+                            long periods. His work has been published more
+                            widely in Australia than in Britain but it retains a
+                            distinctly English flavour. This is felt mainly in
+                            its low-key, rather formal wit and its alertness to
+                            class. A good example is seen in ‘The Motor Car’, an
+                            eight-page sequence detailing his (mixed)
+                            experiences with nine successive cars, starting with
+                            his parents’ Morris Minor in the 1950s and
+                            culminating in ‘A Datsun. Sunflower yellow.
+                            Automatic / gears. Tragic.’ Most of the sequence is
+                            light-hearted but there are deeper moments, too. The
+                            same seriousness-amid-jokiness can also be felt in
+                            poems such as ‘Animalia’ (where at the London Zoo
+                            there are ‘once swift giraffes, / above it all, with
+                            a prime view of Regent’s Park’) or ‘In the Villa
+                            Gorilla’ (where an unusually intellectual gorilla is
+                            ‘working on a thesis about / why non-human creatures
+                            feature strongly / in kids’ literature, and in
+                            adult,/ weakly’). Technically, Sant is something of
+                            a formalist, though it is only in ‘The First and
+                            Last Ballad’, written in anapaestic dimeter with an
+                            abcb rhyme scheme, where this is explicit. (‘I lived
+                            with a woman / in a luxury flat / where she
+                            criticised this /and she criticised that’.) More
+                            typically, Sant prefers to scatter rhymes and half
+                            rhymes through roughly iambic lines of unequal
+                            length. Again, this playing with formality has a
+                            slightly self-deprecating ‘Englishness’ to it.
+                            Something of the same tone is heard in Sant’s
+                            impressive 10-page poem, ‘The Bicycle Thief’. Though
+                            the poem is set in Melbourne, there is a
+                            considerable ‘Englishness’ to it, best shown in the
+                            narrator’s playful awareness of class. We note
+                            particularly the difference between the somewhat
+                            diffident, self-ironising middle-class narrator who
+                            owns the bike and the criminal ‘underclass’ boy who
+                            light-heartedly steals it. The vehicle in question,
+                            ‘a ten-speed Wanderer, blue’ had been ‘Passed / on
+                            to me, free, to see / if I’d again take to riding -
+                            the likely / final owner. Wrong. It was gone. / The
+                            sun shone on the spot / where I saw it not / in
+                            actuality but in the shape / of my dismay.’ The
+                            narrator then visualises, in extensive and
+                            persuasive detail, just what the thief is doing,
+                            moment by moment - along with his various ambitions,
+                            his family situation, his ingrained (perhaps
+                            congenital) criminal habits and so on. Without
+                            saying so, Sant’s narrator implies that the thief
+                            has, in effect, done him a favour, forcing him (the
+                            narrator) to think more deeply, even empathetically,
+                            about a class of people he normally has little
+                            contact with. In the process, the young thief has
+                            generously, if unconsciously, provided the
+                            inspiration for a well-sustained poem with which to
+                            finish an already entertaining and effectively
+                            idiosyncratic book of verse.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Mystery Agent Martin Duwell Australian Book Review,
+                            No. 352, June 2013 There are some poets whose works
+                            only seem to come alive when seen in the light of
+                            their other poems. Andrew Sant may well be one of
+                            these. A Sant poem, read on its own, can often seem
+                            thoughtful but rather lightweight; embedded in one
+                            of his books, given a context by the surrounding
+                            poems, it becomes animated by a set of consistent
+                            themes and obsessions. Take, for example, the first
+                            poem of this new book, The Bicycle Thief . ‘Lost
+                            Things’ seems initially no more than a genial look
+                            at the way everyday possessions go missing. The most
+                            that could be said for it, on a first reading, is
+                            that it works by engaging one of Western
+                            literature’s greatest themes - loss (the way heroes,
+                            loved ones, and objects all eventually pass into the
+                            dark) - and, by providing homely, domestic examples
+                            avoids the temptation of being overblown. But ‘Lost
+                            Things’ turns out to be concerned not so much with
+                            loss as with perspective. As Sant’s poem points out,
+                            nothing really gets ‘lost’; the keys, socks,
+                            umbrellas, watches of the world simply inhabit a
+                            different space. It might be true that we cannot
+                            find them, but that is our problem: ‘All those /
+                            nose down searches only concern / fresh products of
+                            perspective.’ And perspective is one of the themes
+                            that runs through this book. Another is energy,
+                            (expressed even in the titles of his two previous
+                            books, Speed &amp; Other Liberties [2008] and Fuel
+                            [2009]) and a third is metamorphosis, another
+                            classic theme of Western poetry. This book’s title
+                            poem appears last and, together with ‘Lost Things’,
+                            nicely brackets the rest of the poems. It is a
+                            whimsical 300-line narrative about a particular lost
+                            thing, the author’s bicycle. As with the other
+                            poems, you have to read it in the light of the whole
+                            book for it to make much sense or, at least, sustain
+                            its length. The poem follows the stolen bicycle’s
+                            existence after the act of stealing; after, that is,
+                            the moment at which the author’s own perspective
+                            becomes irrelevant. We see how the bicycle lives on
+                            in the possession of its thief, taking him through
+                            the obsessions of his life: the girl at the chemist;
+                            the aunt and uncle who can provide some cash; the
+                            brush with the police, and so on. We feel that the
+                            energy of the bicycle’s existence somehow carries it
+                            beyond the author’s life into its own poem, where it
+                            is ready to keep a different person moving. It is
+                            all a matter of perspective, and Sant makes sure
+                            that we don’t miss these implications: The absence,
+                            next to the wall, was exactly the size of my bike.
+                            So let me fill you in. ... It is me, not him, the
+                            monkey, who is missing from the scene... ‘Deserter
+                            in the Counselling Room’ deals with a husband who
+                            disappears. From the perspective of the abandoned
+                            wife he is lost, but the counsellor tries to see
+                            things from the man’s perspective, whereby there is
+                            both guilt and a certain rightness in his actions.
+                            ‘Arrangements in Transit’is a summary of all the
+                            attractions of travel to an inveterate traveller, a
+                            reminder that travelling is a controlled kind of
+                            becoming lost, involving the jettisoning of all
+                            possessions apart from the essential - the ‘nomad’s
+                            weight’. The other poems of the book usually embody
+                            one or more of these interests: energy, change,
+                            perspective. In ‘Postcard to Hamburg’, a ‘lost’
+                            stamped postcard is popped into a letterbox so that
+                            it will arrive to the amazement of the sender. It is
+                            suggested that this will seem an example of those
+                            quantum-physics paradoxes whereby an object will be
+                            in two places at once, but the author’s real
+                            interest is in the way in which he, the finder and
+                            poster, becomes an absent ‘mystery agent’. ‘Beating
+                            the Chinese’ describes, on the surface, how the
+                            author, harnessing his energy, does well at table
+                            tennis against Chinese who are waiting for the
+                            announcement of the site of the 2008 Olympics. But
+                            it finishes by dwelling not on insubstantial
+                            table-tennis balls but on the wrecking balls that
+                            will soon, harnessing the same energy, demolish
+                            suburbs to prepare for the infrastructure. It is no
+                            surprise that when autobiographical material emerges
+                            it appears in the form of transformed energy and
+                            speed. ‘The Motor Car’ is subtitled ‘A Personal
+                            History’ and follows the author’s numerous cars
+                            (before they are abandoned for a bicycle). ‘Speed
+                            &amp; Other Liberties’ describes being pulled over
+                            for speeding in Iceland while needing both speed and
+                            liberty to finish the book of poems that gives its
+                            name to this poem. Stone is another locus for Sant’s
+                            interests, and a number of poems look at it as
+                            geological process focusing on the inhuman
+                            perspectives of geological time - ‘How fleeting //
+                            and small our comprehension seems.’ ‘Mudlark’
+                            revisits ‘Lost Things’ dealing with somebody who is
+                            ‘nose down among detritus. The motive is the search
+                            for objects of contemplation, granted that status
+                            because they provide tangible clues ‘to the past
+                            doings of his gene pool’. We find these solidified
+                            icons in the fossil of ‘Marine Desire’ as well as in
+                            the pebble picked up in ‘Thirroul’. Almost all these
+                            poems can be read as homely and genial visits to the
+                            wells of conventional themes, but that doesn’t do
+                            them justice. They blossom in the context of the
+                            surrounding poems, making Andrew Sant one of those
+                            poets of whom it is better to speak of their
+                            collective poetry rather than their poems.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Critical Survey Review</summary>
+                        <p>
+                            The Bicycle Thief John Lucas Critical Survey (UK),
+                            May 2013 Andrew Sant’s new collection is seriously
+                            good. It combines the fleetness of intellectual
+                            movement which is habitual to his work with a
+                            perceptiveness - of the human and natural worlds -
+                            that has about it such grace you feel that,
+                            different in many ways as her work is, Elizabeth
+                            Bishop would not only approve of The Bicycle Thief ,
+                            she’d delight in it. She might even envy Sant’s
+                            ability to master the art of losing - though
+                            admittedly her sense of loss (or losses) comes with
+                            an emotional freight he doesn’t tote. Which is as
+                            much as to say that he’s more connoisseur than
+                            participant in the various scenes and circumstances
+                            about which he writes. But this isn’t intended to
+                            imply that he’s in any sense the heartless onlooker.
+                            If anything, he’s a celebrant of the quotidian, of
+                            whatever happens to happen. It’s this that tells him
+                            to stick with his instinct for keeping on the move,
+                            physically, emotionally, mentally. As he says in
+                            ‘Addicted to Islands,’ ‘each destination/[was] a
+                            welcome escape and, sadly, // a possible trap. The
+                            tricky / as an adult he admitted, was not to OD...’
+                            The elan of these lines, their nimble pace, is
+                            inseparable from an acknowledgement that the ‘trick’
+                            of knowing when to choose is a kind of
+                            games-playing, and that the wrong move can mean
+                            depletion. A rolling stone may gather no moss but
+                            stoniness isn’t especially desirable. The really
+                            important trick, therefore, is to stay open to
+                            experience. In registering this, Sant shows himself
+                            to be the heartening opposite of those who,
+                            swallowing the post-modernist aridities of
+                            self-referentiality, see in the world only the
+                            nothing that is not there and the nothing that is.
+                            The opening poem of The Bicycle Thief , ‘Lost
+                            Things,’ sets the template for what is to follow. A
+                            wry, defiantly dandiacal take on what falls away
+                            from us, the detritus of our lives - ‘So many
+                            phones, bags, umbrellas’ - becomes a kind of
+                            synecdoche for human consciousness ‘All those/nose
+                            down searches only concern/fresh products of
+                            perspective.’ And the poem that follows, ‘Postcard
+                            to Hamburg,’ which seems at first blush an
+                            inconsequential anecdote about how the narrator
+                            picks up and posts a card someone had inadvertently
+                            dropped, neatly avoids the opportunity for a
+                            heavy-breathing meditation on Chance - ‘me, a
+                            mystery agent (call me Fate)’ - while delighting
+                            (that word again) in fortuitousness. It’s this which
+                            leads him in ‘Performance’ to celebrate a man who is
+                            ‘singing / under an ugly bridge’ and who must be
+                            doing so for the sheer joy of it. ‘He ignores / the
+                            walkers, and none / wants to be caught standing in
+                            front / of his storming performance.’ ‘Only the
+                            wasteful virtues earn the sun,’ Yeats proclaimed.
+                            There is no Yeatsian grandiosity in Sant’s quizzical
+                            take on this street performer, but there is an
+                            uncensorious pleasure in the registering of his
+                            singing which is cherishable because, to use a word
+                            I don’t often want to be found indulging, it is so
+                            humane. In a book crammed with excellent poems it’s
+                            difficult to point to any without feeling that
+                            others deserve equal attention. Still, here goes.
+                            There is, for example, the funny, laconic and not
+                            quite tongue-in-cheek ‘The Motor Car A Personal
+                            History’, with its confession of how, having been
+                            given the ignition keys, ‘Repeat, eight times... I’d
+                            had it // with old Volkswagens... // another smoking
+                            engine, then a bang, / Hitler’s vehicle, globally /
+                            at home, fit for scrap.’ There’s the Kees-like
+                            ‘Deserter in the Counselling Room,’ in which the
+                            observer notes a man ‘slipping out of the uniform /
+                            - the way he saw it - of marriage,’ and in whom,
+                            letting his imagination run free in a manner
+                            novelists might envy, he sees ‘in his genes,
+                            restlessness, a line / of bolters dating back to a
+                            medieval village / long since flattened... // a
+                            forebear itching to settle / on whether to fight for
+                            King / or Cromwell, and then escaping / into the
+                            privations of a dense forest.’ Escaping into
+                            privation - the characteristic twist of wit. Equally
+                            characteristic, equally poised, ‘Mr Habitat’s
+                            Birthday Candle,’ ends with the protagonist
+                            reflecting on ‘the time and place where / in effect,
+                            I crash landed in the dark // blow out an annual
+                            candle, imagine / weirder planets on which to get
+                            stranded.’ But perhaps first among equals in The
+                            Bicycle Thief &amp; Other Poems are ‘Homage to
+                            Warren Zevon,’ and the title poem. Between them,
+                            these two poems not only encapsulate the book’s
+                            virtues, they encapsulate the virtues which Sant so
+                            dextrously celebrates and, by his sheer skill as a
+                            maker of verse, endorses. Today I’m going to be a
+                            tough guy in a leather hat and shades, surprise
+                            myself without a flick-knife, go white, increase my
+                            heart-rate, threaten further inner retribution; hang
+                            out later, with Warren, my newest and now best mate.
+                            ‘Even in bed I pose.’ Thom Gunn’s famous opener is
+                            here echoed by a poet whose instinctively assured
+                            handling of assonance (guy, surprise, knife, white)
+                            has the virtues associated with the best song
+                            writers, among whom apparently the soon-vanished
+                            Zevon was to be numbered. I wouldn’t know, any more
+                            than I can follow the blizzard of names of those
+                            ‘who get by well enough without // the encumbrance
+                            of their surnames,’ but whom I assume to be part of
+                            the music world fingered in the poem; I do know,
+                            though, that this is a model of how to write an
+                            elegy appropriate for our times: slangily vivid,
+                            witty, evocative, and attentive to the subject
+                            without plonky rhetoric. The poem ends with the
+                            narrator saying he intends to seek out the Soho
+                            Chinese restaurant whose name, Lee Ho Fook’s echoes
+                            ‘your solitary hit - where / a wolf can eat alone,
+                            prowl the extensive menu / for beef chow mien and
+                            then, in character, howl.’ Prowl/howl. Being in
+                            character means keeping your wits about you. As for
+                            ‘The Bicycle Thief’ itself, it’s so unmistakably the
+                            goods that to say much about it feels superfluous. A
+                            long narrative poem, it begins, The absence, next to
+                            the wall, was exactly the size of my bike. So let me
+                            fill you in. There now, isn’t that the cat’s
+                            pyjamas, isn’t that a perfect way to reel any reader
+                            in. And does anyone need to have the adroitness of
+                            those line-breaks pointed out? What follows is a
+                            wondrous ruminant tale of how the narrator imagines
+                            the thief pedalling off on his own affairs, with his
+                            own concerns. Anger, irritation, speculation are
+                            gradually replaced by a feeling of almost enthralled
+                            involvement with the thief’s progress, through the
+                            day, through the city, through various meetings, the
+                            poem an utterly compelling story in verse which ends
+                            with the narrator imagining the thief as he comes to
+                            a bike shop and sees outside the ‘super model he
+                            longs for.’ But, having checked the price, he ‘looks
+                            recklessly / down on old reliable between his legs,
+                            / and thinks, honestly why bother? / He’s right.
+                            She’s most impressive. / So is getting in various
+                            measures, / quickly, fame, the girl, / and the money
+                            - with my best wishes.’ An urban pastoral, is this
+                            what this marvellous poem is? Perhaps, although I
+                            don’t want to trap it in terms that make it a herd
+                            animal. It’s out on its own. Simply the thing it is
+                            will make it live.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Weekend Australian Review</summary>
+                        <p>
+                            Poets at home in the natural and manufactured worlds
+                            Ali Jane Smith The Weekend Australian , 27 April
+                            2013 As one of the founders of Tasmania’s Island
+                            magazine, a survivor in the uncertain world of
+                            Australian literary journals, Andrew Sant’s place in
+                            Australian literary history would be assured had he
+                            never written a line of his own. In fact, his
+                            published collections of poetry run to double
+                            figures. The Bicycle Thief &amp; Other Poems opens
+                            with ‘Lost Things,’ a poem, at first reading,
+                            intended to amuse. As we will learn later in the
+                            book, Sant is an admirer of the American poet
+                            Elizabeth Bishop, so ‘Lost Things’ must stand
+                            against the background of her villanelle ‘One Art,’
+                            and its refrain, ‘the art of losing isn’t hard to
+                            master.’ Bishop’s poem begins with trivial things
+                            but closes with the loss of a loved person. While
+                            Sant does not refer directly to death, his poem is
+                            haunted by ‘One Art,’ and as the collection unfolds
+                            we do learn of a profound loss experienced by the
+                            figure at the centre of the poems. How to read,
+                            then, the closing lines of ‘Lost Things’? Nothing’s
+                            lost, intrinsically. All those nose down searches
+                            only concern fresh products of perspective. Is the
+                            poet referring to some abiding presence after death,
+                            or is he thinking only of material losses: keys,
+                            books, wallets? I lean towards a metaphysical
+                            interpretation, given his treatment of the material
+                            world in his long poem, ‘The Motor Car.’ The
+                            enthusiasms and difficulties of car ownership, the
+                            love and frustration played out between fathers and
+                            sons over the family car, the car as courtship
+                            display and as a repository of secrets, are among
+                            the byways travelled here. Subtitled ‘A Personal
+                            History,’ this piece will perhaps be most enjoyable
+                            for readers of a certain age who share Sant’s
+                            memories of makes and models: the poem does not
+                            resist nostalgia, though eventually the owner of a
+                            string of Morris Minors and Volkswagens becomes
+                            disillusioned with cars, which have become: - pests
+                            wrecking a planet made, where it’s flat to
+                            accommodate easy perambulation. A highlight of The
+                            Bicycle Thief is ‘The Other Life,’ a poem in which
+                            the road not taken is spelled out in detail that is
+                            humorous and sad. Central to the poem is a migration
+                            that, in the imaginary world of ‘The Other Life,’
+                            never happens. Sant gets this one just right,
+                            shifting between everyday habits - ‘My father read
+                            the New Statesman’ - and momentous events - ‘My
+                            mother lived’. Eventually, the imagined other life
+                            washes away. Sant clearly values the formal
+                            qualities of poetry. He uses conventional, though
+                            often convoluted, syntax. There are places where it
+                            feels as though a poem might have been tightened,
+                            the sentence structure simplified, but leanness and
+                            brevity are clearly not Sant’s style. He writes as
+                            though for a circle of listeners sinking into their
+                            whisky around a fire that has settled into glowing
+                            coals, with a chuckle at times, and a solemn nod at
+                            others.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>artsHub Review</summary>
+                        <p>
+                            The Bicycle Thief Travis Englefield ArtsHub , 5
+                            April 2013 A gorilla imagined as an anthropologist,
+                            a lost postcard serendipitously arriving where it
+                            was always supposed to go, a rumination on the
+                            symbolic and practical usage of islands, and a
+                            shopping list as a manifesto for middle-age. These
+                            are just some of the subjects of Andrew Sant’s
+                            eclectic new collection, in which he uses a lot of
+                            words to construct a kind of prose poetry which
+                            perfectly enunciates the quirks of being a curious
+                            boy in the body of an aging poet. If the objective
+                            of The Bicycle Thief is unclear, it’s certainly not
+                            for an evasion of meaning or a dearth of ideas. Sant
+                            insistently (and sometimes literally) leaves no
+                            stone unturned in creating lyrical portraits of his
+                            Wes Anderson-like worlds. It’s just that between the
+                            autobiographical tales, the ruminations on history
+                            big and small, the memoriams, the experiments, and
+                            the dalliances with the offbeat and fantastic, it’s
+                            hard to get a grasp on the tone, the subtleties, of
+                            where the work is coming from. A place to start
+                            might be the poems bookending the collection - ‘Lost
+                            Things’ and the titular poem. ‘Lost Things’ ponders
+                            the lives activated by spaces all the lost,
+                            forgotten and missing things open up, while ‘The
+                            Bicycle Thief’ begins with the narrator’s factual
+                            bicycle and ends several suburbs, generations and
+                            social classes away at the hands of its fictional
+                            thief. These poems, like much of the collection, to
+                            an extent examine the secret lives of the world
+                            passed by and the secret worlds of lives passed by.
+                            This can mean telling a speculative yarn about how
+                            life might have been had Sant never emigrated to
+                            Australia, an unreliable recounting of a
+                            relationship, or a reverential yet irreverent
+                            vignette about time spent at a residence of D.H.
+                            Lawrence - ‘a shrine / that isn’t , private behind a
+                            high fence’. All of which makes for an engaged
+                            reader/listener, though often an unmoved one. The
+                            problem with the collection is twofold. Firstly,
+                            Sant is prone to over-telling, to the extent that
+                            there is no imaginative space in the poems and the
+                            poetry is rendered entirely cerebral. That this has
+                            no aesthetic function – the phrasing is clunky and
+                            rarely memorable - makes it doubly difficult to
+                            digest. Secondly, there is a conviction that small
+                            details denote emotional/intellectual heft, which
+                            ultimately comes across as a bizarre fixation on
+                            banal moments that too often fail to make the
+                            intended leap to the sublime. This, combined with
+                            the juvenile navel-gazing, can make the otherwise
+                            riveting subject matter a little trite, Sant often
+                            showing himself up as the person asking a question
+                            just after it’s been answered. Which isn’t to say
+                            that the poems don’t have purpose - they are
+                            well-conceived, playful explorations of the distance
+                            from the quirky to the eternal, and resonate with an
+                            intellectual clarity which keeps them alive once the
+                            excesses of the explanations are forgotten. Sant has
+                            plenty of wonderful, clever and durable ideas, but
+                            they just might be better served by an economy of
+                            language which gives some credit to his audience’s
+                            own intellects and imaginations. Back to top Start
+                            of StatCounter Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

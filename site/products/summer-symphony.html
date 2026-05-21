@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,194 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/summer-symphony.svg&quot;);
                         "
                     >
-                        Featured
+                        Summer Symphony
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Colin Duckworth</h3>
+                </div>
+                <img
+                    alt="Cover of Summer Symphony"
+                    class="product-cover-mobile"
+                    src="/assets/books/summer-symphony/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Summer Symphony"
+                        class="product-cover"
+                        src="/assets/books/summer-symphony/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        1971. In London’s Festival Hall Alan Scott’s Symphony of
+                        Universal Healing is first performed. Its mystic
+                        harmonics have extraordinary effects on the audience: an
+                        elderly woman stands up, exclaiming she has not been
+                        able to do that for years. Another, younger, woman,
+                        admits without embarrassment that the performance gave
+                        her an orgasm. In this predominantly English
+                        middle-class audience the unthinkable has happened.
+                        People start to talk openly about an unusual feeling of
+                        wellbeing. After the concert a stranger introduces
+                        himself to Alan and his wife as an old school friend,
+                        Keith Maxtel. From that point on, the disquieting past
+                        intrudes.The chequered love story of Alan and his wife
+                        Bella begins when they are fifteen and Hitler’s bombs
+                        are raining down onEngland. Their musical quest
+                        (mystical to Alan, scientific to neuropsychologist
+                        Bella) is sparked by their experience of an inexplicable
+                        healing phenomenon in a Norman château duringthe
+                        Liberation. It extends to the past and the future, from
+                        Paris in the 1890s to California in the early 21st
+                        century. Alan is determined to find out why he, a
+                        musically gifted but nondescript boy from a suburban
+                        background, became guardian of such powerful mystical
+                        harmonies. Harmonies which others might seek for their
+                        dark and destructive aspects. Alan and Bella’s decisions
+                        will prove crucial. Duckworth’s pace and timing are just
+                        about perfect. The Weekend Australian
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 28.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/summer-symphony.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/summer-symphony/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044993</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2005</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>334</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Colin Duckworth was known internationally for major
+                            works on the 18th century, especially Voltaire and
+                            French counter-revolutionary espionage, and on
+                            modern theatre, with particular reference to Samuel
+                            Beckett.
+                        </p>
+                        <a class="bold" href="/authors/colin-duckworth.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>William Brown, Wet Ink</summary>
+                        <p>
+                            The Latest Word Summer Symphon William Brown Wet Ink
+                            , Issue 3, Winter 2006 Summer Symphony chronicles
+                            the lives of Alan Scott, composer, and Bella
+                            Cassell, neuropsychologist and their efforts to
+                            transcribe and understand the seven harmonies (which
+                            exist only in Alan’s mind). The seven harmonies are
+                            an immensely powerful combination of musical
+                            frequencies that have great effect on the human mind
+                            and body for good or possibly ill. Told mostly from
+                            the perspective of Alan, this fascinating tale takes
+                            the reader from wartime Birmingham and London,
+                            England, through post-war France and up to
+                            present-day California, with focus on 1970’s London.
+                            Though the section headings, comprised of music
+                            terminology and quotations, may seem daunting at
+                            first, it is not necessary to be familiar with
+                            either to appreciate this tale. It is not necessary,
+                            either, to be able to read French, which appears
+                            frequently in the early sections of the story.
+                            Summer Symphony is written so that anyone,
+                            regardless of linguistic or musical experience, can
+                            enjoy and understand it. Though I admire the
+                            creativity, structuring and loads of research that
+                            were utilised in constructing this book, the
+                            narrative voice detracted from the experience for
+                            me. Though this voice is disembodied, it is at times
+                            too strong - especially when jumping across
+                            character perspectives, revealing the thought
+                            processes of those characters, and foreshadowing
+                            events to come. If the characters are allowed to
+                            show the tale through their own actions and
+                            dialogue, the illusion is stronger, and the story
+                            more gripping and real. The real strength of this
+                            story comes out in the early sections of Alan’s life
+                            - when he meets Bella, comes to grips with the music
+                            in his head, and experiences all those firsts we all
+                            went through growing up. Alan, and thus the story,
+                            experiences more conflict not just because of the
+                            Battle of Britain, but because he is growing up,
+                            discovering his family history, finding his path and
+                            leaving home. Not to say that a strong story is
+                            solely based on conflict and firsts, but in these
+                            early sections the narrator allows the story to
+                            express itself more, and is stronger for it. Summer
+                            Symphony is an ambitious work, a rich read. I would
+                            have liked to read the story to its natural
+                            conclusion - it is a shame that this book is a
+                            ‘novel in four movements’ instead of an epic in four
+                            books.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

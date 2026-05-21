@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,490 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-prisoner-gains-a-blurred-skin.svg&quot;);
                         "
                     >
-                        Featured
+                        The Prisoner Gains a Blurred Skin
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Nicholas Playford</h3>
+                </div>
+                <img
+                    alt="Cover of The Prisoner Gains a Blurred Skin"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-prisoner-gains-a-blurred-skin/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Prisoner Gains a Blurred Skin"
+                        class="product-cover"
+                        src="/assets/books/the-prisoner-gains-a-blurred-skin/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Nicholas Playford - now Avatar Polymorph - is a
+                        masterful writer. His fourteen tales of the imagination,
+                        of bizarre transformations, are in the tradition of Poe
+                        and Borges. Fringe citizens of Australian society are
+                        revealed in ways which haunt us. His microscopic vision
+                        of how the senses affect his characters transforms our
+                        perception of their lives. He looked at Curtis’s face,
+                        examining the pores of his skin and the sliced bristles
+                        on his chin. On a scale of millimetres the phenomenal
+                        world became tangled. These stories are subtle and
+                        innovative. They are clinically satirical and have a
+                        miniaturist visual style. His Canberra, Melbourne and
+                        Adelaide are places we have not yet seen. The
+                        ontological flux of the everyday is suddenly revealed as
+                        overwhelmingly fantastic. The Prisoner Gains a Blurred
+                        Skin is the work of a rational being contending with the
+                        tumult of emotion. If his world is seen through a
+                        magnifying lens, that lens is also trained on us. The
+                        Prisoner Gains a Blurred Skin was the first title
+                        released by Black Pepper. Cover painting Spain (1950) by
+                        James Gleeson
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 21.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-prisoner-gains-a-blurred-skin.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-prisoner-gains-a-blurred-skin/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>187560619X</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1994 (released 1995)</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>169</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Nicholas Playford was born in the storeroom of a
+                            Canberra hospital on 5 May 1961, the same day that
+                            Alan Shepard became the first American to leave
+                            planet Earth and travel into space.
+                        </p>
+                        <a class="bold" href="/authors/nicholas-playford.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Brenda Walker, Australian Book Review</summary>
+                        <p>
+                            Fantastic Fictions Brenda Walker Australian Book
+                            Review , February/March 1995 Apparently Jules
+                            Renard’s final journey entry had a lasting influence
+                            on Samuel Beckett. In Deirdre Bair’s book on Beckett
+                            the story reads: ‘Last night I wanted to get up.
+                            Dead weight. A leg hangs outside. Then a trickle
+                            runs down my leg. I allow it to reach my heel before
+                            I make up my mind. It will dry in the sheets.’ The
+                            scrupulous notation of bodily sensation which
+                            Beckett enjoyed is also one of the unusual qualities
+                            of Nicholas Playford's first story collection, The
+                            Prisoner Gains a Blurred Skin . The style is less
+                            concerned with intimacy than with cumulative detail,
+                            with precision. There is often a scientific rather
+                            than an emotional conviction in this work, though
+                            the work does have emotional depth. Playford also
+                            has some of the stylistic flamboyance, the pleasure
+                            in the texture of language, which is like Beckett's
+                            early fiction, before he moved towards austerity. My
+                            favourite story is ‘Whale’, dominated by the great
+                            and threatened shape of a terminally ill
+                            grandfather. The grandfather is part of an
+                            experimental drug program. The side effects of the
+                            drug have already killed two participants. These
+                            side effects are a physical manifestation of the
+                            horror of ageing: primarily skeletal growth and
+                            distortion, as if the very structure of the loved
+                            body must finally grow huge and twist. The bulk of
+                            the dying is more than physical. The observing
+                            grandson cherishes and resents the dying man. There
+                            is tact and resilience in the grandson’s conclusion:
+                            ‘I looked down at the water and the wooden supports
+                            beneath the long ramp of the pier and wanted to hug
+                            him but could not. I clutched the tough fence.’ ‘The
+                            Birth of Stone Revealed in Vapours’ is another
+                            strong story, this time about labour, physical
+                            deprivation and significance. Three exhausted
+                            workers sort unidentified pellets in a shed in the
+                            Adelaide hills. They are isolated from the factory
+                            and the community - from the sites of production and
+                            consumption. They have no idea of the product’s
+                            function. An industrial accident poisons the
+                            atmosphere, which seems to liquefy, then harden into
+                            stone. Having refused an underhand rescue offer from
+                            the son of the factory manager the workers are
+                            enclosed in stone. The last narrator defies a final,
+                            ambiguous consolation: As the substance hardened I
+                            began to lose the sensation that it was pushing
+                            against me. It was as if we were floating in another
+                            dimension, bereft of all senses save touch and pain.
+                            I was not thirsty, and my hunger had left me. There
+                            were no disasters left and no expectations, just the
+                            stone, come from some reckless folly beyond our
+                            understanding. The world narrowed to the warmth of
+                            my comrades and the beat in their blood vessels,
+                            things without change. The irony of course is that
+                            in this atmosphere bodily warmth will change, the
+                            workers will die. Solidarity occurs in a fatal
+                            industrially misproduced solidity which blinds,
+                            deafens and prevents movement, indeed, workers ‘lose
+                            the sensation’ of resistance. Escaping with the
+                            bosses is impossible, even if workers are invited to
+                            escape, yet worker solidarity is not effectual.
+                            Several stories explore situations of helplessness.
+                            One of these is ‘Examining the Audacious Edifice.’
+                            Sub-headings indicate the emotional territory:
+                            Imprisonment , Suspicion , Inertia , Difficulties ,
+                            Apathy , Action , Future , Perplexity , Loss and
+                            Catastrophe . Each heading has a brief quotation
+                            from what I assume is a Tarot guide, as if to
+                            suggest the inevitability of the imprisonment etc
+                            which follows. There is an ironic play, too, between
+                            the fantastically exotic Tarot predictions and the
+                            more prosaic story: This crowns him; in the World,
+                            reversed, a naked woman holding two scrolls .floats
+                            in the sky, tresses of her long hair suspended in
+                            ignorance of gravity, surrounded by a wreath and
+                            partially hidden by an unfurled length of
+                            snow-coloured silk. He lay on his bed and wished
+                            that he could sleep. He liked the accommodation but
+                            was concerned that he was too dissimilar to the two
+                            women who lived with him. Both were office workers
+                            and less than twenty years old. Though tactically
+                            prosaic, the story is not uneventful. A man feels
+                            uncomfortable with his house-mates, they have little
+                            in common. Misinformed police raid the house,
+                            looking for narcotics. The door is smashed,
+                            possessions are exposed not only to strangers but to
+                            a fierce and authoritative dog. The tentative
+                            hopefulness which the character has brought to the
+                            household is fractured, there is to be no social
+                            place for him and he leaves for the isolation of a
+                            hostel. Like much of the writing in this collection.
+                            ‘Examining the Audacious Edifice’ is a tense, sad,
+                            powerful story. Many of the stories are about sexual
+                            estrangement through active betrayal, indifference
+                            or complete misunderstanding. This is where
+                            Playford’s precise notation of sensation is most
+                            apparent and where it most obviously contributes to
+                            the general effect of distancing and isolation.
+                            These narrators are not lovers, they are watchers
+                            and classifiers: I firmed my caresses, attempting to
+                            assert my socially defined masculine role; though
+                            not brawny she was strong, and her body stipple. I
+                            took in her scent, the celebration o f her arousal -
+                            I knew that we were going to have sex, and with that
+                            intimate knowledge I became conscious of my penis, a
+                            hardening tube within my underwear, minimally wider
+                            at its base, and touched the roughness of the brim
+                            of my tongue to hers, tasting her saliva. In another
+                            story the narrator claims that ‘The rush of the
+                            haptic overwhelmed me.’ There is no sense of
+                            overwhelming tactile involvement, but rather of
+                            objective notation. This estranging precision
+                            extends to the non-sexual. In one story the narrator
+                            clears his throat, ‘swallowing the gelled secretion
+                            of my salivary glands.’ Here he scrutinises
+                            involuntary interior processes. The final story
+                            describes a man who is so emotionally disassociated
+                            that he abandons his species, becoming a bird. There
+                            is considerable diversity in these stories, yet what
+                            they have in common and what they offer the reader
+                            is a perception of the actively fantastic - as in
+                            the transformation of species - or the part that
+                            language can play in the edginess of social
+                            detachment and Cartesian internal division. There
+                            are dangers in writing about these issues, including
+                            the danger that the fantastic will become abstract
+                            or cryptic, and the notation of estrangement will
+                            estrange the reader. Yet social detachment and
+                            internal division are the issues of Beckett’s early
+                            work and it will be interesting to see where they
+                            take Nicholas Playford’s fiction.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Pamela Eade McCasker, Overland</summary>
+                        <p>
+                            Pamela Eade McCasker Overland , 140, Spring 1995
+                            Nicholas Playford’s new collection of stories, The
+                            Prisoner Gains a Blurred Skin , teases the reader
+                            with its sense of dislocation. Many more questions
+                            are asked than answers given. In ‘Encircling the
+                            Rose Garden’, a story written rather
+                            confrontationally in the second person, the
+                            protagonist, contemplating a rose garden while
+                            struggling to accept the cooling of her lover’s
+                            passion, is asked by the narrator: ‘How many thorns
+                            can you see? Thousands? The information is before
+                            you but you can’t assimilate it.’ The author’s
+                            writerly eye zooms in like a camera to reveal the
+                            micro world underlying the macro one: ‘The burn
+                            marks running down his deltoid... tell of when you
+                            ate halva together.’ These stories’ sense of
+                            physical location is as sharp as the emotional
+                            landscape they inhabit is foggy. In ‘Hinges’, Harry,
+                            apparently employed to renovate an old house, is
+                            actually being put to a far more sinister use.
+                            Playford further undermines our belief in his own
+                            vividly-drawn realities by throwing the reader
+                            off-balance with metaphysical data which makes
+                            nonsense of certainties. In ‘The Fragmentation of
+                            Tyres’, a spectral hitchhiker warns Emily: ‘our
+                            minds are potent, they can turn dream into bland
+                            reality’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian Review</summary>
+                        <p>
+                            Terry Dowling Science Fiction, The Weekend
+                            Australian , 13-14 May 1995 Another debut collection
+                            appears here, not because its 14 stories are
+                            patently genre (few fit the popular definition - by
+                            way of an experimental drug, mysterious stones, a
+                            suggestion of psychic vampirism, transformation into
+                            a bird) but because of a focus, a set of narrative
+                            modes, sensibilities, perceptual postures if you
+                            like, which, as in the work of Borges, David Brooks,
+                            Gerald Murnane or in J.G. Ballard’s Atrocity
+                            Exhibition , bring the reader to a shift in viewing
+                            the commonplace fundamental to the genre. These
+                            aren't always easy stories to enjoy, with detached
+                            delivery and often passionless accretions of detail:
+                            ‘Her pink tongue had been visible, the detail of its
+                            tissue like cellular stucco’ or ‘his sunburnt hands
+                            swung the dimpled steering wheel from side to side,
+                            its oscillations an encoded rhythm, a different map
+                            of the city.’ But when the technique works, as in
+                            the title story, this intense objectification - and
+                            fantastication - of context does alter ‘the nature
+                            of comprehension,’ attuning us to how we each put
+                            reality together for ourselves. Still, as the young
+                            handyman in ‘Hinges’ reflects, an audience is ‘a
+                            valuable thing.’ One can only wonder if the audience
+                            can be beguiled long enough for any of the book’s
+                            very real gifts to emerge.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Melbourne Star Observer Review</summary>
+                        <p>
+                            New Fiction on the Bookshelf Marcus O’Donnell
+                            Melbourne Star Observer , 27 January 1995 From the
+                            opening tale in this impressive collection of
+                            stories we know to expect the unexpected; we
+                            immediately feel in the real world but slightly
+                            askew. Written in an unsettling second person
+                            address, like a letter from an omnipotent stranger
+                            never sent, the story charts the dissolution of
+                            Ursula’s relationship with Timothy through the
+                            metaphor of a garden where every rose holds a memory
+                            of their relationship. There’s a story of the menage
+                            a trois between Regina, Thomas and Toby where
+                            Thomas’ academic interest in terrorism imaginatively
+                            takes off. Then there’s the story of a schizophrenic
+                            cleaner who sits in a cupboard in total darkness for
+                            much of her day, watching bizarre and violent
+                            visions. A bungled police drug raid on a Canberra
+                            group household is related through the structure of
+                            a Tarot reading, playing with notions of fate, force
+                            and the violence of destiny. Playford has worked in
+                            both state and federal government bureaucracies, and
+                            his family is famous for its involvement in
+                            politics, perhaps as a consequence, his language is
+                            often that of a bureaucrat. It follows a certain
+                            precision, as if each word has been chosen and
+                            placed for its absolute correctness. This often
+                            works as an ironic counterplay to the surreal events
+                            described, but it can work to undermine the full
+                            emergence of particular characters. There is a sense
+                            in which Playford needs to become more playful and
+                            discover a range of voices to suit his range of
+                            characters.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Paperbacks Veronica Sen The Canberra Times , 22
+                            January 1995 Eerie and disturbing, Nicholas
+                            Playford’s The Prisoner Gains a Blurred Skin
+                            consists of short stories as unusual as the
+                            collection’s title. Many of them set in Canberra,
+                            they reveal characters in off-balancing and
+                            heightened situations, such as dealing with soul
+                            vampires, other people’s nervous breakdowns, weird
+                            physiological changes and strange fantasies.
+                            Playford seizes attention with his exploration of
+                            alienation and perversity and of the bizarre
+                            potential of seemingly normal events. Even though
+                            obsessive detail and circumlocution are often
+                            germane to the character - ‘I was unhappy with her
+                            presence in the geomorphology of my cerebrum’ -
+                            there is also a tendency in the stories towards
+                            stilted expression and striving too hard for effect.
+                            He is best at his most simple, as in a story set in
+                            the gardens of Old Parliament House.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Synapse Review</summary>
+                        <p>
+                            Synapse , December 1994/January1995 One of the first
+                            publications from a new fiction imprint, Black
+                            Pepper, this collection of short stories is
+                            immediately striking for its cover alone. It
+                            features a painting by the great James Gleeson -
+                            visceral, Jungian, surrealist and haunting. The
+                            Prisoner Gains a Blurred Skin is imbued with a
+                            similar mood, of brooding and nakedness. It has
+                            several unusual features. Nearly all the stories are
+                            set in Canberra or Adelaide, rather than the larger
+                            metropolises. Playford takes full advantage of the
+                            physicality of the locations, and the works take on
+                            the quality of cinema. Interestingly, his
+                            super-realism and strong narrative drive compensate
+                            for a use of unsual states of mind. He makes
+                            consistent and teasing references to schizophrenia.
+                            ‘The Birth of Stone Revealed in Vapours’ deals with
+                            a near future in the Adelaide Hills where three
+                            women slave under an eternal summer. They flee an
+                            industrial accident which turns the air to sludge,
+                            to something solid, and yet they live. Playford’s
+                            concern here is not to construct an alternative
+                            world but to flesh out metaphors - for the migrant
+                            experience, and the commonality of human suffering.
+                            It is a rhapsody about the resilience of the human
+                            spirit in the face of tragedy. This collection is
+                            strong meat, and requires the reader’s attention.
+                            While the book has its share of sarcasm and
+                            pessimism, one is left feeling rewarded, as Playford
+                            is searching for systems of moral truth. A good
+                            start for the Black Pepper imprint.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Bloodsongs Review</summary>
+                        <p>
+                            Jeff Wearne Bloodsongs , 1995 Tall and lanky, with
+                            dyed-blond hair and steel-rimmed glasses, Nicholas
+                            Playford is a familiar figure among the bohemians
+                            and literati that still haunt, like pale ghosts, the
+                            now yuppified pubs and cafes of Brunswick Street,
+                            Fitzroy. Intense, articulate and serious, 33 year
+                            old Nick discussed his first book of short stories
+                            over a beer at Rhumberallas. It is a handsome
+                            paperback, the first from Black Pepper, a new
+                            imprint publishing innovative Australian fiction and
+                            poetry, with a striking cover painting, the first of
+                            his works to be used this way, by James Gleeson, the
+                            now aging master of Australian surrealism. Nick
+                            describes his stories as ‘fantasies about the nature
+                            and perception of being’ that us ‘states of mind
+                            bordering on the schizophrenic to illustrate
+                            metaphorical ideas.’ His precise and microscopic
+                            descriptions of our constructed urban environment,
+                            with its ordered rituals and stylized sensations,
+                            reveal this world to be unreal and bizarre. When
+                            emotion breaks through into this rational universe
+                            it transforms and liberates. In several stories the
+                            ending of relationships becomes a freeing from
+                            psychic bondage, from being ‘trapped in otherness.’
+                            The deceptively dead-pan ‘Hinges’ is a sinister tale
+                            of psychic vampirism. 'The Fragmentation of Tyres’
+                            is a hallucinogenic nightmare in which a woman
+                            driving from Canberra to Melbourne is pursued by the
+                            spectres of a lesbian hitch-hiker and a deranged
+                            motor mechanic. Another piece realtistically tells
+                            the true story of an unjustified police raid on a
+                            shared household. Anyone who has had this
+                            unfortunate experience, and there are quite a few of
+                            us, will relate to this one. Two stories stand out.
+                            In ‘Orientation of the Cinder-Track Horizon’
+                            infidelity and sado-masochism lead to a revelation
+                            of love, and the title story, ‘The Prisoner Gains a
+                            Blurred Skin’ is an occult tale of transcendental
+                            mysticism, set in modern Canberra. J.G. Ballard is
+                            an important influence, particularly The Atrocity
+                            Exhibition and Crash expositions of the perversions
+                            and pathologies latent in modern life. Nick told me
+                            that Canberra, where most of his stories are set,
+                            was like a landscape straight out of a Ballard
+                            story, with its ‘antiseptic beauty’ and obsessively
+                            planned artificiality. To illustrate, a few story
+                            titles; ‘The Skimmer Upon the Perceptual Sea,’ ‘The
+                            Birth of Stone Revealed in Vapours,’ ‘Examining the
+                            Audacious Edifice.’ But if you are looking for
+                            innovative and ambitious modern Australian fiction,
+                            this unusual collection should satisfy.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

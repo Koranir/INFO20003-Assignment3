@@ -10,7 +10,7 @@ def make_bestsellers():
     for key in bestsellers:
         book = books[key]
 
-        with d.div(cls="bestseller"):
+        with d.a(cls="bestseller", href=f"/products/{key}.html"):
             d.img(
                 src=cover_path(key),
                 alt=f"Cover of {book['title']}",

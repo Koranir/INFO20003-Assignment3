@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,460 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/michelangelos-prisoners.svg&quot;);
                         "
                     >
-                        Featured
+                        Michelangelo’s Prisoners
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jennifer Harrison</h3>
+                </div>
+                <img
+                    alt="Cover of Michelangelo’s Prisoners"
+                    class="product-cover-mobile"
+                    src="/assets/books/michelangelos-prisoners/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Michelangelo’s Prisoners"
+                        class="product-cover"
+                        src="/assets/books/michelangelos-prisoners/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        In the title poem of her first collection Jennifer
+                        Harrison re-imagines art history as a mastectomised
+                        aesthetic. Her poetry is of a kind to be found nowhere
+                        else. She uses her scientific and medical training to
+                        give her poems a sinuous intellectual backbone. It
+                        allows her feminist and humanist concerns to affect us
+                        with unusual force. She presses into controlled
+                        intensity a lyrical response to typical late 20th
+                        century displacement. I once saw a baby catching
+                        sunlight in his hands - everywhere the child touched he
+                        laughed at what he could not touch until language
+                        wheeled his pram away and he learned that silhouettes
+                        and sun were called chair and where. Part One: The Body
+                        is a celebration and critique of medical and scientific
+                        achievement made poignant by her own particular
+                        experience. Part Two: The Sea broadens out to examine
+                        love, childhood, the family, other societies and
+                        friendship. Michelangelo’s Prisoners announces the
+                        arrival of a significant new poetic voice. Black
+                        Pepper’s second title, and its first book of poetry, it
+                        won the 1995 Anne Elder Award. &quot;Jennifer Harrison’s
+                        Michelangelo’s Prisoners was immediately engaging and
+                        stood out from the rest of the entries. Harrison
+                        posseses a mature poetic sensibility and which allows
+                        her to tackle a wide range of subjects, reflecting her
+                        own personal and professional experiences. Her
+                        scientific and medical reflections are accesible to the
+                        general reader because Harrison draws on a disciplined
+                        and intellectual lyricism to illustrate her subjects.
+                        This is an impressive first collection of poetry and one
+                        which demands re-reading&quot;. Catherine Bateson and
+                        Barbara Giles, Judges - Anne Elder Award 1995
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/michelangelos-prisoners.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/michelangelos-prisoners/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1875606203</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1995</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>56</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jennifer Harrison was born in Liverpool, Sydney, in
+                            1955, in a motorbike shop. She completed a medical
+                            degree in 1979 and her training as a psychiatrist in
+                            1990.
+                        </p>
+                        <a class="bold" href="/authors/jennifer-harrison.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Southerly Review</summary>
+                        <p>
+                            WRITER AND READER - Michelangelo’s Prisoners David
+                            McCooey Southerly Review - Summer 1995 A new poet
+                            also concerned with the troubling implications of
+                            the materialist view of existence engendered by
+                            medical science is Jennifer Harrison. Michelangelo’s
+                            Prisoners is no doubt partly achieved through
+                            Harrison’s experience as a psychiatrist, but it is
+                            not clear whether this is the ‘particular
+                            experience’ alluded to in the book’s blurb which
+                            makes the first section regarding the body
+                            ‘poignant’. It does not really matter if Harrison’s
+                            experience is from either or both sides of the
+                            medical fence; her writing is acute, sharply
+                            observed and her musicality is sinuous and muscular.
+                            For instance, in ‘Aus-lan’, a poem about the
+                            Australian sign language of that name, Harrison
+                            makes the kinds of connections, at once precise and
+                            mysterious, which are required for such a poem. She
+                            writes of a baby catching sunlight in his hands -
+                            everywhere the child touched he laughed at what he
+                            could not touch until language wheeled his pram away
+                            and he learned that silhouettes and sun were called
+                            chair and where The last line gives a rigour which
+                            saves the image from the cloying, but at the end she
+                            returns to the image and the subject of the poem
+                            with extraordinary effect: her friend teaches me the
+                            sign Forget it is a fist placed against the right
+                            temple the hand opening, flicking sun away from the
+                            head Again, the pastorals are piscatorial, even when
+                            (as in the New Guinea poems) subterranean rumbles
+                            can be heard. Part two is ‘The Sea’ and even the
+                            brain, that site of fascination for Harrison, can be
+                            described in such terms: ‘in sea-grey cells, memory
+                            stirs, flows back / across a sandy ti-tree shore’
+                            (‘St George’s Basin’). This poem doesn’t really go
+                            anywhere, but where in such a landscape (or
+                            seascape) is there to go? A number of the poems in
+                            the first half of the book work by associating
+                            scientific (in particular neurological) language
+                            with poetry. For me, however. Harrison’s best poems
+                            work often through the suggestiveness and
+                            indirection of the sea.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Imago</summary>
+                        <p>
+                            Michelangelo’s Prisoners Silvana Gardner Imago, Vol.
+                            8, No. 2, Spring 1996 Jennifer Harrison’s first
+                            collection, Michelangelo’s Prisoners , is unusual in
+                            its free-range use of medical or scientific terms,
+                            which, mercifully, are explained in the Notes. While
+                            I was intrigued by the mystique of a new tongue, the
+                            charisma of the foreign, I became impatient when I
+                            had to stop regularly to consult a dictionary. On
+                            the one hand, I believe new language is educational
+                            and widens one’s knowledge but if there’s too much,
+                            especially in poetry, it becomes a burden of
+                            non-understanding and the work risks abandonment.
+                            But from Harrison’s point of view, these terms are
+                            not new at all. ‘Caconym’, ‘encaphalitis
+                            lethargica’, ‘null-hypothesis’, ‘Schwann Cell’,
+                            ‘astroglia’, ‘Tourette’s Disorder’ would be commonly
+                            heard in her everyday work as a psychiatrist. To
+                            intrigue further, the second section -of her poems
+                            contains pidgin English. This, too, I needed to
+                            clarify on the back page. Should the reader be
+                            elevated to the poet’s world or take what is useful
+                            in her life? Both, I suppose. What I take for myself
+                            in Harrison’s poems is some magical imagery as seen
+                            in ‘Aus-lan’: ‘I once saw a baby catching sunlight
+                            in his hands... he laughed at what he couldn’t
+                            touch... silhouettes and sun / were called chair and
+                            where .’ Sunlight, like a golden glow reappears in
+                            other poems, together with silvery lunar light. This
+                            gold and silver subtly shines in Harrison’s poems,
+                            foiled by the shine of hospital chrome or steel.
+                            Poetic warmth chills, sometimes, by the cool
+                            clinical eye and vice versa. The title poem shows
+                            art ‘mastectomised’. 500 years updated by late 20th
+                            century diction! The last three lines are very
+                            powerful: ‘...it is not the anguish of chiselled
+                            stone / which matters. / It is the standing still
+                            which kills.’ There’s a Yin-Yang, poet-scientist
+                            tuning ‘The Body’ section. ‘The Sen’ is lyrical,
+                            offers variety in travel and my favourites are those
+                            which are more sparse, such as ‘Rajistan’, a
+                            remarkably pared poem, almost etched in black/white:
+                            ‘...the killing silence / the returning bird where
+                            sky once was’ creates an unforgettable impression
+                            with its economy. …I recommend Jordie Albiston ’s
+                            Nervous Arcs for poetic bravura, Diane Fahey’s The
+                            Body in Time for lyrical flexibility, Jennifer
+                            Harrison for poetic difference and Kerry Scuffins [
+                            Laika’s Run ] for contagious vitality.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Quadrant</summary>
+                        <p>
+                            I Want Them Electric Alan Gould Quadrant, Vol. 40,
+                            No. 1-2 1996 I have no misgivings whatever about
+                            Jennifer Harrison’s book Michelangelo’s Prisoners .
+                            I found it an exhilarating collection from start to
+                            finish. Trained in medicine and psychiatry, this
+                            poet taps and eases the terms of medical science
+                            into her poems with the tact and flair of one for
+                            whom argument and illumination in poetry appear to
+                            come naturally. Here, for instance, is the speaker
+                            of one poem meditating upon the nature of the brain
+                            while engaged in catching prawns. Shaped uncus of
+                            brain grey cloud we cannot see or breathe spiller of
+                            guilt lust gape a brave shape complex
+                            lexicon-tripper communes outside itself folds back
+                            on concave gyrus and deep fissure on itself prawns
+                            mating rushing down river I’ll call you my thoughts
+                            I’ll catch you in the net and miss rain... I lack
+                            space to quote, as it demands, the entire poem,
+                            which would show how the speaker’s imaging of the
+                            brain and her attention to the business of prawning
+                            are integrated into the one meditative event, a
+                            meditation that manages to do both sensuous and
+                            intellectual justice to the experience described.
+                            ‘Prawning the Brain’ is the last poem in the first
+                            of the book’s two sections, perhaps more properly
+                            termed hemispheres. Deftly it unites the subject
+                            matter of a series of poems that ponder the human
+                            body, particularly the brain and neural system, with
+                            a series whose leit-motif is the sea. Indeed
+                            orchestration, both within and between the poems, is
+                            also a meta-subject of the book concerned, as so
+                            many poems are, with the orchestration of the body
+                            or the tides, the connections between physiology and
+                            language, medical science and magic, inside and
+                            outside. Thus, in the first half we find a tribute
+                            to the neurologist Oliver Sacks, in the second a
+                            vivid memory of an old Aboriginal seaside magician.
+                            With equal rigour of argument, and scintillance of
+                            imagery. Debussy, Michelangelo and Gilgamesh are
+                            used as reference points to explore the relations
+                            between art and catatonia, art and the effect of
+                            bodily disfigurement, art and the sense of an
+                            inarticulable Other. There is the same credibility
+                            and wholeness of realisation when the poet adopts a
+                            dramatic persona in ‘A Kalgoorie Prostitute
+                            Contemplates a Proposed Museum’. Above all, these
+                            poems are fresh. In common perhaps with the marble
+                            prisoners of the title, they give the sense of
+                            emerging out of an intractable element,
+                            language-experience, while being conscious of their
+                            emergence. They are not fashionable, they gesture
+                            nowhere; they are too deeply attentive to the
+                            strangeness they have found in the world. Take this
+                            short lyric, ‘The Wheel’: Under the tongue, after
+                            meals the little pill melts. A mongrel dog mfects an
+                            embryo with its indolent lick. We can bear it, we
+                            say. Look now at the human genome, a shiny new ship
+                            emerging from the dock. Ambitious, on schedule. A
+                            precise faith that might yet fall apart like a soft
+                            clay pot failing to centre. But see the wheel still
+                            spinning splattering mud. Hippocrates wants a
+                            perfect pot. The potter is patient. This is a
+                            fabulous, wise, superbly crafted book. May it
+                            prosper.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Michelangelo’s Prisoners Jennifer Strauss Australian
+                            Book Review , No. 174, 1995 Michelangelo’s Prisoners
+                            is an impressive first collection - technically
+                            assured and intellectual in the best sense. That is,
+                            the gears of Harrison’s intelligence are as fully
+                            engaged with the facts and theories that we bring to
+                            box on our corporeal and emotional experience of the
+                            world as they are with the specifics of such
+                            experiences and with the language in which we can
+                            (and cannot) speak them. For Harrison, those facts
+                            and theories often come from her professional
+                            disciplines, medicine and psychiatry, and a set of
+                            notes indicates awareness that there is a certain
+                            transplanting of discourse going on. If the process
+                            results in occasional poetic strain, it is
+                            vindicated by fine poems like the one on Oliver
+                            Sacks (‘this vagabond of afflictions’). The notes,
+                            along with the title - pointing towards such more
+                            acclimatised references as Michelangelo, Nijinski,
+                            Auden, Herodotus - may indicate that we are in the
+                            realm of ‘high’ culture, but Harrison can also write
+                            forcefully and accessibly of matters that are the
+                            stuff of tabloid journalism: anorexia, chemotherapy,
+                            the anguish of being an ‘Amok-runner’s Mother’, the
+                            desire of a Kalgoorlie prostitute for ‘music like a
+                            pair of solid gold 24 carat dingoes... no
+                            pretty-arse dancing’. Indeed one unifying motif
+                            throughout this carefully ordered collection is the
+                            force of human desire: ‘there is more we want’ -
+                            more than ‘the body map of sand’(‘Oliver Sacks’);
+                            more than ‘Ideas, cheap umbrellas [that] blow inside
+                            out / when you need them most’ (‘Maturana Songs’);
+                            more than ‘spoken words falling short of what they
+                            name’ ‘Aus-lan’. The strikingly-evoked ‘one-breasted
+                            woman’ of ‘Michelangelo’s Prisoners’ has a ‘peasant
+                            rhyme in her eyes / which longs for a woman’s
+                            symmetry’. To know something of feminist theorising
+                            of the body will increase the resonance of this
+                            disturbing poem, but its imaginative strength is not
+                            dependent on such knowledge. It should be clear that
+                            this is not apprentice work. The extent to which her
+                            poetic is formed in this initial mid-life
+                            publication recalls Gwen Harwood’s 1963 emergence
+                            and Harrison seems to me to have other affinities
+                            with that formidable talent - not leas an affection
+                            for fishing. In speaking earlier, I perhaps made
+                            Harrison sound unduly melancholy about unfulfilled
+                            and unfulfillable desires: in her themes and in the
+                            very process of her writing there are also robust
+                            celebrations of the fulfilled moment when the poet
+                            can say ‘I shout Fish! / dragging the tide towards
+                            me’ (‘Deep Sea’). The title of the concluding poem
+                            is ‘A Good Catch’: this reader agreed.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald</summary>
+                        <p>
+                            Explorations of mortality - &quot;Michelangelo ’ s
+                            Prisoners&quot; Heather Cam (editor) The Sydney
+                            Morning Herald, 26 August 1995 Exploration,
+                            discovery and communion are the engines which drive
+                            these four collections [Vera Newsom, Emily Bronte
+                            Re-Collects and Other Poems , Alec Choate, Mind in
+                            Need of Desert , Lawrence Bourke, Eating the Sun ,
+                            Jennifer Harrison, Michelangelo’s Prisoners ]. All
+                            are preoccupied with the big, imponderable
+                            questions: where do we come from, why are we here,
+                            and where are we going? The sites chosen to probe
+                            for meaning and some tentative answers reflect the
+                            idiosyncrasies of each poet’s personal history...
+                            Jennifer Harrison’s explorations tend to be
+                            biological and medical (body, brain, breast and
+                            skin). In the second half of Michelangelo’s
+                            Prisoners she turns to that largest of bodies - the
+                            sea. For both Newsom and Harrison the body is the
+                            chief focus. This private space extends outwards for
+                            Newsom to include the close, harmonious world of
+                            home, garden and the senses. For Harrison, a
+                            practising psychiatrist, the body’s pathology
+                            (cancer) and the inner workings and quirks of the
+                            brain provide poetic subject matter: hysterical
+                            blindness, deafness. Tourette’s disorder, Oliver
+                            Sacks’s sleeping subjects.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Michelangelo’s Prisoners Jennifer Strauss Australian
+                            Book Review , No. 174, 1995 Michelangelo’s Prisoners
+                            is an impressive first collection - technically
+                            assured and intellectual in the best sense. That is,
+                            the gears of Harrison’s intelligence are as fully
+                            engaged with the facts and theories that we bring to
+                            box on our corporeal and emotional experience of the
+                            world as they are with the specifics of such
+                            experiences and with the language in which we can
+                            (and cannot) speak them. For Harrison, those facts
+                            and theories often come from her professional
+                            disciplines, medicine and psychiatry, and a set of
+                            notes indicates awareness that there is a certain
+                            transplanting of discourse going on. If the process
+                            results in occasional poetic strain, it is
+                            vindicated by fine poems like the one on Oliver
+                            Sacks (‘this vagabond of afflictions’). The notes,
+                            along with the title - pointing towards such more
+                            acclimatised references as Michelangelo, Nijinski,
+                            Auden, Herodotus - may indicate that we are in the
+                            realm of ‘high’ culture, but Harrison can also write
+                            forcefully and accessibly of matters that are the
+                            stuff of tabloid journalism: anorexia, chemotherapy,
+                            the anguish of being an ‘Amok-runner’s Mother’, the
+                            desire of a Kalgoorlie prostitute for ‘music like a
+                            pair of solid gold 24 carat dingoes... no
+                            pretty-arse dancing’. Indeed one unifying motif
+                            throughout this carefully ordered collection is the
+                            force of human desire: ‘there is more we want’ -
+                            more than ‘the body map of sand’(‘Oliver Sacks’);
+                            more than ‘Ideas, cheap umbrellas [that] blow inside
+                            out / when you need them most’ (‘Maturana Songs’);
+                            more than ‘spoken words falling short of what they
+                            name’ ‘Aus-lan’. The strikingly-evoked ‘one-breasted
+                            woman’ of ‘Michelangelo’s Prisoners’ has a ‘peasant
+                            rhyme in her eyes / which longs for a woman’s
+                            symmetry’. To know something of feminist theorising
+                            of the body will increase the resonance of this
+                            disturbing poem, but its imaginative strength is not
+                            dependent on such knowledge. It should be clear that
+                            this is not apprentice work. The extent to which her
+                            poetic is formed in this initial mid-life
+                            publication recalls Gwen Harwood’s 1963 emergence
+                            and Harrison seems to me to have other affinities
+                            with that formidable talent - not leas an affection
+                            for fishing. In speaking earlier, I perhaps made
+                            Harrison sound unduly melancholy about unfulfilled
+                            and unfulfillable desires: in her themes and in the
+                            very process of her writing there are also robust
+                            celebrations of the fulfilled moment when the poet
+                            can say ‘I shout Fish! / dragging the tide towards
+                            me’ (‘Deep Sea’). The title of the concluding poem
+                            is ‘A Good Catch’: this reader agreed.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

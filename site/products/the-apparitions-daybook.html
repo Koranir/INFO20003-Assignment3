@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,358 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-apparitions-daybook.svg&quot;);
                         "
                     >
-                        Featured
+                        The Apparition’s Daybook
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">K.F. Pearson</h3>
+                </div>
+                <img
+                    alt="Cover of The Apparition’s Daybook"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-apparitions-daybook/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Apparition’s Daybook"
+                        class="product-cover"
+                        src="/assets/books/the-apparitions-daybook/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Come be the voyeur of my life, see what I do, both by
+                        day and night and we will, by desire alone, invent the
+                        paths we walk along. K.F. Pearson’s fourth collection is
+                        exuberant departure from his earlier work. This
+                        book-length lyric sequence creates the equivocal
+                        inviting figure of the apparition. Precariously, he only
+                        exists when perceived. No shrinking ghost or pallied
+                        figment, the apparition, unapologetically sexy, urbane
+                        and worldly wise, slips through the seams of the social
+                        world. His is the voice of gaps and absences. He may be
+                        imageless in a mirror but his wounded intelligence gives
+                        him dynamic and outline. His spirit is provocative and
+                        his thought shapely. A wit Marvell would have welcomed.
+                        Susan Hancock - Easter Monday, 1996 A brilliant
+                        device... A teasing, cavalier game of negatives such as
+                        Beckett might have enjoyed. Critical Survey (United
+                        Kingdom)
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-apparitions-daybook.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-apparitions-daybook/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>0646240498</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1995</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Critical Survery Review</summary>
+                        <p>
+                            Reviews The Apparition's Daybook Matt Simpson
+                            Critical Survey (UK), Vol. 10, No. 1 1998 I approach
+                            K.F. Pearson ’ s The Apparition ’ s Daybook with
+                            some suspicion after reading the blurb. The quatrain
+                            printed there did not augur well: Come be the voyeur
+                            of my life, see what I do, both by day and night and
+                            we will, by desire alone, invent the paths we walk
+                            along. nor the fact that the book is dedicated to
+                            the person who is quoted recommending it with ‘ A
+                            wit Marvell would have welcomed ’. The further
+                            discovery that Kevin Pearson and Gail Hannah who
+                            designed the cover are in fact the publishers did
+                            not help. To risk a pun, I was dispirited. But I was
+                            deceived. This is in fact a very engaging collection
+                            or, more precisely, it is what Australians call a
+                            suite of poems, one which subverts cognito, ergo sum
+                            to I am, but you don ’ t think . It invites its
+                            readers into a wittily and cleverly sustained
+                            metaphorical world of being/not being, in which
+                            insubstantiality is made palpable in a series of
+                            soliloquies. These are uttered by a ghost, the
+                            apparition of the title, who plays a teasing,
+                            cavalier game of negatives such as Beckett or W.S.
+                            Graham might have enjoyed. This is defamiliarisation
+                            with a vengeance. The sense of non-being
+                            paradoxically creates an exquisite awareness of
+                            being, so that, in the end, one is able to read the
+                            poems, for all their playful, dandified literariness
+                            and intertextuality (the range of forms deployed,
+                            the seventeenth-century anthology titles His Aubade
+                            , His Rival , His Prohibition etc.) at least on one
+                            level as love poems. The Apparition ’ s soliloquies
+                            are themselves haunted by ghosts: the ghosts of
+                            literary forms (sonnets, villanelles, epigrams etc.)
+                            and those of Aubrey, Waller, Traherne, Marlowe,
+                            Raleigh, and the madrigalist Thomas Bateson. I also
+                            get a sense, rightly or wrongly, of Ted Hughes ’ s
+                            Crow perched somewhere overhead. It is a brilliant
+                            device. There are freedoms ghosts can exercise that
+                            are denied to mortals. They can observe without
+                            being observed, speak without being heard (except
+                            paradoxically when we read their one-way-mirror
+                            poems); they can enjoy (and suffer) separation; and
+                            they can be in time without being of it, even if, as
+                            these poems continually insist, they are dependent
+                            upon the existence of others ’ perceptions for their
+                            existence or only come into existence in the act of
+                            naming: But, like the name of god that can ’ t be
+                            said in certain religious persuasions, I endure a
+                            censorship I can ’ t say ‘ we ’ , or ‘ us ’ . It is
+                            a delightful Puckish game Pearson plays. It would be
+                            interesting to see his three previous collections.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Famous Reporter Review</summary>
+                        <p>
+                            The Apparitions Daybook Elizabeth Winfield Famous
+                            Reporter , No.15 - 1997 K.F. Pearson’s The
+                            Apparition’s Daybook is a book to be sipped like
+                            wine. The tone is a dry red. There comes a time in
+                            life when ‘Your chimera will doubt its own
+                            dimensions.’ If a child makes a fish from clay,
+                            treasures it, then gives it to you, would you paint
+                            a tear beneath its eye for joy or sorrow? This is a
+                            book for asking questions of what makes life more
+                            than an apparition. The poet’s role is as messenger,
+                            the truth-teller, like the angels of times past
+                            (‘His Family Tree’). ‘Come be the voyeur of my life,
+                            / see what I do, both day and night / and we will,
+                            by desire alone, / invent the paths we walk along.’
+                            ‘We see the wind when leaves move on a tree.’
+                            Perhaps we are only more than apparitions when
+                            reflected / recognised by ‘significant eyes’. The
+                            gentleness of metre and rhyme are like the caress of
+                            a murmering brook. ‘To reach across / and touch a
+                            face / suffused with light / was just a thought. /
+                            I’m conscious now. / I think unseen’. A book that
+                            lingers like longing.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            A Sort of Liberation - The Apparition’s Daybook
+                            David McCooey (author) Australian Book Review , No.
+                            186, 1996 Poetry often seems to be about collapsing
+                            apparitions, haunting moments. These books [Shane
+                            McCauley, Shadow Behind the Heart , David Rowbotham,
+                            The Ebony Gates: New and Wayside Poems , K.F.
+                            Pearson, The Apparition’s Daybook ] are largely
+                            about shadows, apparitions, and the inglorious
+                            dead... A different shadow (or is it?) is at the
+                            heart of what is, for me, the most sustained and
+                            interesting work in this group of books: K.F.
+                            Pearson’s The Apparition’s Daybook . As with the
+                            earlier The History of Colour there is a variety of
+                            rhyme and stanza form used, but this work has a
+                            unified purpose, centring on that shadowy figure,
+                            the apparition, who doesn’t exist unless perceived.
+                            Pearson is a fine rhetorician, employing various
+                            linguistic sleights of hand: the pun, zeugma and so
+                            on. The first poem tells us to ‘first study his
+                            brother smoke’: ‘To map the ways of smoke you’ll
+                            need / ...the patience of Job or the jobless’. But
+                            Pearson is more than just a trickster. These poems
+                            tease away at the mind, but they have a lightness
+                            which is the lightness of smoke, not hot air. Like
+                            Marlow’s tale in Heart of Darkness , meaning here is
+                            not a nut in its shell to be cracked open, but
+                            rather the light which allows the smoke to be seen,
+                            ‘as a glow brings out a haze’. The world of the
+                            apparition is that of the café, the restaurant, the
+                            bed and other sites of urbanity. (‘Daybook’ means
+                            not only diary but also has the mercantile meaning
+                            of a sales book. These poems, then, suggest the
+                            shadow’s transactions with the real world.) The most
+                            sustained pun is with spirits, the kind one drinks.
+                            In ‘He Has a Gin and Tonic’ the obligatory mirror
+                            behind the bar appears not to reflect the poet and
+                            his friend (a photographer) until they realize that
+                            in fact there is a real mirror-image bar behind the
+                            bar they are in, a kind of drinker’s
+                            through-the-looking-glass nightmare. In ‘His
+                            Cocktail Cabinet’ all the spirits look like water -
+                            gin, vodka, ouzo, white Sambuca, vermouth - which in
+                            turn look like glass. The apparition’s affinity is
+                            made clear in ‘His Virtue’: ‘I have a close affinity
+                            with glass; / fragile, of course, and it can be seen
+                            through’. However, it is not simply a matter of
+                            seeing through this poem-sequence. The significance
+                            of the apparition is far from simple. The apparition
+                            could - as in Kevin Hart’s Your Shadow - be a
+                            memento mori , artfully figuring mortality. Or it
+                            could be an image of the poet’s craft itself. Poems,
+                            like apparitions, are moments we must glimpse to
+                            bring into being. This seems all the more apposite
+                            when one considers the parodic, intertextual nature
+                            of the sequence. The collection is literally haunted
+                            by the apparitions of others: Traherne, ‘The
+                            Passionate Shepherd’ , Stevens’ ‘The Emperor of
+                            Ice-Cream’ and so on. These uncanny moments in which
+                            we intuit the apparition are the dream-like moments
+                            necessary for poetry: ‘for as you saw the shadow
+                            cast its shape, / your big imagination gave a leap.
+                            / Shadow, or him, or figment of desire, / salute the
+                            thing that brought the shadow there’. The reference
+                            to desire and sex and the inescapable references to
+                            death suggest that shadows and poetry are things
+                            which point to that moment which is either a moment
+                            of loss or ‘a sort of liberation’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            The Apparition’s Daybook Lisa Catherine Ehrich
+                            Social Alternatives, Vol. 15, No.4, 1996 The
+                            Apparition’s Daybook is a refreshing, original,
+                            sometimes witty, but most of all very touching
+                            anthology of verse. As the title implies, the
+                            protagonist is none other than an apparition: a
+                            ghost or non-entity who desperately seeks to
+                            re-experience the delights of love, intimacy, and
+                            humanly reaching. The apparition is an instantly
+                            likeable being. He is intelligent, sensitive and
+                            misunderstood. His vulnerability is aroused in
+                            several of the poems that speak of his loneliness.
+                            In ‘His Song’ he describes his inescapable
+                            condition; he is invisible to all except those who
+                            are willing to acknowledge that he exists. Two key
+                            lines are: No body could think to hold what is not
+                            in the world (pg. 2) The sad and sorry situation is
+                            that the apparition’s attempts of being-with-others
+                            are thwarted at every turn. ‘His Song’ reminds us
+                            that it is through authentic relationships that it
+                            is possible to come to know and define who we are.
+                            The theme of needing another in order that he can be
+                            is echoed in several other poems (eg. ‘His Epitaph’,
+                            ‘The Politics of Appearance’; ‘His Fairy Tale’). For
+                            the apparition, however, he is powerless (‘The
+                            Slides of his Trip’), dismissed (‘His Social
+                            Style’), forgotten (‘A Viewer Scorns Him in the
+                            Words of Spanish Poet, Pedro Salinas’), unable to
+                            use inclusive language like ‘we’ and ‘us’ (‘His
+                            Prohibition’), and above all, lonely (‘To an
+                            Answering Machine’; ‘In Broad Day’). The apparition
+                            longs for human contact and this is underscored in
+                            ‘Occasions of Eyes’. The fourth stanza says: but
+                            now, in the meantime, our short present tense,
+                            significant eyes, which a moment take ours, pleasure
+                            our days, and reduce us to tears. Today, when I look
+                            may I meet with a glance (pg. 45) The final poem,
+                            ‘Exit’ whispers of a flickering of hope for an
+                            interlude: My welcome short I’ll make my flight. But
+                            give your word And I’ll abide (pg. 50) In ‘One
+                            thing’ the apparition wishes to be seen by a
+                            particular person. He is ready and waiting for a
+                            sign. One cannot help but hope it comes soon.
+                            Although a great deal of K.F. Pearson’s poems speak
+                            of the solitude and pain of non-being, he manages to
+                            interject several animated and witty poems in this
+                            anthology. For example, in ‘He refuses Tickets to
+                            Phantom of the Opera’, the apparition prefers the
+                            state of non-existence to the option of attending
+                            Lloyd Webber’s Phantom . In his view, the music is
+                            boring. (One would have thought the apparition may
+                            have been comforted by a story about a fellow
+                            phantom, ostracised by society and in need of
+                            love!). The other poem I found humorous was ‘His
+                            Meteorology’ which highlighted the practical
+                            problems of being an apparition living in rainy
+                            Melbourne. ‘He has a gin and tonic’ is another light
+                            hearted look at ghostly (non) existence. The power
+                            of K.F. Pearson’s verse is its ability to evoke both
+                            tenderness and pathos. His work reveals a deep and
+                            sophisticated insight into the human condition and
+                            this is reflected in the apparition’s quest for
+                            authenticity in human relationships. In summary, I
+                            would have no hesitation in recommending Pearson’s
+                            The Apparition’s Daybook . Unlike the nature of
+                            apparitions, the verse will make a lasting impact on
+                            its readers.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

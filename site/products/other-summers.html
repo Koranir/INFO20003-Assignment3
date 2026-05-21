@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,1983 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/other-summers.svg&quot;);
                         "
                     >
-                        Featured
+                        Other Summers
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Stephen Edgar</h3>
+                </div>
+                <img
+                    alt="Cover of Other Summers"
+                    class="product-cover-mobile"
+                    src="/assets/books/other-summers/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Other Summers"
+                        class="product-cover"
+                        src="/assets/books/other-summers/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The trees, as though self-mesmerized, all climb Unmowed,
+                        you’d say, into a printed breeze In which the yachts,
+                        remnants of an event, Have long been left behind Those
+                        of us who thought that Stephen Edgar had already reached
+                        a kind of perfection must now face the daunting
+                        possibility that he is only just getting into his
+                        stride. The range of knowledge and the depth of emotion
+                        are contained and intensified by an infallibly musical
+                        sense of form. Here is the poetry of someone who has
+                        been granted all the gifts, including a sense of
+                        proportion so concentrated that it sings. But perhaps
+                        the most fascinating aspect of all is that under the
+                        enchanted lyricism, the technical intricacy and the
+                        dazzling vocabulary there is always the bedrock of good,
+                        plain, conversational speech. This is the way we would
+                        all talk if we could. It’s just that almost none of us
+                        except him can. Clive James I can’t think of anyone
+                        writing poetry in English, at the moment or recently,
+                        who renders the natural world with the voluptuous
+                        precision of Stephen Edgar. These are poems of elegance
+                        and depth. August Kleinzahler Cover image: Louise
+                        Tomlinson, Strand 2003
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/other-summers.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/other-summers/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044541</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2006</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>108</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years.
+                        </p>
+                        <a class="bold" href="/authors/stephen-edgar.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Five Bells Review</summary>
+                        <p>
+                            Reviews Other Summers John L. Sheppard Five Bells,
+                            Spring/Summer 2008/2009 Stephen Edgar has often been
+                            regarded as Australia’s foremost formalist. The
+                            collection of poems in Other Summers , his sixth
+                            book of poetry, only serves to strengthen this
+                            reputation. It is evidence of a master craftsman at
+                            work. He uses rhyme, but not in every instance; he
+                            often has regular stanza lengths, especially four or
+                            three lines, but not always; he sometimes uses known
+                            classical forms, like sonnet and villanelle.
+                            However, it is not the structural aspects that make
+                            his writing compelling: it is his elegant use of
+                            language and his sophisticated lyricism, often
+                            expressed in free verse. Here is an example of this
+                            elegance of expression, compacted with metaphor,
+                            carefully chosen adjective and personification: The
+                            day unfolds its golden auguries On a charmed sky. A
+                            secular congregation Is out already to revere The
+                            lit east with a helpless expectation. ‘Tomorrowland’
+                            And in another extract, also compacted with
+                            metaphor, and with simile: A breeze fills up the
+                            manna gum’s huge lung, That hologram of bronchioles.
+                            It sways there Tethered and shifting like a hot-air
+                            balloon Preparing for some fresh and doomed attempt
+                            To circle the great globe. ‘The Immortals’ One of my
+                            favourite poems in the book is ‘Salvage’. It is the
+                            extraordinary poetic power of the language that
+                            attracts me, and the dramatic quality in Edgar’s
+                            imagery. Consider the following: And when the
+                            winches Shriek and groan in concert, and the chain
+                            winds in, And the churning surface, growing smooth
+                            now, shows The green emergence of a rising bulk And
+                            bulges momently like a streaming eye, And something
+                            broaches, oceanwater-curtained, What would it serve
+                            them, even if they could see, Whether the deeps fall
+                            dazzlingly away Like foamy gauzes trailing
+                            Aphrodite, Or spill like eels out of a rotting
+                            horsehead? ‘Salvage’ The verbs are highly
+                            expressive, indeed onomatopoeic, in ‘shriek’,
+                            ‘groan’ , ‘bulges’, ‘broaches’; the adjectives are
+                            intense, in ‘churning’, ‘streaming’,
+                            ‘oceanwater-curtained’, ‘foamy’, ‘rotting’; the
+                            similes are startling, in ‘like a streaming eye’,
+                            ‘like foamy gauzes trailing Aphrodite’, ‘like eels
+                            out of a rotting horsehead’. There is also a
+                            rhetorical flourish in the writing, where the lines
+                            build up to a climax as the repeated ‘and’ (given
+                            five times) adds one image after another, until
+                            there is the ‘What would it serve them...?’ This
+                            build-up gives the writing special strength and
+                            purpose, just like an orator may use repetition to
+                            make a powerful point. The reference to Aphrodite
+                            (p.73) reflects the author’s classical background,
+                            for he is a Latin and Greek scholar, and
+                            occasionally alludes to the ancient myths; for
+                            example, he refers to Beatrice (p.2), Andromeda
+                            (p.10), Ithaca (p.19), the Minotaur (p.36), and
+                            Sappho the writer (p.ix). It helps to know your
+                            classics. It also helps to know your literature; for
+                            example, Edgar often refers to Dante, and has
+                            allusions to several other writers. Another part of
+                            the book I find intriguing is his treatment of a
+                            summer theme in three different ways under the same
+                            title of ‘Im Sommerwind’, which is a German term. In
+                            the first and third rendition he addresses the same
+                            general scene of his family home, with mother and
+                            author present, but deliberately describes it in
+                            different tones. I asked him about this, and he said
+                            he just wanted to try it out in a different way. I
+                            am reminded, having just been to the current NSW Art
+                            Gallery exhibition, of how the French Impressionist
+                            artist Claude Monet in the 1880s and 1890s painted
+                            several series of the same subject in different
+                            light, as changes occurred through the day. One of
+                            these was of the Creuse Valley, another was Rouen
+                            Cathedral, another was haystacks. He thereby
+                            produced an extraordinary sequence each time. Edgar
+                            is taking the same approach of viewing the one
+                            subject in different lights, for the sake of making
+                            the comparison. All three of the poems are in
+                            triplet stanzas. The third is in chained verse, a
+                            villanelle. The first line is the same in the first
+                            and third poem. The second treatment is very
+                            different in approach, seemingly based on a
+                            photograph of his family, and acknowledges an
+                            extract from Primo Levi which has in it the themes
+                            contained in Edgar’s own poem. There is a certain
+                            artistic playfulness in this approach, of producing
+                            a triptych and scattering the three parts to
+                            different locations in the book, not side by side,
+                            leaving it to readers to find what they will. We see
+                            here Edgar’s versatility. The three pieces bind the
+                            book as a whole, setting up thematic unity. One can
+                            compare the beginning of the first poem and the
+                            third: On a hot listless Sunday afternoon Of
+                            adolescence, on the parapet Of cooler brick on our
+                            front porch, propped up Against the pillar I look
+                            lazily Across the park that’s faded less by summer,
+                            It seems, than from the day’s inert aversion To the
+                            principle of colour, as when you stare Directly at
+                            the sun, then turn away, And everything is washed
+                            out, overexposed - ‘Im Sommerwind’ * On a hot
+                            listless Sunday afternoon I’m sprawling on the porch
+                            by the front door While someone’s radio murmurs a
+                            tune. My mother’s brought a chair out to maroon
+                            Herself a moment between chore and chore On a hot
+                            listless Sunday afternoon. The screen door wants to
+                            let the house commune With languid airs that stray
+                            in to explore While someone’s radio murmurs a tune.
+                            ‘Im Sommerwind’ The first poem is in free verse; the
+                            third is formalist, following a tighter set of
+                            rules. Both versions work; both are competently
+                            crafted. All three are founded on reminiscence. It
+                            is intriguing to relate those three poems to a
+                            fourth in the collection, ‘Eighth Heaven’. In it
+                            Edgar seems to take the ideas further in another
+                            treatment, this time including his father in the
+                            scenario. Here is the beginning: I open the
+                            flyscreen door and slip inside Easing it shut. Low
+                            voices - the radio? - Drift from the dining room,
+                            although their words Are indistinct. A milky sort of
+                            light Clings to the ceiling showing that the summer
+                            Is well established here and the inner shadows,
+                            However cool they may appear, are tacky As bare
+                            thighs on a vinyl chair. My mother, at the kitchen
+                            bench, is pouring Afternoon tea... ‘Eighth Heaven’
+                            Here again we have the screen door, summer, radio
+                            playing, colour and light, his mother: another
+                            ‘variation on a theme by Paganini,’ so to speak.
+                            Further binding the work is an emphasis on memory,
+                            reminiscence, time, season, nostalgia, lost love,
+                            transience of existence, mortality, and the need for
+                            hope. These ideas are treated sometimes with complex
+                            syntax, density of expression, rich diction, and
+                            colourful ingenuity. Rhyme and musical rhythm are an
+                            integral part of the whole, working in intricate
+                            harmony. Time occasionally takes on a haunting
+                            aspect, an elegiac quality, bitter-sweet memory
+                            bringing forward paradox as time stands still. This
+                            is serious poetry, and its wealth is worth the
+                            effort of mining. For sheer brilliance of
+                            sophisticated use of language, for extraordinary
+                            formal control of rhythm and rhyme, for delicate
+                            lyricism, this book is not to be missed.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Poetry Chicago Review more recent</summary>
+                        <p>
+                            An Almost Perfect Break-up Poem Clive James Poetry
+                            (Chicago), January 2009 A critic’s second reading of
+                            a poem by Stephen Edgar proves that a first reading
+                            is the best-kept secret of criticism . ) On a second
+                            reading of a poem that has wowed us, we might grow
+                            even more interested, but we start to sober up. For
+                            my own part, initial admiration for a single poem
+                            often tempts me into a vocabulary I would rather
+                            avoid. The Australian poet Stephen Edgar’s poem ‘Man
+                            on the Moon’ can be found in his collection Other
+                            Summers , or—more quickly, and for free—in the
+                            selection devoted to his work in the Guest Poets
+                            section of my website, clivejames.com. With a single
+                            reservation, I think it is a perfect poem, although
+                            ‘perfect’ is an adjective I would rather not be
+                            caught using. The word just doesn’t convey enough
+                            meaning to cover, or even approach, the integrity of
+                            the manufacture. I knew that already on a first
+                            reading. But on a second reading, I begin to know
+                            how I knew it: Hardly a feature in the evening sky
+                            As yet—near the horizon the cold glow Of rose and
+                            mauve which, as you look on high, Deepens to
+                            Giotto’s dream of indigo. Giotto is dreaming of
+                            indigo because he couldn’t get enough of it: in his
+                            time it was a pigment worth its weight in gold.
+                            Edgar is always good on facts like that. I could
+                            write a commentary picking up on such points, but it
+                            wouldn’t say why the poem is perfect, or almost so.
+                            The obvious conclusion is that I don’t need to say
+                            that. But I want to, because a task has been fudged
+                            if I don’t. There are plenty of poems full of solid
+                            moments, but the moments don’t hang together even by
+                            gravity. So why, in this case, do they cohere?
+                            Hardly a star as yet. And then that frail Sliver of
+                            moon like a thin peel of soap Gouged by a nail, or
+                            the paring of a nail: Slender enough repository of
+                            hope. We can already see the moments cohering. The
+                            indigo sky of the first stanza has supplied the
+                            background for the moon, which has become two
+                            different things, one growing out of another: the
+                            soap paring and the separated crescent of a
+                            fingernail, possibly the same fingernail that
+                            scratched the soap, but probably not, or he would
+                            have said so. These specific but metaphorical
+                            details provide the warrant for a general but more
+                            abstract statement about hope. Out on its own, the
+                            abstract concept of hope could be the town where
+                            Bill Clinton was born, or a mantra in a speech by
+                            Barack Obama. We don’t know what the poet’s hope is
+                            about yet, but here it looks planted securely on
+                            firm ground, because of the store of specific
+                            noticing that has already been built up: There was
+                            no lack of hope when thirty-five Full years ago they
+                            sent up the Apollo — Two thirds of all the years
+                            I’ve been alive. They let us out of school, so we
+                            could follow The broadcast of that memorable scene,
+                            Crouching in Mr. Langshaw’s tiny flat, The whole
+                            class huddled round the TV screen. There’s not much
+                            chance, then, of forgetting that. Now we see where
+                            hope was going: all the way to the moon. The Apollo
+                            mission landed there in 1969. Add a ‘full’
+                            thirty-five years to this and we can calculate that
+                            the poem was written in 2004 or perhaps the year
+                            after. Increase thirty-five years by a third and we
+                            find that the poet is about fifty-three years old at
+                            the time of writing. And he was about seventeen at
+                            the time of the landing. So he was in high school,
+                            with Mr. Langshaw for a teacher: a dedicated
+                            teacher, living alone in tight circumstances, here
+                            made tighter by the presence of the whole class. The
+                            number of boys in the class is the only statistic we
+                            can’t work out, but it must have been a substantial
+                            number or the word ‘whole’ would not have been used
+                            for effect. Because these two stanzas form one unit,
+                            the first bridging syntactically into the next, we
+                            can see that the pace has picked up. The first two
+                            stanzas of the poem made one statement at a time,
+                            but they were just the overture. This is the opera.
+                            Or at any rate the operetta: there is an air of
+                            lightness to it, mainly conveyed by ‘that memorable
+                            scene,’ which is a knowing allusion to a
+                            time-honored line of poetry (from Marvell’s ‘An
+                            Horatian Ode upon Cromwell’s Return from Ireland’),
+                            and is obviously put there on the assumption that we
+                            also know it, or can at least guess that the heroic
+                            elevation of an archaic-sounding phrase is
+                            deliberately being used to say that this, too, is
+                            history. Those who remember the story of Marvell’s
+                            poem will be glad to realize that this time nobody
+                            is getting executed. In Marvell’s poem, it is
+                            Charles I, and not Cromwell, who bravely faces
+                            death, and the diction is a token of the poet’s
+                            generous scope of understanding. But to borrow the
+                            phrase is also a way for this later poet, Stephen
+                            Edgar, to say that literature now must make room for
+                            the machines. Readers who go further into his work,
+                            as they surely must, will find that Edgar is
+                            unusually sensitive to science and technology. They
+                            increase his vocabulary, which is lyrically precise
+                            over a greater range of human activity than anyone
+                            else’s I can think of, with the possible exception
+                            of his senior compatriot Les Murray. More of a city
+                            boy than Murray, Edgar has fewer words for evoking
+                            life on the land. But for all other realms he has
+                            whole dictionaries in his head: And for the first
+                            time ever I think now, As though it were a memory,
+                            that you Were in the world then and alive, and how
+                            Down time’s long labyrinthine avenue Eventually
+                            you’d bring yourself to me With no excessive haste
+                            and none too soon— As memorable in my history As
+                            that small step for man on to the moon. And this,
+                            suddenly and unexpectedly, is another realm, the
+                            realm of personal emotion. One of Edgar’s favorite
+                            strategies is to set up an area of public property,
+                            as it were, before bringing in the personal
+                            relationship: a way of spreading inward from the
+                            world. The effect, especially acute in this case, is
+                            to dramatize his isolation. But as yet we don’t know
+                            that the isolation will mean loneliness. Perhaps he
+                            and ‘you’ are still together. The portents, however,
+                            are ominous. For one thing, she is probably younger
+                            than he. She was in the world then, but the wording
+                            suggests that she might not have been so for very
+                            long. She was on her way to him, down a ‘long
+                            labyrinthine avenue’ that sounds as if it has passed
+                            through the mind of Philip Larkin. Edgar is
+                            fond—sometimes too fond—of echoing Larkin, but he is
+                            usually, as here, careful to echo only the cadences,
+                            not the wording. Larkin often used a monosyllabic
+                            adjective before a polysyllabic one, with no
+                            separating comma. The sonorous glissando of the
+                            device was useful to give the pathos of passing
+                            time. But Edgar undercuts the evocation of
+                            inevitability by giving the loved one an air of
+                            caprice. She brings herself (good of her) with no
+                            excessive haste (what kept her?) and none too soon
+                            (finally she deigns to turn up). On a fine point of
+                            technique, rather than a larger point of tactics,
+                            the way that the poet, in the penultimate line
+                            quoted, gives ‘memorable’ and ‘history’ their full
+                            syllabic value recalls Auden, and in the final line
+                            of the octet we can hear Empson, as we can always
+                            hear him when trochees are laid over an iambic
+                            pattern to give a spondaic tread. Since Edgar
+                            obviously weighs his words with care, it is safe to
+                            assume that he knows Neil Armstrong blew the script.
+                            Armstrong should have said ‘one small step for a
+                            man.’ When he fluffed it and said ‘one small step
+                            for man,’ he ensured that ‘man’ and ‘mankind’ would
+                            mean the same thing and that the sentence would be
+                            deprived of its intended contrast. But Edgar seems
+                            to be saying that even the giant step for mankind is
+                            small—small enough, at any rate, to be matched by
+                            the moment in his own history when he and the loved
+                            one met: How pitiful and inveterate the way We view
+                            the paths by which our lives descended From the far
+                            past down to the present day And fancy those
+                            contingencies intended, A secret destiny planned in
+                            advance Where what is done is as it must be done For
+                            us alone. When really it’s all chance And the
+                            special one might have been anyone. Here again, a
+                            whole argument is bridged over two stanzas, and this
+                            time with only a single terminal comma, so that the
+                            effect of a lot being said at once is reinforced by
+                            the technical fact of compressed syntax. The word
+                            ‘inveterate’ gets a hypermetric emphasis, making it
+                            sound important enough for us to figure out exactly
+                            what it means here, or to look it up if we’ve never
+                            seen it. (If we do look it up, we find that the
+                            current meanings of something long established and
+                            settled by habit are underpinned by a historic
+                            meaning of something hostile—an undertone which soon
+                            turns out to be appropriate.) In the last line of
+                            the stanza we have to figure out, in the absence of
+                            the poet’s spoken emphasis, that the word ‘intended’
+                            is an adjective qualifying the noun ‘contingencies.’
+                            That’s one of the tasks fulfilled by the comma: to
+                            tell us that the contingencies aren’t about to
+                            intend anything, but are, themselves, intended. The
+                            other task of the comma is to set up a development
+                            in which the contingencies amount to a destiny,
+                            which turns out to be the wrong idea. ‘Where what is
+                            done is as it must be done’ has a playful
+                            musicality, but the play is sad, because it isn’t
+                            true: determinism is an illusion. Chance rules, and
+                            when the repetition in the line is matched by the
+                            repetition in the last line, the game is over. The
+                            poem, however, isn’t. Casting our eyes down we see
+                            that there is more of it to come, although not much
+                            more. It’s going to have to cover a lot of distance
+                            in a short time if it is to bring these themes
+                            together: The paths that I imagined to have come
+                            Together and for good have simply crossed And
+                            carried on. And that delirium We found is cold and
+                            sober now and lost. This time the argument is
+                            confined to one stanza and has the effect of a
+                            summary. We know that there is more of the poem to
+                            come, but it could conceivably end here. The
+                            separate trajectories of the mission and the moon
+                            successfully met each other according to plan, and
+                            the Apollo Lunar Module came down in the right spot.
+                            The separate trajectories of the poet and the loved
+                            one met each other as well, but each of them kept
+                            going. Ecstasy (called ‘delirium’ in retrospect, as
+                            if it had been a fever) didn’t hold them together,
+                            and the return of sobriety revealed that it couldn’t
+                            have. What was ‘lost’ was a big chance, but a chance
+                            was all it was. The under-punctuation is an
+                            indicator, telling us that he’s had time to work
+                            this conclusion out, and that it can therefore be
+                            set down economically, as a given. The whole story
+                            can be seen in the turn of the second line into the
+                            third. The phrase ‘And carried on’ comes out of the
+                            turn with a reinforced inevitability. (In the heyday
+                            of practical criticism, such an effect would have
+                            been called ‘enactment,’ but when it was eventually
+                            realized that almost any technical feature could be
+                            called enactment, the term thankfully went into
+                            abeyance.) The idea that if their two paths crossed
+                            they might stick together was a wrong guess on his
+                            part. Was it the wrong wish? Well, separation seems
+                            to have been her decision, so perhaps she was the
+                            wrong woman. Maybe delirium wasn’t what she wanted.
+                            We are left free to speculate about all those things
+                            as the poem spreads outwards again, and makes an
+                            end: The crescent moon, to quote myself, lies back,
+                            A radiotelescope propped to receive The signals of
+                            the circling zodiac. I send my thoughts up, wishing
+                            to believe This is only the first stanza of a
+                            conclusion that spreads over two stanzas, but let’s
+                            break into the flow and see how it works. My own
+                            first judgment was that an otherwise unstoppable
+                            advance had interrupted itself. On a second reading,
+                            I still think so. When I mentioned that I had only
+                            one reservation about the poem, the phrase ‘to quote
+                            myself’ was it. He isn’t quoting any other part of
+                            the poem, so what is he quoting? Investigation
+                            reveals that he is quoting another of his poems:
+                            ‘Nocturne,’ the second part of a two-part sequence
+                            called ‘Day Work,’ which was collected in his
+                            previous volume, Lost in the Foreground . A poet
+                            need not necessarily be asking too much when he asks
+                            us to read one of his poems in the light of others
+                            in the same volume, or even in other volumes. In the
+                            later Yeats, to take a prominent instance, there are
+                            plenty of individual poems making that demand. But
+                            when a poem has successfully spent most of its time
+                            convincing us that it stands alone, it seems worse
+                            than a pity when it doesn’t. It seems like
+                            self-injury: a bad tattoo. It was the poem itself
+                            that made us wish it to be independent, so it has
+                            revised its own demand. Edgar’s poem can have this
+                            flaw and still remain intact. (Presumably the crack
+                            in the golden bowl did not stop it holding fruit.)
+                            But it’s definitely a blip in the self-contained air
+                            of infallibility. The perfect has momentarily become
+                            less-than-perfect, with the sole advantage that one
+                            is forcibly persuaded that the word ‘perfect’ might
+                            mean something. (If it means ‘stand-alone,’
+                            ‘independent’ and ‘self-contained,’ then those are
+                            already better words.) But the argument continues
+                            despite the backfire. The motor hasn’t stopped
+                            running. It powers the radio telescope of the moon,
+                            which is listening to the stars, appearing here in
+                            their old-style, pre-scientific form. What does he
+                            wish to believe about the possible destination of
+                            his thoughts after they are beamed up to the soap
+                            paring, or nail paring, that has now become a
+                            parabolic dish? (This poet doesn’t mix his
+                            metaphors: he morphs them.) The answer is in the
+                            two-part coda’s second stanza, which is the last
+                            stanza of the poem: That they might strike the moon
+                            and be transferred To where you are and find or join
+                            your own. Don’t smile. I know the notion is absurd,
+                            And everything I think, I think alone. He wants
+                            their two trajectories, his and hers, to join again.
+                            But we have seen that they haven’t, and now we are
+                            told that they won’t, because when he addresses her,
+                            she isn’t there, except in his head. This is a drama
+                            for one person, and it’s over. He has been talking
+                            to himself all along. * * * When reacting to a poem,
+                            the word ‘perfect’ is inadequate for the same reason
+                            that the word ‘wow’ would be. But it isn’t
+                            inadequate because it says nothing. It is inadequate
+                            because it is trying to say everything. On a second
+                            reading, we begin to deduce that our first reading
+                            was complex, even if it seemed simple. Scores of
+                            judgments were going on, too quickly for us to catch
+                            but adding up to a conviction—first formed early in
+                            the piece and then becoming more and more
+                            detailed—that this object’s mass of material is held
+                            together by a binding force. Such a binding force
+                            seems to operate within all successful works of art
+                            in any medium, like a singularity in space that
+                            takes us in with it, so that we can’t pay attention
+                            to anything else, and least of all to all the other
+                            works of art that might be just as powerful. We get
+                            to pay attention to them only when we recover. But
+                            recover from what? A spell? Here again, all the
+                            natural first words are suspect. I could say why I
+                            picked this less-than-perfect, but almost perfect,
+                            poem by Stephen Edgar out of all the scores of
+                            perfect poems by him, and out of all the hundreds of
+                            perfect poems by other people. I could say I picked
+                            it out because it haunts me. If haunting is what
+                            ghosts are good at, hanging around to rattle the
+                            pots and rearrange the furniture when you least
+                            expect it, then ‘haunt’ is the right verb. But it’s
+                            a verb that I would rather not use. I think Edgar is
+                            a fine poetic craftsman. But in that sentence there
+                            are two other words I would rather not use either.
+                            The word ‘craftsman’ always sounds like a doomed
+                            attempt to give an artist the same credibility as a
+                            master carpenter, and ‘fine’ smacks of
+                            self-consciously upmarket (i.e. effectively
+                            downmarket) American advertising, as in ‘fine
+                            dining,’ ‘fine linens,’ and ‘fine wine.’ Well, yes,
+                            of course the poet is a fine craftsman, and of
+                            course his poem haunts you with its perfection. All
+                            these superannuated words we should take for granted
+                            when talking about any poem that is properly
+                            realized. Actually to put them back into print is
+                            like diving on a wreck, with no yield of treasure
+                            except scrap metal. Yet we need the ideas, if not
+                            the vocabulary, if we are to begin talking about why
+                            and how the poem in question is a made object, and
+                            not a foundling. Every bit of it might well be a
+                            trouvaille—how phrases are assembled and lucky
+                            strikes are struck is an even deeper question—but
+                            all the bits are put together by someone who either
+                            knows exactly what he’s doing or else can control
+                            the process by which he doesn’t, quite. You could
+                            say that the poet, right from the start and without
+                            interruption, transmits an air of authority, but I
+                            doubt that the phrase counts for much more than all
+                            those other words I’ve been trying to avoid. (Even
+                            the author of a jingle on a birthday card has an air
+                            of authority if you like the sentiment.) The thing
+                            to grasp is that the fine words and phrases are
+                            standing in for a complex reaction. They serve as
+                            tokens for a complete discussion of an intricate
+                            process that doesn’t just happen subsequently, on a
+                            second reading, but happens initially, on the first
+                            reading. Most of the analysis that I have supplied
+                            above almost certainly happened the first time that
+                            I read the poem, but this time I have written it
+                            out. So much can happen, and in such a short space,
+                            only because we bring our own history to the poem,
+                            even as it brings the poet’s history to us.
+                            Contained within the first reaction are all the
+                            mechanisms we have built up through reading poems
+                            since we were young: reading them and deciding they
+                            were good. (We might have learned even more from the
+                            poems that we decided were bad, but we could do that
+                            only by having first learned to recognize the good.)
+                            This mental store that the reader brings into play
+                            on a first reading is, I believe, the missing
+                            subject in most of what we call criticism. The
+                            missing subject needs to be illuminated if we are
+                            fruitfully to pursue all the other subjects that
+                            crop up as we speak further. Without that first
+                            thing, all the subsequent things might be full of
+                            information, but they will lack point. It makes
+                            little sense, for example, to say that a poem fits
+                            into the general run of a poet’s work if we don’t
+                            first find ourselves saying why it stands out even
+                            from that. We can say later that it blends in, but
+                            it had better be blending in only in the sense that
+                            it stands out like a lot of the poet’s other poems.
+                            A poem doesn’t, or shouldn’t, express the author’s
+                            ‘poetry,’ and it’s a bad sign when we contend that
+                            it does. It was a fateful turning point for the
+                            career of Ted Hughes when his later poems were
+                            discovered to be ‘Hughesian,’ i.e. characteristic
+                            instead of unique. The idea that a poet should be
+                            praised for producing sequences of poems, and even
+                            whole books of poems, that give us nothing but a set
+                            of exercises in his own established manner, is
+                            ruinous for criticism, and is often the sign of a
+                            ruined poet. The great mass of later Lowell is weak
+                            when tested by the intensity of early Lowell. Read
+                            ‘A Quaker Graveyard in Nantucket’ again—or merely
+                            recall the bits of it that you have in your
+                            memory—and then try to find anything as strong in
+                            the bean silo of History. It takes a critic who has
+                            never appreciated the strength of Lowell’s early
+                            poems to think that the later work is a development
+                            rather than a decline. In the sum of a poet’s
+                            achievement, it isn’t enough that the same tone
+                            recurs, and often it’s a sign of deterioration when
+                            it does. Edgar, always precise about shades of color
+                            at each end of the day, is a modern master of what I
+                            would like to call the daylight nocturne, but I
+                            would expect to arouse suspicion if I praised one of
+                            his poems for having no other characteristics. As it
+                            happens, almost every poem he publishes is
+                            impossible to reduce to a kit of favorite effects.
+                            The argument and its illustrations always serve each
+                            other inseparably: they can be discussed separately,
+                            but they flow back together straight away. So
+                            everything I can say about him follows from his
+                            capacity to produce the unified thing. From that
+                            initial point, the discussion can widen. We can say
+                            that Edgar suffers from the peculiar Australian
+                            critical climate in which it is widely and honestly
+                            believed that a rhymed poem in regular stanzas must
+                            be inhibiting to a sense of expression that would
+                            otherwise flow more freely. The elementary truth
+                            that there are levels of imagination that a poet
+                            won’t reach unless formal restrictions force him to
+                            has been largely supplanted, in Australia, by a more
+                            sophisticated (though far less intelligent)
+                            conviction that freedom of expression is more likely
+                            to be attained through letting the structure follow
+                            the impulse. In that climate, Stephen Edgar’s name
+                            is not yet properly valued even in Australia. To
+                            believe that it one day will be, you have to believe
+                            that something so good is bound to prevail. But that
+                            might not happen. Australia (and here we enter into
+                            sociology and politics) has a small literary market
+                            anyway, and for poetry it is minuscule, so prizes
+                            and grants count. Though his position has somewhat
+                            improved lately, Edgar has been awarded remarkably
+                            few of either: partly because, I fear, the
+                            committees are stacked with poets who couldn’t write
+                            in a set form to save their lives, and with critics
+                            and academics who believe that the whole idea of a
+                            set form is obsolete. It would be nice to think that
+                            this tendency could be reversed by the example of a
+                            single poet. But of course it can’t. All one can do
+                            is argue for the importance of his work, and that
+                            argument must start with the certainty of our first
+                            judgment, made on a first reading: a judgment which
+                            is not yet concerned with advocacy. On a second
+                            reading we can, and must, begin to propose a
+                            restoration of the balance. There is a place for
+                            free forms: they no longer have to justify
+                            themselves. There should be a place for regular
+                            forms too, but they now have to justify themselves
+                            every time. One of Edgar’s dictionaries is a
+                            classical dictionary. He can read the ancient
+                            languages, and might have written poems with no
+                            properties except those from the far past. But his
+                            work participates in a new classicism, fit to
+                            incorporate the modern world, in which it deserves a
+                            high place. Almost any of his poems will tell us
+                            that, on a first reading. The second reading tells
+                            us why we should try to tell everyone else.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Blue Dog Review</summary>
+                        <p>
+                            Tight Knot of Time: Stephen Edgar’s Other Summers
+                            Pauline Reeve Blue Dog , Vol. 6, No. 12 December
+                            2007 This summer, the first without my father, saw
+                            me putting up the periscope for the first time in a
+                            long while, to look for any return of blue skies.
+                            Skies that vanished when a ‘white dismay’ of cancer
+                            invaded and banished an idyllic life with its sense
+                            that ‘it will be now for evermore.’ Summer is fading
+                            into autumn. Outside, the huge gum tree in our
+                            backyard no longer winces in the heat even though
+                            the sky is flawless, and I reflect that for the
+                            first time in perhaps five years there has been the
+                            satisfaction of more blue sky. And yet... and yet...
+                            life viewed from this present has changed. For one
+                            thing, time itself has taken on new significance. It
+                            was during those years dominated by dismay that I
+                            discovered my first Stephen Edgar poem ‘Im
+                            Sommerwind’ (pg 67) which now appears as the central
+                            refrain at the heart of his most recent collection,
+                            Other Summers . I was drawn in by the sensual summer
+                            scene he depicted, only to discover that out of it
+                            reached a hidden grief. Was this not precisely my
+                            own experience? Summer so often spent outdoors in
+                            the enlivening light was now being shot through with
+                            an impending final goodbye. There is a symphonic
+                            poem called Tm Sommerwind’ by the late
+                            nineteenth/early twentieth century composer Anton
+                            Webern, itself based on German poet Bruno Wille’s
+                            poem of the same name. Jonathan D. Kramer writes of
+                            this music, ‘the melodic style of Sommerwind does
+                            not comfortably fit its harmonic style. From the
+                            tension of disagreement comes an unsettled
+                            undercurrent that gives Sommerwind an unusual and
+                            memorable quality’
+                            (http://www.cincinnatisymphony.org). Though speaking
+                            of a musical style, Kramer may well have been
+                            speaking of Edgar’s voice in Other Summers . Here,
+                            summer on the one hand brings with it that drowsy
+                            sense of timelessness where things don’t change. On
+                            the other, it brings an element of unease. Clouds
+                            rise even in summer skies. Time brings change and
+                            there is no going back. Except perhaps vicariously,
+                            through imagination, writing, photography - those
+                            means by which we seek to hold onto time by
+                            duplication. More than that, it is ‘this moment’
+                            that holds both ‘a past remoter than / The pyramids’
+                            and ‘an era that is yet unknown.’ Here in Other
+                            Summers too, theme is matched with tensions of
+                            language. There is a fusion of images and poetic
+                            forms and styles from past and present, with
+                            elements borrowed from science fiction and fantasy
+                            so that one might describe his poetry in his own
+                            words as a ‘tight knot’ (pg 7) of time. In the end,
+                            ‘Im Sommerwind’ led me to Edgar’s fifth collection,
+                            Lost in the Foreground (Duffy &amp; Snellgrove,
+                            2003), a collection which I read like a soldier
+                            fighting for every piece of ground. I was
+                            unaccustomed to such density of thought and
+                            intricacies of style, and alternated between delight
+                            and despair, until I put it aside overwhelmed by the
+                            realities of the bleakness filling my own life. And
+                            Lost in the Foreground does present a rather
+                            jaundiced view of life. It takes its title from a
+                            line in a poem called ‘The Company’ (pg 48) which
+                            imagines the facelessness of the Company and has the
+                            speaker in the poem pondering: You wonder if it’s
+                            you Who after all Must be the last Forlorn surviving
+                            soul The collection is populated with poems of
+                            despair, death, void. ‘Life’ is that which the
+                            speaker in ‘Stranger to Fiction’ (pg 33) would save
+                            the child from, ‘If [they] knew how to.’ What I did
+                            delight in was Edgar’s imagination, his skill in
+                            evoking landscapes with which I was familiar and his
+                            inescapable mastery of traditional form and rhyme.
+                            On picking up Other Summers , his sixth collection
+                            in a career commencing with publication in 1985,
+                            much of it conducted from his adopted state Tasmania
+                            (he has of late returned to Sydney), I was
+                            immediately struck by the similarity of its cover to
+                            that of Lost in the Foreground . Both depict blurred
+                            scapes. The latter, a dark streetscape, with an
+                            obscure figure merged in the foreground. The former,
+                            a foreshore with figures emerging out of misty
+                            light. In retrospect, the two are not disconnected.
+                            ‘Space and time are one,’ a phrase more often
+                            employed in reference to Einstein’s theory of
+                            relativity, rings through my thoughts. It is
+                            possible to see Lost in the Foreground as concerned
+                            primarily with space - albeit a metaphysical void.
+                            It is seeded, however, with the themes of time and
+                            the language and imagery characteristic of Other
+                            Summers . ‘Arcadia’ (pg 24), an elegy for Gwen
+                            Harwood, demonstrates this. Setting the poem in a
+                            seascape not unlike that of a Harwood poem, Edgar
+                            writes, ‘We can recall the past; Why not what is to
+                            come?’ And later: When one that we love dies With
+                            childlike panic we Are forced to realise The vast
+                            simplicity Of waiting pain In which the heart is
+                            hurled. Never again In the story of the world Will
+                            this person appear. We look for the known face,
+                            Imagine it is near. But there is just a space.
+                            Nature as imagery also provides a significant source
+                            of connective tissue between the books, but so too
+                            do the ongoing references to Dante, shadows, lemon
+                            light, outer space, underwater salvage, fiction,
+                            history and even the Prime Minister, to name just a
+                            few. But whereas Lost in the Foreground conjures
+                            despair, Other Summers is a journey to recapture
+                            hope and meaningfulness; a hope and meaningfulness
+                            that despite the expanse of space and time explored
+                            in the collection, are very much to be found in a
+                            closed but intricately connected system. There is no
+                            appeal to transcendence or incarnation.
+                            ‘Permaculture’ (pg 105) the second last poem of the
+                            book, marks the philosophical stance assumed in the
+                            end. Reflecting on the ‘Men of the world’ in the
+                            Qantas Club as they wait for the mechanics and
+                            officials conferring about the ‘jet’s improbable, /
+                            Impendent engine,’ the speaker asks rhetorically:
+                            ‘Who could imagine or / Desire their absence from
+                            the way things work, / This frame they helped
+                            contrive and help sustain?’ Only in contemplating
+                            and understanding the relationship of part to whole,
+                            can one hope to understand and move on. In
+                            journeying towards hope, Edgar takes us through a
+                            four-part collection of poems woven around the
+                            refrain ‘Im Sommerwind,’ which occurs three times in
+                            three variations. The refrain has the effect of
+                            binding parts to the whole, underscoring the
+                            knottiness of time as well as creating a sense of
+                            drowsy timelessness. The first and last refrain both
+                            perhaps depict a child, observing his mother take
+                            time out from the chores in the heat; a radio
+                            emitting ‘inklings of a tune’ which is ‘not going
+                            anywhere’ (pg 5). There is a pervasive sense of
+                            being stuck in time and changelessness. Edgar’s only
+                            variation is to employ the villanelle for the last
+                            refrain to emphasise through repetition this sense
+                            of time. In the central refrain of which I’ve
+                            already spoken, time collapses and becomes
+                            improbable and is at its most colourful when grief
+                            threatens an idyllic scene captured in a photograph.
+                            It is as if the central figure reaches out of the
+                            photograph, reaching beyond the moment. ‘You almost
+                            feel / Down on her mortal cheek as she kisses you /
+                            Goodbye...’ says the speaker observing the
+                            photograph. Edgar uses a similar ploy of collapsing
+                            time borrowed from fantasy in ‘The Immortals’ (pg
+                            l), almost bringing to life in a contemporary scene
+                            both Daniel Deronda and Dante’s Beatrice. Of the
+                            former, Edgar writes: ‘Deronda’s lying in Daniel
+                            Deronda, / His pages palping at the air, as though /
+                            Blindly taking in what it is all like.’ ‘The
+                            Immortals’ opens the first section of Other Summers
+                            , intimating one of Edgar’s disputes with summer:
+                            the haunting of the present with the past. It is a
+                            theme which dominates this section through the ten
+                            poem sequence ‘Consume My Heart Away’ (pgs 11-28),
+                            an engaging lyrical-narrative hybrid collection of
+                            poems occupied with coming to terms with the loss of
+                            love. The opening poem, ‘History of the House’ (pg
+                            11), embarks the reader, through the eyes of the
+                            abandoned lover, on a recollection of the passage of
+                            their relationship and speculation about why things
+                            happened as they did. Time collapses. Ghosts of the
+                            past haunt the house. ‘Enough of ghosts, of those
+                            who lived before. / I have to live. Switch off the
+                            radio’ says the lover. But the radio is difficult to
+                            switch off when the voices are from a past and
+                            valued relationship. The sequence concludes in ‘The
+                            Transit of Venus’ (pg 28) in keeping with Edgar’s
+                            philosophical stance that the reason (if there is
+                            one) for the passage of the relationship, was ‘to
+                            prove / Lability the gift of love.’ These are
+                            perhaps the most moving poems in the collection,
+                            carried by their easeful conversational tones,
+                            linking narrative and depth of feeling. They are
+                            amongst the poems least locked with classical
+                            reference, though the sequence does not escape this
+                            entirely (consider ‘Merlin and Vivien,’ pg 22). And
+                            although Edgar’s language is extraordinarily rich it
+                            is less obtuse in these poems than in others in the
+                            collection. The award winning ‘Man on the Moon’ (pg
+                            26), towards the end of this sequence, broadens
+                            Edgar’s appeal beyond the literati. This poem is a
+                            gentle, regretful, romantic musing drawing on
+                            twentieth century images of the Apollo landing and
+                            of space technology (‘the crescent moon... / a
+                            radioscope’), exploring the idea of destiny in
+                            relationship, the longing for intimacy, the idea of
+                            thought transfer despite physical absence that can
+                            occur in intimate relationships, again touching on
+                            the theme of collapsed time and space. Time
+                            continues to appear in collapsed states in the
+                            second section of Edgar’s collection.’Stilts’(pg
+                            54), which appears in a bracket of nature poems, is
+                            beautifully evocative of the shimmering light out of
+                            which these long-legged birds appear. The effect of
+                            light is to transport us into a kind of fantasy
+                            world. The speaker observes the stilts and
+                            questions: They gradually progressed... With no mark
+                            amiss, Contained within a still bubble of time
+                            Contiguous with this And visible from here,
+                            Transparent to our view, ...but to theirs too? When
+                            it comes to nature, Edgar is focussed on the
+                            interplay of context and creature and on creating
+                            images that support his philosophical content.
+                            Selections from a longer work entitled ‘From the
+                            Labyrinth’ (pg 38) employ the labyrinth of Minoan
+                            myth as a time travel device. It begins as a marble
+                            structure and progresses to the asphalt surface of
+                            the twenty first century. The light along the way
+                            also varies from natural light to ‘tube-fed neon.’
+                            Edgar adopts a psychological interpretation of the
+                            myth not unlike that of Dorothy Porter in ‘The
+                            Labyrinth of Intimacy’ { Crete , Hyland House, 1996,
+                            pg 42), and perhaps more directly relevant, ‘The
+                            Flying Leap’ ( Crete , Hyland House, 1996, pg 40)
+                            where she writes of Ikaros: ‘he could smell the
+                            Minotaur / playing in his own mind.’ Edgar’s
+                            character journeys into the labyrinth of himself to
+                            confront self-doubt and fear. The journey puts one
+                            in mind of Dante’s journey from the inferno to
+                            paradise where, along the way, he, like Edgar’s
+                            character, confronts people from his past. Given
+                            Edgar’s training in the Classics, it is not
+                            surprising that an exploration of memory dominates
+                            the third section of Other Summers . Opening with
+                            ‘War and Peace’ (pg 61). he first draws attention to
+                            our tendency to be oblivious to the repetitiveness
+                            of time. In other poems such as ‘Living Colour’ (pg
+                            65), the tools of memory - including television,
+                            still photography and film and the activities of
+                            salvage and mummification - pass through his poetic
+                            scrutiny, as he addresses such issues as the
+                            comparative futility of memory and the dangers of
+                            time-lapse. Several are perhaps akin to social
+                            commentary cum criticism. ‘Promises, Promises’ (pg
+                            69) is partially a backhand swipe at politicians, as
+                            well as being about ‘time and chance and things that
+                            might have been’ and the power of time-lapse made
+                            possible through the media. The poem closure is
+                            apocalyptic: ‘Lights shudder in the clouds and
+                            cities sway,’ as if prophesying the consequences of
+                            falsity. ‘Sonnets in Silicon’ (pgs 70-71) similarly
+                            offers social commentary, alerting readers to the
+                            negative impact of technology on our humanity. It is
+                            possible to ‘know so much and yet not understand’
+                            matters of the human heart; to lose one’s
+                            sensitivity and compassion. Most intriguing for
+                            myself, who works in the knowledge industry, is the
+                            six poem sequence ‘Against My Ruins’ (pg 74) in
+                            which Edgar imagines a world without archives.
+                            Electronic archives... All that numeric memory was
+                            mum.’ He imagines the delivery of the reading rooms
+                            ‘To the illiterate savage purity / Of wind and sky.’
+                            A kind of futuristic Dark Age followed by the slow
+                            restoration of writing. At first ‘pictographic
+                            scratches’ appear, then the return of scholarship,
+                            until ‘Sweet waters in the desert flowed again.’ It
+                            is a sequence rendered, unusually for Edgar, in free
+                            verse and again is almost apocalyptic. It is
+                            dedicated to Alberto Manguel, who has both authored
+                            A Dictionary of Imaginary Places and has been
+                            engaged in the restoration of a medieval farmhouse
+                            which incorporates space to house his 30,000 volume
+                            library. Reassured by the purpose of memory, Edgar
+                            propels the reader towards a hopeful future in
+                            section four. The opening poem ‘Don Juan in Hell’
+                            (pg 81), has us looking upon Don Juan as he is
+                            ferried across the ‘lower seas,’ the world of the
+                            dead, a ‘calm hero’ who does not ‘look or turn’ to
+                            those who are dead and the one steering is ‘a great
+                            stone man hollow.’ Perhaps it is such a calm one who
+                            can be open to new love, and Edgar proceeds to a
+                            unique sequence of love poems ‘Alpha and Omega’ (pgs
+                            89-91), capturing for us the breathless surprise
+                            with which new love arrives bearing gifts of renewed
+                            life and purposefulness. In similar cosmic imagery
+                            to that employed in part one, he paints the wonder
+                            of standing ‘alone, / Not waiting, as I thought, my
+                            eyes on / The blank, recessional horizon’ only to
+                            find ‘Without my noticing, you were there / Tapping
+                            my shoulder’ so that ‘Everywhere / The day unfolds
+                            new shapes and designs.’ Time yields its surprises,
+                            ‘a blink ago’ writes Edgar, ‘No such patterns were
+                            on show. / Where were they hiding in the day?’
+                            ‘Diversionary Tactics’ (pg 107), following on from
+                            ‘Permaculture’ as the last poem in the collection,
+                            finds the speaker touring the suburbs, city centre
+                            and foreshore of Sydney, observing: ‘Surely, here at
+                            the heart of things, / Here is the ideal place for
+                            the attempt.’ Sydney holds the prospect of the new
+                            beginning, already hinted at in ‘Permaculture.’ He
+                            observes how ‘summer has its way.’ This is the place
+                            of Edgar’s childhood and here is the old sameness
+                            mingled with the new - ‘old ritual’ continues here,
+                            he writes, ‘With a new but undeflectable endeavour,
+                            / For all that childhood has resigned / Its codes
+                            and haloed circumstance forever.’ Here too, clouds
+                            are no longer described in terms of ‘white dismay’
+                            but rather as a ‘fine smudge’ rising ‘in the summer
+                            sky.’ Understanding Edgar’s poetry is not always
+                            easy going. For those of us less linguistically
+                            versatile, reading his work will require the
+                            presence of a good dictionary. Edgar’s poetry
+                            follows the tradition of A.D. Hope and Gwen Harwood
+                            with its emphasis on classical form, and
+                            particularly Hope in the use of myth infused with
+                            contemporary relevance. What is therefore required
+                            then, for those not of the literati, (and maybe for
+                            those who are), is the hunting down of relevant
+                            keys, whether in a Google search, a dip into a good
+                            print reference on mythology, or literature, in
+                            order to unlock the significance of a poem. And one
+                            must also come to this poetry with a preparedness to
+                            sit with a poem awhile in order to untangle the
+                            sometimes convoluted and lengthy sentences he
+                            employs (some run to fourteen lines). Mostly these
+                            are decipherable. Occasionally they are not. I am
+                            still puzzling over parts of ‘The Sorcerer’s
+                            Apprentice’ (pg 43). These strategies for unlocking
+                            poems can be an annoyance. Alternatively, they
+                            might, if allowed, enrich one’s language and yield
+                            the benefits of contemplative thought. And are these
+                            not also a part of the role of poetry? Edgar is
+                            unique in Australian poetry with his pervasive use
+                            of end rhyme. Only a minority of poems appear in
+                            this collection without it, either as blank verse or
+                            free verse. Often a rhyming scheme is combined with
+                            the more contemporary feel of the conversational
+                            style, which has the potential to create
+                            unsatisfactory tension at the end of lines. ‘The
+                            Transit of Venus’ (pg 28) is a case in point. Here,
+                            the combination of rhyme, indentation and
+                            heterometer seems far too disruptive of the
+                            conversational tone. There are times too when, in an
+                            effort to maintain the balance of meaning and sound
+                            patterning, sentence structure deteriorates into
+                            slightly archaic patterns, as happens in the second
+                            stanza of’Optical Illusions’ (pg 63). On the other
+                            hand, the rhyme can work quite unobtrusively as it
+                            does in ‘Man on the Moon’ (pg 26), binding it
+                            together with repeated sound and adding musicality.
+                            When I came to Edgar’s Other Summers , I came with a
+                            view to keeping ‘in the zone’ of poetry while I
+                            settled into a new job taken up after the passing of
+                            my father. I have come away with a deep sense of
+                            pleasure and appreciation for the beauty of
+                            patterning in poetry. And I am instructed. In
+                            ‘Diversionary Tactics,’ the final poem in Other
+                            Summers , there is a slight edge of hesitancy and
+                            doubt in the speaker’s voice. It lingers in the
+                            opening words, ‘Surely, here at the heart of things,
+                            / Here is the ideal place for the attempt,’ as if
+                            only time will fully convince. Loss does that to
+                            you. Time kicks in with memory and walks along with
+                            whatever wishes time also unfolds. The trick for
+                            contented living is in their reconciliation.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Critical Survey Review</summary>
+                        <p>
+                            Other Summers John Lucas Critical Survey , 2007
+                            Stephen Edgar’s poems are unusual and, to me at
+                            least, unusually welcome in that they bear testimony
+                            to the fact that formalism, over which obsequies
+                            have so often been pronounced, is alive and well.
+                            Edgar positively relishes the chance to write in a
+                            number of demanding forms, though wary readers will
+                            be relieved to know that the sestina, that curse of
+                            the creative-writing class, makes no appearance.
+                            (‘Right, class, it’s sestina time. No pain, no
+                            gain.’) There are, however, two villanelles, one of
+                            which, ‘Unsunned,’ while it isn’t very good, is in
+                            the manner of its failure, in exalted company:
+                            Edgar’s strained rhymes on effluence/rents and
+                            quail/ail are no worse than Empson’s famously
+                            desperate ills/rills, in ‘Missing Dates.’ and at
+                            least the Australian poet’s syntax holds steady.
+                            Good readers will also delight in Edgar’s readiness
+                            to make much use of polysyllabic words, thereby
+                            thumbing his nose at that silly bit of current
+                            orthodoxy which insists that each line should be
+                            packed with monosyllables - ­this, despite, or
+                            perhaps in ignorance of, Pope’s ‘And ten low words
+                            oft creep in one dull line.’ There’s a down side to
+                            this. Edgar has an unwary fondness for such
+                            formulations as ‘empowered,’ ‘embowment,’
+                            ‘empetalled’ and ‘enwraps;’ and he over-uses the
+                            word ‘lucid’ (which turns up 4 times), as he does
+                            its close neighbour ‘lucent.’ A good editor would
+                            surely have drawn attention to this, as they would
+                            query the bookishness that from time to time
+                            sprinkles dust over otherwise good poems, as when
+                            Edgar speaks of a repeated scene that ‘reinstates
+                            but not redeems’ (my italics), or when he imagines
+                            someone who ‘contemplates his day to the sublime /
+                            Inevitabilities of the late Mozart’. And when he
+                            refers to ‘the grey encroachments in his thinning
+                            hair,’ you think, yes, well, Stevens coined the word
+                            ‘encroachment’ with an authority that now makes it
+                            as unusable as Shakespeare’s ‘multitudinous,’ though
+                            this is dropped in to what is for the most part a
+                            fine poem, ‘Against my Ruins.’ This title comes of
+                            course from T.S. Eliot, but then why not? Elsewhere
+                            there are allusions to or quotations from
+                            Shakespeare ( Henry IV, Lear, The Tempest ) , Dante,
+                            Cavafy, Wittgenstein, George Eliot, Yeats, Pushkin,
+                            Baudelaire, Albert Manguel - to whom ‘Against My
+                            Ruins’ is dedicated, and others beside, and I think,
+                            GOOD. A poet who is unembarrassed about his reading
+                            and who sees no reason to apologise for it. Other
+                            Summers is about as far as you can get from the
+                            street-wise knowingness of postmodern allusions to
+                            whatever happens to happen, every one of them
+                            accompanied by a kind of wink-and-a-nudge on the
+                            grounds that - whatever - it’s all equally valid.
+                            No, it isn’t. Reading , for example, the opening of
+                            ‘The Immortals’ is to feel a serious delight at the
+                            lines’ eloquent cadences: A breeze fills up the
+                            manna gum’s huge lung, That hologram of bronchioles.
+                            It sways there Tethered and shifting like a hot-air
+                            balloon Preparing for some fresh and doomed attempt
+                            To circle the great globe... I don’t know whether
+                            this is the first time ‘bronchioles’ has appeared in
+                            a poem, but I can’t imagine anyone will have used it
+                            to better visual and aural effect. (Those repeated
+                            long os make for a kind of hollow sound that is
+                            intrinsic to the phrase’s wit.) There’s a similar
+                            delight to be taken from the ‘The Time Machine,’
+                            whose intricately- rhymed six-line stanzas allow
+                            Edgar to stretch a complex syntax over them, one
+                            that rarely threatens to snap under pressure.
+                            (Though, if I’m to be picky, I must note that to
+                            open three out of six successive lines with ‘While’
+                            is going it a bit.) For all I know, there may be
+                            readers of this review who by now are finding the
+                            terms of my praise for Edgar a form of damnation.
+                            Formalism? Polysyllables? Complex syntax? Aren’t I
+                            as good as suggesting that Other Summers is, you
+                            know, ‘inaccessible.’ Not long ago I read a review
+                            in which a poet was taken to task for using words
+                            the reviewer hadn’t previously come across. (They
+                            included ‘ferrous’ and ‘strophic.’) Goodness only
+                            knows what he’d make of Edgar’s use of ‘favela’ and
+                            ‘pome,’ to choose from a rich variety. If this kind
+                            of thing bothers you, dear reader, go back to the
+                            baby language of those ‘accessible’ poets who fly
+                            forgotten as a dream flies at the opening day. And
+                            good riddance. As Louise Bogan said, ‘The muse is
+                            immortal ./ And it isn’t for you.’ Other Summers, a
+                            deeply serious collection of poems, and one that
+                            deserves serious readers, is mostly deeply engaged
+                            with memory: personal, social, and cultural. Three
+                            different poems, each bearing the same title, ‘Im
+                            Sommerwind,’ occur at different points during the
+                            book’s progress. They are all written in three-line
+                            stanzas, the last being an adoitly-managed
+                            villanelle (aha!), and it occurs to me that Edgar’s
+                            use of trimeters may be intended as a slant homage
+                            to Dante, given that the three poems all use
+                            remembered images to evoke the glimpse of a
+                            paradisal past, though a sense of menace, of future
+                            threat, hangs over each of them. And this can also
+                            be felt in the poem called ‘Summer,’ where a
+                            hospital setting contains, in most senses of that
+                            word, bodies seen ‘As in a nightmare,’ or, I think,
+                            as in a kind of Dantean vision. For there is
+                            something spectral, dreamlike, about much of the
+                            material in Other Summers, a quality which both
+                            attends to but tries to distance anguish.
+                            Appropriately enough, then, probably the finest
+                            poems in the collection make up a sequence where
+                            such distancing is all-but impossible. ‘Consume My
+                            Heart Away’ consists of ten poems tracing the course
+                            of a love affair from start to finish, and it is
+                            prefaced by epigraphs from the Inferno - ‘No greater
+                            pain / Than to remember happy times / In misery’,
+                            and Lawrence Durrell: ‘I saw that pain itself was
+                            the only food of memory: for pleasure ends in
+                            itself.’ I can understand and sympathise with the
+                            temptation to pin these epigraphs to the head of the
+                            sequence, but I’m not sure it shouldn’t have been
+                            resisted, as perhaps should the unattributed
+                            borrowing from Yeats for the title (which only makes
+                            full sense when you know the next words of ‘Sailing
+                            to Byzantium’: ‘sick with desire’). Between them,
+                            title and epigraphs seems as though they want to
+                            authenticate the pain of the writer, whereas what
+                            needs to be authenticated are his poems. Put it
+                            slightly differently. Too much bad criticism relies
+                            on finding poems ‘moving.’ What that nearly always
+                            means is that the critic claims vicariously to feel
+                            the same pain as the poet claims to have felt in
+                            writing about lost love, bereavement, other summers.
+                            And it won’t do. Randall Jarrell once said of bad
+                            ‘sincere’ poems: ‘it is as if the writers had sent
+                            you their ripped-out arms and legs, with “This is a
+                            poem” scrawled on them in lipstick.’ In the past
+                            year alone I have read any number of such poems,
+                            often pressed within the pages of books put out by
+                            reputable publishers, each of them crying out ‘I was
+                            the man - or woman - I suffered, I was there.’ What
+                            makes Edgar’s sequence different is that he has
+                            written a powerful, achieved sequence of poems that
+                            are entirely free-standing, so that if I’d heard
+                            he’d made the whole thing up it wouldn’t in any way
+                            diminish my admiration for what he’s done. There’s
+                            one exception. ‘Song Without Words’ not only suffers
+                            from the knowing allusiveness of its title, but from
+                            what seems to me a blank at its heart. When the male
+                            narrator looks at the woman he loves while, unaware
+                            of his presence, she plays at the keyboard (a Joni
+                            Mitchell number), he thinks that ‘Too self-possessed
+                            and too suspicious / To give herself away, / She
+                            took back what she’d never given / One day.’ The
+                            trouble with this is that we’ve had no inkling of
+                            either the loved one’s self-possession or her
+                            unreadiness to give herself away, and have therefore
+                            to take it on trust. But why shouldn’t she simply
+                            have changed her mind? It’s been known. Or come to
+                            the decision that she didn’t fancy him as much as he
+                            did her? That, too, has been known. It’s a small
+                            point, but as the rest of the sequence so tactfully
+                            and beautifully establishes her presence, both
+                            physical and emotional, ‘Song Without Words’ feels
+                            like a flattening-out of what elsewhere is amply
+                            attested precisely because it isn’t treated
+                            reductively. Having said this, though, I should at
+                            once add that I certainly don’t want any caveat to
+                            diminish my praise for the overall achievement of
+                            ‘Consume My Heart Away,’ which is never less than
+                            very good indeed, and in the last poem ‘The Transit
+                            of Venus’, rises to absolute distinction. That this,
+                            the closing poem in the sequence, should be written
+                            in the Scots ‘flyting’ stanza, is part of the
+                            sequence’s accomplishment: its supple, assured
+                            strength as poetic art. And to say this is, I hope,
+                            to provide some measure of the worth of this
+                            excellent collection.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Indigo Review</summary>
+                        <p>
+                            Other Summers Shane McCauley Indigo : No.1, Winter
+                            2007 Sometimes when sampling a book of poetry,
+                            several poems have to be read and re-read, tasted,
+                            before their tone and quality registers. In Stephen
+                            Edgar’s latest collection (his fifth), however,
+                            there is no doubt from the first poem on, that this
+                            is poetry of real aesthetic magnitude. The reader
+                            can discern that here is a poet who relishes
+                            wielding the machinery of verse to direct and to
+                            conduct emotive response. Here is the superb final
+                            stanza of ‘The Immortals’: The heat is a dimension
+                            now, like time, And as improbable. The cottage
+                            floats, Not quite convinced it’s happening, with its
+                            flies And cracked linoleum, its shelves of books
+                            Unaltered since the war, its bush-rat droppings, The
+                            clocklike clicking of the roof - all tethered To the
+                            least twitching of her dreaming fingers, Her shallow
+                            breath. Later, before her friends Descend, she’ll
+                            wander barefoot through the rooms In something easy
+                            with an ice-filled glass And put some music on and
+                            watch the sea. The senses of sight and sound
+                            cleverly combine to present the essence of
+                            skateboarders in ‘Proprioception’: Their whole
+                            Design to flout The iron rule of balance, as they
+                            careen, Curvet and caracole A wheeled mock dressage
+                            through, between, Among pedestrians. It is such a
+                            relief to find a poet who has ignored the trend
+                            towards prosaic and poorly crafted minimalism and
+                            who, instead, has made extensive use of the full
+                            panoply of poetry’s forms and techniques. This is
+                            poetry rich in metaphor and allusion; it is poetry
+                            which complements the visual with the vital
+                            underpinning of rhythm and unobtrusive rhyme. In
+                            fact, Edgar helps to demonstrate just what can still
+                            be achieved with traditional patterns such as the
+                            quatrain: They did not seem to see, Or not at any
+                            rate To mind our tangent temporality, But with
+                            unruffled gait They lifted up and set Back down
+                            their graceful feet, With poise unconscious as the
+                            etiquette Of an age-old elite. Apart from the
+                            variety of subject matter - modern science, optical
+                            illusions, films of Hitler, the transit of Venus -
+                            there is a virtuoso display of forms: sonnets,
+                            villanelles, free verse and beautifully wrought
+                            translations of Baudelaire. Edgar is particularly
+                            adept at exploring facets of time, season and
+                            memory, as suggested in the book’s title. In ‘Im
+                            Sommerwind’ he perfectly captures an enervated
+                            adolescent’s perspective: On a hot listless Sunday
+                            afternoon Of adolescence, on the parapet Against the
+                            pillar, I look lazily Across the park that’s faded
+                            less by summer, It seems, than from the day’s inert
+                            aversion To the principle of colour. Cycles of
+                            presence and absence permeate his reflections on the
+                            seasons, as in ‘The Sounds of Summer’: The cicadas,
+                            as though never here, are gone. A silence that was
+                            always immanent Slides back. Edgar time-travels back
+                            through memory in many poems. In ‘Man on the Moon’,
+                            for instance, he is a boy again, watching the
+                            moon-landing with: The whole class huddled ’round
+                            the TV screen. There’s not much chance, then, of
+                            forgetting that. He is also a very fine poet of
+                            love, and such poems are redolent of commemoration
+                            and gently bruising regret. Poems about lost or old
+                            love can be mawkish and embarrassing. Edgar
+                            effortlessly avoids the pitfalls and simply records
+                            his reflections with controlled dignity: She will
+                            not be denied. The ghost of her is too much to
+                            ignore, More stubborn to remain since she is gone.
+                            Enough of ghosts, of those who lived before. I have
+                            to live. Switch off the radio. This wry
+                            bitter-sweetness also filters through Tralee’: Why
+                            blame A woman who right from the start I saw could
+                            not be good for me but still Desired so badly you
+                            might well assert That I conspired with you to break
+                            my heart. The poem comes to an aching close: ‘If you
+                            still think we might reach Tralee, the truth is that
+                            we cannot start from here.’ This is poetry that most
+                            definitely passes the ‘Do the hairs rise on the back
+                            of your neck?’ test. At the other end of the
+                            spectrum, Edgar tackles the hi-tech, fast-paced
+                            world of Information Technology in his ‘Sonnets in
+                            Silicon’. Here, a characteristically lucid form and
+                            diction enables him to philosophise on real and
+                            artificial intelligence: How did that little man
+                            with such brief time, Know what he knew about the
+                            human heart? And on virtual reality: The sun is a
+                            child’s drawing, brash and bright Edgar’s range of
+                            craft, thought and feeling is immense. Other Summers
+                            has to be recommended unreservedly.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Times Literary Supplement Review</summary>
+                        <p>
+                            Other Summers Oliver Dennis The Times Literary
+                            Supplement , 11 May 2007 Stephen Edgar’s previous
+                            collection, Lost in the Foreground (2003), was one
+                            of the most significant achievements in Australian
+                            poetry - or, indeed, in poetry anywhere - of recent
+                            years. An advance on Where the Trees Were (1999) -
+                            which, though impressive, suffered throughout from a
+                            slight bitterness of tone - it prompted comparisons
+                            with two of Australia’s foremost formalists, A.D.
+                            Hope and Gwen Harwood. Here was a poet, interested
+                            for the most part in our essential helplessness, who
+                            had clearly read widely in the English canon,
+                            digested useful lessons there (from, among others,
+                            Donne, Shakespeare, Milton, Yeats and Auden), and
+                            gone on to develop a distinctive lyricism of his
+                            own. Most remarkable of all was the sense of
+                            tranquillity these poems attained: ‘A wind from
+                            nowhere just as soon invents / The evening’s empty,
+                            lemon-lit reprieve’. Lightness of touch like that
+                            was always going to be difficult to sustain, and,
+                            admittedly, this new book (Edgar’s sixth) has less
+                            of it. Whereas Lost in the Foreground achieved the
+                            objective emotion of which the best poetry is
+                            capable, Other Summers doesn’t hide the fact that it
+                            has been written under some personal imperative,
+                            making the impression it leaves seem, overall, a
+                            touch more commonplace. For the first time, Edgar
+                            has turned consistently to aspects of his own life.
+                            The volume’s longest sequence, for example, looks in
+                            detail at the unravelling of a love affair, but
+                            seldom gets off the ground: exceptions are ‘The
+                            Transit of Venus’ and ‘Man on the Moon’, which reads
+                            as well as anything Edgar has done previously: The
+                            paths that I imagined to have come Together and for
+                            good have simply crossed And carried on. And that
+                            delirium We found is cold and sober now and lost.
+                            Elsewhere, more than once, Edgar remembers scenes
+                            from childhood summers (‘On a hot, listless Sunday
+                            afternoon etc.’) and memorializes departed loved
+                            ones. One of the chief beauties of this collection
+                            is the poignant contrast it makes between sadness
+                            and a general fascination with warmth and sunlight.
+                            It is a measure of Stephen Edgar’s abilities that,
+                            even below its best, his work is hardly ever less
+                            than first-rate. On that basis, Other Summers
+                            deserves as wide a readership as possible,
+                            particularly if it introduces new readers to Lost in
+                            the Foreground , still the benchmark of Edgar’s
+                            poetry to date.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Poetry Chicago Review</summary>
+                        <p>
+                            Other Summers D.H. Tracy Poetry (Chicago), March
+                            2007 Of Australia, David Malouf writes: Its English
+                            was not the seventeenth-century English of the
+                            United States, with its roots in Evangelical dissent
+                            and the revolutionary idealism of the Quakers... It
+                            was the sober, serviceable language fashioned by
+                            writers like Addison and Steele and others to purge
+                            English of the violent and extreme expression, and
+                            political and sectarian hostilities, that had led to
+                            the Civil War... This was the language Australia
+                            inherited. The language of reasonable argument. Of
+                            balance. Of compromise. Impossible to say whether a
+                            given author is subject to such forces, but
+                            Australian poet Stephen Edgar has developed a quiet,
+                            nonvolatile rhetoric of such balance and reason, and
+                            has reached such a level of syntactical control in
+                            this mode that he can write well about, and is at
+                            his best writing about, next to nothing: a woman
+                            lounging alone in a house on a hot day, some birds
+                            walking up the beach. Actors in these poems are
+                            frustrated from acting by futility, apathy, or
+                            anomie, and are thrown back variously onto what they
+                            see and what they remember, which may bring misery
+                            or happiness. The poetry therefore gravitates
+                            towards the action of the mind, and fits most
+                            comfortably into the uncomfortable gap between the
+                            senses and sensation: The optic nerve still lives in
+                            paradise And hankers to admit Its innocent
+                            improbabilities. The mind has paid that price And
+                            always seems to see through seeing’s wit What was
+                            observed by Mephistopheles: Why, this is hell, nor
+                            am I out of it. ‘Optical Illusions’ Life, especially
+                            at its quietest, is a brandy that must be sipped,
+                            even if it doesn’t taste good. Like Thomas Hardy,
+                            Edgar derives considerable impulse from the stanza
+                            form, and adapts to it a Latinate syntax that
+                            artfully defers and paces meaning. He gives image
+                            and metaphor limited play, because these devices are
+                            liable to run away with a thought he has other plans
+                            for. The poetry is under high compression, to be
+                            sure, and occasionally something leaks out the side:
+                            metrical considerations lead to a few stiff word
+                            choices (like ‘begem,’ ‘conflagrate,’ and
+                            ‘empetalled’), all the more evident because the
+                            diction is generally mellow. Edgar is a bit too
+                            angular for his translations of Baudelaire, and an
+                            attempt to locate the metaphysics of two laboring
+                            porn actors topples over into decadence. Though not
+                            invulnerable to the rococo dangers of the style, he
+                            achieves, overall, a supple classicism that earns
+                            him a place next to the best twentieth-century
+                            American formalists. Nor is he in their image: more
+                            exposed than Hecht, more troubled than Wilbur, more
+                            Horatian than Merrill, he is as capable as all of
+                            these poets of weaving out of verse that fine grade
+                            of mesh that sifts from experience grains of meaning
+                            otherwise lost.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Island Review</summary>
+                        <p>
+                            Other Summers Janet Upcher Island , No. 107, Summer
+                            2006 A muted contrast to Deane’s work is Stephen
+                            Edgar’s latest collection, possibly the apex of his
+                            poetic oeuvre , surpassing even the achieve­ment of
+                            his previous five volumes. Edgar is not known for
+                            his exuberance: in many ways, he seems of another
+                            time, another place - another summer. Perhaps it’s
+                            the yearning wistful quality, the nostalgia, which
+                            imparts such emotional resonance. The haunting
+                            nature of his complex images and the crafting of his
+                            lines with their musical cadences are exquisitely
+                            moving. Until now, I’ve often found Edgar’s work to
+                            be lacking an emotional depth-charge. The opposite
+                            is true here. It is as though he has antennae more
+                            delicate, more sensitive to experience than the rest
+                            of us. He knows how to start a slow fuse which
+                            ultimately detonates. Coupled with this, he has a
+                            mastery of poetic technique and form. Sometimes,
+                            though, there’s a danger that the technical
+                            ingenuity and constraints of a rigid rhyme scheme
+                            can overshadow the felt experience: his exacting
+                            emphasis on formal excellence occasionally elevates
+                            form above content. In ‘The Sounds of Summer’,
+                            potent and ambivalent images are subsequently
+                            diluted through contrived language and constraining
+                            rhyme: ‘Indoors The Sounds of Summer taints the
+                            immense / And daily hours. Lost to its usual crew, /
+                            The radio / Can’t bring to bear this stridulant
+                            pretence.’ This is even more evident in the poem,
+                            ‘War and Peace’, where rhyme almost results in
+                            bathos: ‘...while a barn / Burns and its full
+                            bushels bake / Until the air becomes confused / With
+                            the aroma of a cake.’ I Such criticisms serve only
+                            to heighten the enduring qualities of most of this
+                            collection in four sections, unified by the three
+                            poems entitled ‘Im Sommerwind’, which recur like
+                            motifs, as symphonic variations on a theme. Behind
+                            the entire collection is an aura of mirage, like
+                            shadow play where illusion becomes more real than
+                            reality. Edgar casts a dazzling sensual spell,
+                            transporting us to languid days of shimmering heat
+                            and half-lights, indolent summers which contain
+                            within them a heightened awareness of mortality; in
+                            the midst of summer ease, there’s a dread, an
+                            undercurrent, a ‘smudge ...in the summer sky’. This
+                            paradox is nowhere more apparent than in the poem
+                            ‘Summer’, set in a sterile hospital ward, casting
+                            unreality on the summer’s day outside. Edgar seems
+                            equally at ease with a variety of forms: the
+                            villanelle is superbly controlled in ‘Unsunned’ and
+                            in the final version of ‘Im Sommerwind’; he masters
+                            the Italian sonnet, for example, in ‘Promises,
+                            Promises’ and again, with a witty, darkly
+                            contemporary twist, in ‘Sonnets in Silicon’. There
+                            is great versatility in his tercets and quatrains,
+                            with their variety of metrical effects and half
+                            rhymes. Possibly the jewel of this collection is the
+                            sequence ‘Consume My Heart Away’ - the allusion to a
+                            line in Yeats’ ‘Sailing to Byzantium’. In this
+                            sequence, Edgar explores the many faces of desire,
+                            engaging a delightful blend of rationalism, wit and
+                            romanticism. It contains poems which are
+                            celebratory, caustic, self-deprecating, ironic - a
+                            brilliantly poignant depiction of male yearning and
+                            the rejection of unrequited love through a very
+                            sharp lens. Throughout the volume, the tensions and
+                            complexities create strength and ambiguity: summers
+                            are frozen in the frame and then dissolved, always
+                            with an undercurrent of our ‘tangent temporality’
+                            (‘Stilts’). Fittingly, the collection ends on a
+                            typical Sydney summer’s day with post-Christmas
+                            bargain-shoppers, people strolling in parks,
+                            beach­combers and body-boarders and, when we least
+                            expect it, on the way home: Just down these steps,
+                            along where that car turned, The ranks of roses, the
+                            grass floor, The notices that show The times, even
+                            the names of those concerned: ‘Diversionary Tactics’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Clarity and mastery Gregory Kratzmann Australian
+                            Book Review, No. 287, December 2006-January 2007
+                            Commendations from celebrities and authorities have
+                            become a standard feature of cover designs for books
+                            of poetry: sometimes one wonders whether the writers
+                            have actually read what they puff so assiduously.
+                            How refreshing it is, then, to find Clive James and
+                            August Kleinzahler recommending Stephen Edgar’s
+                            latest volume so perceptively. Kleinzahler’s phrase
+                            ‘voluptuous elegance’ goes to the heart of Edgar’s
+                            way with words. James’s comment will strike a chord
+                            with anyone who takes the time (and time is needed -
+                            these are not poems to skim through) to engage with
+                            Other Summers : ...perhaps the most fascinating
+                            aspect of all is that under the enchanted lyricism,
+                            the technical intricacy and the dazzling vocabulary
+                            there is always the bedrock of good, plain,
+                            conversational speech. Not surprisingly, the
+                            opinions of one poet about the work of another
+                            surpass or at least precede the evaluations of
+                            academic critics. Years ago, Edgar’s close friend
+                            Gwen Harwood took me to task for not knowing more
+                            about Edgar’s work than I did. ‘Read that!’ she
+                            said, presenting me with Queuing for the Mudd Club
+                            (1985) - ‘ everyone should know about Stephen!’
+                            Until recently, Edgar’s poems were not well known,
+                            except to other poets. He has not been someone to
+                            put himself about at literary festivals and
+                            readings, at least not outside Hobart, where he
+                            lived for thirty years until his recent move to
+                            Sydney. Edgar’s seclusion may have nurtured his
+                            great gifts, but one hopes that soon his work will
+                            reach the wide audience it deserves. Like Harwood,
+                            he is a wonderful reader/interpreter of his own
+                            work: that ‘bedrock of good, plain, conversational
+                            speech’ was strikingly present in the readings he
+                            gave at this year’s Mildura Writers’ Festival, where
+                            he was awarded the Philip Hodgins Memorial Medal.
+                            The language of the poems in Other Summers is
+                            striking in its range, from colloquial plainness (as
+                            in ‘English as a Foreign Language’), as the speaker
+                            tells of teaching his lover to say ‘‘I love you’ in
+                            Russian’: A lover’s commonplace avowal, But rather
+                            difficult to sound In Russian; it can be a trial To
+                            get your tongue around. But she repeated those words
+                            over And over till she had them pat. In English,
+                            though - well, she could never Quite manage to say
+                            that. Only an exhibitionist or an artist firmly
+                            confident of both his medium and audience would dare
+                            to use words such as ‘proprioception’,
+                            ‘anfractious’, ‘embowment’ and ‘stridulent’. But
+                            Edgar is no exhibitionist. The movements into the
+                            register of such polysyllabic arcane diction have
+                            the effect of jolting the reader into thought,
+                            making us ponder the strange materiality of these
+                            words in their poetic contexts. How many of us have
+                            forgotten the peculiar delight of encountering a new
+                            and strange word, going to the dictionary to check
+                            its meaning and etymology, and then committing it
+                            (or not) to memory? Such language is sparingly and
+                            economically invoked; many of the poems reflect
+                            their creator’s erudition, but the effect is never
+                            intimidating, because of the seductiveness of the
+                            voice and the sheer power of Edgar’s vision.
+                            ‘Proprioception’, which introduces the second of the
+                            volume’s four sequences, is a case in point. The
+                            word is used only for the title, but knowing what it
+                            means adds a dimension to the poem’s layered
+                            meditation on the subjectivities of balance. It
+                            moves from an exquisitely precise and witty
+                            picturing of ‘kids on skateboards’ as they careen,
+                            Curvet and caracole A wheeled mock dressage through,
+                            between, Among pedestrians and keep their hold - Or
+                            sprawl in a four-letter wreck and roll, to the
+                            self-abandoning moment of rapture when the speaker
+                            looks up to experience the aerodynamic mystery of a
+                            wheeling crane, and thence downward and inward, to
+                            his reflection on the dynamics of grief and loss:
+                            ‘Still at the empty table you make space / For where
+                            she sat and tread the kitchen’s bounds / As though
+                            two wrote that choreography...’ This elegiac voice
+                            is the dominant one in Other Summers .
+                            Characteristically, the sense of a striving for
+                            detachment is heightened by the use of the second
+                            person, where we might have expected ‘I’. It is
+                            difficult to be certain, sometimes, whether those
+                            ghostly presences, which are more real to their
+                            creator than his sense of self-identity, are
+                            actually or figuratively dead to him. Does it
+                            matter? That the reader wishes to know something
+                            that is withheld is testimony to the way these poems
+                            embody the absent lover, whether through the loving
+                            observation of the known body in ‘The Immortals’,
+                            Look, on her hand’s back are the clues to grief,
+                            Whatever she may think - those patches like The
+                            remnants of a suntan, veins as blue As any sky could
+                            wish... or the finely tuned eroticism of ‘The Kiss’:
+                            And that first night you slid the purple shift Over
+                            her shoulders and Peeled gently downwards, leaving
+                            her to stand In Aphrodite’s gift, And sinking with
+                            her garment to the floor, Made moist the shining
+                            fold you knelt before. This is one of a suite of ten
+                            poems called ‘Consume My Heart Away’; at a first
+                            reading, I did not appreciate the intricate patterns
+                            of theme and image which run through the whole. The
+                            human inhabitants of this summerworld sometimes
+                            appear almost incidentally, as in ‘The Sounds of
+                            Summer’, which begins with a bravura piece of
+                            synaesthetic description. This way of embodying the
+                            natural world in all its sensuous particularity
+                            seems to owe something to Harwood’s exploration of
+                            the language of nature in ‘Carnal Knowledge’ and in
+                            her late Pastorals . Edgar’s work shows a Romantic
+                            fascination with colour, shade and light, and with
+                            the challenge of recreating them through language. I
+                            almost missed the moving tribute to Harwood, in
+                            ‘Living Colour’ (‘Just as the poet said she’d
+                            thought her home, / The blessed city, till she was
+                            born to bless it...’). This remarkable poem explores
+                            the idea of colour as a way of lifting fascism out
+                            of a monochrome past into the technicolour present,
+                            where its power is seen in all its sinister
+                            immediacy. This is some of the finest lyric poetry
+                            to have been written anywhere in recent times.
+                            Through sound and structure, Edgar’s work reflects
+                            lessons learnt from music as well as from poetry:
+                            there are echoes of a range of singing masters, from
+                            Dante to Donne, from Larkin to Hope and Harwood.
+                            Perhaps the first thing which strikes the reader is
+                            his sheer delight in form, structure and rhyme.
+                            Old-fashioned? Surely not, for in most of these
+                            poems form exists in delicate equipoise with a
+                            passionate and highly individual vision of the
+                            world. The range of this vision is impressively
+                            wide, from the elegies for lost lovers to gentle
+                            tributes to parents, from political and social
+                            satire to gazes into the realm of nightmare. The
+                            poems from ‘The Labyrinth’ invert the experience of
+                            quotidian space and time, re-seeing the familiar and
+                            the known as though from another dimension,
+                            envisaging the horror of disintegration. Here, as
+                            elsewhere in this volume, the irruption of an arcane
+                            word into the line of plain speech jolts the
+                            reader’s sense of security in the reading process,
+                            drawing him into the experience of the speaker: An
+                            empty flask, a ragged coat laid by, A notebook or a
+                            mobile telephone. At some point all apparently
+                            surrendered To the anfractuous fallacy and turned
+                            Leftwards or right to seek the fabled zone...
+                            Stephen Edgar’s writing is analogous to the activity
+                            of the photographer in ‘Photography for Beginners’:
+                            both have the ability to fix and freeze the
+                            apparently ordinary moment, to subject it to a gaze
+                            which renders it strange, and so impels the
+                            viewer/reader to ponder the contingency and
+                            fragility of the very act of recording. The
+                            difference, of course, lies in the humane clarity of
+                            the poet’s vision, and in his mastery of an art of
+                            multiple perspective.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Wet Ink Review</summary>
+                        <p>
+                            Other Summers Stephen Lawrence Wet Ink , Issue 5,
+                            Summer 2006 Those of us who thought that Stephen
+                            Edgar had already reached a kind of perfection must
+                            now face the daunting possibility that he is only
+                            just getting into his stride. Despite his execrable
+                            self-promotion at 2004 Writers’ Week, I’d be happy
+                            for Clive James to provide the cover hyperbole for
+                            my next book. Yes, Edgar’s poetry is perfect stuff.
+                            ‘The sound of summer’ sways the reader along at its
+                            own careful pace. And ‘Living colour’ is astonishing
+                            from beginning to end: Try the opening lines of the
+                            collection: A breeze fills up the manna gum’s huge
+                            lung, That hologram of bronchioles. It sways there
+                            Tethered and shifting like a hot-air balloon
+                            Preparing for some fresh and doomed attempt To
+                            circle the great globe. ‘The Immortals’ But where to
+                            from there? When your start is as good as it gets,
+                            one of the only options left is to disappear into
+                            the empyrean. And a number of Edgar’s poems conclude
+                            by vanishing into ‘the swept sky’: ‘The sky makes
+                            history in the clouds’ (‘Pictures of love’). The
+                            poet’s eye ‘Watches the fine smudge rise in the
+                            summer sky’ (‘Diversionary tactics’), and the
+                            architecture of the firmament - clouds, rain, wind -
+                            are regularly and intensely observed: Buildings ail
+                            And fade behind the fog’s immantlements This whiter
+                            deadlight in the day’s white veil... ‘Unsunned’ When
+                            it comes to the human landscape, Edgar is less
+                            convincing. There are many surges at eroticism - and
+                            he creeps up on it, or tries to build furnace heat
+                            in the course of a full poem - but the outcome is
+                            ultimately wintry and passive: ‘frauds, / A cold
+                            waxwork attraction / Shown at Madame Tussaud’s’
+                            (‘Pictures of love’). His affinity with form
+                            estranges him from the heat of engagement (The
+                            kiss’), and he seems more comfortable peering
+                            through distancing frames of windows, dreams,
+                            mirrors and camera lenses. A certain anatomical
+                            repellence also stifles his passions. Feeling both
+                            ‘love and disgust’ at women’s ‘plumbing,’ his
+                            impeccable style wilts and purple rhetoric emerges:
+                            ‘The primal tissue of desire... expectant bliss...
+                            sleeping heroine / Lies deeply bedded’ (‘Look at you
+                            now’). (For the sake of his idiom, he should avoid
+                            ladies’ underwear aisles: ‘swimwear, lingerie that
+                            sings / The body and its moistening promises’
+                            (‘Diversionary tactics’).) Edgar is aware of his
+                            words’ multiple effect, but irony and light mockery
+                            serve only to distance the reader further and
+                            highlight his confliction: ‘Candour and lewdness
+                            mated in one guise’ (The jewels’). There is also a
+                            moral/artistic reason for the muffled sexuality
+                            presented in Other Summers . He quotes Lawrence
+                            Durrell in his bust-up sequence ‘Consume my heart
+                            away’: ‘I saw that pain itself was the only food of
+                            memory: for pleasure ends in itself’. All the more
+                            worth recording, I would have thought. There are
+                            enough moments when form and emotion masterfully
+                            converge: One leaf slides past her skirt, that hand,
+                            and where It passes, like a drop of water loosed On
+                            paint, dissolves all colour. ‘Im Sommerwind’ This
+                            and other exquisite, meditative images are plentiful
+                            and beautiful enough to aver that Stephen Edgar’s
+                            new collection is a splendid poetic achievement.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Radio National Review</summary>
+                        <p>
+                            Other Summers Geoff Page Radio National’s The Book
+                            Show , 26 September 2006 Out of Herr Feierabend’s
+                            private vault A stock of long lost film has finally
+                            come To light, from that last summer before the War
+                            - In colour too, As bright and vivid as delirium. It
+                            seems a kind of fault In history and nature to
+                            restore This Munich, underneath the flawless blue Of
+                            mid-July in nineteen thirty-nine, This pageantry of
+                            party-coloured kitsch. The Fuehrer, with his bored
+                            assessing gaze, And his gang, all braid And
+                            frogging, leather-bound and medal-rich, Sit large as
+                            life, benign As the broad daylight, to accept like
+                            praise The weather and the crowd and the parade. Why
+                            should this hit me like a culture shock? Just as the
+                            poet said she’d thought her home, The blessed city,
+                            till she was born to bless it, Had not known colour,
+                            But lingered in prenatal monochrome, So is the
+                            Nazis’ stock Portrayal, when the mind turns to
+                            address it, All black and white, the greys of death
+                            and dolour. The goose-step chorus line kicking at
+                            nothing, With heads ricked to one side, where he
+                            looks on, Torch-haunted rallies conjuring the tribe,
+                            The pavements lined With adoration’s awful unison;
+                            And the corpses piled like clothing, Those gates
+                            that Dante thought to superscribe Long since: all
+                            drained of colour in the mind. But here in garish
+                            dress coat Goering draws His decorations up to
+                            execute Some greeting; there’s Streicher smiling in
+                            the lens Flushed and appalling; And Hitler’s there,
+                            giving his strange salute, That stop sign to
+                            applause Which calls up more. And as the arm
+                            unbends, We see his pink cold fingers curl in
+                            falling. Now past they flow, the floats and staged
+                            effects, The gilded eagles, banners, fancy dress,
+                            Teutonic warriors and virgins with Blond streaming
+                            hair (Who seem to tempt the heart to acquiesce In
+                            what judgement rejects), Like something spawned by
+                            Metro-Goldwyn-Mayer, A figment spun from myth Alive
+                            and beating in the gas-blue air. ‘Living Colour’
+                            That poem, ‘Living Colour’, is one of the most
+                            memorable in Stephen Edgar’s new collection, Other
+                            Summers . It has many of his trademarks but not all
+                            of them. We have the elaborate rhyme scheme, not
+                            always apparent at first glance ( abcdbacd , to be
+                            exact). We have the elaborate description, partly
+                            generated by the rhyme scheme. We also have some
+                            striking visuals, such as ‘prenatal monochrome’ and
+                            ‘party-coloured kitsch’, - but this time the scene
+                            is far less innocent than the gently descriptive
+                            pieces that open and close the book. In ‘Living
+                            Colour’ we are in what the Germans thought of at the
+                            time as ‘Hitler weather’, ‘the flawless blue / of
+                            mid-July in nineteen thirty-nine.’ Having watched
+                            newsreels from this period many times, we tend to
+                            view it as Edgar describes it: ‘All black and white,
+                            the greys of death and dolour’. That, however, is
+                            not how the Nazi enthusiasts were experiencing it at
+                            the time. After the humiliation of the Versailles
+                            treaty and the hyper-inflation of 1920s, they were
+                            infatuated with ‘The gilded eagles, banners, fancy
+                            dress, / Teutonic warriors and virgins with / Blond
+                            streaming hair...’ Unlike us, with our later
+                            knowledge, they were unaware (or chose to be
+                            unaware) of ‘the corpses piled like clothing’ and
+                            ‘the gas-blue air’ that waited in the near future.
+                            Now, with his sixth book, Stephen Edgar has emerged
+                            as one of the most accomplished Australian poets of
+                            his generation. To judge from the imprimaturs on the
+                            back of Other Summers , he also has considerable
+                            support in the UK and the US as well. His work is
+                            now good enough to start forcing one to comparisons
+                            which may or may not be unfair. In his love for
+                            widely-varied stanza forms (and the tone in some of
+                            his love poetry) Edgar reminds one of John Donne. In
+                            his leisurely, closely-rhymed-and-metred
+                            considerations of modern life he prompts comparison
+                            with Philip Larkin. With his erudition, his love of
+                            the pentameter - and his familiarity with classical
+                            myth etc, he suggests A.D. Hope. These are heady
+                            names to play with but it's a reflection of Edgar's
+                            skill that one feels compelled to raise them. And
+                            defer them perhaps. Better to look at the way
+                            Edgar’s poems actually work - and perhaps the pluses
+                            and minuses of rhyme as used in the vast majority of
+                            poems here. There has been something of a return to
+                            rhyme in Australian poetry in the past decade or two
+                            and Stephen Edgar, along with Peter Kocan, Jamie
+                            Grant and the late Philip Hodgins, has been at its
+                            forefront. As used by Edgar, the elaborate rhyme
+                            schemes (demonstrated in ‘Living Colour’, for
+                            instance) tend to slow the pace, encourage
+                            imaginative elaboration of material, set up a
+                            complex music throughout - and, quite often, hold
+                            the reader at a certain distance. Sometimes the
+                            emotions dealt with by the poet were felt, we
+                            suspect, quite viscerally - but with the rhyme and
+                            complicated stanza forms being so important, the
+                            impact of these emotions on the reader can sometimes
+                            be muted. This is not a problem where the material,
+                            as in ‘Living Colours’, is inherently emotional. Nor
+                            is it a problem with Edgar’s fine collection of love
+                            poems in the sequence called ‘Consume My Heart
+                            Away’. These are pretty much as good as anything in
+                            the 800 year-old history of love poetry in English.
+                            They are beautifully poised, extraordinarily
+                            well-crafted and yet able to suggest the intensity
+                            of the human being who enjoyed and endured the
+                            experiences. A couple of stanzas from ‘Another
+                            Country’ might help to give the flavour: She said
+                            she loved being a woman. Her skin pressed mine, my
+                            face her hair. And I a man? Just being human Can
+                            sometimes be too much to bear: The hands remember
+                            what they held, The tongue recalls the salt-sweet
+                            skin. Who was it said that ‘her hair smelled Like a
+                            country I could be happy in?’ Something of these
+                            same qualities emerges in ‘Pictures of Love’,
+                            another love sequence towards the end of the book.
+                            As might be expected from someone who uses rhyme and
+                            metre so fluently, there is a considerable elegaic
+                            flavour to Edgar’s book. Even the love poems deal
+                            with the ‘ghost’ of the lover, as it were. Many
+                            other poems deal with lost moments in time - in
+                            childhood or in earlier relationships, including
+                            those with his parents, it would seem, as in the
+                            poems ‘The Shadowboard’ and ‘Im Sommerwind’ (version
+                            3 - there are three poems in the book with this
+                            title). The elegaic mood is the one which suits
+                            Edgar best. There are certainly moments of humour,
+                            irony and social satire, e.g. in ‘Permaculture’, but
+                            they don’t last long. More typically, the irony is
+                            subsumed within the descriptive process, adding to
+                            the overall tone and, in effect, holding the reader
+                            a little further off. A good sense of this can be
+                            felt perhaps in the first stanza of ‘The Sounds of
+                            Summer’: The cicadas, as though never here, are
+                            gone. A silence that was always immanent Slides
+                            back. The wide bay Aches with heat. Remote yachts
+                            balance on This fashioning of motion which the
+                            water, Insensible as yesterday, Makes of its swashy
+                            foibles while, remoter, A sheen rides mantled on its
+                            vanishment. That last line is particularly typical
+                            of Edgar: a perfect iambic pentameter; an unusual
+                            word, ‘vanishment’, to rhyme with another unusual
+                            word, ‘immanent’ - and an almost-polished visual
+                            effect, as suggested by the word ‘sheen’. One feels
+                            too how the rhyme scheme ( abcadcdb ) contributed to
+                            the elaboration of the whole stanza, without quite
+                            forcing the poet to say anything he didn't really
+                            want to say - even though, at one level, Edgar seems
+                            to be talking about not much more than that the
+                            cicadas have gone and the boats are out on sunlit
+                            water. So, to return to those earlier comparisons
+                            with Donne, Larkin and Hope. Maybe it’s a bit early
+                            to be making them. Certainly there is something of
+                            Donne’s metaphysical playfulness in Edgar’s work,
+                            his love of elaboration almost for its own sake.
+                            Edgar’s social and spiritual vision is not nearly as
+                            bleak as Larkin’s but certainly sad-enough and
+                            well-made-enough to remind you of it. As for the
+                            Hope comparison, it may be sufficient to say that
+                            Edgar is probably the first Australian poet since
+                            Hope to get from the iambic pentameter the sonorous
+                            authority Hope always achieved in his best poems,
+                            the sense that we need not be hurried here and that
+                            poets should employ the full range of their learning
+                            and vocabulary - not sell themselves or their
+                            readers short. For those who like their poetry
+                            well-metred and well-rhymed Other Summers is an
+                            essential book. So is it too, however, for those who
+                            argue that rhyme has no place in modern poetry. They
+                            need to see how eloquently they have lost the
+                            argument.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

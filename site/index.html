@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -256,7 +314,7 @@
                             </div>
                         </div>
                     </article>
-                    <article class="sidebar">
+                    <section class="sidebar">
                         <h2
                             class="section-title"
                             style="
@@ -266,7 +324,10 @@
                             Bestsellers
                         </h2>
                         <div class="bestsellers">
-                            <div class="bestseller">
+                            <a
+                                class="bestseller"
+                                href="/products/eldershaw.html"
+                            >
                                 <img
                                     alt="Cover of Eldershaw"
                                     src="/assets/books/eldershaw/cover.jpg"
@@ -275,8 +336,11 @@
                                     <h3>Eldershaw</h3>
                                     <address>Stephen Edgar</address>
                                 </div>
-                            </div>
-                            <div class="bestseller">
+                            </a>
+                            <a
+                                class="bestseller"
+                                href="/products/the-hanging-of-jean-lee.html"
+                            >
                                 <img
                                     alt="Cover of The Hanging of Jean Lee"
                                     src="/assets/books/the-hanging-of-jean-lee/cover.jpg"
@@ -285,8 +349,8 @@
                                     <h3>The Hanging of Jean Lee</h3>
                                     <address>Jordie Albiston</address>
                                 </div>
-                            </div>
-                            <div class="bestseller">
+                            </a>
+                            <a class="bestseller" href="/products/hidden.html">
                                 <img
                                     alt="Cover of Hidden"
                                     src="/assets/books/hidden/cover.jpg"
@@ -295,9 +359,9 @@
                                     <h3>Hidden</h3>
                                     <address>Mirranda Burton</address>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </article>
+                    </section>
                 </div>
             </main>
         </div>

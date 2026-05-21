@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,699 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/jane-lady-franklin.svg&quot;);
                         "
                     >
-                        Featured
+                        Jane, Lady Franklin
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Adrienne Eberhard</h3>
+                </div>
+                <img
+                    alt="Cover of Jane, Lady Franklin"
+                    class="product-cover-mobile"
+                    src="/assets/books/jane-lady-franklin/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Jane, Lady Franklin"
+                        class="product-cover"
+                        src="/assets/books/jane-lady-franklin/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Will we assume their speed the shark’s coming the
+                        squid’s mobilitiy the flathead’s knowledge? This
+                        difficulty fostling in our bodies – I could walk on my
+                        hands for sure. When Adrienne Eberhard assumes the
+                        persona of Jane, Lady Franklin, wife of the colonial
+                        Governor Sir John Franklin, she releases herself as a
+                        poet of intimate engagements. In a suite of poems,
+                        linked together like a chain of ponds, she follows Jane
+                        Franklin's Tasmanian years. Water, rocks, fossils, step
+                        daughters, desire or guilt and betrayal, and love of the
+                        physical world seethe in her lines. Eberhard looks long
+                        and deeply at well-loved landscapes and renders them
+                        with remarkable intensity and ingenuity of imagery...
+                        she has an unapologetic love for what language can do...
+                        a willingness to risk total immersion in it, even to the
+                        point of excess... she has a high degree of empathy with
+                        people and other living creatures. Eberhard is able to
+                        think her way deeply into their situations and create
+                        complex and lyrical accounts of her investigations... we
+                        are seeing the emergence of a truly substantial poetic
+                        talent. Geoff Page, Island
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/jane-lady-franklin.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/jane-lady-franklin/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044497</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>123</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Adrienne Eberhard is a poet whose collections
+                            include Agamemnon’s Poppies, Jane, Lady Franklin,
+                            This Woman and The Voice of Water.
+                        </p>
+                        <a class="bold" href="/authors/adrienne-eberhard.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Mattoid Review</summary>
+                        <p>
+                            Reviews A Touch of the Past - Jane, Lady Franklin
+                            Kristen Lang Mattoid , No. 55, 2006 In the list of
+                            things Jane Franklin must leave behind on her return
+                            from Hobarton to England in 1843, Adrienne Eberhard
+                            includes belief - in beginnings, paradise, god,
+                            ourselves here I could have been anything Eberhard,
+                            too, leaves belief behind, not as her own loss, but
+                            as the gift within her poems. Jane, Lady Franklin is
+                            a mosaic of one woman’s thoughts and experiences.
+                            Through this woman we gain access to a specific time
+                            in Tasmanian history. The book is persuasive as an
+                            intimate and imaginative recreation of this time and
+                            of Lady Jane herself. The poems begin with Lady
+                            Jane’s arrival in Hobart as the wife of Sir John
+                            Franklin, Lieutenant-Governor of Van Dieman’s Land.
+                            The year is 1837. The poems appear more or less as
+                            abbreviated journal entries but are only loosely
+                            chronological and are openly concerned with the
+                            place and its people as much as with Jane. The front
+                            cover of the book displays a mid- to late-1800s
+                            drawing by Emily Stewart Bowring. This is not a
+                            portrait of Lady Franklin. Instead, waves and two
+                            small boats foreground Government House, perched on
+                            its hilltop, trees to one side, bare hills to the
+                            other. It is not quite the house the Franklins
+                            occupied, but the drawing does reasonably depict the
+                            time. The effect of the book is to animate this
+                            picture: Lady Jane (one might imagine) is on the
+                            foreshore, watching the ripples and the birds. The
+                            ornithologist, John Gould, and the botanist, Ronald
+                            Gunn, are nearby, preparing for their next
+                            expedition. Beneath the waves, there is debris from
+                            the wrecks of sunken convict ships. Further down the
+                            harbour are the Danish and French whaling boats. Out
+                            of sight, another child dies in the nursery at the
+                            female convict factory. John Montagu, the Colonial
+                            Secretary, is in an office somewhere drafting his
+                            formal complaint against Sir John and the excessive
+                            influence of his wife. And hidden in the hills, just
+                            maybe, there are one or two survivors from the
+                            decimated Aboriginal population. Eberhard could not
+                            have hoped to find a better ‘tool’ than Lady Jane
+                            for her creative endeavours. The poems are always
+                            intimate, always the first-person impressions of a
+                            passionate, imaginative, and strong-willed
+                            individual, and yet, due to the intensity and
+                            variety of Jane’s interests, manage to also offer a
+                            broad-ranging historical account. Through Jane’s
+                            eyes, we are given general descriptions, intricate
+                            details, and immediate sensations that build an
+                            extensive picture of her location. We are invited,
+                            as well, to consider these experiences as they would
+                            have seemed to English eyes: ‘These birds bring back
+                            England,’ Jane tells us, referring to the black
+                            swans, ‘but turn it pale and ordinary - / their
+                            blackness astonishes / and this land looms / vivid,
+                            arresting; real.’ The settlements, the animal and
+                            bird life, the plants and waterways, the new foods -
+                            all are described in detail. Eberhard is also able
+                            to offer a glimpse of nineteenth-century science and
+                            of the opportunities colonisation brought to it
+                            (with Sir John, Lady Jane established the first
+                            Royal Society for the Advancement of Science outside
+                            of Britain). She is able to acknowledge, too, the
+                            conditions of the prisons and the suffering of the
+                            Aboriginal people. In ‘West Coast / Port Davey’,
+                            Jane laments the reality she has entered: ‘I imagine
+                            fires. / This shore shaped with dark figures. / Can
+                            they all be gone?’ Lady Jane remains, Eberhard
+                            informs us, ‘fixedly Victorian’ in relation to her
+                            ideas about punishment and class. Eberhard
+                            emphasises, too, that while the Franklins do adopt
+                            an Aboriginal orphan, they do not take her with them
+                            when they return to England. The book does not judge
+                            Lady Jane, it does not set out to weigh her virtues
+                            against her faults. It sets out, rather, to fully
+                            enter the time in which she lived. The book’s
+                            greatest strength lies in the intimacy with which
+                            Eberhard offers Jane to us, and in the vitality this
+                            intimacy lends to life in Hobarton. There are
+                            several ways in which Eberhard secures her broad
+                            orientation. In the poems, many names are mentioned
+                            that are not intended to be understood without
+                            reference to Eberhard’s ‘Notes to the poems’. Here,
+                            at the back of the book, historical details confirm
+                            that Jane was who Eberhard says she was, in outline
+                            at least. But the notes are not just reinforcements
+                            for Eberhard’s claims. They are also reminders of
+                            what it is we are entertaining: the intriguing woman
+                            we meet imaginatively and empathically in the poems
+                            is also a woman whose life and influence connects to
+                            a larger, recorded moment in history. Eberhard all
+                            but demands our involvement in this broader moment.
+                            When the name ‘Montagu’, for example, appears in
+                            ‘The Sitting-Room’ and ‘Frenchman’s Cap’, our choice
+                            is to learn his story (by reading, at least,
+                            Eberhard’s ‘Notes’) or to fail to understand the
+                            poems. The same ‘encouragement’ from Eberhard
+                            similarly lends animation to the names and deeds of
+                            other figures, Captain James Ross, Francis Crozier,
+                            and George Augustus Robinson among them. The poems
+                            themselves, too, insist that more is on offer in
+                            Jane, Lady Franklin than one woman’s fancies.
+                            Written as if they come from Lady Jane’s personal
+                            diary, the poems are clearly not journal entries -
+                            they are poems, crafted and arranged for a
+                            particular purpose. One might argue that the purpose
+                            is to portray six years of Lady Jane’s life without
+                            printing six years worth of writing. But the poems
+                            achieve more than compression. The snippets from
+                            Lady Jane’s life are brief and the book’s chapters
+                            take us from one subject to another rather than
+                            through events as they happen. Even the chapter on
+                            Lady Jane’s use of ‘Laudanum’ recounts, as well, the
+                            drug’s history and application. (These poems, as an
+                            aside, are enthralling, the nervous condition Jane
+                            endures becoming almost contagious in. I have clung
+                            to a snow bridge, blue-black depths glinting below,
+                            watched as icebergs crush my ship, masts studded
+                            with cold crystals, felt the fine flurry of snow
+                            filling my open mouth, closing my eyes. The laudanum
+                            is a ‘flower cure’ that ‘rings its music’.) There
+                            are many purely personal moments in Eberhard’s book.
+                            ‘Knock, and Enter’, for example, describes Jane’s
+                            regret at not having a child of her own. Yet the
+                            poems do not expressly privilege Lady Jane as their
+                            sole concern. The poems, further, do not adopt a
+                            single style readers might recognise as the voice of
+                            Jane. Eberhard employs a variety of structures,
+                            couplets, quatrains, sonnets, and free verse among
+                            them, sometimes with and sometimes without formal
+                            rhythm and rhyme. These structures and their variety
+                            encourage, again, a broader outlook. We experience
+                            Lady Jane intimately, and yet there is space, a
+                            structural space, by which we gain some distance
+                            from her. In the space of poetry generally,
+                            particular details are able to be imbued with wider
+                            significance. In Jane, Lady Franklin , this enlarged
+                            perspective emphasises the context in which Jane’s
+                            experiences are set, and towards which we are
+                            accordingly and repeatedly directed. The effect is
+                            strong, though Eberhard’s poetic structures do also
+                            present some difficulties. Awkward rhymes and
+                            rhythms are not uncommon (rhymes especially), and
+                            there is occasionally the feeling that the task of
+                            satisfying a formal sound pattern has been allowed
+                            too great an influence over the content of a poem.
+                            The imagery in Eberhard’s more constrained poems can
+                            seem a little careless. In ‘Tides’, water is
+                            described as ‘a breathing heart’ as if the odd
+                            repetition of the similarly compounded ‘black
+                            flowers open small hearts like warm and silent
+                            mouths’, from two lines earlier, does not matter.
+                            Jane, Lady Franklin is on the whole a pleasing and
+                            highly accessible publication. It contains much fine
+                            writing. In ‘The Overland Trek’, ‘The rain
+                            accompanies us, / an adagio playing in the brain.’
+                            In ‘Wet Autumn’, fungi sprawl in relaxed and
+                            beckoning poses, legs apart, chins jutting, fingers
+                            crooked, leering from their dour brows: grotesques,
+                            fit to mount the ramparts of cathedrals, grinning
+                            gargoyles pointing their fingers at the secrets that
+                            lie buried, embedded in the loamy pockets of the
+                            rain-washed mind. Through Lady Jane, we are given
+                            experiences that equip us with the means and
+                            motivation to imaginatively explore the world with
+                            which Eberhard teases us. Eberhard’s book does not
+                            effect breathlessness or awe regarding its words,
+                            nor significant surprise or challenge regarding its
+                            content. What it does, and does extraordinarily
+                            well, is to open a space of involvement and vibrancy
+                            in which the Tasmania of the 1830s and 40s can be
+                            brought very much to life. For this, the book is
+                            easy to recommend.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Wet Ink Review</summary>
+                        <p>
+                            The Latest Word - Jane, Lady Franklin Stephen
+                            Lawrence Wet Ink, Issue 2, Autumn 2006 Jane was the
+                            wife of Tasmanian colonial governor, Sir John
+                            Franklin. They arrived in Hobarton in 1837, and now
+                            poet Adrienne Eberhard provides a rich,
+                            well-researched sketch of Lady Franklin’s island
+                            life and activities. Eberhard is a talented writer,
+                            reaching deeply into her character’s psyche and
+                            using Jane as the ‘voice through which to explore
+                            Tasmania’. Coming from England, Jane is enveloped
+                            and overwhelmed by her new ‘fecund and teeming’
+                            environment. She makes sense of the landscape
+                            through the filter of Europe, and describes scenery
+                            in familiar similes - in the way that European names
+                            are superimposed upon natural landmarks: Lake St
+                            Clair, Mount King William, Frenchman’s Cap. Although
+                            her response is rooted in her heritage, embodying
+                            the sensibility of the times, Jane is alive to
+                            nature: ... it is their noisy presence that pleases
+                            me most: the crew of black cockatoos shredding
+                            banksias, like men drunk on wine, and the early
+                            morning hail of song from the wattle bird that wakes
+                            me every time. ‘Passion’ The landscape is an active
+                            participant, and frequently galvanises the poetry.
+                            Jane attempts to fuse the language of her heritage
+                            and the world she is confronted with: Regal birds
+                            like royal barges, Sleek, black, streaming, their
+                            red beaks a slash of unexpected colour, like rich
+                            brocade crossed with satin. ‘The River’ Nature’s
+                            creepers intrude everywhere, and the words often
+                            succumb to piled-on adjectives and similes.
+                            Occasionally, it is hard to separate Jane straining
+                            to convey her experience from the poet failing to
+                            avoid cliche or didacticism (‘the broad sweep of
+                            river,’ ‘rivets the eye,’ ‘vivid, arresting, real,’
+                            ‘Imagine, if you can...’). The bland rhetoric,
+                            however artful, can obscure character and deaden
+                            poetic effects. At its best, Eberhard successfully
+                            reveals her character’s deep conflicts. ‘Daughters,’
+                            a chapter about Jane’s attempt to adopt an
+                            Aboriginal girl, conveys the mindset and limitations
+                            of the poet’s nineteenth-century subject: ‘We
+                            thought to tame you / to mould your mind / make you
+                            curtsy, say please and thank you’ (‘Mathinna’).
+                            Successful, too, is the ‘Magic of stones’ section,
+                            in which the period’s intellectual conflicts are
+                            portrayed through scientific theories of the day.
+                            There are less satisfying chapters, such as ‘The
+                            female factory’ and the strained sonnets of ‘George
+                            Augustus Robinson’. However, this is a highly
+                            appealing book. Such a conceit, sustained over the
+                            length of a full collection, might grow tedious in
+                            other hands - but Eberhard has produced intelligent
+                            poetry that is both engaging and historically
+                            enlightening.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Island Review</summary>
+                        <p>
+                            Poetry - Jane, Lady Franklin Adrea Breen Island, No.
+                            102, Spring 2005 Tasmanian colonial history has had
+                            many visitations and in recent years women’s history
+                            has found its place among the bones recovered.
+                            Adrienne Eberhard’s poetry collection Jane, Lady
+                            Franklin speaks in the voice of Jane Franklin, wife
+                            of Governor Sir John Franklin. The poems are
+                            collated into nine thematic sets with some familiar
+                            subjects for Tasmanian readers: ‘Hobarton’, ‘Port
+                            Arthur’, ‘Daughters’, ‘George Augustus Robertson’,
+                            ‘The Female Factory’, ‘The Magic of Stones’, ‘The
+                            Overland Trek’, ‘Laudanum’ and ‘Recall/Return’.
+                            Speaking subject Jane Franklin shares dreams of hope
+                            and disappoint ment in the journey to Van Dieman’s
+                            Land: ‘I tasted air in my dreams, faint hills,
+                            mounds of whales; the beginnings of things’ (in
+                            ‘Snakes’). The monologue continues, recounting the
+                            personal through a conflation of fact and fiction,
+                            and ‘Snakes’ signifies the dig for ‘truth’ that
+                            informs this book, because Lady Jane had a desperate
+                            fear of snakes and tried to eradicate them from
+                            Tasmania . What adds to the charm of this work is
+                            the representations of place that make Tasmania a
+                            place of unique beauty. Seen through Jane’s eyes,
+                            the historical perception is made more intimate and
+                            sensuous: ‘Bay after bay of blue water, / limpid,
+                            shallow, oh, / to strip to bare flesh and wade; / a
+                            child’s garden’ (‘ Recherche Bay ’). Eberhard’s
+                            ‘Afterword’ is an essay clarifying reasons for her
+                            interest and research on Jane Franklin. ‘I want to
+                            pay tribute to Jane Franklin, the woman’, she says,
+                            because she was ‘written out of history, seen as a
+                            meddling adjunct to the ‘real’ Franklin, her husband
+                            Sir John.’ Eberhard’s dedicated research and poetic
+                            re-creations stand up well to serve the spirit and
+                            feminism of this pioneering Tasmanian.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Cordite Review</summary>
+                        <p>
+                            Jane, Lady Franklin by Adrienne Eberhard Magdalena
+                            Ball (critic ) Cordite (online), No. 22, 1 July 2005
+                            Adrienne Eberhard’s collection Jane, Lady Franklin
+                            can almost be described as a poetic novel. It
+                            contains a clear storyline, based partly on the real
+                            life voyage of Lady Jane Franklin, who traveled with
+                            her husband, Lieutenant-Governor John Franklin, from
+                            England to Hobart in 1837. Eberhard’s
+                            well-researched set of facts form the barest bones
+                            of the work, which follows Lady Jane’s six year stay
+                            in Tasmania . The work is divided into nine sections
+                            which comprise poems about Lady Jane’s initial
+                            impressions of Hobart through a visit to Port
+                            Arthur; her adoption of an Aboriginal girl,
+                            Mathinna; her interaction with George Augustus
+                            Robinson, Chief Protector of the Aborigines; her
+                            attempts to reform the prison system for female
+                            convicts; her exploration of the geological and
+                            natural world around her; her difficult overland
+                            trek with her husband from Lake St Clair to
+                            Macquarie Harbour; her use of Laudanum for her
+                            headaches; and her return to England in 1843. The
+                            poems are each footnoted and the book includes an
+                            extensive list of sources. However, while history
+                            certainly lends depth and interest to this work,
+                            Eberhard’s greatest achievement is in creating her
+                            own, very real Jane, a protagonist who draws the
+                            reader directly into her world, and away from the
+                            his-story on which her narrative is based. The
+                            poetry in this volume is direct, and even simple in
+                            terms of the single intention of each individual
+                            piece. The meaning is very clear, without any kind
+                            of overt experimentation or form for form’s sake.
+                            For example, by using the power of extended metaphor
+                            – something that Eberhard does very well – the
+                            author provides the reader with an insider’s feel
+                            rather than an onlooker’s perspective on the weather
+                            in Hobarton: In England , the rain was a melodious
+                            drubbing on the roof. Here it is a torrent of
+                            knocking; angry wasps, Pandora’s spirits hitting
+                            their small bodies against the box, the Furies
+                            wrapped in wet garments, dragged from the sea like a
+                            trawl of netted weed. ‘Wet Autumn’ The poetry is not
+                            without humour. One immediately feels the almost
+                            silly exuberance of a stranger-in-a-strange-land
+                            comic scenario with ‘Victuals’: Quail pie for
+                            breakfast, whole wallaby for dinner Kangaroo soup -
+                            those furred creatures with their great tails and
+                            dark-lashed eyes. Will we assume their speed the
+                            shark’s cunning the squid’s mobility the flathead’s
+                            knowledge? This divinity jostling in our bodies - I
+                            could walk on my hands for sure. We come to
+                            empathise with Jane as she discovers both the harsh
+                            and beautiful in her adopted country, walking along
+                            the water, looking up at the moon, or standing at
+                            the black fossil cliffs of Maria Island . It is a
+                            personal exploration of a public time and place, and
+                            Eberhard works deftly to create a character who has
+                            as much visceral presence as the ‘red lichens the
+                            eye finds’ (‘Thark Ridge, Mt Wellington’) or the
+                            ‘Mud thick as chocolate’ (‘Frenchman’s Cap’) which
+                            she comes across on her travels. Her perspective is
+                            as limited as any of her class, but it is the depth
+                            of her perception which makes her interesting, as
+                            she marvels at the height of tides, or experiences
+                            the hunger of a convict as she eats biscuits and
+                            flour, or steals apples from a garden on her trek to
+                            Macquarie Harbour . Although Jane struggles with the
+                            limitations of her class and her desire to
+                            understand the women of the Female Factory, or the
+                            convicts and the badly oppressed Aborigines of the
+                            strange world of Van Diemen’s Land which she
+                            explores, she begins to form a kind of makeshift
+                            bond with its inhabitants, sensing and collaborating
+                            with the stitchwork of the convicts or the longing
+                            that they might have felt on their trip: I wonder,
+                            when she mends her new mistress’s garments Will she
+                            remember the lithe stitches of the quilt, Colours
+                            that rioted like the sunset on the sea, Seams that
+                            gathered together the patches: Small pockets of love
+                            and hope. ‘Patchwork I’ Jane has her own personal
+                            longings which tie her more concretely to the land
+                            than her observations. Her debilitating headaches
+                            become writhing tiger snakes, her understanding of
+                            the land’s loss – both the aborigines and the
+                            Tasmanian Tigers – as a silence that etches the
+                            country. Her personal longing for a child is also a
+                            ‘shadow and absence’ which reaches its apex as a
+                            young Aboriginal child, Mathinna, enters her life:
+                            you are all spirit dispersed in the wind your heart
+                            is wild. You were never really mine. ‘Mathinna’ The
+                            poetry here is exquisite, beautifully taut,
+                            clarified to instant meanings that bypass the need
+                            for conjunctions and adverbs. Eberhard’s work
+                            demonstrates how powerful a medium for storytelling
+                            poetry can be, and yet none of the poetic force of
+                            each piece or its particular intensity is
+                            sacrificed. The character of Lady Jane is deeply and
+                            intensely drawn, both in terms of what she sees, and
+                            what she feels, using powerful imagery which heaps
+                            metaphor on metaphor until they reveal that which
+                            lurks under the rocks of the land, and under the
+                            petticoats in the parlour. Minor characters like Sir
+                            John, Mathinna, George Augustus Robinson, and
+                            Ornithologist John Gould are also revealed in a few
+                            deft strokes through Lady Jane’s perspective. This
+                            is a dramatic work, and the quiet voice through
+                            which it is told, serves to heighten the drama. Lady
+                            Jane is a character history refers to only in the
+                            periphery, but Eberhard succeeds beautifully in
+                            giving her center-stage. The perspective and sense
+                            is a deeply female one, full of pathos, loneliness,
+                            loss, hunger, and empathy. While each poem is strong
+                            enough to stand on its own, and many in this
+                            collection have indeed been published on their own,
+                            together they form a most intimate and powerful
+                            portrait – a history, but also a story of what it
+                            means to be alive in any time: to experience, to
+                            fight for justice, and to be fully conscious of
+                            one’s own limitations.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            A triumph of empathy as Lady Jane is brought to life
+                            Geoff Page (poet) The Canberra Times , 11/6/2005 In
+                            her new book, Jane, Lady Franklin , Adrienne
+                            Eberhard assumes the view-point of the wife of the
+                            Lieutenant-Governor of Van Diemen’s Land from 1837
+                            to 1843. Here again we can see many of the virtues
+                            she displayed in her first volume, Agamemnon’s
+                            Poppies . There is the same feeling for other
+                            people’s situations, the same verbal energy. The
+                            present book comprises nine sections which cover
+                            almost all the main elements of Lady Jane’s six-year
+                            stay in Van Diemen’s Land. The only exception,
+                            perhaps, is the controversy and back-biting that
+                            surrounded her husband’s tenure of office and his
+                            eventual recall. Eberhard, in several sections,
+                            gives us Jane’s intensely felt awareness of
+                            landscape, flora and fauna - again, a preoccupation
+                            not unlike what we saw of Eberhard herself in her
+                            first book. There are also poems about the Female
+                            Factory, a short (slightly sanitised) section about
+                            Port Arthur, an account of her overland trip with
+                            her husband across the island to Macquarie Harbour
+                            and a section about her adopted Aboriginal daughter,
+                            Mathinna, and the frustrations of her own
+                            childlessness. ‘I would have liked to feel my belly
+                            burgeon beneath my hands / too late - / instead I
+                            withdraw, my head aching / like a plague of wasps
+                            beating in my brain // I would the knocking was in
+                            my womb instead.’ Jane, Lady Franklin is obviously
+                            based on extensive research, including a thorough
+                            reading of her diaries, still mainly unpublished.
+                            The book’s afterword is comprehensive, almost
+                            scholarly - and easily answers the considerable
+                            number of factual questions raised by the poems. The
+                            book is not, however, a web of quotation. Eberhard
+                            has done her reading and then put the books aside.
+                            She has thought her way into her subject’s
+                            personality, with all of its complexities, its
+                            enjoyments and frustrations. Of the swans, for
+                            instance, she says: ‘These birds bring back England
+                            / but turn it pale and ordinary - // their blackness
+                            astonishes / and this land looms / vivid, arresting;
+                            real.’ In addition to this, Eberhard has used a
+                            considerable variety of poetic forms to embody her
+                            perceptions - mainly free verse but also a range of
+                            others, including iambic pentameter quatrains, and
+                            modern sonnets. She thus joins an increasing number
+                            of poets these days who think themselves into
+                            characters and situations from earlier periods but
+                            do so using thoroughly contemporary poetic forms. If
+                            Lady Jane herself had written poetry, the chances
+                            are she would have been a ‘poetaster’ or a
+                            ‘poetess’, a minor re-cycler of outmoded diction.
+                            Her diaries, it seems, transcend these expectations
+                            and Eberhard appears to have done full justice to
+                            their close observation and forward-thinking
+                            qualities. There are a few words like ‘babes’ and
+                            ‘gruel’ which do have a 19th-century ring but mostly
+                            the poems are made up of either contemporary or
+                            timeless description. Jane, Lady Franklin , is
+                            certainly no exercise in nostalgia, either in
+                            content or manner. The book does, however, convey a
+                            strong sense of Tasmania’s lost potential, of how a
+                            seemingly Edenic landscape is doomed to be degraded,
+                            and, particularly in four successive sonnets about
+                            G.A. Robinson and Trugernanna, of how its original
+                            inhabitants were harassed, lied to and pretty much
+                            left to die on Flinders Island. Yet, paradoxically,
+                            for all this, Jane, Lady Franklin is as much lyrical
+                            as it is historical or a contribution to the
+                            ‘history wars’. Ultimately, it is a triumph of
+                            empathy.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Famous Reporter Review</summary>
+                        <p>
+                            Jane, Lady Franklin - Adrienne Eberhard John West
+                            Famous Reporter , No. 31, June 2005 It requires a
+                            certain maturity for a poet to move outside
+                            themselves and write from another’s perspective and
+                            it is even more difficult to shift back almost two
+                            centuries (as Eberhard has here) with its sometimes
+                            radically different points of view and beliefs.
+                            Karen Knight has recently done it very successfully
+                            with Under the One Granite Roof , her poems about
+                            and through the eyes of Walt Whitman and Jordie
+                            Albiston had earlier achieved it with both Botany
+                            Bay Document and The Hanging of Jean Lee . By
+                            chance, I lived within metres of the house in which
+                            Lee and her accomplices tortured and murdered the
+                            old bookmaker; I would read a few pages and go out
+                            and look at the house; being able to do this was
+                            both valuable and eerie. I mention this only because
+                            something similar is possible for readers of
+                            Eberhard’s book, if they live in Tasmania, perhaps
+                            specifically Hobart, however such proximity cannot
+                            of course be necessary and the poet must manufacture
+                            the world in question in such detail that we are
+                            transported, both to the place and time. In the case
+                            of Eberhard, I think this is achieved to a
+                            remarkable degree; dividing the collection into
+                            ‘Hobarton’, ‘Port Arthur’ and ‘The Female Factory’
+                            helps. If there was one criticism I had of Lee it
+                            was that times and places were mixed up; that might
+                            be OK for the video clip generation but I prefer
+                            Eberhard’s approach. Eberhard’s language at times is
+                            a delight; sometimes she brings to mind past poets
+                            of great stature. I can hear Plath in this for
+                            example: their eyes tight with malice. ‘Snakes’, pg.
+                            3 but the image is her own, along with dozens of
+                            others. I will give just a couple of examples of her
+                            command of the arresting metaphor and image: a
+                            palmful of freedom. ‘Patchwork’, pg. 59 We are
+                            encamped; detained like petty thieves. (Due to
+                            constant, heavy rain.) ‘The Overland Trek’, pg. 80
+                            The beaches are white as piano keys. ‘The Overland
+                            Trek’, pg. 85 Eberhard does a great job of making a
+                            ‘telling’ summation too, when she wants to, when the
+                            story calls for it. ...another chance/at life; this
+                            dishonest, tragic dance. ‘George Augustus Robinson’,
+                            pg. 53 and my favourite, Jane’s thoughts on
+                            Tasmania/Australia near the end of the collection,
+                            upon her recall/return to England: This country
+                            offers no sanctuary:/anything unusual is forced to
+                            run;... ‘Recall/Return’, pg. 99 I believe that,
+                            almost overwhelmingly, Eberhard has convincingly
+                            taken up the appropriate, believable views and
+                            beliefs of the characters (it is a story, and a
+                            wonderful reminder of the power of poetry to tell
+                            stories; the novel being a comparatively recent
+                            invention), the only stage at which I doubted this
+                            was in ‘The River’ where Jane says, ‘...how long
+                            until/there are only bones, bleaching?’ (pg. 11)
+                            where the views of the 21st Century seemed to be
+                            intruding. Another criticism, which can probably be
+                            made against even The Odyssey (if not The Iliad ) is
+                            that some sections are not as strong as others (‘The
+                            Magic of Stones’ seemed to lack power, and, well,
+                            magic) but overall it is an excellent book and the
+                            publishers (Black Pepper) are to be congratulated,
+                            including on the production; the cover drawing by
+                            Emily Stewart Bowring, ‘Derwent River &amp;
+                            Government House’ circa 1858 is above its usual,
+                            sometimes muddy offerings. (And how apt that the
+                            drawing is by a woman!) I believe that, with this
+                            collection, Eberhard has shown herself to be
+                            prepared to take risks, an essential quality in a
+                            poet who is, as Geoff Page says on the back cover,
+                            ‘...(an emerging) truly substantial poetic talent’.
+                            She also has the ability to write as if she (and we)
+                            are there and she does this with her considerable
+                            compassion (as in the achingly sad ‘White Rocks
+                            [Suicide Rocks])’ onto which boys jumped to their
+                            deaths) and by eschewing the use of the
+                            all-too-common Teflon images and language of much of
+                            today’s Australian poetry.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

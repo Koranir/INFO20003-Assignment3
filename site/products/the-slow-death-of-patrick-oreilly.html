@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,646 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-slow-death-of-patrick-oreilly.svg&quot;);
                         "
                     >
-                        Featured
+                        The Slow Death of Patrick O’Reilly
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Phil Leask</h3>
+                </div>
+                <img
+                    alt="Cover of The Slow Death of Patrick O’Reilly"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-slow-death-of-patrick-oreilly/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Slow Death of Patrick O’Reilly"
+                        class="product-cover"
+                        src="/assets/books/the-slow-death-of-patrick-oreilly/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Patrick O’Reilly, it seems, has roamed the Tasmanian
+                        forests for 150 years. He knew Lake Pedder before it was
+                        flooded for hydro-electricity. A scourge of the local
+                        community, he has raided farms and apple orchards. But
+                        is he involved with a lost child? And with Bernard
+                        Laurent, a French sailor who has jumped ship? Bernard,
+                        having started an affair with a farmer’s wife, is
+                        sheltered by a collector of historical documents. She
+                        gives him a journal of an earlier Frenchman, a deserter
+                        from Nicolas Baudin’s 1802 naval expedition. The journal
+                        tells an almost parallel story of tenderness and
+                        brutality. Bernard’s translation leads to a startling
+                        and violent revelation. Set across two centuries, Phil
+                        Leask’s compelling new novel is told with effortless
+                        ease. Leask’s characters are multi-layered. They are
+                        rich with personal histories and messy emotional
+                        baggage, which is something of a rarity in recent
+                        Australian literature. Melissa Hart, Australian Book
+                        Review Phil Leask is just on the money... he is an
+                        orginal and new voice. Delia Falconer.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-slow-death-of-patrick-oreilly.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-slow-death-of-patrick-oreilly/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044365</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2001</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>305</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Phil Leask was born in Brisbane in 1947. He
+                            bushwalked, studied English and French at the
+                            University of Brisbane and Education at the
+                            University of Tasmania.
+                        </p>
+                        <a class="bold" href="/authors/phil-leask.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Andrew Harper, Togatus</summary>
+                        <p>
+                            Andrew Harper Togatus , 2002 Phil Leask isn’t that
+                            well known an author on the Aussie writing scene but
+                            if this, his second crack at the task of creating a
+                            novel, is anything to go by, he really should be. As
+                            a reader, I want a style that seduces me keep on
+                            reading, but doesn’t patronise me with the tricks of
+                            the potboiler. I also want a rush of ideas and
+                            images that can and will stay with me when the novel
+                            itself ends - something to frighten and tease me
+                            with grotesquery or to charm me with simplicity.
+                            Demanding little bugger aren’t I? Well The Slow
+                            Death of Patrick O’Reilly has left me well pleased.
+                            It’s a real task to write simple, pretty language
+                            that doesn’t bog itself down with needless metaphor
+                            and yet hints of something deeper. It’s also really
+                            impressive to create a believable folk mythology -
+                            that is, something that is the sole creation of one
+                            mind, but somehow feels like it's a true folk myth,
+                            an urban legend fleshed with the whispers of
+                            generations. The pivotal creation in this novel is
+                            the Patrick O’Reilly of the title - a man who lurks
+                            in the bush of Tasmania, wild and lonely and
+                            wandering, a bogeyman with a broken soul. He’s a
+                            link with the novel’s created past, a character that
+                            might be immortal but might be a trick, in a story
+                            that moves with a fluid sense across time and around
+                            many characters. Tasmanian farmers, a proto-feral
+                            girt child and a French interloper called,
+                            appropriately, Bernard. There are others as well,
+                            but the almost soap opera quality of some aspects of
+                            the plot (adultery and revenge and such) isn’t what
+                            sucked me in; it was the evocation of place. I’m a
+                            diehard Tassie boy; I’m from here. I didn’t come
+                            here to study or to get freaked out by the
+                            wilderness. This place is my home so I can spot a
+                            fake a mile away and I loath the way so many try
+                            turn this place into some kind of dark crystal fairy
+                            land, without acknowledging that a place is made
+                            primarily of people. So many times I have heard
+                            wretched interlopers say this would be a great place
+                            if not for the people. Yes it is dark here, but we
+                            get on with our lives, and it’s lives that Phil
+                            Leask makes his wonderful almost-fable of a book
+                            from. Not that the bush isn’t there - the sense of
+                            place is very strong with this book - but it was the
+                            panorama of characters that really did it for me
+                            here. I can and do recommend you read this book;
+                            there are a great many reasons why, but the bottom
+                            line is it’s good and it’s about Tasmania, and not
+                            even remotely like Richard ‘professional Tasmanian’
+                            Flanagan’s dreary work. It smacks of things I love
+                            in a book: darkness and magic realism, and best of
+                            all it gets closer to really discussing stuff about
+                            my home, whilst acknowledging that the author isn’t
+                            a local, just someone who has watched and listened
+                            and felt. Go and buy The Slow Death of Patrick
+                            O’Reilly right now.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Examiner Review</summary>
+                        <p>
+                            Human Nature Explored Ivy Fleming The Examiner , 1
+                            September 2001 Phil Leask presents the intimacy of
+                            human nature in The Slow Death of Patrick O'Reilly .
+                            The story is set in Tasmania, and focuses on two
+                            different men with similar lives spanning two
+                            centuries. Everyone in the State has heard of
+                            Patrick O’Reilly, but they do not know if he really
+                            exists. He is believed to be an escaped convict who
+                            has lived in the bush for over a century, tormenting
+                            people and killing their sheep. It is the early
+                            1900s, and little Cathy Connolly meets a man in the
+                            bush who calls himself Paddy. He is a gentle old man
+                            who provides Cathy with knowledge about the
+                            wilderness. Then there’s Anna and Johnny McCluskey
+                            whose tepid marriage is being threatened by
+                            wandering Frenchman Bernard Laurent, who has grown
+                            tired of life on the seas and has settled into
+                            Tasmania's wilderness. Bernard has also become good
+                            friends with Elizabeth, who has given him some early
+                            1800s French journals to translate. The journals
+                            provide the second branch to the story. It all
+                            collides when Cathy goes missing, and Anna and
+                            Bernard are forced to hide out in the bush - from
+                            the law and Johnny. Most people are convinced
+                            Patrick O’Reilly took Cathy, but the last person
+                            seen talking to her was Bernard. Although it is a
+                            complex story, it impressively pieces together
+                            everything for the reader. It conveys everything
+                            about the characters - what they see in themselves
+                            and others, and their uncertainty about their lives.
+                            It also shows the two minds of the time - those who
+                            loved Tasmania’s wilderness and those who cleared
+                            land for fruit trees and livestock. It is a
+                            compulsive read about all facets of life - including
+                            survival, love and family.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Terry Monagle, Táin</summary>
+                        <p>
+                            Taming the bush, tamed by the bush Terry Monagle
+                            Táin , June-July 2001 On Friday evening 25 April,
+                            Táin hosted a dinner with Phil Leask who has just
+                            published a new novel, The Slow Death of Patrick
+                            O’Reilly . According to Kevin Pearson of Black
+                            Pepper press who published the book, ‘Patrick
+                            O’Reilly has roamed the Tasmanian forests for 150
+                            years. He knew Lake Pedder before it was flooded. He
+                            raids farms and apple orchards. He is involved with
+                            a lost child and with Bernard Laurent, a French
+                            sailor who has jumped ship. A farmer’s wife who has
+                            an affair with Laurent gives him a journal of a
+                            French deserter from Baudin’s 1802 expedition.
+                            Bernard’s translation leads to a violent
+                            revelation.’ Here are some remarks on Leask’s novel
+                            made by Terry Monagle as a beginning for our
+                            discussion. In April this year, Ben Moloney
+                            staggered out of the southwest Tasmanian wilderness.
+                            This apparition, after 37 days of absence,
+                            engendered awe and suspicion. Novelist Richard
+                            Flanagan commented that it is good that there are
+                            still places where one can get lost. This is a
+                            romantic view. I’m inclined to a contrary position
+                            that if people don’t spend the $10 on hiring a
+                            positioning device, they can be left out there. Let
+                            the wanderers have the romance and not the taxpayer
+                            the cost. However Flanagan is correct: the
+                            wilderness is powerful and valuable. Australians
+                            overseas mourn for it whatever it is. Issues to do
+                            with land and water are the bedrocks of our
+                            political and economic debates. The need is profound
+                            to get these right. Phil Leask makes an important
+                            contribution with his second novel, The Slow Death
+                            of Patrick O’Reilly . To understand the nature of
+                            wilderness it is necessary to study ancient land
+                            formation and the history of flora and fauna. In his
+                            Australia: A Biography , Eric Rolls says, ‘There was
+                            no beginning, there is no end. Time is, it was and
+                            will be. The universe is infinite, there is an
+                            infinity of universes: the universe is best seen as
+                            a perpetual womb unendingly and unconsciously giving
+                            birth. Fertility, not consequence, is the main
+                            consideration.’ Some characters in The Slow Death of
+                            Patrick O’Reilly approach the wilderness in this
+                            spiritual way. One says: ‘I have discovered, at
+                            last, the secret. The secret is in time and space,
+                            through which I move untouched and untouching and
+                            which encloses me and confines me within a sense of
+                            infinity and eternity that is here and now and all
+                            around me, wherever I wander, whenever I sleep.
+                            Wake. Dream, walk or hunt.’ The Aboriginals who
+                            share the bush with him have not taught this unitive
+                            experience of the bush to him but he has learnt it
+                            from living alongside these black strangers. They
+                            share everything with him because he has reached
+                            this state of grace, this state of equanimity that
+                            is ‘worth more than all the centuries of a god who
+                            is all seeing and all forgiving but who never let me
+                            be that which I am and have become: myself.’ Feet as
+                            a way to God Many Australian Christians are
+                            searching for a way of integrating the insights of
+                            their tradition with the place they are in. A
+                            Catholic nun in the Kimberley suggests, for
+                            instance, that in Australia a spirit god is less
+                            appropriate than one who emerges from the earth and
+                            enters us through our feet. Such a god subjects us
+                            creatures to the land and its power. The land
+                            remains an awesome mystery and happiness can involve
+                            full immersion in it. This is similar to a Buddhist
+                            awareness. The characters in The Slow Death of
+                            Patrick O’Reilly are likeable, with divisions and
+                            confusions, fears and lusts. They have the same
+                            sexual regenerative needs as the bush. They clear
+                            the forests to establish their own families and
+                            orchards. For them, too, fertility is more
+                            imperative than consequences. Their lives evolve in
+                            interaction with a huge canvass of wilderness. Some
+                            become intoxicated with it and are sharers of its
+                            secrets. Others see it as enemy and are besotted by
+                            rumours of presences in the bush which haunt and
+                            frighten them. These latter neurotically need to
+                            destroy the things which come from the bush,
+                            anything their experiences don’t prepare them to
+                            understand. The most powerful personality in the
+                            book is the wilderness. As one character says: ‘It
+                            is a mistake to attempt to tame this land.’ This is
+                            a challenging thought. It comes at a time as
+                            Australians retreat from the bush they tried so hard
+                            to tame over two centuries. So this book is, amongst
+                            other things, about the spiritual power of place,
+                            it’s about people trying to find lives which are
+                            livable, not because they tame the bush but because
+                            they find niches around the margins of it. It also
+                            focuses on the contradictory human need for both
+                            solitude and community. Each of the characters is a
+                            solitary traveller even when in a rapturous embrace.
+                            They hear two sirens singing contradictory
+                            allurements. Is this not our condition? This book is
+                            not about people wearing leather jackets sipping
+                            coffee in Paddington, Carlton or Notting Hill, it is
+                            not about grunge, sex or drugs, it is not about
+                            corporate malfeasance. This book made me look
+                            forward to getting into bed at night for that last
+                            half hour, that turning of the pages perhaps made
+                            from Tasmanian woodchips. Now, months after I have
+                            finished it, I can feel its myths and mythic
+                            perspectives roaming in my brain.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            The Question of Identity The Slow Death of Patrick
+                            O’Reilly Laurie Clancy Overland , No. 169, Summer
+                            2002 Phil Leask comes with the recommendation of no
+                            less distinguished a writer and reviewer than Delia
+                            Falconer. All the more disappointing, then, that
+                            this second novel fails to live up to expectations.
+                            It is the story of the eponymous O’Reilly, who lives
+                            in the hills of Tasmania in 1952, a source of
+                            constant discussion and conjecture to the citizens
+                            of the tiny local town, some of them believing he is
+                            over a century old and most of them, for reasons
+                            which are unclear, deeply hostile to him, regarding
+                            him as a troublemaker. The opening sentence of each
+                            of the first four chapters introduces us to one of
+                            the protagonists: O’Reilly, the young girl Cathy
+                            Connolly who has seen him, the Frenchman Bernard
+                            Laurent who has deserted ship, and Anna McCluskey,
+                            who has just got married. Later we meet the other
+                            important character, an old lady named Elizabeth
+                            Morgan, who is more or less in love with O’Reilly.
+                            Elizabeth has bought some journals in Hobart and
+                            Leask juxtaposes one of these, the story of a French
+                            sailor Clement Hebert at the beginning of the
+                            nineteenth century, against the contemporary
+                            narrative. Hebert, like Bernard, is a deserter who
+                            spends a virtual lifetime alone in the Bush, writing
+                            his journals with an ink he has made out of ‘berries
+                            and some sort of earth or clay’ and carrying paper
+                            on his back that somehow lasts thirty years. Perhaps
+                            we can say of him also, as O’Reilly says of Bernard,
+                            that he ‘carried his suffering with him like some
+                            Biblical mark upon his forehead’. For over thirty
+                            years Hebert, like Paddy, wanders alone in the bush
+                            except for one incident in which he fathers a child.
+                            When we find out the child’s identity it is both
+                            predictable and, like much in this book,
+                            implausible. The prose is filled with quasi-poetic
+                            meditations: ...and sometimes when he came down into
+                            the towns or did odd jobs on the farms there would
+                            be a woman waiting for him, who would turn and look
+                            at him and reach out to him with wel¬coming arms,
+                            and what they did together then, on an empty bed or
+                            behind the garden shed, was what they always did,
+                            men and women everywhere, the same but different
+                            every time... This is fairly typical of a novel
+                            which seems to be making attempts at immense but
+                            obscure significance.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Westerly Review</summary>
+                        <p>
+                            History and Theirstories: A Review of Some Recent
+                            Australian and Asian Fiction Douglas Kerr Westerly ,
+                            Vol. 46, November 2001 ‘The past is not dead,’ said
+                            William Faulkner spookily. ‘It is not even past.’ It
+                            is a novelist’s idea - a historian would probably
+                            not put it like that - and novels, which
+                            conventionally tell their tales in a historic tense,
+                            are one place we are used to looking for a
+                            confirmation of this necessary sense of the presence
+                            of the past, its representation... A myth of a
+                            different sort is at the centre of Phil Leask’s The
+                            Slow Death of Patrick O’Reilly . There are three
+                            main narrative strands to this intricately woven
+                            novel. The Patrick O’Reilly of the title is a tramp,
+                            but also a semi-legendary figure, dangerous and
+                            immemorial, who is believed by some to have roamed
+                            the Tasmanian forests for a hundred and fifty years.
+                            His story mingles with that of Bernard Laurent, a
+                            war-weary Frenchman who jumps ship in Tasmania and
+                            wanders into a secluded valley looking for work; and
+                            with that of Clément Hébert, another Frenchman who
+                            came to the island in 1802 and left a journal of his
+                            years wandering in the forest (and turns out to be
+                            the ancestor of the current Patrick). From early on,
+                            there is a self-consciousness here about place and
+                            story, land and history. The Frenchman who has come
+                            to Tasmania also seems, appropriately enough, to
+                            have landed in a storybook. At last, he [Bernard]
+                            felt pleased to be ashore, wandering through the
+                            Tasmanian bush, wandering through the old stories
+                            that spilled out of everyone he spoke to whether he
+                            wanted to hear them or not, as if the whole country
+                            was awash with things that had happened and had to
+                            be talked about, things that had to have a life of
+                            their own, filling every space in this huge, wild,
+                            empty landscape. Phil Leask writes powerfully about
+                            place when he is looking at it, but his view is too
+                            often obscured by a portentous and romantic
+                            insistence on the mystic numen of the land. You can
+                            see these moments coming by the length of the
+                            sentences, and their cumulative effect can be
+                            irritating. There are important and interesting
+                            issues here, about ‘development’ and land ownership
+                            and the relation of human beings to nature, but they
+                            are often steeped in a metaphysical solution that
+                            sometimes seems to mean a good deal less than it
+                            says, a Tasmanian sublime. ‘Now it was coming to a
+                            close, the dreamlike wanderings of an old man who
+                            had lived a life like no other, living with no
+                            thought or need for tomorrow, since today was
+                            forever and forever was a part of him, like the
+                            great, broken, immutable rocks that rose up around
+                            him, and the wind and the rain and the sun and the
+                            snow, and the lakes that one day would vanish
+                            beneath the sea...’ Phil Leask should perhaps be
+                            introduced to a really ruthless editor. ‘A country
+                            as young as this cannot have lost its history, not
+                            so soon,’ thinks Bernard. But there is just as much
+                            history as you want there to be. Patrick O’Reilly is
+                            the direct link with the past, with the earliest
+                            white settlement of the island, and with the state
+                            of nature; there is a story worth telling in his
+                            death.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Island Review</summary>
+                        <p>
+                            A Long Time Dying The Slow Death of Patrick O’Reilly
+                            Giles Hugo (writer) Island , No.87, Spring 2001 The
+                            Great Tasmanian Novel - henceforth GTN - is, like
+                            the thylacine, paradoxical and elusive. Evidence of
+                            its hoped-for presence is tantalising but
+                            inconclusive. Unless, like Fox Mulder and I, you
+                            believe it may still be Out There… Some say the
+                            concept of the GTN is ridiculous - so parochial. Do
+                            we speak of the Great Queensland Novel? No, but we
+                            Tasmanians, like most small island communities,
+                            claim an identity that sets us apart. And, since
+                            Tasmania also claims the first Australian novel in
+                            Henry Savery’s 1831 Quintus Servinton , it seems
+                            appropriate to hope that turning Tasmanian lives,
+                            legends and longings into fiction will continue to
+                            be a potential growth industry striving for
+                            greatness. This novel touches on themes common to
+                            several GTN claimants: the effects of white
+                            settlement on Tasmanian Aborigines and the
+                            environment, and that harsh landscape’s long-term
+                            impact on the interlopers. The eponymous Patrick
+                            O’Reilly is a Tasmanian legend in his own extended
+                            lifetime - more than 150 years by popular account -
+                            an elusive wraith who taunts and haunts isolated
+                            valley communities with petty thefts of food and
+                            livestock, and opportunistic womanising. The only
+                            people who get to know him in more than just the
+                            biblical or mythical sense are: Cathy Connolly, a
+                            young girl; Bernard Laurent, a French sailor fleeing
+                            from memories of the Nazi occupation; Anna
+                            McCluskey, a farmer’s wife, who cuckolds her
+                            husband, Johnny; and spinster eccentric Elizabeth
+                            Morgan, who shelters both O’Reilly and Bernard at
+                            her home. Elizabeth sets Bernard to work translating
+                            an ancient journal, written in French by Clement
+                            Hébert, a sailor who jumped ship in Van Diemen’s
+                            Land in 1802. It details his flight, brief contacts
+                            with Aborigines and decades of wandering in the
+                            wilds. Links between the journal and the mystery of
+                            O’Reilly’s origins propel the plot to the point
+                            where love, lust and jealous longing intersect.
+                            Coincidentally, Cathy chooses to follow O’Reilly
+                            into the mountains, leading to a huge manhunt for
+                            the presumed abductor and victim. The climax is
+                            predictably violent, the denouement neat - if
+                            somewhat forced - as the last pieces of the puzzle
+                            clunk-click into place. So, is the long dying of
+                            Patrick O’Reilly a worthy prospect as the GTN? Or
+                            even just a GTN? For me it is not - and, since I am
+                            a follower of late, great rock writer Lester Bangs’s
+                            injunction to critics to be ‘honest and unmerciful’,
+                            here is the awful truth, as seen through my twisted,
+                            gonzoid vision. The best snatches of writing come in
+                            Hébert’s musings, such as this neat bit of je ne
+                            sais quoi : ‘What I hold in my grasp now is a kind
+                            of emptiness that folds in on itself as I open my
+                            hand and gaze at it’. There are sparkles of oblique
+                            characterisation - but too few - such as when Cathy
+                            first meets Bernard: ‘She continued to look at him
+                            as if he was a book she might want to read’.
+                            However, apart from the tortured soul revealed in
+                            Hébert’s journal, other members of the ensemble cast
+                            of fugitive outsiders and alienated insiders are
+                            lightly sketched: the lonely but indefinably wise
+                            young girl acting as precocious provoker of adult
+                            action; adulterous wife seeking real passion from
+                            the mysteriously driven French sailor she met at her
+                            wedding feast; spinster sage mothering all waifs and
+                            strays; and the ambitious, violent husband MCP.
+                            Industrial-strength recycled cardboard, mostly. Ho,
+                            hum. The characters’ speaking voices are very much
+                            the same from mouth to mouth - scant depth, almost
+                            no humour. Sadly, nothing is made of Bernard and
+                            Clement’s native tongue, no colourful regional
+                            French oaths, not even a casually spat ‘ Merde! And
+                            these dudes are sailors? Oh for the subterranean,
+                            poetic earthiness of Jean Genet’s Quenelle .
+                            Thematic possibilities are also largely ignored.
+                            O’Reilly’s bogeyman role - scapegoat for the valley
+                            folk’s xenophobia and abiding fear of the wild
+                            environment - is stated but not satisfactorily
+                            examined. The Aborigines are merely sad and elusive
+                            human scenery in Hebert’s journal. If the novel had
+                            shed the fifties melodrama and O Henryesque
+                            resolution, and been confined to an expanded and
+                            more in-depth journal, it might have worked.
+                            Instead, it’s just another well intentioned but
+                            bland, steam-driven, neo-Gothic mystery. The quest
+                            for the GTN continues.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sunday Tasmanian Review</summary>
+                        <p>
+                            Many-layered perspective on Tasmania Wayne Crawford
+                            (From The Sunday Tasmanian , 29 April 2001) The old
+                            tramp has spent a lifetime roaming the mountains,
+                            stealing sheep and chickens, raiding orchards and
+                            making love to farmers’ wives. But is he involved in
+                            the disappearance into the bush of a little girl?
+                            And has his past caught up with him? And the
+                            mysterious Frenchman - the unhappy, wandering
+                            sailor. Why has he jumped ship and headed for the
+                            hills? Paddy O’Reilly, the tramp, has indeed roamed
+                            the Tasmanian forests since before Lake Pedder was
+                            dammed for a power scheme and before the Tasmanian
+                            tiger was hunted to extinction. He has been raiding
+                            orchards since the days when Tasmania was
+                            establishing its reputation as the Apple Isle. And
+                            Bernard Laurent is spending his nights absorbed in
+                            the diaries of a fellow countryman of 150 years
+                            before in whose footsteps he now finds himself
+                            following. This historical novel, The Slow Death of
+                            Patrick 0’Reilly , is set in Tasmania in two
+                            parallel periods - the 1950s when the state was
+                            emerging from World War II and finding its new
+                            identity, and in the pre-British period of 1802 when
+                            the French explorer and naturalist Nicolas Baudin’s
+                            party arrived in Van Diemen’s Land and surveyed the
+                            D’Entrecasteaux Channel. This is the second novel by
+                            Phil Leask who, although Queensland-born and now
+                            living in London, is well known and remembered in
+                            Tasmania where he has lived for short periods, on
+                            and off, since the ‘60s when he came here to do some
+                            bushwalking, stayed on to do his Diploma of
+                            Education and spent a year teaching at Scottsdale.
+                            That’s how he came to know the Tasmanian bush so
+                            well. Even now, living in London where he works as a
+                            freelance consultant in urban regeneration, his love
+                            for and fascination with the wilderness of southern
+                            Tasmania has remained part of him. He continues to
+                            make frequent visits back to Tasmania, most recently
+                            this month. His writing is very much location-based,
+                            and he has woven into the book an intimate knowledge
+                            of the area of Tasmania where he has spent months of
+                            his life exploring the bush - the Huon, the Hartz
+                            Mountains, the South-West through to the South
+                            Coast. Like the fictional Patrick 0’Reilly of his
+                            book, Phil Leask knew Lake Pedder before it was
+                            flooded for hydro-electric power and had known the
+                            Tasmanian rainforests in all their moods, all their
+                            weather patterns. There are many layers to the
+                            characters and locations of The Slow Death of
+                            Patrick O’Reilly , but primarily there are the
+                            events of the mid-1950s in the rural Huon area, and
+                            flashbacks to 150 years previously through the
+                            device of diaries kept by a deserter from Nicolas
+                            Baudin’s party. During his visits to Tasmania, Leask
+                            became fascinated with the strong French connection,
+                            evident even though it had been the British who made
+                            the early European settlements. He discovered when
+                            doing historical research into the Baudin expedition
+                            which landed in Tasmania in 1862, that the party was
+                            threatened with death from scurvy. For his story
+                            Leask imagined: ‘But what if one of them said ‘I’m
+                            not going to die of scurvy; I’m going ashore...’?’
+                            It is the diaries of that imaginary deserter that, a
+                            century and a half later, fall into the hands of yet
+                            another Frenchman who has jumped ship in Hobart and
+                            headed for the hills where his path crosses that of
+                            the locally infamous Paddy O’Reilly. Against this
+                            backdrop the diaries reflect on a period of European
+                            enlightenment, the French Revolution merging into
+                            the period of Romanticism. Leask’s first novel, By
+                            Way of Water , was set in north Queensland and
+                            Europe; his third, Olhovsky, Prince of Hamburg ,
+                            will be published next year. Although the
+                            54-year-old Leask continues to work as a consultant
+                            advising on plans for urban redevelopment especially
+                            among deprived communities in Britain, he considers
+                            himself primarily a writer by profession. The
+                            consultancy work is what allows him to follow that
+                            primary interest, he says.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

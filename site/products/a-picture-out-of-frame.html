@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,593 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/a-picture-out-of-frame.svg&quot;);
                         "
                     >
-                        Featured
+                        A Picture Out Of Frame
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Mammad Aidani</h3>
+                </div>
+                <img
+                    alt="Cover of A Picture Out Of Frame"
+                    class="product-cover-mobile"
+                    src="/assets/books/a-picture-out-of-frame/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of A Picture Out Of Frame"
+                        class="product-cover"
+                        src="/assets/books/a-picture-out-of-frame/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        In A Picture Out Of Frame our sympathy is wholly
+                        engaged. A boy grows up in poverty in Iran; he goes to
+                        the capital; he receives a letter from a friend; he is
+                        in exile. Nothing else happens. It will break your
+                        heart. The prose is simple like that of Juan Ramón
+                        Jiminéz in Platero and I. (Yes there are donkeys here
+                        too.) But the village life so lovingly portrayed is on
+                        the brink of tragedy. That fate is precariously held in
+                        balance; its extent is only fully revealed in the letter
+                        received at the end. Aidani's deft ability to hold back
+                        in the face of overwhelming odds justifies his
+                        deliberate simplicity of style. The structure is
+                        invisibly subtle. A meditation on the connections
+                        between reality, imagination, past and its present, this
+                        is a challenging book with revealing emotional richness.
+                        It tells the story of a young man who speaks in the
+                        third person in order to examine what he saw and
+                        suggests that this story could be anyone’s when
+                        invasion, war and terror dictates. The book invites the
+                        readers to be the real witness of its character’s
+                        narrative and observe how he shares his shattered world
+                        with us. The narrator invites us to think about the
+                        power of memory and its expression in our lives. A
+                        Picture Out Of Frame is ultimately both hopeful and
+                        challenging, revealing how urgently the West and the
+                        East need to embark upon an understanding of each other.
+                        I SBN 1876044233
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 21.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/a-picture-out-of-frame.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/a-picture-out-of-frame/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044233</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Born in Iran, Mammad Aidani spent his childhood in
+                            the poverty stricken areas of the city of his birth,
+                            Khorramshahar, near the Persian Gulf.
+                        </p>
+                        <a class="bold" href="/authors/mammad-aidani.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Ulitarra Review</summary>
+                        <p>
+                            Exiles in heart and mind Andrew McCue Ulitarra, No.
+                            14, December 1998 If you take your hat off to Sant [
+                            Album of Domestic Exiles ] for giving you the
+                            exile’s natural, if cool-heeled intelligence, you
+                            eat it for what Mammad Aidani can do with
+                            banishment’s blistering heart. Neatly, for the
+                            conceit of this review, Sant’s finale is this:
+                            ‘Write! And make exile / unite with the reach of a
+                            table.’ Mammad Aidani’s short novel starts out with
+                            a man at a table doing this. ‘What kind of world are
+                            we living in?’, he asks himself looking into the
+                            distance of his memories. He feels the exhilaration
+                            of his strong desires and hopes for a better future.
+                            Aidani’s ‘he’ is not so much a man who writes his
+                            exile at arm’s length, as feels it written upon him.
+                            He asks, ‘What kind of world?’ and reads himself for
+                            the answer. The marks run deep, but he also finds
+                            hope in the remarkable plasticity of his own
+                            substance. The passions and excitations of exile are
+                            never allowed to wallow in self-pity or nostalgia.
+                            Aidani’s man may be banished from his homeland, but
+                            the tall canopy of his exile also enables a critical
+                            overview of his nurturing roots. ‘What has that
+                            village done to us?’ he asks of his childhood haunts
+                            (in what I take to be Iran), but the voice that
+                            replies is that of the older and exiled man:
+                            Suspicion is always there in the village. One can
+                            see it and almost taste it in the air. There is no
+                            language there. People speak only on rare occasions.
+                            Men speak to each other and women speak only to
+                            other women. One may ask, when seeing them, what
+                            planet are they living on? It brings me to believe
+                            that natural human interaction has been suppressed
+                            for centuries. This is called intimidation. In the
+                            marketplace, silence is the symbol of discussion...
+                            The ground is the only medium to which one can talk
+                            freely. Clear-sighted, hawk-eyed the vision may be,
+                            but as it is rendered in this humble but
+                            far-reaching book, it is in constant and dramatic
+                            conflict with the blind longing to belong. These
+                            are, after all, the memories which constitute his
+                            own sense of being. And if in exile he ‘wishes he
+                            could hear someone or write, ...he knows, as they
+                            would all know by now, that memories are private
+                            possessions’ - not to be spoken aloud, painfully
+                            kept to yourself, yet ironically, the only
+                            attachments that cannot be ‘stolen or destroyed’. It
+                            is a cruel exile, whose heart confesses its longing
+                            for a past in which the heart cannot speak, but
+                            Mammad Aidani lends it voices of passion,
+                            compassion, drama and even hope. The exile, at
+                            least, and unleashed, can speak for itself.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            The Australianity of this Literature Dan O’Neill
+                            Overland, No. 152, Spring 1998 A hundred years ago
+                            some of the best energies of Australian literature
+                            were devoted to defining and registering what was
+                            typical of the nation. It was always possible for
+                            discerning spirits to see that enterprise as
+                            somewhat foolish. Christopher Brennan, in the Sydney
+                            University magazine Hermes in 1902, for example, saw
+                            ‘the Australianity of this literature, which largely
+                            dealt with and was mainly addressed to mythical
+                            individuals called Bill and Jim’ as ‘painted on, not
+                            too laboriously, from the outside’. What was wanted
+                            was something cooler and less chauvinistic. But
+                            neither the writers he mocked nor Brennan could have
+                            predicted the present state of affairs in which the
+                            national writing scene is full of the most
+                            ‘untypical’ characters, being Australian in the many
+                            ways that their various pasts in various parts of
+                            the globe have made congenial, natural or necessary
+                            to them. Among those ways is that in the tradition
+                            of Conrad, writing as someone who has embraced the
+                            English language with a passion born of a love of
+                            its literary potential, writing about places that
+                            are ‘over there’, writing with the complicated
+                            feelings of the migrant, the refugee, or the exile,
+                            writing with the conviction, wrested from widespread
+                            forms of modern suffering, that all countries, all
+                            cities, are capable of showing the same terrible
+                            things about the plight of being human that have
+                            driven some people to this country, where they are
+                            still at least free to write. This, for some people
+                            nowadays, and for those who read them, is ‘the
+                            Australianity of this literature’ as well. Those who
+                            are already familiar with the poetry of Mammad
+                            Aidani will know that he is such an Australian
+                            writer resident here after three years in Europe,
+                            principally in Italy. I am sure they will welcome
+                            this prose work, as will readers who here encounter
+                            him for the first time. The genre lies somewhere
+                            between novella and prose poem. It was a good idea
+                            to precede it by a foreword consisting of an excerpt
+                            from a letter that the writer sent to his family
+                            from Brisbane in early 1983. For its preoccupations
+                            give the best clue to the real content and the real
+                            method of the work that follows. He speaks of ‘the
+                            war’ (it remains that undefined and thus potentially
+                            historico-mythic throughout) that continues, of his
+                            isolation (‘People here do not talk about the war
+                            and us at all, as if that part of the world that I
+                            come from is irrelevant’) and of his desperate
+                            attempt to maintain some kind of human continuity,
+                            some link with them and with what he must keep on
+                            valuing to survive - ‘I’m seeking goodness and love,
+                            for beauty and knowledge, as you have taught me with
+                            your simplicity and poverty.’ He speaks also of the
+                            necessity he feels to keep on writing: ‘I feel now
+                            that I’m alone I have to create my world in my
+                            mind’s imagination... I have this strange feeling
+                            that if I don’t write I will die unnoticed ...’
+                            Writing helps him in ‘forgetting the pain’. The work
+                            has two parts. Its overall effort is to keep alive
+                            the images that remain in the mind of the exiled
+                            anonymous central figure who is first presented to
+                            us as someone looking back with his fading memories
+                            to an otherwise irrecoverable past, to a land that
+                            is, for him, a village and then a city slum of his
+                            childhood and adolescence. He is in a barely
+                            furnished kitchen in a new land, and the reader
+                            joins him in a painful effort of recall, of going
+                            inward to glimpse, fan alive, and warm the mind and
+                            heart at, whatever ashes of the old life remain
+                            there for his imagination to cherish and extend into
+                            a renewed attempt to live. Aidani has very evidently
+                            given a lot of thought to the travail involved for a
+                            writer in working, not with fantasy elements, but
+                            with what is genuinely there, and in building on the
+                            remembered fragments of the precious past to recover
+                            the world that one once lived inside. In fact, for
+                            the reader, a great part of the subtle but firm
+                            structure of the work is the well-communicated
+                            process of gradual emotional breakthrough to a solid
+                            connection with the threatened past of the central
+                            figure. In the first chapter we see and feel this
+                            effort begin, as the narrator shows us the exile,
+                            under the pressure of his great need, trying to get
+                            too far: He returns to the side of the chair,
+                            thinking, ‘What would it be like to be prosecuted
+                            and to be waiting for the following morning to be
+                            hanged or shot?’ This thought, which will not be
+                            explained until near the end of the second part, and
+                            which is centrally important to the effect of the
+                            whole work, exacerbates the frustration and despair
+                            of exile. And, in the mind that has been cruelly
+                            torn from its native context, it is a thought that
+                            can only stay alive after that mind has gone back to
+                            the beginning. Hence, for the rest of part one, we
+                            see in quickly evoked flashes a retrospect, from
+                            childhood on, of images, fragments, residues that
+                            are deftly interpreted with the later knowledge of
+                            the character-narrator so as to go beyond the boy’s
+                            then world. For the boy has ‘a vast array of images’
+                            but, ‘like the others, he has no language other than
+                            a vocabulary of three hundred words’. The true
+                            pathos of the work lies in the sort of healing that
+                            the central figure is trying to bring about by this
+                            attempt to go back from the world he now lives in,
+                            to re-connect that old world that has made him to
+                            this new world that is so big, so cruel and
+                            merciless, and that was already there in the
+                            occupation of the city by the soldiers. This, which
+                            he begins to remember, and, as it were, re-make in
+                            part one, is the obsessive theme of part two. Years
+                            of living in cities of strangers seem to lie behind
+                            Aidani’s skill in evoking the imprint of massive
+                            events on the collective psyche, as gleaned by the
+                            lonely and sensitive individual from the look and
+                            feel of public spaces, crowds on streets, queues,
+                            bare trees and other indices of gloom, anxiety and
+                            suppressed anger. He is good at the poetic evocation
+                            of the symbolic and allegorical dimension of events
+                            - a conversation between friends as the troops begin
+                            their seizure of the city, the return and then death
+                            of the family’s long-lost adopted stray dog, a
+                            train’s crossing of a stretch of desert to get from
+                            village to city, the gathering of migrant Kurds on a
+                            particular street in town. In fact, as a true poet,
+                            he shows facility in managing the lyric and the epic
+                            tasks of writing, guiding the reader to the
+                            individual’s and the people’s feelings. He has yet
+                            to become master of the dramatic. The dialogue,
+                            except where it can be read as the externalization
+                            of archetypal thoughts of quasi-mythic figures,
+                            reads a little stiffly, set-pieces designed to
+                            expound thoughts of the author, rather than the
+                            utterances of living beings. The conversation of the
+                            mother and father of the central character seems
+                            mainly devoted to demonstrating the poverty and
+                            oppression that afflicts their whole class. It
+                            contrasts unfavourably with the power and tenderness
+                            of the more direct evocation of the
+                            character-narrator’s feeling for the love between
+                            his parents. It is true of the work in general that
+                            its life resides in the saturation of memories of a
+                            treasured past in the powerful feeling that the act
+                            of writing both calls up and embodies in words. Its
+                            true unity lies not in the concatenation of its
+                            episodes or the interaction of its characters, but
+                            in the sure growth and flowering of its emotional
+                            world towards a climax of sensibility, after which
+                            we return to the central character sitting at his
+                            desk in the new country. There he is trying to deal
+                            with the question of how he has survived while his
+                            friend is dead at the hands of their common enemy.
+                            We are back with the isolation and alienation of the
+                            foreword, but the confusion has abated. The ending
+                            of the book is both calm and dark. For a political
+                            radical it presents both a realistic presentation of
+                            a common experience of defeat in our time and a real
+                            problem about where to go from here: He wishes he
+                            could hear from someone or write. But, he knows, as
+                            they would all know by now, that memories are
+                            private possessions. And although many things can be
+                            stolen or destroyed, the people’s private memories
+                            cannot be. So, although they may not be able to
+                            speak out as they wish and as they need to, they
+                            still have their memories. As a prose-writer, Mammad
+                            Aidani still has a lot to learn, principally I think
+                            about the rational and craft-based elements that
+                            distinguish this kind of writing from poetry. But on
+                            the really indispensable thing, the intuitive grasp
+                            of the way feeling holds material together and makes
+                            it alive all the way through, he is already totally
+                            sound. His capacity for the undefended and honest
+                            expression of positive and valuable emotion marks
+                            him off from the more common Australian mode of
+                            ironic and laconic understatement, in a way that
+                            makes him an unusually interesting new voice in the
+                            cacophonous national choir.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            A Picture Out of Frame Michelle Maree Ehrich Social
+                            Alternatives, Vol. 17, No. 4, October 1998 Born in
+                            1955 at Khorramshahr, Iran, Mammad Aidani migrated
+                            to Australia in 1982, after three years in Europe.
+                            He has published a collection of poetry, edited a
+                            collection of stories by victims of torture, and
+                            written a play. A Picture Out Of Frame is Mammad
+                            Aidani’s first novel. The novel comprises a foreword
+                            and two parts. The foreword contains an insightful
+                            excerpt from a letter (dated 23/2/1983) that Aidani
+                            sent to his family in Iran from Brisbane, Australia.
+                            Here Mammad states, I’m seeking goodness and love,
+                            for beauty and knowledge, as you have taught me with
+                            your simplicity and poverty. You know I’m 27 now,
+                            and I started to write this book to keep myself
+                            sane. I’m not sure what will happen to it but I have
+                            to write it. I know you might laugh but I mean it -
+                            I have this strange feeling that if I don’t write I
+                            will die unnoticed. You see... When I write, I only
+                            think of writing and what’s in me to write, and then
+                            I think I’m forgetting the pain (pg.ix). A Picture
+                            Out Of Frame is a touching account of a young man’s
+                            memories of his former life in Iran. It spans his
+                            childhood through to adulthood and his ultimate
+                            exile. The story begins with the young man sitting
+                            at a table, much like the young man in the
+                            photograph on the book’s cover who is depicted in
+                            shadow and ‘out of frame’. The young man is
+                            reminiscing. This book is an evocation of private
+                            memories which represent for Aidani his most
+                            precious possessions. He conjures up images of his
+                            past - his family, his homeland, his friends and his
+                            experiences. Aidani presents us with such a loving
+                            portrayal of his life in the village with his family
+                            and friends despite terrible hardships. Apart from
+                            the natural hardship caused by the desert climate
+                            and the tragic circumstances caused by the
+                            oppression of poverty, there was also military
+                            oppression from an occupying army, and the
+                            turbulence of living under extreme fundamentalism.
+                            The reader shares in the fearful and repressive
+                            atmosphere and a culture of silence because (pg. 57)
+                            ‘...the holes in the walls have mice... the mice
+                            have ears’. We also eavesdrop on recalled
+                            conversations between his mother and father, the
+                            young man and his friends. We hear stories that his
+                            Grandmother told him which provide much needed
+                            comfort for him in later years. These are such
+                            stirring and tender moments. The reader also gains
+                            an understanding and appreciation of what it’s like
+                            to be dispossessed and separated from one’s family
+                            and homeland. It is a moving tale of loneliness,
+                            sorrow and despair interspersed with moments of
+                            happiness derived from love for family and homeland.
+                            Mammad Aidani’s subtle narrative skill and
+                            deliberate simplicity of style make for an emotional
+                            and very worthwhile reading experience.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Geelong Advertiser Review</summary>
+                        <p>
+                            Tale of Iran poses questions for our times Edward
+                            Reilly Geelong Advertiser, 30 May 1998 What kind of
+                            world are we living in? It took me a long time to
+                            get around to finishing this sad tale. There is only
+                            so much I could bear from time to time, my
+                            sympathies going out to all those bruised by
+                            poverty, ignorance and wickedness, knowing that I am
+                            privileged in this world, and yet quite powerless to
+                            ameliorate the suffering of Aidani’s people. This
+                            book is set in Iran, a potentially rich country that
+                            had been wasted by its irresponsible Shah, and now
+                            ground into dour fanaticism by the Mullahs, where
+                            ordinary people, farmers, tradesmen, wives and
+                            students are increasingly preyed upon, driven out of
+                            their houses, sent to beg for one rial, murdered or
+                            exiled. for what? ‘What kind of world are we living
+                            in?’ Aidani asked. Nothing, not even memories of his
+                            beloved mother and grandmother can relieve the
+                            tension and fear of seeing armed men in khaki
+                            standing about his town - the gulf between the
+                            ordinary people and their would-be saviours is too
+                            great for sympathy: he becomes a prisoner in his own
+                            country. The only way out in such a situation is to
+                            retreat inwards. Friends such as Scheherezade,
+                            Sharif and Fereshteh become lifelines to sanity. He
+                            dreams about Kurdestan, a land of hills and valleys
+                            while living in the impossible dust of a big city.
+                            But even such a retreat cannot shield him or Sharif
+                            from army reinforcements and the horrors of his
+                            times. In 1983, while the Persian Gulf War was still
+                            burning, Aidani sent a letter to his family in
+                            Khorramshahr, crying out ‘I have not heard from you
+                            for so long’. How many victims of this century have
+                            echoed that cry? In a bleak letter which eventually
+                            reaches the narrator, Sharif details how he was
+                            picked up by military agents, tortured with nails
+                            driven into his feet and under his skin and placed
+                            on trial (we are not told what for). Signed ‘Your
+                            school friend’, Sharif cannot write his own name
+                            lest he implicate others. Such fears pervade this
+                            novel that I think it must have taken a great toll
+                            upon the writer to recount even the better times
+                            with his friends and family. Aidani, now in his
+                            early 40s, eventually went into exile and migrated
+                            to Australia. Carrying with him a love of Persian
+                            literature, he is our gain. He has proceeded to
+                            publish a collection of his own poetry, Better Not
+                            To Explain, and also has edited an anthology of
+                            stories of the victims of torture, Voices from the
+                            Deep Close Distance. I strongly recommend this novel
+                            to teachers and readers who value the truth and who
+                            are able and willing to impart that to their friends
+                            and families. These days in our own society, we
+                            teeter so close to intolerance and social distrust
+                            that we have need of corrective tales, reminders of
+                            what could happen to ourselves if we let our
+                            freedoms be sold cheaply to prophets, religious or
+                            political. We must keep on asking ourselves, as does
+                            Aidani, ‘What kind of world are we living in?’ and
+                            find the answers for ourselves.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Shorts Thuy On Australian Book Review, No. 199,
+                            April 1998 Reading the biographical note on Mammaid
+                            Aidani, you discover that he once edited a
+                            collection of stories by people who were victims of
+                            torture. This piece of information prepares you for
+                            his first novel, A Picture Out Of Frame. You know,
+                            for a start, that it will not be light and fluffy.
+                            Yet although the book deals with wartime oppression
+                            in Aidani’s motherland, Iran, the narrative is not
+                            as heavy as expected. A third-person account
+                            provides a subtle distancing ploy, enabling a more
+                            objective eye to be cast over intense personal
+                            tragedies. In a style close to prose-poetry, Aidani
+                            presents a critical but loving panorama of his
+                            homeland. We are duly surrounded by the dust and
+                            humidity, the mud wall houses and the boys picking
+                            for copper wire in dumps. At one point, there is the
+                            wry observation that ‘The confrontation of life and
+                            death does not leave one room’ to romanticise. And
+                            yet, the poverty and political fracas in Iran are
+                            elegantly commented upon. The narrator, after having
+                            trouble with his old primus stove, mutters angrily
+                            about there being ‘no oil in the land of oil’. Owing
+                            to its slimness, its novella length, what is
+                            significant about A Picture Out Of Frame are the
+                            things that Aidani does not comment on - the things
+                            that remain out of frame. The book is testament to
+                            the power of the unspoken, and is all the more
+                            harrowing for what it leaves out.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Write On Review</summary>
+                        <p>
+                            New Books - A Picture Out Of Frame Write On,
+                            December 1997-January 1998 Mammad Aidani’s book
+                            deals with memory and exile, focusing on a
+                            poverty-stricken village in Iran and the formative
+                            influence of place and family. Heat and desolation
+                            form the backdrop - then the army arrives. The cover
+                            shows a man silhouetted in a window: the book itself
+                            is a window on a life we know in Australia only
+                            through the exiled who live among us.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Compassion outweighs desire to impress Veronica Sen
+                            The Canberra Times, 21 December 1997 A Picture Out
+                            Of Frame is not quite so successful [as Pham Thi
+                            Hoai Nam, The Crystal Messenger] in its portrayal of
+                            a war-haunted country. Mammad Aidani has written
+                            with sensitivity, but in a rather plain and
+                            repetitive style, about a rural and urban poverty
+                            that permeates every aspect of life down to
+                            ‘clothes, gestures, posture’. In the process he
+                            condemns recent political turmoil in modern Iran.
+                            What he has to say about these situations, and their
+                            effect on ordinary men and women, is worth hearing.
+                            His low-key writing creates a real sense of the
+                            injustice and fear that stalked the land that he has
+                            now left for Australia.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sunday Age Review</summary>
+                        <p>
+                            Top Shelf - Fiction Michelle Griffin The Sunday Age,
+                            23 November 1997 Iranian-Australian writer Mammad
+                            Aidani is a wonderful poet, but his novel about
+                            poverty and exile in Iran is not really successful.
+                            The book shakes with half-choked rage about the
+                            oppressive regime and its contempt for the poor.
+                            However, the highly formal English in which it is
+                            written suffers from a stilted tone and extremely
+                            wobbly syntax. The story itself is certainly strong
+                            enough, following one of the sons of a desperately
+                            poor village family into the city and out into
+                            exile. And the mother, illiterate, exhausted and
+                            proud, is warmly and powerfully captured. Those who
+                            pick their way to the ending will find it unbearably
+                            sad.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

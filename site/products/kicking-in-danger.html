@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,793 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/kicking-in-danger.svg&quot;);
                         "
                     >
-                        Featured
+                        Kicking in Danger
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alan Wearne</h3>
+                </div>
+                <img
+                    alt="Cover of Kicking in Danger"
+                    class="product-cover-mobile"
+                    src="/assets/books/kicking-in-danger/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Kicking in Danger"
+                        class="product-cover"
+                        src="/assets/books/kicking-in-danger/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        What kind of time warp is this? Collingwood has made the
+                        Grand Final. Their ace full forward is missing. Yes,
+                        Johnny Moomba, odds on for the Brownlow, Rhodes Scholar
+                        and Aboriginal land rights activist has been kidnapped!
+                        From Sydenham to Dingley, from Kew to Rowville, murky
+                        forces are at work. Through this mayhem ambles Damien
+                        Chubb, ex-Bomber ruckman, private eye to the sporting
+                        world, laconic centre of calm in a Melbourne gone even
+                        more berserk than usual. It's heading towards the last
+                        Saturday in September. Anything can happen. It does.
+                        Alan Wearne is one of the great masters of what can be
+                        done with the Australian vernacular. This is an
+                        alternative history of Australian Rules, rendered rich
+                        and strange by one of the great connoisseurs of suburban
+                        Melbourne. Damien Chubb and Johnny Moomba are great
+                        acquisitions to the rogues' gallery of football myth.
+                        The ghosts of everyone from John Elliot to Dermott
+                        Brereton flit through this comic extravaganza which
+                        provides us with every possible archetype you could poke
+                        a stick at: a rich brew of sporting Australia as it is
+                        and as comic nostalgia can refashion it. Peter Craven
+                        Filled with unique takes not only on football but life
+                        in general, seeing things from both sides of the fence.
+                        Alan Wearne has given us The Great Australian Rules
+                        Novel. James 'Charlie' Manson The footy novel. Ron
+                        Barassi Damien Chubb is the Philip Marlowe of the
+                        forward pocket. Shane Maloney
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/kicking-in-danger.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/kicking-in-danger/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044209</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>177</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alan Wearne is the author of four books including
+                            the award winning verse novel The Nightmarkets. An
+                            Essendon supporter since 1954 he helped found the
+                            Nunawading District Junior Football League and was,
+                            for one season, a boundary umpire with the Eastern
+                            Districts Football League seconds.
+                        </p>
+                        <a class="bold" href="/authors/alan-wearne.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Famous Reporter Review</summary>
+                        <p>
+                            Kicking in Danger Tim Thorne Famous Reporter , No.
+                            16, December 1997 Black Pepper has rapidly emerged
+                            as perhaps Australia’s most vigorous small press
+                            publisher of poetry, presenting, to deserved
+                            acclaim, the work of poets such as Louis de Paor and
+                            Emma Lew , but what has been less remarked upon has
+                            been its growing fiction list. This volume is the
+                            press’s eighth venture into fiction and while it
+                            makes no claim to be serious ‘high literature’, it
+                            is great fun to read and should sell well,
+                            especially in those parts of Australia where
+                            Australian Rules football is a dominant feature of
+                            the culture. The timing of its release, in the weeks
+                            leading up to the AFL finals, will no doubt help
+                            sales. Alan Wearne belongs to that group of writers
+                            and other intellectuals, mostly based in Melbourne
+                            and mostly (but by no means exclusively) male, for
+                            whom Aussie Rules is more than a casual interest and
+                            slightly less than a religion. To his credit, he is
+                            not. unlike what appears to be a majority of that
+                            group, a Carlton supporter. Indeed, the hero of this
+                            novel. Damicn Chubb, Australia’s (the world’s?)
+                            first private eye specialising in sports, is a
+                            former Essendon ruckman of somewhat minor repute,
+                            who has named his son Alex Bluey Barry (after the
+                            famous half-back line of ’62). Every Victorian club,
+                            however, gets a mention and is apportioned at least
+                            one character who is either a supporter, a former
+                            player or an official. It should be pointed out that
+                            the phrase ‘Victorian club’ is a crucial one, and
+                            that these clubs include South Melbourne and
+                            Fitzroy. The significance of this, for those who do
+                            not follow the indigenous game, is that, although
+                            Kicking in Danger is set in the early 1990s, there
+                            is no mention of the AFL’s interstate teams, and the
+                            expansion which began with the Swans migrating to
+                            Sydney a decade earlier is only mooted in the book
+                            as a rumour too ridiculous to be taken seriously.
+                            Wearne wears his heart on his sleeve as a footy fan
+                            of the nostalgic persuasion, a traditionalist who is
+                            set against the economic rationalism which is
+                            turning the game into just another arm of the media
+                            moguls’ entertainment empires, but he doesn’t preach
+                            about this. Instead, he chooses to construct a
+                            hybrid world of fantasy and reality which the reader
+                            can take as given and within which his cast of
+                            characters can be humanly real, rather that the
+                            cyphers on corporate notepads that their ‘real-life’
+                            counterparts too after are. While there are some
+                            characters based quite firmly on living people, and
+                            while real footballers, past and present, are
+                            mentioned, what Wearne has quite cleverly done is
+                            distil the essence of each club’s image into one or
+                            two characters. Thus former Geelong player Alistair
+                            Arbuthnol is an urbane, tweedy, old-wealth
+                            anachronism from the Western Districts, whereas
+                            Lenny Hell, the wise, kind-hearted, softly spoken,
+                            modest publican of a modest pub, used lo play for
+                            Fitzroy. There is plenty, too, of the world outside
+                            football. Crucial to the novel’s plot are the Koori
+                            Lesbian Kollective, computerised astrology, a
+                            particularly nasty bunch of racist, anti-football
+                            skinheads, and CNN. For all its elements of farce,
+                            and for all that it should appeal to those whose
+                            only contact with literature is reading the Footy
+                            Record , this book does not avoid issues of
+                            political, economic, even philosophical
+                            significance. And for all that the world of footy is
+                            a macho domain, it is women who emerge as the
+                            stronger sex, and it is a woman who, in one of the
+                            book’s funniest scenes, turns the Brownlow Medal
+                            award ceremony into a massive land rights
+                            demonstration. I have-a minor quibble with the
+                            number of misprints and misspellings. The consistent
+                            use of ‘loose’ for ‘lose’, ‘Princess Park’ for
+                            ‘Princes Park’ (which may, on second thoughts, have
+                            been an intentional dig at Carlton). some fairly
+                            haphazard scattering of commas, and most heinous of
+                            all to a Tasmanian reader, ‘Daryl’ instead of Darryl
+                            Baldock, perhaps betray an unfortunate haste in
+                            production. But these are outweighed by some great
+                            one-liners, such as ‘Football has an entire academic
+                            underclass’. ‘There are no Pie [Collingwood. for the
+                            uninitiated] supporters, there are only Pie
+                            fanatics’, and the advice given to Chubb at one
+                            stage to ‘just sit here, beating-up your memories
+                            for Truth or Playboy or Meanjin .’ Alan Wearne has
+                            established a reputation as a major Australian poet
+                            and his verse novel The Nightmarkets is a tour de
+                            force . Kicking in Danger probably won’t even make
+                            it on to the interchange bench of the Ozlit canon,
+                            but then literature is like football in that you can
+                            have a great time watching the minor leagues.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Ian McFarlane, The Canberra Times</summary>
+                        <p>
+                            Paperbacks Ian McFarlane The Canberra Times , 12
+                            October 1997 And now for something completely
+                            different: Kicking in Danger , by Alan Wearne, has
+                            Johnny Moomba, Aboriginal land-rights activist and
+                            star full-forward for Collingwood, disappearing
+                            during finals fever. Has someone played the man
+                            without the ball? Damien Chubb, ex-Bombers ruckman
+                            and private eye, investigates, and before anyone can
+                            say ‘stacks on the mill’ (a sadly defunct Aussie
+                            rules expression for an all-in brawl) the fun is
+                            thickening like MCG mud. Wearne’s comic concoction
+                            of corporate box power games and Koori Lesbian
+                            Kollectives give new meaning to the Aussie Rules
+                            tradition of flying high. Fast footy fun.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Melbourne Weekly Review</summary>
+                        <p>
+                            Barass and I Literature and football can come
+                            together - just ask the great Barassi Mary Lord The
+                            Melbourne Weekly , 16-22 September 1997 At the risk
+                            of sounding unpatriotic, I have to confess that I
+                            equate springtime with the end of the footy season
+                            and the domination of the media by large ocker
+                            blokes and their tiresome, crude jokes. It’s the
+                            thought of the slow approach of the cricket season
+                            that sustains me through those dreary winter
+                            weekends. On the other hand, the summer must be
+                            dreadful for hardline footy fans, which is probably
+                            why they have that mini-competition in late summer
+                            before the real thing begins. That’s probably also
+                            the reason why publishers bring out footy books
+                            towards the end of season - punters need crutches to
+                            sustain them through the footy drought. Though I
+                            must say it’s hard to imagine a fervent fan settling
+                            down for a good read in the off-season, I guess if
+                            they’re desperate enough anything’s possible.
+                            According to that champion of champions, Ron
+                            Barassi, Kicking in Danger , hot off the presses, is
+                            ‘ the footy novel’. He’s probably right. Almost
+                            certainly right. OK, he’s definitely right. I, who
+                            even standing on uppy-toe don’t quite reach his
+                            knees, wouldn’t want to argue with him. Though
+                            mild-mannered enough off the field, he is
+                            intimidatingly large and I, frankly, am a coward.
+                            Alan Wearne, the author of Kicking in Danger , is a
+                            highly acclaimed poet and best known for writing the
+                            prize-winning verse novel Nightmarkets . He may well
+                            have written the Australian rules novel. Not being
+                            an aficionado I am not really in a position to
+                            judge. I’d say that Wearne knows the footballers’
+                            lingo, and genuine fans familiar with the jargon
+                            will really enjoy his book. I met the great Barassi
+                            on a memorable occasion a few thousand years ago. I
+                            was dining in a restaurant with colleagues from
+                            academia and in came Barassi who recognised one of
+                            my friends and came over to say hello. His friend,
+                            an historian of popular culture, introduced us with
+                            explanatory notes which, I suppose, were intended to
+                            justify his mixing in such stodgy company. He
+                            explained me to Barassi with an apologetic look,
+                            saying, ‘She’s literary’. I thought this sounded
+                            faintly insulting but I let it go. Barassi raised
+                            one eyebrow, then he also let it go. Or at least I
+                            thought he did. We invited him to join us but,
+                            seeing we were almost through our meal, he
+                            graciously declined but suggested we join him and
+                            his companion for a drink when we’d finished. I
+                            doubt he really meant it; it seems unlikely that
+                            he’d enjoy being on display for his fans when he was
+                            out for a quiet dinner with a friend. He was merely
+                            being polite. But the blokes in our party insisted
+                            the great man would be deeply hurt if we failed to
+                            take up his invitation, which, of course, we did;
+                            the men in our party mentally rehearsing the tales
+                            they’d tell their students tomorrow about what they
+                            said to Barassi and what Barassi said to them. At
+                            Barassi’s table I stayed fairly quiet (for me) while
+                            the others bubbled and squawked like demented
+                            school-boys, each one showing off for the great man.
+                            After a few minutes of this, he turned to me and
+                            barked: ‘I thought you were supposed to be
+                            literary!’ The others cringed. I took a slow, deep
+                            breath. ‘Good gracious, Ron,’ I said, with the
+                            confiding smile of one expert to another, ‘you don’t
+                            play football at the table, do you?’ The great man
+                            digested that thoughtfully and after a brief pause
+                            offered the laconic response, ‘Fair enough, darl.’
+                            The tension in the air subsided, everyone visibly
+                            relaxed and ‘Darl’ went down in history as a woman
+                            with nerves of steel. It was a character-building
+                            experience and not one I’d care to repeat. I
+                            abandoned the academic life not long after, though
+                            there’s probably no connection. So, I definitely
+                            agree with Barassi’s judgement of Kicking in Danger
+                            .
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            A Welcome Addition Alan Wearne: Kicking in Danger
+                            Robert Pascoe (academic) Overland , No. 150, Autumn
+                            1998 Colleagues, including the editor of the
+                            illustrious Overland , are wont to complain that
+                            reading The Winter Game , my social history of
+                            Australian football, is rather like being stuck in
+                            one of those endless pub conversations which goes on
+                            and on, without any pause which might allow an
+                            interruption, another voice offering a verbal route
+                            out of the all-enveloping, ceaseless and
+                            neverending, never-tiring discourse on the Great
+                            Australian Game which for most months of the year
+                            threatens to engulf and suffocate everyone living in
+                            Melbourne: this novel would have the same effect on
+                            the ‘unbelievers’, those, like the journalist
+                            writing in the American magazine Fortune who is
+                            quoted as saying recently that Melbourne would have
+                            featured much higher on his list of desirable cities
+                            in which to live were it not for the endless talk of
+                            football (and which school you had attended when
+                            growing up), but for those of us who do believe, and
+                            are passionate, and never stop yarning and spinning
+                            tales of footballers, and their alleged deeds, and
+                            misdeeds, this novel is a welcome addition to the
+                            not-very-long shelf of fictional works which take
+                            that endless conversation from the pubs and
+                            hairdressing salons to the printed page...
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Crime Fiction Out Of Bounds Kicking In Danger J.R.
+                            Carroll Australian Book Review , No. 197, December
+                            1997/January 1998 A kidnapping forms the centrepiece
+                            of Alan Wearne’s Kicking in Danger , an Australian
+                            Rules mystery bearing the imprimatur of such diverse
+                            luminaries as Ron Barassi and Peter Craven. The only
+                            other football mystery I know about is Death in the
+                            Back Pocket , which failed to kick a goal, but
+                            thankfully Wcarne’s tilt is much more successful. He
+                            is better known for his epic verse novel The
+                            Nightmarkets , but with this book he has shown his
+                            true colours, which are red and black. A true
+                            Bomberholic, he boasts an impressive store of club
+                            lore and trivia. In fact, sometimes the book seems
+                            to be merely an excuse for him to flaunt his
+                            knowledge and obvious love, of the game. The
+                            protagonist in Kicking in Danger is super-sleuth to
+                            the sporting world, Damien Chubb, who was a ruckman
+                            for Essendon in the sixties and seventies, before
+                            the advent of Simon Madden, but the thing he is
+                            remembered most for is tangling - unwisely - with
+                            Big Nick in the ’68 Grand Final. I was there, but
+                            must have missed it. Now, however, Collingwood
+                            superstar Johnny Moomba is missing, and with the
+                            Grand Final a week away Chubb has to find him fast.
+                            Moomba is so good he makes Gary Ablett look like a
+                            bush hack: mega-goalkicker, hot favourite for the
+                            Brownlow and high-profile Aboriginal activist - and
+                            he plays for Collingwood, which is a nice ironic
+                            touch. While Melbourne prepares itself for that last
+                            frenetic Saturday in September, Chubb uses all his
+                            old football contacts to track down his man. The
+                            question, of course, is not if he will find him in
+                            time, but does Moomba want to be found? Is his
+                            disappearance a stunt, or perhaps a political
+                            statement? Wearne makes full use of this idea as
+                            Chubb weaves a passage through the pack, unearthing
+                            a whole host of wonderfully eccentric types, some of
+                            whom even non-football followers may recognise: J.J.
+                            Hobson, head-kicking president of Carlton, and a
+                            beer baron; Danny Gallagher, a Harley-riding rap
+                            singer and media star with blond tips who used to
+                            wear number 23 for Hawthorn - and so on. All that’s
+                            missing is Eddie McGuire. It’s a lot of fun, a hoot
+                            in fact, and the finale, involving the occupation of
+                            the MCG on Grand Final Eve, is way over the top. My
+                            only complaint about Kicking in Danger is that
+                            Wearne has not been well-served by his publisher in
+                            the editorial department - the book is absolutely
+                            full of mistakes.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review 2</summary>
+                        <p>
+                            Book Review A novel idea to satisfy the football
+                            fanatic Kicking In Danger : A Damien Chubb Mystery
+                            Di Lloyd The Canberra Times , 30 November 1997 Well,
+                            it had to happen. We have had the player
+                            biographies, the historical accounts and the world’s
+                            best football yarns, and now we have the Australian
+                            football novel. The plot of Kicking in Danger
+                            centres around one week - grand final week in the
+                            Australian Football League. But this is no ordinary
+                            grand final week, after all grand finalist
+                            Collingwood has had its star player, Brownlow
+                            medallist, Rhodes scholar and Aboriginal land rights
+                            activist Johnny Moomba kidnapped. The Magpies call
+                            in former Essendon footballer and now private eye
+                            Damien Chubb to solve the mystery. As the mystery
+                            unravels you are introduced to an array of
+                            characters, from J.J. Hobson, the Carlton president
+                            - who bears an uncanny resemblance to John Elliott -
+                            to Maurie Moon the forgotten South Melbourne star
+                            who played in the blood-bath grand final of 1945, to
+                            the Koori Lesbian Kollective - and you need to read
+                            about them for yourselves to understand the
+                            importance of that group. While the book is
+                            essentially a fictional tale, it illustrates the
+                            very real passion associated with Australian
+                            football. The rivalry between the clubs, the passion
+                            of the supporters, the common bond between all
+                            football people when it comes to the game they love,
+                            and - as any Victorian would understand - the
+                            sacredness of the MCG, not only to football, but to
+                            Melbourne as well. In fact, the MCG is central to
+                            some of the more memorable moments of the book. For
+                            example, at one stage it looks like the MCG is not
+                            going to be available for grand final day and Chubb
+                            asks his son Alex for a solution. Alex’s reply:
+                            ‘Simple Dad, play it at Waverley.’ Chubb takes up
+                            the story: Those surrounding him were chilled and,
+                            like an ice age, the enormity of his statement
+                            rippled out to engulf the room. From the mouth of a
+                            relative babe: heresy! Oedipus has been blinded,
+                            Valhalla has fallen. Liz, Liz, a demon had entered
+                            our child, and turned him into some heinous prophet!
+                            All adults, seeing such a terrifying future
+                            recoiled, some I swear swooned. This, we all
+                            thought, comes from too many Mega Slime Lime
+                            Slurpees. Kicking In Danger is best suited to the
+                            football fanatic, the one so passionate about the
+                            sport that they can laugh at it but still respect
+                            it.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Herald Sun Review</summary>
+                        <p>
+                            Kicking in Danger Alan Wearne Richard Harling
+                            (bookseller) Herald Sun , 20 November 1997 Finally,
+                            a new book for AFL fans. Kicking in Danger is a new
+                            departure for Australian crime novels and, it must
+                            be said, for Australian sports writing. It is a
+                            crime novel about footy, set in a weird time-warped
+                            Melbourne, where Collingwood has made the grand
+                            final, and... well, the plot really is too complex
+                            to explain and probably only AFL fans will really
+                            appreciate it. But if you like crime novels and love
+                            footy, then this might be the book for you.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review 2</summary>
+                        <p>
+                            Top Shelf Crime fiction Kicking In Danger Michelle
+                            Griffin The Age , 19 October 1997 This crime caper
+                            is really just a romp through a fantasy league,
+                            where the original 12 teams still exist, the
+                            national game is just a cloud on the horizon, and
+                            the president of the Carlton Football Club is a
+                            loveable old rogue. Damien Chubb, sport’s private
+                            eye, is smart, funny and used to play for Essendon.
+                            Wearne has a lot of fun with all the footy
+                            archetypes, including an astrology mad North fan, a
+                            rap-singing Hawthorn superstar and the man Chubb
+                            must find before the Grand Final: Johnny Moomba,
+                            Collingwood full forward, Aboriginal land rights
+                            activist, Rhodes scholar and Brownlow favourite. The
+                            plot goes off the rails but it’s a lot of fun.
+                            Sustenance over summer.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian Review 2</summary>
+                        <p>
+                            Books Kicking In Danger Michael Sharkey (editor) The
+                            Weekend Australian , 4-5 October 1997 Like [John]
+                            Birmingham’s [ The Tasmanian Babes Fiasco ] cast of
+                            disparate desperates, Wearne’s dramatis personae
+                            reflect a certain metropolitan melange. But where
+                            Birmingham scours Brisbane’s bottom-feeding social
+                            strata, Wearne embraces the social classes that make
+                            up Melbourne’s tribes who live for football. And
+                            where Birmingham hardly explores the possibility
+                            that any class outside the urban lumpen-fringe
+                            dwellers could have a life worth examining, Wearne’s
+                            narrator shows a gift for looking appreciatively
+                            into the minds of a beer baron, a Jewish football
+                            team manager, the licensee of a Fitzroy pub, a
+                            serially divorced ex-Grammarian gentleman
+                            girl-chaser and Koori lesbians. Wearne’s book
+                            displays a sympathy for the muesli mix that
+                            constitutes Australian (or Victorian) society, which
+                            goes beyond Birmingham’s talented depiction of
+                            one-dimensional grotesques. Chubb’s girlfriend is
+                            the straight daughter of a megalomaniac beer baron;
+                            Moomba’s girlfriend Dr Daisy Jackson is an
+                            Aboriginal academic whose articulacy is superior to
+                            any male’s in the novel; Johnny Moomba is, by his
+                            own admission, ‘the most calculating prick in town’.
+                            Wearne knocks the stereotypes around quite a bit in
+                            the earlier stages of his novel, although he has
+                            such fun with such irresistible targets as the
+                            International Socialists and the supremacist wackos
+                            that it’s understandable any effort to maintain the
+                            illusion of realism gets tossed to glory in the end.
+                            New Age lesbianism and Aboriginal mysticism come
+                            together to provide a happy ending that lets down
+                            the novel’s tone a treat. The resolution of Kicking
+                            in Danger is weaker than Birmingham’s inner-Brisbane
+                            grunge Gotterdammerung . But if you can hop, step
+                            and jump over the typographical minefield, you might
+                            hope that Wearne, who made his name with The
+                            Nightmarkets , a book-length poem, will produce more
+                            book-length prose.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Brisbane Courier-Mail</summary>
+                        <p>
+                            books Fun and frolics in footy crime Kicking in
+                            Danger , The Footy Novel John Collins (publisher)
+                            The Courier-Mail , 27 September 1997 Strange title,
+                            or is it a prophetic one? In the ancient version of
+                            the game, no matter how bloody-minded the affray,
+                            kicking in danger just wasn’t on. It wasn’t footy
+                            and that was that. So perhaps the ancient Alan
+                            Wearne is trying to tell us something about the
+                            future. Perhaps! But we are talking Melbourne; the
+                            town where the game is said to have begun on that
+                            strip of paddock beside the Yarra. The strip that
+                            now encloses the G, the holy of holies: the stadium
+                            that pretends in summer to be a cricket ground and
+                            at other times has played host to pop stars, opera
+                            tenors and that first Australian Olympic Games. In a
+                            sense, it is the G that is the hero of this rather
+                            clever entertainment where Wearne, the poet, the
+                            dyed-in-the-wool Melburnian and obsessive football
+                            enthusiast, leaves you in no doubt that his bizarre,
+                            fun-packed events list is somehow a deadly serious
+                            affair. But come 2000, the timetable, like the game,
+                            is about to change because big power outside his
+                            Melbourne has caused the date of the grand final to
+                            be changed to fit in with the Sydney Olympics!
+                            Wearne could not have known this when he passed the
+                            final proofs to. Black Pepper. Perhaps that will be
+                            the scenario for a second Damien Chubb footy
+                            mystery. Wearne, a word master, gives the action
+                            both barrels. Perhaps he can’t help getting just a
+                            little precious about the Brunswick end of town but
+                            at the same time, his hatred of Carlton is palpable.
+                            He can make fun of Collingwood and their supporters:
+                            Let’s face it: wide open democratic, can’t-say-no
+                            tradition-smothered Collingwood are such a credulous
+                            organisation. There are no Pie supporters, there are
+                            only Pie fanatics: their eyes have galaxies of stars
+                            shining in them and they spell out naivety. They are
+                            the least objective of Australians: the Queensland
+                            National Party is a paragon of rational discourse in
+                            comparison. However, Carlton might be suspiciously
+                            close to Brunswick but it is still home to the
+                            silvertails. Carlton, the real power centre, comes
+                            in for some very special treatment. The cartoon
+                            character of J.J. Hobson, the Carlton Club
+                            president, is a none too subtle image of a very
+                            famous club president. There is sour grapes here but
+                            then Carlton once had the unseemly habit of beating
+                            Essendon and besides, even in tribal days, prime
+                            minister Robert Menzies was the No. l ticket-holder.
+                            The nostalgia is strong and there’s no doubting
+                            Wearne’s longstanding fascination with the game. But
+                            he does fear change. He does manage to include the
+                            interchange but only in a character cast list. And
+                            he does include some of the recent well-known names
+                            but he has his central character, private eye and
+                            ex-Essendon player, Damien Chubb, react with shock
+                            when his son hears the news that the G may not be
+                            available for the grand final. ‘Forget the G, Dad.
+                            The game’s going national.’ That is too much for
+                            Wearne, the patriot, to accept because he’s old
+                            school. His league still has only 12 teams and the
+                            Sydney Swans and the Brisbane Bears (let alone
+                            Lions!) just haven’t happened. Tribal Melbourne is
+                            over but not for Wearne! I suspect he thinks the
+                            code’s heyday is decades old, and yet he obviously
+                            likes the present day razzamatazz. He enjoys the
+                            North Melbourne Grand Final breakfast, the Grand
+                            City Parade and the whiffs of money and power that
+                            have always been present but now have a new
+                            dimension of flavour - Footy Rules, OK! He accepts
+                            this and so sets out to entertain by inventing a
+                            plan of action - not too difficult in a Grand Final
+                            Week - and a cast of characters that beggars
+                            description although if you are a dedicated
+                            follower, you’ll enjoy sifting through the subtle
+                            and not so subtle disguises. In this sense, it
+                            reminds me a little of Power Without Glory , where
+                            no edition was complete without the key to real
+                            names. Remember when John West (Wren) was King of
+                            Carringbush? But for the sake of the artifice,
+                            Wearne doesn’t just cling to the past because his
+                            footy hero is Johnny Moomba, a Koori full forward -
+                            a modern version of Farmer, Coleman, Winmar and
+                            Ablett rolled into one but with the added Wearnian
+                            touch of being a Rhodes Scholar! - and it is his
+                            kidnapping just before grand final day that begins
+                            .the adventures of Chubb, the private eye and his
+                            many footy mates of both sexes. It is a romp: a
+                            frolic into an imagined past/present where even the
+                            literary magazine attached to Melbourne University,
+                            historic Meanjin , gets a guernsey. It is an
+                            exercise in good fun, heavy vernacular and lots of
+                            leg pulling. But there are barbs, because the game
+                            is serious business in Melbourne and it is. probably
+                            (dare one say it?) in spite of its origins, becoming
+                            similarly so in the fleshpots of the north.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review 1</summary>
+                        <p>
+                            Pitch battles Kicking in Danger : The Footy Novel
+                            Garrie Hutchinson (editor) The Age , 30 August 1997
+                            Talking about footy life imitating footy art: Alan
+                            Wearne’s footy fantasy features, at its climax, the
+                            MCG being taken over by a right-wing band of thugs
+                            on grand final eve. These neo-Nazis had previously
+                            kidnapped the greatest footballer in the land, the
+                            problematic Aboriginal star Johnny Moomba - a
+                            combination of Krakouer, Lewis, Winmar, Long, Rioli
+                            - and Coleman. He was released, almost accidentally,
+                            by the sports private eye Damien Chubb, a former
+                            Essendon player who had tried unsuccessfully to fix
+                            up Big Nick in the 1968 grand final. The sacred site
+                            of the ’G was to be liberated by the collected
+                            forces of players not involved in the big game, who,
+                            in the hours before the attacking thrust, assembled
+                            at Victoria Park. There they were addressed by none
+                            other than the less-than-successful coach of Desert
+                            Storm, General Schwarzkopf. In art, the boys (and
+                            girls - a potent force in this novel is the Lesbian
+                            Koori Kollective) succeed beyond football’s wildest
+                            dreams; in life, the general failed to get
+                            Collingwood over the line against Carlton. Ah, well.
+                            The grand final is between Collingwood and
+                            Melbourne, itself a fantasy, and Wearne does not
+                            reveal the result. Probably a draw. In Wearne’s
+                            league, there are still 12 Victorian teams and, at
+                            the end of the book, South stay at South as a direct
+                            result of Chubb’s success - it’s enough to make you
+                            weep in memory of those palmy Saturday afternoons
+                            when the local tribes did meet at the Lake Oval, at
+                            Windy Hill, or even Brunswick Street. Ardent fans of
+                            footy will have a chuckle over the conceits, as well
+                            as recognising the affectionate disguises of
+                            selected football personalities, such as a certain
+                            Carlton president, and many other Melbourne and
+                            football types and places. I must declare an
+                            interest: years ago, I used to go to Carlton
+                            Essendon clashes at Princes Park with the author,
+                            thereby, perhaps inspiring his unreasoning hatred of
+                            the Mighty Blues. I was also one of a number of
+                            people who read an early draft of this novel and
+                            offered partisan advice - some of which has been
+                            acted upon. The story, as published, is an
+                            improvement on what I read then, but I still have
+                            some reservations. The storyline, even as fantasy,
+                            is both a bit obvious and hard to follow through the
+                            occasional thickets of long, under-punctuated
+                            sentences. And, while I love the idea of an
+                            alternative reality in football Melbourne and like
+                            the clash of anachronisms that ensue, it isn’t an
+                            idea that is followed through in the detail of
+                            place, description and character. Wearne isn’t
+                            overly interested in character - he is kicking
+                            around types and stereotypes with the result that
+                            when the jokes don’t quite work and there is little
+                            to involve the reader. On the other hand, he isn’t
+                            attempting crime fiction in the classical style of
+                            time, place and character as in Shane Maloney’s
+                            retro-Melbourne thrillers. Wearne’s bonk is a kind
+                            of regional roman a clef in which the key to
+                            enjoying the story is a thorough knowledge of the
+                            importance of football in Melbourne culture -
+                            otherwise, not even The Footy Show will help you.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Bulletin Review</summary>
+                        <p>
+                            Literary luminaries explore life’s little vices
+                            Marietta The Bulletin , 12 August 1997 Life
+                            imitating art again? No one, according to Melbourne
+                            gossips, could have been more surprised than author
+                            Alan Wearne to read last month in the local daily
+                            that General Norman Schwarzkopf, Stormin’ Norman of
+                            Gulf War fame, is addressing the Collingwood AFL
+                            team before its clash with Carlton at the MCG.
+                            Wearne, in his new novel, Kicking in Danger , just
+                            published by Black Pepper, already has the
+                            tactically brilliant Schwarzkopf doing just that
+                            before the grand final. However, he also has
+                            kidnappers running off with the star Collingwood
+                            full forward, and the Magpies hiring private eye
+                            Damien Chubb to track them down... Might be
+                            advisable say the wags, to keep the Rocca brothers
+                            under wraps!
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian [1]</summary>
+                        <p>
+                            Readings Higher Education Peter Craven The Weekend
+                            Australian , 1997 That writer of political verse
+                            epics, Alan Wearne, has an extract from his long
+                            work in progress, which intertwines a set of
+                            stories, a trick we associate with Chaucer in verse
+                            and Boccaccio in prose. Prose is Wearne’s elected
+                            medium in his new book, Kicking in Danger , which
+                            comes with the words of the great Ron Barassi quoted
+                            on the front cover: ‘The footy novel’. Wearne is
+                            best known for his first novel The Nightmarkets , a
+                            story of politics and the shadow it casts on
+                            everyday life, which was compared by Jack Hibberd to
+                            both James Joyce and C. J. Dennis. Kicking in Danger
+                            is from the other end of Bourke Street, a comic
+                            thriller about Australian Rules which involves,
+                            among other things, a not-entirely-lovable black
+                            Collingwood star called Johnny Moomba. The Koori
+                            lesbian feminist collective call him Johnny Hardword
+                            because that’s what he puts on people. The story
+                            involves a kidnapping and it has as its detective a
+                            former footballer called Damien Chubb. Wearne’s
+                            world of Australian Rules is one in which the VFL
+                            has never transmuted into the AFL and where football
+                            history has developed in a counter-factual universe,
+                            though it also includes portraits of some not
+                            unfamiliar characters who have splendoured or made
+                            miserable the game. Famous brewers and the like.
+                            When The Nightmarkets appeared more than a decade
+                            ago, Mungo McCallum, the political journalist, said
+                            he thought it would become a cult book. It will be
+                            interesting to see if this fate overtakes Wearne’s
+                            attempt at pulp fiction.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

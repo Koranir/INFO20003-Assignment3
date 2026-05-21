@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,400 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/messages-of-things.svg&quot;);
                         "
                     >
-                        Featured
+                        Messages of Things
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">K.F. Pearson</h3>
+                </div>
+                <img
+                    alt="Cover of Messages of Things"
+                    class="product-cover-mobile"
+                    src="/assets/books/messages-of-things/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Messages of Things"
+                        class="product-cover"
+                        src="/assets/books/messages-of-things/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        K.F. Pearson, in a collection that includes some of his
+                        well-known translations, writes a sensuous poetry with
+                        an irony that leaves intact his exotic imagery...
+                        Pearson offers us what Mark O ’ Connor might regard as ‘
+                        open verse ’ , except that it is too controlled and
+                        economic to allow self indulgence... carefully
+                        delineated images, from which the reader must make his
+                        own meaning. John McLaren, The Australian Book Review
+                        Poetic precision in images so clean you can hang them on
+                        a wall. Geoffrey Dutton, The Bulletin
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 11.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/messages-of-things.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/messages-of-things/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>0949363030</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1984 (Friendly Street Poets)</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>63</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            Friendly Street Poets - Messages of Things Frank
+                            Kellaway Overland, No. 96, 1984 Messages of Things
+                            by K.F. Pearson is an impressive collection. It
+                            contains adaptations and translations from Catullus,
+                            Heine, Borges, Lorca, two sixteenth century Spanish,
+                            and two Spanish American poets. He invests them all
+                            with the color and texture of his own thought. Some
+                            of the best poems are about objects and suggest that
+                            things are like mirrors, in the sense that the way
+                            we look at them and what we see are a reflection of
+                            what we are - thus the cycle ‘Self Portrait from
+                            Objects in a Room,’ of which I liked the last, ‘A
+                            Cigarette Paper,’ the best: Small and frail as a
+                            cowrie shell, and twisted in discard, a cigarette
+                            paper just holds to the edge of the wicker waste
+                            basket waiting a breath for its fall. It’s like
+                            waiting a breath for your fall but at times, at
+                            times the sheer diagonal flight of a bird across the
+                            upper rectilinear blue of your windowpane! The love
+                            poems, of which ‘Catullan Variations’ and ‘Gaius
+                            Petronius at Night’ are the most interesting, are
+                            passionate and sensuous with many memorable lines:
+                            If you dissemble ‘otherwise engaged,’ send apples
+                            kissed by your round lips, and I will freely eat.
+                            The dramatic poems, ‘Triptych Monologues’ and ‘The
+                            Assassin His own Counsel’ show a jazzy zest for
+                            contemporary language. In ‘Odysseus’ we are given a
+                            sense of the interpenetration of the past and
+                            present, of Odysseus still alive, as he is, in the
+                            twentieth century. However in spite of its vividness
+                            and vitality, the collection seems to me to be
+                            marred bv freauent clumsiness: Once I used to say,
+                            Call no man happy who is not born dead but now I
+                            stand before you, myself the felicitous man The last
+                            four words sound stilted and pretentious and jolt to
+                            a wobbly halt. ...I’d have you remember our prow
+                            -ess of my cock and your clitoral tip The grammar is
+                            clumsy; cock and clitoral tip are words of
+                            conflicting sorts, one popular the other medical,
+                            which shout angrily at one another; the splitting of
+                            the word prowess is idiotic; the poem, which calls
+                            itself ‘A Formal Sonnet,’ is nothing of the kind.
+                            However in spite of these, and other blemishes far
+                            too numerous for comfort, and perhaps that’s their
+                            intention, Messages of Things is interesting
+                            throughout, nearly always alive and vivid, with many
+                            real insights.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Bulletin Review</summary>
+                        <p>
+                            A Vintage Year for Our Poetry - Messages of Things
+                            Geoffrey Dutton The Bulletin , Vol. 106, No. 5429,
+                            1984 It is good to see a collection from Kevin
+                            Pearson, whose verse has qualities of music and
+                            precision that are part of the essential heritage of
+                            poetry but often threatened with demolition in the
+                            name of development. In an elegy for David Campbell
+                            he writes ‘song is utter voice.’ There are two
+                            resonant poems about oranges that also state that
+                            proposition, while Pearson tackles its implications
+                            head on in ‘The Problem of Beauty’. One of my
+                            favourites is ‘A Smart Ode to Soap’, which has the
+                            same shining observation of aspects of the
+                            accustomed every day as in Les Murray’s poem about a
+                            hot shower.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Poetry from Friendly Street, Wollongong and the West
+                            Barbara Giles Australian Book Review, July 1984 Here
+                            again the biennial crop from the poets of Friendly
+                            Street, and the quality sustained, grant monies well
+                            invested. This year we have Rob Johnson’s first book
+                            [ Caught on the Hop }, a first from Kevin Pearson [
+                            Messages of Things ], Mike Ladd [ The Crack in the
+                            Crib ] and Jeff Guess [ Leaving Maps ], and Jenny
+                            Boult’s third [ The White Rose and the Bath ],
+                            though her first with Friendly Street... In Kevin
+                            Pearson’s Messages of Things the appearance is
+                            rather of essences, epiphanies, and those mostly of
+                            natural things: objects of art: and of the problems
+                            of appearances, of beauty. In a marvellously
+                            sensuous poetry, attuned to those Spanish poets whom
+                            he translates so well, he writes nevertheless with
+                            an edge of irony which removes his poetry from
+                            self-indulgence. His ‘things’ don’t shout their
+                            meanings, it is for the reader to conspire with them
+                            to turn a pomegranate into a paean, a carnation into
+                            certainty. The book contains a number of
+                            translations, from Spanish and Latin. We recognise
+                            their distinct voices, like and unlike the voice of
+                            Kevin Pearson, which is a precise, sober and joyous
+                            voice. We will recognise also in these poems the
+                            forms and subjects which please him also. It is not
+                            possible, with a poet of such intensity to find
+                            lines, to be quoted in brief, which give enough of
+                            his flavour, playful, sensual, reflective by turns,
+                            a strong and individual voice.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Ash Review</summary>
+                        <p>
+                            Friendly poems - Messages of Things Ash , Winter
+                            1984 K.F. Pearson’s Messages of Things (Number 7 in
+                            the series) is quite different in approach [to Mike
+                            Ladd’s The Crack in the Crib ]. Pearson is a poet
+                            who can take his personal lessons for granted and
+                            simply allow them to inform upon his current choice
+                            of perspective. Of all the poets reviewed here his
+                            is the most distinctive voice - his technique more
+                            original and his sources more complex. His approach
+                            to the everyday miracles of love and pain is
+                            illuminated not only by education and imagination
+                            but a conscious use of empathy which gets beneath
+                            the skin. His writing of something more than direct
+                            experience and the intelligence with which he does
+                            so entirely side-steps pretension. It is dangerous
+                            for an Australian poet to display evidence of any
+                            kind of love affair with the passionate but Pearson
+                            is able to charter the reefs involved by his careful
+                            structuring, judicious injections of irony and a
+                            certain sly humour. For example, in ‘Catullan
+                            Variations (II)’ Pearson undercuts his first verse
+                            evocations of sensuality, beauty and melancholy with
+                            humour and deliberate Ockerisms: Let all of love go
+                            weeping now and all who know of beauty the budgie of
+                            my girl is dead, the budgie who beguiled her time
+                            she loved it more than both her eyes, the honeyed
+                            thing knew her that wel1... There are many pleasures
+                            in this book , exotica of image and subject not
+                            least among them. Pearson’s hard-edged lyricism
+                            startles with its accuracy. You see it in a poem
+                            such as ‘A New Pomegranate’ Something now beneath
+                            the burnished antipodal sun flexible, gold, lithe
+                            visible means of rapport with the green-to-yellow
+                            ripening pomegranate in the dust of the white window
+                            sill silence gathers round. Where the sense of
+                            colour and light and the lusciously ripe is
+                            typically underlaid with awareness of subtle
+                            connections and incidental word play. Another side
+                            of Pearson’s work is the energy and intelligence of
+                            his associative abilities. The following is from
+                            ‘The Assassin, His Own Counsel’, I am always at the
+                            edge. The crunch is musk to my ear my thumping
+                            adrenal high is fluid as Fred Astaire. Come here
+                            I’ll take you there you’ll hear the bullets tear
+                            across the city square to where the body slumps and
+                            isn’t panic sweet hit music to your ears now you are
+                            its cause and occasion in the streets? Oh you’re a
+                            big boy now sweet sweet contamination.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            New, Rewarding Verse - Messages Of Things Peter Lugg
+                            The Canberra Times, 30 June 1984 These books [Robert
+                            Clark and Jeri Kroll (eds.), No. 8 Friendly St
+                            Poetry Reader , K.F. Pearson, Messages of Things ,
+                            Jeri Kroll, Indian Movies ] tempt one to believe
+                            that poetry publishing in South Australia is
+                            flourishing. Pearson’s Message of Things is one of a
+                            suite of five new books launched at the Adelaide
+                            Arts Festival in March... Some of Kevin Pearson’s
+                            poetry appears in the Friendly St Reader . His
+                            poetry is cosmopolitan, with a special debt to
+                            themes and techniques employed by South American
+                            poetry. Indeed, many of the poems in Messages of
+                            Things are translations from Spanish, Latin and
+                            Italian. While many Australian poets freely borrow
+                            the forms and themes of recent US poetry, the impact
+                            of Spanish poetry is rare. While influence for its
+                            own sake is difficult to encourage, the study of
+                            other poetic lexicons can often broaden the
+                            interests of local writers. As a result Pearson’s
+                            poems are sometimes alien and gaunt, sometimes rich
+                            and rococo. In ‘Catullan Variations’ he has wittily
+                            transformed the Roman poet into an Australian idiom.
+                            He is fond, too, of the epigram, although the form
+                            appears to become his master, rather than the
+                            reverse. Altogether I feel that there are too many
+                            translations in this book, and not enough Pearson...
+                            Each of these three books has good layout and
+                            production.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald Review</summary>
+                        <p>
+                            Weekend Books - Poetry Judith Rodriguez The Sydney
+                            Morning Herald , 16 June 1984 Adelaide’s Friendly
+                            Street Poets sets an entrepreneurial example to
+                            other regional publishers, by launching its books at
+                            the biennial festival. Numbers 6-10 are of high
+                            quality. All, with the exception of Jenny Boult’s
+                            The White Rose and the Bath , are first books. With
+                            some exceptions in the work of Kevin Pearson and Rob
+                            Johnson, they agree in trying for an informal
+                            fluency that will carry minutiae of description,
+                            anecdote and explanation, on to a communicative
+                            whole. It is spoken poetry, but there are no raised
+                            voices, though Mike Ladd and Jeff Guess most
+                            obviously register earnestness. Several of the books
+                            use graphics - to best effect, Eric Chamber’s photos
+                            in Boult’s book, and fine pencil drawings by Ronnie
+                            Kelly in Guess’s Leaving Maps . Kevin Pearson, in
+                            Messages of Things , typically has in his field of
+                            vision a still life and a reflection of and upon it.
+                            His feeling for poetic and philosophic tradition is
+                            appropriately expressed by his associating
+                            translations of Vallejo and Borges with Kevin Hart’s
+                            work in The Lines of the Hand . These and other
+                            poets are raising the difficult art of translating
+                            poetry to a level where Australian publishers will
+                            bring books of poetry, chosen and Englished by
+                            Australian sensibilities, to us from foreign
+                            literatures. Indeed, the Leros Press in Canberra has
+                            invited such manuscripts.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            South Australian English Teachers Association
+                        </summary>
+                        <p>
+                            Messages of Things Peter Armstrong South Australian
+                            English Teachers Association, 1984 These are four of
+                            the five new titles in the Friendly Street Poets
+                            series which were launched during this year’s
+                            Writers’ Week. In its eight years of existence, the
+                            Friendly Street Poets group has grown to be a major
+                            force in the publication of new poetry in Australia.
+                            Of these four books [ The Crack In The Crib by
+                            MikeLadd, Messages Of Things by K.F. Pearson, The
+                            White Rose &amp; The Bath by Jenny Boult and Caught
+                            On The Hop by Rob Johnson] K.F. Pearson’s Messages
+                            of Things is probably the most demanding of the
+                            reader. In many instances, there is an indefinable
+                            ‘I enjoyed reading it but can’t really say what I
+                            enjoyed about it.’ Sometimes it’s the sharpness of
+                            the image, Have a motionless apple rage within its
+                            skin its hour and There’s an orange with a
+                            recalcitrant skin, the sting of liquid speargrass in
+                            your eye. Then precisely in the pain you are alive.
+                            the intensity of the feelings portrayed, To desire
+                            and desire and attain at the last is the true
+                            Kosciusko of pleasure I reckon the intellectual, and
+                            linguistic challenge, Firm as spidery tungsten coil,
+                            tensile, shining, strong, the impossible singing of
+                            ‘is’ I gong and gong as ‘as’. or simply the pleasure
+                            of recognizing and perhaps envying the skill with
+                            which these poems are wrought. I see a dual value in
+                            these books. As collections of contemporary poetry,
+                            and contemporary Australian poetry in particular,
+                            they are worthwhile and interesting additions to
+                            anyone’s book collection. Each book shows a high
+                            degree of craftmanship and imaginative skill with
+                            words. The poems reflect the writers, of course, and
+                            they reflect the society within which those writers
+                            are working. As a teacher, I have found contemporary
+                            collections such as these invaluable when placed at
+                            the heart of any serious study of Australian
+                            literature or society. If I were currently teaching
+                            Matriculation English, I would certainly introduce
+                            these books to my students as a possible area for
+                            extension work. Back to top Start of StatCounter
+                            Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

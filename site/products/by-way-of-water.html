@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,275 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/by-way-of-water.svg&quot;);
                         "
                     >
-                        Featured
+                        By Way of Water
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Phil Leask</h3>
+                </div>
+                <img
+                    alt="Cover of By Way of Water"
+                    class="product-cover-mobile"
+                    src="/assets/books/by-way-of-water/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of By Way of Water"
+                        class="product-cover"
+                        src="/assets/books/by-way-of-water/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        ‘In the end Vladimir chose London for us.’ She smiled,
+                        thinking about it. ‘So Leonora became an English child,
+                        dreaming of happy endings.’ When her Italian mother
+                        takes up with the builder Tony Tomaselli, Leonora
+                        Stanislavski finds herself at a loose end in Cairns.
+                        Known there as ‘the Englishwoman’ because of her London
+                        upbringing, she meets Vic Townsend, a tour boat operator
+                        fleeing his past. Leonora has been investigating her own
+                        past, in particular, the mysterious death by drowning of
+                        her Russian father in Berlin. Their pasts seem destined
+                        to keep them apart. But when Tomaselli sends them on a
+                        journey to the far north to deliver an Aboriginal
+                        painting to the derelict cattle station of old Albert
+                        Winters, their buried love surfaces. Then Leonora
+                        reveals the horrific things she's done to uncover her
+                        father’s past.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/by-way-of-water.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/by-way-of-water/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044305</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>167</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Phil Leask was born in Brisbane in 1947. He
+                            bushwalked, studied English and French at the
+                            University of Brisbane and Education at the
+                            University of Tasmania.
+                        </p>
+                        <a class="bold" href="/authors/phil-leask.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Margaret Linley, The Geelong Advertiser
+                        </summary>
+                        <p>
+                            Margaret Linley The Geelong Advertiser , July 2000
+                            This is a first novel for Australian writer Phil
+                            Leask, who now resides in London but returns home
+                            each year. On one level this is a love story between
+                            Leonora and Vic, who meet in Cairns. She is a rich
+                            London-born woman holidaying with her mother. He is
+                            a tour boat operator living a simple lifestyle. They
+                            meet and their love unfolds as the story does. But
+                            on another level this story is so much more than
+                            this. The characters bring a range of interesting
+                            cultural baggage with them. The dying and
+                            reformation of Europe after the second world war,
+                            the history of a number of political movements in
+                            Europe and the history of cane-cutting in the far
+                            north of Queensland. Delia Falconer spoke at the
+                            book launch and said about the characters’ journey
+                            inland. ‘They are not travelling inland to a dry
+                            place; they’re not travelling to a place where souls
+                            are lost. They are travelling to a place where souls
+                            are found. I thought this was a very clever and
+                            original reversal of a lot of the ways that we see
+                            the Australian landscape in literature.’ In order
+                            for Leonora and Vic to have a relationship they need
+                            to look first at their own pain. A journey inland
+                            throws their soul-searching into sharp focus. The
+                            characters bravely face their pain and their demons
+                            against a backdrop of relentless rains and flooding
+                            creeks. Phil Leask’s writing is rich and generous,
+                            sensually evocative and resonates deeply. Here is
+                            Vic thinking about Leonora’s beauty: ‘Leonora had an
+                            angular beauty that was almost too much to bear, as
+                            if the smoothness of her flesh was threatened by the
+                            bones beneath, or by the pressure of time, like the
+                            ancient mountain ranges eroded by millions of years
+                            of wind and rain, whose bare, rocky ridges continued
+                            to crumble away into nothing.’ Here is Leask writing
+                            of despair and futility: ‘All they had ever touched
+                            and turned to dust, and he, Victor, on whom they had
+                            pinned so many of their hopes and dreams, who would
+                            achieve through his life all the things they might
+                            have aspired to themselves, was the living example
+                            of the pointlessness of all they had ever embarked
+                            upon.’ And now, the eternal optimism, the pale
+                            flickering light of hope: ‘Limited though his dreams
+                            might be, he could not bring himself not to dream
+                            them.’ There are many points along the journey of
+                            the relationship where they lose and hurt and push
+                            each other away. ‘Deliberately, painstakingly, she
+                            had banished him from her life. With every word and
+                            every phrase she had pushed him further and further
+                            away from her, leaving him huddled in the corner of
+                            the four-wheel drive, his shoulder pressed against
+                            the door, as far away as he could get.’ Leonora
+                            realises that her investigations into her own past,
+                            the drowning of her Russian father in Berlin, really
+                            serve to divert her from her own self-knowledge.
+                            Continually, she, Vic and other characters are
+                            forced to assess what is important and what is not.
+                            This is a wonderful book with beautiful lyricism, a
+                            kind of curl-up-by-the-fire-and-do-not-disturb-me
+                            book.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Southern Cross Review</summary>
+                        <p>
+                            Southern Cross (London), 10 January 2001 A great,
+                            sweeping story of unravelling pasts and love denied
+                            from Aussie author Phil Leask. Leonora has been
+                            dragged up to Cairns by way of her mother’s second
+                            marriage. Not knowing a whole bunch about her
+                            original old man, she goes about remedying the
+                            situation. On a delivery run to the far north,
+                            Leonora grows close to Vic, a man who is plain and
+                            simply on the run from his own past. As trust
+                            between the two deepens, the shocking measures
+                            necessary to discover oneself are revealed.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Paperbacks By Way of Water Veronica Sen The Canberra
+                            Times , 19 November 2000, (pg. 55) A less engagingly
+                            depicted quest concerns Leonora, reared in England,
+                            who is seeking to unravel the long-hidden secrets
+                            behind the death of her Russian father drowned in
+                            Berlin during the Cold War The details of her years
+                            of searching are told to a new lover Vic, a person
+                            with a troubling past, when they meet in Cairns. The
+                            attempted fusion of elements of Australian and
+                            European social and political experience is not
+                            particularly successful. Then there is the
+                            gratuitous inclusion of an indigenous Australian
+                            motif when Leonora and Vic are commissioned to
+                            deliver an Aboriginal painting to a decidedly
+                            eccentric old man on an isolated cattle station.
+                            What happens at mad Albert’s shack is melodramatic
+                            to say the least; its evidence of aggressive sexism,
+                            seen elsewhere in the book, is meant to explain how
+                            males overcome their feelings of grief or inadequacy
+                            by doing violence to women.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Shorts By Way of Water Melissa Hart Australian Book
+                            Review , No. 226, November 2000 (pg. 60) By Way of
+                            Water is an intriguing and gentle first novel that
+                            is not so much driven by plot as by its characters
+                            and their unfolding memories and desires. Vic is a
+                            tour boat operator in Queensland who meets Leonora,
+                            a cosmopolitan and nomadic woman on holiday with her
+                            mother. Their turmoiled pasts prevent them from
+                            becoming involved until her mother’s lover
+                            intervenes and insists they both travel to the
+                            remote north to deliver an Aboriginal painting to
+                            Albert Winters, a recluse on a rundown
+                            cattle-station. Essentially a romance story, By Way
+                            of Water explores the haunted lives of its
+                            protagonists as they examine their pasts before
+                            surrendering to the future possibility of love.
+                            Leask’s writing style is consistent, confident and
+                            quite original - unlike a first time novelist who
+                            often stumbles here and there. His characters are
+                            also multi-layered. They are rich with personal
+                            histories and messy emotional baggage, which is
+                            something of a rarity in recent Australian
+                            literature. The reclusive Albert Winters, who ‘did
+                            not mind if they thought he was odd, since he was,
+                            and knew it himself’, is a curious character. He is
+                            loveless and raging with hatred, cynicism, guilt and
+                            desire, yet he unfortunately sits awkwardly in this
+                            gentle story. And although Leask attempts a tragic
+                            climax with the unveiling of the painting, it reads
+                            more like a melodrama. That said, however, Leask is
+                            a promising and gifted new voice in Australian
+                            literature. One that values and dives into the
+                            emotional depths of his characters.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

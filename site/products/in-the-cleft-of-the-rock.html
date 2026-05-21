@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,130 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/in-the-cleft-of-the-rock.svg&quot;);
                         "
                     >
-                        Featured
+                        In the Cleft of the Rock
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Deborah Masel</h3>
+                </div>
+                <img
+                    alt="Cover of In the Cleft of the Rock"
+                    class="product-cover-mobile"
+                    src="/assets/books/in-the-cleft-of-the-rock/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of In the Cleft of the Rock"
+                        class="product-cover"
+                        src="/assets/books/in-the-cleft-of-the-rock/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Here is the heart of the matter, the quintessence of
+                        desire. We do not flee, we do not chase. Here we sit and
+                        wait with wilderness in our mouths where once was
+                        heavenly breast. Here in the stillness of the watch, in
+                        a whirl of desert wind, we sit and learn the sacred art
+                        of travelling. Deborah Masel’s meditations on the Five
+                        Books of Moses come from deep study, yet they are
+                        effusive. The dialogue between the ancient text and the
+                        modern writer is dramatic. As she says herself, ‘We are
+                        brought out to tell the story, and through the telling
+                        we are brought out.’ Her insights lift us to a
+                        realization of how we may live now. A timeless and
+                        timely commentary written from the cleft of the heart.
+                        Masel’s words shatter old stones to reveal new meanings
+                        through a journey that soars from dazzling heights to a
+                        place of mystery that lies beyond life and death. Mark
+                        Baker, Australian Centre for Jewish Civilisation Deborah
+                        Masel in this extraordinary collection of prose poems
+                        cuts to the depth and uncovers the throbbing, achingly
+                        beautiful heart of the Torah. Rabbi Ralph Genende
+                        Drawing from a rich imaginative knowledge of midrashic
+                        and hassidic commentary on the Bible, she creates a
+                        personal mythology of death and life, darkness and
+                        light, void and meaning. Passionately searching, her
+                        words draw together fragments of hidden beauty. Dr
+                        Avivah Gottlieb Zornberg
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/in-the-cleft-of-the-rock.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/in-the-cleft-of-the-rock/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044640</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2009</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>228</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Deborah Masel, born in 1957, was an author and
+                            teacher with a special interest in Jewish mysticism.
+                            She lived in Melbourne where she lectured regularly
+                            for Jewish and interfaith groups and organisations,
+                            and wrote on aspects of Jewish mystical tradition
+                            for various publications.
+                        </p>
+                        <a class="bold" href="/authors/deborah-masel.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
             </main>
         </div>
         <div class="footer-area">

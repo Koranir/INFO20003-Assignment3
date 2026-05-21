@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,249 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/to-whom-it-may-concern-and-other-plays.svg&quot;);
                         "
                     >
-                        Featured
+                        To Whom It May Concern and other plays
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Daniel Keene</h3>
+                </div>
+                <img
+                    alt="Cover of To Whom It May Concern and other plays"
+                    class="product-cover-mobile"
+                    src="/assets/books/to-whom-it-may-concern-and-other-plays/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of To Whom It May Concern and other plays"
+                        class="product-cover"
+                        src="/assets/books/to-whom-it-may-concern-and-other-plays/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Described by the author as A Little Bumper Book of
+                        Plays, To Whom It May Concern is a collection of eight
+                        plays by multi-award winning dramatist Daniel Keene. All
+                        works are from the acclaimed Keene/Taylor Theatre
+                        Project. Their stories forge what Geoffrey Milne has
+                        called &quot;a poetics of dignity in despair.&quot;
+                        Occasionally theatre delivers something quite
+                        extraordinary. Sitting in the poverty-marked surrounds
+                        of The Brotherhood of St Lawrence furniture warehouse,
+                        watching three more of Daniel Keene's plays in his
+                        collaborative project with director Ariette Taylor, more
+                        than tears were brought to my eyes. It was as if a hand
+                        had reached into my chest and squeezed my heart until it
+                        hurt. These plays are so everyday on the surface yet
+                        they articulate in their gaps and silences a profound
+                        sense of human worth. Helen Thompson, The Age
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/to-whom-it-may-concern-and-other-plays.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/to-whom-it-may-concern-and-other-plays/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044330</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>123</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Daniel Keene was born in Melbourne in 1955. He has
+                            written many plays including Cho Cho San, Silent
+                            Partner, Because You Are Mine, Low, Beneath Heaven,
+                            Terminus and The Architect’s Walk.
+                        </p>
+                        <a class="bold" href="/authors/daniel-keene.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Marisa Mastrocola, Togatus</summary>
+                        <p>
+                            To Whom It May Conern and other plays Marisa
+                            Mastrocola. Togatus , March 2001 I approached my
+                            first reading of this book of eight short plays
+                            incorrectly. At first I read the plays in a random
+                            order and ended up having to put the book down in
+                            confusion. I found it easier to read these plays in
+                            order; a greater sense of the people Keene writes
+                            about becomes apparent. In this second reading I
+                            became drawn into the poetry of Keene’s writing, as
+                            well as the unusual style he has presented these
+                            works in. Keene’s characters are not those of
+                            contemporary society; they are usually depicted
+                            through their simple struggles and their subtle
+                            madness. Each character pulls at your heartstrings
+                            and is timeless. We never know the names of each
+                            character yet somehow we do know them; we have met
+                            them somewhere before or are going to meet them
+                            somewhere in the future. Keene’s lack of punctuation
+                            was at first very distracting, but through
+                            perseverance I discovered my own rhythm in the
+                            dialogue. This lack of punctuation creates a sense
+                            of building and allows the reader (or performer) to
+                            utilise their own creativity in setting a pace and
+                            rhythm. This also applies to the lack of stage
+                            directions. It is in this void that the imagination
+                            flourishes and takes each play into its own
+                            realities. The only use of punctuation is the
+                            question mark. Keene has left it open for any one of
+                            us to question the remarks made by the characters.
+                            After all, whose truth is it and what is it all
+                            founded in? Let these eight short plays give you a
+                            peek into moments that are quite unexceptional yet
+                            are revolutionary.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Palz Vaughan, Herald-Sun</summary>
+                        <p>
+                            Front Row Brave play Palz Vaughan Herald-Sun , 27
+                            February 2001 Since it was founded in 1995, the
+                            publishing house Black Pepper has published 14
+                            fiction and 22 poetry titles. Co-publisher Kevin
+                            Pearson has decided to branch out into publishing
+                            plays. The inaugural volume, To Whom It May Concern
+                            and other plays , is by critically acclaimed author
+                            Daniel Keene. ‘In some way it’s a brave venture,’
+                            Pearson says. ‘Across the ages the best writers have
+                            been dramatists. Daniel Keene’s work is more pithy
+                            and moving than much of the fiction around at the
+                            moment. If Henry Lawson had written plays, this ( To
+                            Whom It May Concern ) is what ‘The Drover’s Wife’
+                            would look like.’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            To Whom It May Concern and other plays Melissa
+                            Ashley Social Alternatives , Vol. 20, No.3, August
+                            2001 (pgs 56-58) [Text not yet available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Big Issue Review</summary>
+                        <p>
+                            BOOK BRIEFS Chris Boyd The Big Issue Black Pepper
+                            has just published a slim collection of recent plays
+                            by Daniel Keene, all of which were written for the
+                            Keene/Taylor Theatre Project. From humble beginnings
+                            in a Fitzroy Brotherhood of St Laurence furniture
+                            warehouse, in which highly stylised and poetic
+                            encounters between down-and-outs were played out,
+                            the project has become something of a juggernaut,
+                            attracting rave reviews and huge interest from the
+                            theatre community. Thespians are falling over
+                            themselves to offer their services. But the
+                            reception has been troubling, with some critics and
+                            performers seemingly revelling in getting down and
+                            dirty. But as poet and critic Alison Croggon
+                            eloquendy argues in the preface of To Whom It May
+                            Concern and other plays , Keene’s phrasing owes more
+                            to Beckett than it does to Wesker. These are not -
+                            or at least not merely - tales of the working class.
+                            Nor is Keene (merely) the people’s poet. Ironically,
+                            rave reviews have obscured the significance of the
+                            plays which, at their best, jostle in bleakness and
+                            beauty with Beckett’s. Few other Australian
+                            playwrights would have the sensibility (or the
+                            balls) to write a line like this: ‘You crawl out of
+                            your old mum and into your f***ing grave.’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review</summary>
+                        <p>
+                            The New Jerry Lewis? The Age , 28 September 2004 The
+                            French just can't get enough of Aussie playwright
+                            Daniel Keene, best known on his home soil for the
+                            now disbanded Keene/Taylor Project. More than 50
+                            productions of Keene's work have been staged in
+                            Belgium and France since 2000, and one of the
+                            latest, To Whom It May Concern , takes the eclair
+                            when it comes to accolades. Keene's wife, Alison
+                            Croggon, reports that a critic on France Culture
+                            radio believed it to be the most significant
+                            theatrical event in Paris since 1953 when Samuel
+                            Beckett's Waiting for Godot opened. The French have
+                            also been quick to adopt Keene as their own, with
+                            publications such as Le Monde , L'Humanite and
+                            Figaro touting him as a major new voice in
+                            &quot;European&quot; theatre; in other good news,
+                            the overcoat Keene lost during his last visit to
+                            Paris has miraculously resurfaced in the wardrobe
+                            department of La Cartoucherie.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

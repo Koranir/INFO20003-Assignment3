@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,529 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-history-of-colour.svg&quot;);
                         "
                     >
-                        Featured
+                        The History of Colour
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">K.F. Pearson</h3>
+                </div>
+                <img
+                    alt="Cover of The History of Colour"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-history-of-colour/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The History of Colour"
+                        class="product-cover"
+                        src="/assets/books/the-history-of-colour/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        She is complete and in her beauty ’ s complete. That
+                        which is outside her face ’ s beauty is less than the
+                        sum of beauty. Above all a resourceful shape-shifter,
+                        the South Australian poet K.F. Pearson keeps trying, and
+                        succeeding with, different modes and pitches of poetry.
+                        From imitations of Polynesian chant and Arabic ghazal to
+                        a delicious satire on applying for funding, from
+                        auto-biographical sketches to highly worked portraits,
+                        and equally in richly rewarding examples of that intense
+                        meditation on particulars which tests a good poet by
+                        being so well-worked a field, Pearson displays a
+                        versatility and a freshness well worthy of the abundant
+                        life in his chosen topics.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 15.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-history-of-colour.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-history-of-colour/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>0207169276</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1991 (Angus &amp; Robertson)</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>78</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Quadrant</summary>
+                        <p>
+                            Reviews A Vaselined Oyster and a Serenade to Lace
+                            Penelope Nelson Quadrant, Vol. 36, No. 5, 1992 KF.
+                            Pearson’s blurb describes him as ‘a resourceful
+                            shapeshifter’, a phrase which dares the reviewer to
+                            try and pin him down. ‘From imitations of Polynesian
+                            chant and Arabic Ghazal to a delicious satire on
+                            applying for funding...’ Yes, funding applications
+                            again... The poem... can be read as reflections on
+                            love-making, poetry, or even the mandolin...
+                            Pearson’s lines are spare, polished and
+                            sophisticated, as befits a sharp-shooting
+                            shape-shifter. His concern for the aesthetic, for
+                            colour, shadows and spaces between things may be
+                            seen in many of the poems. Red, the accent colour of
+                            the cover, is absent from the tropical landscape of
+                            ‘Travel to an Island’ until the High Stepping Wader
+                            builds a nest topped with a red kerchief. And so
+                            they came to a religious love of a colour they did
+                            not have. This is a world in which a god’s a bearer
+                            of forgotten red. One poem that particularly appeals
+                            to me is ‘The Economy of Fashion,’ a serenade to
+                            lace, ‘a membranous slim physicality that replaces
+                            other thoughts, / fabric that tells of itself by an
+                            absence of itself.’ This beautifully crafted poem
+                            loses some of its lyricism in the last line when
+                            Pearson restates his point about absences with the
+                            highfalutin word ‘interstices’: And how shall we
+                            turn when we leave by a door knowing we worship
+                            interstices and not their shrill surrounds? I also
+                            like the more colloquial ‘A Letter from Mitcalfe’s
+                            Hut,’ and the delicately observant ‘Entrance
+                            Ceremony,’ on the custom of taking off one’s shoes
+                            at the door. Another hymn to fabric, ‘The Double
+                            World,’ about corduroy, takes the dual texture of
+                            piping and indents and applies it to a number of
+                            other two-edged experiences: ...Thus is a telephone
+                            cream and cool on a desk but you know too that other
+                            nervy telephone you’ve sat by minute by minute,
+                            quickened, awaiting its call. I have thought of
+                            corduroy and thought of it again. ‘The Peach, In
+                            Fact,’ a sensuous evocation of the texture, shape
+                            and taste of a peach, moves from aesthetic
+                            appreciation to a juicy bite and then backs away to
+                            a long shot of how it might appear in Japanese art.
+                            Like many other poems in this collection, this one
+                            is able to turn a subject around, presenting both
+                            experience and its observation. Occasionally, in
+                            this collection, something jars. (For instance,
+                            isn’t the past participle of stride stridden , not
+                            strode as in ‘For the Vanquished’: ‘Let it be said
+                            when all has fallen away/ you have strode naked in
+                            the full blast of air’?) Most of the poems, though,
+                            have a finished, musical quality and offer
+                            intriguing ways of looking at the world. I will look
+                            forward to other work by this poet.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian Review</summary>
+                        <p>
+                            The Elegance and the Intensity Martin Duwell The
+                            Weekend Australian, 5-6 October 1991 If Kinsella’s
+                            poetry at its best is inten­se, K.F. Pearson’s is
+                            elegant. Many of the poems in The History of Colou r
+                            are highly sensitive (in a way that is often called
+                            painterly) to objects and the way we perceive them,
+                            close to the poetry of someone like Gary Catalano.
+                            One important poem, ‘The Double World’,
+                            distinguishes between objects in themselves and
+                            objects as we animate them with our own concerns.
+                            Another good poem, ‘The Economy of Fashion’,
+                            concentrates on lace as a symbol for an art in which
+                            the centre of attention is an absence, surrounded by
+                            elaborate coruscations of decoration. Some of the
+                            poems lean towards a Wallace Stevens-like
+                            appreciation of context by focusing on the act of
+                            locating simple objects in their frame. This is true
+                            of both the marvellous first poem, ‘Leaf and
+                            Context’, and the last, ‘Ghazal of the Mandolin.’ At
+                            his best, Pearson has a great sensi­tivity to the
+                            visual; it is no accident that one of the best poems
+                            in the book is de­voted to the poetry of that highly
+                            visual poet Robert Gray. It is all extremely
+                            assured, but there is an un uncomfortable
+                            juxtapositioning of an immense meditative
+                            assuredness, so­phisticated and knowing, with
+                            decided awkwardnesses of syntax and punctua­tion.
+                            There is also a tendency to lapse into predictable
+                            and fashionable modes. The book concludes with a set
+                            of poems of Middle Eastern inspiration, remind­ing
+                            us that the ghaza l is to the 1980s what the
+                            villanell e was to the 1950s, and there is a set of
+                            rather Browningesque monologues. I don’t know what
+                            the Renaissance painters did to deserve it, but it
+                            seems de rigueur that they should appear in En­glish
+                            language poetry since Browning, pumping out dramatic
+                            monologues for all they are worth. Here
+                            Brunelleschi, Donatello and Uccello are put through
+                            the mill. Perhaps it is a divine punishment for
+                            their earlier lives that they should suffer these
+                            endless literary reincarnations. Ultimately, I am
+                            not sure how good a poet Pearson is, but I worry
+                            about the corruption of elegant smoothness by
+                            mo­ments of awkwardness. After all, as we have
+                            learnt from poets like Catalano and Gray, this kind
+                            of painterly meditation must never have rough joins
+                            or surfaces.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Sharp, Vivid Poems Explore Ideas with Almost Visual
+                            Clarity John Foulcher The Canberra Times , 24/8/91
+                            Recent volumes of poetry by Gary Catalano [ The
+                            Empire of Grass ], Julian Croft [ Confessions of a
+                            Corinthian ] and K.F. Pearson clearly demonstrate
+                            that a poet doesn’t have to be prolific to be
+                            successful. All three publish sparsely, and these
+                            volumes reflect the quality that such a frugal
+                            attitude nurtures... K.F. Pearson’s The History of
+                            Colour , his first with a national publisher, is an
+                            intriguing volume. Its title is, paradoxically, both
+                            accurate and misleading: although it suggests visual
+                            effusion, the book’s focus lies much more in
+                            concepts than the actual detail of things. Unlike
+                            Croft, Pearson seems largely uninterested in
+                            painting landscapes or experience; to this end, his
+                            poem about Fiji, for instance, uses the landscape
+                            merely to explore his initial rumination that ‘The
+                            furious art of patience makes the coral’. The book’s
+                            first poem, ‘Leaf and Context’, outlines his method.
+                            In its opening lines he tells: I’ll not number the
+                            streaks of the tulip but tell of the fall from an
+                            ornamental vine of a tattered red leaf... ...on a
+                            crisp ironical morning. So the context, not the
+                            leaf, is where his interest lies. Though his
+                            language is more expansive than Catalano’s, both
+                            poets share the same emphasis. At times, Pearson’s
+                            poetry appears a little precious, particularly when
+                            he borrows from cultures such as the Middle East or
+                            Polynesia. More often, though, the poetry has the
+                            ability to ambush the reader with remarkable twists
+                            of imaginative logic, such as in ‘Horizon Walker’,
+                            where disparate images and ideas are connected with
+                            an easy sense of their inevitability. In all three
+                            volumes, the shorter poems are far more impressive
+                            than the longer ones. Perhaps this is further
+                            evidence for the late Vincent Buckley’s assertion in
+                            his introduction to The Faber Book of Modern
+                            Australian Verse that the real strength of
+                            Australian poetry has always been in the lyric poem.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Newcastle Herald Review</summary>
+                        <p>
+                            Celebrant of description, awareness... Norman Talbot
+                            The Newcastle Herald, 3/8/91 This collection, by a
+                            South Australian anthologist and poet, has a rich
+                            front cover and an asinine blurb on the back cover.
+                            Which are readers to believe? The front uses a fine
+                            water-colour of a king parrot, by John Hunter
+                            (somewhere back in the Re­gency period, probably),
+                            which chimes with the title and promises alert,
+                            workmanlike, visual poetry. On the back, however,
+                            the blurb an­nounces that the poet is ‘a success­ful
+                            shape-shifter’ (whatever that means in poetry!) then
+                            seems con­descendingly to say ‘K.F. Pearson keeps
+                            trying...’. Later, it is an­nounced that Pearson
+                            writes ‘imi­tations of... Arctic [this should read
+                            ‘Arabic’] ghazal’. The ghazal is an elegant Persian,
+                            Urdu, Arab and Turkish form, rarely at­tempted by
+                            Eskimos, and Pearson obviously knows a good deal
+                            more about the matter than whoever his publishers
+                            trusted to describe him. The king parrot emphasis is
+                            apt. Pearson is a genuinely visual poet, at times
+                            very like Wallace Stevens, although by no means as
+                            subtle and rhetorically much stiffer. Never confined
+                            to the descriptive, any more than Stevens is,
+                            Pearson of­fers unusual and classy human re­actions
+                            to sight. Pearson is even sight-obsessed. The second
+                            part of the book is a group of dramatic monologues
+                            he calls ‘Autobiographical Moments’, all about
+                            Renaissance Florence. One comes from a poet,
+                            Poliziano, but he focuses on visual images; the rest
+                            are from a rich cluster of visual art­ists: Cellini,
+                            Brunelleschi, Ghiberti. Uccello, and Donatello. The
+                            poems in the more assorted first section are mostly
+                            visual too, including three batches of very
+                            satisfying small poems, under the headings ‘Stamps
+                            on Metal’, ‘A Set of In­teriors’, and ‘Cameos’. Even
+                            his superficially tactile ‘Stamp’, perhaps intended
+                            for a gravestone, can be seen: Elegiac: I remember
+                            the touch of porcelain but then also the fur of the
+                            peach. In the third section, Polynesian in
+                            inspiration (this poet is a devoted traveller,
+                            obviously), two similar groups of tiny poems are
+                            less successful. However, two larger poems show a
+                            different range of ability. There is a warm and
+                            harmonious feeling for narrative in his retelling of
+                            two ancient tales of watery heroines: Ginifale, who
+                            was swallowed by a whale, and Hinemoa, that
+                            in­trepid Juliet of Lake Rotorua. This section also
+                            offers a chilling contem­porary epitaph for all of
+                            us, based on R.L. Stevenson’s superb epitaph for
+                            himself on Mount Vaea. The fourth section is back
+                            with the visual, even to having some tan­gential and
+                            offbeat Stevensian titles such as ‘The Eye Does Make
+                            it So,’ ‘The Peach, in Fact’ and ‘A Thing is Event
+                            in a Ready World’. All celebrate what ‘the
+                            sensitised see’, and alertly too, whether as fact or
+                            ‘abstract canvas’. Like his thread of spider-web,
+                            Pearson’s awareness takes as nothing bigger is able
+                            the light and sparks oc­casion in surrounding dark
+                            for the casual poem. But, as this quotation
+                            exempli­fies, sometimes a swoon of syntax creates
+                            obscurity where only observation was promised or
+                            needed. And they are not, like ‘Artic’ on the back
+                            cover, misprints. The least successful part of The
+                            History of Colour is the Arabic sec­tion that ends
+                            the volume. First, the verse-forms are not. in these
+                            versions, satisfying, especially those where a word
+                            is rhymed to itself ('rime riche’). I wonder why
+                            Pear­son rarely attempts orthodox rhyme? Second,
+                            there is no good reason why ‘Inscriptions on Arabic
+                            Coins’ should include koori-style ad­vice about
+                            dreaming the mulloway. Third, the key poem of the
+                            section seems to me to be spiritual preten­sion. Is
+                            a glimpse of an orange in a stranger’s room an
+                            equivalent to Paul’s experience on the road to
+                            Damascus, no matter how it hangs on in the mind’s
+                            eye? If so, what a testimony to the sacredness of
+                            the purely aesthetic! But the seanng absolute of
+                            Paul’s experience is beyond glimpses and oranges.
+                            But wait. A review of a poet de­voted to real
+                            particulars should end positively. Poetry has plenty
+                            of room for grateful poets, celebrants of
+                            description such as K.F. Pearson, who makes readers
+                            enjoy - and ask more of - their own awareness of
+                            what is around them.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Poems Fraught with Shade Ron Pretty (poet)
+                            Australian Book Review , No. 133, 1991 ‘The one who
+                            would know everything’, I wrote, ‘is everywhere at
+                            home; nor is a stranger to the past.’ A letter to
+                            Donatello One of the strengths of this, K.F.
+                            Pearson’s second collection, is the range of the
+                            poetry it contains: both geographical - from
+                            Adelaide (and suburban Adelaide at that) through
+                            Polynesia to the Arabian Gulf; and historical -
+                            moving between the present and Quattrocento Italy.
+                            The most impressive poems in the book are
+                            undoubtedly those in the section ‘Autobiographical
+                            Moments’ in which he explores Renaissance artists
+                            and writers. These are poems of considerable
+                            interest and ingenuity, for not only does Pearson
+                            create a fine sense of the era, but he also finds,
+                            in the lives and concerns of these artists, many
+                            issues of contemporary relevance. In ‘Fragment of an
+                            Autobiography’, for instance, Cellini discusses the
+                            reworking of ancient artefacts in modern form and
+                            using modern materials; in ‘A Circle in Florence’,
+                            the need for lateral thinking (I had thought the
+                            story of the egg made to stand on its end was
+                            attributed to Columbus, but never mind); in ‘The
+                            Origin of Excellence’ it’s the need for training,
+                            for ‘true apprenticeship’. ‘An Application for
+                            Assistance’ picks up on the most longstanding of
+                            issues - that of patronage. ‘Since my poems and
+                            inspiration I’ve acknowledged to you, Medici’,
+                            Politian writes, ‘and my every talent is at your
+                            service / ...send your clothes as a gift to me at
+                            once’. Fairly blunt. I was reminded of the
+                            controlled invective of Samuel Johnson writing to
+                            Lord Chesterfield. Although there are good poems
+                            elsewhere in The History of Colour , no other
+                            section achieves the sustained high standard of
+                            ‘Autobiographical Moments’. Nevertheless, there is
+                            considerable poetic ability on display. Poems such
+                            as ‘Port Elliot Magpie’ or ‘Entrance Ceremony’ are
+                            made notable by Pearson’s sharp eye for detail.
+                            There are many shrewd observations: for fishermen,
+                            ‘the horizon (is)... the pinnacle of desire
+                            stretched flat’. A number of poems are enlivened by
+                            subtle touches of humour. The voice that runs
+                            through these poems is a colloquial one, though he
+                            often successfully contains this voice within poems
+                            of heightened rhythm and controlled structure. A
+                            poem such as ‘Ginifale’ demonstrates Pearson’s
+                            range, with its evocation of the Polynesian myth,
+                            the control of tone and the neat parallel of the
+                            whale to the pregnant woman. But balancing these
+                            considerable strengths are a number of weaknesses
+                            that tend to mar one’s appreciation of the
+                            collection as a whole. Some of the poems here feel
+                            to me as if they need more work. The perceptions and
+                            the inventiveness are there, the ability to see the
+                            everyday world from new perspectives, but some
+                            suggest that the poet has been too easily satisfied.
+                            A number of poems have benefited from being
+                            workshopped, or at least looked at with the eyes of
+                            a critic. In ‘Of the Critic’ Pearson denies the
+                            value of such people, suggesting at best, a ‘shadow
+                            glory’. I would suggest, however, that a critic’s
+                            eye before some of these poems went to press would
+                            have strengthened them considerably. For example,
+                            ‘The Death of the Bird’ recalls A.D. Hope’s poem of
+                            the same name, and that comparison underlines the
+                            extent to which some of Pearson’s poems are
+                            under-developed. In The Cave and the Spring , Hope
+                            discusses his poem, and mentions the fact that it
+                            took him four years to complete (some of his poems
+                            took much longer). He began the poem, Hope tells us,
+                            but could not see how to finish it, so he put it
+                            aside. When he came back to it four years later, the
+                            missing conclusion suggested itself fairly promptly.
+                            Pearson’s poem, like a number of others in his
+                            collection, might well benefit from such time to
+                            mature. The weaknesses in such poems include an
+                            over-reliance on modifiers (‘A Drum This Time’, ‘Sea
+                            Urchin Shell’, ‘Tiji’; a reliance on abstractions
+                            and /or rhetoric (The Economy of Fashion’, ‘Tour
+                            Glasses’ or ‘A Thing is Event’); line endings that
+                            seem arbitrary (‘A Touch of Green’, ‘The Eye Does
+                            Make It So’ or ‘The Peach in Fact’). There are also
+                            occasional lines which remind one of a New Statesman
+                            competition in the way they state the obvious: ‘the
+                            river still moves at a watery pace’, The scarlet
+                            anemone will not be like the settled / world of blue
+                            plates on a dresser’ or ‘When the fish begin to
+                            swim, the fish begin to swim’. Some of the poems are
+                            very slight: ‘Stamps on Metal’, ‘Island Suite’, ‘ A
+                            Feather’ among them. Sometimes you leave these
+                            slight poems with a sense that there is nothing more
+                            to say, that the poem is as complete as a Japanese
+                            Haiku. More often though there’s the unsatisfied
+                            sense that the poet has barely scratched the
+                            surface. The title for the collection comes from ‘An
+                            Urn in a Private Collection’: But the history of
+                            colour is fraught with shade, and the time of day,
+                            the turn of the earth) and recession of removal’s
+                            not complete, if that underlying cerulean,
+                            sky-subtle tones beneath the glaze’s skin, veined by
+                            your regret that the world’s constructed thus,
+                            partly kindles the original blue. This poem
+                            demonstrates many of the strengths and weaknesses of
+                            the collection as a whole. Here is the eye for
+                            detail, the sense of relevance of the past to the
+                            present, the colloquial voice that works quite
+                            effectively with the heightened rhythms of the
+                            verse. But here also are the abstractions, the
+                            over-dependence on modifiers, the resort to rhetoric
+                            which tend to attenuate many of the poems.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald Review</summary>
+                        <p>
+                            An Island in the sky - poems of the artist as
+                            observer Heather Cam The Sydney Morning Herald ,
+                            22/6/91 Although utterly distinct, all four poets
+                            [K.F. Pearson, The History of Colour , John
+                            Foulcher, Paper Weight , Gary Catalano, The Empire
+                            of Grass , Tim Thorn, Red Dirt ] are centrally
+                            concerned with the artist as observer. K.F. Pearson
+                            is the most strikingly visual. Much of The History
+                            of Colour depends on an acutely developed talent for
+                            noting and organising particulars in a revelatory
+                            fashion: When you are come to love the world it’s
+                            numinous with single things: you have the flight of
+                            one white bird in all an Island blue of sky. Often,
+                            Pearson’s strategy is to contemplate (if his fierce,
+                            often philosophical, concentration can be so
+                            described) some one thing. Yet every single thing
+                            ‘carries always the freight of what / it connotes’,
+                            hence Pearson’s ‘double world’. For the space of the
+                            poem the observer obsessively possesses, and is
+                            possessed by, the inspiring particular thing: its
+                            details, shape, texture, colour and context. The
+                            poem’s focal point may be a red leaf or a pine table
+                            in a red-bricked backyard, an orchid in a terracotta
+                            pot, a purple guava in the sunlight, a blue feather
+                            in a jar, or a kitchen chair. In the section
+                            ‘Autobiographical Moments’, a gallery of Renaissance
+                            artists speaks in dramatic monologues, petitions and
+                            letters. Here the apparent focus is the Quattrocento
+                            Masters, but clearly its double is the contemporary
+                            Australian artist. For example, a petition to the
+                            patron Lorenzo de Medici serves as the poet’s wry
+                            acknowledgement of a grant from the South Australian
+                            Department of the Arts. Pearson’s work is intensely
+                            focused, controlled and commanding; his language is
+                            enlivening and his vision lush.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,402 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/letters-from-byron.svg&quot;);
                         "
                     >
-                        Featured
+                        Letters from Byron
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jim Williams</h3>
+                </div>
+                <img
+                    alt="Cover of Letters from Byron"
+                    class="product-cover-mobile"
+                    src="/assets/books/letters-from-byron/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Letters from Byron"
+                        class="product-cover"
+                        src="/assets/books/letters-from-byron/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Jim Williams’ letters, written over a period of eighteen
+                        months to friends, acquaintances and antagonists, reveal
+                        his natural talent as a storyteller. Setting out to
+                        detail the day-to-day life amongst the humal flotsam and
+                        jetsam of Byron Bay he discovers unexpected tales: the
+                        mysterious influence of the Lighthouse, Pedro’s Gaucho
+                        history, the uncanny Beach Burial, the sinister Carers
+                        or the powerful Dice-thrower. He intrigues, jokes with,
+                        disquiets and enchants his addressees. It is almost
+                        unprecedented that a writer’s letters are
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/letters-from-byron.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/letters-from-byron/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>187604408X</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>within</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>129</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jim Williams (Di Guglielmo) was born near
+                            Chikkahominy in New York State, survived his
+                            multicultural childhood and somehow managed a BS
+                            degree from Cornell University.
+                        </p>
+                        <a class="bold" href="/authors/jim-williams.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Philipa Burgess, The Canberra Times</summary>
+                        <p>
+                            Paperbacks Phillipa Burgess The Canberra Times ,
+                            December 1997 If you haven’t been to Byron Bay and
+                            want a taste of café society, or you just have a
+                            nostalgic yen for the counter-culture of the ‘70s,
+                            Jim Williams’s Letters from Byron may motivate you
+                            to pack your-bags and board the next bus north.
+                            Williams is a prolific letter writer and a great
+                            storyteller. His letters to friends and
+                            acquaintances provide detailed observations of the
+                            tourists and townsfolk that frequent the shores of
+                            this NSW coastal retreat and they will stir the most
+                            lethargic imagination. His descriptions of the
+                            mundane and seemingly insignificant activity which
+                            occur in Byron Bay are intriguing. Williams’s
+                            scepticism and tongue-in-cheek detective approach to
+                            his subjects engages the reader as he sifts through
+                            clues and follows every new lead, excited by the
+                            prospect of solving some of the mysterious
+                            happenings in Byron Bay. We don’t always find out
+                            whodunit, but the investigation into the behaviour
+                            of Byronites as they embrace life and the New Age
+                            philosophies of the ’90s, while having their
+                            collective feet planted firmly in the ’70s, is
+                            stimulating summer reading.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Fiona Capp, The Age</summary>
+                        <p>
+                            Paperbacks: Letters From Byron Fiona Capp The Age 16
+                            August 1997 As you might expect from a correspondent
+                            in Byron Bay, these letters are not so much
+                            conventional despatches so much as tall stories that
+                            begin with everyday events and veer off into the
+                            gothic or surreal. Through playful irony, Williams
+                            provides a beguiling commentary on Byron’s weird and
+                            wonderful cultural mix. The result is a series of
+                            enigmatic, yet strangely satisfying, tales: a
+                            biologist mysteriously disappears in the Big Scrub;
+                            the Grim Reaper visits a Byron cafe in the guise of
+                            a man in a black suit carrying a pair of dice. While
+                            these stories resonate with all sorts of subtle
+                            allusions to ‘old masters’, they never lose their
+                            informal, conversational quality.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Gerald Ross, Imago</summary>
+                        <p>
+                            New Writing Gerard Ross Imago , Vol. 10, No. 1,
+                            Autumn 1998 Whether the letters in Jim Williams’s
+                            Letters from Byron were ever genuine letters (does
+                            anyone actually write to a friend Byron, the
+                            eternally green and bountiful, with its rich
+                            pastures and tropical orchards...?) or whether the
+                            presentation itself is a fiction is not especially
+                            relevant here. For each letter is, in fact, a
+                            bizarre or macabre apocrypha wrapped around a warmly
+                            observed vignette of Byron Bay life - sort of an
+                            Edgar Allen Poe in sandals. Surprisingly - and, I
+                            must add, fortunately - most of the letters express
+                            bemusement and gentle mockery of the New Age
+                            orthodoxies of the area. It’s all quite pleasant and
+                            distracting, but is it a book worth publishing?
+                            There are a lot of ideas running through it;
+                            however, the choice to run these stories as letters
+                            restricts the whole to a meandering collection of
+                            half-formed starting points. There is some good
+                            stuff in here and the letters probably would be fun
+                            to find in your post box, but... Black Pepper would
+                            have done well to have encouraged the author to
+                            develop these notes into something more substantial.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            The Seductive Microcosm Jennifer Maiden Overland ,
+                            No. 150, Autumn 1998 Australian critics are often
+                            charmed by the combination of modest scope and
+                            sumptuous detail. The details in themselves need not
+                            be trivial. They can be about migraines, mountains,
+                            melons or misalliances. But they must be sharp,
+                            sensuous and original, and their larger context must
+                            not be ambitious. Broken or wistful love affairs,
+                            dull jobs, lifeless marriages, ‘small’ people
+                            trapped uncomprehending in large wars or the results
+                            of large wars seem permissible. Characters or
+                            authorial personae who think, strain or question too
+                            far beyond the initial philosophy of their writer or
+                            reader seem open to literary suspicion. The
+                            reverence for detail is reinforced by the natural
+                            tendency of people in shock, mistrust or mourning to
+                            partialize their sense-data into manageable
+                            portions, to notice only bits and pieces of things
+                            and to notice those with an increased brilliance of
+                            perception. To question such processes can seem
+                            almost sacrilegious at times. When I received this
+                            miscellany of recent Australian writing, I expected
+                            the books to rate very high in wonderful sense-data
+                            and rather lower in surprising concepts or
+                            situations. The word ‘high’ is applicable, too,
+                            because fixation on bright details is also
+                            characteristic of most forms of intoxication (as it
+                            is of childhood and prison). One suspects, too, of
+                            course, that (despite the undoubted compensations -
+                            as in Borges - of enforced metaphor) there is an
+                            element of sexual evasiveness in some of the
+                            splendid evocation. Even in Patrick White’s novels,
+                            the powerful settings might have dwindled in
+                            perspective to personality had his central
+                            characters not been the rather one-dimensional Mrs
+                            Roxburgh and Mrs Godbold but someone like the rather
+                            more voluptuous and much more multi-dimensional Mr
+                            Munday. Many of these current books, too, have
+                            powerful Australian settings. The oddest is Letters
+                            from Byron , in which the seductive locale of Byron
+                            Bay serves as a ready made backdrop for what are
+                            essentially tight, tense epistolary fictions in
+                            which the reader is made to understand more about
+                            the nature of the events - usually scientifically
+                            impossible and occasionally simply illegal - than
+                            the narrator ostensibly does, As short stories, the
+                            ones illustrating straightforward indignation at
+                            ‘idealistic’ social experiments I think work best,
+                            but the self-consciousness of the autobiographical
+                            device as such makes the narratives seem much more
+                            contrived than they really are. This author deserves
+                            to relax into the luxury of third person
+                            characterization and the full freedom of fiction.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            Tom Sharpe in Byron Bay? Letters from Byron Paddy
+                            Ryan Social Alternatives , Vol. 17, No. 1, January
+                            1998 In Letters From Byron , Jim Williams exhibits a
+                            sketch of one of Australia’s favourite destinations
+                            for those who wish to pursue an alternative
+                            lifestyle. This sketch is in the form of a series of
+                            short ‘letters’ written to friends, most of whom
+                            seem to be based in Melbourne’s café culture. The
+                            stories are short and simple enough to read over a
+                            café latté in a chic espresso bar and give a sense
+                            of the pace of life in Byron Bay and some of its
+                            more colourful fringe dwellers and local
+                            entrepreneurs. The tales he spins are sometimes
+                            reminiscent of the bizarre short stories by Peter
+                            Carey. The author appears ambivalent towards some of
+                            his more alternative characters. Often, his
+                            judgement of these characters becomes antagonistic,
+                            similar to the cynicism seen in P.J. O’Rourke’s
+                            stories. However, there is a sense that the author
+                            is ultimately sympathetic to his characters and
+                            their causes. Indeed, he may even be one of them
+                            himself. During those moments in Letters From Byron
+                            when the author is at ease, the reader is reminded
+                            of another comic writer. As he relaxes into his role
+                            as story teller, the riotous antics and vaudevillian
+                            frivolity of the likes of Tom Sharpe can be seen in
+                            his character development. In these instances, his
+                            potential as a teller of tales shines through and
+                            the reader is left wishing for more. However,
+                            throughout the book there is often a sense of self
+                            consciousness. Sometimes parts of some of the
+                            stories seem far too wordy. There are also occasions
+                            where the stories become bogged down in the
+                            technicalities of the subject. For example, in one
+                            story the author concentrates on the use of the
+                            internet and computers as a focus for his ideas.
+                            Rather than exploring the story’s central characters
+                            in more detail, he labours over lengthy explanations
+                            of his understanding of how the technology works.
+                            For a while it seems as though one is reading a
+                            beginner’s text on the theory of computing and the
+                            internet. It is only after this brief lesson that he
+                            rejoins the essence of his story. In this case, one
+                            with lots of imagination on and potential. At times,
+                            it is not until near the end of a story that the
+                            pace picks up and then within a dozen paragraphs the
+                            colourful ideas quickly form but end prematurely.
+                            Just as a story becomes interesting and gathers
+                            momentum, usually in a bizarre kind of way, the
+                            reader is left up in the air only to imagine what
+                            might have developed. A particular favourite was
+                            ‘The German Couple’ story in which the author
+                            describes an out of body experience. Whilst visiting
+                            a mysterious ‘new age’ couple’s house somewhere in
+                            the Byron region, the author tells of a mystical and
+                            disturbing experience while in a trance. The story
+                            begins with a cynical view of all things not
+                            scientifically based. However, by the end of the
+                            story, the author is bedazzled by his experiences
+                            and can only wonder at what might be. Overall, a
+                            light and easy read. A good companion while biding
+                            your time over an aromatic cappuccino in your
+                            favourite café.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Shorts Letters From Byron Andrea Moss Australian
+                            Book Review , No. 197, December 1997/January 1998
+                            ‘There always seems to be a fine line between the
+                            real and the unreal, especially here on the North
+                            Coast’. So writes Jim Williams to a friend ‘down
+                            South’. This slim volume of letters is written from
+                            colourful Byron Bay and surrounds, where he leads a
+                            somewhat nomadic existence among eclectic Byronites.
+                            The letters form a window into Williams’ life, the
+                            oddities of Byron Bay, and the bizarre experiences
+                            that Williams finds himself having: which may or may
+                            not be figments of his imagination. The mysterious
+                            yiralinga, Artificial Intelligence experiments,
+                            animal sacrifices, out-of-body experiences, toughs
+                            in search of valuable Argentinian manuscripts,
+                            ethereal people who disappear without a trace... all
+                            are treated with Williams’ entertaining description
+                            and detail. Each letter details the strange twists
+                            and turns of the episodes and escapades, merging a
+                            spectrum of topics with storytelling, myth-making,
+                            spirituality, local history, science and even social
+                            commentary. And each letter ends with a decidedly
+                            fanciful twist and a lurking sinister tone. We are
+                            left to come to our own conclusion about what
+                            portion of each story exists solely in the
+                            letter-writers imagination: if any. While
+                            light-hearted and humorous, there is a tone of
+                            underlying cynicism about the Byron Bay ethos, and
+                            its ultimate superficiality and emptiness. The
+                            letters become more enjoyable and engaging as the
+                            book progresses, and have a cumulative effect of
+                            drawing the reader into Williams’ curious world:
+                            ‘Even I wonder what sort of world I live in up
+                            here’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Star Weekend Review</summary>
+                        <p>
+                            Paperbacks: Letters From Byron Jo Martin Star
+                            Weekend There’s something deliciously forbidden
+                            about reading other people’s letters. From the
+                            comfort of anonymity, one can quietly disrobe the
+                            shrouded secrets of others. That’s why Letters From
+                            Byron , by Jim Williams is such a dainty morsel -
+                            especially for locals who may wonder as to the
+                            identity of some of the characters. ‘It is a
+                            collection of letters written to genuine people over
+                            a period of about 18 months,’ Mr Williams said. ‘It
+                            has only cost me one friend so far.’ ....Jim
+                            Williams is best known for his poems, particularly
+                            haiku, that have appeared in magazines and journals
+                            everywhere. Mr Williams now lives at Bullarto,
+                            Victoria. But his heart still is in Byron Bay. ‘I
+                            lived in this area for about five years,’ he said.
+                            ‘Mainly in Suffolk Park, Ocean Shores and Lismore. I
+                            see this whole area as The Golden Triangle. People
+                            come here to live out their dream and that is
+                            reflected in all the companies you see around here.’
+                            Letters From Byron is a close-up of a handful of
+                            these dreams set amid the day-to-day goings on
+                            around town. The joy of the letters is that it’s
+                            hard to tell where reality begins and ends. ‘I have
+                            always enjoyed writing letters but sometimes I get
+                            the feeling that they have managed to go far beyond
+                            my actual experiences. They began as letters but
+                            became stories,’ Mr Williams said. There’s the one
+                            about the uncanny beach burials, the sinister
+                            carers, and the mysterious influence of the
+                            lighthouse. Mr Williams weaves intriguing, funny,
+                            sometimes unsettling but delightful tales of the
+                            unexpected.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

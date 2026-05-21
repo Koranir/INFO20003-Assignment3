@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,428 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/mosaics-and-mirrors-composite-poems.svg&quot;);
                         "
                     >
-                        Featured
+                        Mosaics and Mirrors; Composite Poems
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">
+                        Jennifer Harrison, Graham Henderson and K.F. Pearson
+                    </h3>
+                </div>
+                <img
+                    alt="Cover of Mosaics and Mirrors; Composite Poems"
+                    class="product-cover-mobile"
+                    src="/assets/books/mosaics-and-mirrors-composite-poems/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Mosaics and Mirrors; Composite Poems"
+                        class="product-cover"
+                        src="/assets/books/mosaics-and-mirrors-composite-poems/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The ghost of Ern Malley has haunted Australian poetry.
+                        Mosaics &amp; Mirrors, composite poems by three and
+                        sometimes four hands, lays Ern’s ghost to rest. Three
+                        discretely distinguished poets Jennifer Harrison, Graham
+                        Henderson and K.F. Pearson have conjointly composed a
+                        collection of fearless intense works. There is nothing
+                        satirical here. Their composite sensibility rejoices in
+                        our contemporary, if troubled, world. Their poems engage
+                        the emotions, confront our alienation and celebrate
+                        friendship and love. They defy the post-Romantic idea of
+                        the individual author. Acutely alive to tradition, they
+                        re-make it in clothes that tradition in a mirror would
+                        hardly know. They terrify, delight and intrigue. Mosaics
+                        &amp; Mirrors is a tribute to the collective
+                        imagination.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/mosaics-and-mirrors-composite-poems.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/mosaics-and-mirrors-composite-poems/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>0646240471</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>56</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jennifer Harrison was born in Liverpool, Sydney, in
+                            1955, in a motorbike shop. She completed a medical
+                            degree in 1979 and her training as a psychiatrist in
+                            1990.
+                        </p>
+                        <a class="bold" href="/authors/jennifer-harrison.html"
+                            >Go to Profile»</a
+                        >
+                        <h3>About the Author</h3>
+                        <p>
+                            Graham Henderson was born in Melbourne in 1953. He
+                            studied Drama, Literature, Print-making, and Film at
+                            Rusden State College.
+                        </p>
+                        <a class="bold" href="/authors/graham-henderson.html"
+                            >Go to Profile»</a
+                        >
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Authors Article - Arena</summary>
+                        <p>
+                            Author’s Article Poetry And Selves - Collective
+                            Writing Jennifer Harrison, Graham Henderson, Kevin
+                            Pearson Arena, No. 26, December 1996/January 1997
+                            Mosaics &amp; Mirrors is a collection of poetry in
+                            four sections in which each discrete poem was
+                            conjointly written by us. The poems are narrative,
+                            dramatic or lyrical and embrace language, love and
+                            absence, friendship, suicide and alienation in the
+                            urban landscape as subjects. The book is unusual
+                            because, unlike the leaching one might expect with a
+                            conjoint work, the poems directly engage with
+                            emotional experience. They read like single-author
+                            poems. Literature is sprinkled with examples of
+                            author co-operation. It was not unusual for
+                            Elizabethan playwrights to co-write, Beaumont and
+                            Fletcher being the obvious examples. Screenwriting
+                            is more often than not multiple-authored, Casablanca
+                            being a celebrated example. In other disciplines
+                            such as the physical sciences, advances are made
+                            more often than not by chance discoveries arising
+                            from composite research efforts. The earlier
+                            co-operation of the Elizabethan playwrights, the
+                            screenwriters and the present day co-operative
+                            enterprises of other disciplines clearly needs
+                            reclaiming for a literary world often caricatured as
+                            one of gulls squabbling for scraps. So what was the
+                            identity of our conjoint author? The decision not to
+                            skulk behind a pseudonym or have an identification
+                            index (of who wrote which lines) was deliberate. We
+                            declared our complicity. Unlike James McAuley and
+                            Harold Stewart our intent was not to deceive. This
+                            decision, in retrospect, takes on particular
+                            resonance given that the book was released into the
+                            literary climate of the Demidenko affair and Paul
+                            Radley’s confession of not having written his own
+                            books. We declared our identity from the first.
+                            Lines or part lines contributed by an individual
+                            author we did not identify because the poems became
+                            artefact and had to stand as such. We are left with
+                            the equivocal fact that the author exists only in
+                            the poems themselves and in the collection Mosaics
+                            &amp; Mirrors . It was not the problems nor
+                            limitations of authorship which nudged us towards
+                            joint composition - it was, in fact, the limitations
+                            of authors workshopping together which seemed the
+                            limitation. Workshopping together we came to know
+                            each other’s work so well that workshopping, in the
+                            usual sense, became irreverent or irrelevant.
+                            Because of those previous hours spent, we came to
+                            see in each other’s sensibilities a possible
+                            dialogue, as was the case with Li Po and Tu Fu: Like
+                            two Chinese poets in the pavilion of lost dreams
+                            across a moonlit river we reflect each other’s
+                            hopes. Reflected in the stream the poplar is
+                            doubled; though the water flows by the set image
+                            remains. ‘Great Southern Stand’ We sought a shared
+                            but separate poetic consciousness; we wanted our
+                            separate sensibilities to be a unity within the
+                            finished poem. Not surprisingly, we have found, as a
+                            common response to the book, a kind of game where
+                            readers attempt to pick individual voice from
+                            individual voice; to pick female from male. More
+                            surprisingly, even those familiar with each author’s
+                            work pick wrongly. The poems appear to stand alone;
+                            they reflect a social structure but the
+                            architectural seams are no longer decipherable. We
+                            met weekly for eighteen months between October 1993
+                            and April 1995 at The Rose Hotel, a quiet backstreet
+                            pub in Fitzroy. We sat in a corner looking out onto
+                            the plane trees of Napier Street, the
+                            hundred-year-old cottages. Few cars passed. The
+                            meditativeness of the streetscape fed the meditation
+                            of the work. We began our first conjoint poem,
+                            ‘Anguish of Departure’, with its title. It was to
+                            prove the only time we used a title to initiate the
+                            poem. Our beginning in this manner allowed us,
+                            almost immediately, to strike the procedure we would
+                            follow in the coming months of composition. In this
+                            case we had a title but no beginning or foreseen
+                            end. The technique we used was to allow each writer
+                            to contribute two or three lines - enough to develop
+                            a theme, metaphor, idea or suggestion. The poems
+                            weren’t discussed as they developed. We didn’t want
+                            one author to dominate the poem or its ending.
+                            Finishing the poem set a task: when the poem was
+                            felt to be nearing completion, we abandoned the
+                            earlier procedure of the poem and wrote line for
+                            line. I will hear the sea’s distant futilities. I
+                            will hear the sand siren calling nomadic Odysseus
+                            back to shore to find Penelope changed by the milk
+                            of memory. She unbraids her hair, lets it fall
+                            cascading through my mind like a sailor drowning at
+                            sea. Final stanza from ‘Revenants’. Having started
+                            thus, we varied the technique as we became more
+                            confident. No procedure was fixed; it was guideline
+                            only. We passed the notebook when lines were
+                            finished. Whilst one wrote, two spoke of other
+                            things but with a sense of anticipation about the
+                            poem in progress. Each writer took whatever time
+                            they required to compose their thoughts. We
+                            deliberately didn’t engage in criticism or implied
+                            criticism of each other’s work. At the end of the
+                            session the poems completed were read aloud. This
+                            was a testament of respect for each author’s work.
+                            We wrote more poems than were included in the
+                            collection. Early in the process of writing we saw
+                            the book emerging as a text we would submit to an as
+                            yet unknown publisher. To compose an occasional poem
+                            together may have been a folly but to finish the
+                            book became an ambition. This ambition didn’t shape
+                            the writing but meant a necessary commitment over a
+                            sustained period because we knew there would be
+                            times when the collective effort failed and we
+                            needed to write enough poems for a fierce editorial
+                            culling. Failed or successful, each poem was
+                            retained in the notebook. Before we could group, we
+                            needed to decide which poems worked enough to be
+                            available for grouping. A core of poems pleased all
+                            and these were the poems included in the final
+                            manuscript. We wrote three or four additional poems
+                            at this stage. For those who know the work of the
+                            individual authors, Mosaics &amp; Mirrors reads like
+                            jazz improvisation. This analogy reflects the
+                            process of how the poems were made and asks the
+                            reader, habituated to the idea of an integral
+                            author, to shift perspective. Lyric poetry has been,
+                            since the beginning of Romanticism, the literary
+                            form most passionately individual. This book
+                            challenges that expectation within the reader. The
+                            presentation of the book in the orthodox arrangement
+                            of a collection is deliberate. Ironically, Mosaics
+                            &amp; Mirrors , by the orthodoxy of its presentation
+                            as a standard poetry collection, requests of the
+                            reader that he or she approach it as a conventional
+                            read. At the same time that notion is fractured.
+                            Like the authors who needed to rethink their notions
+                            of ego, the reader needs to abandon his or her
+                            preconceptions. The readers become complicit
+                            partners with the authors by allowing themselves
+                            this freedom of approach. Their reading enacts the
+                            collection. The reader makes the poems whole.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Reviews Poetry by Consenting Adults Mosaics &amp;
+                            Mirrors; Composite Poems Michael Costigan Australian
+                            Book Review , No. 183, August 1996 &quot;Is it
+                            possible, I asked myself, that this is an Angry
+                            Penguins episode in reverse, that a sole poet
+                            actually wrote all the poems, presenting them as the
+                            work of three in order to deride the attempts of
+                            critics to identify each one’s contribution?&quot;
+                            Is the writing of good poetry necessarily a solitary
+                            act? Or can it also be achieved co-operatively in
+                            private by consenting adults? Is the very idea of
+                            ‘composite poems’ offensive to pious ears? Reviewing
+                            these two books together [Adrian Caesar, Hunger
+                            Games , and Mosaics &amp; Mirrors ] - and, perhaps
+                            unfairly, comparing them - one faces such questions.
+                            Jennifer Harrison, Graham Henderson and K. F.
+                            Pearson are Melbourne-based poets who, in the spirit
+                            of Ern Malley’s creators, came together at Fitzroy’s
+                            Rose Hotel late in 1993, and continued meeting
+                            weekly for eighteen months, to write poems
+                            conjointly. Occasional contributions came from other
+                            poets, notably Catherine Hassell. Mosaics &amp;
+                            Mirrors is a selection of poems (also [as with
+                            Hunger Games ] forty-six in number) emerging from
+                            this team effort, which, if their own description is
+                            accurate, was strictly regimented: We had been
+                            meeting during the previous six months to workshop
+                            together; we had come to appreciate each other’s
+                            sensibilities… Our primary procedure was silence.
+                            Once a poem was commenced it would be handed to the
+                            next participant; its content was never discussed
+                            nor its possible development pre-empted… We neither
+                            re-wrote nor edited any poem. It may be less
+                            apparent, but is nevertheless arguable, that Mosaics
+                            &amp; Mirrors earns a similar entitlement for the
+                            three (or so) experimenters who collaborated in the
+                            production of composite poems. In fact, each of the
+                            three has begun to make a mark in Australian poetry
+                            circles. Graham Henderson, already well-known for
+                            his fiction and drama, has completed a poetry
+                            collection, The Coma of Becoming , while the poetry
+                            of Jennifer Harrison and Kevin Pearson, both of whom
+                            have spent a number of years abroad, is also being
+                            noticed here. Reviewers confronted by their
+                            ‘composite poems’, however, face a problem or two.
+                            It even occurred to me, having been caught once
+                            (yes, I confess to being the person who long ago
+                            successfully nominated Paul Radley as ‘Young
+                            Australian of the Year’), that this could be another
+                            literary hoax. Is it possible, I asked myself, that
+                            this is an Angry Penguins episode in reverse, that a
+                            sole poet actually wrote all the poems, presenting
+                            them as the work of three in order to deride the
+                            attempts of critics to identify each one’s
+                            contribution? In spite of that query from a too
+                            suspicious mind, I am willing to take the risk and
+                            assert that a good number of the poems in Mosaics
+                            &amp; Mirrors read like the work of several hands.
+                            Take these lines from ‘White November’: Our union is
+                            not of the flesh only proximity. Our parting was not
+                            as bad as our being apart. Water is neighbour to the
+                            river bed. All things are disparate which also are
+                            companions. Or these from ‘Great Southern Stand’ (a
+                            good title for a Melbourne sonnet): Adversity has
+                            haunted us like a curse but wine warms our
+                            afternoons like a blessing. Indulgence and
+                            discipline are twins that unite us. Our tendrils are
+                            both from the vine and the pen. While recognising
+                            that a certain amount of sweat went into the
+                            composing of the poems, one is left to wonder how
+                            much better some could have been if the ban on
+                            editing or re-working, an integral part of any
+                            serious writing, had been dropped. On the other
+                            hand, it must be conceded that the blended
+                            sensibilities of the Melbourne poets have in quite a
+                            number of instances produced an effect as pleasing
+                            and harmonious as any poet working in solitude could
+                            have managed. I liked these lines from ‘Voices’:
+                            Perhaps there will come the peace of quiet, peace of
+                            old age. The Judge will be answered, the cacophony
+                            subdued. I will lie down in sheets, dreamless before
+                            I sleep. And these from ‘The Explorer’: He will see
+                            mirages of turbulent seas and perish amidst ancient
+                            rocks, his house bewildered at this departure. Civic
+                            statues resurrect folly and outward gaze. The theory
+                            behind the composite approach is articulated in a
+                            couplet in ‘Ghazel of the Journey’: ‘Poets in their
+                            youth are social beings; / in later age devoted to a
+                            room.’ This is a generalisation of doubtful
+                            validity, just as it is questionable to suggest that
+                            the lone creative artist or writer is less able than
+                            a group to hold up a mirror to society or to
+                            challenge Margaret Thatcher’s denial that such an
+                            entity even exists. As a demolisher of Thatcherism,
+                            I prefer the lone Caesar [ Hunger Games ]. In spite
+                            of which, the Rose Hotel experiment has resulted in
+                            something of genuine interest and value. Mosaics
+                            &amp; Mirrors was worth publishing and is worth
+                            reading. But Paradise Lost it is not.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Southerly Review</summary>
+                        <p>
+                            By the Sea: Some Recent Australian Poetry David
+                            McCooey Southerly At least two of these collections
+                            [ Mosaics &amp; Mirrors and K.F. Pearson, Passion
+                            &amp; War ] could be described as experimental.
+                            Jennifer Harrison is one of three authors of the
+                            ‘composite poems’ of Mosaics &amp; Mirrors. Her
+                            partners are Graham Henderson and K.F. Pearson.
+                            Though invoking ‘Ern Malley’, the book states that
+                            ‘There is nothing satirical here’. One is intrigued.
+                            Could three people together write poetry? A short
+                            note describes die process of writing: ‘Once a poem
+                            was commenced it would be handed to the next
+                            participant; its content was never discussed nor its
+                            possible development preempted’. What was alarming
+                            to read, though, was the fact that ‘We neither
+                            re-wrote nor edited any poem’. This shows. The
+                            process assumes that the poets are prepared to
+                            either jettison any notion of where a poem is
+                            heading, or to write with no teleological sense to
+                            begin with. Consequently there is a twisting quality
+                            about these poems, like a trapped eel sliding this
+                            way and that.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

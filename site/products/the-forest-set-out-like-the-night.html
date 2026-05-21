@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,288 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-forest-set-out-like-the-night.svg&quot;);
                         "
                     >
-                        Featured
+                        The forest set out like the night
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">John Anderson</h3>
+                </div>
+                <img
+                    alt="Cover of The forest set out like the night"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-forest-set-out-like-the-night/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The forest set out like the night"
+                        class="product-cover"
+                        src="/assets/books/the-forest-set-out-like-the-night/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        By the Merri, in the Gippsland forests The blackberries
+                        are the tears of the country Its buried black history
+                        They have been here an Australian length of time The
+                        country is making something different of all of us the
+                        forest set out like the night is a brilliantly conceived
+                        meditation on place and being, a uniquely Australian
+                        song cycle of epic proportion, which must significantly
+                        broaden our perception of contemporary poetry in this
+                        country. There is a lyrical perfection in much of this
+                        poetry that is very rare indeed. Accurate observation of
+                        exact detail underpins and grounds the larger
+                        metaphysical structures, rendering the tone both
+                        accessible and sublime. I have rarely seen a collection
+                        of poems that has so deeply impressed me. There is
+                        nothing here that is unfinished or carries an excess.
+                        Every word counts. This poetry is mature and burnished,
+                        a highly wrought work of art that deserves to be
+                        celebrated by the community from which it has sprung.
+                        the forest set out like the night is Australian poetry
+                        at its very best. Alex Miller Cover painting by John
+                        Anderson
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-forest-set-out-like-the-night.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-forest-set-out-like-the-night/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044053</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1995, reprinted 2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>116</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            John Anderson was born in 1948 at Kyabram, Victoria,
+                            where he grew up on an orchard. The locality was
+                            once covered with thick forest and its name is
+                            thought to indicate this.
+                        </p>
+                        <a class="bold" href="/authors/john-anderson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Alan Wearne, Eureka Street</summary>
+                        <p>
+                            Prime Rating the forest set out like the night Alan
+                            Wearne (poet and author) Eureka Street , Vol. 7, No.
+                            1, January-February 1997 John Anderson is underrated
+                            for the finest reason: few know who he is. His
+                            previous volume arriving 18 years ago, he has since
+                            been assembling these 118 pages. To my knowledge
+                            no-one today has kept up such a constant, patient
+                            ploughing, and the least his audience can do is to
+                            apply m themselves with commensurate effort. One of
+                            the best things about Anderson is that his readers
+                            are required to work (though note I didn’t say
+                            struggle). What does he give in return? An
+                            interconnected weaving of rhapsodies, evocations and
+                            prose poems celebrating aspects of the Australian
+                            landscape, its flora and fauna, not just of now, nor
+                            even before white arrival, but from before humanity.
+                            This is a small-sized book of which the term ‘big
+                            picture’ is the inadequate cliché it always has
+                            been. Has Anderson Laurie Duggan’s ‘The Ash Range’
+                            for a neighbour? Certainly for those who don’t know
+                            Anderson’s work it could be explained thus:
+                            vis-à-vis ‘The Ash Range’ they are neighbours in the
+                            way that two hermits living 60 kilometres apart in
+                            the bush, with no-one in between, are neighbours.
+                            Has Anderson (have you) read the remarkable Canadian
+                            writer Christopher Dewdney? He too may be a
+                            neighbour, although Dewdney has been known to go
+                            back to his domain’s geological foundations. But
+                            fishing about for comparisons is, on both sides,
+                            somewhat of an insult. Anderson is as original and
+                            ambitious as any writing today. I’d be certain he
+                            knew of his originality and, surprise surprise, be
+                            as sure he wouldn’t know, or care, how ambitious he
+                            was.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Tamba Review</summary>
+                        <p>
+                            book reviews Hugh Oakes Tamba , No. 12, Autumn 1998
+                            John Anderson grew up in the Goulburn Valley, at
+                            Kyabram. He has previously published a volume of
+                            poetry, in 1978. the forest set out like the night
+                            is a 116-page song-cycle or treatise in poetry, on
+                            gum-trees and their environment, interwoven with
+                            commentry and meditation. Those who expect a modern
+                            collection of free-style lyrics will not find it
+                            here. In a three-part cycle, Anderson sets out his
+                            vision of a forested Australia, its avian and other
+                            inhabitants, its response to human beings and its
+                            effect on all who come under its influence. He draws
+                            from Aboriginal lore and legend, and from writers as
+                            diverse as Mary Gilmore and Chris Mudd, but chiefly
+                            from his own observation and reflection formed in
+                            forest areas here and overseas. He celebrates the
+                            extraordinary variety and richness of this land and
+                            the way its symbols recur and intertwine. The book
+                            needs to be read and absorbed as a whole, so I shall
+                            not attempt to quote lines or indicate preferred
+                            segments, although individual pieces have been
+                            previously published. For me the interest lies in
+                            the attempt to give voice to, and teach us to listen
+                            to, the music coming from the complex living core of
+                            our ancient land. If that sounds a little
+                            far-fetched, I can only suggest that you get hold of
+                            the book and read it.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Poetry Shorts Beate Josephi Australian Book Review ,
+                            No. 180, May 1996 Landscapes are in again - real or
+                            imaginary. Not the pastoral with its changes of
+                            season, but the silvan, fluvial and littoral, all
+                            old and enduring enough, so it seems, to provide the
+                            measure for a poet’s life who, with increasing age,
+                            prefers timelcssness over instantaneity. the forest
+                            set out like the night is a book of prose/poetry
+                            exploring initially Victorian themes: the Gippsland
+                            forests, Merri Creek, the Grampians. Later it draws
+                            in - and provides drawings of - the mythic meaning
+                            of tortoise and lizard, of eucalypt and elm.
+                            Anderson has the naturalist explorer in him. He
+                            dreams of entering an untouched landscape but he
+                            knows that nature is never innocent, is marked by
+                            the ‘blood of lava flow’, and the lava flow of
+                            blood. More importantly, he is fully aware that he
+                            is a late settler on this continent and that his
+                            language ‘comes from Europe where moonlit reefs and
+                            / shires and shoals of leaves also glisten.’ The
+                            book begins on the fluvial plain. Can the Merri and
+                            the Yarra explain Melbourne? Anderson thinks so. But
+                            this is the only appearance of a town in this 116
+                            page long book, praised on its cover as a ‘uniquely
+                            Australian song cycle of epic proportions’. In tone
+                            and style this book varies enormously, from tourist
+                            brochure to nature magazine to poem, from lyrical
+                            mode to aphorism to the prosaic. On one hand, this
+                            makes the book very accessible; on the other, one is
+                            left wondering at times whether poetry really needs
+                            so much explanation: ‘I found myself formulating
+                            these words: ‘The ducks fly over in the night and
+                            create stillness in the body’’. The title poem
+                            occupies the first, sixty pages. Much of its energy
+                            and liveliness is admirable but the rhythmic force
+                            needed to give it unity is lacking. Too much is
+                            characterized by a magpie approach, picking up a
+                            prose paragraph here, stealing a few notebook
+                            jottings there. Part II, ‘love, the cartographer’s
+                            way’, is illustrated with drawings by the author and
+                            part III, entitled ‘the logs like silver
+                            reliquaries, like bones long persisting in the
+                            grass’, is a long poem disguised as a book review of
+                            ‘anthropomorphic and theosophically speculative
+                            literary portraits’. The term mulitmedia - loved by
+                            some, unloved by others - looks like finding its
+                            application also within the narrower confines of one
+                            genre: poetry. John Anderson’s the forest set out
+                            like the night manages to present it within the
+                            covers of a single book of poems, and it obviously
+                            has its attractions: the book is highly recommended
+                            by the Poetry Book Club of Australia.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Metre Review</summary>
+                        <p>
+                            At The Margins’ Margins the forest set out like the
+                            night Simon Caterson Metre Still on Australian soil,
+                            though further afield and much more mobile, John
+                            Anderson, Robert Gray [ Lineations ] and Caroline
+                            Caddy [ Antartica ] are cartographers in verse, the
+                            first two supplying visual as well as metaphoric
+                            delineations of various parts of the landscape. For
+                            her part, in addition to her shiver-inducing poems,
+                            Caddy conveys the white vastness of Antarctica by
+                            means of a heavy reliance on infra- and inter-line
+                            spacing and the interleaving of satellite images of
+                            storms over the Australian Antarctic Territory, the
+                            last Australian terra nullius . Anderson’s line
+                            drawings help to disguise the prosaic (in both
+                            senses) nature of his search in the bush for found
+                            objects, floral and faunal. Gray’s drawings of
+                            landscapes and bodies are sparer of line than
+                            Anderson’s, yet achieve greater clarity, as do the
+                            poems, all of which have appeared before without the
+                            illustrations.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

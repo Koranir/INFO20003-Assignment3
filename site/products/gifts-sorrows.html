@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,233 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/gifts-sorrows.svg&quot;);
                         "
                     >
-                        Featured
+                        Gifts &amp; Sorrows
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Raphaëlle Pomian</h3>
+                </div>
+                <img
+                    alt="Cover of Gifts &amp; Sorrows"
+                    class="product-cover-mobile"
+                    src="/assets/books/gifts-sorrows/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Gifts &amp; Sorrows"
+                        class="product-cover"
+                        src="/assets/books/gifts-sorrows/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        She lay down on the cold tiled floor, listening with one
+                        ear. Is there anyone? Is there anyone there? Her ear
+                        grew bigger and bigger. She was only a giant ear curled
+                        up on the icy floor, listening and searching for signs
+                        of human presence on the floor below. French author
+                        Raphaëlle Pomian’s Gifts &amp; Sorrows [ Don et Miseres
+                        ] is a delightful and slightly anguished collection
+                        about girls. Each story has as its title the name of its
+                        young hero. They are arranged in ascending order of age,
+                        so we gain the subtle impression of watching the general
+                        growth of a girl in France in the late 1960s. These
+                        bittersweet stories bring to life both school and home
+                        life, particularly the troubled relationships between
+                        the girls and their mothers and siblings. They are
+                        poignant tales to appeal to adults and adolescents.
+                        Gifts &amp; Sorrows , translated by the author and
+                        Graham Henderson , was written during the author’s stay
+                        in Australia. She describes that exile and the making of
+                        the collection in an Afterword written especially for
+                        this edition. Gifts &amp; Sorrows has compassion and
+                        perfect formal architecture, like Katherine Mansfield’s
+                        stories. Graham Henderson Cover painting Nude (1960) by
+                        Charles Blackman
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/gifts-sorrows.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/gifts-sorrows/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044047</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>93</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pomian was born in 1956 in Nantes, France. She lived
+                            in Australia from 1976 until 1992. She co-wrote a
+                            play Landscapes of a Life with Graham Henderson
+                            which was performed at La Mama in 1988.
+                        </p>
+                        <a class="bold" href="/authors/raphaëlle-pomian.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Barbara Oakman, Australian Book Review
+                        </summary>
+                        <p>
+                            shorts Barbara Oakman Australian Book Review , No.
+                            188, February/March 1997 School life, parental
+                            rules, younger siblings, jealousies and insecurities
+                            are all parts of childhood that author Raphaëlle
+                            Pomian has vividly brought to life in this
+                            collection of six short stories. Gifts &amp; Sorrows
+                            has for every story a different young girl as
+                            protagonist, each a bit older than the last. Each
+                            story is a slice of life, concentrating on a
+                            particular moment of aday: Val é rie waits for her
+                            mother to come home from work; Odile agonises over
+                            whether her mother will have a baby boy or girl;
+                            Fabienne tries in vain to keep her parents from
+                            fighting yet again. From amidst the ordinariness of
+                            these scenes, several disquieting themes emerge: the
+                            troubled home lives, the disturbing relationships
+                            between parent and child, the childhood struggle for
+                            identity. Violence, confusion and a sense of anguish
+                            are apparent in all the stories, yet Gifts &amp;
+                            Sorrows is not a depressing read; each of the young
+                            heroes deal with their situations with honesty and
+                            resilience, and there are many instances of childish
+                            humour and imagination that give the book balance.
+                            Gifts &amp; Sorrows is a sensitive and honest
+                            depiction of some of the more painful experiences of
+                            childhood.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Veronica Sen, The Canberra Times</summary>
+                        <p>
+                            Paperbacks Veronica Sen The Canberra Times , 8
+                            December 1996 On a much smaller scale [than Giovanni
+                            Verga’s The Defeated ] is Raphaëlle Romian’s Gifts
+                            &amp; Sorrows : sensitive stories, translated from
+                            French, about young girls confronting life. With
+                            sympathy and considerable insight Pomian explores
+                            the perennial need for love, sometimes denied even
+                            by parents; the fear of separation; the predicament
+                            of children caught in the middle of parental
+                            arguments and violence; and the frequent
+                            unreasonableness of adults who ‘have the right to do
+                            anything, whereas children had always the need to
+                            obey’. Though not startlingly original, her
+                            straightforward stories are well-crafted, realistic
+                            and sometimes heart-wrenching.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            Gifts &amp; Sorrows Gloria B. Yates Social
+                            Alternatives , Vol. 17, No.3, July 1998 These six
+                            short stories really are everything the blurb says,
+                            and more. Though each story is named for a different
+                            girl, it is obvious that most share the same
+                            history, as Graham Henderson admits - ‘We gain the
+                            general impression of watching the growth of a girl
+                            in France in the late 1960s... These bittersweet
+                            tales of childhood bring to life the troubled
+                            relationships between the girls and their mothers
+                            and siblings.’ The stories are powerful and
+                            poignant, especially the central and longest,
+                            ‘Fabienne’ and the shortest and last, ‘Helene’.
+                            These are stories which demonstrate clearly that
+                            children can be made bitterly unhappy by quarrelling
+                            parents, the arrival of a baby brother, or by
+                            nothing much at all - a train whistling in the
+                            distance. But for me it was hard work reading this
+                            book. There is no balance, no gleam of humour.
+                            Although the book is called ‘Gifts and Sorrows’
+                            there are far more sorrows than gifts. These stories
+                            gain nothing from being put together in one book
+                            with no relief from the besieged world of an unhappy
+                            childhood. It is as if a modern video camera with
+                            the very finest lens has been focused on a girl, but
+                            from exactly the same angle every time, and the
+                            photographer refuses to budge. The book is well
+                            worth reading, but in tandem with something really
+                            funny to break up the sadness and despair. In my
+                            case the despair is caused by the fact that
+                            Raphaelle Pomian deals with truth - isn’t it bad
+                            enough that children are starving, abused,
+                            exploited, enslaved all over the planet - what can
+                            we say when a girl hates soup and the skim on heated
+                            milk and is made to eat it, what kind of tragedy is
+                            this? Yet I know very well from my own sisters that
+                            forcing a child to eat what she loathes can warp a
+                            life, even when this is not a parental policy but
+                            inflicted by an outsider for a matter of three
+                            weeks. So I don’t dispute the mastery of Pomian’s
+                            stories or their strength. The translation is very
+                            good too.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,630 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-shadows-keep.svg&quot;);
                         "
                     >
-                        Featured
+                        The shadow’s keep
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">John Anderson</h3>
+                </div>
+                <img
+                    alt="Cover of The shadow’s keep"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-shadows-keep/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The shadow’s keep"
+                        class="product-cover"
+                        src="/assets/books/the-shadows-keep/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Les Murray described John Anderson ’ s the forest set
+                        out like the night as ‘ a distinctive experimental text,
+                        one which is bound to be influential ’. the shadow's
+                        keep is again a radical text. In his third collection he
+                        has gathered single lines received in dreams and
+                        retained on waking. He taps an unusual vein which runs
+                        through certain poetic cultures. The one-line poem is a
+                        form sometimes used in Aboriginal poetry, often
+                        associated with dance ceremonis. The Japanese haiku may
+                        also be seen as a one-line form. Anderson ’ s lines are
+                        aware of these traditions and draw also on Western
+                        psychology. Each single-line poem reads like a
+                        mystifying maxim or injunction, without the closure of
+                        the epigram; the language is honed, subtle and volatile.
+                        Singly, each line is resolved and hermetic. Clustered,
+                        they form a complex mosaic, the coruscating facets of
+                        which both illumine and shadow. The effect is to startle
+                        and subvert, to confound and resonate. His accompanying
+                        essay the beginning tincture of what I wrote (see below
+                        ) describes the genesis of this strange and tantalizing
+                        work. It is a lucid essay on the origins of poetry. In
+                        the final section he gives us eight pantoums fashioned
+                        from the dreamlines. Here they achieve a formal grace
+                        and powerful lyric intensity. As original and ambitious
+                        as any writing today. Alan Wearne , Eureka Street
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-shadows-keep.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-shadows-keep/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044128</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>60</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            John Anderson was born in 1948 at Kyabram, Victoria,
+                            where he grew up on an orchard. The locality was
+                            once covered with thick forest and its name is
+                            thought to indicate this.
+                        </p>
+                        <a class="bold" href="/authors/john-anderson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Jennifer Maiden, Overland</summary>
+                        <p>
+                            The Seductive Microcosm the shadow’s keep Jennifer
+                            Maiden Overland , No. 150, Autumn 1998 John
+                            Anderson’s the shadow’s keep has a haunting
+                            perfection, too [like Alison Croggon ’s The Blue
+                            Gate ]. It is tailored from lines ‘received in
+                            dreams and retained on waking’, but the
+                            juxtapositions are profoundly more fecund, logically
+                            wittier and have profoundly more sleepy grace (the
+                            atmosphere of real dreams is actually much brusker)
+                            than that genesis would suggest. Cumulatively, the
+                            mismatched words and lightly altered clichés build
+                            up to a clear, generous personal universe which has
+                            an authentic spiritual sweetness and refreshment
+                            about it. The lyricism is expansive because it is
+                            based on the privacy of questioning as much as on
+                            physical observations.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Antipodes Review</summary>
+                        <p>
+                            Precise Evocation and Tantalizing Elusiveness
+                            Delight and Challenge Werner Senn Antipodes , Vol.
+                            12, No. 2, December 1998 In an essay placed between
+                            Parts I and III of the shadow’s keep , John Anderson
+                            discusses the two kinds of problems he (and the
+                            reader!) faces in his poetry. First, many of the
+                            single lines that constitute Part I do not easily
+                            (or not at all) yield the ‘core meaning’ Anderson
+                            attributes to them (pg. 47) but are more notable for
+                            ‘their inherent ambiguities’ (pg. 46); second, the
+                            sequence of lines seems arbitrary and hence the
+                            ‘subliminally present narrative’ Anderson claims
+                            (pg. 47) is hard to detect. The lines remain
+                            self-contained, discrete items, and their wide
+                            spacing suggests a shying away from
+                            contextualization. The author himself seems in two
+                            minds: on the one hand, ‘the understanding of any
+                            line would be influenced by the lines placed around
+                            it’, on the other, ‘the lines are complete in
+                            themselves, and are often more roundly suggestive
+                            when taken singly’, their possible significance thus
+                            not likely to ‘be lamed by an inappropriate
+                            juxtaposition’ (pg. 45). But what, one wonders, is
+                            the appropriate juxtaposition? The rationale behind
+                            this striking ‘relaxation of conscious control’ (pg.
+                            48) on the writer’s part outdoes Coleridge and all
+                            romantic ideas of the autonomy of poetry. Anderson
+                            claims that most of his lines were ‘received’ in
+                            dreams or dream-like states: ‘It is as if I am
+                            registering a language... that has rolled through
+                            from somewhere further back’ (pg. 43). The refusal
+                            to tamper with these intuited lines results in a
+                            variety of linguistic forms, ranging from the
+                            straightforward sentence: ‘we both of us know how to
+                            take a journey around a bathtub’ (pg. 28), through
+                            the simple or complex noun phrase: ‘metabolic essay’
+                            (pg. 26), ‘the young and negacious Q’ (pg. 30), ‘the
+                            long kitty with only the dab in tune’ (pg. 23), to
+                            the grammatically deviant: ‘the pod, that once no
+                            more than wasn’t, was’ (pg. 39), to the correctly
+                            formed but semantically nonsensical sentence, as in
+                            ‘to self hatred yields a higher dingo’ (pg. 21) or
+                            ‘he makes porridge of his name’ (pg. 21). It may be
+                            that for Anderson ‘the lines are their own best
+                            authority’ (pg. 48) but in the absence of any
+                            linguistic (let alone narrative) context, they often
+                            leave us at a loss. Randomness and discontinuity are
+                            highlighted in Part III, where many of the earlier
+                            lines, repeated in the formalized order of the
+                            pantoum , ‘find themselves in shifting contexts’,
+                            which allows them ‘to reveal facets of themselves
+                            much more clearly than I could’ (pg. 46). More than
+                            in Part I, this enhances the playing off of
+                            individual lines against each other while at the
+                            same time implying that (changing) context is the
+                            basis for the signifying practice, that is, that
+                            meaning is endlessly deferred. Reading the shadow’s
+                            keep is a puzzling, tantalizing, and challenging
+                            experience. Its playful nonsense, however, cannot
+                            hide deep seriousness. Again and again, individual
+                            lines impress with haunting elusiveness and powerful
+                            suggestion: ‘words that feather us’ (pg. 7); ‘no one
+                            dug an island more deeply’ (pg. 31), or with an
+                            almost Blakean ring: ‘the world cannot be overcome
+                            by the analogue ‘I’’ (pg. 13); ‘boredom is the
+                            fatness that irritates the soul’ (pg. 22). Perhaps
+                            Anderson’s art is best characterized, in a phrase of
+                            his own, as one ‘of a pure and monastery lineliness’
+                            (pg. 14). the shadow’s keep also stands as a curious
+                            monument of a radically independent and
+                            unfashionable devotion to poetic essence.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Poetry A Miscellany Michael Sharkey (editor)
+                            Australian Book Review , No. 201, June 1998 I have
+                            saved the best until last. John Anderson’s book is
+                            profoundly satisfying. Like Bev Braune’s, his
+                            collection’s title holds a clue to its writer’s
+                            passion for the exact word. I read Anderson’s poems
+                            with a note of inescapable regret that he is no
+                            longer with us. His first collection ( the blue gum
+                            smokes a long cigar , 1978) contained some of the
+                            most individual poetry of its era and since: lyric,
+                            sensual, and absorbing contemplations on the
+                            phenomenon of ‘reading’ one’s own response to
+                            ‘nature’. It was never enough to refer to Anderson’s
+                            works as ‘nature’ poems, as it is never enough to
+                            say the same of Philip Hodgins’ ‘pastoral’ poems or
+                            Les Murray’s ‘translations’ from the natural world.
+                            In subsequent books ( the forest set out like the
+                            night , 1995; and the volume under review), Anderson
+                            continued the exploration of the poet’s modes of
+                            perception. the shadow’s keep is a book of jewels of
+                            phrasing, laid out, in the first forty pages, in
+                            spaced single or double lines ‘received in dreams
+                            and retained upon waking’. They commence with ‘this
+                            is some of the territory from which we strayed in
+                            our quest / for the land of prayer’. To read the
+                            lines sequentially, in the discrete groupings
+                            Anderson arranges, is to be increasingly aware of a
+                            writer who makes no concessions to a browser’s
+                            expectations. He demands, deserves and repays the
+                            strictest attention. His lines continually delight
+                            with their surprises: ‘I’d like to coax some answers
+                            apart / the mistakes give the work of art
+                            ventilation / You, the new poem, stalking on your
+                            why’s ways’. This last line is reprised in the
+                            book’s last poem, one of eight pantoums which
+                            comprise the final section. Here, lines encountered
+                            in the first section are reassembled into tight
+                            verses containing refrains and ‘rehearsing’ the
+                            theme suggested by the title: the work which
+                            occupies the mind as ‘shadows’ until it puts on
+                            substantiality in a work of art. The middle section
+                            of Anderson’s book is an essay on the process
+                            whereby the ‘dream phenomena’, shadowed in the lines
+                            he presents in the first section, constitute poetic
+                            form. Here, as in the first pantoum, he shows
+                            himself a poet’s poet. He offers his approach to
+                            keeping the ‘dreamlines’ in their contexts and
+                            juxtapositions, and discusses his ‘composition’ of
+                            lines ‘which might have arrived years past’ [which]
+                            can ‘seem to ask to be placed together’ - while
+                            other lines ‘seem to have no obvious place beside
+                            any other lines at present, but which may find their
+                            own company in time’. As I’ve implied, I’m grateful
+                            for all Anderson’s lines, arranged together as he
+                            saw fit, in the third section of this book, or
+                            queued up, in abeyance, in the first. His work is
+                            valued by those who heard him and read him; the
+                            number in the latter category will, I hope,
+                            increase.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Herald Sun Review</summary>
+                        <p>
+                            Well versed in everyday themes Poetry Review Julie
+                            Richards Herald Sun , 2 February 1998 For those with
+                            a little more stamina and a preference for rougher
+                            terrain, take a trip with Emma Lew or John Anderson.
+                            Both published by Black Pepper, Lew ’s The Wild
+                            Reply , and Anderson’s the shadow’s keep are
+                            challenging in their use of language and imagery.
+                            They depart from the usual highways and offer a
+                            somewhat harsher view from the top. The experimental
+                            nature of Anderson’s use of ‘dreamlines’, received
+                            during the first stages of sleep, and his
+                            arrangement of these lines ‘so as to let them expand
+                            infinitely into their own universes’ yields some
+                            pretty volatile material. Almost echoing surrealism,
+                            it expresses the workings of the poet’s
+                            subconscious, laced with fantastic imagery and
+                            unusual contrasts. It’s a demanding and
+                            unconventional read, but perseverance and tolerance
+                            will be amply rewarded by the originality and
+                            ambition of this exciting and fresh new perspective.
+                            With Barbara Giles [ Seven Ages ], John Anderson and
+                            Emma Lew , there is the distinct feeling of being
+                            privy to a special moment in an ordinary life and
+                            going on a memorable journey of discovery, for both
+                            poet and reader.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald Review</summary>
+                        <p>
+                            S pectrum books On The Edge Of Sleep the shadow’s
+                            keep Poetry Heather Cam (poet) The Sydney Morning
+                            Herald , 31 January 1998 Riffling through the pages
+                            of these three ‘little press’ books [Pam Brown,
+                            50-50 , Fay Zwicky, The Gatekeeper’s Wife , John
+                            Anderson, the shadow’s keep ], you are immediately
+                            struck by the visual differences in lay-out, line
+                            length, and the overall approach to the poem on the
+                            page. Each poet presents a distinctive voiceprint
+                            and typographical appearance... In contrast [to
+                            Brown and Zwicky], the isolated, virtually
+                            unpunctuated threads of poetry in John Anderson’s
+                            title section are ‘dreamlines’ salvaged from the
+                            verge of sleep. They appear to be randomly arranged,
+                            not fitting into any larger, over-arching structure.
+                            At the centre of the shadow’s keep, the essay, ‘the
+                            beginning tincture of what I wrote’, explains how
+                            Anderson receives or captures, seeks to understand,
+                            and eventually arranges these potent lines into
+                            poetry. A deliberate poetic structure emerges in ‘a
+                            zephyric alphabet’, the last section of this unusual
+                            collection, where some of the floating ‘dreamlines’
+                            have been woven into formal, tightly knit pantoums.
+                            What each poet’s page layout superficially reveals
+                            is reinforced by reading:... Far removed from
+                            Zwicky’s witty conference contrivances and Brown’s
+                            worldly wise, highly self-conscious banter are
+                            Anderson’s dreamlines. Akin to automatic writing,
+                            these lines, we are told, were received by the poet
+                            when his conscious mind was literally at rest: ‘The
+                            lines gathered here represent a variety of dream
+                            phenomena. Most can probably be explained at a
+                            mundane level by my sleep apnoea, which prevents the
+                            normal onset of deep sleep. This brings about
+                            prolonged spells of relative alertness to events
+                            taking place at the bay of sleep.’ ‘ The dreamlines
+                            work best for me as the building blocks of
+                            Anderson’s pantoums: then the ‘gift’ of the
+                            dreamlines is combined with the poet’s conscious
+                            effort and artistry and arranged into the strict
+                            verse forms that conclude the shadow’s keep : Quiet
+                            ruin is the conversation of the bulbs Then axeman
+                            builds as rust-man stalks them An apple seeming to
+                            the wasteful falls The old watertight roads have
+                            sandbars along their edge the shadow’s keep is a
+                            valedictory. Late in October, shortly after this
+                            bock’s publication, Anderson died, aged 49, of
+                            leukemia. Much of the work gathered here in this
+                            last harvest has a prophetic, haunting resonance: I
+                            believe in life after death because things always
+                            are, they always extend An apple seeming to the
+                            wasteful falls The everywhere the moon always was
+                            and rests Quiet ruin is the conversation of the
+                            bulbs In Anderson’s final poems, the dreanlines
+                            glide out into the whiteness of the page; each one
+                            is embedded in the surrounding silence of blank
+                            space, approaching sleep, and, ultimately, death.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Heat Review</summary>
+                        <p>
+                            Views &amp; Reviews the shadow’s keep Dmetri Kakmi
+                            Heat , No. 7, 1998 John Anderson, in his essay on
+                            the gradual evolution of the hermetic lines that
+                            constitute the first part of this, his final book,
+                            gives the impression that he acted as a kind of
+                            radio transmitter, a not so passive recipient, who
+                            was rewarded with ‘the most exquisite and alert
+                            little fish’ while drifting ‘at the bay of sleep’.
+                            And, indeed, reading these crypto/mystical
+                            transmissions one feels that a translucent medium
+                            presence is at work, excavating the wisdom of the
+                            soil and of the spheres - a perception that has
+                            become particularly difficult to shake off since the
+                            poet died of leukemia in October last year. In the
+                            first part, ‘the shadow’s keep’, Anderson records,
+                            in no particular chronological or narrative order,
+                            the short, sharp lines he wrote on waking from
+                            various dream states. The glyphs he salvaged,
+                            however, are not merely dream recordings, but
+                            insights that tweek nerve endings which continue to
+                            reverberate on a subconscious level, so that an
+                            initially puzzling line reveals itself, with any
+                            number of often contradictory interpretations and
+                            permutations, when you let go the line and allow the
+                            bait to drag and float with the currents. As he
+                            observes, ‘If I relaxed and simply let the lines
+                            happen, they seemed eventually to explain themselves
+                            in ways that were more surprising than any I could
+                            have arrived at consciously’. Yet these are not the
+                            wafty dream babbles I feared on initially reading
+                            his essay. They are twigs and buds caught in the
+                            door jamb of the rational and irrational. In the
+                            third section of the book, ‘a zephyric alphabet’,
+                            Anderson conflates the Dionysian upsurge of his
+                            dreams with Apollonian reason, as he carefully
+                            extricates his brains that ‘sleep in the marsh’ from
+                            the rocks that pierce an ‘ocelli’ in his blood, to
+                            learn what any artist should know before launching
+                            themselves before a public: mainly that the initial
+                            inspiration may knock your socks off, but the silt
+                            has to be cleared before a reader can receive it
+                            second-hand, or, as he succinctly puts it, ‘Mud is a
+                            writer - lightning is a writer’. Thanks to his
+                            alertness, he brings order and coherence to the
+                            disparate lines by harnessing them into the pantoum
+                            form - a verse form of Malay origin, in which the
+                            second and fourth lines of each stanza become the
+                            first and third lines of the next, and in the last
+                            stanza the form comes full circle as the unrepeated
+                            first and third lines of the first stanza are used
+                            as the second and fourth lines. With its
+                            possibilities of mood shifts and capacity to
+                            underline obsessive themes, the pantoum has a
+                            circular motion that serves Anderson’s subject
+                            matter well; but you sense his reluctance in doing
+                            this when one line, in particular, seems to implore
+                            against such interference, asking that he not alter,
+                            ‘but preserve it in its sweet sleep, its inventive
+                            mind’. He frets that he may be only a custodian of
+                            the lines, and has no right to create a drawbridge
+                            between the dream-like flow and conscious control,
+                            in order that a wider audience may receive them. Zen
+                            is often misunderstood in the West, as a result,
+                            haiku has suffer a great deal in untrained Western
+                            hands. Orthodox Christianity places the soul of man
+                            in direct opposition to God and states that a union
+                            is facilitated with the Divinity only through
+                            contemplation and love. Even so, absolute union and
+                            the Beatific Vision is not granted until after
+                            death. In Zen, union with the Absolute and with
+                            Nature are one and the same thing and no
+                            intermediary is necessary. In ‘Let the Spring Breeze
+                            Enter: The Quest of Zen’, Takahashi Ikemoto says,
+                            ‘Zen is clarity itself’. A clarity that Anderson
+                            aspires to through his adoration of the immeasurable
+                            open spaces or, in his words, the ‘geology of
+                            contrary responses’ afforded by the Australian bush,
+                            from which he drew constant inspiration for his
+                            work. When he remarks that ‘the ironbark is slow to
+                            go up in beauty / the ironbark is slow upon the
+                            land’ we know he is rooted in a land where
+                            Aboriginal ‘aloofs are not compatible with
+                            Australian journalism’, and as he fixes on the
+                            ‘black ducks’ which ‘fly over in the night and
+                            create stillness in a / body’, he is inwardly
+                            transfixed by, and perhaps flying with them, toward
+                            an Eastern realisation: ‘My fingers curl towards the
+                            East / the mountains took a long roll outwards /
+                            they were a fan in my heart’. As in the cult of
+                            Shinto in Japan, Anderson’s veneration of trees,
+                            mountains, birds and waterfalls holds sacred the
+                            sense of Nature and her cycles. He reflects darkly
+                            on human interference: ‘the moon plows red / and
+                            what of man? So long as he holds influence the earth
+                            / dreads its very own water babies’. But when he
+                            records that ‘the old watertight roads have sandbars
+                            along their edge’, he is aware that unstoppable
+                            natural elements are encroaching and undermining
+                            man’s efforts to seal his fortress - a cyclic
+                            stock-taking or Darwinian turbulence of give and
+                            take. Ikemoto also suggests that, perhaps, the
+                            essence of Zen is best captured by this classic
+                            poem: ‘Transmission outside doctrine, / No
+                            dependence on words, / Pointing directly at the
+                            mind, / Thus seeing oneself truly, attaining
+                            Buddhahood’. Of course, as a poet, Anderson’s tools
+                            are words, but the function of his utterances is to
+                            create word-images that point ‘directly at the mind’
+                            and, since the West locates the heart as the true
+                            seat of intellect and love, melts dew-drops that
+                            reflect the indivisible moon, down to that central
+                            organ.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sidewalk Review</summary>
+                        <p>
+                            the shadow’s keep Richard Hillman Sidewalk , No. 1,
+                            1998 Alternatively [to Andrew Sant , Album of
+                            Domestic Exiles ], John Anderson’s the shadow’s keep
+                            does not suffer from a pretentious groping for
+                            unsatisfactory detail; his language may be a dream
+                            reached on waking but as an experimental text it is
+                            a constant poetical challenge, brilliant, leaving
+                            nothing for the Jungian to fondle with, to
+                            analytically sexualise (it cannot be analogised) -
+                            but, it might be asked, Why does Anderson think
+                            anyone will be interested in his dreams? Do they
+                            represent a PSYCHE at millennium’s end, or
+                            beginning? Are these poems sounds, someone
+                            overwhelmed by words? Does this poetry simulate an
+                            enviable journey - ‘I wish I had written that / it’
+                            - or simply mirror a form of wishing thinking? the
+                            shadow’s keep excludes the personal even though it
+                            invites, because it keeps to itself. Beyond a sense
+                            of alienation, the shadow’s keep is sustained by a
+                            beautiful, creative voice - perhaps the sound of
+                            things spoken in silence.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>ArtStreams Review</summary>
+                        <p>
+                            book review the shadow’s keep Lucinda McKnight
+                            ArtStreams , December 1997/January 1988 To enter
+                            John Anderson’s world, in his poetry collection the
+                            shadow’s keep , is to enter a world of dream. In his
+                            explanatory essay, ‘the beginning tincture of what i
+                            wrote’, Anderson even calls his lines ‘dream-lines’,
+                            explaining that they are vivid fragments released
+                            when drifting between waking and sleeping, fragments
+                            he has ‘received’ and channelled for us. Even
+                            without this explanation, though, the reader who is
+                            absorbed by the first section of the volume will
+                            recognise its dream influences. Anderson explores
+                            the incongruity of dreams both within each fragment
+                            and through his careful juxtaposition of lines,
+                            expressing his strangest thoughts matter-of-factly,
+                            like a dreamer just woken from sleep. The reader,
+                            puzzling over each mysterious image, relives the
+                            disorientation of dreams, as the fragments,
+                            unrelated to, yet resonating against those coming
+                            before and after, collectively create a larger
+                            meaning. This meaning is likely to be private, and
+                            different for each reader, as the images operate
+                            subtly on our memories. the shadow’s keep combines
+                            uniquely Australian imagery, recalling the magical
+                            stillness and glow of the bush at sunset with the
+                            frenzy of the poet seeking ‘the generous minimalist
+                            of the poem’s surprises’. By presenting us with ‘the
+                            black sons of water lilies’ and ‘folded blankets’ or
+                            fridges and cleverly playing the exotic off against
+                            the mundane, Anderson enthralls the reader for a
+                            while, but it is easy to become blase about the
+                            intensity of the imagery, even when the lines have
+                            space around them to ‘expand infinitely’ into. By
+                            the time the reader finishes the following
+                            explanatory essay and delves into the third section,
+                            with the same lines rearranged into ‘a Zephyric
+                            alphabet’ or scries of more traditional poems, the
+                            lines appear crammed together and it is easy to
+                            become lost or to feel you have over-indulged on
+                            Anderson’s rich and peculiar feast of language. The
+                            best way to experience the shadow’s keep may be to
+                            read it slowly, aloud, savouring ‘the indomitable
+                            spark of message in it’, and the ‘angel pips and
+                            squiggle pips of meaning’. This collection provides
+                            a rare opportunity to share the story of the
+                            artist’s creative process and explore how the
+                            re-organisation of words changes their impact.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Famous Reporter Review</summary>
+                        <p>
+                            Aftertaste the shadow’s keep Liz Winfield Famous
+                            Reporter , No.16, December 1997 (pgs 104-107) [Text
+                            not yet available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Ulitarra Review</summary>
+                        <p>
+                            A Dense, Word-Haunted Forest the shadow’s keep
+                            Martin Langford Ulitarra , No. 12, 1997 In the
+                            shadow’s keep , John Anderson has written a curious
+                            book. It is composed of individual lines and phrases
+                            that occurred to him either between waking and
+                            sleep, or in dreams. The lines and phrases do not
+                            necessarily make literal sense, though sometimes
+                            they do. They all participate in various types of
+                            poetic sounding language: tomatoes, potatoes, my
+                            rapscallion heart or: three hour jumping frog
+                            workshop with Sigmund Freud or: angel pips and
+                            squiggle pips of meaning In some, an abstract
+                            comment or idea is made attractive by the quirkiness
+                            of expression: The aborigines. Their aloofs are not
+                            compatible with Australian journalism or: The day
+                            got through the day without the sun At the end of
+                            the book, there are several pantoums, where Anderson
+                            plays with suggestive juxtapositions of the lines.
+                            Overall, I think that his fragments represent only
+                            one stage of the creative process. It is as if he
+                            has locked onto the phrases at a time when, while
+                            they may hold maximum interest for the writer -
+                            still with an intriguing sense of being unformed,
+                            fresh with a sense of mystery - they could
+                            nevertheless not be said to have been developed
+                            sufficiently to compel the attention of the reader.
+                            The phrases are interesting, but not satisfying.
+                            They actually beg the question of intelligibility,
+                            by insisting that the author is only interested in
+                            that place where meaning begins. I would argue,
+                            however, that it is precisely at that stage when the
+                            author’s responsibilities come into play.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

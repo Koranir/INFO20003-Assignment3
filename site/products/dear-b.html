@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,582 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/dear-b.svg&quot;);
                         "
                     >
-                        Featured
+                        Dear B
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jennifer Harrison</h3>
+                </div>
+                <img
+                    alt="Cover of Dear B"
+                    class="product-cover-mobile"
+                    src="/assets/books/dear-b/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Dear B"
+                        class="product-cover"
+                        src="/assets/books/dear-b/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Jennifer Harrison’s fourth book opens and closes with
+                        the wisdom of older women. The first is the family lore
+                        of grandmothers and mothers, the last the wry
+                        observations of a gambling addict in ‘Casino’ where the
+                        invented world stalls like smoke over Asia. ‘Casino’ is
+                        one of four major sequences. The memory of an incident
+                        trekking in the Himalayas transforms into a haunting
+                        love song in Dear B; epigrams of daily life form
+                        ‘Miniatures’; in ‘Boston Poems’ crisp tragic lyrics face
+                        the diagnosis and early treatment of breast cancer.
+                        Throughout these sequences and the individual poems
+                        which separate them, Harrison writes an understated
+                        poetry of great humanity, fineness and often wit. In the
+                        end, Harrison’s poetry impresses with its intelligence
+                        and its containment. There is something admirable and
+                        poised... the restraint and detail are perfectly
+                        matched, reminding one of Randall Jarrell's comment on
+                        Elizabeth Bishop’s first collection: all her poems have
+                        written underneath, I have seen it. Peter Rose,
+                        Australian Book Review
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/dear-b.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/dear-b/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044276</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1999</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>68</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jennifer Harrison was born in Liverpool, Sydney, in
+                            1955, in a motorbike shop. She completed a medical
+                            degree in 1979 and her training as a psychiatrist in
+                            1990.
+                        </p>
+                        <a class="bold" href="/authors/jennifer-harrison.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Sidewalk</summary>
+                        <p>
+                            Naming/Scapes: Jennifer Harrison’s Dear B Richard
+                            Hillman Sidewalk, No. 4, December 1999 Jennifer
+                            Harrison’s Dear B is a strangely ambivalent and
+                            enticingly foreign collection of sound postcards in
+                            a new language album. Press to open and watch its
+                            pages turn with the care held for old black and
+                            whites and family histories. A diary of sorts
+                            (suggesting ‘a lack of restraint. There is no map’ -
+                            from ‘Diarist’). Turn the pages before the words
+                            fall out. Stand back from places half remembered on
+                            ‘waking, a camera dangling from a neck captures a
+                            foot just out of focus. Adjust the lens - write home
+                            to friends, lovers, a world gone mad with habit.
+                            Dear B is an uncertain series of seductive slides,
+                            evocative serjise data matching service, a displaced
+                            poet in curious places, wherein lie two poems which
+                            deserve wider critical appraisal: ‘Boston Poems’,
+                            and ‘Dear B’. ‘Boston Poems’ prepares us for what we
+                            don’t expect, allows us to question the obvious: ‘a
+                            traveller like us making excursions / into cultures
+                            we trust will / accommodate our oddities’ and
+                            nothing is taken for granted. Boston has its own
+                            quirky mythology (‘History pins names to cafes and
+                            fountains’) which underpins a people caught up in a
+                            desperate struggle for recognition. With lightness
+                            of, touch Harrison treats this struggle as if it
+                            were a skin disease, a cancer, a form of oppression
+                            spreading over a glass and concrete epidermis -
+                            names on billboards, walls and street signs are
+                            viral infections smothering the life those names
+                            articulate - and there is a fever sweating on the
+                            surface of things, forcing the resident to compete
+                            against the mirror-like liquidity of otherness, a
+                            full immersion in someone else’s desire to be
+                            recognised; perhaps the traveller is drowning, also,
+                            and the movement towards stillness (which the poem
+                            approaches) is not unlike death; or, a moment of
+                            revelation, witnessing the cancer which lies at the
+                            heart of the poet’s own awareness (a desire to name
+                            what names). Then there is the title poem, ‘Dear B’.
+                            A powerful doubling back on self-history, retracing
+                            memories of a trip through the Himalayas in 1980. A
+                            rite of passage examining the rituals that have
+                            constructed memory, or simply left ‘an impression’.
+                            Harrison’s self-deprecating style allows us to
+                            examine the poet as a signifying presence, an entity
+                            writing itself upon the surface of its own choosing.
+                            Yet, something definitely meditative, chanting on
+                            this surface, includes the listener - the often
+                            repetitive statement that she is ‘writing’ her way
+                            through this dream/memory journey, this soundscape,
+                            forces the reader to think as if s/he were part of
+                            that journey too - part of the ritual, the ceremony
+                            that has become the poem: I’m writing a path through
+                            the mountains to the festival of Holi the stone
+                            walls of the village are splashed with dye so that
+                            the village which bleeds bleeds all day to the sound
+                            of laughter and the smell of clay-baked bread when
+                            children throw a bucket of dye over you you are
+                            stained with the first blood of a woman and I taste
+                            you like a ceremony I don’t understand what it is to
+                            be foreign. Harrison listens to her words as much as
+                            they are listening to her - her poems are like
+                            shells brought to an ear - at some point they begin
+                            calling her back from the edge of sound, away from
+                            the enigma that is the edge of the human sea surging
+                            towards her feet: I hear you calling to come and see
+                            the fossil you have found in the sand ‘Doubtful
+                            Sound’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland</summary>
+                        <p>
+                            Routines &amp; Revelations: New Poetry - Dear B
+                            Kerry Leves Overland, No. 157, Summer 1999 Very
+                            con­centrated - some readers may feel there’s a
+                            community with Pushkin: fables take shape like
+                            constellations against the dark. And the wit’s
+                            informed by worldliness -’dancing in ever-widening
+                            folk dresses / the self-help book snaps open and
+                            shut, the chinks / in theory now so overgrown with
+                            narrative / you’d never know where to find a
+                            neurosis’ thirsty roots.’ Harrison knows how to cast
+                            an image that’ll hold, engage; it’s a talent well
+                            used - for suggestion and sensuousness, nothing
+                            overwrought. There’s a difference, however, between
+                            the flow of images that gives dimen­sion to longer
+                            poems like ‘Dear B’ or the’Boston’ sequence (both
+                            spellbinders, incidentally) and the set-piece
+                            meta­phors or similes that close - and diminish -
+                            some of the shorter ones (e.g.’That Place’). But the
+                            book’s final sequence, ‘Casino’, has cogency to
+                            spare - its gambler convinces and involves: ‘the
+                            most pure lurching / human thing I do each morning /
+                            is to scheme, even in church / I daydream poker’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Womens Book Review</summary>
+                        <p>
+                            The Geography of Non-sense - Dear B Bev Braune
+                            Australian Women’s Book Review, Vol. 11, 1999
+                            Two-and-half decades ago Xavière Gauthier’s short
+                            essay ‘Is there such a thing as women’s writing’ was
+                            published in Tel Quel after it was rejected by Le
+                            monde des livres apparently because it was
+                            considered ‘completely incomprehensible, absurd and
+                            meaningless’. Gauthier pursued (and, it seems,
+                            demonstrated too well for one editor) the line of
+                            argument that women’s writing disrupts a norm
+                            considered established by a history of writing
+                            dominated by men whose tradition marginalised
+                            women’s writing. Here, in Jennifer Harrison’s words,
+                            ‘in the margins / of a slightly-known text / I am a
+                            paradox’ (‘Lot’s Wife’). The act of writing by women
+                            (by its nature), argued Gauthier, must be non-sense
+                            in comparison with a sense-making, sensible,
+                            reasonable tradition which excluded women. She then
+                            went on to suggest that writers who are women must
+                            also be very clever indeed if they are to make
+                            themselves heard and read. This is especially so
+                            since, in recording their words and meanings, they
+                            are adding disruptive texts of ‘non-sense’ to the
+                            linguistic ‘order’ of established norms. If women
+                            speak they break or disrupt that order. And since
+                            they were not part of the ‘sensible’ in the order,
+                            when they speak it must be ‘non-sense’. At the very
+                            least, these notions are part of the process of an
+                            evaluation of writing by women relevant to our
+                            generation familiar with Gauthier, Cixous, Kristeva
+                            and Wittig. The new poetry collections by Caddy
+                            [editing the moon], Cronin [Everything Holy] and
+                            Harrison show that Gauthier’s essay remains
+                            relevant. The poetic voice in all three (to the
+                            least extent in Caddy’s) is determined to identify
+                            itself as ‘a woman’. If writers never fully agreed
+                            (aloud, anyway) with what Gauthier et al said, the
+                            sometimes extreme non-sense made women sit up and
+                            consider what they were doing as writers. These
+                            three volumes may themselves serve to bear out an
+                            investigation into the activity to which Gauthier
+                            referred - disruptive texts of non-sense. If nothing
+                            else, these poets show that poetry is an ideal
+                            medium for examining the aetiology of non-sense.
+                            Oftentimes, attending to meaning in poetry is
+                            indelibly circular or, as all three poets suggest,
+                            in imitation of life’s natural processes - birth to
+                            death, embedded in moon tides and cycles. And if
+                            women’s work is circular, these three volumes
+                            celebrate the circular argument without flinching at
+                            the dilemma of the reductionist in the wheel. They
+                            seem compelled to pursue ‘what makes me examine /
+                            the point of annihilation?’ (‘Negritude’, Caddy).
+                            The purpose of this might be provided by Harrison:
+                            If there is a riddle to decipher it will not despair
+                            on its own enigma ‘The Thought’ They agree that
+                            riding the wheel without getting caught in the
+                            spokes is nothing less than ‘moving / through the
+                            clamour, unused to freedom, unsure of the corner’
+                            (Harrison) or searching for ‘lost... music in the
+                            chaos’ (Cronin). Jennifer Harrison’s Dear B
+                            celebrates the fact that landscape has the power to
+                            sweep itself clean of humans who cannot sense its
+                            needs… For me, it is Harrison who has captured the
+                            marriage between intellection and passion with Dear
+                            B. She is attracted to smooth, solid and magical
+                            objects - the embryonic, agates, gravel, the woman
+                            whose labour and body reflect the stones she was
+                            worn to their smoothness (‘Dear B’). In Harrison’s
+                            world, ‘her metaphors share the career / of other
+                            river gravels.’ Here ‘sand slicks to your skin’ (‘A
+                            Serious Case’). And her imaginative detours are
+                            grounded, as in ‘The Society of Psychotherapist’s
+                            Fantasy Ball.’ We are always likely to meet the most
+                            marvellous women: I’m a woman who wears her jaguar
+                            tooth sealed in silver, I tumble over rocks I live
+                            underground. Mountains of the Moon. ‘Mountains of
+                            the Moon’ Harrison consistently achieves an openness
+                            perhaps because she maintains so well what she calls
+                            ‘the shape of anticipation’ in one of my favourite
+                            poems in the collection, ‘Lot’s Wife.’ I wished the
+                            ‘Doubtful Sound’ series went on for more than 2
+                            sections. A traveller ‘into cultures ‘we trust will
+                            / accommodate our oddities’ (‘Boston Poems’), she
+                            leaves me feeling that she understands her
+                            intellectual and sensual territory, and is never
+                            impatient even though she’s ‘got a wheel to spin /
+                            and detours to deal with’ (‘Casino’). We might
+                            regard these poets as Gauthier’s witches because
+                            they ‘dance’, ‘sing’, ‘are alive’ and ‘rapturous’
+                            with it or within a broad consideration of
+                            perception, definition and the phenomenon of
+                            interviews with the self. Perception and
+                            self-definition, with as much certainty as we can
+                            glean from experience, are parts of the body
+                            (literally) of who we are. Eye and mind - the two
+                            (or the one) - enclose any world we describe, as
+                            Maurice Merleau-Ponty would have argued. It seems to
+                            me that Caddy, Cronin and Harrison make the point of
+                            the significance of their perception as women:
+                            Caddy, meditating on the rhythm of landscape;
+                            Cronin, breaking every rule in the book; Harrison,
+                            studying the unsteady progress of the self. It may
+                            be best to regard these volumes in the way that
+                            Julia Kristeva, in an interview in 1974, suggested
+                            one ought to consider making a trip to China - ’if
+                            you don’t care about women, if you don’t like women,
+                            you needn’t bother going’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Southerly</summary>
+                        <p>
+                            I think I must write this down Greg McLaren
+                            Southerly, Vol. 59, No. 3-4, Spring/Summer 1999 Of a
+                            number of newer poets consolidating or establishing
+                            their reputation (Tracy Ryan another among these, as
+                            well as MTC Cronin, Peter Minter and Coral Hull),
+                            Jennifer Harrison displays perhaps the most interest
+                            in the use of the sequence. Although Coral Hull’s
+                            work represents a continuous open-ended sequence of
+                            sorts, Harrison has made sequences something of a
+                            signature. Her first book, Michelangelo’s Prisoners
+                            , includes several extended pieces, most notably
+                            ‘Skin’ (featured also in Picador New Writing 2 ) and
+                            ‘Maturana Songs’, while Cabramatta/Cudmirrah , her
+                            second, opens with the long poem ‘Cabramatta’.
+                            Harrison is equally comfortable with shorter pieces,
+                            which in their wider context sometimes take on a
+                            punchy quality. The poems in Dear B are inhabited by
+                            a variety of characters, their individual voices
+                            captured with a precise but light touch. If you
+                            don’t ask you won’t learn ... ...we’ll buy them a
+                            present but let’s only give it to them if they’ve
+                            got one for us. ‘The Getting of Wisdom’ The voice of
+                            the poems’ characters at times acts as a point from
+                            which Harrison’s imagery departs on cleanly-observed
+                            tangents: Am I late he asked arriving late, behind
+                            him the small deaths of each town he had passed, in
+                            his eyes the tired light, as it had, all day, fallen
+                            across the tar’s curve ‘Sewing’ Elsewhere Harrison’s
+                            persona speaks for the people in the poems:
+                            Sometimes he is afraid of everything that ends ...
+                            Primum non nocere first do no harm... poets, too
+                            ‘Hippocrates’ By speaking in the voices of others,
+                            Harrison also receives something of the authority
+                            and resonance of that voice. In ‘Hippocrates’
+                            Harrison’s double-career of poet and psychiatrist
+                            forms a symbiosis in which each adds to and benefits
+                            from the discipline of the other. The book’s title
+                            poem is a series of verse letters to a lover,
+                            ‘writing a path through the mountains / through the
+                            Himalayan snows’. The writing of the letters acts as
+                            an aid to memory, hence the leitmotif ‘I’m writing a
+                            path through the mountains’, which transforms
+                            through ‘I’m writing a path through memory’ and ‘she
+                            was carving a path through the mountains’ into I
+                            think I must write this down now before morning
+                            before I forget The sequence’s concern with the
+                            self’s otherness relies on continual splitting that
+                            self off from what is identified with the self. This
+                            is achieved partly through the formal fragmentedness
+                            of the short letters, incorporated into the larger
+                            framework of the sequence in a manner that retains
+                            the integrity of the individual parts. The greatest
+                            split is that of self from other: ‘I don’t
+                            understand what it is / to be foreign’. There is a
+                            certain foreignness and isolation inherent in not
+                            understanding, one emphasised by reference to the
+                            national groupings of the speaker’s fellow (western)
+                            tourists: we have been stranded in Jomson with the
+                            Swiss and Germans we are waiting for the plane which
+                            can’t land we are helpless out of place here and
+                            here we might die among the evil fairies we conjure
+                            because we are so far from home A sense of
+                            collectivity remains in the repeated assertion of
+                            ‘we’, but this also acts as an attempt to impose
+                            belonging where there is none. The speaker is also
+                            temporally apart from herself and physically and
+                            emotionally distant from her lover: I’m writing a
+                            path through memory and it’s as though I send you a
+                            photo of ourselves years ago Machupuchare in the
+                            background Collecting these fragments of poetry and
+                            memory together counts as a bringing together and
+                            acknowledgement of the disparate parts which make up
+                            the self - the past, those who one loves and has
+                            loved, the places one has been - and through the
+                            writing restoring them in some sense to the whole.
+                            ‘The Boston Poems’ is an extended piece comprised of
+                            a variety of forms: individual poems, diary entries
+                            (‘Diary / Boston, October 1990-June 1991’) and
+                            recollections of place. The sequence is a meditation
+                            on the poet’s illness, likening the experience of
+                            cancer to a journey: It was always arriving,
+                            although we didn’t realise until it had arrived, how
+                            far it had travelled, how weary the cancer must have
+                            been to sleep so tenderly, not bothering anyone and
+                            how quickly the word fitted our lives, easily, as
+                            the Charles river or Thanksgiving or the story of
+                            Martin Luther King ‘Arriving’ To ‘have’ cancer is a
+                            cultural shift: it opens up geographical and
+                            psychological spaces. Cancer is not explicitly
+                            mentioned in ‘The Bridge’, Harrison’s elegy for
+                            Andrew Ziolkowsky. There is only ‘a point of view /
+                            that transcends the camera obscura of cells’ that
+                            intimates his illness and death. The poem succeeds
+                            in bridging the gap between loss and meaning: the
+                            central motif of the poem performs precisely this
+                            function. Understatement is especially effective
+                            when it follows a string of metaphors: Of your death
+                            thirty years of birth remain a shelter of sorts and
+                            I can speak of solid structures anchored struts, of
+                            tollways, railways of scientists and imagists of
+                            space and style. Even grass feels the weight of
+                            grief Harrison’s poetry crosses the space between
+                            death and birth with words containing images of
+                            travel and movement. Conversely, experience of the
+                            world provides ‘struts’ and ‘structures’ for a
+                            moving and highly impressive poetry that
+                            acknowledges its own origin in ‘the weight of grief’
+                            and recognition of the poetic drive: ‘I think I must
+                            write this down’ (‘Dear B’).
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Public Connotations - Dear B Peter Rose Australian
+                            Book Review, No. 212, July 1999 Since the
+                            publication in 1995 of her first collection,
+                            Michelangelo’s Prisoners , Jennifer Harrison has
+                            continued to impress readers and to broaden her
+                            repertoire. Her fourth collection in as many years,
+                            the intimately entitled Dear B , consolidates her
+                            reputation and demonstrates sufficient difference
+                            and intensity to satisfy admirers of this sensitive,
+                            likeable poet. As in her previous collections, there
+                            is no swagger or braggadocio. Falsity of tone or
+                            temperament is not a feature of this unassuming if
+                            yearning writer. The subjects are often modest,
+                            peripheral, domestic, yet they can reverberate with
+                            more public connotations. One such poem opens the
+                            collection: ‘The Getting of Wisdom’. The first line
+                            in the book is surely deliberately placed: ‘As my
+                            mother said’ - an unostentatious but pointed
+                            epigraph. Cabramatta/Cudmirrah , her previous book,
+                            revealed the extent of her filial mindfulness. In
+                            the new poem, a kind of muted sadness runs through
+                            these maternal legacies, which become bleaker with
+                            recollection, like a rueful dream: ...Treat others
+                            as you’d have done unto you, never boil abalone in
+                            the pressure cooker, a little Ajax on the teeth for
+                            whiteness, we’ll buy them a present but let’s only
+                            give it to them if they’ve got one for us.
+                            Elsewhere, as the poet moves around in this
+                            pleasingly peripatetic volume, there is a sense of
+                            defensiveness or defeat, if not defeatism. There is
+                            nothing romantic or redemptive about this
+                            identification with misfortune. Travel sharpens her
+                            innate sense of the mortal and the tawdry in the
+                            civic, as in ‘Lightning Ridge’: An emblem of the
+                            town’s history, a shack made of beer bottles becomes
+                            a museum. Easy to imagine someone down on their luck
+                            slapping the cement on an empty. Harrison is always
+                            at her best when she is roaming, uprooted, somehow
+                            stateless. Even a fairly modest poem like ‘New
+                            Year’s Eve, Boston Common’ (part of the long
+                            sequence ‘Boston Poems’) opens up into something
+                            quite strange and isolating: Children scratch their
+                            names into puddles. Strangers hug each others
+                            gloves. Shots of bourbon burn like Sydney. I stay
+                            past midnight when the kissing starts. The
+                            influences in Harrison’s work are subtle, and
+                            various. In that third line, with its scorched
+                            notion of Sydney, one detects an echo of Gig Ryan.
+                            Two memorable lines in Harrison’s previous book -
+                            ‘like everything else, you / resemble bits of
+                            socialism’ - had a similar effect. The slight warp
+                            and staccato give the poetry a pleasing edginess and
+                            variety, moderating the personal. Good poets jolt us
+                            intermittently with the unexpected. Lines like
+                            ‘She’ll be describing a third party, a white noise’
+                            and ‘And the sun drinks colour from the fences’
+                            compel us to respond long after the poet has
+                            restlessly departed. Clearly, though, some of the
+                            strongest poems in this new collection are
+                            unambiguously direct. There is a long cancer poem,
+                            frank and observant, but also done with considerable
+                            restraint. It reminds me in its spareness and
+                            insight of early Hodgins, and late Hodgins, on the
+                            same subject. ‘It must have been arriving, always’.
+                            The unpunctuated plainness of some of the poems in
+                            this cycle heightens the shock, the existential
+                            affront. I ask questions but more arrive later when
+                            I’m at home alone in the dark with my cells Yet even
+                            in this state of numbness or dislocation the poet
+                            achieves a sort of timeless weirdness which presents
+                            her with some of the best images in the book: you
+                            hold me like a circle like a clock I sew the hem of
+                            a dress and now you keep away Reference to Akhmatova
+                            in an earlier poem surely offers one possible clue
+                            to poems such as ‘The Abbey’: If I were to say the
+                            river has broken its bank they would open their laps
+                            and cradle my lips which speak the truth. For me,
+                            the long title-poem, another travelogue, possibly
+                            too epistolary, seems less successful than poems
+                            such as ‘The Light Itself’, ‘The Society of
+                            Psychotherapists’ Ball’, and ‘The Remains of the
+                            Day’. ‘Loneliness is a habit,’ one of the poems
+                            suggests, but Harrison’s sensibility is rarely
+                            apolitical or unengaged. Notwithstanding the
+                            intimate settings and themes, the poet is conscious
+                            of broader implications. In ‘Sewing’, the second
+                            poem in the book, a driver, arriving home late, is
+                            haunted by landscape and evening and ‘the small
+                            deaths of each town’. There is a marvellous, funny,
+                            and somehow very apropos poem about a naturalisation
+                            ceremony in Collingwood in 1992. ‘Ceremony’ is acute
+                            in its detail and understatement. ‘The mayoress gave
+                            everyone / a native plant, a plastic bag of roots.’
+                            In the end, after the rhetoric and the allegiances
+                            and the kangaroo paw, we are stranded, almost
+                            ominously, in an empty hall: ...On the floor, left
+                            behind, lay all the plastic flags people had dropped
+                            in their hurry. Best of all in this context is the
+                            long poem ‘Casino’, which ends the collection. Here
+                            the poet achieves a memorable overview: Rumours will
+                            not be believed but can we trust yet the weird
+                            sciences of our future? This roll, this deal, this
+                            incoherence Incoherent and compulsive indeed, but
+                            there is something almost oracular in the closing
+                            figure of the cracked gambler spinning her wheel and
+                            bailing out her widowhood: I’m content with the
+                            drift the microcosm of strangers their voices like
+                            gravel my gin &amp; tonic minding my machine, my
+                            people. Readers will admire this vulnerable and
+                            exposed poet, many of whose creations demonstrate
+                            the kind of ‘nervous heart’ diagnosed in one poem.
+                            In a longer, tripartite poem, ‘Lot’s Wife’, the
+                            figure of the woman ‘unwraps and sorts the look of
+                            death’: More petrified than ever before she paces
+                            inside her sea-shell calm. What can she do to undo
+                            fear? She can only look. In her fatalism, her
+                            isolation, and her openness to both, Jennifer
+                            Harrison continues to offer a distinctive and
+                            questioning voice in our poetry.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

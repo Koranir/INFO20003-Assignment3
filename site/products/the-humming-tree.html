@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,128 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-humming-tree.svg&quot;);
                         "
                     >
-                        Featured
+                        The Humming Tree
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Bron Nicholls</h3>
+                </div>
+                <img
+                    alt="Cover of The Humming Tree"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-humming-tree/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Humming Tree"
+                        class="product-cover"
+                        src="/assets/books/the-humming-tree/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The Humming Tree Memories of an Eccentric Childhood But
+                        there was no canopy of flowers in mid-winter, of course.
+                        Even the tough, dark-green, pointed leaves appeared to
+                        be unhappy, turning brown on their edges, perhaps
+                        drought-stricken. I closed my eyes, hugged my knees, and
+                        the little tree was in flower again—clouds of
+                        apricot-pink blossom, the colour of sunrise, and buzzing
+                        with thousands of wild honey-bees. I was never afraid of
+                        the bees. They ignored me, and the dogs. The Humming
+                        Tree, Memories of an Eccentric Childhood is a
+                        captivating collection of stories about childhood. It is
+                        a companion volume to Bron Nicholl’s earlier An
+                        Imaginary Mother . Now the focus is on the father of the
+                        family, and his disturbing transition from an
+                        easy-going, jovial man, into somebody inflexible, harsh
+                        and oppressive. The time is the decade following
+                        World-War II; the place is the flat, dry country of
+                        Northern Victoria, where John Nicholls built up a small
+                        but flourishing subsistence farm, and then abandoned it,
+                        forcing his family into another place, another life.
+                        Writing with both a child’s viewpoint and an adult’s
+                        insight, Bron has created a series of pictures filled
+                        with finely-drawn detail, subtle colours, and life’s
+                        unavoidable deep shadows. The Humming Tree is a
+                        biography of the rural poor. There is not a murmur of
+                        rancour. It is ‘a fortunate life’.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-humming-tree.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-humming-tree/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044527</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2017</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>118</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Bron Nicholls was born in Melbourne in 1944. After
+                            the war, her demobbed father took his family to an
+                            isolated region on the Broken Creek in Northern
+                            Victoria.
+                        </p>
+                        <a class="bold" href="/authors/bron-nicholls.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
             </main>
         </div>
         <div class="footer-area">

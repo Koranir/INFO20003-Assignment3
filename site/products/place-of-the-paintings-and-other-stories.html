@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,230 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/place-of-the-paintings-and-other-stories.svg&quot;);
                         "
                     >
-                        Featured
+                        Place of the Paintings and Other Stories
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Graham Henderson</h3>
+                </div>
+                <img
+                    alt="Cover of Place of the Paintings and Other Stories"
+                    class="product-cover-mobile"
+                    src="/assets/books/place-of-the-paintings-and-other-stories/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Place of the Paintings and Other Stories"
+                        class="product-cover"
+                        src="/assets/books/place-of-the-paintings-and-other-stories/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        After all the Napoleons had betrayed themselves, there
+                        was always love. Graham Henderson collects in Place of
+                        the Paintings his favourite stories of the last twenty
+                        years. He moves from the mythic tales of the early 1980s
+                        to his later magical imagery, and confesses, in a
+                        postscript, the wellspring of his imagination. His work
+                        is unique in our fiction. His imagination creates a
+                        remarkable cosmos - a man coughs up fragments of glass
+                        in a sideshow, a neanderthal woman in 19th century
+                        Russia, a letter from exile to an unknown man, an alien
+                        from the extinct planet of Manao, the biblical Lazarus
+                        and a female Odysseus in ‘Sand ’ . His stories are
+                        hauntingly unfamiliar but they visit our unconscious.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/place-of-the-paintings-and-other-stories.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/place-of-the-paintings-and-other-stories/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044411</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>161</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Graham Henderson was born in Melbourne in 1953. He
+                            studied Drama, Literature, Print-making, and Film at
+                            Rusden State College.
+                        </p>
+                        <a class="bold" href="/authors/graham-henderson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Andrew Peek, Island</summary>
+                        <p>
+                            Fiction Andrew Peek Island , No. 97, Winter 2004
+                            Graham Henderson writes big, risky fictions. Some of
+                            them come off, others don’t. His best stories
+                            combine imaginative flair and luminous, rhythmical
+                            prose with a readiness to exploit the mythopoeic.
+                            They feature wonderful sentences like: ‘That blue,
+                            there was no name for it, no colour on earth to
+                            mirror it; it was almost like a huge breach in the
+                            constant world of the visible.’ Less successful
+                            stories, on the other hand, offer: ‘In my mind her
+                            small dark nipples kissing them, her body light as a
+                            flower, above me, beneath me, penetrating invisible
+                            sorrowing ecstasies,’ which left me entirely locked
+                            out of whatever processes, psychic or otherwise, the
+                            speaker is supposed to be going through. The earlier
+                            stories in the collection are among the strongest,
+                            together with ‘The Glass Man’, a dark tale of
+                            creativity, love and healing, at the book’s end.
+                            ‘The She-Wolf,’ ‘The Place of the Paintings’ and
+                            ‘The Ice’ all reminded me of William Golding’s
+                            remarkable 1955 novel The Inheritors , a sci-fi work
+                            that goes back, rather than forward, in time. ‘The
+                            Place of the Paintings’ is particularly impressive.
+                            It explores the workings of artistic consciousness
+                            at a profound level, in the person of an artist
+                            recording narratives of animals, landscape and
+                            people around him. Like the other two stories, the
+                            setting is ancient and tribal. As is the case with
+                            Golding’s novel, the reader is offered radically new
+                            perspectives on art, belief and identity. The
+                            challenge is to use the sophisticated possibilities
+                            offered by language and contemporary narrative form
+                            to evoke the oral and preliterate. The results test
+                            and extend language to remarkable effect. Later
+                            stories explore characters drawn from Homer, the
+                            Bible, ranging widely and in what might be described
+                            as a Laroussian fashion through world mythology. To
+                            redramatise the story of Lazarus from his point of
+                            view is a big ask, as the execution of this tale
+                            called ‘Lazarus’ indicates. According to the cover
+                            notes, ‘Sand’ is about a female Odysseus. I found it
+                            difficult to follow and, even with the aid of the
+                            cover note, the connection with the Odyssey remained
+                            unclear to me. ‘Room’ is a five-page, paragraphless
+                            dramatic monologue incorporating allusions from the
+                            Great Transmutation of alchemy to the World Tree of
+                            the Kabbalah and many points ancient and modern, in
+                            between. I had trouble coping with the narrator, a
+                            crucial component in any dramatic monologue, and
+                            this went hand in hand with a broader lack of
+                            artistic discipline and control in the use of mythic
+                            sources. There’s no lack of ambition in these
+                            fictions but form and content don’t always support
+                            each other as effectively as one might expect to
+                            find in, for instance, something comparable by
+                            Borges or Edgar Allan Poe. In addition, errors in
+                            spelling and tense indicate a lack of finish.
+                            Talking of ‘finish’, the last narrative, a
+                            ‘Postscript’ entitled ‘Asylum’ and billed by the
+                            cover note as a confession of the ‘wellspring of
+                            [the author’s] inspiration’, is rambling and, if in
+                            reality autobiographical, poses problems for the
+                            reader. In an acknowledgment to his book Henderson
+                            thanks family and friends for their love through the
+                            ‘last fourteen years’ of his ‘illness,
+                            schizophrenia’. The critic’s first rule is to avoid
+                            naive connection between life and work: in this
+                            case, though, I was left wondering if Henderson’s
+                            editor had spent enough time pondering how they
+                            worked together.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Lucy Sussex, The Sunday Age</summary>
+                        <p>
+                            Short Fiction Lucy Sussex The Sunday Age , 26
+                            October 2003 The fantastic is not only found in
+                            enormous tomes with dragons on the cover. Indeed, it
+                            is increasingly found in ‘mainstream’ or ‘general
+                            fiction’, as with this book. Place collects Graham
+                            Henderson’s favourite stories written over the past
+                            20 years, although less than half have been
+                            previously published. The mode here is elliptical,
+                            languid, even Borgesian (said writer being
+                            namechecked in the book). Nor is it particularly
+                            Australian, the sensibility and settings tending to
+                            the European. We get an ex-sideshow freak, cursed
+                            with the ability to cough up glass; cavemen; even an
+                            alien. Pick of bunch: the five and a half pages on
+                            the Biblical Lazarus.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Antipodes Review</summary>
+                        <p>
+                            Place of the Paintings and Other Stories Isolation,
+                            Madness and Burdensome Prose Anna Marie Christiansen
+                            Antipodes , Vol. 18, No. 2, December 2004 (pgs
+                            183-184) [Text not yet available]
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,222 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/diary-of-a-dwarf.svg&quot;);
                         "
                     >
-                        Featured
+                        Diary of a Dwarf
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Graham Henderson</h3>
+                </div>
+                <img
+                    alt="Cover of Diary of a Dwarf"
+                    class="product-cover-mobile"
+                    src="/assets/books/diary-of-a-dwarf/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Diary of a Dwarf"
+                        class="product-cover"
+                        src="/assets/books/diary-of-a-dwarf/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        With his novel The Mountain Graham Henderson was
+                        recognized as ‘a new novelist of very remarkable power’
+                        (Stephen Knight) and the novel as having ‘shimmering and
+                        magical power’ (Helen Daniel). Diary of a Dwarf extends
+                        the reach of that stunning debut. Ironmonger, the dwarf
+                        of the title novella, is an inventor of unlikely board
+                        games. Foote, of ‘Foote’s Last Stand’, is either a 117
+                        year old neglected novelist or failed pornographer. Boot
+                        is factotum to Dr Hieronymous Bladder, a psychiatrist in
+                        improbable disguise, pursued by his patients Bones and
+                        Ophul. In these novellas Henderson takes comedic
+                        invention to its extreme; he reveals the tragic scope of
+                        the clown. ‘Nocturnal Emanations of Fish’ tells many
+                        stories in one. Story-telling is a ploy to stave off the
+                        narrator’s suicide. The ‘death of the author’ is
+                        declared from within. De Sade is a wimp, the anti-novel
+                        like Jane Austen when the demented author makes his
+                        final great plea for sanity. His control is
+                        extraordinary. ‘Fish’ alone would confirm Henderson as a
+                        radical and significant writer.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/diary-of-a-dwarf.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/diary-of-a-dwarf/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>064624048X</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1995</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>178</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Graham Henderson was born in Melbourne in 1953. He
+                            studied Drama, Literature, Print-making, and Film at
+                            Rusden State College.
+                        </p>
+                        <a class="bold" href="/authors/graham-henderson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Reviews Fiction Shorts Kate Macdonell (academic)
+                            Australian Book Review , No. 180, May 1996 When
+                            Graham Henderson’s first novel, The Mountain , was
+                            published and subsequently short-listed for The Age
+                            Book of the Year Award in 1989, many reviewers both
+                            noted its thematic investment in the bizarre, the
+                            uncanny and the ambiguous, and commended its
+                            ambitiously self-reflexivc and polysemantic
+                            qualities. It was seen as a ‘difficult’ book - but
+                            one which was intellectually rewarding to read.
+                            Textual martyrs and masochists alike will be pleased
+                            to learn that with this collection of novellas
+                            Henderson is back in fine form. But don’t be put off
+                            if you’re not into pain. Readers who simply wish to
+                            engage with Henderson’s depictions of paranoid and
+                            schizoid subjectivities, his language games and/or
+                            his often parodic representations of the
+                            unconscious, may also find this book tempting. The
+                            novellas in this collection focus on several
+                            repulsive, impotent and incredible male characters.
+                            In ‘Diary of a Dwarf’, a self-obsessed dwarf named
+                            Ironmonger records ‘tall stories’ about his life and
+                            in ‘Boot’ the eponymous anti-hero acts as the
+                            maladroit ‘side-kick’ of Doctor Hieronymous Bladder
+                            - a man who not only has an inclination towards
+                            parapraxis and a penchant for tugging at the rubber
+                            genitalia on the ape-suit he wears, but one who also
+                            fears that two of his former patients are plotting
+                            his destruction. ‘Foote’s Last Stand’ constitutes
+                            the edited memoirs of an arguably pornographic
+                            writer, Silas Foote, and in ‘Nocturnal Emanations of
+                            Fish’ - the most compositionally experimental and
+                            compelling novella in the collection - the unnamed
+                            protagonist obsessively writes lurid stories about
+                            the many characters who cramp his bleak and
+                            murderous mind. Although ‘Boot’, for example, is
+                            somewhat tedious, the collection as a whole is worth
+                            consideration - but just remember that if you do
+                            decide to broach this host of postmodern imaginings,
+                            you’ll need to leave ‘commonsensical’ concepts like
+                            credibility and logic outside the front cover.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Muse Review</summary>
+                        <p>
+                            Books Robert Verdon Muse (Canberra), No. 152, June
+                            1996 Graham Henderson’s bizarre humour reminds us of
+                            our own comicality. These novellas reek of the
+                            insane and the unrequitedly erotic. ‘Diary of a
+                            Dwarf’ is the tale of a monomaniacal midget called
+                            Ironmonger whose chief interests are voyeuristic sex
+                            and boardgames of his own devising. Prejudice
+                            against his ‘dwarfishness’ and derangement place him
+                            outside adult or even human society. As a result, he
+                            is guileful yet artless, noting in his diary that
+                            ‘in the game of life I’m a complete novice.’ Aren’t
+                            we all. ‘Boot’ explores the combative relationship
+                            between a male nurse called (curiously) Boot and a
+                            paedophilic psychiatrist named Dr Bladder, both
+                            besieged by enantiomorphic mental patients (also
+                            male). Boot creaks on in timeless subordinate
+                            confusion, while Bladder lashes out at him with
+                            professional arrogance. The result is superb satire.
+                            I winced, though, at the Goonish bits in
+                            pseudo-German (or Yiddish?) dialect: I am zee
+                            Viennese gynaecologen, Herr doktor Shtekel, at your
+                            zervice. Ach du lieber! Ich kann nicht sage mehr
+                            dann gerblunden! ‘Foote’s Last Stand’, about the
+                            podiatrically tragic past of a 117 year old writer
+                            of erotica-cum-pornography, is funnier still. A
+                            parody of literary autobiography, it will appeal to
+                            struggling novelists. Silas Foote has been writing
+                            for 80 years and published only eight books. Perhaps
+                            that is a good thing. The final offering, ‘Nocturnal
+                            Emanations of Fish’ is written in disjointed phrases
+                            separated by ellipses. Its terminal bleakness is
+                            wearying. The ‘hero’, again a mad, ageing author
+                            (one is reminded of this reviewer), is trapped in
+                            the prison-house of his own sinister words. He
+                            sentences us to many pointless labyrinthal
+                            narratives. these words all that matter ... these
+                            words ... all that keep me from suicide ...
+                            Arresting stuff, but I sometimes wonder whether
+                            we’ve come very far since the Absurdism of the
+                            1940s.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

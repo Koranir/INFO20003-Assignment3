@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,328 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/thicker-than-water.svg&quot;);
                         "
                     >
-                        Featured
+                        Thicker than Water
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Judith Colquhoun</h3>
+                </div>
+                <img
+                    alt="Cover of Thicker than Water"
+                    class="product-cover-mobile"
+                    src="/assets/books/thicker-than-water/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Thicker than Water"
+                        class="product-cover"
+                        src="/assets/books/thicker-than-water/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Writers and artists had come here for centuries but she
+                        was neither. She was not even seeking a new lover or
+                        running away from an old one. No, her mission was
+                        altogether different. And the fact that she came in a
+                        Boeing instead of a chariot drawn by griffins should not
+                        have encouraged anyone to doubt the seriousness of her
+                        purpose. Lucy was Nemesis. She had come to settle a very
+                        old score. As her mother Kate lay dying, Lucy O’Connell
+                        had learnt of a rape committed in Carlton by a young
+                        Italian boy. Not the best introduction to the parent she
+                        had never known and, yes, it was a long time ago, but
+                        Lucy believes it is never too late for justice. Wary of
+                        the amorous Stefano’s assistance, she battles her way
+                        through Italian bureaucracy and finally traces her
+                        father, Paolo Esposito, to his restaurant by a beach in
+                        southern Italy. There she meets his wife Silvana and her
+                        own half-siblings: cheeky Andrea, studious Chiara,
+                        scatty Rosaria. She lives an uneasy lie with this new
+                        family. She obsesses over how to punish her father
+                        without hurting the others. Violent forces gather. Still
+                        she ignores the friends, who insist that penitence can
+                        be more real than a mumbled rosary might suggest. That
+                        la vendetta is not the work of gods but of devils. Cover
+                        photograph: Lucia Rossi – Water Profile Cover design:
+                        Gail Hannah
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/thicker-than-water.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/thicker-than-water/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044879</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2014</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>296</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Colquhoun was born in North Queensland and studied
+                            production at the National Institute of Dramatic
+                            Art. She was a film editor with ABC Television and a
+                            radio copywriter before becoming invited to write
+                            television scripts for Bellbird.
+                        </p>
+                        <a class="bold" href="/authors/judith-colquhoun.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            The Weekly Review Thicker Than Water by Judith
+                            Colquhoun
+                        </summary>
+                        <p>
+                            Judith Colquhoun writes of a lovely death and
+                            revenge Teresa Murphy The Weekly Review (Brighton
+                            and Port Phillip) 19 May 2014 It was a seminal
+                            moment in Australian TV many baby boomers would
+                            still remember: Molly Jones dying in A Country
+                            Practice . Younger readers grieving over the recent
+                            loss of Asher Keddie’s on-screen doctor boyfriend,
+                            Patrick, in Offspring will understand the impact TV
+                            deaths can have – not just on viewers but also on
+                            those who ‘kill off’ the characters. Brighton’s
+                            Judith Colquhoun is one of these: she wrote the
+                            Molly Jones episode when ‘Australia wept into the
+                            Kleenex’ in 1985. ‘We wept plotting, actually,’ the
+                            veteran screenwriter said. ‘I was considered good at
+                            doing a ‘lovely death’ so I wrote the episode when
+                            Molly, who had leukaemia, dies quietly in the garden
+                            as she watches her kids and husband fly a kite.’ It
+                            was the series’ highest-rating episode in its
+                            12-year run. Colquhoun – who won five Australian
+                            Writers’ Guild awards – has created many memorable
+                            TV moments during 40 years of scriptwriting, which
+                            started with Bellbird . Neighbours , Home and Away ,
+                            Blue Heelers , The Sullivans , GP , Something in the
+                            Air , Flying Doctors , MDA , The Man from Snowy
+                            River ... she has written for them all, as well as
+                            children’s series Cornflakes for Tea , Zoo Family
+                            and Ocean Girl . A new chapter of her life has
+                            opened with the publication of her first novel,
+                            Thicker than Water , a story of revenge set in
+                            Naples, where Colquhoun advised on an Italian soap
+                            opera in the mid-’90s. Colquhoun is now writing her
+                            second novel. ‘This one’s about redemption and set
+                            in Oz,’ she said.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sisters in Crime Review</summary>
+                        <p>
+                            Thicker than Water Suzanne Bozorth -Baines Sisters
+                            in Crime - 12 June 2014
+                            http://www.sistersincrime.org.au/content/thicker-water
+                            “Writers and artists had come here for centuries but
+                            she was neither. She was not even seeking a new
+                            lover or running away from an old one. No, her
+                            mission was altogether different. And the fact that
+                            she came in a Boeing instead of a chariot drawn by
+                            griffins should not have encouraged anyone to doubt
+                            the seriousness of her purpose. Lucy was Nemesis.
+                            She had come to settle a very old score. As her
+                            mother Kate lay dying, Lucy O’Connell had learnt of
+                            a rape committed in Carlton by a young Italian boy.
+                            Not the best introduction to the parent she had
+                            never known and, yes, it was a long time ago, but
+                            Lucy believes it is never too late for justice. Wary
+                            of the amorous Stefano’s assistance, she battles her
+                            way through Italian bureaucracy and finally traces
+                            her father, Paolo Esposito, to his restaurant by a
+                            beach in southern Italy. There she meets his wife
+                            Silvana and her own half-siblings: cheeky Andrea,
+                            studious Chiara, scatty Rosaria. She lives an uneasy
+                            lie with this new family. She obsesses over how to
+                            punish her father without hurting the others.
+                            Violent forces gather. Still she ignores the
+                            friends, who insist that penitence can be more real
+                            than a mumbled rosary might suggest. That la
+                            vendetta is not the work of gods but of devils.”
+                            Proof of Judith Colquhoun’s writing ability is
+                            spelled out in her 40 year career scriptwriting for
+                            television, and her various awards including Life
+                            Member of the Australian Writers’ Guild. But she’s
+                            given that away to write her first novel, based on a
+                            script that never came to fruition. Given that
+                            script writing is somewhat different than writing a
+                            novel, Judith hasn’t done too bad a job of it,
+                            although I wish I hadn’t known she was a
+                            scriptwriter. I kept expecting the story to turn
+                            into a made for TV book, which wasn’t really the
+                            case. Underlaying this novel, which doesn’t really
+                            seem like a crime novel, is the understanding of
+                            Italy, the place, and Italy, the culture. When I say
+                            it doesn’t seem like a crime novel, there’s no real
+                            blood and guts here, but the slow burn of someone
+                            who’d like revenge for wrong doing–(how Italian)–and
+                            the torturous thought processes of how to take
+                            revenge without hurting other people not involved in
+                            the matter. The beauty of the Italian landscape is
+                            there, also the garbage. The Italian language is
+                            part of it, and of course, food and drink. And, what
+                            else but to include a little romance for the main
+                            character, not bodice-ripping Italian, but proper
+                            nice boy Italian. Also very interesting is the
+                            interactions of Australian culture with Italian in
+                            some unexpected subplot developments. Judith also
+                            refers to the ever present corruption inherent in
+                            the Italian way of life even on the simplest scale.
+                            Being of Italian extract myself, and having just
+                            returned from Sicily, I could visualise this family,
+                            see the intentions and the undercurrents from the
+                            slightly underhanded way the matriarchs work, to the
+                            vacuous step sister, to the adored little brother. I
+                            could understand the excitable tone of the language
+                            and the animated hand waving and voices of the
+                            speakers. I could smell the ocean, be amazed at the
+                            garbage only meters from the gorgeous views, and
+                            shake my head at the incomprehensible way corruption
+                            is tolerated by communities and families.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Ben Marshall Review</summary>
+                        <p>
+                            Thicker than Water, by Judith Colquhoun Ben Marshall
+                            Blog review 16/7/2014
+                            http://www.benmarshall-wordpirate.com/blog-of-writing/book-review-thicker-than-water-by-judith-colquhoun
+                            ‘It’s just a story.’ This is how Judith
+                            self-deprecatingly referred to her new novel after I
+                            complained my wife had grabbed it and, before I
+                            could get to it, started reading. My wife – a fast
+                            thinker but a slow reader - wolfed down Thicker Than
+                            Water . I watched her find time to read when
+                            normally she wouldn’t bother. A good sign. When it
+                            was finally my turn, I was drawn into the story. A
+                            young woman, Lucy, born from a rape, sets out to
+                            avenge her mother. The man she seeks, her biological
+                            father, lives on the other side of the planet, is
+                            Italian, has a loving family, a business under
+                            threat from mafiosi, is well-regarded, and has
+                            everything to lose from having his crime exposed.
+                            All power lies in Lucy’s hands, and the main driver
+                            of the narrative is how she uses it. The setting
+                            moves from Victoria, Australia to Southern Italy,
+                            both familiar to the author. Colquhoun’s dialogue is
+                            pitch-perfect, and her naturalistic prose is a
+                            relaxed yet taut mix of show-and-tell that works
+                            well to propel story to just the right pace with
+                            just the right amount of context. Any exposition is
+                            brief and insightful. I never felt a sense of the
+                            authorial voice intruding. The portrayal of Southern
+                            Italy is rich without being verbose. Colquhoun
+                            paints a picture well. Crisp, clean writing. I
+                            couldn’t fault this charming story – I was hooked,
+                            didn’t know what was going to happen next, and kept
+                            reading to find out. It may seem like faint praise
+                            to any non-writers, but TTW is also beautifully and
+                            efficiently structured and edited. And well proofed.
+                            I found one misspelling. Did I mention My Asperger’s
+                            side? Despite the dark crime that is the seed of
+                            TTW, I’d describe this as a warm, humane and honest
+                            portrayal of human behaviour. ‘Just a story’? Sure,
+                            but one I have no trouble saying I enjoyed a great
+                            deal. Recommended! *Disclosure: Judith is a friend
+                            and colleague. That said, I paid for my copy, and,
+                            trust me here - if Thicker Than Water had turned out
+                            to be a dud, I’d have slipped my hands in my pockets
+                            and walked away, whistling softly, never writing
+                            this review and hoping Jude never asked what I
+                            thought of it. Buy it from Black Pepper Publishing .
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Senior Review</summary>
+                        <p>
+                            Thicker than Water, by Judith Colquhoun The Senior -
+                            20 July 2014 Kate O'Connell was a rare one. The
+                            teenager from Carlton in Victoria had stood up to
+                            the nuns at the home for single mothers and refused
+                            to give up her baby girl for adoption. It was 25
+                            years later – on her deathbed – that she finally
+                            told her daughter, Lucy, the truth. Lucy was born
+                            the result of rape by a young Italian man. There was
+                            only one thing for it. Lucy was going to Italy to
+                            find the father she never knew and make him pay for
+                            raping her mother. She never considered the
+                            consquences for her father, Paolo, his wife,
+                            Silvana, or her half-siblings. She never considered
+                            her own feelings or that blood was thicker than
+                            water. Author, Judith Colquhoun, is better known in
+                            Australia as a TV scriptwriter, with credits to her
+                            name including The Sullivans, Flying Doctors, A
+                            Country Practice and Neighbours. Her debut novel,
+                            Thicker Than Water , is a powerful statement on
+                            family.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,441 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/navigatio.svg&quot;);
                         "
                     >
-                        Featured
+                        Navigatio
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alison Croggon</h3>
+                </div>
+                <img
+                    alt="Cover of Navigatio"
+                    class="product-cover-mobile"
+                    src="/assets/books/navigatio/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Navigatio"
+                        class="product-cover"
+                        src="/assets/books/navigatio/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        And it seems to me miraculous that another human being
+                        could love me as my daughter does, when she grants me
+                        the pure action of her kiss. And perhaps this is the sum
+                        of my labour: to find, amid the rubble of illusions, the
+                        real kiss that always lay there, unbroken and wholly
+                        itself. Alison Croggon's Navigatio is a story of double
+                        migration. Told in alternative chapters, it is part
+                        family memoir drawing on her own childhood arrival from
+                        South Africa, part dramatized account of nineteenth
+                        century sea-voyage and arrival. It is a feat of memory
+                        and imagination, finally drawing together the two tales,
+                        like twine through canvass, to reveal the individual
+                        caught in the cruel flow of history. The last chapter,
+                        the log-book of a sea-captain becalmed at sea, is a tour
+                        de force . It brings us to the eye of the storm, a place
+                        that has affinities with Eliot's ‘ still point of the
+                        turning world. ’ As much as it is a journey through the
+                        physical world, Navigatio is a journey towards poetry.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/navigatio.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/navigatio/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044098</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1996</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>111</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alison Croggon was born in 1962 in Transvaal, South
+                            Africa, and has three children. Alison Croggon moved
+                            as a child to England in 1966 and to Australia in
+                            1969, growing up near Ballarat and later moving to
+                            Melbourne.
+                        </p>
+                        <a class="bold" href="/authors/alison-croggon.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>John Ashton, ArtStreams</summary>
+                        <p>
+                            book review Navigatio John Ashton ArtStreams ,
+                            April/May 1997 Navigatio is both an autobiography
+                            and a nineteenth century sea journey whose
+                            narratives occupy alternate chapters and are
+                            nominally unified by titles commencing with the
+                            letter ‘A’. It also has the audacity to open with
+                            ‘Once upon a time...’ The controlled authorial voice
+                            of the biographer is strong with descriptive imagery
+                            which is kept almost entirely to the visual; a
+                            childhood memory which employs serious reportage as
+                            she recalls the early years in South Africa,
+                            Cornwall and Australia. On one level we get the
+                            matter of fact portrait of a family which is trying
+                            to secure an emotional and geographical grip on its
+                            identity as a family: Suddenly the fact is firmly
+                            fixed in our lives. We will be away for three years
+                            in Australia, where the days and nights are
+                            upsidedown and the seasons are backwards. My mother
+                            is desperately unhappy. We will travel without my
+                            father... At another level, the prosaic description
+                            of rural life: We were allowed to watch the milking:
+                            the calling cows herded into the milkshed and
+                            hitched up to shiny machines, and milk running
+                            through the cow-dung on the concrete floors. But
+                            while trying to maintain the linear symmetries of
+                            this structure, the ‘straight’ narrative is
+                            continually subverted by the ever-changing poetics
+                            of the strange and lonely journey of the HMS Fedelis
+                            , at times seemingly random and unconnected, we
+                            ‘hear’ the voices of the crew, a child’s wonder, a
+                            captain’s anxiety. And in following a reminiscence
+                            with almost religious significance, we are plunged
+                            into a young girl’s trauma of an horrific assault.
+                            The rhythms and imagery of which echo the Old
+                            Testament, Hieronymous Bosch, Coleridge and yes, the
+                            ghost of Sylvia Plath which ever haunts; as it does
+                            much poetry of the twentieth century. ‘Am I thy
+                            bitch? My dugs all barren, whelping puppies in a
+                            ditch. You’d have me so my darling, I’d gnaw thy
+                            pate like the bishop in the ice of hell, forever and
+                            ever, until you answered me, until the stone split
+                            open and spoke its water.’ One reader commented that
+                            Navigatio is ‘therapy writing’ - the author’s voice
+                            has precluded such critique in the following
+                            sentence: ‘I cannot understand myself except for
+                            language’ and ‘...in its trespass, a poetic language
+                            retrieves the unanaesthctised reality we inhabit at
+                            our births’ Therapy? So What? Navigatio is a
+                            seductive read, and as in all good poetry, a secret
+                            world is both revealed and shrouded in lyrical
+                            ambiguity. Each chapter has both a completion and a
+                            hook to keep the reader engaged.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Airlie Lawson,</summary>
+                        <p>
+                            Books Extra Paperbacks Navigatio Fiona Capp The Age
+                            , 30 November 1996 Established last year, Black
+                            Pepper is a small press which is rapidly making a
+                            name for itself and has already published 16 titles.
+                            Alison Croggon is best known as a poet, librettist
+                            and playwright. In her first novel, she combines
+                            personal memoir with the story of a 19th-century sea
+                            voyage as she navigates the stormy waters of her
+                            family’s past. ‘It took until my adulthood to
+                            acknowledge how my father lied to me... I don’t know
+                            how to navigate past what he has taught me about
+                            truth - that truth does not exist, that trust is
+                            impossible.’ Now, as she contemplates the world her
+                            children inhabit, Croggon offers up a meditation on
+                            memory and the meaning of ‘truth’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            shorts Navigatio Airlie Lawson Australian Book
+                            Review , No. 186, November 1996 Find a comfy chair
+                            and a quiet room before you embark on Navigatio .
+                            Though slim, Alison Croggon’s first novel is not
+                            light. Prose narrative overlaps poetry to produce a
+                            work densely packed with images and voices. The
+                            past, the present and the imagination are all
+                            invoked, making the reader constantly reassess and
+                            reconsider what has gone before. Croggon, widely
+                            known as a poet, mixes her own story of migrating
+                            with others. One of these others is a young mother
+                            who is travelling to Australia over a hundred years
+                            ago, and her feelings of melancholy, loss and
+                            looking are strikingly similar to the author’s own.
+                            What is to be trusted? Doubting God, Croggon and the
+                            characters ponder on the life of language, the
+                            nature of beauty and the cruelty of man. Who is to
+                            be known they ask, and how? Is a person’s fate
+                            wholly tied up in what has gone before? The awesome
+                            helplessness of just being borne along by life is
+                            wonderfully evoked in the final chapter, the logbook
+                            of a sea captain, dated 1869. A thoughtful journey.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            Past Lives: A Poet’s Retrospective Navigatio
+                            Kris-Ann Ehrich Social Alternatives , Vol. 17, No.
+                            2, April 1998 Alison Croggon trained as a journalist
+                            and her work includes poetry, plays, libretti,
+                            translations, editing and criticism. Croggon’s book,
+                            Navigatio , is a story of her family’s double
+                            migration and an account of a nineteenth century sea
+                            voyage and arrival. The book is divided into ten
+                            different stories, all weaving past and present
+                            history. The prologue informs the reader of her
+                            father: I knew all my childhood that I was my
+                            father’s favourite daughter. The betrayals of
+                            adulthood, the cruelties and indifference, do not
+                            change this, but endow it with the intolerability of
+                            paradox. My weaknesses, my fears, my dishonesties,
+                            the defining hurts of my life, are my inheritance
+                            from him: and these words. Particularly these words.
+                            I want to migrate forever from these shadowlands
+                            where speaking is not possible because the darkness
+                            swallows every syllable before it can be uttered,
+                            this realm that ate up my parents. Each step takes
+                            me further into shadow, into the impossibility of
+                            speaking. But I must persist. (pg. 1) Croggon goes
+                            on to talk of her father’s dreams of a new life in a
+                            new country ‘where a man could walk without the
+                            burden of history on his shoulders’ (pg. l). She
+                            describes her father’s long absences and her
+                            mother’s despair and disillusionment. The life her
+                            mother had dreamt about was very far removed from
+                            the reality of life she had inherited. The first
+                            five stories tell of the voyage to England firstly
+                            and then other places. These are vividly written
+                            anecdotes of the author’s childhood. Chapter 7,
+                            ‘Africa’, brings us into the present day with
+                            Croggon talking of her own children and then
+                            intertwining memories of the past, her own despair
+                            and feelings of futility. Chapter 9, ‘Accounts’, is
+                            moving from the past into the present with raw
+                            emotion. Croggon expresses the need to bury herself
+                            in her writing, ‘I cannot understand myself except
+                            through language’ (pg. 95 ). In this chapter the
+                            author goes on to describe the hardships that the
+                            family encounters on arrival to Australia. Finally,
+                            Chapter 10, entitled ‘Apeiron’, is a logbook of a
+                            sea captain becalmed at sea. The final few lines are
+                            very climatic and full of drama: Yet, despite my
+                            Despair and Grief, I am possessed by strange
+                            Exhilaration, which I am at a loss to explain, as if
+                            everything I desire and is Mine is before me, as
+                            behind a door which is merely closed and presently
+                            will Open: and I am overwhelmed with Gratitude for
+                            the beauty and terror of the world... (pg. 111)
+                            There are moments of sheer beauty in Croggon’s
+                            written words. I especially found the following
+                            paragraph truly poetic when the author describes her
+                            own daughter: And it seems to me miraculous that
+                            another human being could love me as my daughter
+                            does, when she grants me the pure action of her
+                            kiss. And perhaps this is the sum of my labour: to
+                            find, amid the rubble of illusions, the real kiss
+                            that always lay there, unbroken and wholly itself.
+                            (pg. 13) This book is an interesting retrospective
+                            of the author’s life which interlaces different
+                            stories and past lives somewhere deep in Croggon’s
+                            subconscious; a fascinating infusion of thoughts,
+                            ideas, imaginings and her reality as she knows it.
+                            Well worth reading.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Radio National Review</summary>
+                        <p>
+                            Books and Writing Geoff Page (poet) Radio National,
+                            broadcast February 1997 Navigatio , a first novel by
+                            the talented young Melbourne poet, Alison Croggon,
+                            has also been released by the same innovative new
+                            publisher [as for Vivien Hopkirk ’s Meditations of a
+                            Flawed Groom ], Black Pepper. Like Hopkirk’s Flawed
+                            Groom , Croggon’s Navigatio is also highly
+                            experimental and unorthodox in form. Two stories
+                            alternate here; one a fairly straightforward
+                            autobiography, the other a stylistically adventurous
+                            account of what seems to be an analogue for the
+                            author’s own family voyaging to (or at least
+                            towards) Australia in 1869. The two strands of the
+                            novel, if that’s what it is,are decidedly different
+                            from each other, despite the centrality of the
+                            mother/three daughters unit in both. The
+                            autobiography is a relatively unadorned and
+                            presumably accurate account of the unhappy marriage
+                            of Croggon’s parents - and of some of the more
+                            important highs and lows of her childhood in South
+                            Africa, Cornwall and Australia. Unlike the
+                            autobiographies of, say, Sally Morgan or Albert
+                            Facey, there is not a great deal here which
+                            transcends the personal. Clearly this strand offers
+                            plentiful material for poems (as seen already in
+                            Croggon’s outstanding first collection, This is the
+                            Stone ) - or possibly for an autobiographical novel
+                            along the lines of Kate Jennings’ recent book, Snake
+                            (also about the unhappy marriage of an writer’s
+                            parents). As it stands, however, despite Croggon’s
+                            more than competent writing, this half of the book
+                            is finally disappointing. This is particularly so in
+                            contrast to the other strand dealing with the 1869
+                            voyage. Here Croggon displays both lyricism and
+                            insight. In the sections ‘Anaesthesia’ and
+                            ‘Adelaida’ she reports convincingly on the psyche of
+                            her young mother of three in a marriage already
+                            turning unhappy. In between a complaining letter to
+                            her brother and a cheerful letter to her husband
+                            describing the same unbearable shipboard situation
+                            we get a moving and poetic embodiment of what must
+                            surely have been the feelings of such a woman at
+                            that time and how severely she would have had to
+                            repress them. The quality of Croggon’s prose itself
+                            is additionally affecting since it reminds us of how
+                            much of the woman’s own essence she has had to give
+                            up to fit the demands of others - and the fantasies
+                            about marital happiness which she has absorbed from
+                            them. One paragraph is enough to get the flavour:
+                            When I was a virgin and whole the sea was different,
+                            it was a horse and I was fearless. I was blown
+                            across its expanse without harm, I knew too little
+                            to care who I was. Now I am small and timorous, a
+                            nose poking out from the wainscot, a scurry of
+                            frills, a noise of yes. I put my hand to the ladle
+                            and the crib and arrange the silver. How is it I
+                            despise myself so much? In another section of this
+                            1869 narrative, the one called ‘Ananke’, we are
+                            given a strong and stylishly colloquial monologue by
+                            a female convict who has been savagely abused by her
+                            employers in England - and, seemingly, by her father
+                            as well (whose influence she finds impossible to
+                            escape and to whom the monologue is addressed). In
+                            the closing sections of this strand, both equally
+                            well written, Croggon becomes steadily more
+                            metaphysical and the story becomes a kind of
+                            reenactment, almost in magic realism mode, of
+                            Coleridge’s ‘Rime of the Ancient Mariner’. As a
+                            piece of prose the final section is,as the
+                            publishers claim, a tour de force but whether it
+                            makes a convincing conclusion to the plot is another
+                            question. As a postmodern appropriation, however, it
+                            is certainly carried off with great élan. It is
+                            hard, ultimately, to know what to make of Navigatio
+                            .What do you say when a book is two books - one
+                            decidedly more than the other? Probably both could
+                            have done with a little more work - the
+                            autobiography given a little more of the poetic
+                            writing found in the other half - and the sea voyage
+                            filled out perhaps into the full-blown lyrical and
+                            freestanding novel that it wants to be. In the
+                            meantime Black Pepper has Alison Croggon’s second
+                            volume of poetry well on the way, a book which will
+                            surely be less problematic and more consistently
+                            enjoyable than the rather strange adjacencies of
+                            Navigatio .
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Imago Review</summary>
+                        <p>
+                            New Writing Navigatio Helen Horton Imago , Vol. 9,
+                            No. 1, Autumn 1997 This is classed as a novel, but
+                            most of it is drawn from an autobiographical source,
+                            even that half that is written as a fictional
+                            account of a nineteenth century migration from
+                            England to Australia. Except for two, the chapters
+                            alternate between this fictional family and the
+                            writer’s own family, with its migration from South
+                            Africa. The exceptions are Chapter VIII, named
+                            ‘Angel’, a series of fragments with a dream-like
+                            quality, and the last chapter. In this ‘The Tale of
+                            the Ancient Mariner’ is retold via the medium of the
+                            log-book of the captain of a ship, the name of
+                            which, Fidelis , is symbolic, as is the ending of
+                            the book. The focus throughout is on the
+                            far-reaching and complicated emotions that are
+                            involved when a husband and wife relationship breaks
+                            down and the inevitable spilling over into the minds
+                            and emotions of the children, in this case, three
+                            girls. This is not a story told sequentially. The
+                            chapters are individual fragments, with the present
+                            and memories of the past constantly intermixed, and
+                            firmly linked by the parallel family device. The
+                            result is at times slightly confusing, but the book
+                            never wavers from its main recurring theme of the
+                            emotional impact of family members upon each other
+                            and their lasting effects. In the process of this
+                            emotional probing, there is a certain amount of
+                            philosophising, that could perhaps become just a
+                            little wearing. It takes the form, however, of a
+                            questioning, rather than being didactic, and the
+                            reader is never allowed to lose sight of the concept
+                            contained in the third paragraph of the Prologue: ‘I
+                            want to migrate forever from these shadowlands where
+                            speaking is not possible because the darkness
+                            swallows every syllable before it can be uttered,
+                            this realm that ate up my parents. Each step takes
+                            me further into shadow, into the impossibility of
+                            speaking. But I must persist.’ That tone is
+                            maintained throughout.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

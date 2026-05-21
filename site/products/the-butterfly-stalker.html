@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,385 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-butterfly-stalker.svg&quot;);
                         "
                     >
-                        Featured
+                        The Butterfly Stalker
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Robyn Friend</h3>
+                </div>
+                <img
+                    alt="Cover of The Butterfly Stalker"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-butterfly-stalker/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Butterfly Stalker"
+                        class="product-cover"
+                        src="/assets/books/the-butterfly-stalker/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The Butterfly Stalker is a psychological thriller with a
+                        difference. When Theodora Dante is commissioned to write
+                        her City ’ s official history she also uncovers its
+                        unauthorized secret history. That alone could spell
+                        trouble. She overlooks the city through the ancient
+                        flawed window of her top storey dwelling. In the flats
+                        below are a couple ensnared in a marriage of dependency
+                        and violence, and an adulterous nurse and her clergyman
+                        lover. In strange ways their lives begin to echo hers.
+                        But Thea has her own secret. She is planning the murder
+                        of a stained-glass artist, Daniel, who lives across the
+                        park in a desanctified church he is renovating. Her plan
+                        is reaching its final act. Thea ’ s story has the
+                        glittering depths of a butterfly preserved in a glass
+                        paperweight... And that is the object she intends as her
+                        murder weapon. The Butterfly Stalker is rich in
+                        symbolism and layers of meaning. It marks Robyn Friend ’
+                        s anticipated return to fiction after the controversial
+                        success of her first novel Eva .
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 26.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-butterfly-stalker.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-butterfly-stalker/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044381</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2003</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>199</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Robyn Friend was born in Melbourne in 1942 and now
+                            lives in Tasmania where she teaches creative writing
+                            and works as a community oral historian.
+                        </p>
+                        <a class="bold" href="/authors/robyn-friend.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Carmel Shute, Stiletto</summary>
+                        <p>
+                            The Butterfly Stalker Carmel Shute Stiletto , No.
+                            26, Spring 2004 Set in Tasmania, this is a powerful
+                            tale about obsessive love and murderous intent.
+                            Theadora Dante, commissioned to write the official
+                            history of her town, wants to write of the dark,
+                            hidden truth of the dispossession and murder of the
+                            original inhabitants. The civic leaders want a
+                            sanitised account of the colonial past. Meanwhile,
+                            Thea’s embarked on an illicit affair with Daniel, an
+                            artist who lives in an old de-sanctified church
+                            where, amongst other things, he teaches stained
+                            glass making. He gives Thea a butterfly caught in a
+                            prism of glass, which she comes to see, I believe,
+                            as representing the male gaze. It helps harden her
+                            heart against her lover and she plots to kill him.
+                            Friend has a strong voice and brings some new
+                            approaches to the thriller. The Butterfly Stalker
+                            will keep you enthralled to the end, which has a
+                            pleasing twist. Again, this is another Australian
+                            crime novel that could benefit from being with a
+                            major publisher with good distribution.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Famous Reporter Review</summary>
+                        <p>
+                            Recent Writing The Butterfly Stalker Ralph Wessman
+                            Famous Reporter , No. 28, December 2003 (pgs
+                            181-190) [Text not yet available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review</summary>
+                        <p>
+                            Fiction The Butterfly Stalker Cameron Woodhead The
+                            Age , 19 July 2003 Robyn Friend’s second novel is a
+                            second-rate psychological thriller in which the
+                            narrator, a local historian called Theadora Dante,
+                            plots to kill a stained-glass artist who inhabits a
+                            nearby church. From her third-storey apartment, she
+                            observes the romantic foibles and domestic disputes
+                            of the women living beneath her, while unearthing
+                            the darkest secrets of the island city she inhabits.
+                            The way that Friend interweaves past and present is
+                            mildly absorbing but her prose is purple and prone
+                            to affectation. And if The Butterfly Stalker is
+                            typical, the editorial standards at Black Pepper
+                            leave much to be desired. The book contains
+                            solecisms that would induce wild lamentation in the
+                            reader if they weren't so unintentionally hilarious,
+                            How cool are ‘lava floes’, for example? And how long
+                            do you have to wait if something is ‘on queue’?
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Newsletter IASA</summary>
+                        <p>
+                            The Butterfly Stalker by Robyn Friend Sumanyu
+                            Satpathy Newsletter IASA (online), Indian
+                            Association for the Study of Australia, February
+                            2003 Set in a nameless city, which nonetheless
+                            shares a close resemblance with Launceston in
+                            Tasmania, The Butterfly Stalker tells the story of
+                            Theadora Dante, its narrator-protagonist. She has
+                            been commissioned by the City Council to write the
+                            official history of the city in which she lives.
+                            While researching her subject, Thea comes across
+                            archival material that threatens to unmask the
+                            powers that be, exposing the horrible doings of
+                            their ancestors, the island’s first settlers in the
+                            mid-Victorian era. Using these bits of information
+                            she begins to chart another history, the sordid
+                            unpublishable story of the ancestors of the city’s
+                            present lawmakers. She lives in a top-floor flat of
+                            what was earlier an inn, with a history of its own.
+                            In the flats below live a couple ensnared in a
+                            marriage of dependency and violence: Angela and
+                            Hadley; and yet another couple: an adulterous
+                            nursing sister Suza and her clergyman lover Paul.
+                            Thea discovers that the rumour about the house being
+                            haunted may well be true; and further that these
+                            characters may well be living each other’s lives,
+                            and, maybe, die other people’s deaths. Thea’s
+                            experiences lead her to plot the murder of her lover
+                            who is a stained-glass artist, Daniel by name living
+                            in a dilapidated, Gothic church overlooking her
+                            window. The suspense of whether she succeeds in
+                            carrying out her plot or not carries on till the
+                            end. The other subplot pertaining to the historical
+                            exposé is also held in suspense till the very end.
+                            This bare outline of the novel, of course, fails to
+                            do justice to its rich and intricate symbolism, its
+                            highly subversive politics, and what is more, its
+                            technical brilliance. For, beneath its narrative
+                            surface runs a seething undercurrent of anger and
+                            protest directed at power structures in Friend’s
+                            city, Launceston (‘the brooding pretty prison’ as
+                            she calls it in ‘This Pretty Prison’). After all,
+                            because of her political activism, she has been
+                            called names in the recent past: ‘a communist’,
+                            ‘lesbian feminist’, ‘a ratbag’ and so on. Because of
+                            the novel’s sharp indictment of the inhuman
+                            implementation of the political agenda of the city’s
+                            founding fathers, and of the erasures performed in
+                            official history writing, it may well prove to be as
+                            controversial as her first novel Eva is. I,
+                            therefore, shall proceed to bring in some more
+                            details. First, that the central symbol of the novel
+                            is a triptych by Daniel comprising three images of
+                            feminine sexuality. The artist has used Thea as the
+                            model for the triptych. The second symbol that
+                            dominates the narrative is the glass paperweight
+                            gifted by Daniel to Thea in which a butterfly in
+                            flight is cleverly captured. She plans to smash the
+                            first by using the second one as a weapon. The
+                            self-reflexive novel wonders more than once how the
+                            narrative simply cannot do without the primacy of
+                            the number three, already suffused with Christian
+                            symbolism. But, here, the idea of the Trinity is
+                            treated with utmost irreverence. The multi-layered
+                            narrative is the result of many a crisscrossing of
+                            spatiotemporal frames. That the city is no
+                            geographical fiction becomes evident from the close
+                            resemblance it bears with present-day Launceston.
+                            Placed beside the other aspect of the novel, its
+                            tendency to parody stereotypical ideas and icons,
+                            the interweaving of history and fiction in the novel
+                            makes it highly intertextual. This parallel between
+                            the discursive and the creative alerts us
+                            immediately to the falsity of the binary in the
+                            context of postmodernism. In the novel, the
+                            unofficial history, which is destroyed by Thea at
+                            the end, attains a performative status as, by
+                            articulating the so-called suppressed history, it
+                            actually lays bare the ugly past of the city’s
+                            founding fathers. What is noteworthy, however, is
+                            how Friend is able to interweave the two histories,
+                            and the stories of the lives of the fictional
+                            characters. Whatever happens to the fictional
+                            characters seems to have been predetermined by the
+                            history of the place or the people they are
+                            connected with. There is a trace of the naturalist
+                            tradition here. The main plot around the life of
+                            Thea and Daniel (and her husband), however, is used
+                            for raising aesthetic questions, about the power and
+                            purpose of art. But, like the other man-woman
+                            relationships in the novel, this relationship is
+                            also used to explore problems of female
+                            subjectivity, and sexuality. The novelist
+                            interrogates the use of the female body by male
+                            artists to serve patriarchy, and the eagerness of
+                            the women as willing victims. At one level the
+                            triptych is quite obviously a representation of the
+                            stereotype of woman as the lover, mother and
+                            witch-temptress. But Thea deconstructs it for
+                            herself. The same can be said about the paperweight.
+                            The butterfly stalker is undoubtedly Daniel. But
+                            both, the image of the butterfly and Daniel
+                            transcend their particularity to the universal image
+                            of the sexually exploited and exploiter. Thea,
+                            Angela and Suza, for all their differences replicate
+                            and relive each other’s lives even while reliving
+                            the lives of the mother who was killed by George
+                            Ratford. Eventually Angela is murdered by her
+                            husband, Hadley, because she refused to abort;
+                            Daniel does not want Thea to become the mother of
+                            his child, and there is a hint that he used his
+                            psychic powers to destroy the foetus. Thea nearly
+                            dies of a miscarriage and is saved a second time
+                            from a suicide attempt. In her fight against the
+                            perpetrators of crimes in the past and present, she
+                            decides to first expose the generational history of
+                            crimes and their present-day descendents, and then
+                            take her little personal revenge. Intriguingly,
+                            after delaying the revenge Hamlet-like, she does not
+                            kill Daniel, and destroys the typescript of the
+                            second history. Shrouding herself by a haze of
+                            metaphysics and aesthetic theory she persuades
+                            herself into believing that Daniel, though living,
+                            is yet dead. And she preserves the history of the
+                            gory past in her mind. It is this ending which is
+                            the most dissatisfying for me because it sounds so
+                            defeatist. Or, is it left deliberately disturbing?
+                            This is debatable. Friend’s ideological moorings may
+                            well have been shaped by intellectual and political
+                            developments within Australia. After all, (Germaine
+                            Greer) The Female Eunuch and The Empire Writes Back
+                            (Bill Ashcroft et al ) were influential works by
+                            Australian academics. But, in spite of what she
+                            calls the ‘islandness’ of the fictionalized
+                            Launceston (or Tasmania or for that matter
+                            Australia) the effect of globalization, of political
+                            activism among writers cannot be ruled out. Yet, the
+                            blurb of the novel makes the innocuous claim that
+                            the yet-to-be-published book is a psychological
+                            thriller. I do not know whether such a description
+                            enjoys the approval of the author. But, having read
+                            the novel (novella) many times over, and carefully,
+                            I feel that the description is misleading. As I said
+                            the novel is self-reflexive at many points. What it
+                            does not reflect on, however, is the novel’s
+                            preoccupation with three kinds of hegemonies:
+                            patriarchic, territorial, and racial. One wouldn’t
+                            like to schematize the novel so neatly, one might
+                            still say that the twin political concerns of the
+                            novelist, feminism and post-colonialism are enmeshed
+                            in the multi-layered story, presented in the
+                            formless form of postmodernism. In the process,
+                            Friend redefines the parameters of both feminism and
+                            post-colonialism. If post-colonialism generally
+                            concerns itself with the colonizer-colonized binary
+                            in a seamless and undifferentiated pattern, where
+                            the voices of the aboriginal people are
+                            systematically muted, homogenizing categories such
+                            as Africa and Australia, Friend goes to the heart of
+                            the problem, by trying to reconstruct the history of
+                            the aboriginal people. In her attempt to
+                            fictionalize history, offering a new historiography
+                            altogether, layering history and fiction, and
+                            avoiding realistic linearity, and using
+                            self-reflexivity and irreverent parody as a
+                            fictional strategy, Friend firmly places herself in
+                            the post-Patrick White generation of writers. We are
+                            told Friend has lived and worked in Launceston
+                            (Tasmania) and Africa. She has worked at old-age
+                            homes, and with the aboriginal people of the Huan
+                            and Channel communities. In her forewords and
+                            writings, such as We Who are Not Here - Aboriginal
+                            People of the Huan and Channel Today , dealing with
+                            these subjects she has given evidence of her concern
+                            and sympathy for these marginalized people, helping
+                            them to articulate their problems. She figures in A
+                            Writer’s Tasmania edited by established feminist
+                            writers and poets such as Carol Patterson and Edith
+                            Speers, and has herself written on ‘Sex and the
+                            Australian Writer’. These preoccupations and
+                            interests of hers colour the novel. In this she is a
+                            part of the process which overtook intellectual life
+                            of Australia in the 1980’s. As Bruce Bennett has
+                            pointed out, in the decades following the `80s
+                            ‘Australia... became a testing ground for
+                            intellectual movements, including feminism,
+                            post-colonialism and postmodernism’. When I first
+                            heard that the publication of the novel, has been
+                            delayed due to certain `unforeseen circumstances’, I
+                            attributed the delay simply to the inscrutable ways
+                            of the publishing world. After reading the novel,
+                            however, I feel that there is cause for worry. I
+                            shall be happy to be told that my fears were
+                            unfounded, and the novel has seen the light of day.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

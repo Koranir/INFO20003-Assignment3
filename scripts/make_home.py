@@ -32,7 +32,7 @@ with doc.body:
 
                     with d.div(cls="recent-releases"):
                         make_recents()
-                with d.article(cls="sidebar"):
+                with d.section(cls="sidebar"):
                     d.h2(
                         "Bestsellers",
                         cls="section-title",

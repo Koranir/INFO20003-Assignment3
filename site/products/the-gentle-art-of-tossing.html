@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,190 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-gentle-art-of-tossing.svg&quot;);
                         "
                     >
-                        Featured
+                        The Gentle Art of Tossing
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alan Cornell</h3>
+                </div>
+                <img
+                    alt="Cover of The Gentle Art of Tossing"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-gentle-art-of-tossing/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Gentle Art of Tossing"
+                        class="product-cover"
+                        src="/assets/books/the-gentle-art-of-tossing/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        This was more than a simple sporting contest. This was a
+                        tilt at a dream. The little guy against the odds. Daisy
+                        and Goliath. Ches Fanning is a downsized sports
+                        broadcaster reduced to calling sheep dog trials in rural
+                        Gippsland. He stops for counter tea at the rundown Fish
+                        Creek pub. It is the night of the local darts finals.
+                        There he spots in languid action the willowy Sam Alley,
+                        a twenty-year-old girl. Despite her parents’
+                        reservations, he takes her under his wing. He becomes
+                        her player manager and promoter but her Australian run
+                        is derailed by power brokers. Ches decides to take Sam
+                        to England. She competes against Britain’s finest in the
+                        Pay-TV series Double Tops . He and Sam must contend with
+                        his ex and would-be wives, Helen and Hollie, the fierce
+                        local champ Tiger Magee and a hostile dartocracy. As
+                        Ches says, ‘People are going to lap up the story of the
+                        small town country girl who went to the Old Dart and
+                        whipped them on their own patch of lager-sodden
+                        axminster.’ Whether you’re a sports tragic or not, Alan
+                        Cornell’s The Gentle Art of Tossing aims straight for
+                        your funny bone and hits the target.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-gentle-art-of-tossing.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-gentle-art-of-tossing/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044688</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>212</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alan Cornell is a Melbourne-based author who writes
+                            advertising copy for a living and other things for
+                            pleasure.
+                        </p>
+                        <a class="bold" href="/authors/alan-cornell.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Herald Sun Review The Gentle Art of Tossing Alan
+                            Cornell
+                        </summary>
+                        <p>
+                            Comic Tale Hits the Target Emma Scarpella Sunday
+                            Herald-Sun Bart Cummings is allergic to horses, yet
+                            he has trained 12 Melbourne Cup champions. Any
+                            sports fan will enjoy the fascinating facts peppered
+                            throughout this comic novel (if you can overlook the
+                            dubious title). Ches Fanning, a sports broadcaster
+                            in his twilight years, discovers a prodigiously
+                            talented dart thrower in a country Victorian pub.
+                            Her resurrects her career by convincing her to try
+                            her luck against the UK’s finest. Pay-TV picks up
+                            the resulting series of shows and a star is born.
+                            Ches’s complicated love life adds extra humour.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Wet Ink Review</summary>
+                        <p>
+                            The Gentle Art of Tossing Susan Errington Wet Ink ,
+                            No. 25 The Gentle Art of Tossing is the story of
+                            Ches Fanning, a sports broadcaster whose career is
+                            on the wane, and a young bush darts champion,
+                            Samantha Alley. When the novel opens, Ches’
+                            television career is over and he finds himself on
+                            the country circuit, hosting sheep dog trials and
+                            calling darts’ tournaments in pubs. Ches is a
+                            classic sports’ tragic and his narration is full
+                            amusing and intriguing anecdotes about the famous
+                            and not so famous, as well as his own misdemeanours
+                            in sport, romance and life generally. The humour of
+                            the book is convincing and gentle, sometimes too
+                            gentle. I would like to have seen a more ridiculous
+                            element to some of Ches’ adventures but Ches is a
+                            very likeable character and we laugh at and pity him
+                            in turn. What’s wonderfully drawn in the novel Is
+                            Ches’ relationshlp with Sam. Cornell paints a
+                            convincing relationship between mature promoter and
+                            young sports star. What could so easily have slid
+                            towards sleaze remains fresh and paternal under some
+                            very skillful writing. There’s no doubting Ches’
+                            respect for Sam’s talent and his determination to
+                            get her to the top of her field. His romantic
+                            indulges remain firmly separate and with women his
+                            own age. If I have one criticism of this novel it is
+                            that the language occasionally feels a little old
+                            fashioned, but Cornell’s style is smooth and the
+                            story flows well. The Gentle Art of Tossing is
+                            definitely one for summer holiday reading and the
+                            sports enthusiast in the family.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,711 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/tremors-new-and-selected-poems.svg&quot;);
                         "
                     >
-                        Featured
+                        Tremors, New and Selected Poems
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Andrew Sant</h3>
+                </div>
+                <img
+                    alt="Cover of Tremors, New and Selected Poems"
+                    class="product-cover-mobile"
+                    src="/assets/books/tremors-new-and-selected-poems/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Tremors, New and Selected Poems"
+                        class="product-cover"
+                        src="/assets/books/tremors-new-and-selected-poems/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Tremors, New and Selected Poems is the distillation of
+                        Andrew Sant’s poetry
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/tremors-new-and-selected-poems.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/tremors-new-and-selected-poems/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044500</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>258</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Andrew Sant was born in London in 1950 and educated
+                            there and in Melbourne after his family emigrated to
+                            Australia in 1962.
+                        </p>
+                        <a class="bold" href="/authors/andrew-sant.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>The Book Show Review</summary>
+                        <p>
+                            Reviews Tremors, New and Selected Poems Geoff Page
+                            The Book Show - Radio National Out of the house, I
+                            take books for protection. Pricey. On buses, trains
+                            - in cafes - they save me from dangers. Every page.
+                            I glance up, lower my reading glasses, see how many
+                            others are dependent on hefty novels or self-helps
+                            with bold covers. A lot look pale. For this they
+                            pay, scan the reviews, and cough up again. What I
+                            shell out is my own business but, sure as hell, it’s
+                            not The Book of Kells saves me, in heavy traffic or
+                            stymied by a cancelled train, from old age. A real
+                            page turner has got the force to hold at bay the
+                            pricks who profit, at increasing speed, from urban
+                            damage – and it’s a thriller if their regulators
+                            know how but not when they’re going to cop it. I
+                            pay. I pay. There’s sod all chance this bout of
+                            spending will ever stop. Now the room I call my
+                            study is full of muscle, wall to wall. Shuttered.
+                            And where I tough it out. The situation you’ve just
+                            had defined in Andrew Sant’s poem, ‘The Protection
+                            Racket,’ will be familiar to most listeners of The
+                            Book Show . How we need that book when eating alone
+                            in a restaurant or sitting harmlessly on a train!
+                            It’s hard to tell whether the poem is confessional
+                            or a dramatic monologue. Either way it’s a
+                            persuasive account of how the private act of reading
+                            a book in public can seem to save us from much that
+                            might otherwise beset us. Some small traders may
+                            have to employ criminals to ‘protect’ them from
+                            having their windows broken by those same criminals;
+                            we bookish people use our new (GST-inflated) books
+                            to do the same job. In phrases like ‘A lot look
+                            pale’ Sant suggests the timidity of many of us but
+                            we also know deep down we’re superior to the ‘pricks
+                            who profit / ... from urban damage’ and their ilk.
+                            The narrator of ‘The Protection Racket’ seems sure
+                            he’s as tough as they are. ‘...the room / I call my
+                            study is full of muscle, wall to wall. / Shuttered.’
+                            It’s in there that he ‘tough(s) it out.’ This kind
+                            of sly, rather humorous, ambivalence is typical of
+                            many poems in Andrew Sant’s recently released new
+                            and selected poems called Tremors . It’s a low-key,
+                            introspective voice, scattered with the sorts of
+                            wise-cracks that can pass unheard at the more
+                            raucous of dinner parties. Sant was born in England
+                            and, despite having come to Australia, in his teens,
+                            retains a considerable sense of ‘Englishness,’
+                            reinforced perhaps by his long identification with
+                            Tasmania, where in the early ’80s he co-founded
+                            Island magazine. There is a restraint, an
+                            obliqueness about much of his work, a refusal of
+                            easy tricks or populist gestures. This can make for
+                            both consistency - and, perhaps, a certain lack of
+                            variety. ‘The Protection Racket,’ for instance, is
+                            certainly one of the most explicitly humorous poems
+                            in the book, up at the ‘entertainment’ end of Sant’s
+                            poetic spectrum. Equally entertaining though - and
+                            equally separable from the book’s other poems - are
+                            three extended narratives, two of which would seem
+                            to contain considerable autobiograpical elements. In
+                            ‘Crime Fiction,’ for instance, the poet speculates,
+                            in detective fiction mode, on the role that he and
+                            his father might have played in his mother’s suicide
+                            years before. Eventually, after some blaming of his
+                            recently dead father, Sant (as detective),
+                            eventually realises that ‘She already had enough //
+                            to cope with - me, competing voices released, /
+                            post-natal, inside her head...’ He thinks back to
+                            how the psychiatrists ‘convulsed her with electric
+                            shocks’ and how ‘the language of her medical records
+                            lingered / in busy polysyllables.’ The poem, at
+                            first, seems an alarming flirtation with bad taste
+                            but by the end of its 12 pages the reader is moved
+                            more deeply than he or she might ever have been by a
+                            more orthodox elegy. Comparably autobiographical are
+                            Sant’s ‘Stories of My Father’, a sequence of eight
+                            poems, in which the poet looks back and tries to
+                            understand what enabled his father to get through
+                            his long widowerhood - and, inevitably, the nature
+                            of their father-son relationship. In ‘Personal
+                            Pronouns,’ for instance, the poet evokes ‘Father and
+                            son at the crossroads, / in a classic round of
+                            words, / pronouns circling undeclared verbs... Fixed
+                            in binary opposition, / they proved he could / never
+                            grow old nor I grow up. // I just wanted to get him
+                            off my back. / Now it’s the certain weight I lack.’
+                            Many of the poems in Tremors are, it must be
+                            admitted, far less autobiographical (and less
+                            carthatic) than this. In some of his best-known ones
+                            Sant begins with the autobiographical or touristical
+                            ‘I’ and then goes more deeply into whatever he is
+                            confronted with. In his frequently-anthologised
+                            ‘Homage to the Canal People’ the poet starts with
+                            ‘Steered straight into this century I see
+                            narrowboats / loaded with coal’ but is very soon
+                            recreating the distinctive and now-threatened
+                            community of the canal people on their
+                            ‘three-miles-an-hour journeys’ and their ‘Long damp
+                            days scattering moorhens.’ The poem culminates in a
+                            vividly memorable pub scene ‘with gossip flying so
+                            fast it was prophetic / the boats outside moored
+                            with the children / like all relevant history; in
+                            the shadow / of the Swan or the Bird in Hand.’ Such
+                            clever understatement and indirection is
+                            characteristic of almost all the poems in Tremors ,
+                            a winnowing from six earlier books published since
+                            1982. For those who like their poetry quiet and
+                            thoughtful rather than romantic and
+                            flamboyantly-gestured, Tremors should prove an ideal
+                            book. It is also a considerable service by the
+                            Melbourne publishers, Black Pepper, to pick up the
+                            best poems from six books, now difficult to find,
+                            and present them with such assurance to an
+                            Australian readership. Would that many more
+                            publishers had such confidence in their authors!
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            &quot;A cool light&quot; - Tremors, New and Selected
+                            Poems Paul Hetherington Australian Book Review,
+                            September 2005 In ‘Glenlyon,’ the opening poem of
+                            his most recent collection, Tremors, New and
+                            Selected Poems , Andrew Sant provides readers with
+                            clues about his approach to poetry. ‘Glenlyon’
+                            speaks of the ‘cool light’ of the page and ‘my
+                            shadow’s / hovering vague shape’. Certainly, Sant’s
+                            presence is invested in much of his work and his
+                            poetry prizes coolness and clarity. While he is
+                            sometimes a passionate poet, this passion is rarely
+                            overt and it is balanced by a determination to make
+                            good argument out of his poetic material and by a
+                            characteristically reasonable tone. Sant’s poetic
+                            cast of mind is exploratory and questioning. Many of
+                            his poems combine a firm, sinewy sense of direction
+                            with a provisional air, as if he is always aware
+                            that there are other perspectives to be expressed
+                            and other perceptions to be countenanced. He writes
+                            that ‘Whatever is solid / as rocks or facts breeds /
+                            echoes’ (‘Geologist in a Cave’), and his recurrent
+                            use of the imagery of vibrations and tremors is well
+                            suited to work which is conscious of the way
+                            meanings are likely to ramify and expand in
+                            unexpected directions. Sant’s poem ‘Soundwaves’
+                            celebrates this idea, beginning: ‘Selecting a loose
+                            vibration from the taut air / and threading it
+                            through the wired network / into an infectious
+                            signal.’ At its conclusion, this poem seems as much
+                            about the poet’s own cast of mind, and his craft as
+                            a poet, as about radio waves. Many of Sant’s poems
+                            are relatively short lyrics which, even when they do
+                            not employ the first person pronoun, imply an
+                            observant, wry, sometimes ironic author who is also
+                            occasionally ruefully (and attractively) aware of
+                            his shortcomings and the foibles of others.
+                            Sometimes, as in ‘Taking My Daughter to the Cave,’
+                            he writes poems of a persuasive and nuanced
+                            intimacy. He is also capable of considerable wit.
+                            The opening stanza of ‘Two Ways of Looking at
+                            Landscape,’ for example, contrasts a famous Tang
+                            Dynasty lyric about the moon by the Chinese poet Li
+                            Bai with ‘sore feet and vertiginous thoughts,’
+                            adding: ‘Put a lyric in the pot and it would produce
+                            steam.’ More generally, one of Sant’s rhetorical
+                            strategies is to present the reader with an engaged
+                            and engaging voice that suggests candour, although,
+                            occasionally, the results can seem unsubtle. ‘I’m
+                            wise to their abrupt laconics which, stripped / of
+                            correctness, daily penetrate their shared, unlovely
+                            prospect’, he writes in ‘A Class of Unemployed
+                            Youth.’ But even such prosy lines can be convincing
+                            because of Sant’s energetic (and sometimes
+                            colloquial) verve, his humour and his persuasive
+                            control of tone. Perhaps what chiefly makes Sant a
+                            distinctive and distinguished poet is his
+                            craftsmanship. Infrequently attracted to obvious
+                            formalities such as rhyme and metre, his poems are
+                            usually written in a measured ‘free verse,’ and
+                            there is always a sense that he believes in the
+                            ‘made’ poem, in which every word and enjambment have
+                            been carefully placed. In ‘Visit to Ida Bay,’ the
+                            line breaks are deft: ‘Wheezing steam, the green
+                            engine / becomes a cocky pioneer / that blows its
+                            top as we jerk // from the station.’ The poem’s
+                            beautifully situated, evocative imagery reveals one
+                            of the hallmarks of Sant’s best writing. His poetry
+                            ranges over a wide array of subjects, many of them
+                            relating to the long period he lived in Tasmania
+                            (including Tasmania’s sometimes grim history) and
+                            the natural world. A number of works foreground his
+                            skill with language, including ‘AFirework Maker on
+                            the Domestic Front,’ which puns on a variety of
+                            pyrotechnical terms: ‘Arguments between / the wife
+                            and me peter out. She fumes.’ ‘Northwood Hills’
+                            conjures skilfully the ‘cuckoo-spit’ secreted on
+                            plants by insects: ‘There it was, frothy and
+                            spit-like, / gobbed onto stems and tendrils / of
+                            wild peas occasionally / plentiful in wet fields.’
+                            In a characteristic transformation, by the end of
+                            this poem the peas become a metaphor for ‘memories
+                            that unfurl / sticky as tendrils’. Included in
+                            Tremors are some of Sant’s longer poems, or poetic
+                            sequences, such as the fast-paced and amusing
+                            ‘Summertime: A Holiday Chronicle.’ In this
+                            essentially lightweight narrative, his writing is
+                            terse, economical and subtly controlled. More
+                            moving, if less polished, is the sequence ‘Stories
+                            of My Father,’ and there is also an amusing and
+                            skilful sonnet sequence about Rome and Giuseppe
+                            Belli, nineteenth-century ‘poet and Vatican censor.’
+                            Poem after poem in this collection radiates a
+                            quickened, nervous energy and an active sense of
+                            engagement with the task and processes of
+                            apprehending his surroundings. Sant confesses to be
+                            self-conscious at times, as when his observation of
+                            a wren leaves him with ‘a footnote of detail /
+                            towards an imminent theme’ rather than ‘complete
+                            experience’ (‘Wren’). However, his poetry is
+                            continually noticing the world and its history,
+                            valuing attentiveness and reminding his readers, as
+                            he writes in ‘Myrtle Forests,’ to appreciate the
+                            ‘buoyant prosperities of light’ as well as the
+                            ‘owlish and spidery dank / encampments of gloom’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Critical Survey Review</summary>
+                        <p>
+                            Tremors, New and Selected Poems John Lucas Critical
+                            Survey (UK) Some poets take you by storm, others by
+                            stealth. In 1993, when I had a Writer’s Fellowship
+                            in Tasmania, I chanced upon a collection called The
+                            Flower Industry by a poet I understood to live on
+                            the island, though at the time the name of Andrew
+                            Sant and his work were alike new to me. I read
+                            through the book, enjoyed it, and then, as I
+                            thought, put it aside for the work of other
+                            Australian poets. Months later, by now back in
+                            England, I suddenly found myself repeating some
+                            lines whose rhythm had without any effort on my part
+                            lodged in my memory: ‘I’m travelling / in a car at
+                            high speed where the mind /is a curious receiver,
+                            exposed, intent /on that which is always about to be
+                            revealed’. At first, I couldn’t place them, although
+                            I could understand why they intrigued me. There was
+                            that odd, very contemporary feeling of existing
+                            somewhere between panic and exultance: a sense of
+                            being at once within and yet apart from the world:
+                            alert, baffled, quizzical, expectant. Self-conscious
+                            and at the same time self-forgetful. Knowing but
+                            vulnerable. It’s a difficult balance to maintain.
+                            Tilt in one direction and you’re asking to be given
+                            marks for street-cred. (Which is what many would-be
+                            poets today ask of their readers, as though street
+                            cred is a virtue.) Soi-disant vulnerability, on the
+                            other hand, usually turns out to be a tactic aimed
+                            at calling off the critics. What struck me most
+                            about the lines that kept repeating in my head was
+                            that they didn’t want either approval or sympathy:
+                            they were concerned solely to get it right. And by
+                            ‘it’ I mean the complex of feelings and thoughts
+                            from which poems start but which only make poetic
+                            sense once they find the apt form in and through
+                            which they can find expression. It took me some time
+                            to work out that the lines came from a poem in The
+                            Flower Industry (‘Soundwaves’), but once I’d tracked
+                            them down I went on the hunt for further examples of
+                            Sant’s work. Then, four years later, on a return
+                            visit to Tasmania I met the poet himself, by which
+                            time I’d become entirely convinced of the value of
+                            what he was doing and, one thing leading to another,
+                            was delighted to become in 2002 the publisher of his
+                            collection, The Islanders . Now, this generous
+                            Selected provides a good opportunity to turn the
+                            light of critical appreciation on the many-angled
+                            Sant. And what becomes clear as you move through the
+                            collections - of which there six (Arc’s The Unmapped
+                            Page , 2004, was too recent for inclusion) - is that
+                            this poet is one who doesn’t settle for more of the
+                            same. On the contrary, each new collection
+                            represents a new beginning. This isn’t to say he
+                            that takes on different personae, as is common among
+                            many contemporary poets, especially those most
+                            deeply indebted to Pessoa’s practice and the
+                            convictions that prompt it. ‘The Harbour Mistress
+                            Recalls her Wartime Service,’ (from the 1989
+                            collection Brushing the Dark ) is a rare exception,
+                            and while good enough doesn’t make me feel I want
+                            more in a similar vein. Others could have done it
+                            quite as well. On the other hand, ‘Kelp Harvesters,’
+                            the poem that precedes it, is a very remarkable
+                            achievement. Here is the first of the poem’s eight
+                            stanzas: The men who harvest bull kelp on the
+                            beaches hold licences to do so: they are the
+                            initiates, the powers are working for them even
+                            while they sleep inside flimsy houses moored in the
+                            wind that, by daybreak, will have dredged kelp like
+                            dye streaming through waves, the ocean’s hydraulics
+                            set in motion somewhere off the African coast - a
+                            hurricane through the swirling kelp forest. I don’t
+                            see how you could read this without being at once
+                            aware that you’re in the presence of a most
+                            accomplished poet. This is the mind as a curious
+                            receiver, right enough, exhibiting that ‘gaping
+                            habit’ Henry James thought essential to any writer,
+                            but also one that is eagerly, creatively attentive
+                            (those ‘flimsy houses moored in the wind’), adroit
+                            at making verbs do their proper work, knowing how
+                            line endings must serve a purpose (the exactly
+                            judged turn on dye/streaming and
+                            oceans’/hydraulics), and both focussed and panoptic:
+                            from local beach to Africa. Perhaps being Australian
+                            helps, and certainly Sant has some excellent poems
+                            about that extraordinary place, something of whose
+                            ethos can be sensed in the poem’s ending. ‘On such a
+                            day, with its breezes, the harvesters will fish off
+                            fresh beaches, / and their wives will be washing the
+                            clothes that reek of process.’ This strikes me as a
+                            beautifully judged, discreetly epiphanic image, one
+                            that honours work and, at the same time, rejoices in
+                            the release into a momentary harmony that can be
+                            felt in the alliterations, fish/fresh,
+                            wives/washing, and near-rhymes brushing the ear:
+                            breezes/beaches/process. To Sant’s skills at
+                            handling sonic effects I should add his dextrous use
+                            of long lines. I have a hunch that the reason much
+                            current work is composed in short, almost lopped-off
+                            lines, is that those who use them simply haven’t set
+                            themselves to school to learn any lessons in how to
+                            handle metre and cadence. As a result, the poems
+                            they turn out, while adventurous-looking on the
+                            page, are dully repetitive to the ear or, worse,
+                            make for pot-and-kettle clangour. Sant’s poems, by
+                            contrast, strike the ear in various refreshing ways.
+                            His rhythms aren’t clamorous, but when you utter his
+                            lines you experience the sensuous delight which is
+                            inseparable of real poems. (‘Milton could say God
+                            damn you tell hell’, Empson remarked, ‘and make it
+                            sing’.) Try speaking aloud the opening lines of
+                            ‘Willows’: ‘For company, each other. Monkish, these
+                            stooped willows / huddled around the dam are guests
+                            when, at dusk, the rest / of the party has fled;
+                            guzzlers like their mates / whose reflections all
+                            day brisk rivers have trawled’. Just as good in this
+                            regard is ‘Days of Incompletion,’ the closing poem
+                            of the same collection, Album of Domestic Exiles ,
+                            which indeed packs up into its small compass of 14
+                            lines many of Sant’s poetic virtues. Think of it s a
+                            blank-verse sonnet, if you like, but more important
+                            by far is the exposed/intent mind of the poet, the
+                            wit (a combination of rueful, ribald) that runs
+                            though the opening lines: ‘It is the morning of the
+                            job still-about-to-be-done- / the garden fork
+                            holding the soil in its place / like an hors
+                            d’oeuvre’, and the perfectly measured ending: ‘Ah,
+                            days of incompletion - the umpteenth draft / the
+                            road yet to be taken - I embrace them, let go. /
+                            Torpor of their obverse: a last nail’s driven home.’
+                            If you can’t see how wonderful that is then I
+                            recommend a life devoted to Business Studies. ‘Days
+                            of Incompletion’ is a favourite poem, although of
+                            all Sant’s collections, I have for obvious reasons
+                            an especial fondness for The Islanders . But its
+                            qualities of observation, of wittily disenchanted
+                            but never reductive engagement with a
+                            variously-peopled place of the mind, can be found
+                            throughout this Selected . It’s good to know that
+                            while in literature’s market-place ‘the arrogant,
+                            the forward and the vain,’ to use Dickens’s
+                            formulation, are making their usual uproar,
+                            altogether elsewhere Andrew Sant is busying himself
+                            with the making of true poems.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Verse Review</summary>
+                        <p>
+                            Tremors by Andrew Sant Nicholas Birns Verse (USA)
+                            (online), 7 March 2005 Tremors , handsomely produced
+                            by the admirable Black Pepper, contains selections
+                            from six of Andrew Sant’s books published originally
+                            from 1982 to 2002, accompanied by fourteen new,
+                            previously unpublished poems. This book makes a
+                            strong argument for Sant’s stature in contemporary
+                            Australian poetry, placing him in the centre of one
+                            of its most energetic strands. It is surprising to
+                            realize how many ‘cosmopolitan’ poets Australia
+                            seems to have. There is, of course, Peter Porter,
+                            now granted his Australian identity by critics even
+                            though he is a long-term expatriate in London, and,
+                            in the younger generation, Peter Rose, Adam Aitken,
+                            as well as Sant himself. One might judge this strain
+                            in Australia poetry as stemming from A.D. Hope. Yet
+                            cosmopolitanism is not the same as classicism, as is
+                            shown by the fact that even the committed
+                            experimentalism of John Tranter has a cosmopolitan
+                            overlay in his work. Nor is it the same as being
+                            massively learned and curious. Cosmopolitanism
+                            implies a steadiness of tone, an imperturbability.
+                            American equivalents (Frederick Feirstein?) would be
+                            hard to find. Sant was born in England and
+                            individual poems of his are reminiscent of the work
+                            of Andrew Motion, Douglas Dunn, Roy Fuller and James
+                            Fenton. Even more, Christopher Reid’s blurb makes
+                            one give a ‘Martian’ reading to some of Sant’s
+                            lines, e.g., ‘As if the world / is merely an object
+                            / whose diversity holidays / in learned journals’.
+                            But Britain does not quite have a poet like Sant.
+                            New Zealand (the early David Eggleton, perhaps?) and
+                            Canada (F.R. Scott?), with introspective lyricism
+                            still at the core of their poetic traditions, have
+                            very little of this cosmopolitan tradition. (That
+                            all of the aforementioned examples are white, male
+                            poets raises yet further questions.) A pat response
+                            to this anomaly of Australian cosmopolitanism would
+                            be that although Australia feels so far away from
+                            everything, its concerns are so global that
+                            cosmopolitanism is the result. But though Sant’s
+                            concerns traverse the globe, he is firmly anchored
+                            in Tasmania. Even when it is not named (as in ‘Name
+                            Of The Island’), the beauty and idiosyncrasy of the
+                            Tasmanian landscape underlie the breezy and offhand
+                            copiousness of Sant’s perspective. But it is a
+                            copiousness that includes not only the peaks of
+                            Mount Eliza or Mount Wellington but mundane events
+                            such as a children’s football practice along with
+                            kelp harvesters, feeding rosellas, myrtle forests.
+                            Pleasure, rather than curiosity, becomes the
+                            non-Tasmanian readers’ response to the poems. There
+                            is jauntiness that pulls us along instead of a kind
+                            of gazeteering photorealism, larded with bogus
+                            mysticism, which poets writing about ‘remote’ places
+                            so often present to their assumed metropolitan
+                            audience. Not fetishized as exotic, Tasmania in
+                            Sant’s poetry becomes the point from which the rest
+                            of the world as well as the full range of mental
+                            experience can be probed. In early poems like
+                            ‘Myrtle Forests,’ misty landscapes accumulate their
+                            own history, which can yet vanish in a gloomy
+                            instant. Over the two decades covered in this
+                            volume, there is a definite consistency of form and
+                            style. Sant occasionally uses rhyme in his poems,
+                            and there is a hilarious sonnet sequence about
+                            Giuseppe Belli, the nineteenth century ‘poet and
+                            Vatican censor’ who is played off against the
+                            libertinism of twentieth-century Rome. In ‘Shower
+                            Medley,’ what could be Sant’s credo as a poet is
+                            slotted offhandedly into a closing quatrain: ‘for
+                            what’s in dams isn’t a spot / or flow when it’s
+                            habitual / Give me extremes of cold or hot / mixed
+                            in a mega-ritual’. But the vast majority of Sant’s
+                            poems are unrhymed, though he is very conscious of
+                            form and often uses assonance and other forms of
+                            unobtrusive verbal play to stitch his poems
+                            together. His lines tend to be short; a ten-syllable
+                            line is rare, and is often so casual (‘The
+                            glistening river the kids notice’) that it ‘seems’
+                            shorter. In the earlier work, a kind of default mode
+                            is the tercet where varying line length allows, and
+                            enacts, a flexibility of perception. ‘The Behaviour
+                            of Plover’ is exemplary not only in its close
+                            observation but in its reversal of assumptions, as
+                            when an intruder disrupts not the plovers’ pastoral
+                            bliss but their ‘refinement.’ Similarly, Sant writes
+                            poems about fruit preserves and vineyards where the
+                            nature/culture dichotomy is pleasingly dissolved.
+                            But alongside poems like these, which extract the
+                            fullest meaning from one setting, are sequences - on
+                            Mount Wellington, on Australia vacationers in
+                            Indonesia, on the death of the poet’s father - that
+                            cover wide ground, and leave much unresolved.
+                            Indeed, beneath the smooth textures of Sant’s verse
+                            is much that is left open. Sant is intrigued by
+                            phenomena like fire, soundwaves, transmitters and
+                            telephony which link one place to another (‘every
+                            insight cross-referenced, interconnected’). These
+                            processes through their tremors (hence the book’s
+                            title) spread currents of feeling or thought
+                            rapidly. But they also have the potential to
+                            annihilate difference. This seismic responsiveness
+                            enables Sant to see beyond what is immediately
+                            visible, without going explicitly into any realm of
+                            transcendence: the Arctic is seen behind Oslo, the
+                            Antarctic behind Tasmania: ‘South of here there’s
+                            the sea, freezing / uninhabited islands to home in
+                            on’. Fossils are beneath Tasmanian verdancy; caves
+                            remain beneath the blue Mediterranean. Some of
+                            Sant’s best work is done in his narrative poems. In
+                            these, an intriguing motif recurs, that of a woman
+                            suddenly emancipated from the former conditions set
+                            down by a male partner and mulling her own new
+                            options. In ‘Old Woman in Apple Country’ a woman
+                            surveys the apple trees that her now-dead and
+                            occasionally abusive husband had planted, feeling
+                            his presence in every apple that falls yet knowing
+                            that the cars rushing by on the road outside are
+                            part of a new world that has forgotten him. ‘Wife Of
+                            A Shooter’ is a dramatic monologue spoken by a woman
+                            whose husband is out shooting. He ignores her as a
+                            person, yet if she were a bird she would be his
+                            easiest target: ‘Now flight primes me: / He’d notice
+                            first, on a bird, its ring’. In ‘Westbrooke Banks’
+                            Mrs Irena Pembroke has taken the house once owned by
+                            her unloving husband, but belonging ultimately to
+                            her own ancestors, and turned it into an inn. She
+                            now runs the place, but depends on paying guests, of
+                            whom she ‘suspects the dark.’ This is the last line
+                            of the poem, and injects a note of instability into
+                            what had seemed a static tableau. Sant is fond of
+                            using this device to air out his poems, as in the
+                            last poem in the book, ‘Nike at the megaliths’,
+                            where musings on ancient structures are interrupted
+                            by ‘a silent jet / splits the sky overhand, like a
+                            zip.’ Sant’s accomplished, cosmopolitan style gains
+                            from repeated exposure. ‘Pleasure’ has been a word
+                            much trivialized of late when talking about poetry,
+                            but Sant’s poems genuinely provide that all-too-rare
+                            commodity. Without strain or overeagerness, they
+                            delight the reader at the same time as they shake up
+                            many of our expectations, including expectations
+                            they have initially generated. Tremors should make
+                            readers fully aware of Sant’s achievement.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Island Review</summary>
+                        <p>
+                            Tremors Oliver Dennis Island , No. 99, Summer 2000
+                            Andrew Sant is another of our poets to have come
+                            here from Britain as a child. A co-founder of Island
+                            in 1979, Sant has published seven previous
+                            collections, six of which help to make up the
+                            present volume. His poetry’s most distinctive
+                            characteristics are its vigorousness and its
+                            tireless fascination for the world; rich in
+                            ‘accumulated detail’, it nevertheless maintains an
+                            interest in ‘what is not yet visible’ and in things
+                            lost to time: ‘So much is unseen’, Sant writes in
+                            ‘Soundwaves’, ‘[ ...I the mind / is a curious
+                            receiver, exposed, intent / on that which is always
+                            about to be revealed.’ It is safe to assume that,
+                            for Sant, whose work can seem prolix at times,
+                            writing poems affords a way of defining reality.
+                            Tremors contains numerous references to landscape,
+                            maps and bearings, as well as to origins and
+                            history’s ‘strata’. The poet is forever looking to
+                            the past in order to connect with the present; from
+                            the outset he was aware that to name an object or
+                            experience is, in some sense, to make it ‘real’, as
+                            evinced obliquely in these lines from a particularly
+                            enjoyable early poem, ‘Wren’: I refer back through
+                            memory to a time of more constant immersion of self
+                            in details - once this would have been complete
+                            experience, the wren offering itself for my
+                            abandonment in detail, landing on the fuchsia,
+                            shaking the million purple bells of my delight.
+                            Stylistically Sant’s approach does not show signs of
+                            having changed much over the years. While the idiom
+                            has become slightly more relaxed and conversational,
+                            a preference for formal structures - especially
+                            three-line stanzas - remains. Indeed, among the most
+                            striking pieces in this Selected Poems are a set of
+                            five Petrarchan sonnets inspired by the example of
+                            Giuseppe Belli, a nineteenth-century Vatican censor
+                            and prolific sonneteer, who, according to Sant, was
+                            ‘obsessed / by fleshly pleasure’ and had a weakness
+                            for spicing his verse with ribaldry: ‘Above him,
+                            exalted, that later week, / since on his back he
+                            gained a better view, / a fresco of the Virgin robed
+                            in blue ...’ Other memorable poems include a number
+                            involving the poet’s daughters (notably ‘Golconda’
+                            and ‘Origin of the Species’) and ‘The Fear’, which
+                            describes a woman’s childhood terror of nighttime
+                            butterflies. Of the new work on offer, ‘Crime
+                            Fiction’ is possibly the most remarkable. Sant here
+                            portrays himself as part of a Chandleresque scenario
+                            in which he attempts to come to terms with memories
+                            of his mother’s mental illness and eventual suicide.
+                            Tellingly he reports feeling a need to ‘[a]dopt a
+                            style, / just to get by’ and travels to places
+                            associated with his family’s past to satisfy an
+                            ,urge to wrap things up’: Marlowe, be my guide out
+                            of the quiet streets tough vernacular has failed to
+                            reach ... It was daylight when, with a handshake, I
+                            was off again. On whom or what to pin the guilt was
+                            like trying to wrench an oyster open with a stake
+                            from a picket fence. This is clearly assured and
+                            affecting poetry; but it has to be said there are
+                            times, reading Sant at length, when his habitual
+                            materialism wears thin.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,291 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-truth-is-longer-than-a-lie.svg&quot;);
                         "
                     >
-                        Featured
+                        The Truth is Longer Than a Lie
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Kieran Carrol</h3>
+                </div>
+                <img
+                    alt="Cover of The Truth is Longer Than a Lie"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-truth-is-longer-than-a-lie/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Truth is Longer Than a Lie"
+                        class="product-cover"
+                        src="/assets/books/the-truth-is-longer-than-a-lie/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        ANDREA: I married this man because I loved him and I
+                        thought he loved me, but since our daughter was born he
+                        pays every minute of his attention to her. I mean, I
+                        would never want him to be neglectful or be uninterested
+                        in her activities—but, doctor, I think my husband has an
+                        unusual fascination with our little girl … BEN: Whatever
+                        I did to Amy I did it out of love…I did it because she
+                        was the only person I idolised and cared about. I could
+                        only see the point of life when I gave all my love to
+                        her. The Truth is Longer than a Lie tells the crossover
+                        stories of the separate families of Amy and Spiderman,
+                        and of an anonymous child, whose story we hear in
+                        voiceover. It is a family drama. The adults Ben and
+                        Andrea or Rod and Paula are depraved, complicit or
+                        disbelieving. Andrea’s denial is particularly affecting.
+                        The family culture that Kieran Carroll’s drama unveils
+                        is that of child abuse. It is the children we come to
+                        know: their shame, their fear of disclosure, their urge
+                        to self-harm, their small window to healing given by
+                        counsellors and by their chance meeting. The authority
+                        of their young voices in Carroll’s dialogue will grip
+                        your heart. They are heroic. In their foreword Neerosh
+                        Mudaly and Chris Goddard from Child Abuse Prevention
+                        Research Australia, state: ‘If we are a moral and just
+                        society, we must protect children. If we are to protect
+                        children, we have to listen to them.’ The Truth is
+                        Longer than a Lie wrenches us into listening. This
+                        publication was made possible with the support of Monash
+                        University Peninsula Campus
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 23.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-truth-is-longer-than-a-lie.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-truth-is-longer-than-a-lie/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044831</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2015</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>90</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Kieran Carroll was born in 1968. Prior to becoming a
+                            playwright, he spent the 1990s as a regularly
+                            published poet, performance poet and lyricist for
+                            literary pop band, The Beautiful Few.
+                        </p>
+                        <a class="bold" href="/authors/kieran-carrol.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Quadrant Mazagine</summary>
+                        <p>
+                            A Violent, Tangled Mess The Truth is Longer than a
+                            Lie Peter Wilkins Quadrant Mazagine, May, 2016 The
+                            statistics on the Australian Institute of Health and
+                            Welfare websites are frightening. Every year
+                            approximately 55,000 children are the subjects of
+                            substantiations of notifications of neglect and
+                            abuse. One in thirty-seven children receive child
+                            protection services. Indigenous children are seven
+                            times as likely to be receiving child protection
+                            services as non-indigenous children. As of June 30,
+                            2014, 43,009 children in out-of-home care were in
+                            relative/kinship or foster home care and 49 per cent
+                            of foster care households had multiple children
+                            placed. Forty per cent of these 55,000 children have
+                            suffered emotional abuse, 28 per cent have been
+                            subject to neglect, 19 per cent subject to physical
+                            abuse, and the remaining 14 per cent are victims of
+                            sexual abuse. Statistics such as these have given
+                            rise to a national conversation, highlighted in 2015
+                            by the appointment of Rosie Batty as Australian of
+                            the Year. It is therefore timely that Kieran
+                            Carroll’s play The Truth is Longer than a Lie should
+                            have had its first performance last November.
+                            Carroll’s play is an adaptation of the published PhD
+                            thesis of Neerosh Mudaly and Chris Goddard, which
+                            describes the rising incidence of child abuse and
+                            neglect in Australia and draws on case studies and
+                            true accounts by victims, their families, school
+                            counsellors, child protection unit workers and other
+                            agencies. Carroll’s play echoes with the disturbing
+                            truth. It is direct, honest and powerful in its
+                            simplicity and its depiction of two families
+                            entangled in a web of lies, violence and despair.
+                            Carroll has chosen to focus on two contrasting
+                            families. Andrea and Ben, a successful real estate
+                            agent, live in an affluent suburb. Their teenage
+                            daughter, Amy, attends a prestigious school. Since
+                            the age of three, she has been sexually abused by
+                            her obsessive father, who is addicted to child
+                            pornography. Paula is a working-class mum,
+                            struggling to survive and provide for her son,
+                            Matthew, who escapes into a fantasy world as
+                            Spiderman. After the failure of her disastrous and
+                            abusive first marriage, Paula married Rod, who has
+                            become more violent and abusive as their marriage
+                            has deteriorated, and Matthew has once again become
+                            the innocent victim. Andrea is in denial, while
+                            Paula finds herself powerless to escape the horrible
+                            circumstances that confront her. Gradually, Amy and
+                            Paula are both forced to recognise the terrible
+                            consequences of their situations and seek urgent
+                            help. Amy confides in her school counsellor, Janice,
+                            while Paula seeks the assistance of the child
+                            protection unit after Rod has been shot by police
+                            who were responding to a report of domestic
+                            violence. Amy leaves her home to live with her best
+                            friend Jodie and her mother, while Paula takes
+                            Matthew to live with his grandmother. Carroll
+                            relates the stories of Amy and Matthew in
+                            twenty-seven short scenes. There is no need for
+                            elaboration or theatrical artifice. Each scene
+                            depicts a stage in the journey towards resolution,
+                            as we observe the eventual destruction of
+                            relationships and the family unit and of the
+                            physical and psychological well-being of the two
+                            children. Occasionally, the scenes are interspersed
+                            with the verbatim voiceover accounts of a
+                            ten-year-old child. Though brief, they are a
+                            gut-wrenching testament to the horror of abuse of
+                            the innocent. Carroll cleverly avoids the pitfalls
+                            of moralising and sensationalism. His short scenes
+                            allow his audience to draw their own conclusions
+                            about the morality of the perpetrators’ actions.
+                            There can be little doubt, given the raw realism of
+                            the dialogue and the reality of the setting of each
+                            scene in a home, at a nightclub, at the child
+                            protection unit, in a hospital or at a railway
+                            station, where Amy saves Matthew from leaping
+                            beneath a train. These are real people experiencing
+                            real abuse, struggling to repair their broken lives
+                            and confronting their fears. Carroll’s world
+                            contains no fantastic invention. His aim is not to
+                            excite our imaginations, but to provoke us to take
+                            responsibility as citizens to recognise, admit to
+                            and act upon a social injustice, indeed a crime that
+                            needs to be justly and effectively dealt with, not
+                            only for the sake of those who are suffering but
+                            also for the welfare of society. Carroll’s narrative
+                            is simply told, but its message is complex. Like
+                            Mudaly and Goddard, he shows that only through
+                            intervention can any possibility of resolution be
+                            reached. It may be the intervention of the police,
+                            acting upon a report by a neighbour. It may be
+                            because of the meeting between Amy and Matthew. It
+                            may be because of their referral to the child
+                            protection unit and the sympathetic and enlightened
+                            actions of Bronwyn, the child protection officer.
+                            While it is clear that Ben and Rod are the
+                            perpetrators of the terrible abuse, Carroll is
+                            careful not to apportion a stark, ill-considered
+                            judgment. He demonstrates the obsessive nature of
+                            Ben’s sexual addiction and Rod’s abuse as a child at
+                            the hands of his father, acknowledging that the
+                            abused may become the abusers. He will present the
+                            empathetic professionalism of Bronwyn in contrast to
+                            the ignorant ineffectualness of her colleague
+                            Danielle. All the pieces of this complex puzzle are
+                            laid out in a drama that is provocative and
+                            compelling. Only truth can fit these pieces together
+                            to make these people’s lives whole once more.
+                            Whatever agents of resolution Carroll is able to
+                            conjure in his short play, the damage remains.
+                            Andrea remains unable to say, “I believe you,” to
+                            her daughter. Matthew no longer needs to believe he
+                            is Spiderman, but the memories and the pain remain.
+                            Ben and Rod face ruined lives. Each character at the
+                            close of the drama remains a victim. The final scene
+                            expresses hope for Amy and Matthew as they find
+                            comfort in each other’s company and shared
+                            experience. The Truth is Longer than a Lie is a
+                            thought- provoking and moving account of the
+                            destructive nature of child abuse and domestic
+                            violence in a society purporting to be open, free
+                            and just and governed by laws designed to protect
+                            and nurture. Carroll’s adaptation of the Mudaly and
+                            Goddard book deserves to be played on a multitude of
+                            stages. The play is deliberately confronting,
+                            although I suspect it has avoided cases that have
+                            had more violent and deadly consequences. It is an
+                            important vehicle for further debate and would
+                            provide an excellent resource for discussion after a
+                            performance. Matthew’s outburst will constantly
+                            remind us of our obligation to listen and believe:
+                            That’s always the problem with these people
+                            [professionals], they don’t want to believe the
+                            truth, they want to believe the easiest side ...
+                            They don’t want to hear the truth because the truth
+                            is so much harder to understand and so much longer
+                            than a lie about the truth. Carrol has exposed the
+                            lie with scalpel-like precision and compelled his
+                            play to utter a truth that cannot be ignored. Peter
+                            Wilkins is a theatre reviewer for the Canberra Times
+                            .
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,1049 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-blue-gate.svg&quot;);
                         "
                     >
-                        Featured
+                        The Blue Gate
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alison Croggon</h3>
+                </div>
+                <img
+                    alt="Cover of The Blue Gate"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-blue-gate/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Blue Gate"
+                        class="product-cover"
+                        src="/assets/books/the-blue-gate/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Shortlisted for the Victorian Premier's Poetry Prize The
+                        centre of gravity in these poems is very rarely external
+                        subject matter; rather, it is their very emergence, to
+                        dry into verbal beings on the delicate skin of the self.
+                        It is an important shift in literary polarities. Les
+                        Murray ... dense, intense and beautifully crafted...
+                        will delight readers who saw in her award-winning book,
+                        This is the Stone , a poet of rare promise. John Leonard
+                        Editor, Seven Centuries of Poetry in English One of the
+                        most assured of a new generation of Australian poets...
+                        Her work is remarkable for its technical awareness of
+                        earlier poets... There is always a strong physicality
+                        about her writing... a constant feeling of lyrical
+                        sensuality. Geoff Page A Reader’s Guide to Contemporary
+                        Australian Poetry
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-blue-gate.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/the-blue-gate/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044187</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>58</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alison Croggon was born in 1962 in Transvaal, South
+                            Africa, and has three children. Alison Croggon moved
+                            as a child to England in 1966 and to Australia in
+                            1969, growing up near Ballarat and later moving to
+                            Melbourne.
+                        </p>
+                        <a class="bold" href="/authors/alison-croggon.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Ian McBryde, ArtStreams</summary>
+                        <p>
+                            Review The Blue Gate Ian McBryde (poet) ArtStreams ,
+                            June/July 1998 Alison Croggon’s inaugural 1991
+                            Penguin collection of poetry, This is the Stone ,
+                            made a deservedly clean sweep of the literary prizes
+                            for a first book, most notably the Mary Gilmore and
+                            Anne Elder awards. In the intervening years she has
+                            published plays, libretti, critiques, translations
+                            and a novel, Navigatio, released in 1996. It is
+                            therefore with mounting interest that fans of
+                            Croggon’s work have looked forward to The Blue Gate
+                            , her second collection of poetry, from Melbourne’s
+                            courageous and prolific Black Pepper Press. From the
+                            opening lines of ‘For Ben’, the first poem in the
+                            collection, Croggon’s highly individual poetic voice
+                            lets us know that she is back with a poignant
+                            delicate timeliness. The themes of her work range
+                            from the observations of mothering and
+                            children/childhood to adult relationships, love,
+                            lust, dreamscapes, and other more veiled, mysterious
+                            subject matter. She has an uncanny knack for
+                            approaching even so commonplace a routine as
+                            shopping with original verve and her own stylised
+                            approach, as seen in the poem ‘The Elwood Organic
+                            Fruit and Vegetable Shop’. Who else could end a
+                            piece about picking up groceries with such growing
+                            excitement, in a rush of exclamation marks and lines
+                            such as ‘...the marriages which await them! The lips
+                            that moisten to meet them! Glorious speeches of the
+                            earth!’? The poem ‘Nights’ is a series of
+                            monochordal lines assembled together in five
+                            sections, containing such gems as ‘immense flowers
+                            bruise your horizons’, ‘my hands have lost courage’,
+                            and ‘speech is so fragile, it is as if we have never
+                            spoken’. Croggon continually surprises and delights
+                            with an almost eerily fresh outlook on events and
+                            emotions. Never is this poet more intriguing and
+                            enigmatic than when she moves into more esoteric
+                            poetic landscapes, in pieces such as ‘Angels’,
+                            ‘Fairytale’ and ‘Ars Poetica’. Her startling imagery
+                            and unique word combinations inject a sharp twist to
+                            the ordinary. The collection ends strongly with
+                            ‘Sonata’, a long poem in fifteen sections which,
+                            while ostensibly about elements of nature, angles
+                            out and away from that into other, deeper realms.
+                            The Blue Gate solidifies Alison Croggon’s position
+                            at the very forefront of modern Australian poetry.
+                            She remains a uniquely-voiced, assured writer very
+                            much in control of her craft. Hopefully, despite the
+                            current parlous state of poetry publication in this
+                            country, we will not have to wait eight years for
+                            her next collection.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Womens Book Review Review</summary>
+                        <p>
+                            Connections &amp; Contrasts The Blue Gate Michelle
+                            Mee (poet) Australian Women’s Book Review , Vol. 9,
+                            No. 2-3, Spring 1997 As the publishing industry
+                            gradually prints more Australian women poets, the
+                            marvellously diverse nature of women’s voices is
+                            heard and can be celebrated. The four collections
+                            [Ludwika Amber, Our Territory , Emma Lew , The Wild
+                            Reply , Sarah Day, Quickening ], discussed in the
+                            following, indicate something of the fecundity,
+                            intensity, method and power of work currently being
+                            produced by Australian women writers. Sometimes
+                            there are connections, other times contrasts...
+                            Reading Alison Croggon’s The Blue Gate is a joyful,
+                            painful, intense experience. It is written with
+                            something more substantial than ink, perhaps clotted
+                            blood, such is the bright colour and shock of the
+                            poems. Other times the sensual explorations give
+                            pleasure. There is an exquisite, squirming-with-life
+                            poem for shoppers - ‘The Elwood Organic Fruit and
+                            Vegetable Shop’. There are erotic poems, writing of
+                            tracery on skin, giving frisson to the mind. A
+                            pleasure to be reading them, as the words are
+                            printed on flesh, on bone, on brain. Yet good
+                            feeling is gutted in poems about separation, loss,
+                            feelings of incompleteness. There arc many bruises
+                            in this collection. The voice is strong and insists
+                            on stating its pain. Sometimes I felt, reading this
+                            volume, that I had fallen into a Venus fly-trap and
+                            was drowning in the poet’s sensitivities, acuteness.
+                            It was an acid bath, and bones remain, memories of
+                            intensity and colour. Resonate. The most intense
+                            birth poem I’ve read is contained in this
+                            collection. ‘Nights’ shows us an hallucinatory
+                            evening of childbirth where a child’s ‘single cry is
+                            the axis’. And later child-rearing, in ‘Ode to Walt
+                            Whitman’, is gritty, frustrating and occasionally,
+                            humorous. The Blue Gate is a profoundly felt
+                            collection. It is backgrounded by Croggon’s novel
+                            Navigatio , a work that rests sometimes closer to
+                            poetry than prose.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Poetry Review Review</summary>
+                        <p>
+                            Borders and Crossings The Blue Gate Katherine
+                            Gallagher Poetry Review , Vol. 89, No. 1, Spring
+                            1999 (pgs 83-85) [Text not yet available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Australian Review</summary>
+                        <p>
+                            The Blue Gate Adam Aitken The Australian’s Review of
+                            Books, The Australian , Vol. 3, No. 8, November 1
+                            998 Of these poets, Alison Croggon is the most
+                            self-consciously analytical and philosophical,
+                            almost old-fashioned; Coral Hull [ How Do Detectives
+                            Make Love? ] is the most political, a poet with a
+                            mission. Emma Lew ’s [ The Wild Reply ] approach is
+                            the least traditional and probably the hardest to
+                            grasp: there is little desire to define identity, or
+                            use poetry as a vehicle for social protest. The idea
+                            of self as the body defines it, alternately
+                            constructed and undone by eros and agape, is the
+                            primary site of consciousness in Croggon’s The Blue
+                            Gate . Her language hugs close to sensuality and
+                            eroticism. It’s as if she has treated the white page
+                            as the skin: a permeable site of interchange between
+                            ourselves and the realm of animate and inanimate
+                            matter. This is a book about love’s complexity, its
+                            tyrannical pressures, its crisis points, its
+                            controlling force. As mother and poet she asks ‘who
+                            has given birth? and who is born?’. Giving birth is
+                            joyful but also catastrophic, breaking the mother’s
+                            sense of boundaries, tearing skin and organs: I am
+                            waiting for what emerges from the white edges of
+                            catastrophe that last bleeding note. Perhaps poetry
+                            compensates for the body’s pain, and the fear and
+                            silence we experience in the absence of God. The
+                            Elizabethans, Whitman, Dante, Rilke, the Latin
+                            American surrealists are Croggon’s influences. But
+                            too often her high style relies on a restricted
+                            range of well-worn tropes. At times, she fires off
+                            strident assertions: ‘Our language is a bitter
+                            struggle towards the child’s speechlessness. / We
+                            fail, always.’ If you agree with this, following the
+                            permutations of this book’s ‘endless garden’ will
+                            lead you to its primary question: how can poetry
+                            escape solipsism and still express the self, when
+                            ‘all the names you mine out of silence / retreat
+                            into the sounds of themselves’?
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Southerly Review</summary>
+                        <p>
+                            The Genius of the Reader (or Who’s sitting on the
+                            chair?) Alison Croggon, The Blue Gate Bev Braune
+                            Southerly , Vol. 58, No. 2, Winter 1998 Alison
+                            Croggon dedicated her first collection of poems,
+                            This is the Stone , to ‘the perfect reader’ in the
+                            figure of John Leonard, someone Gerald Prince might
+                            identify as the ‘ideal reader’, the observer of the
+                            poem who understands the overt and covert steps set
+                            up by the poet, someone who has achieved more than
+                            what Stanley Fish would call ‘linguistic
+                            competence’. Perhaps, this is Umberto Eco’s highly
+                            educated and literary reader (as must be Jonathan
+                            Culler’s), able to determine meaning from the state
+                            of closure or openness in a word. Or it may be Hans
+                            Jauss’s reader - able to slide into a population of
+                            endless interpretations or perpetual ‘fusion of
+                            horizons ’ quite at home in the skins of Hemingway
+                            as cast by David Reiter. However we define the
+                            person who reads the poem, the poet has to be the
+                            best of readers because the poet is primarily an
+                            inventor. Poets may use different tools, vastly
+                            different formulas and blueprints. When we find a
+                            poet with a unique formula, we often say we
+                            recognise ‘the genius’ in the invention, in the
+                            affirmation of the existence of a set of objects
+                            that are as real as, say, a chair in a room... You
+                            open the blue gate in the wall of stone If the
+                            objects in a poem exist in the same way that a chair
+                            does in another room into which we have not yet
+                            entered, and no less so, discovering its existence
+                            is a matter of reading the map to its position so
+                            that we find the chair. As the composer, the poet is
+                            the first observer to enter the room and describe
+                            the chair to would-be observers waiting outside the
+                            room but with little inkling as to how to enter. The
+                            fun in finding it, for Alison Croggon in The Blue
+                            Gate , lies in the chase itself. The chase restores
+                            her ‘to many things I lost: a stone trough filled
+                            with miniature flowers, the privacy of nests in
+                            bamboo thickets, a tiny lawn always filled with the
+                            voices of books, a blue gate’ (‘Notes’). You open
+                            the blue gate in the wall of stone and pass through
+                            the dense birdhaunted forest ‘Divinations VTH’
+                            Croggon shares with Rainer Rilke the sheer joy of
+                            mining names out of silence (‘Divinations XV’). She
+                            presents her first clues to her world through an
+                            epigraph taken from the first of Rainer Rilke’s
+                            Duino Elegies . The key phrase in the epigraph is ‘
+                            Denn Bleiben ist nirgends ’- ‘For staying is
+                            nowhere’. The Rilkean string, endured by the
+                            quivering arrow, is to be found everywhere in
+                            Croggon’s pursuit, her musical background brought
+                            successfully to bear on each ‘pure note’, each ‘last
+                            bleeding note’. Her statements are simple and
+                            active, following neat, reverential tracks to lists
+                            of questions, open-ended answers - the interrogative
+                            without a mark. There is no promise in The Blue Gate
+                            that you will catch up with her to sit with her on
+                            the chair in rooms made of stone or to join the head
+                            of the hunt through ‘libraries of skin’ (‘Aria’).
+                            Her rhythmic territory is the highly polished,
+                            wobbly chair where the rings of [Andrew] Sant ’s [
+                            Album of Domestic Exiles ] ancient trees string the
+                            bow of her arrows to reveal love bloodied and
+                            divine.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Wedding the lyric, and the essay The Blue Gate Geoff
+                            Page (poet) The Canberra Times , 30 May 1998 Three
+                            alliterative words suggest the essence of Alison
+                            Croggon’s second book of verse, The Blue Gate -
+                            metaphor, metaphysics and motherhood. It is easy to
+                            see why this poet has sometimes been impatient in
+                            her reviewing of the more laconic and mundane verse
+                            which tends to comprise our present poetic
+                            mainstream. With Croggon there has to be something
+                            happening in every line. A certain rhetorical level
+                            is quickly reached and maintained. Among the more
+                            obvious, though by now well assimilated, influences
+                            on her work are Whitman (for whom she specifically
+                            writes an ode), Pablo Neruda and Dylan Thomas, all
+                            lovers of rhetoric, of catalogues, of metaphor.
+                            Counteracting this perhaps are the more disciplined
+                            metaphysics of Emily Dickinson. Three lines from
+                            Crog-gon’s ‘Ars Poetica’ suggest the book’s dominant
+                            feeling: ‘Because you have tasted your salt in the
+                            blood / of another’s mouth, because a small flower /
+                            is eating the history of stone’. It’s important to
+                            note that Croggon doesn’t actually name the flower.
+                            It’s always the symbolic, archetypal flower of
+                            metaphysical poetry and must remain so. There is no
+                            way in which it can be a petunia or a dahlia.
+                            Despite the increasing prominence of poets such as
+                            Peter Boyle and Peter Bakowski who have the same
+                            love of metaphor and a comparable level of rhetoric,
+                            Alison Croggon is now, with this second book, an
+                            even rarer voice in Australian poetry than she
+                            appeared to be in her first, This is the Stone .
+                            With Croggon there is always a strong sense of the
+                            female - in the love poems, the poems for her
+                            children and more generally. There is almost always
+                            a powerful appeal to the senses of touch and smell,
+                            even while she is being intensely metaphysical.
+                            ‘Somewhere beyond me’ she says in the poem ‘Bird’,
+                            ‘is a wholeness, a memory of being stone, although
+                            this consoles nothing and explains nothing’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Quadrant Review</summary>
+                        <p>
+                            Books Poetry in the Matter-of-Fact The Blue Gate
+                            Alan Gould (poet and author) Quadrant , Vo. 42, No.
+                            5, May 1998 A tenuous link between the poems of
+                            Philip Hodgins and those of Alison Croggon may lie
+                            in Rilke. Rilke’s death from leukaemia explains his
+                            presence above in Hodgins’ ‘The Change’. The link is
+                            tenuous because I doubt that Philip’s sense of his
+                            region and its haeccitas would have allowed him to
+                            fully believe the last phrase of the quote from
+                            Rilke with which Croggon’s The Blue Gate commences:
+                            Denn Bleiben ist nirgends (For to remain is to be
+                            nowhere). In this, Croggon’s second collection of
+                            poems, Rilke’s spirit - his emergent philosophy of
+                            poetry as that which praises Existence, his
+                            attentiveness to an art at once precise, sensual,
+                            yet (to my ear) peculiarly forced and estranging -
+                            has evidently been absorbed by Alison Croggon as
+                            congenial to her own stance toward the world and the
+                            art of poetry. Indeed she pays homage to the German
+                            poet in the fourteenth section of her ‘Divinations’,
+                            and the first three lines might be describing her
+                            own enterprise. You spoke out of that deep cleft,
+                            sexed and unsexed, where carnivorous petals caress
+                            the strangeness of dream - but what nocturnal
+                            meetings deliver you here, emptied so finally of
+                            yourself, poet whose gaze was self torn by sight
+                            What follows in this poem is an interior,
+                            half-hallucinated landscape, and while it is not
+                            life-drawing in the Hodgins manner, it is a credible
+                            and properly fluid background on which to pay homage
+                            to the German poet. She meets him, as she says,
+                            nocturnally, and many of Croggon’s landscapes are
+                            nocturnal, the effect of this darkness being to
+                            narrow and intensify our sensation of the poet’s
+                            singularity. Rilke and his Weltinnenraum are one of
+                            her resources. The Elizabethans and metaphysicals
+                            are another, with their confidence that wordplay,
+                            paradox, conceit, are the wherewithal of passionate
+                            discourse. Take this from her sequence of four
+                            ‘Sonnets’. Let me say without self-pity, that I love
+                            a man who loves me more than sanity can bear, who’s
+                            so afraid he will our love abhor and give to others
+                            most of what is mine. What of his cock? What of his
+                            private kiss? They’re mine by right of pleasure and
+                            of pain, and should he prick his gentle braille upon
+                            another’s flesh, how blind is my caress which reads
+                            him true, and feels within his eyes fidelity more
+                            deep than his betrayal. I like the forthrightness of
+                            this, its headlong, Donne-like enjoyment of the
+                            argument. But more, I like its courage. It is brave,
+                            not only for the unfashionableness of what it says,
+                            but for its welcome of the idea that a tactful
+                            observance of the resources from within the canon is
+                            no hindrance to making utterance fresh or insight
+                            topical. Like Hodgins, Croggon does not repudiate a
+                            canon simply because some of it has been curriculum,
+                            and this fact endows the works of both with a sense
+                            of their being thoroughbred, of their finding
+                            strengths in the art of their antecedents in order
+                            to make an art of their own that is strong. These
+                            sonnets show Croggon at her most confident, I
+                            believe, because the rigour of form, and her use of
+                            metaphor as the instrument with which to argue, give
+                            her thoughts on the perplexities of love, or the
+                            intriguing genetic echolalia of creating children,
+                            their edge and temper. There’s much in The Blue Gate
+                            which treats the subject of conceiving, carrying,
+                            and giving birth to children. As with Rilke, one has
+                            the sense in Croggon’s poems that in the very
+                            representation of multiform, blind Existence lies
+                            the praise. Her gynaecological imagery in poems like
+                            ‘For Ben’, ‘Ultrasound’, ‘Bearing’, or the very
+                            elemental ‘Cuneiforms’, is persuasive in its
+                            depiction of pregnancy’s sensuousness and
+                            vulnerability, its associated longings and anguish,
+                            its tense consciousness of self and the imminent
+                            other self. She does allow herself some out-of-body
+                            moments, when the fierce nucleus of the self relaxes
+                            into an interval for the celebration of detached
+                            things. The poem called ‘Bird’ is one such, as well
+                            as this deft pastiche from Christopher Smart, where
+                            she conjures a particular organic fruit shop: I will
+                            go walking... to the Elwood Organic Fruit Shop...
+                            for mignonette purses its frilly lips and snowpeas
+                            pout their discreet bellies and the melons hug their
+                            quirky shapes under their marvellous rinds. for
+                            onions ringing their coppery globes and o the silver
+                            shallots and the hairy trumpets of leeks for the
+                            cabbages folding crisp linens and the broccolis
+                            blooming in purple tulles and the dense green skirts
+                            of lettuces... ‘The Elwood Organic Fruit and
+                            Vegetable Shop’ For all the tense deliberation in
+                            the poems of The Blue Gate , I found two grounds of
+                            dissatisfaction. Firstly, I became impatient
+                            wherever I felt the densely metaphorical idiom was
+                            overstrained. In the fifteenth ‘Divination’, for
+                            instance, we are informed ...this vine winding our
+                            bones rustles ceaselessly in absent winds. A vine
+                            rustling in absent winds? Is that ‘absent’ as in
+                            absent-minded or as in absent? The adjective is
+                            careless of clarity and this carelessness is
+                            symptomatic of a tendency throughout this volume. It
+                            betrays, I suggest, a kind of lyric impulse too
+                            zealous for a strangeness of sense, with the result
+                            that it deprives some poems of common sense. This
+                            aspect of the lyric impulse has the further result
+                            that The Blue Gate offers too little relief from the
+                            poet’s private chamber. Certainly it is a chamber
+                            where, on occasion, the reader is given telling
+                            insights into the immediacy and complexity of a
+                            particular woman’s experience and relationships. But
+                            elsewhere, in poems like ‘Muse’, ‘Lunar’, ‘Notes’,
+                            ‘Ars Poetica’, the imagery of private reference
+                            confines and oppresses the reading experience
+                            because the thick layer of metaphorical usage
+                            restricts rather than liberates a meaning that we,
+                            the readers, can share. We are let in, but not let
+                            out. This leads me to my second discontent. There is
+                            a poem called ‘Pause’ which is in the form of a
+                            mantra about the simultaneities possible within the
+                            heedless moment. Again the act of representing the
+                            overflow of reality in any given moment is the act
+                            of celebrating that reality. And its haphazard has
+                            some momentum: Within the undivided moments A train
+                            stops on a bridge A woman’s finger touches the rim
+                            of a man’s mouth A child hides in a secret place and
+                            counts his collection of stones A general tells his
+                            soldiers that justice is not possible... ...A lie
+                            becomes a truth and then a history... A baby tastes
+                            an orange for the first time A soldier stamps on the
+                            hands of a little boy... ...Magnificent lords of
+                            cloud reveal again beauty no one can see. It was the
+                            fifth, eighth and last lines I balked at. Sure, they
+                            were plausible, but unfair. Does no-one see that
+                            beauty in the clouds, not even the speaker who draws
+                            it to our attention? Then again, can our epoch never
+                            give generals any moral characteristics that will
+                            pleasantly surprise us? I decided to change the
+                            lines round. Thus line eight became ‘A little boy
+                            stamps on the hands of a soldier’, whereupon I had a
+                            reversal that was equally plausible, more arresting,
+                            and (I think) more sociologically telling for such
+                            trouble spots in the world as Ulster or Jerusalem.
+                            Such tampering with a finished work is mischievous
+                            of me, but my criticism of Alison Croggon’s poem,
+                            and a shortcoming in this book generally, is the
+                            lack of precisely this connection with quotidian
+                            particulars. Hodgins’ poems have this connection,
+                            occasionally to a prosaic excess. But it is the
+                            attribute which allows a poet to transform the
+                            matter-of-fact into the poetic. It is, if you like,
+                            the point at which photo-journalism contributes to
+                            the personal vision. So I find myself taken with
+                            many of the qualities of Alison Croggon’s poetry,
+                            the fierce independence of her viewpoint, her
+                            facility for witty metaphorical argument and
+                            sensuous realisation, her dedication to craft. At
+                            the same time I’m quite certain my interest would
+                            have been more fully engaged had the world’s
+                            matter-of-factness infiltrated her personal account
+                            of things to give the poetry an ampler sympathy and
+                            justice.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            The Blue Gate Gloria B. Yates Social Alternatives ,
+                            Vol. 17, No. 2, April 1998 First, don’t be put off
+                            by the drab cover. Black Pepper Press should realise
+                            that a boring glossy cover is wasted. Any class of
+                            HSC art students offered a prize of fifty dollars
+                            would produce a better picture than the purple
+                            square on a dark background which fails to tempt you
+                            to open this book. Secondly, don’t be put off by the
+                            inane quote from Les Murray on the back. Almost
+                            anything he says nowadays is regarded as holy writ,
+                            even these are nuisances. But the poem is redeemed
+                            by its last verse where Alison Croggon speaks
+                            plainly, effortlessly: Yet still I wish for you an
+                            inexhaustible love, the fruits of every season, a
+                            sure voice to name them, shelter when you seek it
+                            and the sixteen winds to call you from yourself back
+                            to this first ocean... The second poem,
+                            ‘Ultrasound’, is better - ‘I’ve seen its nameless
+                            face / lit on a sonar screen... the clean / bubble
+                            of its skull, its budding fingers, / its black mouth
+                            innocent of words, / its coruscating fearless
+                            heart.’ And the opening line from ‘Aria’ is
+                            unforgettable: ‘Because you love me, I fear the
+                            angels will be jealous...’ The poem ‘Pause’ excels
+                            by using the simplest, most effective images: Within
+                            the undivided moments A baby tastes an orange for
+                            the first time A soldier stamps on the hands of a
+                            little boy A man loses his mind in the endless
+                            garden. The four sonnets are excellent. They have
+                            the instant authority of the greatest Elizabethans,
+                            though the themes are modern indeed. Perhaps she’s
+                            missed her century. The temptation to quote them
+                            must be resisted because each line is so closely
+                            interwoven with the others that it would be an
+                            offence not to present each sonnet in full. And as
+                            we read on the book continues to irritate and
+                            simultaneously evoke admiration. Some poems are so
+                            choked with images that one longs to shake the
+                            writer and say, Wait! ‘before each breast unfolds
+                            into its hour of light’ and becomes ‘heavy grapes
+                            that swing aside their cloistered sun from
+                            inattentive lips’ - Hang on, what do think your
+                            readers are doing? our minds can’t jump around like
+                            jazzed-up kaleidoscopes. By this bombardment of
+                            metaphors nothing is gained for reader or poet; we
+                            need time to appreciate each image and trust the
+                            poet - you make it sound too much like a series of
+                            conjuring tricks. Nevertheless sometimes this
+                            plethora of imagery succeeds. ‘Lines on Human Grace’
+                            certainly hits the jackpot. So my favourite poem
+                            from The Blue Gate is not one of those that glitter
+                            with conflicting images but the lovely and totally
+                            original piece, ‘The Elwood Organic Fruit and
+                            Vegetable shop’: for bawling children are solaced
+                            with grapes and handled to leave no bruises for the
+                            man goes are soft yellow thighs and the strawberries
+                            klaxons of sweetness... for peaches like the breasts
+                            of angels and passion fruits hard and dark and
+                            bursting with seed in your palm for the dull gold
+                            flesh of pontiacs and knotty umbers of yams and new
+                            potatoes like the heels of babies for the tubs of
+                            sweet william and heartlifting freesias and orchids
+                            as damp and beautiful as clitoral kisses... how they
+                            nestle up the vegetables, promising them the fruits
+                            of their ardour! There is more, much more, in this
+                            poem. Read it and I guarantee you will never pass by
+                            vegetables again without admiration. For many poets
+                            can write of love and despair, but Alison Croggon is
+                            the only one I’ve ever encountered who can sing of
+                            lettuces, broccoli, onions and ‘the hairy trumpets
+                            of leeks’. She has learnt what she calls ‘the
+                            glorious speech of the earth’. Don’t be put off; do
+                            buy this book.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            The Seductive Microcosm Alison Croggon: The Blue
+                            Gate Jennifer Maiden Overland , No. 150, Autumn 1998
+                            Another cage - this time of subject matter - is
+                            suggested to me by Alison Croggon’s The Blue Gate .
+                            I had heard very well of this writer and was indeed
+                            avidly impressed by her clear, deliberate vocabulary
+                            and intense expertise in spacing and timing - as in
+                            ‘Song’, which begins ‘There is a flower / made of
+                            eyelids / there is a moon / which scythes the
+                            ripples / of a black river / and then nothing’.
+                            There is a circularity in her themes, however - a
+                            recurrence of elemental things, broken loves,
+                            legends, children, birdsong - as if all were
+                            brilliantly frozen in a lyricism which makes me wish
+                            the blue gate would open more often. There is a
+                            wilfulness in such perfection and it will become
+                            quite admirably the wilfulness of wider, wilder art.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sidewalk Review</summary>
+                        <p>
+                            The Blue Gate Allison Croggon Jason Sweeney (poet)
+                            Sidewalk , No. 1, 1998 Like a list I try to order
+                            some kind of response. At random, in order of
+                            appearance... Ultrasound : the unborn (yet) unshaped
+                            ultrasound techno-screen star, anticipation of a
+                            bluegreen figure. Bird : a skeleton withholding it’s
+                            memory. Aria : a fear of love, the interminable
+                            truth of closure, nothing ever lasts, we might as
+                            well sing operas, this libretto over dinner. Pause :
+                            there’s horror out there, a million untold stories,
+                            bleak moments, a collection of beautiful atrocities.
+                            Elegy for Children : shaped into things (out of the
+                            ultrasound, into sight, flesh), signs of things,
+                            being things, bodies born out of innocence, still
+                            shine in your head. Nights : in flat darkness there
+                            are, or seem to be, no words, so much fear and the
+                            accent of pain. A hundred thoughts, grand scale,
+                            manifested in half-sleep and a poem is written.
+                            Fugue : poetry, I think, is about articulating the
+                            intangible. Or is that the reviewing of it? The
+                            Elwood Organic Fruit and Vegetable Shop : ah, the
+                            language of food, to see and eat, something tangible
+                            and of flesh. Angels : Croggon, she’s opening the
+                            sky, spilling hymns, saviours in lines of words,
+                            silent on the page, new children are angels, another
+                            elegy, boosted spirits. Lines on Human Grace :
+                            remembering sex and body and sweat and the ringing
+                            in your ears, what can never be a total picture but
+                            snapshots of an erotic moment, bodies as plates to
+                            feed off, consumption, politely. Shark : my friend
+                            is made nauseous by the sight of sharks, so there
+                            are prayers and poems, psalms even, a litany loaded
+                            with oceans of death, regret, possibly life. Sonnets
+                            : flesh, anger, loss transferred - what of his (now
+                            absent) body? his cock? what’s his? what’s yours?
+                            Limbo : cycles like words, a body remembers pain
+                            then fears it, remembers words then loses them,
+                            recites poetry to a crowd, gives life to it.
+                            Fairytale : breaking into a dollhouse, in an ugly
+                            city of gilt-edged mirrors, all cracking, we find
+                            fantasy and strange reality collide [here]. Notes :
+                            footnotes from a broken heart, burnt tongues of
+                            desire, scolded in fact, there’s bleeding and
+                            blood-letting. Letting the words seep through.
+                            Something to hold. Croggon gives the reader a
+                            remarkable glimpse into horror and purity. The shape
+                            of words to come.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Coppertales Review</summary>
+                        <p>
+                            Layered Lip after Lip The Blue Gate Debbie Comerford
+                            Coppertales, A Journal of Rural Arts , No. 5, 1998
+                            (pgs 117-118) [Text not yet available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>New England Review Review</summary>
+                        <p>
+                            Alison Croggon, The Blue Gate Jack Bedson New
+                            England Review , No. 7, Summer 1997-1998 Black
+                            Pepper press in North Fitzroy is among the current
+                            crop of small non-commercial publishers putting out
+                            attractive paperbacks of new Australian poetry with
+                            the assistance of the Australia Council. In these
+                            two 1997 titles by Alison Croggon and Hugh Tolhurst
+                            [ Filth and Other Poems ], Black Pepper shows us it
+                            can appeal to very different palates… Alison Croggon
+                            is a writer not shy of a challenge. Besides poetry
+                            published in Australia and overseas, her
+                            biographical note lists an output including
+                            journalism, plays, libretti, translations, editing
+                            and criticism. The title of this, Croggon’s second
+                            book of poems, The Blue Gate , is part tease, part
+                            clue, and partly an opening into secret gardens of
+                            spiritual and imaginative possibilities. And yes -
+                            childhood and the past. Croggon’s impulse is to go
+                            through the material world to inscapes of secrecy
+                            and darkness, and to open it up to a sense of higher
+                            nature. The book is riddled with gnostic and
+                            Manichean symbolism. Don’t bother looking up your
+                            Dictionary of Philosophy and Religion - I’ve got
+                            mine open. Gnosticism was a sect of the early
+                            Christian church that was into dualisms between good
+                            and evil, light and dark. Materialism is evil and
+                            the spiritual world is the realm of goodness. There
+                            are angels everywhere, sort of gremlins who emanate
+                            from God, but help spread darkness. There’s a Great
+                            Mother who gives birth to the angels. There’s a
+                            Primal Man who comes to make war on darkness, is
+                            partly vanquished but sets himself free. Now, the
+                            Gnostic elect could get out of the shit and lift
+                            themselves up towards God through appropriate
+                            knowledge and ascetic separation from the lower
+                            world. The union of the Great Mother and the Primal
+                            Man signals salvation. One of the bits I like about
+                            Manicheanism is that even at the inanimate level
+                            (rocks and stuff) there is light to be released from
+                            darkness - it streams towards the higher regions by
+                            a ‘Pillar of Glory’. I’m only going on about all
+                            this because it’s all there in The Blue Gate , (I’ll
+                            let you wonder what Alison gets up to on a Saturday
+                            night). There’s angels, wings, darkness, heaven,
+                            clouds, dreams, night, birth, and people and things
+                            opening up to light and revelation You open the blue
+                            gate in the wall of stone ...into the distant
+                            summer. ‘Divinations VIII’ this book of changes,
+                            dissolvings, transformations, fluidity between
+                            inside and out, between people and nature. Many of
+                            the poems resolve themselves in a final movement
+                            towards light, nature, sublimation, or sensual
+                            epiphany, towards final images of air, breath, wind,
+                            ocean, love, and sun. Gnostic material is not the
+                            point of Croggon’s poetry, it is simply one strand,
+                            one starting point, in her creative mill. Other
+                            starting points are the poetic tradition and musical
+                            forms - the ways that art works, what it can
+                            articulate and what it fails to articulate, the
+                            inexpressible, white space and silences, unfaithful
+                            translations ...your crumbling words, unable to hold
+                            even one drop of light. (‘Ars Poetica’) Part of
+                            Croggon’s experiment is in line with the modern
+                            effort to get maximum expression and referentiality
+                            with few words - words as ciphers, cuneiforms, red
+                            fist, nose, coney, eye, moody orchid, (‘Cuneiforms’)
+                            Even in the titles she gives her poems,
+                            three-quarters of them are one word only: ‘Bird’,
+                            ‘Aria’, ‘Pause’, ‘Nights’, ‘Fugue’, ‘Angels’,
+                            ‘Lunar’, ‘Sonnets’, ‘Limbo’, ‘Elysium’, ‘Riddle’,
+                            ‘Sonata’. These are blue gates, opening into a world
+                            rich with possibilities. Never a reductionist,
+                            Croggon believes in flowering open.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Ulitarra Review</summary>
+                        <p>
+                            A Dense, Word-Haunted Forest Alison Croggon, The
+                            Blue Gate Martin Langford Ulitarra , No. 12, 1997
+                            The ‘blue gate’ in the title of Alison Croggon’s
+                            second book of poems is an entrance to the ecstatic
+                            and the marvellous, and much of this book is an
+                            attempt to find words for the related ecstatic
+                            worlds of love and art. Perhaps its central tension
+                            is that paradise both must and cannot exist: a
+                            duality stalked and paralleled by the not unrelated
+                            paradox that art both attempts to capture some sense
+                            of ecstasy (‘crumbling words, unable / to hold even
+                            one drop of water’: ‘Ars Poetica’) yet also
+                            contributes to the vision of paradise in the first
+                            place. It is not surprising that the collection is
+                            prefaced by a quote from Rilke. At its best, some
+                            excellent poetry is produced by these tensions.
+                            Croggon’s craftsmanship is sufficient to enable her
+                            to say what she really wants to say, and the poems
+                            are impressive for their honesty. Look at the
+                            wonderful balancing act in the word ‘loosens’, for
+                            example: In the simple gardens the orchards of hair
+                            and sweat mesmeric with dapple and beehum where
+                            birdbreath tunes its delicacies and the skeined
+                            senses tumble out their embroideries the eyed wing,
+                            the amphibian tongue, the feathered hand stone
+                            loosens its speech ‘Divinations I’ While this is a
+                            book displaying a great deal of skill and courage, I
+                            do have some reservations. To some extent these
+                            question marks are a by-product of the unfortunate
+                            fact that every style has some shortcomings; that
+                            you cannot build strengths in any area without also
+                            making sacrifices in others. In most of these poems,
+                            the emotional intensity is pitched fairly high. It
+                            often feels as if the focus is on the emotion, that
+                            the poem’s primary function is as a vehicle for the
+                            retrieval of feeling. That need not be a problem:
+                            the more intense voices are badly under-represented
+                            in Australian poetry. But it does create a curious
+                            effect when thinking about these poems afterwards:
+                            the power of the emotion can tend to evaporate in a
+                            manner analogous to the way the memory of emotions -
+                            such overwhelming forces - simply vanish in real
+                            life. A further, more significant point is that in
+                            Croggon’s poetry, a focus on intensity accompanies a
+                            de-emphasis on the particularities of time and place
+                            - perhaps the momentum of emotional imperatives
+                            cannot afford that slower paced attention to the
+                            detailed and specific. Croggon’s language (via
+                            Rilke, and Americans such as Merwin?) is in some
+                            ways a modern version of a grand style. It insists
+                            on the nobility of intensity without being foolish
+                            enough to ask why such urgency should be noble.
+                            When, however, the attention wavers or the pitch
+                            drops, it can become a type of grandspeak, overly
+                            reliant on the strong beat or the extra breath, and
+                            on words such as ‘dark’ or ‘burn’. At its best,
+                            however - and Croggon’s attention does not waver too
+                            often - there is some terrific verse. The following
+                            ‘Psalms out of Sickness’ are perhaps indicative of
+                            her poise and control: once I thought answers would
+                            grow cleanly out of the soil of my life: I would
+                            pluck them - aha! inhaling serenity o my love you
+                            are there instead with your empty hand curving to
+                            the shape of my cheek This verse is brave and
+                            well-crafted. Just occasionally, I could wish it
+                            were a little more particular.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Imago Review</summary>
+                        <p>
+                            The Blue Gate Helen Harton Imago , Vol. 9, No. 3,
+                            Summer 1997 Alison Croggon’s poetic expression is
+                            rather more enigmatic, tending at times to the
+                            esoteric, but the images it conjures up have an
+                            appeal all their own. midnight rolls like hunger
+                            into the still eye of an absolute dawn all the
+                            possible birds arrive and fly through your sky like
+                            music ‘Elysium’ Her collection begins with a ‘mother
+                            to child’ poem and continues with several that are a
+                            celebration of life. Many of the poems contain
+                            metaphors that relate back to the love of a mother
+                            for her child, an emotion that Croggon puts above
+                            all else, although this wonder in life and its
+                            emergence is extended also to other forms, such as
+                            birds, or a tree bursting into bud. Soon, however,
+                            the mood changes - there are many emotional
+                            pitfalls, and the necessity of getting on with life
+                            and of somehow transcending those pitfalls is always
+                            in the background. Amongst the one- to two-line life
+                            fragments presented in the poem ‘Pause’ is one which
+                            concludes that ‘A lie becomes a truth and then a
+                            history’, striking a note of wariness in any present
+                            day outlook. Throughout the collection, there are
+                            recurrent metaphors referring to water (or rain),
+                            sunshine, shadows, trees and blossom, and children.
+                            They have a cohesive effect on the whole. The title,
+                            The Blue Gate , comes from one of the poems in a
+                            series entitled ‘Divinations’; it is a symbolic gate
+                            in a ‘wall of stone’ through which we must pass. On
+                            the other side, in these poems, there is a feeling
+                            of being in a world without end, without resolution,
+                            albeit with much love; and in the way of dreams, it
+                            gets you in.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Silence and Solitude Andrew Sant Australian Book
+                            Review , No. 195, October 1997 Two presences in
+                            Alison Croggon’s poetry in The Blue Gate are Walt
+                            Whitman and Rainer Maria Rilke. Whitman, the
+                            American, in his preface to Leaves of Grass , writes
+                            of the poet responding to his country’s spirit, of
+                            being ‘commensurate with a people’. If Whitman
+                            endeavours to speak from the middle of life and
+                            culture in nineteenth century America, the German
+                            poet, Rilke, in his famous Duino Elegies , speaks of
+                            the need to abandon such a position to quest for
+                            something much deeper though elusive in ourselves.
+                            These views suggest something of the polarities in
+                            Croggon’s work. Rilke, at his most complex, is a
+                            difficult poet. Indeed, he implied that the way to
+                            enjoy his Elegies is not through elucidation but
+                            rather through the reader’s abandonment to them. In
+                            any case, poetry is diminished by elucidation if
+                            dogged, as many a bored classroom student knows
+                            having been denied the immediate experience of it.
+                            Perhaps this is why Whitman was for so long
+                            under-appreciated: a poet so fond of lists of things
+                            and events delivered with great cumulative effect
+                            makes pedagogical exegesis redundant. The trick is
+                            just to go with it. I suspect Croggon feels much the
+                            same about appreciation of her poetry. Often
+                            shifting and elusive, her poems can conjure the
+                            ‘strangeness of dreams’ - a quality she mentions in
+                            her poem to Rilke. There is also an epigraph to the
+                            book as a whole in German from Rilke which asks that
+                            we liberate ourselves from things loved so that we
+                            can, in effect, become more ourselves. Readers would
+                            therefore be right not to expect many familiar
+                            signposts in Croggon’s poetry; there are few proper
+                            nouns and things that are named are often in the
+                            service of inner experience. So in the main this is
+                            not ‘social’ poetry as much Australian poetry is, in
+                            a relatively congenial and outgoing way. ‘Silence’
+                            and ‘solitude’ are key words though the poetry is
+                            neither quiet nor retiring. This might make the
+                            sensuousness and abundance portrayed in ‘The Elwood
+                            Organic Fruit and Vegetable Shop’ seem at odds with
+                            the general drift of the book. Here there is a
+                            wonderfully celebratory Whitmanesque list of produce
+                            - ‘the glorious speech of the earth!’ Croggon is at
+                            the centre of ‘the civil business of buying and
+                            selling’ where mangoes are ‘soft yellow thighs’ and
+                            orchids are ‘strange and beautiful as clitoral
+                            kisses’. However in a neighbouring poem, ‘Ode to
+                            Walt Whitman’, the ‘gentle imperfect generous man’
+                            is addressed as a companion in a widely viewed but
+                            diminished world where ‘cities mourn their dead no
+                            longer’. This poem proceeds in Whitmanesque style, a
+                            homage, until it leads to a personal declaration:
+                            ...truly what is my faith except a stubborn voice
+                            casting out its shining length to where I walk alone
+                            sick and afraid and unable to accept defeat singing
+                            as I was born to Croggon’s inherited strategies here
+                            serve her own ends neatly. But this is not a bleak
+                            book. The ‘stubborn voice’ is restless, impatient,
+                            exploratory - attuned to bedrock reality. Poems are
+                            often carried forward by sheer rhythmical energy
+                            and, if the nature of the anguish that often informs
+                            them can be hard to pin down, it’s because anguish
+                            is seen as a price of being alive when emotions are
+                            strong. Courage (in ‘Bird’) and fortitude (in
+                            ‘Limbo’) overcome the odds, no more so than in the
+                            fine opening poem to Croggon’s son, which is one of
+                            several memorable poems where the abiding concern is
+                            with motherhood. In ‘Ultrasound’ there’s hope the
+                            child will ‘burst the sorrow of your swelling
+                            mother’. Elsewhere ‘savage promise’ leads to loss.
+                            When Croggon’s poems depict moments of consolation
+                            they are particularly moving: in the house of my
+                            soul the bed is smooth and dark, its pungent shadows
+                            breathe in the empty room we still inhabit and
+                            silently the book opens its voices in the late air,
+                            where hands have been waking to tasks, to the
+                            patient business of living. All is quiet now, the
+                            light is gentle and you, voice that I love, o you
+                            are coming home. ‘Sonata’ Like Rilke, Croggon would
+                            choose to summon angels, whether, in her poetry,
+                            they embody belief in or the impossibility of
+                            fulfilment, I’m not sure. Unlike Rilke she has an
+                            enduring regard for relationships while he tended to
+                            see them as a distraction. Her poems about
+                            relationships are among her best - highly-charged,
+                            erotic. Then a clever surprise in a book where
+                            experience is so often depicted as being raw and
+                            relentless, her ‘Sonnets’ offer a formal elegance
+                            that dignifies pleasure and pain. A surprise, not
+                            only within the context of this book, but also
+                            because these days the sonnet is so often put to
+                            more demotic uses. John Leonard, quoted on the
+                            cover, is right to praise Croggon’s craft. She can
+                            slip in and out of styles as readily as an amphibian
+                            slips from land to water. It’s part of her
+                            achievement that this can seem as much facilitatory
+                            as a matter of flourish; though sometimes, as in
+                            ‘Bearing’, she cranks up the volume too much and the
+                            poetry becomes overwrought. I was also concerned
+                            about her readiness to make such prosaic statements
+                            as ‘The slow beat of living continues, intolerably’.
+                            This is not borne put by the overall dexterity and
+                            richness of Croggon’s poetry, its willingness to be
+                            formal or fragmentary with equal flair - its
+                            distinction not diminished by the company of the two
+                            great poets it honours.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sunday Age Review</summary>
+                        <p>
+                            Top Shelf Editor’s Choice The Blue Gate by Alison
+                            Croggon Larry Schwartz The Sunday Age , 17 August
+                            1997 Journalist and writer Croggon has been hailed
+                            as among the best of a younger generation of
+                            Australian poets since publication of her
+                            award-winning first book of poems six years ago. The
+                            new collection comes with critical plaudits on the
+                            back cover from the likes of Les Murray (‘an
+                            important shift in literary polarities’), John
+                            Leonard (‘dense, intense and beautifully crafted’)
+                            and Geoff Page (‘a constant feeling of lyrical
+                            sensuality’). She has the flair to write of
+                            experience such as love or childbirth in a way that
+                            has resonance for others. ‘Ode to Walt Whitman’
+                            might make you think of Ginsberg’s imagined
+                            encounter with the bard in a California supermarket;
+                            a line such as ‘stone loosens its speech,’ in
+                            ‘Divinations’ is reminiscent of another by W.C.
+                            Williams. But her voice is very much her own,
+                            finding an order in the world about her. ‘Poetry
+                            remembers/ everything that exhaustion / strews
+                            across a wasteland’, she writes in ‘Fugue’. In
+                            another (‘Ars Poetica’), of ‘a possible music’ that
+                            ‘lifts through the panic of decay’.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

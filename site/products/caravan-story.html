@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,334 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/caravan-story.svg&quot;);
                         "
                     >
-                        Featured
+                        Caravan Story
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Wayne Macauley</h3>
+                </div>
+                <img
+                    alt="Cover of Caravan Story"
+                    class="product-cover-mobile"
+                    src="/assets/books/caravan-story/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Caravan Story"
+                        class="product-cover"
+                        src="/assets/books/caravan-story/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        So here I am, I’m going: it happens to us all. There is
+                        no rhyme nor reason. Even when you’ve sucked the fingers
+                        of the hand that feeds you it can still turn around and
+                        grab you by the throat. One morning, without warning,
+                        our narrator wakes into a nightmare. He and his female
+                        companion are put in a caravan and driven to a football
+                        oval in a faraway country town. There they join scores
+                        of other caravan-dwellers in a seemingly closed
+                        community. They are divided into groups, given their
+                        tasks. Then our narrator ‘escapes’, to an abandoned
+                        school in a big country town… Wayne Macauley has a gift
+                        for storytelling. He can, and cannot but help, spin a
+                        yarn. It is this continual shifting on of our attention
+                        through the description of the particulars of a scene
+                        that gives his writing such a weird intensity. Examining
+                        the darker side of our manufacture and manipulation of
+                        culture, Caravan Story is a deeply unsettling and at
+                        times hilarious read. With Macauley’s inexorable
+                        narrative logic we are held in its thrall until the
+                        sparkling, if muted, transfiguration of its ending. In
+                        an era when many Australian novelists are playing it
+                        safe... Wayne Macauley is an ambitious talent worth
+                        watching. Emmett Stinson, Wet Ink
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ None</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/caravan-story.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/caravan-story/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044534</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>168</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Wayne Macauley is a Melbourne writer whose stories
+                            have been published in Meanjin, Westerly, Overland,
+                            Arena, HQ and other magazines.
+                        </p>
+                        <a class="bold" href="/authors/wayne-macauley.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Martin Shaw, Readings Monthly</summary>
+                        <p>
+                            Caravan Story Martin Shaw Readings Monthly , July
+                            2007 (An edited version of this review appeared in
+                            The Monthly , July 2007) In 2004 Macauley published
+                            Blueprints for a Barbed-Wire Canoe to great acclaim,
+                            with one critic even going so far as to say that ‘if
+                            more Australian literature was of this calibre, we’d
+                            be laughing’. On the strength of this, his second,
+                            book, I must say I entirely agree ! But as much as
+                            the art of this book - its surreal, dreamlike
+                            atmosphere, its memorable cast of slightly sinister
+                            characters (à la Kafka) - seduces the reader, what
+                            really excites is Macauley’s provocative cultural
+                            intervention. The central premise is a
+                            not-so-far-away-as-you-might-think radical
+                            utilitarianization of the arts in Australian
+                            culture. A young couple, one a writer named Wayne
+                            Macauley, the other an actor, are removed from their
+                            inner-urban lodgings and taken by caravan to the
+                            local football oval at a small town in the Victorian
+                            countryside. There they find themselves in a new
+                            ‘community’ of like-minded cultural workers.
+                            Somewhat confused, Wayne begins work on his writing
+                            – until it becomes apparent that the community’s
+                            material is simply ending up in the garbage bin. The
+                            select few get the opportunity to render themselves
+                            ‘possibly’ useful by generating scripts for film or
+                            TV; the others simply vanish. His girlfriend, on the
+                            other hand, finds that her profession at least is
+                            deemed to have its uses – she finds herself on the
+                            road seven days a week in a traveling troupe,
+                            providing entertainment for demoralized country
+                            towns suffering from the drought, or making TV
+                            commercials. But in the camp even more artists are
+                            arriving on buses, it’s full to overflowing (in need
+                            of a final solution, in fact). A lament but also a
+                            call to arms, Caravan Story is a thrilling piece of
+                            satire, a compulsively readable, extremely
+                            well-wrought Orwellian fable that I believe
+                            announces the arrival of Macauley as a major
+                            Australian writer, one who definitely has something
+                            to say.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Owen Richardson, The Age</summary>
+                        <p>
+                            Macauley on the road again Owen Richardson The Age ,
+                            25 August 2007 Melbourne writer Wayne Macauley’s
+                            first novel, Blueprints for a Barbed-Wire Canoe ,
+                            showed that a real talent had arrived, and his
+                            second confirms the promise. Like Kafka or Ballard,
+                            his books are set in a dreamlike parallel world that
+                            shines a light back onto ours. Allegory being hard
+                            to keep up at length, both those writers are better
+                            in their short stories than in their novels, and
+                            Macauley’s chosen form of the longish novella -
+                            about 150 pages -and his physical specificity show
+                            canniness and discipline, as well as ability. In
+                            Caravan Story , Wayne, a writer, and his actor
+                            girlfriend are rounded up along with their
+                            colleagues and made to live in caravans parked in a
+                            country town footy ground, like so many refugees or
+                            Jonestown cultists, and put to work on various
+                            projects. The writers fare the worst; the actors
+                            look as if they are going to spend their lives doing
+                            corporate training videos or public service ads,
+                            while the painters, well, they have all those
+                            community murals to do. The writers are sent back to
+                            school, literally - shades of Ferdydurke - in the
+                            hope they may have a future in TV and film and made
+                            to watch Chinatown over and over again and schooled
+                            in the jargon of story paradigms (set-up,
+                            confrontation, resolution), the rhetoric of the
+                            commercial arts. It’s a book written by someone who
+                            has had to fill out one grant application too many,
+                            or had to read the dreadful pap funding bodies put
+                            on their websites, until he’s started to bleed from
+                            the ears.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Radio New Zealand Review</summary>
+                        <p>
+                            Caravan Story Radio New Zealand, ‘Nine to Noon ’, 17
+                            August 2012 For the audio of this review click here:
+                            http://www.radionz.co.nz/national/programmes/ninetonoon/audio/2528420/book-review-with-louise-o%27brien.asx
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Caravan Story Tali Polichtuk Australian Book Review
+                            , No. 298, February 2008 In his lauded début
+                            novella, Blueprints for a Barbed-Wired Canoe (2004),
+                            Wayne Macauley charted the development and demise of
+                            a badly planned and hastily constructed
+                            outer-suburban housing development. Luring
+                            city-dwellers with cheap housing and a promised
+                            highway to enable quick access to the city, the
+                            government abandoned the project, leaving the
+                            residents to fend for themselves. In Caravan Story ,
+                            Macauley’s second novella, the author renews his
+                            preoccupation with urban planning and hones his gift
+                            for allegory, spotlighting the plight of artists
+                            forcibly relocated to the countryside. Wayne, the
+                            narrator, is one of hundreds affected by this
+                            government policy. Evicted from the inner-city home
+                            he shares with his partner, Alice, they are moved to
+                            a football field cum caravan park in a Victorian
+                            country town. Here they are trained to channel their
+                            creative abilities (writing and acting,
+                            respectively) to utilitarian ends. The aim of the
+                            project is to turn them into citizens ‘[w]ho might
+                            make a worthwhile contribution to society’. This
+                            proves to be a futile exercise for Wayne and his
+                            fellow writers. Bureaucrats dispose of their work
+                            unread, their rejection letters having been drafted
+                            even before they began their menial writing tasks.
+                            An attack on the strip-mining of the arts, Caravan
+                            Story ’s strength lies in the manner of Macauley’s
+                            critique. Eschewing heavy-handed didacticism, he
+                            opts for economical prose imbued with subtle
+                            imagery. Housing serves as the key motif, a totemic
+                            symbol of the depletion of the community’s artistic
+                            freedom. The stationary caravan is a cogent metaphor
+                            for the precarious position of the handout-dependent
+                            artist, ‘[s]ucking on the dug of dubious
+                            benevolence’. Mixing elegy and whimsy, satire and
+                            black humour, language becomes pliant under
+                            Macauley’s command. The narrative palls when the
+                            author allows his characters to sermonise at length,
+                            but this is a small blemish in an otherwise engaging
+                            read.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Canberra Times Review</summary>
+                        <p>
+                            Ebb and flow of everyday life made new Emily Maguire
+                            (author) The Canberra Times , 8 December 2007
+                            Reading a metafictional novel can be like working at
+                            a cryptic crossword. The cheeky winks and word play
+                            are good fun but in the end it’s all just so much
+                            diversion. At their best, however, such novels work
+                            to expand our understanding. Happily, Wayne
+                            Macauley’s use of metafictional techniques in
+                            Caravan Story is more revelatory than masturbatory;
+                            the head games and narrative tricks are directed
+                            toward getting the reader to think more deeply, not
+                            just more cleverly. The narrator of Caravan Story ,
+                            also a writer named Wayne Macauley, is confused
+                            rather than shocked when he is herded into a caravan
+                            and driven to a country football ground. It seems
+                            Wayne and all the other writers, actors and painters
+                            have been involuntarily recruited to an artists’
+                            colony in which they will be fed and watered so long
+                            as they beaver away at their set assignments. The
+                            actors and painters disappear fairly quickly; their
+                            skills are in high demand for corporate training
+                            videos, commercials and community murals. The
+                            writers, though, are less useful. ‘The question is,’
+                            says the camp administrator at one point, ‘what good
+                            are all these writers, what possible worthwhile
+                            contribution could any of you possibly make, how
+                            could any of you ever possibly pay your way?’ After
+                            wasting the days writing pages that end up in the
+                            overflowing garbage cans behind the toilet block,
+                            the useless writers are sent - literally - back to
+                            school. Here they are bluntly told the ‘facts’: ‘You
+                            can hold on to your romantic dreams all you like...
+                            but there is only one way to make a living out of
+                            telling stories and that is having your stories told
+                            on celluloid within the paradigm of a three-act
+                            structure.’ On one level this book is a painful (to
+                            this novelist, anyway) satire on the endless round
+                            of grant, fellowship and residency applications that
+                            writers undertake in an attempt to eke out a living
+                            or improve their literary status. But it’s also an
+                            interrogation of the place of art, specifically
+                            literature, in our society. Is literature that is
+                            produced by demand or written to pre-defined
+                            parameters literature at all? Is a work of art only
+                            worth something if someone (anyone), somewhere
+                            (anywhere) is willing to pay for it? What’s the
+                            point of it all, anyway?
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Readings Monthly book of the year</summary>
+                        <p>
+                            Citation as a Book of the Year (2007) My discovery
+                            of the year was Brunswick author Wayne Macauley. For
+                            anyone who thrills to a hypnotic prose style and
+                            incisive social satire, I would urge you to discover
+                            his work! His most recent novella is Caravan Story .
+                            Martin Shaw, Readings Monthly , December
+                            2007-January 2008
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

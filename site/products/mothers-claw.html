@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,141 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/mothers-claw.svg&quot;);
                         "
                     >
-                        Featured
+                        Mother’s Claw
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Louise Davenport</h3>
+                </div>
+                <img
+                    alt="Cover of Mother’s Claw"
+                    class="product-cover-mobile"
+                    src="/assets/books/mothers-claw/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Mother’s Claw"
+                        class="product-cover"
+                        src="/assets/books/mothers-claw/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Louise Davenport ’ s short fiction is spare in the
+                        classic modernist manner. Strong underlying emotion is
+                        controlled, oblique or symbolic. The ‘ claw ’ in the
+                        title sequence is a traditional image that is strikingly
+                        re-invented through the agency of a moving statue,
+                        itself an image re-energised from the canon. In many
+                        ways her first collection is a fractured mirror,
+                        presenting key images recurrently. Or it can be read as
+                        a mosaic autobiography, the author ’ s facing the
+                        childhood horror of her mother ’ s suicide and dealing
+                        with its emotional ramifications in her adult life.
+                        Mother ’ s Claw is both cool and healing.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 21.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/mothers-claw.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/mothers-claw/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044160</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2001</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>111</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Louise Davenport was born in Melbourne in 1955. Her
+                            childhood was partly spent in the Bendigo Babies’
+                            Home and the Andrew Kerr Memorial Home for Children
+                            while her mother was receiving psychiatric
+                            treatment.
+                        </p>
+                        <a class="bold" href="/authors/louise-davenport.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>artStreams Review</summary>
+                        <p>
+                            ArtStreams Like a fracturing mirror, Davenport’s
+                            short fiction presents key images recurrently.
+                            Beginning with childhood memories of the horror of
+                            her mother’s death, Davenport moves gently between
+                            stoires of her life. These stories are all coloured
+                            by the claw - the image of her mother that haunts
+                            her life. Moving roughly along a timeline, her
+                            scattered images weave a surprisingly clear story.
+                            To go to the heart of the truth is too much pain. I
+                            enter from an angle and light up the edges of my
+                            object with pastel relief. Davenport’s story is
+                            ghostly and quiet, fragments of dreams and memories
+                            entangle to produce an engaging fiction.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

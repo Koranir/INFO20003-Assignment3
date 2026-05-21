@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,701 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/botany-bay-document.svg&quot;);
                         "
                     >
-                        Featured
+                        Botany Bay Document
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jordie Albiston</h3>
+                </div>
+                <img
+                    alt="Cover of Botany Bay Document"
+                    class="product-cover-mobile"
+                    src="/assets/books/botany-bay-document/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Botany Bay Document"
+                        class="product-cover"
+                        src="/assets/books/botany-bay-document/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        They lie in rows with two to a bed Their sleeping faces
+                        assorted And dreams of mothers circle the heads of Lady
+                        King's one hundred daughters Jordie Albiston’s Botany
+                        Bay Document is a sudden breakthrough from her first
+                        prize-winning collection Nervous Arcs. Using ship log
+                        books, legal records, paintings, etchings and maps,
+                        newspapers, private correspondence and diaries she
+                        re-creates the lives and times of the first women of
+                        white settlement. Their hardships, social concerns and
+                        triumphs emerge to confront us now. A Poetical History
+                        of the Women of Botany Bay’s radical persuasion is in
+                        its approach: spontaneous poem is sculpted from
+                        intractable document. The ballad, traditionally a male
+                        preserve in our literary heritage, is re-invented as a
+                        syncopated form. It strikes us like drama. Botany Bay
+                        Document is an achievement certain to be influential. To
+                        bleed in a place makes it home. Jordie Albiston has told
+                        us how women became attached to the colonial and ongoing
+                        landscape. Her young women rescue us as citizens.
+                        Jennifer Harrison
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 20.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/botany-bay-document.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/botany-bay-document/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044886</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2014</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>69</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jordie Albiston has died, aged 60. Born and raised
+                            in Melbourne, Victoria, Albiston studied music at
+                            the Victorian College of the Arts and received a
+                            Doctorate in English from La Trobe University.
+                        </p>
+                        <a class="bold" href="/authors/jordie-albiston.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Cafe Review</summary>
+                        <p>
+                            Botany Bay Document Wayne Atherton Café Review
+                            (USA), Vol. 8, Summer 1997 Botany Bay Document
+                            (Jordie’s second published collection of poems) is
+                            prefaced as A Poetic History of the Women of Botany
+                            Bay , spanning the first fifty years of settlement
+                            at Botany Bay and Port Jackson in New South Wales
+                            during the late 1700’s-early 1800’s. They are
+                            documentary poems about various women, some of whom
+                            were convicts in a penal colony there. Albiston has
+                            done her scholarly homework, thoroughly researching
+                            her many sources. In her own words, ‘In order to
+                            reflect these sources, poems are variously cast as
+                            bush ballad, newspaper report, missive, journal
+                            extract, inventory, lament, dialogue, dream, and so
+                            on. Inventory reads like rhythmic-ballad-cadence as
+                            opposed to a random rattling-off of sundry objects;
+                            they (the objects listed in the poem) are rather
+                            thoughtfully arranged as in words intended for a
+                            sort of jig, or song. In ‘Headcount’, the native is
+                            elevated above and beyond what is otherwise merely a
+                            boatfull of common occupants and farm animals:
+                            ‘varying numbers of natives (naked and / saucy with
+                            spears and tommyhawks) - strange animals - coloured
+                            birds - Space / so much I feel launched into
+                            eternity - and me’. The language is bawdy and salty,
+                            with a prevailing feel of life on or near the ocean;
+                            sinister shanties sung from ship to port... the
+                            poems often evocative lamentations of the wretched.
+                            From ‘Letter Home (Anon)’, ‘I / am writing myself as
+                            best I can into this / solitary waste of creation’.
+                            Botany Bay Document stands as a fully realized,
+                            complete work; historically informed yet immediate
+                            in its sense of timeless rage and pain. The poems
+                            are well-structured and read well off the page. They
+                            are predominantly tercet, quatrain, or cinquain
+                            stanzas. The third and fifth stanzas of ‘Asylum
+                            Song’, respectively: ‘Bridget McGilvray was the
+                            officers’ whore / While she was yet in chains / And
+                            conceiving aboard the Experiment / She was punished
+                            again by the government / And she is gone insane ’
+                            and, ‘Bridget McGilvray has lost her sweet bairn /
+                            And ne’er stops wailing its name / She lives all
+                            alone in her top-floor room / Her hands at her hair
+                            instead of their loom / For she is gone insane ’.
+                            This is an important book of poems, an edification
+                            of the female spirit to survive with dignity in what
+                            was then, especially, more of a world ruled by men.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Womens Book Review</summary>
+                        <p>
+                            Dovetails and Other W/Edges Bev Braune Australian
+                            Women’s Book Review , Vol. 9, No. 2-3, Spring 1997
+                            The act of writing poetry is not unlike Hare’s
+                            decisions of principle, running in the grooves of
+                            experience to acknowledge that ‘to act on principle
+                            is not to have a principle already, before we act’.
+                            The explorations of [Jill] Jones [ The book of
+                            Possibilities ], Albiston, [Caroline] Caddy [
+                            working temple ] and [Morgan] Yasbincek [ Night
+                            reversing ] largely involve how ‘we orient
+                            ourselves’ with respect to the world in our backyard
+                            and qverseas. Their poems are about learning how to
+                            behave and, at best, daring to assess the
+                            consequences. They are primarily concerned with the
+                            way we have acted and may act: ‘learning by tides’
+                            (Jones), travelling through foreign landscapes
+                            (Caddy), recalling the misdemeanors of personal
+                            intimacy (Yasbincek), reviewing injustices
+                            (Albiston). What readers are familiar with in Judith
+                            Wright’s work - charting the wide brown land - is
+                            extended in Jones’ King’s Cross, Albiston’s Botany
+                            Bay, Caddy’s Beijing, and Yasbineek’s Western
+                            Australia and Canada, to decisions about creating
+                            our future landscapes... Albiston’s ‘chain-stitches’
+                            in traditional and free verse, ‘chart[s] gangs of
+                            [female] convicts’, ‘quilted quotations’ and
+                            ‘appliquéd tracts’ constantly on the verge of posing
+                            the proposition how should we view the many tracts?
+                            for her language keeps the characters at a distance.
+                            They are caught in the wordage that would have
+                            restricted their own expression - the language of
+                            the colonial master. The book raises questions about
+                            the difficulty in using language from an historical
+                            text to comment on the text itself. Are the poems
+                            ‘The Escape of Our Mary Bryant’ and ‘Mrs
+                            Bellasis...’ meant to repeat the records or comment
+                            on them? The wedge of historical moment with
+                            retrospective comment is a tight squeeze; it’s not a
+                            space easily chiseled effectively. The poet’s voice
+                            seems weighed down by the gravity of her source
+                            documents on convict women and, given her material,
+                            understandly so. Albiston appears fixed between the
+                            seams of verse until we encounter the gems from the
+                            middle of the volume onwards. These include
+                            ‘Moonfish’ and ‘Asylum Song’ where the impact of the
+                            source document and the poet’s understanding are
+                            harmoniously communicated. For me the strongest
+                            poems in the volume are ‘Dorothy Paty Paints the
+                            Country’, ‘Twelve Maternal Verses’, ‘Dreaming
+                            Transportation’ and ‘The Emancipist Finds Parts of
+                            Her Body’... The book of Possibilities , Botany Bay
+                            Document , working temple and Night reversing are
+                            loaded with cold lines and hot edges, carving the
+                            features of experience, exposing a cacophony of
+                            encounters with possible futures. You will find
+                            something between these pages to pinch your nerves.
+                            If it’s not ‘garbage collectors... banging the
+                            sides’ of a truck, or ‘travelling to Jing De Zhen’
+                            where ‘fields are melted triangles’, it will be the
+                            sound of an emancipist ‘gasp[ing] on the last of her
+                            sin’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald</summary>
+                        <p>
+                            Journeys of the spirit to Botany Bay Heather Cam The
+                            Sydney Morning Herald , 19 July 1997 There is a
+                            firmer glue than a poet’s ego binding these books
+                            [Jordie Albiston, Botany Bay Document , James Cowan,
+                            Petroglyphs , Mark Brennan, The Olive Grove ]
+                            together into three satisfyingly cohesive wholes.
+                            Vivid, assured and anchored in a reality beyond the
+                            poet’s purely personal experiences, each of these
+                            three highly individual collections displays a
+                            writer firmly in control of his or her material.
+                            Albiston, Cowan and Brennan have set themselves
+                            defined tasks: respectively, to revisit the early
+                            years of white settlement at Botany Bay from a
+                            female perspective; to embark on a spiritual journey
+                            through various stark yet exotic far-flung
+                            landscapes; to celebrate ‘the greatest little
+                            orchard in Australia’. Collaboration with historical
+                            sources and documents enlivens and enriches
+                            Albiston’s and Brennan’s work, while Cowan’s and
+                            Brennan’s poems have been enhanced by the
+                            sympathetic work of the graphic artists Barry
+                            Gazzard and Robert Harris. Fascinating historic
+                            detail and the particularity of actual physical
+                            places fortify the poetry of all three collections -
+                            especially Botany Bay Document , which explores
+                            white women’s experiences in Sydney in the 50 years
+                            from 1788. Having steeped herself in letters, maps,
+                            paintings, newspapers, diaries, journals, bush
+                            songs, and nursery rhymes of the period, Jordie
+                            Albiston writes a ‘documentary poetry’. She includes
+                            fragments derived from these sources (italicised for
+                            identification and authenticity) to help capture the
+                            language, flavour and emotional tenor of this bygone
+                            era. The rhythms of the Document are a compelling
+                            combination of sea shanty, lullaby, convict song and
+                            antiquated speech patterns, depending heavily on
+                            rhyme to reinforce meaning: We are cut-purses
+                            housebreakers strumpets and Whores we are
+                            shoplifters Curse-makers footpads and more. We’ve no
+                            morals or manners but are debauched and depraved
+                            anonymous sweepings from the Old Country floor. Feed
+                            like dogs till the slops are gone bleed into the
+                            same putrid pail sleep with the twitch of the
+                            vermin-itch and wake to gaol ‘The Hull’ Albiston’s
+                            material is sturdy, arresting, and imbued with
+                            strong emotion. Her dramatic monologues are spoken
+                            in part by desperate convict women who have fallen
+                            foul of a cruel system. They reveal a double
+                            standard that sees them transported for loose
+                            behaviour, while officers may take liberties with
+                            them without punishment. One mourns the death of her
+                            child born below deck; another appeals for a pardon
+                            so that she can be reunited with her children back
+                            in England; a third stays on to manage her own farm
+                            after serving out her sentence, describing an
+                            emancipation unavailable to her back home. Also
+                            given voice are the free women: the indolent wives
+                            of officers whiling away the hours painting the
+                            exotic flora, attending tea parties, embroidering
+                            samplers; Mrs Macarthur, privileged and bored; the
+                            determined woman intent on being granted land in
+                            spite of her gender; the recent emancipist amazed at
+                            her newly won freedom. Botany Bay Document provides
+                            a rare and robust engagement with the events,
+                            conditions, language and cadences of an earlier
+                            period.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland</summary>
+                        <p>
+                            One Dead Poet and Five Alive : Botany Bay Document
+                            Michael Dugan Overland , No. 147, Winter 1997 The
+                            poems in Jordie Albiston’s second collection examine
+                            the lives of women during the first fifty years of
+                            British settlement in New South Wales. The poems
+                            draw on a range of documentary and pictorial
+                            sources, including letters by convicts and other
+                            women, the Sydney Gazette , journals, paintings and
+                            drawings. The result is a refreshingly objective
+                            series of poems that take a variety of forms that
+                            reflect their original sources. Often Albiston
+                            quotes directly from some of her source material,
+                            using italics to show where this has been done. It
+                            is an effective technique. For example, the first
+                            stanzas of ‘Elizabeth Walsh Gets a Grant of Land’:
+                            1. Petition to Governor Macquarie I want to tell you
+                            I have made up my mind to settle a farm in this
+                            Country I have gained some land at Richmond Hill I
+                            purchased with personal bills but require more for
+                            my Cattle and Stock and despite my gender and lack
+                            of wedlock petition just the same 2. Reply I cannot
+                            comply with your request it being contrary to
+                            Regulations to give Grants of land to Ladies
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Mercury Review</summary>
+                        <p>
+                            Books : Botany Bay Document Tim Thorne The Mercury,
+                            3 March 1997 Jordie Albiston has attempted to create
+                            a new form, ‘documentary poetry’, in her Botany Bay
+                            Document , an account in verse of the women of the
+                            first white settlement. The most powerful pieces are
+                            those where she gets the balance right between her
+                            own language and the women’s own words, avoiding the
+                            flatness of the ‘found poems’ of historical
+                            documents and the fake antiquity of the words she
+                            sometimes puts into her characters’ mouths. This
+                            book makes a long-neglected aspect of Australia’s
+                            history come to life in a way that prose accounts
+                            could never do.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Cordite Review</summary>
+                        <p>
+                            Snapshots: Jordie Albiston - Botany Bay Document
+                            Kathielyn Job Cordite, No. 2, 1997 In this ‘a poetic
+                            history of the women of Botany Bay’ Jordie Albiston
+                            writes predominantly of convict women in the early
+                            years of the settlement. The emphasis is on facts
+                            and recorded experiences and the frequent use of
+                            ballad form suits the restrictions of the content.
+                            At its best the rhythmic constraints of the ballad
+                            cohere with uniformity and narrow experience, as in
+                            ‘Lady King’s One Hundred Daughters’: They lie in
+                            rows with two to a bed their sleeping faces assorted
+                            And dreams of mothers circle the heads of Lady
+                            King’s one hundred daughters. Poems that move the
+                            furthest beyond the story into an imaginative realm
+                            offer more of the experience in ‘The Emancipist
+                            Finds Parts of Her Body’, Albiston observes:
+                            Callused and curved into cabbage-leaf curls with
+                            needles for fingers and bread dough for palms they
+                            hang at the end of work weary arms too stunned to
+                            become unfurled Is that your new son? The life of
+                            this collection is more a result of voices of the
+                            past being given room to speak in the present,
+                            rather than from any great poetic force. ‘In Letter
+                            Home (Anon)’she writes: I take up my pen to acquaint
+                            you with my disconsolate situation. By frequently
+                            using run-on lines and internal or half rhymes,
+                            these ballads are contemporary in tone, which, along
+                            with the italicising of even the shortest
+                            quotations, contributes to a sense of honesty in
+                            this collection.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Innocence Scorched - Botany Bay Document: A Poetic
+                            History of the Women of Botany Bay Beate Josephi
+                            Australian Book Review , No. 187, December
+                            1996/January 1997 The captains - Quiros, Cook - have
+                            long had their visions manifested in Australian
+                            poetry. Now Jordie Albiston has set out to document
+                            the women’s voices of the early settlement. Theirs
+                            was a different exploration. Their voyages were
+                            ‘well below sea-level and sea- / sodden deck’, their
+                            view was confined by the planks of the hull. No new
+                            Jerusalem unfolded for them, ‘four rows / of
+                            miserable huts are what they / call our two
+                            streets.’ In her admirable attempt to capture the
+                            history of the women of Botany Bay in poetry,
+                            however, Albiston, does not dwell overly on the
+                            dejected. The rhyme and rhythms of song - the
+                            disenfranchised’s expression of hope and defiance -
+                            inform many of her poems. It is a nod on her part to
+                            the convict ballad, though those poems which are
+                            conceived as song are far more akin to the lyrics of
+                            Les Misérables . Nor is ‘Child-Death: A Lament’, for
+                            example, an Anne Bradstreet-like search for a higher
+                            will to atone for personal pain. It is written for a
+                            single hearty voice, and chorus, more a transport’s
+                            lament than a mother’s individual grief. This is
+                            followed by ‘The Dialogue between two Whores’ which
+                            carries strong Brecht/Weill overtones. But the
+                            Botany Bay Document , spanning the first fifty years
+                            of the colony, is no songbook. Albiston skilfully
+                            chooses tone and subject matter to give as varied a
+                            picture as possible: there is a ‘Headcount (1788)’
+                            and an ‘Inventory (or What to Bring When Setting Up
+                            a Colony)’, letters home, compilations from the
+                            Sydney Gazette , vignettes drawn from sketches,
+                            journal extracts or poems like ‘Missing Him’ or
+                            ‘Moonfish’. The latter two, both outstanding poems,
+                            are first person monologues spoken to no-one but the
+                            speaker herself, their plaintiveness moderated by
+                            the lyrical quality of the verse. Albiston’s poetry
+                            is very assured, eschews sentimentality and keeps to
+                            the earthier view of women on whom the fruitfulness
+                            of the new colony depended. Visions, like the
+                            captains’, would be misplaced. I could not help
+                            being reminded, when reading the Botany Bay Document
+                            , of my visit to the Museum of Sydney. These poems
+                            tread a similarly cautious line in asserting their
+                            presence on the new coast, fully aware that the land
+                            was not terra nullius . The museum specialises in
+                            drawer upon drawer of delicately arranged fragments.
+                            Albiston’s poems have a similar preference for small
+                            scopes. What the women knew were their own lives,
+                            and that of their fellow convicts. Any conquests of
+                            the continent, or the spreading of an Empire, were
+                            of no importance to them. The Botany Bay Document is
+                            as complete as today’s consciousness permits, and a
+                            pleasure to read.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>ArtStreams Review</summary>
+                        <p>
+                            Brand New and Fresh Made: The Sum of Us Jennifer
+                            Harrison , Cabramatta/Cudmirrah Jordie Albiston,
+                            Botany Bay Document Anne Delaney ArtStreams , Vol.
+                            1, No. 2, December 1996/January 1997 What more could
+                            a reader ask on a dull, dreary summer’s day than to
+                            be presented with two slim vols of poetry to bring a
+                            little glimmer of light and pleasure. It’s always a
+                            joy to read brand new, fresh-made, sweet-tasting
+                            poetry, and Jennifer Harrison and Jordie Albiston
+                            certainly added considerably to the quest for
+                            lift-off on yet another bloody Monday which didn’t
+                            even have the decency to smile for us. But never
+                            mind, I thought, here’s something to gladden us,
+                            just as soon as I saw these elegant little books.
+                            Both poets, I should imagine, will be delighted with
+                            the handsome presentation that their publisher has
+                            afforded them, a pleasure in itself in these
+                            cheerlessly rationalist times, and a gesture of
+                            pride in the achievement of both women. And the
+                            publisher’s not wrong. The poems in both offerings
+                            live up to the promise of their covers: for once we
+                            can rely on the gift wrap. And yes, both volumes
+                            would make marvellous gifts for the poetry lover, or
+                            the history student, or those who know the value and
+                            rewards in succouring and encouraging Australia’s
+                            burgeoning body of literary activity and its
+                            talented practitioners. Both these offerings could
+                            reflect, arguably, the sum of us; Sydney-side
+                            perspective. It all depends on one’s remembrances
+                            and prejudices and apprehensions. We see in the
+                            other something of ourselves in the birthplace of
+                            the nation two hundred years ago, forty-odd years
+                            ago and a scant five minutes since. Both carry
+                            something of the same message of exile and
+                            alienation and whether it’s on a national or more
+                            personal level, that’s something which has been
+                            passed onto all Australians one way or another over
+                            the generations. There is also the discomfort of
+                            revisiting and acknowledging rent memory,
+                            disappearances of the familiar and known, and the
+                            flight of the fiducial and the translation of object
+                            and meaning... Taking a cursory glance, next, at
+                            some old history books, I found that I was pushed to
+                            find much mention of the experiences of women, until
+                            I reached the late 70s. Since then, slowly, but very
+                            carefully, omission is being rectified and attention
+                            focussed on convict women and migrant women whose
+                            stories have contributed to the reclamation of a
+                            hitherto invisible cultural and social history. And
+                            an important and interesting history it’s proving to
+                            be, challenging earlier assumptions and recasting
+                            preoccupations of what was and is White Australia.
+                            Never one to care much for the myths of early Sydney
+                            which seemed to derive from the fact that new
+                            Australians, hungry for a mythology in a country
+                            barren of white people’s legends were willing to
+                            improvise their own constructs, they’ve always
+                            seemed a case of half a loaf. Jordie Albiston
+                            clearly redresses this shortcoming in Botany Bay
+                            Document and provides a solid dollop of leaven to
+                            all the mountains of dough we’ve been asked to pound
+                            in the past. And, just what sort of a landscape was
+                            it that Jodie Albiston escorts us through? From The
+                            Hobart Town Gazette of March 1, 1817, we read that
+                            Mary Connor, convict, was charged with stabbing
+                            Thomas Welsh with whom she cohabited. Evidence in
+                            court established that Mary was severely mistreated,
+                            acted in self-defence, and that Welsh was guilty of
+                            gross provocation and a liar to boot. Mary was
+                            sentenced to six month’s hard, and he, to one. The
+                            Gazette also cheerily reports that ‘A Hibernian
+                            whose finances were rather low, brought his wife to
+                            the hammer this morning, and although no way
+                            prepossessing in appearances, to the amazement of
+                            all present, she was sold and delivered to a settler
+                            for one gallon of rum and 20 ewes… Last Saturday and
+                            Sunday we had another fine and gentle shower of
+                            rain...’ Such was the status of women in that
+                            fledgling colony which became a penal dependency of
+                            New South Wales in 1803, and which was not in any
+                            way markedly different from young Sydney Town. It is
+                            with relief, then, that we hear Jordie Albiston’s
+                            voice speaking on many of our foremothers’ behalfs,
+                            broadcasting their grievances and promising some
+                            belated dignity to balance the misery of their
+                            lives. It is never too late, we believe, when in
+                            ‘Lizzie’s Pact’, we listen to the suppressed, but no
+                            less despairing hatred of the abused for the reviled
+                            torturer, uttered, we can imagine, through the
+                            clenched teeth of desperate passion: The pact with
+                            the rapist is one of paralysis you move and I’ll
+                            kill you. The deal with silence is you tell you die.
+                            The bargain with the body is one of demembering his
+                            hand from his eye from his indigo gun. If I had a
+                            right to this body of mine it would be
+                            transportation towards some kind of light. If I had
+                            a hope on this silent sea it would be to set sail
+                            into waters of song. If I had a message for young
+                            master Munroe it would be it would be a fistful of
+                            flowers a wreath of my wrath a litany of lilies
+                            sweet- scented as blood to bloom and bloom in his
+                            favourite room for the term of his natural life. In
+                            this poem, the poetry is, typical of the entire
+                            collection, tight and condensed, and while the
+                            imagery ‘embraces’ the unspeakable outrage of
+                            violation, the detestability of the violator and a
+                            fancied and longed-for revenge, neither it, nor
+                            tone, nor language is indulged or sentimentalised.
+                            Like the victim, it is fully controlled, with a
+                            sparing and exact use of words which blossom into a
+                            barbed bouquet, and rhythms which grow more fluent
+                            and buoyant, more deceptively beguiling, sing-a-long
+                            even, when the ultimate of punishments is attained
+                            and the sufferer herself is avenged. We can almost
+                            see her performing a little canzonet, snapping the
+                            thread of tension which the poem initially coiled
+                            taut. Given that a primary function of documenting
+                            the past is also to learn about the present, Jordie
+                            Albiston’s Botany Bay Document marches in cadence
+                            with this aim by offering the reader a series of
+                            sites of juxtapositions of experiences, even
+                            endurances, with which we can compare. Everywhere
+                            her images continue vivid and vocal, teasing and
+                            terse, pathetic but panoptic, and sometimes
+                            cuttingly cruel, as when we’re invited to drop in on
+                            Mrs Macarthur’s Tea Party: As I was saying a sad and
+                            severe case of Women Women everywhere but ne’er a
+                            one to bend my mind to save that pack of vile
+                            obscenities clothed in naught but ulcers and rags
+                            brawling for Sport at the Factory my dears. Yet with
+                            your arrival our little circle has become quite
+                            brilliant I’m sure you’ll agree one sugar or two?
+                            Milk Mrs Paterson cream Mrs King? Sweetbread?
+                            Griddle-cake? Call out for anything. Yes as I was
+                            saying a distinct drought of company here in the
+                            Antipodes no one to sit with or appreciate the View
+                            no sharing of news or profitable Conversation except
+                            for Mary Johnson the Chaplain’s wife (top up your
+                            teacup?) and you know what she’s like. Yes some
+                            times I find myself quite deprived of Distraction
+                            despite the merinos and running the farm and a third
+                            pot of tea let me ring below stairs or another
+                            eclair now as I was saying. There is something quite
+                            shocking in the lack of understanding and compassion
+                            that this ugly, rigidly delineated society,
+                            class-ridden to its bootstraps, could extend to the
+                            wretches it despised and rejected, especially its
+                            women. It is even more shocking to reflect on the
+                            ignorance, revulsion and lack of tolerance of the
+                            untainted wives of the Masters, most cosily
+                            unsympathetic to the pain and distress of such as
+                            the very young woman, lately child, who mourns for
+                            her mum, her home and her past, and grieves for her
+                            present, sick with fright of her femininity, in
+                            ‘Moonfish’: ...I am become a woman in sad Sydney
+                            Cove with no companion or kin to comfort me in the
+                            misery of my secret ailing. The tide inside is
+                            timely turning the fish in me are hauling heavy
+                            through the hellish bone… None of which is to say
+                            that Botany Bay Document doesn’t offer us any
+                            appealing images nor any joys and triumphs, no
+                            matter how small a piece of the main. Pleasing it is
+                            to listen to Christiana Eliza Passmore who reports
+                            that: The three boys are: growing up fast wild as
+                            young kangaroos mischievous as monkeys proof of my
+                            womb’s capacity The baby girl is: now eighteen
+                            months old such a very fine child beginning to be
+                            interesting proof of my womb The children are: good
+                            and affectionate happy and healthy learning their
+                            lessons proof Gratifying it is to know that
+                            sometimes, things were what they’d always seemed to
+                            be. I can’t recall when a suite of poems has so
+                            immediately found a response in me as Jordie
+                            Albiston’s. Almost every line on every page hurries
+                            concern, sometimes anguish, to the forefront, and
+                            not only because of the reflected pain and strain of
+                            being Woman in this early hell-hole. Informed by a
+                            collection of formal documents, ship log books,
+                            legal records, painting, etchings and maps,
+                            newspapers, private correspondence and diaries, this
+                            is an outstanding evocation and re-presentation of a
+                            past and shames which still too many don’t know ever
+                            existed or could even have happened. Like the
+                            aboriginal father in ‘View of Port Jackson’, from
+                            the South Head watching the newcomers trammelling
+                            then and traipsing over his home, complacently
+                            desecrating his sacred ground just as though they’re
+                            figures in one of John Eyre’s ‘Views’, and who, we
+                            might imagine, we can now hear wailing, ‘There goes
+                            the neighbourhood’. In many ways, these collections
+                            offer comment on the sort of society that we’ve
+                            bequeathed to ourselves or allowed to be imposed on
+                            us. Except for the gloss and veneer of a relative
+                            gentility that many of us assume, it is sometimes
+                            hard to see just what difference two hundred years
+                            has made to our society. If nothing else, these
+                            poems scream at us to pay attention, now! and lucky
+                            we are to have such ingenious and well-crafted
+                            guides to any such re-evaluations or discussions of
+                            our past and present. Both Jennifer Harrison and
+                            Jordie Albiston have, we’re told, won serious
+                            attention and consideration from a knowledgeable and
+                            discerning readership. Jennifer Harrison’s earlier
+                            collection, Michelangelo’s Prisoners , won the 1995
+                            Anne Elder Award and was commended in the National
+                            Book Council’s Banjo Awards in the same year. Jordie
+                            Albiston first collection, Nervous Acts , received
+                            first prize in the 1995 Mary Gilmore Award and
+                            second prize in the Anne Elder Award and was
+                            shortlisted for the New South Wales Premier’s
+                            Kenneth Slessor Prize. No mean accomplishments,
+                            these. One hopes that these two women continue to
+                            write and write often, and that a much wider
+                            readership can come to share in the joys of their
+                            poetry and find pleasure and pride, insight and
+                            consolation, in their words.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age</summary>
+                        <p>
+                            Botany Bay Document Fiona Capp The Age , 7 December
+                            1996 In this poetic history of the women of Botany
+                            Bay, Jordie Albiston dramatises the lives of female
+                            convicts, whores, artists, free women, colonial
+                            hostesses. Each poem is accompanied by a brief
+                            biography of the woman concerned and although poetic
+                            licence has been taken in transforming documents
+                            into poetry, harsh reality is never far away.
+                            Albiston follows up her award-winning first book
+                            with a confronting and emotionally charged
+                            collection of poetry resonant with the voices of the
+                            dead.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

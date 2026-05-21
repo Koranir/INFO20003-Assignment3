@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,370 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-inheritors.svg&quot;);
                         "
                     >
-                        Featured
+                        The Inheritors
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Amanda Anastasi</h3>
+                </div>
+                <img
+                    alt="Cover of The Inheritors"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-inheritors/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Inheritors"
+                        class="product-cover"
+                        src="/assets/books/the-inheritors/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The inheritors are those who will suffer the ravages of
+                        climate change, be they human, creature or plant.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 20.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-inheritors.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-inheritors/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038788</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Amanda Anastasi is a Melbourne poet whose work has
+                            appeared in unlikely places, from the walls of
+                            Artists’ Lane, Windsor to The Massachusetts Review
+                            in the US.
+                        </p>
+                        <a class="bold" href="/authors/amanda-anastasi.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Australian Poetry Review - Martin Duwell
+                        </summary>
+                        <p>
+                            REVIEW Review of ‘The Inheritors’ Gemma White ‘You
+                            cannot live without what you’ve destroyed’ (47) The
+                            Inheritors opens with the promise of new beginnings,
+                            with the poem ‘Newcomer’. Here, Amanda Anastasi
+                            describes a child who will experience ‘no freer
+                            moment than this’, a freshness of being, of
+                            perceiving ‘before / indoctrination begins its sly,
+                            steady seep’ (3). So too are described the
+                            ‘expectations’ sewn into the child’s birth. But are
+                            we talking about the weight of global warming, put
+                            off and delegated to future generations? Or are we
+                            speaking of the normalcies that form human
+                            consciousness, the mental ‘steps that will tread too
+                            carefully to invite / epiphany’ (3)? This need for
+                            an inner change of perception or realisation is a
+                            theme in Anastasi’s work—it must happen before outer
+                            transformation can come. After being flagged in the
+                            first poem and continued throughout, it appears most
+                            perceptibly in ‘Household Chores’, where we are
+                            encouraged to ‘Vacuum up […] niggling doubts’ and to
+                            ‘Keep the cobwebs on the walls rather than in your
+                            thinking’ (18). In ‘Koala Holds Up Traffic’, a stray
+                            koala attracts attention on a road from families in
+                            four-wheel drives. After ‘photo snaps / and Facebook
+                            Live narrations’, the koala returns ‘to the
+                            retreating forest’, while ‘The people / re-enter
+                            their cars, turn on playlists and continue’ (6). The
+                            word ‘continue’ is telling here. What are the people
+                            continuing? Their fog? Or their disconnect, between
+                            a chance sighting of a cute koala on the road and
+                            the welfare of the ‘retreating forest’ and all its
+                            creatures? In this collection, Anastasi suggests
+                            that our current stage of evolution—or
+                            devolution—requires constant vigilance against
+                            apathy, for while we may be currently ‘assuming
+                            permanence’, we must always stay wary of ‘the bell
+                            that will end play’, for every one of us is simply a
+                            ‘temporary god’ on this earth, a ‘cupped spider’
+                            trapped between the scorching sky and our final
+                            resting place, the earth (3). Our ultimate fragility
+                            as a human species is laid bare, cutting through our
+                            denial with gentle yet precise use of language.
+                            Later, in ‘Monostich VI: Prophecies’, the point is
+                            put to us more forcefully, in the line ‘The ocean is
+                            holding the weight of our apathy’ (55). We are now
+                            at a stage where denial is no longer a viable
+                            option, as the poet observes, ‘The fence sitter has
+                            no choice but to descend the planks’ (54). There are
+                            warning signs to fence-sitting scattered throughout
+                            The Inheritors , and these manifest as turning
+                            points that perhaps we will never recover from. For
+                            instance, in ‘Monostich I: The Turn’, Anastasi
+                            writes, ‘The bats are hanging, awake during the day’
+                            (5). The same warning is there in the theme of
+                            alienation in the book, which connects to that fog
+                            and the one small koala on the road. In
+                            ‘Parameters’, the narrator admits they ‘navigate
+                            this place / like a temporary lodger’ as ‘this is
+                            the closest thing to home’ (7). The rupture between
+                            humans and the earth is also expressed in the final
+                            monostich of the book: ‘Nature gapes at us, the
+                            aliens’ (57). It must be said that the monostich
+                            poems in the collection are extremely well crafted.
+                            Their tone brings together a mixture of empathy,
+                            care, a documentation of what is and may come and a
+                            stark, gentle matter-of-fact voice that never strays
+                            into the lands of preaching. These poems are also
+                            delivered with exactitude, which, given the vast
+                            subject matter of this collection, is no mean feat.
+                            Climate change, so potentially and currently
+                            devastating in its impacts, is hard to write about
+                            because of this, and because it’s so darn important
+                            too. But in doing so this book becomes part of that
+                            inner change mentioned earlier, in which we see
+                            ‘Above the mask, eyes that are rethinking’ (52).
+                            According to Anastasi, we are not just alienated
+                            from nature; we are also estranged from other
+                            humans. In ‘Summer’: Pedestrians pass each other,
+                            faces pressed into a mix of doubt and agitation at
+                            the idea of human proximity. (43) Similarly, in
+                            ‘Lady Returned’, a future-human refunds a robot
+                            companion, for they can’t stand ‘the daily company
+                            of remoteness’ that even ‘ realistic softness
+                            technology ’ cannot abate (37). This collection
+                            seems to point at something deeply wrong in our
+                            psychologies—a reason for all the madness. In ‘After
+                            the Flood’, an undertaker notes that ‘It is not the
+                            bareness of post-life, but the daily disregard / of
+                            the still breathing, that bolts him upright in his
+                            sleep’ (36). I think the power of Anastasi’s
+                            collection is that it doesn’t fill in all the gaps,
+                            it doesn’t tell you what to think, but rather brings
+                            you a collection of facts and fictionalised futures,
+                            and says, ‘Here, what are you going to do with
+                            that?’ The book is a call to arms , but one that is
+                            more effective for being so subtle in acknowledging
+                            the complexity of its subject. Anastasi offers a
+                            deep understanding of what societal change requires
+                            on an individual level. That is what makes this
+                            collection so compelling. You might think, with
+                            tragic scenes of ‘flying / foxes, lifeless or
+                            starved to motionlessness’ (12), or ‘machines […]
+                            making flat newly germinating plants’ (21), that all
+                            is lost. But this is not what Anastasi suggests. At
+                            different moments, hope is conjured. At one stage,
+                            Anastasi pleads for ‘Ideas instead of thoughts.
+                            Plans instead of prayers’ (15), demonstrating how a
+                            positive, practical and urgent attitude is
+                            necessary. The need to work together is highlighted,
+                            so we can keep each other honest. She writes, ‘I’ll
+                            find room for my hope to rest on yours’, to
+                            ‘envisage an alternative present / without the choke
+                            in our throats’ (38). There is one other source of
+                            hope, if we can only become quiet enough to hear
+                            ‘something akin / to silence: a delicate / hand
+                            reaching out, / a pardon, a candid / invitation’
+                            (30). That is, our innate connection to nature,
+                            despite our feelings of alienation. We may find this
+                            connection when our ego is asleep, ‘when we return
+                            to a part / of ourselves we thought we had left
+                            behind’ (24). There is such understated beauty in
+                            these lines. We are not only monsters, we are also
+                            fragile, ugly, vulnerable creatures made of the
+                            earth that we now destroy.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            Weekend Australian Review - Geoff Page
+                        </summary>
+                        <p>
+                            Compelling Visions of the future Geoff Page Reviews
+                            The Inheritors by Amanda Anastasi Weekend Australian
+                            December 4/5, 2021 There is no denying (any more at
+                            least) the importance of what is known loosely as
+                            &quot;ecopoetry&quot;. Amanda Anastasi's second
+                            collection, The Inheritors , is an unusually
+                            effective example of the genre. It cleverly manages,
+                            for the most part, to avoid the form's twin dangers:
+                            sentimental reductivism or counter-productive
+                            opacity. There’s a significant number of poems in
+                            The Inheritors which may very well make a measurable
+                            difference to the consciousness of it- readers on
+                            the issue of human-induced climate e and its
+                            consequences. These include, among others:
+                            &quot;Koala Holds Up Traffic&quot;, “Bat Piles
+                            &quot;, “The Mask's Weight&quot;, &quot;Classroom
+                            7C&quot;, &quot;The Invasion&quot;,
+                            &quot;Autumn&quot; and &quot;Aftermath”. All these
+                            poems focus on indicative specifics which imply
+                            something much larger. There is no resort to vague
+                            and emotionally­drained abstract nouns or to
+                            watered-down scientific jargon. They &quot;cut to
+                            the chase&quot; but they do not oversimplify. They
+                            also obey Emily Dickinson's dictum to tell the truth
+                            ''but tell it slant&quot;. A good example of this is
+                            seen in the poem &quot;Bat Piles&quot; where a
+                            wildlife officer moves into the woodland, steps
+                            between the crooked corpses of winged limbs; the
+                            stiff cloaks swathing brown bodies. A whole colony
+                            of fruit bats is dying or is dead already. The
+                            officer thinks about their &quot;label as a pest and
+                            rodent&quot;, about their role as a &quot;gothic
+                            emblem&quot; and their &quot;replication in
+                            plastic&quot;. The poem ends with an image which
+                            manages somehow to be both repugnant and poignant:
+                            Their slitted eyes are sealed, their light bodies
+                            swiftly dropped in council rubbish bags, in response
+                            to complaints of the stench of carcasses and the
+                            fingers and ankles bitten by frantic teeth. Not all
+                            the poems operate at this level; some are more
+                            personal and tangential to Anastasi's main concerns
+                            and the book's recurring monostichs (one-line poems,
+                            hard to bring off) are variable in quality- from the
+                            clever dystopianism of &quot;The beachgoers bring
+                            blankets and masks&quot; to the more pedestrian
+                            &quot;Nest boxes are strapped to trees&quot;.
+                            Overall, however, The Inheritors is a book in which
+                            Anastasi’s aesthetic and political impulses work
+                            powerfully together to create mandatory reading
+                            whatever your preferred literary genre may happen to
+                            be. an especially disturbing observation Martin
+                            Duwell comments on The Inheritors The sense of
+                            threat and dis-ease is entirely on the surface of
+                            Amanda Anastasi’s The Inheritors , whose poems focus
+                            specifically on climate change. Its title provides a
+                            clue that its concerns are with conditions of life
+                            for those coming after us: our children and
+                            grandchildren. Its title, of course, repeats that of
+                            William Golding’s novel about the displacement of
+                            the Neandertals by modern humans and I wondered if
+                            this might not be a deliberate allusion, exploiting
+                            in some way that novel’s tragedy of a declining
+                            people faced with a bewildering change in their
+                            circumstances and unable to adapt to it. On
+                            reflection, I doubt if it’s the case, though, since
+                            there is nothing and nobody in these poems capable
+                            of allegorically representing the new species of
+                            that novel. Anastasi’s book is in two parts: the
+                            first part has poems which are set in the present
+                            but look forward while those of the second part are
+                            usually set sometime in the future. And this is a
+                            future whose intricacies the poet obviously enjoys
+                            exploring, one whose symptoms vary from messed-up
+                            breeding times in Greenland to reality TV programs
+                            in which a group of contestants have to survive not
+                            the jungle but the streets of Melbourne on a
+                            summer’s day. Books dedicated to poems on a single
+                            theme are often ultimately uninteresting because
+                            repetition seems more irritating in poetry than it
+                            is in any other medium. The Inheritors avoids this
+                            by exploring as many ways as possible in which the
+                            single theme can be approached. Anastasi has a
+                            talent for the gnomic and this produces a series of
+                            poems in one-line stanzas which are spread through
+                            the book. It’s an attractive form since it blends
+                            compression with expansive development. There is
+                            also plenty of tonal variation and some poems –
+                            “Lady Returned”, whose vision of the future is of
+                            one with sex-dolls that ultimately prove
+                            unsatisfying, and the imaginary programs of “TV
+                            Guide” or the headlines of “2029 News Headlines” –
+                            are funny, even if grimly funny. The framing poem
+                            for the first section, and, indeed, the book as a
+                            whole, “Newcomer”, makes no reference to the climate
+                            crisis. It is about a new baby and the way in which
+                            its future development – its initial socialisation
+                            and then its reaction against this in later years –
+                            can be plotted. But, of course, this baby will
+                            become an inheritor and so the subject is broached
+                            by omission. There is also a sense of the kind of
+                            shadowy dis-ease. . You can see this is in
+                            “Parameters”, which describes living in an outer
+                            suburb of Melbourne and feeling at odds with the
+                            house – “I bump a hand or leg // against the corner
+                            of the bedside or kitchen table” – to the point of
+                            becoming more like “a temporary lodger”. The first
+                            of the poems with single line stanzas, “Monostich I:
+                            The Turn”, is interested in those decisive early
+                            markers of the onrushing change. Certainly we would
+                            expect poets to be sensitive to internally
+                            registered markers of change that are missed by most
+                            of us. One of the single lines in this poem says:
+                            The people of the sea are moving inland. To someone
+                            who lives a couple of metres above sea level on a
+                            sand island, this resonates uncomfortably: an
+                            especially disturbing observation. FOR FULL REVIEW:
+                            http://www.australianpoetryreview.com.au/2021/10/jane-gibian-beneath-the-tree-line/
+                            ISBN 9780648038788 2021 70pgs $24.00 Australia
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

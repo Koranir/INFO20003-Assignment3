@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,335 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/an-imaginary-mother.svg&quot;);
                         "
                     >
-                        Featured
+                        An Imaginary Mother
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Bron Nicholls</h3>
+                </div>
+                <img
+                    alt="Cover of An Imaginary Mother"
+                    class="product-cover-mobile"
+                    src="/assets/books/an-imaginary-mother/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of An Imaginary Mother"
+                        class="product-cover"
+                        src="/assets/books/an-imaginary-mother/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Some days, if the wash hadn’t been too grubby, Mum would
+                        scrape the hot ash from under the copper, let the water
+                        cool down, then plonk me naked into the ‘pot’. Grinning
+                        wickedly she would tell me I was being boiled until
+                        tender. ‘And then I will gobble you all up!’ Bron was
+                        Phyllis Nicholls’ first child. An Imaginary Mother is an
+                        open-hearted memoir of her mother and their intense
+                        relationship over fifty-six years. Phyllis was a
+                        secretive, complex and unpredictable woman. Before her
+                        marriage, Phyllis worked happily as a designer in Vida
+                        Turner’s pioneering textile company. After World War II,
+                        with a young family, she had to cope with the isolation
+                        of a struggling subsistence farm, the tumult of her
+                        husband’s conversion to a rigid religion, and her own
+                        increasing mood changes between despair, melancholy and
+                        joy. Yet to the end of almost eighty years, Phyll was
+                        also a stoic. She saw her ‘madnesses’ as the inevitable
+                        ups and downs of a full life, to be worked around with a
+                        mixture of courage, stealth, ingenuity and, whenever
+                        possible, with humour. An Imaginary Mother is a portrait
+                        in which the sitter and the painter are both revealed.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/an-imaginary-mother.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/an-imaginary-mother/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044770</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>164</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Bron Nicholls was born in Melbourne in 1944. After
+                            the war, her demobbed father took his family to an
+                            isolated region on the Broken Creek in Northern
+                            Victoria.
+                        </p>
+                        <a class="bold" href="/authors/bron-nicholls.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Review of An Imaginary Mother by Valmai Simpsomn
+                        </summary>
+                        <p>
+                            An Imaginary Mother - Readers Report Valmai Simpson
+                            I read this book eagerly from the outset, it sucked
+                            me in immediately, and I greedily lapped up the
+                            pages. This story validates for me any perceived or
+                            imagined weirdness that existed in my own family
+                            life. We all want to come from a 'normal family'
+                            whatever that is, but each family is normal to
+                            themselves as this book revealed to me, and I now
+                            believe we are each meant to be in the particular
+                            family unit we inhabit. I found this book so
+                            refreshingly honest and frank, and Bron's writing
+                            warmed me to her eccentric Mother, and indeed
+                            created for me a new perspective and appreciation of
+                            my own Mother and family. There are aspects we hate
+                            and aspects we love about our own childhood, and
+                            many of us exaggerate the good, and hide the 'not so
+                            good' but not so with Bron, she tells it how it is.
+                            This had quite a cathartic effect on my own somewhat
+                            ambiguous childhood memories. Love, however it is
+                            demonstrated, is the vital ingredient that cements
+                            the relationships in a family, along with all the
+                            inconsistencies. So I thank Bron for sharing her
+                            life and giving her readers the opportunity to see
+                            into another 'normal' family's life and dynamics,
+                            and to witness the brave stoicism she employs in the
+                            telling of her story. Bron is a storyteller I will
+                            certainly read again, as I loved the generosity she
+                            extended in An Imaginary Mother, of the opportunity
+                            to know and appreciate her own journey, her Mother,
+                            and in a briefer way each member of her family. I
+                            loved them all.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Rochford Street Review</summary>
+                        <p>
+                            A Heartrending Memoir Georgina Scillio Rochford
+                            Street Review , 10 May 2013 This heartrending memoir
+                            by Bron Nicholls of her ‘strange mother’ is well
+                            written and hard to put down. Nicholls’ relationship
+                            with both her parents, especially her mother Phyll
+                            with whom, naturally, she spent more time, was very
+                            difficult. Often Nicholls was given contradictory
+                            messages and the more she tried to please her
+                            secretive and unpredictable mother, the more her
+                            mother frustrated her and belittled her efforts. As
+                            a child Phyll and her younger sister Meg had been
+                            sent to Sutherland House, an orphanage for destitute
+                            children at Diamond Creek in Victoria. They were
+                            neither destitute nor orphans and never forgave
+                            their father for having sent them there. At the Home
+                            they were not ill-treated but their hair was cut
+                            short, they had very few possessions, the food was
+                            meagre and they were made to work hard housekeeping
+                            or in the farm. Phyll retreated into books and
+                            became an avid reader for the rest of her life,
+                            often living out in her head the events of the books
+                            she read. It was an escape into an imaginary life
+                            which caused her to ‘block’ out many things,
+                            including her family. One of the main flaws of the
+                            narration in An Imaginary Mother s that Nicholls
+                            calls her mother ‘Phill’ and at other times -
+                            sometimes in the same paragraph - she calls her
+                            ‘Mum’. Again, with her father, he is both ‘John’ and
+                            ‘Dad’ when just she or he would have been clear
+                            enough. At times, this proved confusing and one had
+                            to re-read the piece to find out who are the people
+                            mentioned. There are also sections of the story
+                            where we are left wondering what happened next. For
+                            example, the horrendous bus trip with Nicholls and
+                            Nicholls’s very sick sister was described in great
+                            detail and is very moving. But as the author changes
+                            subject immediately, the reader is left high and dry
+                            and not knowing what was wrong with girl: did she
+                            recover? Later on in the story, the girl reappears,
+                            so we can assume she did not die from whatever
+                            sickness she had been suffering. In another
+                            instance, the author and her mother are sitting on
+                            the verandah, waiting for the father to arrive as he
+                            was late from work. The reader becomes anxious and
+                            worries: did Dad have an accident? Did he arrive
+                            home safely for dinner? But instead of answering
+                            these questions for us, Nicholls talks about her
+                            beloved dog, Jelly Roll, who is now old and who has
+                            to be put down by the vet. We get the impression
+                            that there is more affection for her dog, than for
+                            her father. What was also sad about the author’s
+                            childhood is the way her Christian fundamentalist
+                            father’s rigid beliefs blighted his family’s lives
+                            and especially that of the author. When Nicholls
+                            tried to escape, she ended up in more trouble. She
+                            states very briefly (one sentence) that she got
+                            married to the violent young man with whom she had
+                            fled. We are not told why and how she decided to
+                            make such a seriously bad move and we are left
+                            rather puzzled: if she knew he was so unpleasant,
+                            why did she marry him? Was her desperation that
+                            great? The marriage did not last long and she
+                            continued moving from place to place - she moved
+                            house more than 40 times - at times leaving jobs and
+                            friends behind her. She admits to be following the
+                            example of her parents, especially her father, whose
+                            restlessness made him continually change jobs,
+                            suburbs and States. There are some bad luck stories,
+                            but Nicholls does not indulge in self-pity, on the
+                            contrary, she blames herself for when things go
+                            wrong. The way she cared for her ill mother in the
+                            last years of her life is very touching, even though
+                            her efforts were not always appreciated. In spite of
+                            some shortcomings, this is a very worthwhile book to
+                            read, if not for anything else to learn about the
+                            consequences of mental illness on other members of a
+                            family. It is also a very interesting story about
+                            the struggles, both financial and social, of many
+                            Australian families in the early and middle part of
+                            the twentieth century. The book has several photos
+                            of the mother, the author and her family and is an
+                            excellent way to engage the reader. The front cover,
+                            a photo of the mother, with the author as a baby in
+                            a washing tub in the garden, is rather delightful.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review</summary>
+                        <p>
+                            An Imaginary Mother Fiona Capp The Age , 23 February
+                            2013 Bron Nicholls called this poignant gem of a
+                            memoir An Imaginary Mother because of her mother’s
+                            habit, when Nicholls was a child, of mentally
+                            ‘disappearing’ and leaving a ‘fake’ mother in her
+                            place. Through a series of discontinuous
+                            reflections, Nicholls probes the reasons behind the
+                            mental peculiarities of her mother, Phyllis, and
+                            pays tribute to her troubled spirit. Phyllis was
+                            left in an orphanage by her father when she was 11
+                            because he wanted to get her away from the influence
+                            of his wife, whom he considered mad. The pain of
+                            abandonment and the experience of growing up in an
+                            institution left Phyllis haunted for life. ‘I’m glad
+                            nobody can see into my head,’ she would say to her
+                            daughter. Nicholls’ tale is framed by her mother’s
+                            diagnosis and death from what was thought to be mad
+                            cow’s disease. Despite Phyllis’ grim end and mental
+                            quirks, Nicholls draws a loving portrait of an
+                            intense, unconventional woman who struggled to
+                            contain her ‘overworked imagination’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Australian Review</summary>
+                        <p>
+                            Agonising ruptures in the maternal world Joanne
+                            Fedler The Australian , 16 March 2013 An Imaginary
+                            Mother is Melbourne author Bron Nicholls’s attempt
+                            to understand her complex and elusive mother and how
+                            their relationship shaped who she is. Nicholls, the
+                            rescuer in her family, is left bereft and relieved
+                            by her mother’s death at 80, and it’s this paradox
+                            that lies at the heart of the narrative. We are
+                            drawn into Nicholls’s unpredictable world at various
+                            times: she describes overhearing her parents
+                            fighting at night and not recognising her mother’s
+                            voice; and later when her mother leaves without
+                            saying goodbye: ‘I wanted to cry out... for godssake
+                            be NORMAL. Come back and say an ordinary goodbye,
+                            like an ordinary mother!’ But Nicholls leaves it at
+                            that, perhaps just like her mother did, with a
+                            slight feeling of being let down. This is a short
+                            book replete with letter excerpts and photographs
+                            from a family scrapbook in which large tracts of
+                            time are quickly summed up and emotional turning
+                            points glossed over. These moments cry out to be
+                            more fully excavated. Only towards the end of the
+                            book do we feel the full impact of Nicholls’s pain
+                            when she writes: ‘You nullified me... if I said I
+                            was feeling happy you said that I looked sad. If I
+                            said I felt well, you told me I looked sick, and
+                            when I said I was sick, you insisted that I was
+                            pretending.’ Many readers will recognise this
+                            dislocation and sense of alienation from our
+                            mothers, and this book is a heartfelt effort at
+                            evoking this filial ambivalence. It isn’t easy to
+                            write about our parents, especially one who gave and
+                            took in one gesture, one who was never really there.
+                            Nicholls writes: ‘I’m remembering the secret
+                            fantasies of my childhood - the banality of them. I
+                            never wanted adventure but yearned only for some
+                            stability in a chaotic world, for routines, for
+                            parents who remained recognisable from one day to
+                            the next.’ She shares fragments from a
+                            mother-daughter relationship of which she has
+                            struggled to make sense: ‘The lost child is the lost
+                            mother is the lost child, on and on, endlessly. The
+                            Imaginary Mother is me.’ Back to top Start of
+                            StatCounter Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

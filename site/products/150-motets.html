@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,232 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/150-motets.svg&quot;);
                         "
                     >
-                        Featured
+                        150 Motets
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Homer Rieth</h3>
+                </div>
+                <img
+                    alt="Cover of 150 Motets"
+                    class="product-cover-mobile"
+                    src="/assets/books/150-motets/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of 150 Motets"
+                        class="product-cover"
+                        src="/assets/books/150-motets/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Motet: a composition adapted to sacred words in the
+                        elaborate polyphonic church style; an emblem. Addressed
+                        to and inspired by the time-honoured figure of a
+                        mistress or muse, Homer Rieth’s sonnets cascade into
+                        each other across rocks of autobiography, memory and
+                        desire.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/150-motets.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/150-motets/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044794</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>186</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Rieth was born in Stuttgart in 1947, of German and
+                            Georgian parents. He came to Australia in 1952. He
+                            was educated at Padua and Assumption Colleges and,
+                            following a short period in the Jesuit novitiate at
+                            Loyola, Watsonia, at the University of Melbourne.
+                        </p>
+                        <a class="bold" href="/authors/homer-rieth.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            ‘Lords of nothing’ Geoff Page Australian Book Review
+                            April 2013, No. 350 Although the Melbourne publisher
+                            Black Pepper has a stable of major Australian poets
+                            (Stephen Edgar and Jennifer Harrison among them), it
+                            is also a house that likes to take chances. The
+                            favourable reception accorded Homer Rieth’s 359-page
+                            epic poem, Wimmera , in 2009 was definitely a punt
+                            that paid off. The book was shortlisted for The Age
+                            Book of the Year and became an ABC television
+                            program. Rieth’s new book, 150 Motets , though
+                            shorter, may be even riskier. It is a hard book to
+                            categorise. Sonnet sequence (cf. Shakespeare’s)?
+                            Epic with muse (Dante’s Divina Commedia and
+                            Petrarch’s Il Canzoniere )? Spiritual autobiography
+                            (Kazantzakis’s Report to Greco )? Daybook (Thoreau’s
+                            Walden )? All of these are possible descriptions.
+                            Apart from ‘Slaying the Dragon’, a short prose
+                            memoir of visiting the monasteries at Mount Athos in
+                            Greece, Rieth’s collection comprises ( pace the
+                            title) 154 sonnets, which are also called, with some
+                            justification, ‘motets’. A motet is remarkable for
+                            its polyphony and rep¬etition, and these are indeed
+                            important dimensions of the book. Technically, the
+                            sonnets are somewhat frustrating; they consist,
+                            almost always, of a strictly rhymed octet and an
+                            unrhymed sestet. The virtues of establishing a
+                            strict convention in the first part of a poem and
+                            then abandoning it in the second are not obvious.
+                            Although a few of the sonnets appear to use the
+                            pentameter normally associated with the form, most
+                            of Rieth’s lines are far longer and are best seen as
+                            free verse. The combination of free verse and strict
+                            rhyme in the sonnet’s first eight lines can lead,
+                            quite often, to a certain awkwardness of tone.
+                            Similarly, long epistolary sequences addressed to a
+                            muse (or patron) are always hard to carry off.
+                            Rieth’s ‘Lola’, like Shakespeare’s Mr W.H., is a
+                            fairly shadowy figure, despite the vivid-enough
+                            reminiscences of times spent together. Like other
+                            muses, Lola is inaccessible, perhaps in this case
+                            more due to geography than to anything else. There
+                            are moments when Rieth shows uncertainty about his
+                            ambitious project. One is when he refers to his
+                            efforts as a ‘wilderness of words’. He wonders
+                            elsewhere if the readers of his ‘little book’ will
+                            be ‘of mind to set sail / upon a boat as frail as
+                            this?’ Poem ‘126’ opens with the line: ‘Sometimes
+                            I’m tempted to say too little.’ With his somewhat
+                            expanded sonnets, this is a temptation to which the
+                            poet rarely succumbs. Rieth’s use of the longer line
+                            also seems to encourage him into prophetic stances,
+                            reminiscent of Walt Whitman in Leaves of Grass
+                            (1855) or Kahlil Gibran in The Prophet (1923). If
+                            150 Motets is a spiritual autobiography, it is also
+                            something of a theological exegesis. Though Rieth
+                            uses the word ‘soul’ as if it were unproblematic, he
+                            does give even the agnostic reader a convincing
+                            sense of a lifelong spiritual quest and of the
+                            author’s need to look beyond simple dogma into
+                            something less easily defined. A few more lines from
+                            poem ‘126’ may serve to illustrate both the
+                            difficulties and the strengths of Rieth’s approach.
+                            He tells Lola that ‘saying nothing really is / the
+                            only way to understand, what otherwise would seem
+                            absurd, / as if, finally, knowing everything means
+                            nothing - no more than to exist // could equate to
+                            this, to say that one lives - that one is, in the
+                            end, alone - / inconspicuous, inconsequential,
+                            short-lived as weather, as are the barn swallows /
+                            in the autumn air...’ Instructive here is the manner
+                            in which the poet rescues himself from abstraction
+                            with the telling image of ‘the barn swallows / in
+                            the autumn air...’ One is, however, reminded at the
+                            same time of Wallace Stevens’s ‘Sunday Morning’,
+                            which ends with much the same point, but more
+                            discipline: ‘And, in the isolation of the sky, / At
+                            evening, casual flocks of pigeons make / Ambiguous
+                            undulations as they sink, / Downward to darkness on
+                            extended wings.’ This is not to say, however, that
+                            Rieth doesn’t make some persuasive spiritual points.
+                            In poem ‘51’, for instance, he laments how we are
+                            the earth’s ‘ruination - plundering the skies, the
+                            seas, the soil - // we who are lords of nothing,
+                            lord it over all...’ He then concludes, not
+                            unconvincingly (though with a little exaggeration of
+                            time frame), with the assurance that ‘the day comes,
+                            the night is near, when the mother of all / shall
+                            give herself - a sacrifice - to her lord, the sun’.
+                            Robert Gray and Geoffrey Lehmann have praised
+                            Rieth’s work as ‘overheard private rhapsodies, in
+                            which the arcane and everyday mingle’. This does
+                            describe the private, almost ‘daybook’ nature of his
+                            letters to Lola. Gray and Lehmann have also
+                            described Rieth’s language as ‘ebullient’ and
+                            ‘rococo’, referring perhaps to the large number of
+                            words that will send readers scurrying off to the
+                            dictionary - or to Google. ‘Equiponderate’,
+                            ‘anacoluthon’, ‘eurhythmy’, and ‘armamentarium’ are
+                            just a few to get one started. These may be words
+                            that the average reader should know, but their
+                            presence in a line of poetry can have a jarring
+                            effect. Certainly there is scholarship here, but it
+                            is not worn lightly. It is hard to imagine the ideal
+                            reader for 150 Motets . He or she would need to have
+                            real spiritual concerns, a certain tenacity of
+                            purpose, a tolerance for abstract language - and
+                            perhaps be a fan of the motet form, with its
+                            emphasis on repetition and polyphony. Whether or not
+                            Lola, Rieth’s muse, has these qualities remains
+                            unclear, but we have to suspect that she must.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

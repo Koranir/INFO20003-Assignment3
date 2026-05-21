@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,144 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/sideshow-history.svg&quot;);
                         "
                     >
-                        Featured
+                        Sideshow History
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jennifer Harrison</h3>
+                </div>
+                <img
+                    alt="Cover of Sideshow History"
+                    class="product-cover-mobile"
+                    src="/assets/books/sideshow-history/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Sideshow History"
+                        class="product-cover"
+                        src="/assets/books/sideshow-history/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>it's the centre</p>
+                    <p>I want to show you</p>
+                    <p>the centre to the side</p>
+                    <p>of the side in the centre—</p>
+                    <p>it's what I want you to know</p>
+                    <p>of almost-gesture</p>
+                    <p>something hiding</p>
+                    <p>in the who-are-you of a name—</p>
+                    <p>the performance</p>
+                    <p>could be unsettling</p>
+                    <p>in being so ill-defined</p>
+                    <p>but let's go inside</p>
+                    <p>
+                        Jennifer Harrison has always been interested in
+                        performers, their choices and vulnerabilities. In her
+                        new collection, Sideshow History , she shows us the risk
+                        of being a public performer where the artist is
+                        continually under pressure of being seen to fail or
+                        succeed. Her admiration for this long tradition, its
+                        humanism and energy, is what she examines in these poems
+                        about circus and street art. In researching and
+                        documenting this culture, through photography and poems,
+                        she comments on its contemporaneity, a vibrancy that
+                        whilst looking back into ideographic history, also looks
+                        forward towards a new way of valuing difference.
+                        Throughout these sequences and the individual poems
+                        which separate them, Harrison writes an understated
+                        poetry of great humanity, fineness and often wit. Peter
+                        Rose , Australian Book Review Harrison knows how to cast
+                        an image that'll hold, engage; it's a talent well used -
+                        for suggestion and sensuousness, nothing overwrought.
+                        Kerry Leves, Overland There is no escape from the sense
+                        that Harrison's performers and artistes are skating on
+                        wafer-thin ice. And the water underneath is a big cold
+                        black drop. Yet. There is a thermal warmth that bubbles
+                        through so many of the poems. Dorothy Porter , Melbourne
+                        Writers' Festival A major contribution to Australian
+                        poetry which demonstrates Harrison's evolving career and
+                        mastery. Its depth of intellectual and emotional
+                        registers, in addition to its sustained craft, makes
+                        this poetry demanding yet also immensely rewarding and
+                        enjoyable. Judges comments , Western Australian
+                        Premier's Book Awards
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/sideshow-history.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/sideshow-history/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038795</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2025</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>130</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jennifer Harrison was born in Liverpool, Sydney, in
+                            1955, in a motorbike shop. She completed a medical
+                            degree in 1979 and her training as a psychiatrist in
+                            1990.
+                        </p>
+                        <a class="bold" href="/authors/jennifer-harrison.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
             </main>
         </div>
         <div class="footer-area">

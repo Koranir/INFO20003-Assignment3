@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,513 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/paths-of-flight.svg&quot;);
                         "
                     >
-                        Featured
+                        Paths of Flight
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Luke Fischer</h3>
+                </div>
+                <img
+                    alt="Cover of Paths of Flight"
+                    class="product-cover-mobile"
+                    src="/assets/books/paths-of-flight/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Paths of Flight"
+                        class="product-cover"
+                        src="/assets/books/paths-of-flight/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Paths of Flight is Luke Fischer’s first collection. The
+                        poems attend to visual detail, the natural world, and
+                        imaginative vision.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/paths-of-flight.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/paths-of-flight/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044855</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2013</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>96</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Luke Fischer is a poet and scholar. He was born in
+                            1978 into a European family in Sydney (his mother is
+                            French and his father’s family emigrated from
+                            Eastern Europe in 1950).
+                        </p>
+                        <a class="bold" href="/authors/luke-fischer.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Plumwood Mountain Review</summary>
+                        <p>
+                            A Life Viewed through Verse Megan Blake Plumwood
+                            Mountain, Vol. 1, No. 2, August 2014 Paths of Flight
+                            felt undecided as I first encountered it—at turns
+                            caught and contradictory, bent sometimes one way and
+                            sometimes the other, strung between and among
+                            competing ideas—but, in the end, seemed to achieve a
+                            certain balance and reconciliation, that was perhaps
+                            its destination all along. There is a dynamic of
+                            tension and reconciliation in the poetry that can
+                            feel at some points like the poet is sending
+                            contradictory messages, unsure of what he wants to
+                            value with his words or the way in which he wants to
+                            use tropes to do it. Individual poems can certainly
+                            be read and enjoyed on their own, but for me the
+                            best way to appreciate the balance of contradiction
+                            and unity was to read it as a collection: from start
+                            to finish, allowing the progression to lead me on
+                            its own terms to an overarching interpretation or
+                            impression, rather than me looking for a coherent
+                            and single-note one from each piece. And, from the
+                            beginning, in retrospect, the title gives me a hint
+                            that this will be the way it is. The “flight” of the
+                            collection’s name evokes sweeping movement,
+                            unrestrained and liberated, arcing like the black
+                            birds of Fischer’s Overland Judith Wright Poetry
+                            Prize-winning poem “Augury?” in swoops and gusts
+                            that lift away from the ground, the page. As Fischer
+                            comments in the poem “Pedestrian”—his ode to the
+                            liberated movement of air—flight is the meandering,
+                            flowing and tumbling, lifting and eddying with the
+                            gathered leaves: flight is the dancing. Paths,
+                            therefore, are where flight is not; on the ground,
+                            paths are where, in “Pedestrian”, the park is not.
+                            And so, in the collection’s title, the paths both
+                            ground the flight and are somehow given lift-off by
+                            it. Because a path is a directional space, it has a
+                            destination, and prescribes a way in which to
+                            achieve it. It does not swoop in unselfconscious
+                            eddies like the air above it does, but rather traces
+                            on the tangible the way to walk—controlled, yes, but
+                            also comforting and giving purpose. The paths in a
+                            way give this purpose and tangibility to the flight,
+                            but by being traced in air are made light, like a
+                            liberating breath, and are seamlessly, invisibly
+                            connected to the surrounding air. One cannot, after
+                            all, see the edge of a path through air; one can
+                            only see it as it is made. The name of the
+                            collection thus, for me, enacts the kind of tension
+                            that I find weaving through the book: one of
+                            seemingly opposing forces looping around and even
+                            occasionally appearing to undermine each other, yet
+                            somehow finding moments of temporary harmony. I
+                            would hesitate to say that the collection “resolves”
+                            in any kind of absolute or permanent way, because it
+                            is a journey rather than a state, and the movement
+                            that seems such an integral part of the
+                            collection—the movement of music, the movement of
+                            people across landscapes, the movement of birds
+                            through air, the movement of one line seamlessly to
+                            the next (one poem, “Walking Instructions”, eschews
+                            punctuation almost entirely)—would resist that. But
+                            a balancing emerges. This is a tension that
+                            manifests in various ways—almost testing out
+                            possible resolutions before moving on to another and
+                            then discarding that, too. On the one hand the poems
+                            honour the “small” of existence: the birds, small
+                            and relatively frail members of the non-human
+                            community; within this, individual birds such as one
+                            owl, one hawk, two black birds, each given their own
+                            materiality and vitality; the radiant atoms of the
+                            sky, not as any great “dome of the infinite”, but as
+                            a simple primary colour with which one pair of eyes
+                            connects like a gentle hand touches a child’s back;
+                            the delicate structures of a twig, “touching the
+                            smooth current/of a mountain stream” (72); the steps
+                            that are imprinted, one by one, into the quilt of
+                            new snow. On the other, however, the poems are
+                            redolent of high culture and the intellectual
+                            theorising of the world: Rilke hovers over the words
+                            and appears explicitly as epigraph; European
+                            cultural sensibilities are evoked through references
+                            to Renaissance painting, sculptural snapshots such
+                            as Rodin’s “Thinker” and Brancusi’s “Bird in Space”,
+                            mythology and ancient Greek philosophy; and the mass
+                            spread of humans across the planet is mapped through
+                            poems referencing travels to Damascus, Provence,
+                            Germany and Australia. Similar tensions emerge in
+                            the contrasts of human and non-human; losing versus
+                            finding; the metaphorical against the literal—and
+                            even through form, with enjambment and flow against
+                            pause, stanza break and punctuation lacunae. Some
+                            pieces seem more focused on the world of humans and
+                            culture than on that of the non-human or nature. The
+                            opening poem, “Portrait of a Thinker” (1), commences
+                            with an avian conceit: His eyebrows are falcon wings
+                            gliding on a constant current. His metallic eyes
+                            take in the scene dart to distant prey. His nose is
+                            beak-like – not the small busy beak of a sparrow nor
+                            the ibis probing a garbage bin afterwards, moving to
+                            a more geological metaphor with: His face is
+                            wind-sculpted, facetted like a crystal. And his brow
+                            is steep and hard not sandstone but granite, tall
+                            But the referent object of all this bird-life and
+                            land is a sculpture of human art and high culture.
+                            The language therefore seems bent towards the
+                            reflection and intellectual processing of humans
+                            beings, diminishing the value of the natural world
+                            being used to illustrate it. Nature is the manifest
+                            content, but culture is the latent. The direction of
+                            thought away from the apparent natural object also
+                            occurs in “Appassionata”, for instance—where a
+                            pianist going over and over his progressions has
+                            “movements/like an alpine stream continually
+                            smoothing/the stone”; and “We thank the clouds”
+                            acknowledges the elements, but in terms of the gifts
+                            that weather gives us, thanking the lightning that
+                            “splits the dead stumps/our hearts had become”, the
+                            mists for “hiding moments of our past”, and the
+                            “endless drizzling days” in the way they “incite
+                            us/to read a recommended book/forgotten on a dusty
+                            shelf” (60-61). In the final poem, “Diptych”, the
+                            sky is described as “the blue of a renaissance sky”,
+                            somehow subordinating the natural blue to that of
+                            the paint it aims to emulate (80). This
+                            directionality is complicated at other points,
+                            however, where the natural is privileged and the
+                            human is the illustration of lesser weight. In
+                            “Corellas”, the birds are described as “ladies at a
+                            tea party”, “dressed/in white tennis outfits,
+                            strolling to the courts”: “A daintier sort of parrot
+                            – cockatoos/who read their Emily Post” (35). The
+                            marriage here of human cliques and class hierarchies
+                            is transported hilariously onto the smooth feathers
+                            and high-pitched “squeaks” of the Aussie bush. In
+                            “Augury?”, the title of which means a kind of
+                            presentiment of the future, the black birds observed
+                            by the speaker arc “more smoothly than figure
+                            skaters” and flip “far swifter than stunt planes”,
+                            bending thus our focus towards the singularity of
+                            their flight and away from the planes and olympians
+                            (74-75). In the end it almost seems interchangeable,
+                            whether nature illustrates culture or culture
+                            illustrates nature, and the language bends both
+                            towards the natural and away from it. In “Early
+                            Autumn Morning” (64), you see a eucalypt in the park
+                            with torn clothes dangling from its limbs, and a
+                            grey lamppost standing at a corner like a lost
+                            giraffe. while in “Dealing with Early Spring” (5), A
+                            beggar cups his hands and pleads for change while
+                            the sun gilds his palms and fingers like a bowl
+                            possessed by Charlemagne, standing now in a museum’s
+                            vitrine. The tension between high culture and low
+                            culture is also exploited, in a way I feel I would
+                            recognise in the future as an emblem of Fischer’s
+                            style. One striking and, for me, enjoyable example
+                            is the progression of “Band of Cockatoos” through
+                            “Thoughts on a Walk by the River Sorgue” to the
+                            beginning of “Swift”. “Band of Cockatoos” (22) plays
+                            on the collective noun pun of the title to paint the
+                            group of birds as a punk rock band, starting off
+                            with plumage “a bit too white like/the polished
+                            teeth of salesmen,” but then breaking into havoc as
+                            they “open their gravel beaks” and the lead alights
+                            and hops along a broken branch, flares his pineapple
+                            Mohawk while banging his head, rends his jacket and
+                            insists the members scatter to the surrounding tiers
+                            where they join in a punk-rock cacophony. The page
+                            then turns and moves to a reflective walk along the
+                            River Sorgue, and we are transported from an
+                            Australian backyard to countryside France, picturing
+                            high school graduates with heads full of knowledge
+                            and philosophising on the fate of ducklings who
+                            might, in the patchy fuzz of their feathers, have in
+                            their destinies “a form/other than that of duckness”
+                            (24). The third poem, “Swift”, then commences with a
+                            quotation in French—with no offered English
+                            version—from a piece by twentieth-century poet, René
+                            Char: “Such is the heart”, it proclaims upon
+                            translation, “if he touches ground, it tears him
+                            apart” (25). My favourite parts of the collection,
+                            however, are split somewhat likewise: one, an
+                            overarching matter of style; the other, one specific
+                            line and its prosaic literality. The overarching
+                            matter of style is Fischer’s use of metaphor. Yes,
+                            there are some moments for me that are perhaps too
+                            much—I do not, for instance, enjoy “Your Eyes” (66),
+                            Your eyes are macadamia that quickly sprout under
+                            the pour of my gaze as much as I might perhaps enjoy
+                            something either more subtle or more absurd. But I
+                            do, however, adore the “humming” of the sun’s
+                            radiance in “I can almost hear a humming”, which is
+                            so warm and luxurious that, “If it didn’t yet
+                            exist/this radiance would find a way/to create
+                            honey” (58). And I cannot quite picture the face of
+                            the man in “Syrian Desert” (44) from the features
+                            attributed to it through metaphor, described as: dry
+                            and cracked yet tilled by the work of renunciation –
+                            from its furrows rise vast trees abundant with
+                            flowers and gliding the blazing gusts firebirds
+                            alight in their branches. But nor do I want to. Or
+                            need to. The specific line that I will take from
+                            this book as I close it comes at the end of “Swift”,
+                            and this favourite moment is almost the opposite of
+                            the figurative turn of phrase that claims the other
+                            spot. “Swift” is a poem more narrative in style than
+                            many of the others, and it tells the story of an
+                            injured swift being cared for by the poet and his
+                            family. After finding the creature lame on the
+                            ground they nurse it back to health and, in the
+                            process, develop an intimacy that gives the bird
+                            something of the human and the human something of
+                            the bird. When finally released, the swift like a
+                            new baby stammers and trips its way into the air
+                            with the speaker racing after it,
+                            “obliviously/trampling seedlings” (29), but
+                            then—disappears. Until nightfall we searched, and
+                            still do not know whether you reached the sky, or
+                            landed helpless in the next field. Not only is this
+                            poem a privileging of the material self of one
+                            small, vulnerable bird—I read in it no grand
+                            allegory of the human condition—but it ends with the
+                            notes of trust, hope and fear that love is . Because
+                            that really is the heart of devoting ourselves to
+                            something: yes, to something as small in the great
+                            scheme of things as sitting down and reading a book
+                            of poetry from beginning to end, but also to those
+                            greater tasks of birth and the preservation of
+                            species, lands and cultures. We do not always know
+                            what will come of the time and care we have
+                            invested, whether the object of that love will reach
+                            the sky or fall helpless in the next field, but
+                            investing in something is in the end an act of love.
+                            I find that Paths of Flight returns that love.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Cordite Review</summary>
+                        <p>
+                            Paths of Flight Lucy Van Cordite , 9 January 2014 In
+                            Shakespeare’s last great poem, ‘The Phoenix and the
+                            Turtle’, the owl is banished from the allegorical
+                            proceedings of the bird funeral: But thou, shrieking
+                            harbinger, Foul pre-currer of the fiend, Augur of
+                            the fever’s end, To this troop come thou not near
+                            Whether you read this poem as dense figural
+                            allegory, enigmatic elegy or refined coterie poem,
+                            you should mark this ironic moment of exclusion. The
+                            tradition of augury in poetry is richly prefigured
+                            here, not only in the careful inclusion and
+                            exclusion of birds, but in the deceptive formal
+                            simplicity of the stanzas. Devolving into triplets
+                            in the threnody coda, the rhythm of the poem is
+                            incantatory, reminiscent of the magic of prophetic
+                            language. Why, then, the prohibition on the augur
+                            owl? Luke Fischer’s first collection, Paths of
+                            Flight, is deeply alert to the signs made by birds.
+                            Fischer displays an affinity with a certain notion
+                            of the ‘natural’ world, as well as a temperament for
+                            classical poetic tropes. Birds, depicted in both
+                            mythical and parochial attitudes, populate the
+                            collection. And while not every poem depicts the
+                            physical manifestations of a bird, many actually do.
+                            The owl keeps ‘vigil in a cell / of twisted boughs’;
+                            the swift’s brow is ‘planed by supernal winds’; the
+                            punk cockatoo ‘flares his pineapple Mohawk.’
+                            Conversely, more enigmatic figures are infused with
+                            bird-like qualities. The first line of the
+                            collection, from the poem ‘Portrait of a Thinker’,
+                            is unequivocal: ‘His eyebrows are falcon wings/
+                            gliding on a constant current.’ There is a certain
+                            satisfaction to be taken from such thematic
+                            consistency. Like Shakespeare’s poem, Fischer’s book
+                            takes up an allegorical mode, calling forth the
+                            presences of ‘Owl’, ‘Swift’, ‘Corellas’, ‘Raven’ and
+                            a ‘Band of Cockatoos’ through the direct titles of
+                            the poems. The collection’s undertaking as a work of
+                            augury is emphasised by its omnibus title. How do we
+                            read a bird’s flight, which once foretold the will
+                            of the gods? What is the relation between poetry and
+                            prophesy? I’m making this sound unnecessarily lofty
+                            - Fischer’s address is nothing if not graceful and
+                            intimate, posing these questions about language,
+                            time and causality through a personal turn. For
+                            ‘paths of flight’ also implies a travelling
+                            itinerary; the collection maps a topography of a
+                            young cosmopolitan speaker, tracing snowdrops in
+                            West Philadelphia to early spring in Hamburg. The
+                            matter-of-factness of a Paddington morning, ‘a
+                            freckle blemishing her even tan,’ is set against the
+                            expanse of ‘Syrian Desert’, where the totemic
+                            speaker and observed man appear ‘cloaked in the
+                            winds.’ I couldn’t say that the collection is
+                            Eurocentric, but there is a longing for Europe
+                            across this collection that is likely linked with
+                            Fischer’s Eastern European heritage, as well as his
+                            recent academic postings in Germany. Australia is
+                            rendered in contrasting tones of bare familiarity.
+                            There is a sort of blankness that the speaker
+                            alludes to in ‘Twilight’: ‘Like children / we hold
+                            no beliefs.’ Consistent with the book’s theme, the
+                            birds deliver a sign: Through the emptiness a flock
+                            of birds surely follows its invisible compass, and
+                            reminds us of another home Such a sentiment not only
+                            speaks of longing for elsewhere, but also speaks of
+                            the ambivalence of the cosmopolitan wanderer, who
+                            finds home precisely in mobility and rootlessness.
+                            Non-fixity reaches its joyful apex in ‘Lexcial
+                            Synthesis 101’, where trees walk and travel on
+                            planes. The privileging of the path, or the space
+                            ‘in-between’ is showcased in ‘Swift’, which, in a
+                            turn reminiscent of Derek Walcott, celebrates flight
+                            as a liberation from earthly history: Up there
+                            almost forever, journeying from Europe to Africa […]
+                            At equal elevation you pass eagles, they scan the
+                            earth, you never look down. The speaker ironically
+                            finds this emblem of mobility, ‘awkward on land as a
+                            seal.’ The swift is nursed, restored and released to
+                            the winds. The poem closes on an apposite note of
+                            ambivalence, with the speaker left wondering
+                            ‘whether you reached the sky, / or landed helpless
+                            in the next field.’ In Paths of Flight the
+                            uncertainty of earthly peregrinations is married to
+                            anxiety about how words take flight. How do they
+                            reach their destination? Is memory the destination?
+                            How do we remember what we see, and what we say?
+                            Fischer alludes to that fear of the ancients, the
+                            winged word, numerous times in the collection. But
+                            winged words, and ‘air-writing’ do not signify
+                            horrific disappearance or erasure, but rather reveal
+                            a world charged with story and signification, an
+                            excess of ways to read signs. The reflexive ‘Poem’
+                            shows the poet in a derangement of meaning as he
+                            surveys the infinite answers to the question, ‘what
+                            is a poem?’ The only relief is tautology: ‘A poem is
+                            a poem.’ If not quite a blessing, erasure is surely
+                            a kind of concession, as it is in ‘Transcription
+                            from the first page of a hermit’s diary (c. 1500):
+                            ‘So I speak / and do not speak / Even as I write /
+                            my pen / erases.’ Paths of Flight is a strong first
+                            collection, drawn equally from a scholarly depth of
+                            influence as from a calm, intuitive knack for scene
+                            and story. And Fischer is a strong poet, watching
+                            the delicate details of the natural world,
+                            gracefully gleaning their abstractions. ‘Augury?’
+                            won the Overland Judith Wright Poetry Prize and
+                            appears near the end of the collection, drawing the
+                            subtly interrelated themes together. The speaker
+                            observes two black birds in flight and
+                            simultaneously feels the stir of ‘recurrent doubts
+                            about the art / of poetry, its prospects in our
+                            time.’ Fischer’s owl is the key inclusion in this
+                            collection of ambivalent augury - the bird that
+                            watches the watchers: ‘It’s frontal eyes / (new
+                            moons) / kept us under watch / long before we
+                            noticed.’ Doubt about the art’s prospects seems ever
+                            increasing, yet it remains the task of the poet to
+                            read for signs.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Prize</summary>
+                        <p>
+                            2012 Overland Judith Wright Poetry Prize for New and
+                            Emerging Poets Awarded to Luke Fischer for
+                            &quot;Augury&quot; Peter Minter - Judge, Poetry
+                            Editor, Overland (Augury - on page 74 : Paths of
+                            Flight) This year’s fine winning poem, ‘Augury?’, by
+                            Luke Fischer, begins ‘I’m not sure if I’m following
+                            a trail / left by goats or on the human path’. A
+                            walk in the hills is put into perspective by a
+                            wonderfully overt sense of uncertainty. ‘I’m not
+                            sure’ gives a contemporary (and ethically acute)
+                            spin to the ‘ramble’ poem, a genre central to
+                            environmental literature, in which observations and
+                            impressions collected on outdoorsy treks are
+                            traditionally enumerated. ‘Augury?’ balances
+                            epistemological certitude on a hinge of doubt, first
+                            announced by the question mark in the title and then
+                            followed through in a finely composed event where
+                            the complexities of human ambivalences are made
+                            ineluctably central to the experience of nature. At
+                            first the poem grabbed me because it is
+                            fundamentally ‘honest and well-crafted’, making no
+                            bones about wanting to be easily read and
+                            demonstrating an excellent grasp of romantic, modern
+                            and post-modern environmental poetry and poetics,
+                            all the way from Goethe to Gary Snyder. Is it a goat
+                            or human path, back there in Greece? ‘Augury?’ is a
+                            marvellous example of a radical poetry that draws
+                            its energy more from progressive intention and scope
+                            than, for instance, displays of formal
+                            experimentation. It’s a big bad world out there, and
+                            we need all the good poetry we can get.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

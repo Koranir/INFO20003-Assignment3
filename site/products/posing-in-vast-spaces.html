@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,186 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/posing-in-vast-spaces.svg&quot;);
                         "
                     >
-                        Featured
+                        Posing in Vast Spaces
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Peter Murk</h3>
+                </div>
+                <img
+                    alt="Cover of Posing in Vast Spaces"
+                    class="product-cover-mobile"
+                    src="/assets/books/posing-in-vast-spaces/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Posing in Vast Spaces"
+                        class="product-cover"
+                        src="/assets/books/posing-in-vast-spaces/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Before I describe true beauty, let me describe the
+                        ashtray in front of me. A browny-red bakelite
+                        McWilliam’s Cream Sherry job duly embossed and shaped
+                        into the coastline of Australia. Imagine the tales and
+                        torment heard and inflicted over this common object.
+                        What other country would allow this? As much a
+                        travelling salon as a road novel, Posing in Vast Spaces
+                        is an object lesson in the art of digression. Our
+                        narrator, a poet, is an aesthete. He is given to
+                        frivolity, drinking, ogling, cloudwatching, research
+                        into town bakeries and japes. His fellow traveller is a
+                        landscape painter, upright and dedicated to his immortal
+                        daubs. Their common companion is My Darling Chevrolet.
+                        Together they head inland to sing and paint the dead
+                        lakes. On the drought-stricken land the locals are
+                        resilient in their good humour. Our Dionysian and
+                        Apollonian heroes are like vagabond wraiths in
+                        comparison. Peter Murk’s picaresque novel is a love song
+                        to his country. He dotes on the vernacular as though he
+                        has discovered a lost dialect. Posing in Vast Spaces is
+                        seriously funny.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 28.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/posing-in-vast-spaces.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/posing-in-vast-spaces/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044572</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2008</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>256</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            1960-2019 Peter Murk, born in 1960 in Yallourn. His
+                            immigrant father and local mother moved to Melbourne
+                            in 1967.
+                        </p>
+                        <a class="bold" href="/authors/peter-murk.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Kerryn Goldsworthy, The Sydney Morning Herald
+                        </summary>
+                        <p>
+                            Posing in Vast Spaces PICK OF THE WEEK SYDNEY
+                            MORNING HERALD Kerryn Goldsworthy The Sydney Morning
+                            Herald , 16 August June 2008 This remarkable book is
+                            accurately described on the cover as a combination
+                            of travelling salon and road novel. The narrator, a
+                            poet, takes off on a road trip with his artist
+                            friend Matthew in a car called My Darling Chevrolet.
+                            They travel deep into the wilds of country Victoria,
+                            where they travel around painting, drinking,
+                            chatting up the local ladies, smoking dope and -
+                            most of all - talking. You would have to call this
+                            book a celebration and the two main things it’s
+                            celebrating are the country-Victorian landscape and
+                            the great joys and pleasures of conversation with
+                            someone you've known very well for a long time and
+                            whose mind travels along the same track as your own.
+                            Peter is a poet and can therefore get drunk on words
+                            as easily as on beer and the many other beverages he
+                            samples as he and Matthew trundle around the
+                            landscape from town to town and pub to pub; their
+                            conversations, like the narrator’s own description
+                            of the trip, are full of puns, quotations, double
+                            entendres and other wordplay. There are also endless
+                            allusions to culture both popular and high, a
+                            potential disadvantage since readers unfamiliar with
+                            them will miss all the best jokes. In this, as in
+                            its setting and its indiscriminate and unremitting
+                            mockeries, the book is strongly reminiscent of Jack
+                            Hibberd’s classic one-man play A Stretch Of The
+                            Imagination . The story of the road trip is told in
+                            smallish fragments, the smallest of which features
+                            the title ‘Nhil’ (the unfortunate name of a
+                            Victorian town) at the head of a blank space, a
+                            silly yet irresistible joke. It’s impossible to
+                            describe the quality of Murk’s style or to pick out
+                            an example; it needs to be read properly and with
+                            care. There’s a kind of tumbling ebullience and
+                            complete lack of restraint about its playfulness
+                            that some readers might find excessive but that
+                            others will embrace.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Review</summary>
+                        <p>
+                            Posing in Vast Spaces PICK OF THE WEEK Cameron
+                            Woodhead The Age , 21 June 2008
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

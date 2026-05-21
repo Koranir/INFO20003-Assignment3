@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,1938 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-strangest-place.svg&quot;);
                         "
                     >
-                        Featured
+                        The Strangest Place
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Stephen Edgar</h3>
+                </div>
+                <img
+                    alt="Cover of The Strangest Place"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-strangest-place/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Strangest Place"
+                        class="product-cover"
+                        src="/assets/books/the-strangest-place/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        B ook Description They have their stratagems too, though
+                        they can’t move. They know their parts. Like invalids
+                        long reconciled To stillness, they do their work through
+                        others. They have turned the world To their own account
+                        by the twisting of hearts The strangest place, this
+                        world of fact and figment we astonishingly find
+                        ourselves inhabiting, is the territory that Stephen
+                        Edgar’s poetry has been probing and framing for over
+                        four decades now, looking out on the evanescent
+                        representations of light and inwards on the mind and
+                        “the gyre of its own consciousness”, feeling “toward the
+                        labyrinth just behind Creation’s serene surface”, as
+                        Alan Gould described it, and “trying to keep faith
+                        poetically with that strangeness of the world”, in the
+                        words of Peter Steele. The Strangest Place offers a
+                        retrospective on Edgar’s career, with selections from
+                        each of his previous ten books. Opening the collection
+                        is a book-length section of new poems, Background Noise
+                        , which continues and extends the range of his
+                        meditations, with characteristic technical mastery,
+                        interspersed with the title’s leitmotiv, whether the
+                        notes of lorikeets in the morning trees, echoing voices
+                        in an abandoned railway tunnel, the mind’s running
+                        commentary or the cosmic hum beyond the death of the
+                        stars. Cover Image: Judith Nangala Crispin Anika lifting
+                        to her ancestors, on a spider-string, over Mt Cooroora,
+                        in Kabi-Kabi country - Lumachrome glass print
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-strangest-place.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-strangest-place/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038740</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>poetry</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>302</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years.
+                        </p>
+                        <a class="bold" href="/authors/stephen-edgar.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Review by Kevin Hart Mascara</summary>
+                        <p>
+                            REVIEW CRICKEY As poetry seems to lose rhyme and
+                            reason, Edgar masters technique, complexity and
+                            vibrancy GUY RUNDLE, CORRESPONDENT-AT-LARGE The
+                            Strangest Place: New and Selected Poems . Stephen
+                            Edgar The first thing that occurs to any reader who
+                            sticks their head into Australian poetry — by
+                            browsing, say, an issue of Cordite, or one of the
+                            just-surviving little magazines — is how bloody
+                            raucous it is. Anger, testament and incitement has
+                            become the dominant aesthetic for a whole section of
+                            the form, inevitably occupied largely by non-male,
+                            non-white writers, though that is not the only thing
+                            all of them do. Some of it is worked and
+                            paradoxical, some of it deliberately artless and
+                            insistent. Most of it will age and is ageing badly,
+                            not because the sentiments decay but because the
+                            particular concepts and language of oppression and
+                            liberation shift, being nothing more than the
+                            technical language of politics rather than the more
+                            persistent language of things — hence why so much of
+                            the stuff from the ’60s sounds like something
+                            dredged up for a Saturday Night Live sketch about
+                            the ’60s. At the other end of the room, a lot of the
+                            work is simply incomprehensible at first, and later,
+                            glance — a product of several genres of poetry, one
+                            known confusingly as L.A.N.G.U.A.G.E, whose object
+                            is to make it impossible, via discontinuous phrases,
+                            broken syntax etc, for the poem to be in any way
+                            summarised or abstracted to a prose sketch of its
+                            subject or arguments. And in between, there is a
+                            stretch, a vast stretch, of the standard issue stuff
+                            — free verse, unrhymed, semi-scanned poetry,
+                            irregular stanzas going where it will, following its
+                            fairly clear exposition of holidays in Italy,
+                            childhood in the country, a sepia photo of your
+                            great aunt, the taste of cumquats, and on and on and
+                            on. The ascent, really in the 1960s, of first
+                            unrhymed and then unpatterned free verse becoming
+                            the standard thing that poetry was liberated reader
+                            and writer from a lot of bad plinky-plinky verse
+                            (for which see the Literary Review‘s traditional
+                            poetry competition, run regularly in the ’80s and
+                            ’90s; designed to defend rhyme and scansion, it
+                            helped near-kill it with kitsch). But in doing so it
+                            created a disjuncture between the poet’s desire to
+                            express and the genre’s demand that such be done
+                            artfully. In doing so, the commonplace thoughts of
+                            poets on death, love, the old mill, the beach near
+                            Esk, etc, were now the poem’s only driver, and the
+                            journals and sites filled up with unworked notes for
+                            poems presented as the final thing. This has been a
+                            problem everywhere, but in Australia, my God, it’s
+                            the cultural equivalent of the mouse plague. You
+                            beat these things flat and they get up again. The
+                            situation is absurd. We have no high culture to
+                            speak of, and yet we have all these poets — some of
+                            them quite distinguished within the art — who write
+                            nothing but “i reckon” poetry, a sort of “i’m
+                            sitting on the cliff and looking at the rock out
+                            there in the sea and the rock is death. i reckon”
+                            type of thing. This wash of poetry is a product in
+                            part of our lack of high culture; in our left
+                            cultural nationalist period from the ’60s to the
+                            ’90s, we thought we would make one of a scale beyond
+                            the small and self-knowing network of artists prior
+                            to. When we abandoned that, and relaxed into the
+                            arms of globalisation, we left the machine on — in
+                            the form of creative writing courses, designed to
+                            mop up the exploding numbers of arts students that
+                            the ’80s-’90s Dawkins revolution had not
+                            anticipated. This seems to be the cause of this
+                            disjuncture — as if we had started hundreds of
+                            coopering courses, and our cities were now filling
+                            up with thousands of poorly-made, unwanted barrels.
+                            Stop making barrels, make fewer better barrels, we’d
+                            say. But no, they go on piling up. There are many
+                            poets, some with several collections to their name,
+                            who should simply just stop, They should go outside
+                            and kick a ball around. Amidst all this, the
+                            tradition of formal verse in Australia died away
+                            more rapidly and completely than elsewhere. Our
+                            poetry’s rather thin roster of figures, with even
+                            the slightest international reputation, were, until
+                            the 1960s, all formalists, chief amongst them A.D.
+                            Hope. After that, rhyme went out the window, and
+                            scansion and stanza form were the pursuit of a
+                            minority. It’s telling that the big hitter — Fat Les
+                            — worked in both modes. But it’s also telling that
+                            Britain’s two greatest post-war poets — Philip
+                            Larkin and then Don Paterson — lean heavily towards
+                            formalism, with a manner and a facility that does
+                            not emerge, en masse, from Australia. So the figure
+                            of Stephen Edgar, who has just won the prime
+                            minister’s prize for poetry, is an extraordinary
+                            one; not only an Australian formalist, but perhaps
+                            the most accomplished such poet in the English
+                            language today. No, “accomplished” doesn’t do it.
+                            Edgar is a mind-blowing poet, producing the most
+                            extraordinary transformations of the natural world,
+                            the cosmos and memory, from within seemingly
+                            impossibly tight rhyme/scan schemas. The effect is
+                            like very little going on in poetry today, joining
+                            the full range of modern expression to the inherited
+                            formal tradition. The... well, cue tape: The river
+                            surface, restless as a child Keeps shifting around
+                            its iridescent blues In shirrs and stretch marks,
+                            quiltings which are styled For nothing, or for what
+                            we choose to choose -“Observations of an attendant”
+                            If that isn’t your sort of thing, you may want to
+                            meet the rest of us back at the ratings report. For
+                            the rest, Stephen Edgar deserves an introduction and
+                            a consideration. Born in Sydney in 1951, a Sydney
+                            tech graduate, Edgar did the London sojourn in the
+                            early ’70s and then returned to Tasmania, where he
+                            spent three decades before returning to Sydney.
+                            Aside from “The Dancer”, a record of a post nervy-b
+                            psych ward stay (as much a part of poetic life then
+                            as hotdesking at The Wheeler Centre is now), his
+                            short poems (20-200 lines; few under 50) relate no
+                            striking life events (“Eldershaw”, an
+                            autobiographical set of three long poems, a small
+                            amount excerpted here, is more forthcoming).
+                            Instead, over several hundred poems across 10
+                            volumes, Edgar’s poems are overwhelmingly concerned
+                            with small moments of life, from a few minutes to a
+                            few days long. These are often small observed
+                            processes such as a coastal scene: A single sail
+                            Transluscent apricot Drifts like a poppy’s petal on
+                            a frail Breeze that is not A baby’s breath Of air
+                            sparingly strewn And eked out by the estuary’s width
+                            All afternoon -“the sail and the gannet” or a few
+                            minutes in sexual afterglow: Too hot and humid to do
+                            more than drowse And slip — who knows how brief the
+                            interims? — Into a chafed unconsciousness And rouse
+                            Too clammy for the slur and press Of fabric or each
+                            other on our limbs We slide apart across a
+                            moon-slicked sheet And all the intermittent
+                            anaglyphs The moon is working to Complete, I see
+                            each time I wake and view Your light shaped body as
+                            it stirs and shifts…. -“Moonlight sculptures” Or the
+                            simple capture of being, being: Sitting in a room,
+                            say, when a pause In conversation, or alone In stray
+                            attention prises a wide space And over on the wall
+                            the late day draws A sliding pain of light on which
+                            the trees In miniature and detailed monotone
+                            Project, like memories An imaginary time and place
+                            -“Letters of the Law” What is common to hundreds of
+                            poems of variant matter is the absolute mastery of
+                            technique which is put to the service of such
+                            particularity. His commitment to a tight, demanding
+                            classical form is there right from the start, with
+                            “Nasturtiums”, written, his introduction tells us,
+                            in 1976: In this plot, only nasturtiums Are charmed
+                            to a snakelike survival All else winces in a wind
+                            stiff with salt Dies back or waits stock still (Was
+                            this the poem Patrick Cook was thinking of in his
+                            “Australian poets” cartoon, which depicts a
+                            desperate man hovering over a typewriter and
+                            pointing a gun at a vase of flowers and yelling
+                            “Rhyme, you bastards!”?) The Hopkinsian touch would
+                            depart relatively early, yielding to straight,
+                            subtler rhyme, though for the first half of his
+                            career, Edgar is as interested in the full palette
+                            of the English vocabulary as he is in depicting the
+                            lessmediated real, as in “reef”, an interior scene:
+                            It is night. The spectrum has been cancelled From
+                            the glossary of possibles. And here Its lettered
+                            spines a texture of the wall The library is restful
+                            as a morgue It’s only later that the language
+                            becomes plainer, and the objects emerge, a gesture
+                            towards letting things speak for themselves. That
+                            sleight-of-hand gives such poems their uncanny air,
+                            redolent of French symbolism, but with a capacity to
+                            flip reality that seems unmatched by, well, anyone.
+                            All this is done within the wider frame-demand of
+                            strict rhyme and scansion, worn so lightly that it
+                            sometimes seems to be free verse. Larkin could do
+                            this, George Barker and a few others. But when one
+                            looks around today, one sees no-one doing it
+                            (worried that I was simply missing whole genres, I
+                            did a quick tour of the Pulitzers and other prizes
+                            going back a decade — no, nothing much like this
+                            that I can see). This isn’t the only way to do great
+                            poetry, of course. But it’s worth asking why so much
+                            of the other way of doing it — loose unrhymed lines,
+                            parsimonious metaphor and imagery, lack of rhyme and
+                            demanding form — is so much more common. One can’t
+                            help but conclude that it probably takes a lot less
+                            work, and that Edgar’s poems take a lotta lotta
+                            carpentry to get right. The suspicion might be that
+                            poetry once had a (small) “middle” audience, who
+                            would read poets like, say, Auden or MacNeice,
+                            without being of the poetry world themselves. That
+                            audience has almost wholly vanished, poets are alone
+                            with themselves, and one wonders whether, in several
+                            quarters, the difficulties of craft-art have been
+                            abandoned for shouty self-expression — or for the
+                            relatively undemanding randomness of
+                            L.A.N.G.U.A.G.E-type operations. The greatest danger
+                            for high culture today is that no one really
+                            believes in it anymore, even as they do it, like
+                            Roman pantheon priests used to fall into giggles as
+                            they invoked the gods. Charlatanism is eating away
+                            at art forms that gained their authority as a
+                            succession from religion, and are now losing it to
+                            season three of Succession. Stephen Edgar is someone
+                            who clearly still believes in the calling — and as a
+                            consequence, so many of his poems rise from a simple
+                            and direct observation towards cosmic heights, at a
+                            dizzying speed, or down into the very interstices of
+                            being, moments captured in their mote-filled, sunlit
+                            indeterminacy. He’s not someone I would read in
+                            large hits; two to three poems at a time, because
+                            they demand slow reading and attention. Taking them
+                            altogether would be like eating a whole profiterole
+                            tower. OK, bad example, because I’ve eaten a whole
+                            profiterole tower, but the point remains. Complexity
+                            for its own sake is not the value I’m pushing —
+                            especially as much of the current poetic avant-garde
+                            proposes a complexity that simply celebrates
+                            open-ended interconnection, in which anything can
+                            connect to anything else. This makes the style
+                            another mirror expression of the neoliberal era, in
+                            which capital proposes that anything can be anything
+                            else, and is a reason why such movements run out of
+                            energy and purpose. Edgar’s complexity imposes
+                            order, the poems’ meanings a product of the
+                            interconnections of rhyme running crosswise to the
+                            main narrative or argument, avoiding kitsch or
+                            cuteness. Most poets renounce rhyme because they
+                            can’t avoid kitsch. Edgar’s skills, honed over
+                            decades, give him access to that extra dimension.
+                            These poems shimmer and vibrate as you read them;
+                            they grow and change. They’re an Escher picture,
+                            they’re fractals, they’re a fungal colony spread
+                            over hectares, they are liquid mirrors of the real.
+                            Edgar has had prizes and nominations before; the
+                            prime minister’s prize should be the start of a new
+                            stage in his public life. With all due credit to
+                            Black Pepper — a mainstay of Melbourne publishing
+                            for decades, airing hundreds of writers and a
+                            halfdozen major talents — we need a uniform edition
+                            of Edgar, gathering his scattered books together,
+                            some impossible to obtain. Indeed, there’s a dozen
+                            contemporary poets we need that for. Lacking our own
+                            Faber and Faber, we need a government subsidy for
+                            one or several publishers to take it up — the cost
+                            would be nothing, a fraction of a Melbourne writers’
+                            festival dead pets church. As a nation, we dun
+                            pretty good on poetry, punched well above our
+                            weight. It would be good to celebrate that, and to
+                            start with Stephen Edgar, who may well eventually be
+                            seen as the national oeuvre‘s new Hope. And hope.
+                            Reviewed by KEVIN HART October 6, 2021 / mascara
+                            Poetry always involves a delicate negotiation
+                            between craft and art. Craft can easily be
+                            misunderstood as a set of skills completely external
+                            to what is being written. Yet a poet shows craft by
+                            moving confidently within the work developing on the
+                            page. Often, when one looks at an intricately rhymed
+                            stanza, perhaps one with five, six or seven lines of
+                            varying length, such as Stephen Edgar favors, one
+                            might be tempted to think that the work has been
+                            composed, even revised, in the poet’s mind and then
+                            set down on the page. There are such compositions,
+                            some of them admirable, and examples can be found in
+                            volumes of minor seventeenth-century verse. The
+                            effect is known as “Ciceronian”: the style is marked
+                            by balance, antitheses, and repetition; it was
+                            developed to a high pitch in prose, not verse.
+                            Nothing could be further from Edgar’s characteristic
+                            way of writing, which is usually “Anti-Ciceronian.”
+                            Here sentences unfold naturally rather than exhibit
+                            a resolved formal beauty, and often the style is
+                            marked by asymmetric constructions. The poem shows a
+                            mind thinking as it progresses from stanza to
+                            stanza. Too little is said, then, when critics say
+                            Edgar is a formalist, or range him against some of
+                            the better American “new formalists.” Like theirs,
+                            his poetry is often plain spoken; unlike theirs, it
+                            tends more surely to the baroque. With respect to
+                            contemporary poetry, “baroque” need not connote
+                            stylistic excess, invention or ornament. Nor need it
+                            prompt us to admire the deft use of elaborate poetic
+                            forms. In fact, Edgar has no deep investment in
+                            received poetic forms. Baroque poetry nowadays is
+                            more concerned with the presentation and
+                            contemplation of compound phenomena. Edgar’s poetry
+                            is baroque in this manner and is also remarkable for
+                            its fine sense of timing. In many of his most
+                            impressive poems he is concerned to investigate
+                            complex situations, sometimes unstable ones, which
+                            often involve fragility and loss: his consciousness
+                            becomes divided, or he encounters problems in
+                            constituting the world, or he quickly passes from
+                            one attitude to another (perception, belief,
+                            half-belief, fantasy, anticipation, recollection,
+                            and so on). “Timing” in poetry is not only a matter
+                            of pacing one’s speech, spacing out metaphors and
+                            similes, and seeking closure at the right moment. It
+                            is also the difficult practice of using enjambment,
+                            rhyme, varying line lengths, and metrical
+                            substitutions in order to place a word or a phrase.
+                            The proper timing of a word, a phrase, a figure,
+                            does not merely follow formal rules; it must also
+                            release thought and feeling at the right time and to
+                            the right degree. To read an engaging poem well is
+                            partly to be aware of the confidence and agility, of
+                            the poet as he or she writes, and to notice those
+                            moments, given only to very fine poets, when craft
+                            leads one to think of the phrasing as inevitable.
+                            Such reading perceives that in a poet as good as
+                            Philip Larkin craft and art become almost
+                            indistinguishable, and something similar may be said
+                            of Edgar. The Strangest Place is a selection from
+                            ten previous volumes of poetry. “Nasturtiums” (81)
+                            was written in 1976 and the most recent poems, in
+                            the opening section entitled “Background Noise,”
+                            were completed in 2020. So the book distills
+                            forty-four years of practice as a poet. I should say
+                            “achievement as a poet,” and it would be a lapse of
+                            responsibility not to observe that Edgar’s work has
+                            only recently been read with anything like the
+                            attention and thankfulness it deserves. Quite
+                            simply, Edgar is one of the most rewarding poets
+                            currently writing in English. Poems in this volume
+                            are likely to survive when many of his
+                            contemporaries are remembered only in footnotes. At
+                            the moment, though, it is sad to testify how
+                            difficult it is to obtain any of his earlier books.
+                            I have repeatedly tried to purchase Eldershaw
+                            (2014), only excerpted in this selection. Nor can
+                            any library in the United States supply me with a
+                            copy. One can only hope that individual volumes will
+                            be brought back into print once the accomplishment
+                            of this selection has been duly acknowledged. Edgar
+                            is chiefly a contemplative poet. Not that, like the
+                            Romans, he looks into a templum to discern the will
+                            of the gods or has even the faintest streak of
+                            religious faith. When he listens to Thomas Tallis he
+                            says, “Not one word or wound, / One shred / Of their
+                            doxology can sway / Me to belief” (173). His templum
+                            is his mind, which is utterly modern, entranced more
+                            by physics than theology, and emotions and thoughts
+                            cross it, sometimes alone and sometimes together.
+                            For readers, though, each of his poems is a templum
+                            . What do we discover when we gaze at them? Many
+                            things, no doubt, but chiefly his imagination works
+                            in eschatological terms: everything points
+                            eventually to nothingness. He entertains the idea of
+                            “a posthumous, / Unpeopled world, a plot / That has
+                            no further use for us” (55) and he meditates on the
+                            aftermath of war: an empty town left to “the chaos
+                            of // Abandoned use” (134). More generally, he is
+                            haunted by the “black and empty corridor” which
+                            “lies in store” for all of us (283). The same
+                            imagination is entranced by divisions of the self,
+                            as when he identifies the inner voice that is
+                            forever murmuring in our heads: “always there is
+                            that accompanist, // Not caught on film or sound,
+                            who’s guaranteed / Each moment to intone / A running
+                            commentary” (29). In another poem, set in a
+                            restaurant, he sees his own reflection in a wall
+                            mirror behind where his friend sits: “I catch odd
+                            glimpses of it watching him, / And eyeing me /
+                            Askance, as he shifts and sways from side to side”
+                            (61). Always, Edgar is aware of the fragility of
+                            existence, human and non-human alike. Sitting in a
+                            house during a strong wind, he observes, “The house
+                            is brittle as an hourglass” (80). Often enough, it
+                            is an interruption of ordinary life that prompts a
+                            revealing change of mental attitude and gives an
+                            insight into the frailty of things: too many clocks
+                            in a house (20-21) or the recognition that books
+                            really write us (116). Edgar’s great theme, though,
+                            is the relation of mind and world. Sometimes, like
+                            Tolstoy and Montale, he is beset by the apprehension
+                            that the visible world might be an illusion. We
+                            spend our days, he says, “clearly reciting / The
+                            myth of an outer world” (196). In “Parallax” he
+                            recalls “a droll / Advertisement that had the
+                            Martians hoist / Before a rover’s lens screen after
+                            screen, / Across which it would scroll, / Filming a
+                            fake red desert, while unseen / Their high-rise city
+                            quietly rejoiced” (5). It leads him to ponder that
+                            something similar happens while “Walking the crafted
+                            streetscape” of Sydney: “A suite of flimsy panels”
+                            is perhaps sliding beside him, “screening who knows
+                            what?” (5). One approach to this theme comes by way
+                            of what Edgar calls “the conjuror” (12), and indeed
+                            worldly beauty is much like a magic show for him,
+                            both in what it offers us (“The silken trance it’s
+                            spun and shed” (246)) and in the chilling dénouement
+                            that awaits us. No wonder that we think of
+                            Schopenhauer when we read lines such as these: “The
+                            world cannot pretend / And with the end / Of the
+                            masquerade throws down its great disguise, / Like a
+                            magician’s cape whose folds / Descend / About an
+                            object which then disappears / Before unseeing eyes”
+                            (125). At other times, it is reading in physics that
+                            disturbs the otherwise unquestioned relation between
+                            mind and world. Handling a snow dome, he reflects
+                            that in a world of two dimensions, the third
+                            dimension would be “just a dream that quantum tricks
+                            produce” (32). Then panic sets in: “Put down that
+                            ornament and look around, / And breathe, for fear /
+                            The virtual world that some propound / Is ours,
+                            here, now, a program that supreme, / Conjectured
+                            beings engineer, / Where we imagine we are all we
+                            seem” (32). In Mauvaises pensées et autres (1943),
+                            Paul Valéry has a piercing aphorism entitled “Ex
+                            nihilo”: Dieu a tout fait de rien. Mais le rien
+                            perce [“God made everything out of nothing. But the
+                            nothing comes through”]. It is no wonder that Edgar
+                            is attracted to this line of Valéry’s — it forms the
+                            epigraph to the splendid conceptual lyric “The
+                            Menger Sponge” (148) — for the Australian and the
+                            French poets inhabit overlapping worlds. In this
+                            imbrication, poetry, music, science and a cool
+                            skepticism about religion live in rich harmony.
+                            Unlike Valéry, however, Edgar has no temptation to
+                            be all mind (as with Monsieur Teste), and he has no
+                            abiding interest in theorizing about the creative
+                            process. Only very obliquely does he offer us an ars
+                            poetica in “Feather Weight” (44). Nor is there
+                            anything like Mon Faust in his work: he is one of
+                            our most discreet poets. Not that one should thereby
+                            think, as some people do, that Edgar has little
+                            blood passion. The excepts from Eldershaw (2013)
+                            testify otherwise. Nonetheless, to read Edgar well
+                            is to learn to let the feeling in the verse display
+                            itself in its own good time; it will not overwhelm
+                            the reader on a first or second reading, neither by
+                            way of intense metaphors (which Edgar avoids) nor by
+                            way of ardent declarations (which he would most
+                            likely think to be in bad taste). Consider
+                            “Nocturnal” from History of the Day (2002). The
+                            opening stanza shows Edgar’s confidence handling a
+                            difficult stanza, nine lines, ranging from trimeter
+                            to pentameter, rhyming abbacccdd . Quite by chance,
+                            the speaker discovers an old cassette with a
+                            recording of his distressed partner talking years
+                            ago: It’s midnight now and sounds like midnight
+                            then, The words like distant stars that faintly
+                            grace The all-pervading dark of space, But not meant
+                            for the world of men. It’s not what we forget But
+                            what was never known we most regret Discovery of.
+                            Checking one last cassette Among my old unlabelled
+                            discards, few Of which reward the playing, I find
+                            you. (202) Many of Edgar’s qualities are tightly
+                            coiled in these lines: elegance and lightness of
+                            touch, to be sure, but also plain speech, and, more,
+                            the relish of drawing an apt distinction. Notice the
+                            timing of the lines, how the drama of hearing the
+                            lover’s voice, now she is long dead, in the final
+                            word of the stanza, is embodied in the rhyme “few” –
+                            “you.” It is characteristic of Edgar that the
+                            discovery does not lead to confession or a
+                            registration of immediate grief but that a
+                            contemplation begins, one that leads us first to
+                            that wonderful poet Gwen Harwood (1920-95). Long
+                            ago, the lovers were jolted by hearing their
+                            friend’s voice on the radio reading “Suburban
+                            Sonnet.” Technology exhumes the dead with ease, and
+                            with them it brings our loss immediately before us.
+                            Again, characteristic of Edgar, the contemplation
+                            continues, passing now to the North Head Quarantine
+                            Station, near Manly, where people who were feared to
+                            harbor contagious diseases were kept until they were
+                            considered safe to enter Sydney. Many died there,
+                            and stories abound that the place is haunted:
+                            “equipment there records / The voices in the
+                            dormitories and wards, / Although it’s years
+                            abandoned. Undeleted, / What happened is embedded
+                            and repeated, // Or so they say” (202). The
+                            skeptical reflection, delayed until the beginning of
+                            the new stanza, is nicely placed. Edgar’s former
+                            lover was not mistrustful of the dead’s power to
+                            cling to the world, however: “You said you heard the
+                            presence which oppugned / Your trespass on its
+                            lasting sole occasion / In your lost house.”
+                            (“Oppugned”? Yes, Edgar has an extensive vocabulary
+                            and is not afraid to use it.) But the poet himself
+                            can accommodate the belief only by way of
+                            technology. The final stanza runs: Here in the dark
+                            I listen, tensing in distress, to each Uncertain
+                            fragment of your speech, Each desolate, half-drunk
+                            remark You uttered unaware That this cassette was
+                            running and would share Far in the useless future
+                            your despair With one who can do nothing but avow
+                            You spoke from midnight, and it’s midnight now.
+                            (203) The word “midnight” in the last line is no
+                            longer the simple temporal marker that we
+                            encountered in the first line of the poem; it is
+                            also a dark emotional state shared across decades by
+                            the two lovers, though not in the same way or for
+                            the same reasons. Among the many things to admire in
+                            this stanza, not the least is the careful choice of
+                            the almost retiring adjective “useless.” What was to
+                            be the future for the woman can have no effect on
+                            her now, and the speaker’s present gives him no way
+                            of comforting either her or himself. Stephen Edgar,
+                            now seventy years of age, has assembled a body of
+                            work that is as durable as any poetry written in his
+                            generation. If we read it steadily from Queuing for
+                            the Mudd Clubb (1985) to Background Nois e (2020),
+                            we encounter a poet who apparently knew from the
+                            beginning what he wanted to do. His gifts were
+                            already fully apparent, and the decades have only
+                            helped him to refine and extend them. The Strangest
+                            Place is a book to read and re-read; it invites us
+                            to choose the poems that most pierce us and to get
+                            them by heart. Robert Schumann famously reviewed
+                            Chopin’s “Variations on Mozart’s ‘Là ci darem la
+                            mano’” in 1831. In that piece, he imagined his
+                            character Eusebius entering his room where he was
+                            sitting at the piano with his friend Florestan.
+                            Pointing to Chopin’s score in his hand, Eusebius
+                            declared, Hut ab, ihr Herren, ein Genie [“Hats off,
+                            gentlemen, a Genius”]. We don’t say such things
+                            these days, not wearing hats, not being so dramatic,
+                            and having rather exalted ideas of genius, but had
+                            he been around today Eusebius might have been just
+                            as enthusiastic had he brought into a room a copy of
+                            Edgar’s new book. KEVIN HART is internationally
+                            recognised as a poet, critic, philosopher and
+                            theologian. Born in England, he grew up in Brisbane,
+                            and taught Philosophy and English at the University
+                            of Melbourne. He has recently taken up a position at
+                            the University of Virginia. An assured place
+                            Australia’s pre-eminent formalist by Geoff Page •
+                            March 2021, no. 429 S tephen Edgar, over the past
+                            two decades or so, has earned himself an assured
+                            place in contemporary Australian poetry (even in
+                            English-language poetry more generally) as its
+                            pre-eminent and most consistent formalist. His
+                            seemingly effortless poems appear in substantial
+                            overseas journals, reminding readers that rhyme and
+                            traditional metre have definitely not outlived their
+                            usefulness. Edgar’s The Strangest Place: New and
+                            selected poems is an ideal opportunity to examine
+                            what this reputation is founded on. Its poems were
+                            written across some forty-four years, though it is
+                            only in the past twenty or so that we recognise
+                            clearly the poet we know today. In the earlier
+                            collections ( Queueing for the Mudd Club in 1985,
+                            and Ancient Music in 1988), the poems already show
+                            Edgar’s formal command but are perhaps less
+                            ambitious technically than his more recent ones. The
+                            use of blank verse is never less than assured, and
+                            the rhymes, while less complex and original than the
+                            ones Edgar uses currently, are still more than fit
+                            for purpose. His long poem ‘Dr Rogers’ Report’, for
+                            instance, is a highly engaging exercise in a
+                            nine-line variant of Byron’s ottava rima . Edgar’s
+                            next two books, Corrupted Treasures (1995) and Where
+                            the Trees Were (1999) feature a number of highly
+                            memorable poems: ‘The Secret Life of Books’, ‘Daisy,
+                            Belle and Arthur’, and ‘Penshurst’, to name three.
+                            All of these have the vividness of Edgar’s best
+                            poetry from Lost in the Foreground (2003) onwards.
+                            It is worth pausing here for a moment to consider
+                            the virtues and limitations of closely rhymed and
+                            metred verse when free verse is available as an
+                            alternative. Free verse can have a directness and
+                            rhetorical (even metaphorical) energy that highly
+                            formal poetry often lacks. Tightly rhymed poems
+                            (even when as subtle as Edgar’s) can occasionally
+                            have an ‘ingenious’ quality about them, where the
+                            reader is paying more attention to the technique
+                            than to the ‘substance’ of the poem. They can also
+                            involve complex syntax that can sound more like a
+                            legal argument than an outburst of lyricism. The
+                            reader’s reward for successfully negotiating such a
+                            poem may have more in common with the successful
+                            completion of a Times Literary Supplement crossword
+                            than with the ‘spontaneous overflow of emotion,
+                            recollected in tranquillity’ of which Wordsworth
+                            spoke. It is interesting that in this context
+                            Edgar’s most ‘typical’ poems are not those that stay
+                            in the reader’s mind longest. The default ones tend
+                            to be clever and persuasive descriptions of weather
+                            (wind, in particular) or of estuarine or marine
+                            vistas. The final lines of ‘Summer’ are a reasonable
+                            example: Almost without A cloud, the unimagined sky
+                            annuls All qualms across the bay’s embellishment
+                            Which it exults above – except, far out, A white
+                            dismay among the feeding gulls Of course, taking an
+                            excerpt such as this from an almost fifty-line poem
+                            is hardly fair. It’s easy to appreciate, however,
+                            the sheer metaphorical energy of the ‘white dismay’
+                            among the gulls and, likewise, the ‘unimagined’ sky
+                            that ‘annuls / All qualms’. So too the evocative and
+                            comprehensive imprecision of the ‘bay’s
+                            embellishment’. It should also be remembered that
+                            the ending here is a consolatory contrast to the
+                            boredom and monotony suffered by hospital patients
+                            earlier in the poem. The drinking vessels and the
+                            get-well cards Again, again the faces drained of
+                            hours, Emptied by their waiting even of boredom
+                            Subsisting in their realm of four o’clock. In
+                            ‘Summer’, it’s more than obvious we are in the hands
+                            of a highly skilled poet, and that’s a good place to
+                            be at any time. It is even more satisfying, however,
+                            to read a smaller number of unforgettable Edgar
+                            poems that focus on something outside the poet’s
+                            usual sensibility. Poems of this degree are most
+                            often encountered in Lost in the Foreground (2003),
+                            Other Summers (2006), and History of the Day (2009).
+                            They involve suffering (or a postlude or prelude to
+                            suffering) in other countries and times.
+                            Interestingly, they also involve ekphrastic accounts
+                            of photographic images. Three stand out: ‘Sun
+                            Pictorial’, ‘Living Colour’, and ‘Memorial’. ‘Sun
+                            Pictorial’ deals with how many of Mathew Brady’s
+                            photographic plates of the US Civil War were
+                            afterwards used to build greenhouses. Earlier in his
+                            poem, Edgar evokes the conflict’s gauche onset Of
+                            murderously clumsy troops Dismemberment by cannon
+                            before concluding with how the sun each day ensured
+                            the soldiers ordered histories of the war Were wiped
+                            to just clear glass and what the crops transpired.
+                            More telling still is Edgar’s account of recently
+                            discovered footage from pre-World War II Munich. In
+                            colour too As bright and vivid as delirium. It seems
+                            a kind of fault In history and nature to restore
+                            This Munich underneath the flawless blue Of mid-July
+                            in nineteen thirty-nine This pageantry of
+                            party-coloured kitsch The Fuehrer, with his bored
+                            assessing gaze A third example is ‘Memorial’, a
+                            careful scrutiny of the well-known photograph ‘The
+                            lynching of Rubin Stacy, 19 July 1935’. After a more
+                            general description of the crowd, Edgar zooms in on
+                            A girl of twelve, maybe, too unaware To mask her
+                            downward grin before, at the poem’s end, moving on
+                            to: The days that have to be the day that’s been
+                            Lighting forever everything she knows With what she
+                            saw, and knows she saw, and knew It is poems of this
+                            subtlety and drama that, for this reader, are the
+                            highpoint of Edgar’s career. What then of the book’s
+                            opening section, ‘Background Noise: New Poems’?
+                            There’s no doubt that Edgar’s technical standards
+                            here are maintained, or even extended a little. The
+                            observation is just as sharp and cleverly rendered
+                            as usual, but there are not many poems as gripping
+                            (or distressing) as the ones just referenced. The
+                            poems here are often philosophical, concerned with
+                            ‘background’ issues such as the nature of time and
+                            our place in the cosmos. Occasionally, there is a
+                            more personal (though hardly confessional) poem that
+                            has a more emotional than speculative thrust.
+                            ‘Possession’ is one example – where the poet is
+                            clearing out the house of a recently deceased old
+                            woman, almost certainly his mother. He tells of how:
+                            We emptied out the lot Some to distribute much
+                            though to discard. And so she was herself, after
+                            that stroke Emptied out: for four years there is not
+                            One thing she owned that is not torn away The
+                            Strangest Place thoroughly justifies Edgar’s
+                            impressive poetic reputation. He certainly does have
+                            the formal control and poise of which people speak.
+                            And in addition, from time to time, without warning,
+                            he can move you very deeply. POET’S VOICE SARAH
+                            HOLLAND-BATT Formality within the frame Stephen
+                            Edgar. The Strangest Place: New and Selected Poems.
+                            Black Pepper, 2020. Weekend Australian REVIEW
+                            DECEMBER 12-13, 2020 As free verse continues its
+                            reign well into the twenty-first century, formal
+                            poetry still finds itself in the minority. It’s been
+                            derided in some quarters for being elitist and
+                            conservative, clinging to outdated ideals—yet
+                            celebrated in others for bringing poetry closer to
+                            music, and for exhibiting a discipline and technical
+                            artistry that free verse supposedly lacks. The
+                            tensions between free and formal verse are as
+                            fiercely held as they are unproductive. As the
+                            American formalist Dana Gioia once wrote, “only the
+                            uninformed or biased can fail to recognise that
+                            genuine poetry can be created in both modes.” But
+                            Gioia’s conciliatory tone was short-lived; in the
+                            very next paragraph of the same essay, he railed
+                            against “the debasement of poetic language; the
+                            prolixity of the lyric…and the denial of musical
+                            texture” in contemporary free verse. So much for a
+                            ceasefire. This week’s poet, Stephen Edgar, is
+                            doubtless Australia’s finest formalist writing
+                            today, and makes a persuasive case for the enduring
+                            power of formal poetry; his eleventh collection, The
+                            Strangest Place: New and Selected Poems (Black
+                            Pepper) features extracts from the poet’s previous
+                            ten volumes, along with a book-length selection of
+                            new work, “Background Noise.” What is impressive
+                            about seeing thirty-five years’ worth of Edgar’s
+                            poetry together is its remarkable thematic and
+                            stylistic continuity, though the later poems feature
+                            slightly more linguistic embellishment and
+                            philosophical complication. His influences—chief
+                            among them, Auden, along with Richard Wilbur, Frost,
+                            Larkin, and others—remain constant touchstones.
+                            While Edgar has made the odd foray into the realm of
+                            narrative—most notably in his collection Eldershaw
+                            —he primarily writes introspective, metaphysical
+                            lyrics, focussing intently on transience and loss,
+                            memory, mortality, and the future. His poems are
+                            seeded with repeated motifs of apertures - filmic
+                            and photographic lenses, windows, mirrors,
+                            reflections and other viewfinders
+                            proliferate—suggesting that Edgar sees the poem is
+                            an act of framing; there is also a strong emphasis
+                            on music and art. Often, Edgar’s poems arrive as
+                            tableaux, in which time is stilled as the poet
+                            unpacks a moment in slow-motion; their vistas are at
+                            times microscopic, and at others galactic, looking
+                            up into interstellar space. Rather than writing in
+                            established forms, Edgar mostly devises his own
+                            metrical and stanzaic constraints. He favours
+                            sestets and septets (six and seven-line stanzas)
+                            which he arranges according to his own invented
+                            rhyme schemes. Rather than using predictable
+                            envelope rhymes (an abba rhyme pattern) or
+                            alternating rhymes (abab), Edgar’s end-rhymes are
+                            often spaced further apart, so that they are felt
+                            less heavily. They are also almost continually
+                            enjambed, flowing gracefully over into the next line
+                            without the heavy pulse of a caesurae. Take, for
+                            example, this stanza from the poem “Coming Up from
+                            Air,” which is fully rhymed, yet moves fluidly due
+                            to the continuous enjambment, and the postponed
+                            rhyme of “eyrie” and “theory”: And there we went:
+                            that night, Dinner with friends, perched in their
+                            top-floor eyrie, Watching the sky recite The sun’s
+                            late lessons in the clouds and preach Its
+                            pyrotechnic theory Over the revellers on Coogee
+                            Beach. There are many established six-line stanzaic
+                            forms—from the sestet that rounds off the Petrarchan
+                            sonnet to the Venus and Adonis and Burns stanzas—but
+                            none use the same rhyme scheme Edgar uses here. I
+                            can think of only a handful of poems that use this
+                            abacbc scheme: Elizabeth Bishop’s love poem “The
+                            Shampoo,” George Herbert’s “Peace,” and a section of
+                            W.D. Snodgrass’s Heart’s Needle . Edgar’s
+                            self-determined forms also give his poems a nice
+                            tension between familiar and unfamiliar patterning;
+                            it’s only after reading a few stanzas that you work
+                            out the rules he’s invented for himself. His
+                            technical prowess lends his poems an ease that all
+                            formalists aspire to, but few achieve: while he
+                            adheres to rigid structures, he does so lightly and
+                            unobtrusively. Although they are often cleverly
+                            camouflaged, I get the sense that Edgar’s rhymes are
+                            nonetheless the driving engine of his poetry. He is
+                            expert at finding original full rhymes—a tricky
+                            affair, given how shop-worn so many rhymes in
+                            English are. There’s the perfect chime of encrypts
+                            and eucalypts in the poem “Apprehensions,” azalea
+                            and regalia in “The Peacock’s Response,” concertina
+                            and the Italian composer Palestrina in “Analogue,”
+                            and—my favourite— limousine and Anthropocene in
+                            “Mise en scene,” all of which deliver the jolt of
+                            pleasurable recognition that a well-executed rhyme
+                            should bring the reader. And his poems are dotted
+                            with mosaic rhymes too—where rhymes span more than
+                            one word—as in drowse of sense and recompense in
+                            “All or Nothing.” At times, this garners the poet
+                            comic frisson, as in the chime between unnerve us
+                            and BBC World Service in the poem “Letters of the
+                            Law.” This week’s poem, “The Shadow Line,” shows
+                            Edgar’s signature technical powers at full tilt.
+                            Prompted by a passage in Ian McEwan’s novel The
+                            Children Act , it contemplates a distant future in
+                            which the earth has been rendered inhabitable, and
+                            the record of human life inheres in a compacted
+                            “six-inch sooty layer” remaining on an
+                            otherwise-dead planet. You’ll notice that the poem
+                            unfolds in septets, each slightly tapered at the
+                            beginning and end, written entirely in iambic meter:
+                            the first line in trimeter; the second, tetrameter;
+                            before the poem billows out into four lines of
+                            iambic pentameter; then contracts back to tetrameter
+                            again. The rhyme scheme—abacbca—reflects a similar
+                            shape: the initial a rhyme returns one last,
+                            unexpected time on the seventh line, a belated third
+                            echo of a rhyme which has already been resolved.
+                            It’s a form that teases a faint resemblance to the
+                            rhyme royal stanza—a septet of iambic pentameter
+                            with an ababbcc rhyme scheme—but Edgar only gears up
+                            into pentameter for four out of its seven lines,
+                            giving each stanza a looser feel as his line lengths
+                            vary. We begin as the poet contemplates earth as a
+                            “final star” which has been “surpassed / and
+                            cancelled.” He juxtaposes human time—described
+                            metaphorically as both a “mayfly’s one transparent
+                            day in flight” and “nothing but a background hum”—
+                            against the vastness of interstellar time and space.
+                            Swiftly, in a single stanza, human endeavours are
+                            collapsed into residue: “Plastics and pipes and
+                            wires and ticking meters, / The deathless works, the
+                            missiles on parade, The Sphinx, the Floating Taj
+                            Mahal, St Peter’s” become “half-lives haunting our
+                            bequest.” As the poem draws to a close, the poet
+                            contemplates the possibility of a “mere grain, one
+                            molecule” residing in all that rubble that an
+                            interstellar traveller might find one day as
+                            evidence of the poet’s existence: “the wattle leaves
+                            whose shadows pool / On a desk this afternoon, and
+                            brush across / The hand that’s poised above this
+                            page.” And as the poem closes, we’re gently reminded
+                            of the poet’s presence just beyond the poem’s
+                            expertly constructed frame. Sarah Holland-Batt is a
+                            poet and an associate professor at the school of
+                            creative practice at the Queensland University of
+                            Technology. Poet’s Voice receives sponsorship from
+                            The Copyright Agency and the Judith Neilson
+                            Institute for Journalism and Ideas. She can be
+                            contacted at sarah.hollandbatt@qut.edu.au . Shadow
+                            Line And there it is at last, The last one gone, the
+                            final star, The term of its self-fuelled fire
+                            surpassed And cancelled. Nothing but a background
+                            hum And darkness stretching through the nebular
+                            Detritus into spans of time to come More
+                            incommensurably vast, Next to the reign of light,
+                            Than Earth’s deep ages set beside A mayfly’s one
+                            transparent day in flight. But hale those aeons back
+                            and see the face Of the dead planet swept and
+                            scarified By strobe-lit storm clouds and red gales
+                            that chase The skyline as the days ignite. Just a
+                            few feet below The stripped and lifeless regolith, A
+                            narrow, blackened band would put on show The fruits
+                            of our endeavour, a footnote To the grand tale we’d
+                            left to reckon with, A six-inch sooty layer laid
+                            down to quote From that portentous folio: Interred
+                            there and compressed, The residue of all we’ve made,
+                            Roads, sewers, factories, vehicles, would attest,
+                            Plastics and pipes and wires and ticking meters, The
+                            deathless works, the missiles on parade, The Sphinx,
+                            the floating Taj Mahal, St Peter’s, The half-lives
+                            haunting our bequest. And so one might presage That
+                            a mere grain, one molecule That some outrider from a
+                            distant age Sifted from all that indeterminate
+                            dross, Might be the wattle leaves whose shadows pool
+                            On a desk this afternoon, and brush across The hand
+                            that’s poised above this page. Back to top [if gte
+                            vml 1]&gt;&lt;v:shapetype id=&quot;_x0000_t202&quot;
+                            coordsize=&quot;21600,21600&quot;
+                            o:spt=&quot;202&quot;
+                            path=&quot;m,l,21600r21600,l21600,xe&quot;&gt;
+                            &lt;v:stroke joinstyle=&quot;miter&quot;/&gt;
+                            &lt;v:path gradientshapeok=&quot;t&quot;
+                            o:connecttype=&quot;rect&quot;/&gt;
+                            &lt;/v:shapetype&gt;&lt;v:shape
+                            id=&quot;docshape10&quot;
+                            o:spid=&quot;_x0000_s1026&quot;
+                            type=&quot;#_x0000_t202&quot;
+                            style='position:absolute;left:0;text-align:left;margin-left:51pt;margin-top:-5.55pt;
+                            width:18.55pt;height:33.85pt;text-indent:0;z-index:-15851008;
+                            mso-position-horizontal-relative:page'
+                            filled=&quot;f&quot; stroked=&quot;f&quot;&gt;
+                            &lt;v:textbox inset=&quot;0,0,0,0&quot;/&gt;
+                            &lt;w:wrap anchorx=&quot;page&quot;/&gt;
+                            &lt;/v:shape&gt;&lt;![endif] [endif] [if !mso]
+                            [endif] T [if !mso] [endif] [if !mso &amp; !vml]
+                            [endif] [if !vml]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            REVIEW CRICKEY As poetry seems to lose rhyme and
+                            reason, Edgar masters technique, complexity and
+                            vibrancy GUY RUNDLE, CORRESPONDENT-AT-LARGE The
+                            Strangest Place: New and Selected Poems . Stephen
+                            Edgar The first thing that occurs to any reader who
+                            sticks their head into Australian poetry — by
+                            browsing, say, an issue of Cordite, or one of the
+                            just-surviving little magazines — is how bloody
+                            raucous it is. Anger, testament and incitement has
+                            become the dominant aesthetic for a whole section of
+                            the form, inevitably occupied largely by non-male,
+                            non-white writers, though that is not the only thing
+                            all of them do. Some of it is worked and
+                            paradoxical, some of it deliberately artless and
+                            insistent. Most of it will age and is ageing badly,
+                            not because the sentiments decay but because the
+                            particular concepts and language of oppression and
+                            liberation shift, being nothing more than the
+                            technical language of politics rather than the more
+                            persistent language of things — hence why so much of
+                            the stuff from the ’60s sounds like something
+                            dredged up for a Saturday Night Live sketch about
+                            the ’60s. At the other end of the room, a lot of the
+                            work is simply incomprehensible at first, and later,
+                            glance — a product of several genres of poetry, one
+                            known confusingly as L.A.N.G.U.A.G.E, whose object
+                            is to make it impossible, via discontinuous phrases,
+                            broken syntax etc, for the poem to be in any way
+                            summarised or abstracted to a prose sketch of its
+                            subject or arguments. And in between, there is a
+                            stretch, a vast stretch, of the standard issue stuff
+                            — free verse, unrhymed, semi-scanned poetry,
+                            irregular stanzas going where it will, following its
+                            fairly clear exposition of holidays in Italy,
+                            childhood in the country, a sepia photo of your
+                            great aunt, the taste of cumquats, and on and on and
+                            on. The ascent, really in the 1960s, of first
+                            unrhymed and then unpatterned free verse becoming
+                            the standard thing that poetry was liberated reader
+                            and writer from a lot of bad plinky-plinky verse
+                            (for which see the Literary Review‘s traditional
+                            poetry competition, run regularly in the ’80s and
+                            ’90s; designed to defend rhyme and scansion, it
+                            helped near-kill it with kitsch). But in doing so it
+                            created a disjuncture between the poet’s desire to
+                            express and the genre’s demand that such be done
+                            artfully. In doing so, the commonplace thoughts of
+                            poets on death, love, the old mill, the beach near
+                            Esk, etc, were now the poem’s only driver, and the
+                            journals and sites filled up with unworked notes for
+                            poems presented as the final thing. This has been a
+                            problem everywhere, but in Australia, my God, it’s
+                            the cultural equivalent of the mouse plague. You
+                            beat these things flat and they get up again. The
+                            situation is absurd. We have no high culture to
+                            speak of, and yet we have all these poets — some of
+                            them quite distinguished within the art — who write
+                            nothing but “i reckon” poetry, a sort of “i’m
+                            sitting on the cliff and looking at the rock out
+                            there in the sea and the rock is death. i reckon”
+                            type of thing. This wash of poetry is a product in
+                            part of our lack of high culture; in our left
+                            cultural nationalist period from the ’60s to the
+                            ’90s, we thought we would make one of a scale beyond
+                            the small and self-knowing network of artists prior
+                            to. When we abandoned that, and relaxed into the
+                            arms of globalisation, we left the machine on — in
+                            the form of creative writing courses, designed to
+                            mop up the exploding numbers of arts students that
+                            the ’80s-’90s Dawkins revolution had not
+                            anticipated. This seems to be the cause of this
+                            disjuncture — as if we had started hundreds of
+                            coopering courses, and our cities were now filling
+                            up with thousands of poorly-made, unwanted barrels.
+                            Stop making barrels, make fewer better barrels, we’d
+                            say. But no, they go on piling up. There are many
+                            poets, some with several collections to their name,
+                            who should simply just stop, They should go outside
+                            and kick a ball around. Amidst all this, the
+                            tradition of formal verse in Australia died away
+                            more rapidly and completely than elsewhere. Our
+                            poetry’s rather thin roster of figures, with even
+                            the slightest international reputation, were, until
+                            the 1960s, all formalists, chief amongst them A.D.
+                            Hope. After that, rhyme went out the window, and
+                            scansion and stanza form were the pursuit of a
+                            minority. It’s telling that the big hitter — Fat Les
+                            — worked in both modes. But it’s also telling that
+                            Britain’s two greatest post-war poets — Philip
+                            Larkin and then Don Paterson — lean heavily towards
+                            formalism, with a manner and a facility that does
+                            not emerge, en masse, from Australia. So the figure
+                            of Stephen Edgar, who has just won the prime
+                            minister’s prize for poetry, is an extraordinary
+                            one; not only an Australian formalist, but perhaps
+                            the most accomplished such poet in the English
+                            language today. No, “accomplished” doesn’t do it.
+                            Edgar is a mind-blowing poet, producing the most
+                            extraordinary transformations of the natural world,
+                            the cosmos and memory, from within seemingly
+                            impossibly tight rhyme/scan schemas. The effect is
+                            like very little going on in poetry today, joining
+                            the full range of modern expression to the inherited
+                            formal tradition. The... well, cue tape: The river
+                            surface, restless as a child Keeps shifting around
+                            its iridescent blues In shirrs and stretch marks,
+                            quiltings which are styled For nothing, or for what
+                            we choose to choose -“Observations of an attendant”
+                            If that isn’t your sort of thing, you may want to
+                            meet the rest of us back at the ratings report. For
+                            the rest, Stephen Edgar deserves an introduction and
+                            a consideration. Born in Sydney in 1951, a Sydney
+                            tech graduate, Edgar did the London sojourn in the
+                            early ’70s and then returned to Tasmania, where he
+                            spent three decades before returning to Sydney.
+                            Aside from “The Dancer”, a record of a post nervy-b
+                            psych ward stay (as much a part of poetic life then
+                            as hotdesking at The Wheeler Centre is now), his
+                            short poems (20-200 lines; few under 50) relate no
+                            striking life events (“Eldershaw”, an
+                            autobiographical set of three long poems, a small
+                            amount excerpted here, is more forthcoming).
+                            Instead, over several hundred poems across 10
+                            volumes, Edgar’s poems are overwhelmingly concerned
+                            with small moments of life, from a few minutes to a
+                            few days long. These are often small observed
+                            processes such as a coastal scene: A single sail
+                            Transluscent apricot Drifts like a poppy’s petal on
+                            a frail Breeze that is not A baby’s breath Of air
+                            sparingly strewn And eked out by the estuary’s width
+                            All afternoon -“the sail and the gannet” or a few
+                            minutes in sexual afterglow: Too hot and humid to do
+                            more than drowse And slip — who knows how brief the
+                            interims? — Into a chafed unconsciousness And rouse
+                            Too clammy for the slur and press Of fabric or each
+                            other on our limbs We slide apart across a
+                            moon-slicked sheet And all the intermittent
+                            anaglyphs The moon is working to Complete, I see
+                            each time I wake and view Your light shaped body as
+                            it stirs and shifts…. -“Moonlight sculptures” Or the
+                            simple capture of being, being: Sitting in a room,
+                            say, when a pause In conversation, or alone In stray
+                            attention prises a wide space And over on the wall
+                            the late day draws A sliding pain of light on which
+                            the trees In miniature and detailed monotone
+                            Project, like memories An imaginary time and place
+                            -“Letters of the Law” What is common to hundreds of
+                            poems of variant matter is the absolute mastery of
+                            technique which is put to the service of such
+                            particularity. His commitment to a tight, demanding
+                            classical form is there right from the start, with
+                            “Nasturtiums”, written, his introduction tells us,
+                            in 1976: In this plot, only nasturtiums Are charmed
+                            to a snakelike survival All else winces in a wind
+                            stiff with salt Dies back or waits stock still (Was
+                            this the poem Patrick Cook was thinking of in his
+                            “Australian poets” cartoon, which depicts a
+                            desperate man hovering over a typewriter and
+                            pointing a gun at a vase of flowers and yelling
+                            “Rhyme, you bastards!”?) The Hopkinsian touch would
+                            depart relatively early, yielding to straight,
+                            subtler rhyme, though for the first half of his
+                            career, Edgar is as interested in the full palette
+                            of the English vocabulary as he is in depicting the
+                            lessmediated real, as in “reef”, an interior scene:
+                            It is night. The spectrum has been cancelled From
+                            the glossary of possibles. And here Its lettered
+                            spines a texture of the wall The library is restful
+                            as a morgue It’s only later that the language
+                            becomes plainer, and the objects emerge, a gesture
+                            towards letting things speak for themselves. That
+                            sleight-of-hand gives such poems their uncanny air,
+                            redolent of French symbolism, but with a capacity to
+                            flip reality that seems unmatched by, well, anyone.
+                            All this is done within the wider frame-demand of
+                            strict rhyme and scansion, worn so lightly that it
+                            sometimes seems to be free verse. Larkin could do
+                            this, George Barker and a few others. But when one
+                            looks around today, one sees no-one doing it
+                            (worried that I was simply missing whole genres, I
+                            did a quick tour of the Pulitzers and other prizes
+                            going back a decade — no, nothing much like this
+                            that I can see). This isn’t the only way to do great
+                            poetry, of course. But it’s worth asking why so much
+                            of the other way of doing it — loose unrhymed lines,
+                            parsimonious metaphor and imagery, lack of rhyme and
+                            demanding form — is so much more common. One can’t
+                            help but conclude that it probably takes a lot less
+                            work, and that Edgar’s poems take a lotta lotta
+                            carpentry to get right. The suspicion might be that
+                            poetry once had a (small) “middle” audience, who
+                            would read poets like, say, Auden or MacNeice,
+                            without being of the poetry world themselves. That
+                            audience has almost wholly vanished, poets are alone
+                            with themselves, and one wonders whether, in several
+                            quarters, the difficulties of craft-art have been
+                            abandoned for shouty self-expression — or for the
+                            relatively undemanding randomness of
+                            L.A.N.G.U.A.G.E-type operations. The greatest danger
+                            for high culture today is that no one really
+                            believes in it anymore, even as they do it, like
+                            Roman pantheon priests used to fall into giggles as
+                            they invoked the gods. Charlatanism is eating away
+                            at art forms that gained their authority as a
+                            succession from religion, and are now losing it to
+                            season three of Succession. Stephen Edgar is someone
+                            who clearly still believes in the calling — and as a
+                            consequence, so many of his poems rise from a simple
+                            and direct observation towards cosmic heights, at a
+                            dizzying speed, or down into the very interstices of
+                            being, moments captured in their mote-filled, sunlit
+                            indeterminacy. He’s not someone I would read in
+                            large hits; two to three poems at a time, because
+                            they demand slow reading and attention. Taking them
+                            altogether would be like eating a whole profiterole
+                            tower. OK, bad example, because I’ve eaten a whole
+                            profiterole tower, but the point remains. Complexity
+                            for its own sake is not the value I’m pushing —
+                            especially as much of the current poetic avant-garde
+                            proposes a complexity that simply celebrates
+                            open-ended interconnection, in which anything can
+                            connect to anything else. This makes the style
+                            another mirror expression of the neoliberal era, in
+                            which capital proposes that anything can be anything
+                            else, and is a reason why such movements run out of
+                            energy and purpose. Edgar’s complexity imposes
+                            order, the poems’ meanings a product of the
+                            interconnections of rhyme running crosswise to the
+                            main narrative or argument, avoiding kitsch or
+                            cuteness. Most poets renounce rhyme because they
+                            can’t avoid kitsch. Edgar’s skills, honed over
+                            decades, give him access to that extra dimension.
+                            These poems shimmer and vibrate as you read them;
+                            they grow and change. They’re an Escher picture,
+                            they’re fractals, they’re a fungal colony spread
+                            over hectares, they are liquid mirrors of the real.
+                            Edgar has had prizes and nominations before; the
+                            prime minister’s prize should be the start of a new
+                            stage in his public life. With all due credit to
+                            Black Pepper — a mainstay of Melbourne publishing
+                            for decades, airing hundreds of writers and a
+                            halfdozen major talents — we need a uniform edition
+                            of Edgar, gathering his scattered books together,
+                            some impossible to obtain. Indeed, there’s a dozen
+                            contemporary poets we need that for. Lacking our own
+                            Faber and Faber, we need a government subsidy for
+                            one or several publishers to take it up — the cost
+                            would be nothing, a fraction of a Melbourne writers’
+                            festival dead pets church. As a nation, we dun
+                            pretty good on poetry, punched well above our
+                            weight. It would be good to celebrate that, and to
+                            start with Stephen Edgar, who may well eventually be
+                            seen as the national oeuvre‘s new Hope. And hope.
+                            Reviewed by KEVIN HART October 6, 2021 / mascara
+                            Poetry always involves a delicate negotiation
+                            between craft and art. Craft can easily be
+                            misunderstood as a set of skills completely external
+                            to what is being written. Yet a poet shows craft by
+                            moving confidently within the work developing on the
+                            page. Often, when one looks at an intricately rhymed
+                            stanza, perhaps one with five, six or seven lines of
+                            varying length, such as Stephen Edgar favors, one
+                            might be tempted to think that the work has been
+                            composed, even revised, in the poet’s mind and then
+                            set down on the page. There are such compositions,
+                            some of them admirable, and examples can be found in
+                            volumes of minor seventeenth-century verse. The
+                            effect is known as “Ciceronian”: the style is marked
+                            by balance, antitheses, and repetition; it was
+                            developed to a high pitch in prose, not verse.
+                            Nothing could be further from Edgar’s characteristic
+                            way of writing, which is usually “Anti-Ciceronian.”
+                            Here sentences unfold naturally rather than exhibit
+                            a resolved formal beauty, and often the style is
+                            marked by asymmetric constructions. The poem shows a
+                            mind thinking as it progresses from stanza to
+                            stanza. Too little is said, then, when critics say
+                            Edgar is a formalist, or range him against some of
+                            the better American “new formalists.” Like theirs,
+                            his poetry is often plain spoken; unlike theirs, it
+                            tends more surely to the baroque. With respect to
+                            contemporary poetry, “baroque” need not connote
+                            stylistic excess, invention or ornament. Nor need it
+                            prompt us to admire the deft use of elaborate poetic
+                            forms. In fact, Edgar has no deep investment in
+                            received poetic forms. Baroque poetry nowadays is
+                            more concerned with the presentation and
+                            contemplation of compound phenomena. Edgar’s poetry
+                            is baroque in this manner and is also remarkable for
+                            its fine sense of timing. In many of his most
+                            impressive poems he is concerned to investigate
+                            complex situations, sometimes unstable ones, which
+                            often involve fragility and loss: his consciousness
+                            becomes divided, or he encounters problems in
+                            constituting the world, or he quickly passes from
+                            one attitude to another (perception, belief,
+                            half-belief, fantasy, anticipation, recollection,
+                            and so on). “Timing” in poetry is not only a matter
+                            of pacing one’s speech, spacing out metaphors and
+                            similes, and seeking closure at the right moment. It
+                            is also the difficult practice of using enjambment,
+                            rhyme, varying line lengths, and metrical
+                            substitutions in order to place a word or a phrase.
+                            The proper timing of a word, a phrase, a figure,
+                            does not merely follow formal rules; it must also
+                            release thought and feeling at the right time and to
+                            the right degree. To read an engaging poem well is
+                            partly to be aware of the confidence and agility, of
+                            the poet as he or she writes, and to notice those
+                            moments, given only to very fine poets, when craft
+                            leads one to think of the phrasing as inevitable.
+                            Such reading perceives that in a poet as good as
+                            Philip Larkin craft and art become almost
+                            indistinguishable, and something similar may be said
+                            of Edgar. The Strangest Place is a selection from
+                            ten previous volumes of poetry. “Nasturtiums” (81)
+                            was written in 1976 and the most recent poems, in
+                            the opening section entitled “Background Noise,”
+                            were completed in 2020. So the book distills
+                            forty-four years of practice as a poet. I should say
+                            “achievement as a poet,” and it would be a lapse of
+                            responsibility not to observe that Edgar’s work has
+                            only recently been read with anything like the
+                            attention and thankfulness it deserves. Quite
+                            simply, Edgar is one of the most rewarding poets
+                            currently writing in English. Poems in this volume
+                            are likely to survive when many of his
+                            contemporaries are remembered only in footnotes. At
+                            the moment, though, it is sad to testify how
+                            difficult it is to obtain any of his earlier books.
+                            I have repeatedly tried to purchase Eldershaw
+                            (2014), only excerpted in this selection. Nor can
+                            any library in the United States supply me with a
+                            copy. One can only hope that individual volumes will
+                            be brought back into print once the accomplishment
+                            of this selection has been duly acknowledged. Edgar
+                            is chiefly a contemplative poet. Not that, like the
+                            Romans, he looks into a templum to discern the will
+                            of the gods or has even the faintest streak of
+                            religious faith. When he listens to Thomas Tallis he
+                            says, “Not one word or wound, / One shred / Of their
+                            doxology can sway / Me to belief” (173). His templum
+                            is his mind, which is utterly modern, entranced more
+                            by physics than theology, and emotions and thoughts
+                            cross it, sometimes alone and sometimes together.
+                            For readers, though, each of his poems is a templum
+                            . What do we discover when we gaze at them? Many
+                            things, no doubt, but chiefly his imagination works
+                            in eschatological terms: everything points
+                            eventually to nothingness. He entertains the idea of
+                            “a posthumous, / Unpeopled world, a plot / That has
+                            no further use for us” (55) and he meditates on the
+                            aftermath of war: an empty town left to “the chaos
+                            of // Abandoned use” (134). More generally, he is
+                            haunted by the “black and empty corridor” which
+                            “lies in store” for all of us (283). The same
+                            imagination is entranced by divisions of the self,
+                            as when he identifies the inner voice that is
+                            forever murmuring in our heads: “always there is
+                            that accompanist, // Not caught on film or sound,
+                            who’s guaranteed / Each moment to intone / A running
+                            commentary” (29). In another poem, set in a
+                            restaurant, he sees his own reflection in a wall
+                            mirror behind where his friend sits: “I catch odd
+                            glimpses of it watching him, / And eyeing me /
+                            Askance, as he shifts and sways from side to side”
+                            (61). Always, Edgar is aware of the fragility of
+                            existence, human and non-human alike. Sitting in a
+                            house during a strong wind, he observes, “The house
+                            is brittle as an hourglass” (80). Often enough, it
+                            is an interruption of ordinary life that prompts a
+                            revealing change of mental attitude and gives an
+                            insight into the frailty of things: too many clocks
+                            in a house (20-21) or the recognition that books
+                            really write us (116). Edgar’s great theme, though,
+                            is the relation of mind and world. Sometimes, like
+                            Tolstoy and Montale, he is beset by the apprehension
+                            that the visible world might be an illusion. We
+                            spend our days, he says, “clearly reciting / The
+                            myth of an outer world” (196). In “Parallax” he
+                            recalls “a droll / Advertisement that had the
+                            Martians hoist / Before a rover’s lens screen after
+                            screen, / Across which it would scroll, / Filming a
+                            fake red desert, while unseen / Their high-rise city
+                            quietly rejoiced” (5). It leads him to ponder that
+                            something similar happens while “Walking the crafted
+                            streetscape” of Sydney: “A suite of flimsy panels”
+                            is perhaps sliding beside him, “screening who knows
+                            what?” (5). One approach to this theme comes by way
+                            of what Edgar calls “the conjuror” (12), and indeed
+                            worldly beauty is much like a magic show for him,
+                            both in what it offers us (“The silken trance it’s
+                            spun and shed” (246)) and in the chilling dénouement
+                            that awaits us. No wonder that we think of
+                            Schopenhauer when we read lines such as these: “The
+                            world cannot pretend / And with the end / Of the
+                            masquerade throws down its great disguise, / Like a
+                            magician’s cape whose folds / Descend / About an
+                            object which then disappears / Before unseeing eyes”
+                            (125). At other times, it is reading in physics that
+                            disturbs the otherwise unquestioned relation between
+                            mind and world. Handling a snow dome, he reflects
+                            that in a world of two dimensions, the third
+                            dimension would be “just a dream that quantum tricks
+                            produce” (32). Then panic sets in: “Put down that
+                            ornament and look around, / And breathe, for fear /
+                            The virtual world that some propound / Is ours,
+                            here, now, a program that supreme, / Conjectured
+                            beings engineer, / Where we imagine we are all we
+                            seem” (32). In Mauvaises pensées et autres (1943),
+                            Paul Valéry has a piercing aphorism entitled “Ex
+                            nihilo”: Dieu a tout fait de rien. Mais le rien
+                            perce [“God made everything out of nothing. But the
+                            nothing comes through”]. It is no wonder that Edgar
+                            is attracted to this line of Valéry’s — it forms the
+                            epigraph to the splendid conceptual lyric “The
+                            Menger Sponge” (148) — for the Australian and the
+                            French poets inhabit overlapping worlds. In this
+                            imbrication, poetry, music, science and a cool
+                            skepticism about religion live in rich harmony.
+                            Unlike Valéry, however, Edgar has no temptation to
+                            be all mind (as with Monsieur Teste), and he has no
+                            abiding interest in theorizing about the creative
+                            process. Only very obliquely does he offer us an ars
+                            poetica in “Feather Weight” (44). Nor is there
+                            anything like Mon Faust in his work: he is one of
+                            our most discreet poets. Not that one should thereby
+                            think, as some people do, that Edgar has little
+                            blood passion. The excepts from Eldershaw (2013)
+                            testify otherwise. Nonetheless, to read Edgar well
+                            is to learn to let the feeling in the verse display
+                            itself in its own good time; it will not overwhelm
+                            the reader on a first or second reading, neither by
+                            way of intense metaphors (which Edgar avoids) nor by
+                            way of ardent declarations (which he would most
+                            likely think to be in bad taste). Consider
+                            “Nocturnal” from History of the Day (2002). The
+                            opening stanza shows Edgar’s confidence handling a
+                            difficult stanza, nine lines, ranging from trimeter
+                            to pentameter, rhyming abbacccdd . Quite by chance,
+                            the speaker discovers an old cassette with a
+                            recording of his distressed partner talking years
+                            ago: It’s midnight now and sounds like midnight
+                            then, The words like distant stars that faintly
+                            grace The all-pervading dark of space, But not meant
+                            for the world of men. It’s not what we forget But
+                            what was never known we most regret Discovery of.
+                            Checking one last cassette Among my old unlabelled
+                            discards, few Of which reward the playing, I find
+                            you. (202) Many of Edgar’s qualities are tightly
+                            coiled in these lines: elegance and lightness of
+                            touch, to be sure, but also plain speech, and, more,
+                            the relish of drawing an apt distinction. Notice the
+                            timing of the lines, how the drama of hearing the
+                            lover’s voice, now she is long dead, in the final
+                            word of the stanza, is embodied in the rhyme “few” –
+                            “you.” It is characteristic of Edgar that the
+                            discovery does not lead to confession or a
+                            registration of immediate grief but that a
+                            contemplation begins, one that leads us first to
+                            that wonderful poet Gwen Harwood (1920-95). Long
+                            ago, the lovers were jolted by hearing their
+                            friend’s voice on the radio reading “Suburban
+                            Sonnet.” Technology exhumes the dead with ease, and
+                            with them it brings our loss immediately before us.
+                            Again, characteristic of Edgar, the contemplation
+                            continues, passing now to the North Head Quarantine
+                            Station, near Manly, where people who were feared to
+                            harbor contagious diseases were kept until they were
+                            considered safe to enter Sydney. Many died there,
+                            and stories abound that the place is haunted:
+                            “equipment there records / The voices in the
+                            dormitories and wards, / Although it’s years
+                            abandoned. Undeleted, / What happened is embedded
+                            and repeated, // Or so they say” (202). The
+                            skeptical reflection, delayed until the beginning of
+                            the new stanza, is nicely placed. Edgar’s former
+                            lover was not mistrustful of the dead’s power to
+                            cling to the world, however: “You said you heard the
+                            presence which oppugned / Your trespass on its
+                            lasting sole occasion / In your lost house.”
+                            (“Oppugned”? Yes, Edgar has an extensive vocabulary
+                            and is not afraid to use it.) But the poet himself
+                            can accommodate the belief only by way of
+                            technology. The final stanza runs: Here in the dark
+                            I listen, tensing in distress, to each Uncertain
+                            fragment of your speech, Each desolate, half-drunk
+                            remark You uttered unaware That this cassette was
+                            running and would share Far in the useless future
+                            your despair With one who can do nothing but avow
+                            You spoke from midnight, and it’s midnight now.
+                            (203) The word “midnight” in the last line is no
+                            longer the simple temporal marker that we
+                            encountered in the first line of the poem; it is
+                            also a dark emotional state shared across decades by
+                            the two lovers, though not in the same way or for
+                            the same reasons. Among the many things to admire in
+                            this stanza, not the least is the careful choice of
+                            the almost retiring adjective “useless.” What was to
+                            be the future for the woman can have no effect on
+                            her now, and the speaker’s present gives him no way
+                            of comforting either her or himself. Stephen Edgar,
+                            now seventy years of age, has assembled a body of
+                            work that is as durable as any poetry written in his
+                            generation. If we read it steadily from Queuing for
+                            the Mudd Clubb (1985) to Background Nois e (2020),
+                            we encounter a poet who apparently knew from the
+                            beginning what he wanted to do. His gifts were
+                            already fully apparent, and the decades have only
+                            helped him to refine and extend them. The Strangest
+                            Place is a book to read and re-read; it invites us
+                            to choose the poems that most pierce us and to get
+                            them by heart. Robert Schumann famously reviewed
+                            Chopin’s “Variations on Mozart’s ‘Là ci darem la
+                            mano’” in 1831. In that piece, he imagined his
+                            character Eusebius entering his room where he was
+                            sitting at the piano with his friend Florestan.
+                            Pointing to Chopin’s score in his hand, Eusebius
+                            declared, Hut ab, ihr Herren, ein Genie [“Hats off,
+                            gentlemen, a Genius”]. We don’t say such things
+                            these days, not wearing hats, not being so dramatic,
+                            and having rather exalted ideas of genius, but had
+                            he been around today Eusebius might have been just
+                            as enthusiastic had he brought into a room a copy of
+                            Edgar’s new book. KEVIN HART is internationally
+                            recognised as a poet, critic, philosopher and
+                            theologian. Born in England, he grew up in Brisbane,
+                            and taught Philosophy and English at the University
+                            of Melbourne. He has recently taken up a position at
+                            the University of Virginia. An assured place
+                            Australia’s pre-eminent formalist by Geoff Page •
+                            March 2021, no. 429 S tephen Edgar, over the past
+                            two decades or so, has earned himself an assured
+                            place in contemporary Australian poetry (even in
+                            English-language poetry more generally) as its
+                            pre-eminent and most consistent formalist. His
+                            seemingly effortless poems appear in substantial
+                            overseas journals, reminding readers that rhyme and
+                            traditional metre have definitely not outlived their
+                            usefulness. Edgar’s The Strangest Place: New and
+                            selected poems is an ideal opportunity to examine
+                            what this reputation is founded on. Its poems were
+                            written across some forty-four years, though it is
+                            only in the past twenty or so that we recognise
+                            clearly the poet we know today. In the earlier
+                            collections ( Queueing for the Mudd Club in 1985,
+                            and Ancient Music in 1988), the poems already show
+                            Edgar’s formal command but are perhaps less
+                            ambitious technically than his more recent ones. The
+                            use of blank verse is never less than assured, and
+                            the rhymes, while less complex and original than the
+                            ones Edgar uses currently, are still more than fit
+                            for purpose. His long poem ‘Dr Rogers’ Report’, for
+                            instance, is a highly engaging exercise in a
+                            nine-line variant of Byron’s ottava rima . Edgar’s
+                            next two books, Corrupted Treasures (1995) and Where
+                            the Trees Were (1999) feature a number of highly
+                            memorable poems: ‘The Secret Life of Books’, ‘Daisy,
+                            Belle and Arthur’, and ‘Penshurst’, to name three.
+                            All of these have the vividness of Edgar’s best
+                            poetry from Lost in the Foreground (2003) onwards.
+                            It is worth pausing here for a moment to consider
+                            the virtues and limitations of closely rhymed and
+                            metred verse when free verse is available as an
+                            alternative. Free verse can have a directness and
+                            rhetorical (even metaphorical) energy that highly
+                            formal poetry often lacks. Tightly rhymed poems
+                            (even when as subtle as Edgar’s) can occasionally
+                            have an ‘ingenious’ quality about them, where the
+                            reader is paying more attention to the technique
+                            than to the ‘substance’ of the poem. They can also
+                            involve complex syntax that can sound more like a
+                            legal argument than an outburst of lyricism. The
+                            reader’s reward for successfully negotiating such a
+                            poem may have more in common with the successful
+                            completion of a Times Literary Supplement crossword
+                            than with the ‘spontaneous overflow of emotion,
+                            recollected in tranquillity’ of which Wordsworth
+                            spoke. It is interesting that in this context
+                            Edgar’s most ‘typical’ poems are not those that stay
+                            in the reader’s mind longest. The default ones tend
+                            to be clever and persuasive descriptions of weather
+                            (wind, in particular) or of estuarine or marine
+                            vistas. The final lines of ‘Summer’ are a reasonable
+                            example: Almost without A cloud, the unimagined sky
+                            annuls All qualms across the bay’s embellishment
+                            Which it exults above – except, far out, A white
+                            dismay among the feeding gulls Of course, taking an
+                            excerpt such as this from an almost fifty-line poem
+                            is hardly fair. It’s easy to appreciate, however,
+                            the sheer metaphorical energy of the ‘white dismay’
+                            among the gulls and, likewise, the ‘unimagined’ sky
+                            that ‘annuls / All qualms’. So too the evocative and
+                            comprehensive imprecision of the ‘bay’s
+                            embellishment’. It should also be remembered that
+                            the ending here is a consolatory contrast to the
+                            boredom and monotony suffered by hospital patients
+                            earlier in the poem. The drinking vessels and the
+                            get-well cards Again, again the faces drained of
+                            hours, Emptied by their waiting even of boredom
+                            Subsisting in their realm of four o’clock. In
+                            ‘Summer’, it’s more than obvious we are in the hands
+                            of a highly skilled poet, and that’s a good place to
+                            be at any time. It is even more satisfying, however,
+                            to read a smaller number of unforgettable Edgar
+                            poems that focus on something outside the poet’s
+                            usual sensibility. Poems of this degree are most
+                            often encountered in Lost in the Foreground (2003),
+                            Other Summers (2006), and History of the Day (2009).
+                            They involve suffering (or a postlude or prelude to
+                            suffering) in other countries and times.
+                            Interestingly, they also involve ekphrastic accounts
+                            of photographic images. Three stand out: ‘Sun
+                            Pictorial’, ‘Living Colour’, and ‘Memorial’. ‘Sun
+                            Pictorial’ deals with how many of Mathew Brady’s
+                            photographic plates of the US Civil War were
+                            afterwards used to build greenhouses. Earlier in his
+                            poem, Edgar evokes the conflict’s gauche onset Of
+                            murderously clumsy troops Dismemberment by cannon
+                            before concluding with how the sun each day ensured
+                            the soldiers ordered histories of the war Were wiped
+                            to just clear glass and what the crops transpired.
+                            More telling still is Edgar’s account of recently
+                            discovered footage from pre-World War II Munich. In
+                            colour too As bright and vivid as delirium. It seems
+                            a kind of fault In history and nature to restore
+                            This Munich underneath the flawless blue Of mid-July
+                            in nineteen thirty-nine This pageantry of
+                            party-coloured kitsch The Fuehrer, with his bored
+                            assessing gaze A third example is ‘Memorial’, a
+                            careful scrutiny of the well-known photograph ‘The
+                            lynching of Rubin Stacy, 19 July 1935’. After a more
+                            general description of the crowd, Edgar zooms in on
+                            A girl of twelve, maybe, too unaware To mask her
+                            downward grin before, at the poem’s end, moving on
+                            to: The days that have to be the day that’s been
+                            Lighting forever everything she knows With what she
+                            saw, and knows she saw, and knew It is poems of this
+                            subtlety and drama that, for this reader, are the
+                            highpoint of Edgar’s career. What then of the book’s
+                            opening section, ‘Background Noise: New Poems’?
+                            There’s no doubt that Edgar’s technical standards
+                            here are maintained, or even extended a little. The
+                            observation is just as sharp and cleverly rendered
+                            as usual, but there are not many poems as gripping
+                            (or distressing) as the ones just referenced. The
+                            poems here are often philosophical, concerned with
+                            ‘background’ issues such as the nature of time and
+                            our place in the cosmos. Occasionally, there is a
+                            more personal (though hardly confessional) poem that
+                            has a more emotional than speculative thrust.
+                            ‘Possession’ is one example – where the poet is
+                            clearing out the house of a recently deceased old
+                            woman, almost certainly his mother. He tells of how:
+                            We emptied out the lot Some to distribute much
+                            though to discard. And so she was herself, after
+                            that stroke Emptied out: for four years there is not
+                            One thing she owned that is not torn away The
+                            Strangest Place thoroughly justifies Edgar’s
+                            impressive poetic reputation. He certainly does have
+                            the formal control and poise of which people speak.
+                            And in addition, from time to time, without warning,
+                            he can move you very deeply. POET’S VOICE SARAH
+                            HOLLAND-BATT Formality within the frame Stephen
+                            Edgar. The Strangest Place: New and Selected Poems.
+                            Black Pepper, 2020. Weekend Australian REVIEW
+                            DECEMBER 12-13, 2020 As free verse continues its
+                            reign well into the twenty-first century, formal
+                            poetry still finds itself in the minority. It’s been
+                            derided in some quarters for being elitist and
+                            conservative, clinging to outdated ideals—yet
+                            celebrated in others for bringing poetry closer to
+                            music, and for exhibiting a discipline and technical
+                            artistry that free verse supposedly lacks. The
+                            tensions between free and formal verse are as
+                            fiercely held as they are unproductive. As the
+                            American formalist Dana Gioia once wrote, “only the
+                            uninformed or biased can fail to recognise that
+                            genuine poetry can be created in both modes.” But
+                            Gioia’s conciliatory tone was short-lived; in the
+                            very next paragraph of the same essay, he railed
+                            against “the debasement of poetic language; the
+                            prolixity of the lyric…and the denial of musical
+                            texture” in contemporary free verse. So much for a
+                            ceasefire. This week’s poet, Stephen Edgar, is
+                            doubtless Australia’s finest formalist writing
+                            today, and makes a persuasive case for the enduring
+                            power of formal poetry; his eleventh collection, The
+                            Strangest Place: New and Selected Poems (Black
+                            Pepper) features extracts from the poet’s previous
+                            ten volumes, along with a book-length selection of
+                            new work, “Background Noise.” What is impressive
+                            about seeing thirty-five years’ worth of Edgar’s
+                            poetry together is its remarkable thematic and
+                            stylistic continuity, though the later poems feature
+                            slightly more linguistic embellishment and
+                            philosophical complication. His influences—chief
+                            among them, Auden, along with Richard Wilbur, Frost,
+                            Larkin, and others—remain constant touchstones.
+                            While Edgar has made the odd foray into the realm of
+                            narrative—most notably in his collection Eldershaw
+                            —he primarily writes introspective, metaphysical
+                            lyrics, focussing intently on transience and loss,
+                            memory, mortality, and the future. His poems are
+                            seeded with repeated motifs of apertures - filmic
+                            and photographic lenses, windows, mirrors,
+                            reflections and other viewfinders
+                            proliferate—suggesting that Edgar sees the poem is
+                            an act of framing; there is also a strong emphasis
+                            on music and art. Often, Edgar’s poems arrive as
+                            tableaux, in which time is stilled as the poet
+                            unpacks a moment in slow-motion; their vistas are at
+                            times microscopic, and at others galactic, looking
+                            up into interstellar space. Rather than writing in
+                            established forms, Edgar mostly devises his own
+                            metrical and stanzaic constraints. He favours
+                            sestets and septets (six and seven-line stanzas)
+                            which he arranges according to his own invented
+                            rhyme schemes. Rather than using predictable
+                            envelope rhymes (an abba rhyme pattern) or
+                            alternating rhymes (abab), Edgar’s end-rhymes are
+                            often spaced further apart, so that they are felt
+                            less heavily. They are also almost continually
+                            enjambed, flowing gracefully over into the next line
+                            without the heavy pulse of a caesurae. Take, for
+                            example, this stanza from the poem “Coming Up from
+                            Air,” which is fully rhymed, yet moves fluidly due
+                            to the continuous enjambment, and the postponed
+                            rhyme of “eyrie” and “theory”: And there we went:
+                            that night, Dinner with friends, perched in their
+                            top-floor eyrie, Watching the sky recite The sun’s
+                            late lessons in the clouds and preach Its
+                            pyrotechnic theory Over the revellers on Coogee
+                            Beach. There are many established six-line stanzaic
+                            forms—from the sestet that rounds off the Petrarchan
+                            sonnet to the Venus and Adonis and Burns stanzas—but
+                            none use the same rhyme scheme Edgar uses here. I
+                            can think of only a handful of poems that use this
+                            abacbc scheme: Elizabeth Bishop’s love poem “The
+                            Shampoo,” George Herbert’s “Peace,” and a section of
+                            W.D. Snodgrass’s Heart’s Needle . Edgar’s
+                            self-determined forms also give his poems a nice
+                            tension between familiar and unfamiliar patterning;
+                            it’s only after reading a few stanzas that you work
+                            out the rules he’s invented for himself. His
+                            technical prowess lends his poems an ease that all
+                            formalists aspire to, but few achieve: while he
+                            adheres to rigid structures, he does so lightly and
+                            unobtrusively. Although they are often cleverly
+                            camouflaged, I get the sense that Edgar’s rhymes are
+                            nonetheless the driving engine of his poetry. He is
+                            expert at finding original full rhymes—a tricky
+                            affair, given how shop-worn so many rhymes in
+                            English are. There’s the perfect chime of encrypts
+                            and eucalypts in the poem “Apprehensions,” azalea
+                            and regalia in “The Peacock’s Response,” concertina
+                            and the Italian composer Palestrina in “Analogue,”
+                            and—my favourite— limousine and Anthropocene in
+                            “Mise en scene,” all of which deliver the jolt of
+                            pleasurable recognition that a well-executed rhyme
+                            should bring the reader. And his poems are dotted
+                            with mosaic rhymes too—where rhymes span more than
+                            one word—as in drowse of sense and recompense in
+                            “All or Nothing.” At times, this garners the poet
+                            comic frisson, as in the chime between unnerve us
+                            and BBC World Service in the poem “Letters of the
+                            Law.” This week’s poem, “The Shadow Line,” shows
+                            Edgar’s signature technical powers at full tilt.
+                            Prompted by a passage in Ian McEwan’s novel The
+                            Children Act , it contemplates a distant future in
+                            which the earth has been rendered inhabitable, and
+                            the record of human life inheres in a compacted
+                            “six-inch sooty layer” remaining on an
+                            otherwise-dead planet. You’ll notice that the poem
+                            unfolds in septets, each slightly tapered at the
+                            beginning and end, written entirely in iambic meter:
+                            the first line in trimeter; the second, tetrameter;
+                            before the poem billows out into four lines of
+                            iambic pentameter; then contracts back to tetrameter
+                            again. The rhyme scheme—abacbca—reflects a similar
+                            shape: the initial a rhyme returns one last,
+                            unexpected time on the seventh line, a belated third
+                            echo of a rhyme which has already been resolved.
+                            It’s a form that teases a faint resemblance to the
+                            rhyme royal stanza—a septet of iambic pentameter
+                            with an ababbcc rhyme scheme—but Edgar only gears up
+                            into pentameter for four out of its seven lines,
+                            giving each stanza a looser feel as his line lengths
+                            vary. We begin as the poet contemplates earth as a
+                            “final star” which has been “surpassed / and
+                            cancelled.” He juxtaposes human time—described
+                            metaphorically as both a “mayfly’s one transparent
+                            day in flight” and “nothing but a background hum”—
+                            against the vastness of interstellar time and space.
+                            Swiftly, in a single stanza, human endeavours are
+                            collapsed into residue: “Plastics and pipes and
+                            wires and ticking meters, / The deathless works, the
+                            missiles on parade, The Sphinx, the Floating Taj
+                            Mahal, St Peter’s” become “half-lives haunting our
+                            bequest.” As the poem draws to a close, the poet
+                            contemplates the possibility of a “mere grain, one
+                            molecule” residing in all that rubble that an
+                            interstellar traveller might find one day as
+                            evidence of the poet’s existence: “the wattle leaves
+                            whose shadows pool / On a desk this afternoon, and
+                            brush across / The hand that’s poised above this
+                            page.” And as the poem closes, we’re gently reminded
+                            of the poet’s presence just beyond the poem’s
+                            expertly constructed frame. Sarah Holland-Batt is a
+                            poet and an associate professor at the school of
+                            creative practice at the Queensland University of
+                            Technology. Poet’s Voice receives sponsorship from
+                            The Copyright Agency and the Judith Neilson
+                            Institute for Journalism and Ideas. She can be
+                            contacted at sarah.hollandbatt@qut.edu.au . Shadow
+                            Line And there it is at last, The last one gone, the
+                            final star, The term of its self-fuelled fire
+                            surpassed And cancelled. Nothing but a background
+                            hum And darkness stretching through the nebular
+                            Detritus into spans of time to come More
+                            incommensurably vast, Next to the reign of light,
+                            Than Earth’s deep ages set beside A mayfly’s one
+                            transparent day in flight. But hale those aeons back
+                            and see the face Of the dead planet swept and
+                            scarified By strobe-lit storm clouds and red gales
+                            that chase The skyline as the days ignite. Just a
+                            few feet below The stripped and lifeless regolith, A
+                            narrow, blackened band would put on show The fruits
+                            of our endeavour, a footnote To the grand tale we’d
+                            left to reckon with, A six-inch sooty layer laid
+                            down to quote From that portentous folio: Interred
+                            there and compressed, The residue of all we’ve made,
+                            Roads, sewers, factories, vehicles, would attest,
+                            Plastics and pipes and wires and ticking meters, The
+                            deathless works, the missiles on parade, The Sphinx,
+                            the floating Taj Mahal, St Peter’s, The half-lives
+                            haunting our bequest. And so one might presage That
+                            a mere grain, one molecule That some outrider from a
+                            distant age Sifted from all that indeterminate
+                            dross, Might be the wattle leaves whose shadows pool
+                            On a desk this afternoon, and brush across The hand
+                            that’s poised above this page. Back to top [if gte
+                            vml 1]&gt;&lt;v:shapetype id=&quot;_x0000_t202&quot;
+                            coordsize=&quot;21600,21600&quot;
+                            o:spt=&quot;202&quot;
+                            path=&quot;m,l,21600r21600,l21600,xe&quot;&gt;
+                            &lt;v:stroke joinstyle=&quot;miter&quot;/&gt;
+                            &lt;v:path gradientshapeok=&quot;t&quot;
+                            o:connecttype=&quot;rect&quot;/&gt;
+                            &lt;/v:shapetype&gt;&lt;v:shape
+                            id=&quot;docshape10&quot;
+                            o:spid=&quot;_x0000_s1026&quot;
+                            type=&quot;#_x0000_t202&quot;
+                            style='position:absolute;left:0;text-align:left;margin-left:51pt;margin-top:-5.55pt;
+                            width:18.55pt;height:33.85pt;text-indent:0;z-index:-15851008;
+                            mso-position-horizontal-relative:page'
+                            filled=&quot;f&quot; stroked=&quot;f&quot;&gt;
+                            &lt;v:textbox inset=&quot;0,0,0,0&quot;/&gt;
+                            &lt;w:wrap anchorx=&quot;page&quot;/&gt;
+                            &lt;/v:shape&gt;&lt;![endif] [endif] [if !mso]
+                            [endif] T [if !mso] [endif] [if !mso &amp; !vml]
+                            [endif] [if !vml]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Quadrant Review</summary>
+                        <p>
+                            IVAN HEAD The Rock in the Poet's Bag Quadrant May
+                            2021 The Strangest Place: New and Selected Poems, is
+                            a formidable book of 284 pages. It embraces Stephen
+                            Edgar's lifetime of published poetry and reaches
+                            across forty-five years of publications and ten
+                            volumes of poems. Edgar, in his seventieth year, is
+                            a significant Australian poet at the apogee of a
+                            life of writing and publishing success. The intro­
+                            duction tells us that after some time in London in
+                            the 1970s he moved to Hobart where he lived for some
+                            thirty years. He acknowledges the help and influence
+                            of Clive James and Gwen Harwood amongst others,
+                            including Judith Beveridge. He has lived for the
+                            last fifteen years in Sydney and is married to
+                            Judith Beveridge. Judith's review notes from
+                            Westerly grace the rear cover of the Adrienne
+                            Eberhard Volume. The introduction should be read. It
+                            reminds us of the hard-won success a poet might earn
+                            with a measure of inspiration and dedication to
+                            excel­ lence. Of the ten previous volumes mentioned,
+                            three achieved the status of shortlist for major
+                            awards or won a major award. Edgar won what is now
+                            the Peter Porter Prize in 2006, the inaugural
+                            Australian Catholic University Literature Prize in
+                            2013, and the Philip Hodgins Memorial Medal for
+                            excellence in literature. Having read Philip
+                            Hodgins's poetry, one knows how significant that
+                            memorial medal is. Edgar tells us that his first
+                            book was published in 1985, midpoint of his life to
+                            date, but the earliest poem in it
+                            (&quot;Nasturtium&quot;) dates to 1976. That poem is
+                            included in this new book. The latest poems are
+                            included in The Strangest Place as &quot;Background
+                            Noise&quot; and occupy the first seventy -fi ve
+                            pages . I read and greatly liked the new poems.
+                            &quot;Hoverfly&quot; is masterly. Its fifteen two-li
+                            ne stanzas locate this brilliant, tiny, flying
+                            creature &quot;stationed precisely in midair, / The
+                            hoverfly seems painted there&quot;. The end-rhyme of
+                            each couplet adds to the pleasure of reading and
+                            flows as eas­ ily as the creature seems to hover.
+                            The reader can re a d up and down the rhyming pillar
+                            on which the creature is set. The rhyme suggests
+                            vertical stabil­ ity. The same rhyming couplet
+                            pattern illuminates &quot;Dragonfly&quot;, a l so a
+                            new poem. Again, I like_ the way that the steady-
+                            repetition of the rhyming couplets forms a column on
+                            the pages, as if a soft ladder, an easy s upport for
+                            the mind as the reader ascends the aura l pattern.
+                            Perhaps this makes the poem a kind of verbal icon of
+                            the flesh-and-blood world. Edgar's poems seem to
+                            move very close to the tangible reali­ ties in the
+                            physical world they describe and are a delight to
+                            read. They seem to code the tangible. It is not only
+                            the selection of poems as prior, suc­ cessful and
+                            awarded books that make this collection worth
+                            having. The book is a hendecagon of delight as the
+                            new poem s add to the long-established suc­ cess of
+                            the prior ten volumes from which selections are mad
+                            e . Back to top Start of StatCounter Code End of
+                            StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

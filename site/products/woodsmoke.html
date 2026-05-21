@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,567 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/woodsmoke.svg&quot;);
                         "
                     >
-                        Featured
+                        Woodsmoke
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Todd Turner</h3>
+                </div>
+                <img
+                    alt="Cover of Woodsmoke"
+                    class="product-cover-mobile"
+                    src="/assets/books/woodsmoke/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Woodsmoke"
+                        class="product-cover"
+                        src="/assets/books/woodsmoke/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        ...A boy, my fingers intent and nimble as a lace
+                        maker’s, I peeled back the layers, split the husks, the
+                        green... Snap off the ends, tear open the strip, split
+                        the hull and with a run of the thumb rake the peas into
+                        the pot. Repeat. Todd Turner writes a poetry of
+                        unfashionable warmth. Woodsmoke, which is an occasional
+                        motif throughout the book, refers to the ancient resins
+                        which fire draws upon in burning. The smoke is the
+                        signal, the equivalent of the poem. His unforced
+                        measured language yields deeply moving poems—whether on
+                        the death of a brother or the loss of market gardens.
+                        This is what a modern popular poet should read like. It
+                        is simple but takes a daring amount of craft to get
+                        there. Todd Turner has produced a body of poems
+                        remarkable for the rich brocade of their language, their
+                        hard won lines, their hammered beauty. This is a poet
+                        who brings his work close to worship, who looks at the
+                        world and returns it clarified and finessed through his
+                        painstaking and elegant craftsmanship. Patience and a
+                        belief in the transformative power of poetry are at the
+                        heart of this most impressive debut volume. Judith
+                        Beveridge In Todd Turner’s Woodsmoke memory is a potent
+                        force at work. His ability to delight and disturb, often
+                        within the one line, gives these poems a vibrant, edgy
+                        quality that leaves us with a sense of heightened
+                        expectancy and urgency. Anthony Lawrence Turner’s
+                        language is at times rich with the savour of earth,
+                        stone, wood, at times as weightless as light falling
+                        over a field, which ‘passes for benediction’. Stephen
+                        Edgar Cover painting: Alexander McKenzie, Firestarter ,
+                        2011, oil on linen, 167 x 244 cm, private collection,
+                        Sydney. Image courtesy of Alexander McKenzie and Martin
+                        Browne Contemporary, Sydney
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 22.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/woodsmoke.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/woodsmoke/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044862</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2014</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>72</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Todd Turner was born in 1971 and raised in the
+                            western suburbs of Sydney. His parents were from
+                            farming families in the town of Koorawatha, situated
+                            on the Western Plains of New South Wales.
+                        </p>
+                        <a class="bold" href="/authors/todd-turner.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Plumwood Mountain Review</summary>
+                        <p>
+                            Woodsmoke by Todd Turner Brian Hawkins Plumwood
+                            Mountain Volume 3 Number 1, February 2016 Todd
+                            Turner’s debut collection deals mostly with the
+                            every-day: weeding, burning off garden waste, lying
+                            in the yard watching beetles, driving through the
+                            city, growing a bonsai wattle in a pot. The book is
+                            arranged in a loose chronology, with the earlier
+                            poems about rural childhood or family history, and
+                            the later ones set in adulthood in an urban
+                            environment – Sydney in at least some of them. The
+                            hinge between the two halves is Homecoming , a
+                            harrowing poem about the death of a brother. Many of
+                            the poems in Woodsmoke (e.g. “Shelling Peas”, which
+                            is excerpted on the back cover) consist of
+                            finely-crafted description set forth with little
+                            comment. The tone is sober, matter-of-fact, precise;
+                            and there is a fastidious avoidance of overstatement
+                            and verbal ostentation. They tend to regular
+                            stanzas, with lines of roughly equal length (there
+                            may be a more formal metrics at play): Whenever my
+                            mother took hold of the spade and handed me the
+                            cardboard box, I knew we’d be doing the weeds. She’d
+                            dig, while I stood there beside her as she threw
+                            them in. (“The Weeds” 5) A few poems (e.g. “Heading
+                            West to Koorawatha”, “September on Gasworks Bridge”,
+                            “Leaving My Place on the River”) offer the same
+                            basic aesthetic, but with irregular stanzas and
+                            line-lengths, and are reminiscent of poets such as
+                            Robert Bly and James Wright. The final section of
+                            “Heading West to Koorawatha” reads: It is almost
+                            dark, and the last of the light falls onto the
+                            canola fields, and onto the hillsides full of
+                            Paterson’s curse. I pull over and watch the sun sink
+                            into a stretch of grass. ( “Heading West to
+                            Koorawatha” 2) Nature poets since Wordsworth have
+                            been afflicted by the urge to moralise, to view the
+                            natural world as a teacher of lessons which it is
+                            the poet’s job to interpret. Turner’s collection is,
+                            on the whole, markedly free of this tendency. In
+                            fact, I found poems such as “The Weeds”, “Lot” and
+                            “After Chores” a little puzzling: the descriptions
+                            are finely wrought, but the emotional significance
+                            of the activities described is unclear. Perhaps the
+                            determination not to over-state, not to over-write,
+                            can go too far. My favourite poems in the book
+                            (“Woodsmoke”, “A Penance”, “Nocturne”, “Fieldwork”)
+                            are those that break free of the propensity to
+                            (stylistic and/or emotional) sobriety. In the title
+                            poem, the language is unusually extravagant:
+                            woodsmoke sends up its flag of stored aeons and
+                            multifarious resins in a surly blue charred blaze.
+                            The poet reveals that he thinks of it as what passes
+                            for benediction; the tenured door through which
+                            seasons pass, a time-tempered passage This poem
+                            ends: Somewhere lost among the welcome arms of the
+                            woodland trees I see it, adrift in a smock of
+                            ribbons, and set amid the downy blueprint of
+                            allegory, charted, in the aftermath of flame. (
+                            “Woodsmoke” 3)
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Poetry Journal Review</summary>
+                        <p>
+                            Todd Turner's Woodsmoke Carol Jenkins Australian
+                            Poetry Journal, Vol. 4, No. 2, December 2014 As
+                            poems only exist as the experience of being read,
+                            the reader’s job is to make the poem out of the
+                            gaps, to effect a surge of perception and
+                            understanding, and it might be argued that it is in
+                            the space between the words on the page, and the
+                            page and the reader, and the spoken word and the
+                            listener, is the space that allows this to happen,
+                            where the reader remakes this white space into her
+                            or his poem event. To my way of thinking one measure
+                            of the poem’s excellence is the how reliably this
+                            poetic effect can be found. I am a fickle reader,
+                            and I have read some poems once and enjoyed them but
+                            on a return reading find they’ve fallen quite flat:
+                            Single Use Only poems, as it were. A good poem is
+                            tamper proof; it delivers on any number of
+                            rereadings, and amplifies the friendship between
+                            poem and reader. So setting out to review a book, is
+                            for me a naturally hazardous process: I have to want
+                            to revisit the poems, and not turn what had been a
+                            pleasant one-off into a penance. Todd Turner is a
+                            goldsmith, and the word ‘lapidary’ seems to hum
+                            about Woodsmoke , his first collection, an elegant
+                            production at a modest 56 pages. The opening poem,
+                            ‘Shelling Peas’, sets out the rhythmic practice of
+                            shelling. It’s ostensibly a simple telling of a
+                            daily task, but the coda to each stanza, ‘Snap off
+                            the ends, tear open the strip/, split the hull…’
+                            builds and becomes incantatory by reiteration,
+                            reinforcing the poem’s declarations for routines and
+                            repetitions, and the narrator’s application to
+                            craft, his liking for needlepoint and lace-making.
+                            All of these careful acts of construction provide an
+                            understated trope for the making of poems, a
+                            podcast, as it were, to the pleasures of orderly
+                            practice. From this contemplative domestic space,
+                            Turner’s poems move out into paddocks, past
+                            Paterson’s curse along flat roads, in cars and
+                            trains. From the second poem, ‘Heading West to
+                            Koorathawa’, until the road brings us to an end in
+                            ‘Field Work’, we watch a cinematic landscape slide
+                            by. The landscape ranges from back of Bourke through
+                            the porous edges of suburbia, where farmland is
+                            subsumed into house lots, leaving poignant remnant
+                            blocks, into the inner city. One of the central
+                            concerns of Woodsmoke is the migration of country
+                            families to the city, what they bring and what they
+                            lose. The poems here often find the pastoral looking
+                            out from bridges and train windows, congested roads
+                            turn into cattle races in ‘The Road’: The Road A few
+                            miles in and the road forks into a funnel of
+                            diverging ways. I steer clear of the cars that veer
+                            and swerve, and stick to the middle lane. Soon the
+                            traffic chokes to a crawl and it feels as if we’re
+                            being herded along like cows on a cattle run, all
+                            bulk and weight converging in the crush. Further on,
+                            beyond the gridlock, I pick up the pace and regain
+                            whole minutes of lost time, drive on at speed across
+                            a region of winding suburbs with the hard ground
+                            rushing towards me, the dark tar glinting with
+                            sparks the way rivers do in sun. This doesn’t last
+                            long, and it’s back to the bustle and chug of bumper
+                            to bumper, of vast and middling distances,
+                            innumerable and immense. We halt—and then putter
+                            along. The clear lens of the windscreen holds true.
+                            The sheer dawn-dusk of it all pushing us to press
+                            on, to come full circle, like the conjoining head
+                            and tail of a serpent, who makes of itself a
+                            perpetual ring. Turner catches the ironic rush and
+                            stall of traffic, wryly noting ‘now I... regain
+                            whole minutes of lost time’, and when he conflates
+                            the circularity of dusk/dawn with conjoined head and
+                            tail of the serpent, we have not just the ambiguity
+                            of going nowhere fast in a cattle/traffic race but a
+                            clever allusion, a whiff of that high sweet note in
+                            petrol, from the benzene in the motif of the
+                            ouroboros famed for providing Kekulé’s dreamt
+                            insight into the structure of benzene. A quick head
+                            count of noun groups to give a frequency
+                            distribution provides an insight into how Turner
+                            balances his palette. The noun subjects of Woodsmoke
+                            are broadly, in descending order of frequency:
+                            plants, animals, fields/terrain, rivers, roads,
+                            country towns, fire and smoke. He uses these to
+                            build a sense of down to earthiness that ranges from
+                            the subterranean up to the wink of starlight. In
+                            between the urban pastoral works are poems of
+                            quotidian practices and objects. Turner has a way of
+                            diversifying and then conflating his metaphors, so
+                            they amplify and illuminate each other. In ‘The
+                            Wireless’, he leads off with the evocative, ‘sepia
+                            tones’ deftly pairing the aural experience with
+                            visual nostalgia borrowed from photography and
+                            follows on with the hallowing effect of a ‘muffled
+                            sermon of kettle and cup’: The Wireless murmured in
+                            sepia tones; first creak of the morning, routine
+                            cockcrow, muffled sermon of kettle and cup. Little
+                            lamp light, dear hub of the house dawn kindler of
+                            draughts and cracked leaves, sweet shepherd of
+                            hob-fired broth, spirit level of whim and woe. Your
+                            console hummed from the rungs of the kitchen where
+                            no stool or step could reach your touch-tuned
+                            hearth. Upon the table, a stove warmed stout jug
+                            bubbled and brewed, knee-worn chair legs slid in
+                            under shadowed nooks. We sat and listened, hunched
+                            in the quiet. Potato eaters in the communal dark.
+                            Opening the second stanza with ‘Little lamp light,
+                            dear hub’ brings to my mind an echo of ‘Dear Soul
+                            Mate, little guest…’ from David Malouf’s wonderful
+                            ‘Seven Last Words of the Emperor Hadrian’. More
+                            importantly for Turner’s poem, this line sets up a
+                            tighter arrangement of the alliterative runs that
+                            were introduced in the first stanza; we have ‘hub of
+                            the house’, then ‘dawn kindler of draughts’, a
+                            phrase with one internal alliterative pair and a
+                            half of another pair in the next phrase, creating a
+                            movement that works to lead the reader onwards. So
+                            too do the nicely slant rhymes and half rhymes,
+                            hub/hob, hummed/rung, reach/heart, proceed with
+                            their job of discretely carrying us on without the
+                            obvious smack of settling into a predictable
+                            pattern. ‘The Wireless’ builds its picture of a
+                            family with an adroit ‘family-lessness’: the family
+                            here is unnamed and unseen until the last two lines
+                            and then only by actions, they listen ‘hunched in
+                            the quiet’, an act of fine ambiguity that plays on
+                            the radio creating its own silence, in parallel to
+                            the way a poem creates its own white spaces.
+                            Turner’s hybrid world of country/city has certain
+                            nearly painterly effects. While we are focused on a
+                            scene, it is frequently the light or the air that
+                            takes centre place, and provides an embodiment of
+                            the duality of place, evoked by phrases like ‘
+                            ambling air that roams’ from ‘Mid Winter’ and then
+                            in River Birds ‘Strobing with its under-light/ to
+                            any passing thing.’ In ‘Pine Grove’, opposite the
+                            elegiac poem on a brother’s death, we spy in on a
+                            cemetery where mourners crouch and where the
+                            ‘unliving … have no words, no thoughts to speak of’,
+                            an interesting commentary on thoughts and words, and
+                            the numbness of grief. There is an uncanny
+                            uncertainty about Turner’s graveyard, and a certain
+                            knowingness about the odd juxtaposition contained in
+                            ‘Beyond the rows/of the flame-shaped cypress trees/
+                            a man kneels above his own.’ Is it his grave, a
+                            grave of one his own or his cypress tree? The logic
+                            here is both nicely weird and entirely plausible.
+                            ‘Interiors’, a composed still life, opens as neatly
+                            as a venetian blind, with the drone of traffic and
+                            the nuanced pre-figuring of the river by the bridge
+                            and the final stanza ‘He draws the blinds/sees an
+                            ibis on the river/ pause… then take up flight’,
+                            where the neat enjambment of ‘pause’ works to give a
+                            sense that we are being given polite reading
+                            instructions, and then asked to think about it all.
+                            As a collection, Woodsmoke mines this kind of
+                            duality with deft technique. Turner often writes
+                            along an edge or brink to give the reader sense of
+                            depth. These are poems that don’t set out to
+                            obfuscate; here, lucidity, the pastoral and warmth
+                            of feeling prevail, and fine attention to craft pays
+                            off handsomely. I’ve focused here on the
+                            machinations of just four poems in this collection,
+                            but I think many of them will repay this kind of
+                            close reading.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian Review</summary>
+                        <p>
+                            Australian Poetry Anthony Lynch The Weekend
+                            Australian , July 2014 Todd Turner is a younger
+                            poet, and Woodsmoke is his debut collection.
+                            Although Turner was born and reared in Sydney’s
+                            west, it is the pastoral realm that occupies him and
+                            makes him an heir to the more mature poets reviewed
+                            here, [Geoff] Page in particular. The poet’s parents
+                            lived in farming communities before moving to Sydney
+                            in 1959, and this slender collection draws heavily,
+                            and with great affection, on family and rural
+                            experience. The strong opening poem ‘ Shelling Peas
+                            ’ sets the tone, the rhythm of pea shelling captured
+                            in the refrain to each stanza, the poem a testament
+                            to the dignity of simple tasks. The title poem
+                            denotes woodsmoke as the signature of time and ‘what
+                            passes for benediction’, a ‘plait’ wending through
+                            land and the collection. ‘ Mellowed Fruit ’ is a
+                            prayerful poem to the farmworker. Other poems fondly
+                            record the poet’s father working the land, and ‘ H
+                            omecoming ’ is a touching account of a brother’s
+                            death. Drawing strongly from English pastoral
+                            traditions — right down to the preference for
+                            ‘fields’ over ‘ paddocks’ — these poems are a
+                            country mile from the recent Black Rider anthology
+                            Outcrop: Radical Australian Poetry of Land . The
+                            disrupted landscape of that anthology will grant
+                            some readers little foothold, but amid Turner’s
+                            rustic calm one might long for a mobile phone to
+                            ring and snap the verse into a post-pastoral 21st
+                            century. In Nocturne, the poet stands in ‘the neon
+                            blaze of the electric / light of the refrigerator
+                            door’ while his daughter sleeps. It’s a superb
+                            image, and an instructive one. Sometimes, you need
+                            to douse the fire and go electric.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Woodsmoke Geoff Page Australian Book Review - Sept
+                            2014 Todd Turner’s first collection, Woodsmoke ,
+                            evolves intriguingly. It starts in the
+                            ‘anti-pastoral’ mode founded by Philip Hodgins. Here
+                            the poet, long since relocated to the city, looks
+                            back with tellingly evocative detail but a divided
+                            sensibility on the life he (it’s normally a ‘he’)
+                            has now abandoned. Turner’s early poem, ‘Heading
+                            West to Koorawatha’, is a good example. It finishes:
+                            ‘It is almost dark, and the last of the light /
+                            falls onto the canola fields, and onto the hillsides
+                            / full of Paterson’s Curse. // I pull over and watch
+                            the sun sink / into a stretch of grass.’ Paterson’s
+                            Curse neatly embodies the poet’s ambivalence: it is
+                            visually beautiful but poisonous to livestock.
+                            Significantly, Turner’s action in pulling over to
+                            look at it foreshadows the metaphysical dimension
+                            that develops towards the end of the collection. The
+                            key continuity in this shift is Turner’s steady
+                            concern with verbal perfection. This at times can
+                            slow a poem’s impetus, and it is not for nothing
+                            that Turner, in a later poem, ‘Apprentice’,
+                            celebrates the would-be craftsman’s hands as being
+                            ‘wedlocked in the grip of some dogged / perfection,
+                            jigged epiphanies, theorems // in the crux of being
+                            stubbornly made’. In many of Woodsmoke ’s later
+                            poems Turner is noting and/or recreating moments of
+                            what even secular readers will be happy to call
+                            ‘grace’. His short poem of that title reveals what
+                            interests him most, and the closing lines seem to
+                            reach out to embrace the book as a whole: ‘Something
+                            about how the river rose, and / about the stillness
+                            of the birds on the banks / in the rain / and about
+                            the way the air made it possible / to forgive – /
+                            and be forgiven.’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Review Short: Todd Turner’s Woodsmoke</summary>
+                        <p>
+                            Review Short: Todd Turner’s Woodsmoke Autumn Royal
+                            Cordite - May 2014
+                            http://cordite.org.au/reviews/royal-turner/ The
+                            poetry in Todd Turner’s debut collection Woodsmoke
+                            explores topographies of land and memory. Comparable
+                            to the approach of Australian poets such as Philip
+                            Hodgins and Brendan Ryan, many of Turner’s poems
+                            explore human interactions with rural landscapes.
+                            Turner’s biographical note indicates that his
+                            ‘parents were from farming families in the town of
+                            Koorawatha, situated on the Western Plains of New
+                            South Wales’ (v). Like Hodgins and Ryan, Turner is
+                            unafraid to include autobiographical references
+                            within many of his poems. The collection opens with
+                            ‘Shelling Peas’, a poem that may be read
+                            metapoetically for the way it details the poetic
+                            qualities of the quotidian. The speaking ‘I’ in the
+                            poem, presumably Turner, refers to a childhood
+                            memory of shelling peas, a monotonous task the poet
+                            ‘hardly tired of…just eased into a certain / order,
+                            felt a kind of rhythm at hand’ (1). This ‘rhythm at
+                            hand’ puns on the crafting of poetry and also
+                            emphasises the cadences of domestic labour, the
+                            obligatory cycles that can inform our imagination.
+                            It may be argued that for Turner, the consideration
+                            of memories through poetic encounters allows for an
+                            enhanced understanding of the self. Following this
+                            assertion, the poem ‘Shelling Peas’ may then be read
+                            as a Turner’s retrospective identification of a
+                            moment where he first began to perceive the poetic
+                            qualities of the diurnal, evident in many of
+                            Woodsmoke’s poems: Front porch, set up in a row of
+                            chairs, given a bucket of pods, we were told to wash
+                            the grit then prise the husk for peas. A chore I
+                            didn’t mind, I took my time over every pail, over
+                            each repetitive task… Snap off the ends, tear open
+                            the strip, split the hull and with a run of the
+                            thumb rake the peas into the pot. Repeat. (‘Shelling
+                            Peas’, 1). The three italicised lines ending this
+                            stanza become the poem’s refrain. It is within this
+                            refrain that one may understand the metaphorical
+                            process of the ‘run of the thumb’ as a means of
+                            extracting a moment or idea from its ‘hull’ and
+                            containing it – like the ‘peas into the pot’– within
+                            a poem. Through this process, Turner learns ‘to feel
+                            the variance between / each seam, between the
+                            notched ends, / the ridged sides’ (1). Turner’s use
+                            of the ellipsis also instills a subtle playfulness
+                            in this poem. Appearing immediately before the
+                            poem’s refrain, these ellipses simultaneously
+                            represent the ripe peas being extracted from their
+                            pods and the swelling thoughts occurring during such
+                            a repetitious task. Recollections of the past, both
+                            actual and invented, form the basis for many poems
+                            in Woodsmoke . Poems such as ‘Crop’, ‘Kooravale,
+                            1959’, and ‘Kooravale, 1971’ are imaginings of
+                            farming and family challenges during the years
+                            before Turner’s birth. ‘Kooravale, 1959’ is
+                            particularly striking for the way it explores
+                            gendered obligations that may pertain to (but are
+                            not isolated to) farming families. The poem,
+                            dedicated to Turner’s mother, opens with an ominous
+                            description of a farmer ‘hacking the edge / of the
+                            boundary line with his scythe’ (6). Connections
+                            between masculinity and violence are made between
+                            this act of labour and the paradoxical complicity
+                            and victimisation felt in viewing such acts: From
+                            the porch my mother looks on, hearing the whip-sound
+                            of the blade, the light lowering down upon the crop
+                            with every cut. (6). The shortened line: ‘with every
+                            cut’ enacts the process it describes and also echoes
+                            the limitation felt by the woman in the poem; the
+                            reader may conclude that there is nothing left for
+                            her on this farm, this land is not her land.
+                            References to boundary lines, edges, blades, and
+                            traps also emphasise the restrictions felt by this
+                            woman, who is thankfully given a means of escape in
+                            the poem’s final couplet by following ‘the train
+                            line that is headed / the other way’ (6). The final
+                            line of the poem, ‘the other way’, is also
+                            shortened, suggesting that the act of leaving the
+                            farm is not necessarily an easier path to follow, it
+                            is merely a new direction. Turner’s poems, many of
+                            them written in unrhymed couplets, tercets and
+                            quatrains, are filled with acute observations of the
+                            poet’s immediate surroundings. Poems such as
+                            ‘Nightwalk’ and ‘Fieldwork’ explore the contrast
+                            between the natural and urban ecosystems, as the
+                            opening lines from ‘Nightwalk’ demonstrate: ‘Wedged
+                            between the suburbs and the city, / the parklands
+                            are a labyrinth in the dark’ (34). During
+                            ‘Fieldwork’, the collection’s final poem, the poet
+                            asks: ‘I know what the cycle / serves, but what is
+                            being served by / the cycle?’ the question remains
+                            unanswered, but the poem, and perhaps too the
+                            collection as a whole, become Turner’s attempt to
+                            grasp at such an answer. Like the smoke that ‘plumes
+                            from the fire’s red hearth’ (3) in the collection’s
+                            eponymous poem, ‘Woodsmoke’, some memories are as
+                            distinctive as smoke curling into the air, rich with
+                            possibility or menace. Turner’s poetry captures his
+                            observations of environment and his contemplations
+                            of memory in ways that allow for new meanings to
+                            rise up for the reader. Back to top Start of
+                            StatCounter Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

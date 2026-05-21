@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,438 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-printing-of-a-masterpiece.svg&quot;);
                         "
                     >
-                        Featured
+                        The printing of a masterpiece
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alan Loney</h3>
+                </div>
+                <img
+                    alt="Cover of The printing of a masterpiece"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-printing-of-a-masterpiece/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The printing of a masterpiece"
+                        class="product-cover"
+                        src="/assets/books/the-printing-of-a-masterpiece/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        I cannot think of any work that resembles The printing
+                        of a masterpiece . It is a memoir of the flowing
+                        intermesh of typography, ink-and-paper, Renaissance
+                        cultural history and deeply personal, hands-on
+                        knowledge. It is about the printing of an exquisite
+                        book, an object in which every stage of craftsmanship
+                        has been scrupulously considered. Inside the printer’s
+                        narrative there grows, like something marvellous in a
+                        tropical aquarium, Leonardo da Vinci’s incipient book on
+                        Nothing. The printing of a masterpiece pays its tribute
+                        to predecessors and exemplars; to Aldus Manutius, Joseph
+                        Moxon or Eric Gill. The reader is gently led to feel
+                        inward with Process. It’s a book about making, and about
+                        understanding. We come away knowing a great deal more
+                        than we did. Alan Loney is a beautiful stylist - lucid
+                        and compelling. He takes us into the heart of that
+                        question: How is a book actually made? It is an
+                        ultra-fine book whose growth he charts, but what happens
+                        happens, in petto , with all printed books. I have never
+                        seen paper, ink or type described in such a sexy way,
+                        let alone the character of pen nibs. For all its
+                        refinement of style and subject matter this text is, as
+                        my late Professor used to say, a rattling good read.
+                        Chris Wallace-Crabbe
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 26.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/the-printing-of-a-masterpiece.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-printing-of-a-masterpiece/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044589</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2008</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>126</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alan Loney was born in 1940 in Lower Hutt in New
+                            Zealand. His first book of poems The bare
+                            re-membrance was published in 1971 and he printed
+                            his first book in 1974.
+                        </p>
+                        <a class="bold" href="/authors/alan-loney.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Fiona Capp, The Age</summary>
+                        <p>
+                            The printing of a masterpiece Fiona Capp, The Age ,
+                            5 July 2008 This gem of a book will delight anyone
+                            who takes pleasure in books as physical objects and
+                            who is interested in the traditions of the hand-made
+                            book. Printer and writer Alan Loney takes us through
+                            the making of one particular book, which he printed
+                            on black paper in gold ink with text from Leonardo
+                            da Vinci's writings on Nothingness. But The printing
+                            of a masterpiece is not simply a description of the
+                            process of making a book. It is a meditation on the
+                            aesthetics of the hand-printed book - the halo
+                            effect around letters, the colophons that provide a
+                            brief description of the book's printing history,
+                            the handmade paper, the typography, the design and
+                            so on. Loney's passion for these arcane details is
+                            communicated in playful prose reminiscent of writers
+                            such as Italo Calvino and Umberto Eco. In this
+                            beguiling essay he invites us to take our time and
+                            savour the craftsmanship of a finely made book, the
+                            alchemy of text, ink and paper.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            Newsletter NSW Guild of Craft Bookbinders Inc Review
+                        </summary>
+                        <p>
+                            Alan Loney's The printing of a masterpiece Michael
+                            Small Newsletter of the NSW Guild of Craft
+                            Bookbinders Inc. March 2009 Alan Loney is clearly a
+                            man in love. He is in love with the layout of a
+                            page, the balance of space and positioning of text,
+                            the way the eye moves across, up and down words and
+                            images. He is in love with the feel of paper, its
+                            finish, its weight and how light is reflected or
+                            absorbed. He is in love with the viscosity of ink
+                            and how the gentlest of touches between type, ink
+                            and paper involves a chemical reaction. He is in
+                            love with how a binding protects and enhances a
+                            book’s content and completes its balance and beauty.
+                            He is even in love with his cranky old Albion
+                            printing press, which on one day can give him
+                            perfect results and on the next an unfathomable
+                            mess. Poet, writer, publisher and printer Alan Loney
+                            has written an ode to his love of printing fine
+                            books by describing the creation of his
+                            ‘masterpiece’, Leonardo on nothingness. Each chapter
+                            describes one part of the process of making a book,
+                            from the initial slowly evolving idea of its
+                            creation, to design, to choice of paper and ink, to
+                            the actual printing and binding and even the
+                            creation of a suitable colophon. In a chapter on
+                            ‘The printery as cosmological haven’, Alan
+                            evocatively describes his workshop: After all, it is
+                            a special environment, where slow, careful,
+                            meditative thinking is the rule; where a book and
+                            its designer/printer have the time to grow into the
+                            project, for the ideas around it to come and go as
+                            they need to; to watch the work take shape in ways
+                            that are sometimes surprising and unexpected; to
+                            allow the concentration needed to have its intense
+                            focus and imagination its full rein. And, having
+                            been given an early glimpse of this haven, Alan
+                            later shares with the reader the rhythmic ritual and
+                            dance that is the preparation for each day of
+                            printing, the repetitive process of the printing of
+                            the pages, and the methodical cleaning and
+                            re-arranging of his printery at the end of each day
+                            to allow tomorrow to begin afresh. He weaves his
+                            way, and ours, through the sequences of preparation
+                            for putting ink to paper, each task a labour of
+                            love. And when faced with a difficult decision about
+                            what materials to use in the final binding he adopts
+                            the strategy many of us use when faced with such a
+                            dilemma: Aha! But I am not trusting the process am
+                            I? I have removed myself from the arena and tried to
+                            solve the problem by thinking from the outside in –
+                            What fabric will go with the book? – has been my
+                            question, rather than letting the answer come from
+                            the process of making. The result of my marinating
+                            then has been, not to provide a solution, but to
+                            send me back to the printery. I try the oblique
+                            approach. I’ll tidy up. The Printing of a
+                            Masterpiece is much more than a description of a
+                            process, however. It is a beautifully crafted
+                            journey of creativity and a reflection on a life’s
+                            work of striving to produce something so perfect it
+                            leaves you feeling deeply fulfilled. Fulfilled, but
+                            still wanting to experience the masterpiece
+                            described: can it be held, can the weight of it be
+                            measured, can its words and images be experienced?
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Parenthesis Review</summary>
+                        <p>
+                            The printing of a masterpiece Andrew Johnson
+                            (Gabriel Press, Cambridge) Parenthesis , The Journal
+                            of the Fine Press Book Association (UK &amp; USA),
+                            No. 16, February 2009 This is an intriguing book
+                            through which, as Alan Loney said recently in a
+                            broadcast, the author ‘wanted to talk to the general
+                            reader.’ Those who read Crispin Elsted’s review in
+                            Parenthesis 13 will know of Loney as a New Zealand
+                            poet and hand-press printer/publisher now living in
+                            Australia. The printing of a masterpiece purports to
+                            be an account of designing and printing Leonardo on
+                            Nothingness at, according to his title page for it,
+                            ‘his private press, Utopia.’ The absence of the
+                            preposition highlights the ambiguity Loney revels
+                            in: is Utopia the name of the press or the place? He
+                            did produce Leonardo on Nothingness for his Electio
+                            Editions in 2004 and in 21 short sections he takes
+                            us through some practical questions of its making
+                            (what is the best font, ink, and paper to use; how
+                            much of it do I need; how do I keep the paper damp
+                            without it going mouldy in a warm climate; how do I
+                            print black illustrations on black paper; and so
+                            on), meditations on the vocational activity of
+                            achieving a book and philosophical explorations on
+                            the nature of nothingness with passing references to
+                            Heidegger and Wittgenstein. His first glimpse of the
+                            idea of a book as an object in itself came to Loney
+                            in his early twenties, when he had access to a large
+                            library in a private house. Here he caught the
+                            sensuality of leather bindings with their raised
+                            bands and gilded tooling, the rough feel of thick
+                            paper and impress of type, all independent of
+                            content. The delight in the sheer physicality of the
+                            book has not left him, as he details the decisions
+                            he needs to take, including the economics of it all.
+                            Where to begin? The preference he states here is not
+                            to plan rigidly to the last detail before starting
+                            (‘from the outside in’) but, having made certain
+                            basic choices, to allow the book to develop, so
+                            that, for example, the title page could be the last
+                            thing he designs once all else is printed. His
+                            section on choice of font gives us a flavour of him
+                            at work: Gill Sans for his minimal text (fewer than
+                            800 words over a dozen or so pages), for its absence
+                            of the classically carved form he wished to avoid
+                            and its warmth relative to other sans serif fonts.
+                            The text he printed for his Electio edition,
+                            however, uses the type he explicitly rejects in this
+                            utopian book, Mardersteig’s Dante. Loney’s
+                            ‘masterpiece,’ we realise, is the book he might have
+                            printed but didn’t and this account is the story of
+                            what might have happened had he done so. The teasing
+                            becomes clear. ‘It is a great book,’ he writes in
+                            his introduction, ‘but I am aware that this is
+                            ambiguous.’ The ambiguities lie not solely in the
+                            reasons he gives but also in the fact that, like
+                            nothingness itself, the volume does not exist except
+                            in his (and through his description of it, the
+                            reader’s) imagination. He succeeds in his wish ‘to
+                            convey something about what I have come to
+                            understand about being in the world as a creative
+                            person,’ making great metaphysical claims for his
+                            occupation. One section is called ‘The printery as
+                            cosmological haven,’ an ordered universe in which
+                            all phenomena in space and time coexist. For Loney,
+                            the book becomes a ‘hallowed’ object, ‘for’, to
+                            adapt the words of the fifteenth-century lyric, ‘in
+                            this room conteynyd was / heven and erthe in lytyl
+                            space.’ With his tone of considered conversation, he
+                            conveys what it might be like to be a printer and
+                            what it is like to be reader. Why have a title page
+                            and running titles, he asks: are we ‘likely to
+                            forget what book we are reading, as if I might
+                            mistake this excruciatingly erudite tome on particle
+                            physics for a romance novel and wonder why I don’t
+                            seem to be getting to any juicy bits.’ The printer
+                            and writer become readers too: the slow pace of
+                            typesetting certainly sharpens up one’s responses to
+                            the text. To those unattuned to Loney’s ‘gnomic
+                            utterances’ (see Roderick Cave’s reminiscences of
+                            him in Matrix 26), relax and treat yourselves to a
+                            series of paradoxes: the fiction of a book which
+                            does not exist, on a topic which does not exist,
+                            citing an author who does not exist (his Leonardo is
+                            also a construct of Loney’s readings and
+                            adaptations). Relish the fact that perfection is
+                            unattainable. The masterpiece which qualified the
+                            apprentice craftsman to join the guild turns out to
+                            be elusive as he approaches the next transition. Few
+                            books on printing invite you to consider that death
+                            is the bridge between being and nothingness. Even
+                            fewer suggest this so entertainingly. Gill’s God can
+                            look dangerously like Gill; Loney’s God may well
+                            turn out to have a greater sense of sparkle and fun.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            SHARP (Society for the History of Authorship,
+                            Reading &amp; Publishing) News
+                        </summary>
+                        <p>
+                            The printing of a masterpiece Marcia Karp (Boston
+                            University) SHARP News (Society for the History of
+                            Authorship, Reading &amp; Publishing), Vol. 18, No.
+                            2, Spring 2009 Alan Loney’s masterpiece is a 32-page
+                            book, printed on black paper, in an edition of 26,
+                            lettered A-Z. Not until the final twenty pages of
+                            his account of making it does he, who has served
+                            literature in so many offices - as writer, editor,
+                            printer, and publisher - write, ‘tomorrow I begin
+                            the new work, the printing of a book by hand’ (pg
+                            81). I give nothing away about this book - printed
+                            in the usual black ink on the usual white paper -
+                            which gives so much to its readers, in quoting the
+                            final sentence. This reminds us of an honorably
+                            shared service necessary in order for literature to
+                            thrive: ‘Today I sat down and, with all the time in
+                            the world on my hands, read the book, literally,
+                            from cover to cover’ (pg 111). You might imagine
+                            that the pages between tomorrow and today are filled
+                            with the technical matters of printing. You’d be
+                            right. They are, and yet, like the book that comes
+                            into existence as we watch, the short title of which
+                            is On Nothingness: From the Notebooks of Leonardo Da
+                            Vinci , this one, nominally about fine-book
+                            printing, has to do with everything and nothing, so
+                            that when Loney finally makes his dummy, shows us
+                            how he dampens the sheets - one way to prepare for
+                            the black ink of the images (upon the black page),
+                            another way for the gold ink of the text, and
+                            demonstrates, as he composes, letter by letter, with
+                            his newly-cast type, how much more patient he is
+                            than we’d likely be, we have already been
+                            well-prepared for those matters and many more. Loney
+                            has designed Leonardo’s book ‘from the inside out’
+                            (pg 40). His first decision was to use the black
+                            paper, but for what, he didn’t know. As he claims,
+                            and as he shows, by letting us in on his
+                            meditations, one thing leads to, or away from,
+                            another. The history of the book, that of printing,
+                            the physical stuff of printing, commerce and art,
+                            Leonardo’s notebooks, and Loney’s own poetry, as
+                            well as the trust he has in what he knows and what
+                            he will stumble over, all accompany him from that
+                            beautiful paper on the shelf of his printery to the
+                            masterpiece in his hands. This book, Loney on Loney,
+                            is charming. While reading it, you might yearn for
+                            the sumptuous texture and intriguing dark and light
+                            of that fine book, Leonardo on Nothingness . That
+                            yearning is Loney’s, too. Yours, however, will come
+                            too late, for none of the 26 copies remains
+                            available. Still, there is another yearning, common
+                            - though not all too - that a book fine in other
+                            ways can satisfy: the intimate populating of
+                            ourselves with the language of someone worth
+                            listening to. Such a combination is rare enough, but
+                            is on offer in Loney’s fine account of his yearning
+                            to be part of something great. This book, too, is
+                            nice enough in the hands; it is a paperback that
+                            doesn’t curl and which has pages of crisp type with
+                            generous margins. Look for Albrecht Dürer’s pressman
+                            on the cover, and then judge this book for yourself.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Cuneiform Review</summary>
+                        <p>
+                            Alan Loney's The printing of a masterpiece Kyle
+                            Schlesinger (poet, critic and printer)
+                            cuneiformpress.com [New York], 21 May 2008 I just
+                            read the last page of Alan Loney ’ s moving new
+                            memoir, The Printing of a Masterpiece , new from
+                            Black Pepper Press. For those of you familiar with
+                            Loney's elegant and contemplative writing, you will
+                            not be disappointed with his latest book - if you
+                            haven ’ t read him before, I urge you to partake in
+                            this feast for the mind and heart. Loney discusses,
+                            in glorious detail, a highly personal approach to
+                            producing Leonardo da Vinci ’ s book on Nothing. I
+                            say ‘produced ’ because this book was edited,
+                            transcribed, typeset, printed, illustrated,
+                            designed, distributed, etc. etc. by Loney alone, so
+                            to say ‘published ’ or ‘printed ’ would hardly
+                            describe the range of activities involved in the
+                            book ’ s conception and construction. Although few
+                            of us will ever see this book (there are only 26
+                            copies) The printing of a masterpiece documents
+                            aspects of the work in a sturdy, affordable form
+                            that will surely take its place among the ranks of
+                            Clifford Burke ’ s Printing Poetry and Harry Duncan
+                            ’ s Doors of Perception . Rich with philosophical
+                            nuances and and salt of the earth splendor, this
+                            insightful reflection on the work of Australia ’ s
+                            finest poet and typographer will enrich our
+                            understanding of his work and will no doubt inspire
+                            generations of letterpress enthusiasts and
+                            bibliophiles... Do pick up a copy from Black Pepper
+                            Press.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,238 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/there-a-lot-of-it-going-around.svg&quot;);
                         "
                     >
-                        Featured
+                        There'a a lot of it going around
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Leon Piterman</h3>
+                </div>
+                <img
+                    alt="Cover of There'a a lot of it going around"
+                    class="product-cover-mobile"
+                    src="/assets/books/there-a-lot-of-it-going-around/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of There'a a lot of it going around"
+                        class="product-cover"
+                        src="/assets/books/there-a-lot-of-it-going-around/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Scoring a hole in one is an achievement for any golfer
+                        at any stage in life. What made Bessie’s achievement
+                        more noteworthy was that she was 84 years old and being
+                        treated for cardiac failure and osteoarthritis of her
+                        hips and knees. Leon Piterman weaves many anecdotes
+                        about his patients into his critical account of
+                        contemporary General Practice. They are not mere case
+                        studies but show the compassion which is an element in
+                        the make-up of a good doctor as vital as medical
+                        training or diagnostic skill. “There’s a lot of it going
+                        around” has information, stories and advocacy. It is a
+                        book to enjoy and learn from. I have often heard it said
+                        that whoever is in front of you is your teacher. If
+                        reading these fascinating, touching and often humorous
+                        tales from general practice is anything to go by, Leon
+                        Piterman has accumulated more than a lifetime’s wisdom
+                        from his patients. Associate Professor Craig Hassed OAM
+                        I loved reading A GP’s Odyssey. All doctors and medical
+                        students will identify with this precious book from an
+                        inspirational GP. It will make you laugh, cry and
+                        celebrate the unique and valuable role of the generalist
+                        in comprehensive patient care. You will love it too.
+                        Clinical Professor Leanne Rowe AM Sometimes poignant,
+                        sometimes hilarious the stories in this GP’s odyssey are
+                        filled with what makes general practice unique—pumpkin
+                        scones, family tragedy, those determined to live and the
+                        stoic humble elderly coming to terms with their fate.
+                        Ever the great educator, Leon Piterman’s stories has
+                        learnings for us all. Professor Danielle Mazza
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/there-a-lot-of-it-going-around.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/there-a-lot-of-it-going-around/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038726</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>author.</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>170</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Professor Leon Piterman is Professor of General
+                            Practice at Monash University and Director of Monash
+                            China GP Training.
+                        </p>
+                        <a class="bold" href="/authors/leon-piterman.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>The Weekend Australian</summary>
+                        <p>
+                            Infectious and insightful Phillip Siggins reviews
+                            There is a lot of it going around — A GP’s Odyssey
+                            The Weekend Australian , August 10-11, 2019 If you
+                            are anxious about consulting your GP and looking for
+                            reassurance, read this book. It will allay your
+                            fears because it reveals how self-aware, alert and
+                            compassionate doctors must strive to be. Such
+                            competence only comes with courage, openness to
+                            experience and humility in the face of life’s
+                            complexities and mysteries. This “GP’s Odyssey” is a
+                            short book. It contains 25 stories drawn from Leon
+                            Piterman’s practice as a doctor in Melbourne.
+                            Medical practice affords a remarkable view of the
+                            human condition: think Chekhov and his short
+                            stories. Piterman estimates that in his 40-year
+                            career he has engaged in about 140,000
+                            consultations. The vibrant stories he has selected
+                            from that breadth of experience resonate with what
+                            his colleague John Murtagh describes as “the buzz of
+                            the human encounter”. In an introduction Piterman
+                            explains the stories are based on “real, but
+                            de-identified, clinical encounters... designed to
+                            capture aspects of patients’ stories, their
+                            emotional response and to explore my own parallel
+                            response as their treating doctor”. The target
+                            audience incudes his fellow GPs but I read the
+                            collection as a lay person and a patient and found
+                            it engaging, not least because the writing is vivid
+                            and accessible. There is also, of course, a certain
+                            voyeuristic enjoyment in reading about other
+                            patients’ lives. Each chapter in There’s a Lot of It
+                            Going Around presents a story followed by Piterman’s
+                            response. His instructive commentary puts each story
+                            into context, framing the clinical encounter with
+                            serious, humane insights into diagnostic challenges,
+                            case management and problem solving. The first
+                            story, “Muscle Soreness?”, sees Piterman confounded
+                            by the hidden reality of domestic violence. Maria
+                            and Guiseppe were longstanding patients, Maria
+                            attending the clinic more frequently than Guiseppe.
+                            Piterman is troubled because he cannot find a cause
+                            for her peculiar muscle aches and pains. “She looked
+                            well, generally, felt well and denied any emotional
+                            problems.” Puzzled, he refers her to a
+                            rheumatologist who quickly phones back with the
+                            diagnosis. For 20 years Maria had been physically
+                            abused by Guiseppe. The aches, pains and occasional
+                            bruising were the result of that violence.
+                            Piterman’s initial response is one of sadness,
+                            frustration and regret. Maria had been too
+                            embarrassed to disclose the situation because she
+                            thought Piterman would raise the matter with her
+                            husband She was unaware of patient confidentiality,
+                            yet she felt comfortable in telling the specialist.
+                            Piterman feels “hopelessly inadequate. Should I have
+                            asked the right question and even if I had been
+                            insightful enough to do so would I have received a
+                            truthful answer?”. This immediate reaction gives way
+                            to a calmer, more empathic response in which he
+                            seeks to understand Maria’s nondisclosure of abuse
+                            through considering her social, cultural and marital
+                            situation. There is something wistful in his
+                            concluding statement “I was left wondering how many
+                            other cases I had missed by not being attuned to the
+                            possibility of domestic violence. Current publicity
+                            has made me much more aware.” Awareness is central
+                            and Piterman is able to identify child abuse and
+                            elder abuse in some cases. In “A Caring
+                            Grandfather?”, he has to deal with a spectacularly
+                            indifferent child abuser, one who, having been
+                            caught, is “more concerned about the emotional
+                            consequences he might suffer than any damage he may
+                            have inflicted on his granddaughter or her family”.
+                            Shocked at the man’s lack of insight, guilt or
+                            remorse, Piterman is also frustrated by the abuser’s
+                            attempts to rationalise the situation to his
+                            advantage. After his trial the man presents himself
+                            for a check-up and he is a “shadow of his former
+                            self”. Yet, the shattered man is Piterman’s patient
+                            and in need of guidance and some help. Despite his
+                            personal feelings, Piterman must explore this
+                            patient’s medical and psychological needs. “When
+                            there is tension between personal feelings and
+                            professionalism or duty of care, the latter should
+                            prevail.” Other encounters are equally compelling. A
+                            wide range of conditions is explored, from dementia
+                            to the intractable cases that Piterman identifies as
+                            “heart-sink” patients. And the cast of patients is
+                            various and fascinating. This is both an important
+                            medical text and a book that anyone can enjoy and
+                            learn from. Phillip Siggins is a writer and critic.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

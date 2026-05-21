@@ -15,12 +15,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -64,18 +122,164 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/shelter-an-oral-history-of-marjorie-oke-house.svg&quot;);
                         "
                     >
-                        Featured
+                        Shelter, An Oral History of Marjorie Oke House
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Rhonda Wilson</h3>
+                </div>
+                <img
+                    alt="Cover of Shelter, An Oral History of Marjorie Oke House"
+                    class="product-cover-mobile"
+                    src="/assets/books/shelter-an-oral-history-of-marjorie-oke-house/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Shelter, An Oral History of Marjorie Oke House"
+                        class="product-cover"
+                        src="/assets/books/shelter-an-oral-history-of-marjorie-oke-house/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        What’s great about the Pokies are the pretty pictures
+                        and the music, The Black Rhino or Wild Africa and the
+                        Cougar one, they’ve got beautiful animals on them. Ann
+                        Rhonda Wilson introducing Shelter argues: ‘Oral history
+                        is important because it records the unofficial or subtle
+                        history of the world as distinct from received official
+                        history, which is largely the history of men’s power
+                        struggles and men’s wars. Whereas this subtle history
+                        tells the lives of the people. It is precious because it
+                        truly paints a picture of the times we live in: the
+                        traditions, the culture. It fosters respect for the way
+                        people speak: the rhythms, the colloquialisms, the turns
+                        of phrase that characterise a particular people at a
+                        particular time.’ So this group of pregnant young women
+                        would walk down the main road, down to the shops in
+                        Fairfield. We must have looked like quite a circus show,
+                        it was very embarrassing, very shaming. Janet Shelter,
+                        An Oral History of Marjorie Oke Rooming House for Women
+                        , tells in their own words those women’s stories which
+                        we would prefer kept hidden.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/shelter-an-oral-history-of-marjorie-oke-house.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/shelter-an-oral-history-of-marjorie-oke-house/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044527</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2007</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>304</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Rhonda Wilson has always loved listening to people
+                            tell stories. She has worked as an actor, director,
+                            teacher and oral historian.
+                        </p>
+                        <a class="bold" href="/authors/rhonda-wilson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Voiceprint Review</summary>
+                        <p>
+                            SHELTER Joyce Cribb Voiceprint (Newsletter of the
+                            NSW Branch of the Oral History Association of
+                            Australia), No. 39, October 2008 There is a big red
+                            brick house in Station St in Fairfield, Victoria. It
+                            used to be owned by MacPherson Robertson who made
+                            his fame and fortune in chocolates. It is strange
+                            that a house built on so much sweet sugar and cocoa
+                            would over time house so much sadness and pain. This
+                            oral history of MarjorieOke Rooming House for Women
+                            shines a light on individual lives but also shows us
+                            society's changing attitudes between the 1950s and
+                            the present, from a time when single women had their
+                            newborn babies taken away from them for adoption to
+                            a time when even the most marginalized women are
+                            offered support and shelter in a comfortable rooming
+                            house. This subtle social history tells the lives of
+                            the people. It is precious because it truly paints a
+                            picture of the times we live in: the traditions, the
+                            culture. It fosters respect for the way people
+                            speak: the rhythms, the colloquialisms,the turns of
+                            phrase that characterise a particular people at a
+                            particular time. An actor, theatre director and
+                            teacher, Rhonda Wilson’s earlier oral history, Good
+                            Talk, The Extraordinary Lives Of Ten Ordinary
+                            Australian Women , was nominated for the Victorian
+                            Premier’s Prize in Australian Studies.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

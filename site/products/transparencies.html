@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,319 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/transparencies.svg&quot;);
                         "
                     >
-                        Featured
+                        Transparencies
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Stephen Edgar</h3>
+                </div>
+                <img
+                    alt="Cover of Transparencies"
+                    class="product-cover-mobile"
+                    src="/assets/books/transparencies/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Transparencies"
+                        class="product-cover"
+                        src="/assets/books/transparencies/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        On slender toes Down by the water’s edge Two egrets
+                        effortlessly hold their pose In sedge. They hold their
+                        pose. This show, With all chinoiserie’s Appeal, must be
+                        illusory. And so It is. Stephen Edgar’s nimble-footed
+                        new collection Transparencies extends his exploration of
+                        the world’s visual aspect, both in itself and as a
+                        screen for the mind’s projections. He questions, in the
+                        words of Denis O’Donoghue, ‘the delusion by which we
+                        think that reality coincides at every point with its
+                        appearances’. The transparencies of the title are both
+                        the daylit images of the natural world, in all their
+                        hallucinatory strangeness and beauty, and the occasions
+                        they offer us to look through them, now into deep time,
+                        as in ‘Day Book’ and ‘The Mechanicals’, now into the
+                        parallel universe of the dead, as in ‘The Returns’, or
+                        into the world within this one, as in ‘There’. Edgar’s
+                        poems look out and reach in. They probe, even as they
+                        have an exquisite ear. As well as moving poems on his
+                        late mother, to whom the book is dedicated,
+                        Transparencies has many pleasures. One of them is
+                        waiting for the delayed rhyme on ‘David Attenborough’.
+                        These poems hold and play with the reader’s mind and
+                        imagination—telescopically and microscopically. David
+                        Gilbey, Mascara What Clive James said of a single Edgar
+                        poem holds true for poems in Transparencies : clear from
+                        moment to moment, and clear in the way that one moment
+                        leads to the next, it accumulates so much clarity that
+                        you need dark glasses to look at it. Poetry Notebook
+                        2006 - 2014
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/transparencies.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/transparencies/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038702</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2017</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>104</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years.
+                        </p>
+                        <a class="bold" href="/authors/stephen-edgar.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>The Australian</summary>
+                        <p>
+                            Stanzas draw you to the light SIMON WEST Reviews:
+                            Stephen Edgar's Transparencies The Australian ,
+                            January 6, 2018 If you were to imagine poetry in the
+                            20th century as a re-enactment of the Trojan war
+                            (fought in the name of what? Beauty? Truth?
+                            Self-expression? Mimesis?), then the fiercest and
+                            most drawn-out battle would be that waged between
+                            free and formal verse. Free verse won the day and
+                            the city, but Stephen Edgar is one of a few poets
+                            who, like Aeneas, stole from Troy in the hope of
+                            founding a new empire. Since the mid-1980s he has
+                            been receiving acclaim for poetry written in what
+                            loosely may be called traditional rhyme and metre.
+                            Why go to all that trouble, and what’s wrong with
+                            freedom? For Dante, form mimicked the metaphysical
+                            order of the universe. Poets today are shy of
+                            metaphysics, but the desire to keep chaos at bay and
+                            order our experiences remains constant for those
+                            who, like Wordsworth, have ‘‘felt the weight of too
+                            much liberty’’. Gwen Harwood said she wrote in
+                            strict forms not because she was hostile to free
+                            verse but because it was so much harder to strike
+                            the creative tension that gives the poem its energy
+                            without the constraints of rhyme and metre. In
+                            Transparencies (Black Pepper, 90pp, $24) Edgar has
+                            mastered a candid conversational style, transparent
+                            even. There are few rhetorical flourishes, emotional
+                            fireworks or confessionalist dramas, just a
+                            thoughtful and articulate individual reflecting on
+                            world and self. The poems tend to a page or so in
+                            length, structured in eight or nine-line stanzas
+                            with intricate rhyme schemes that again, like the
+                            transparency, are there without drawing attention to
+                            themselves. My own preference would be for more
+                            frequent inverted feet, or the occasional dactylic
+                            ripple disrupting the march of iambs. There is no
+                            denying, however, that form shapes rather than
+                            hinders the eloquence of Edgar’s voice. Stephen
+                            Edgar and his book, Transparencies One sense of
+                            transparency is allowing light to shine through.
+                            Light is a major protagonist of these poems, as
+                            active as the artist in creating vision, “the light
+                            performs its spectral repertoire / from dawn all day
+                            to evening.” It can be both the means of vision and
+                            a disruption: “Again, a sudden shaft, / it stabs
+                            right through the picture of the day.” Similarly,
+                            perspective can be set a whirl by jumping from the
+                            everyday to interstellar space. “In which the hours
+                            are aeons and the earth / A molten palette fading to
+                            a last / Expanse of starlit vacancy as deep / And
+                            see-through as the night.” These poems chart the way
+                            “the mind / Coils in the gyre of its own
+                            consciousness”, but also how that mind finds
+                            stability through art, so that the ever present
+                            light shines through their stanzas like sunlight
+                            streaming into a room.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>A USTRALIAN B OOK R EVIEW</summary>
+                        <p>
+                            Undulations Geoff Page reviews 'Transparencies' by
+                            Stephen Edgar Australian Book Review , August 2017
+                            After Stephen Edgar’s nine collections of poetry,
+                            the last seven of which are distinguished by an
+                            extraordinary control over metre and rhyme, a
+                            reviewer feels bound to ask how this new book,
+                            Transparencies, differs from its predecessors? There
+                            are at least two answers: the recurrent spirit of
+                            the poet’s mother, Marion Isabel Edgar (1922-2015),
+                            to whom the book is dedicated, and the poet’s
+                            elegant conviction that the universe lacks any
+                            meaning beyond that which we arbitrarily impose on
+                            it. A third concern - not entirely new - is the
+                            unreliability of our senses, particularly our
+                            vision, and how our perception of the world tends to
+                            be layered rather than completed in a single ‘take’.
+                            The well-designed cover of Trans-parencies features
+                            a painting by Judith Martinez called ‘Rumours of
+                            Light’. A woman in a wind-flounced dress stares
+                            across what seems to be an estuary. Littoral views
+                            like this are recurrent in Edgar’s verse, and a
+                            smaller monochromatic version of the painting is
+                            used to separate the book’s three sections.
+                            ‘Jupiter’, the first poem of the first section, is
+                            an introduction to the book’s twin preoccupations
+                            (and to Edgar’s poetic techniques for readers who
+                            may be unfamiliar with them). The first two lines
+                            are vintage Edgar: ‘The harbour’s idle undulations
+                            slew / And swill their slicks of glaze to make ...’
+                            A business-man on a ferry is absorbed with
+                            calculations and ‘risk too intricate for even
+                            Lloyd’s / To cover’. Meanwhile, the poet and his
+                            reader merely ‘watch the slurs / Of gloss and
+                            shifting craquelure’, before both are reminded that
+                            ‘They say / It’s Jupiter’s / Vast mass that draws
+                            off, and may hurl our way, / A terminating hail of
+                            asteroids.’ That last sentence certainly puts things
+                            into perspective, not only for the businessman with
+                            his complex calculations, but also for the rest of
+                            us. The sardonic rhyme of ‘Lloyds’ and ‘asteroids’
+                            on either end of the stanza is also a typical Edgar
+                            touch - as is the use of craquelure’, a word many
+                            readers will need to look up, only to discover that,
+                            though metaphorical, the term is used accurately. It
+                            is characteristic too (but not universally the case)
+                            that ‘Jupiter’ is written in a complex stanzaic form
+                            of Edgar’s own making, with line lengths varying
+                            from dimeter through to pentameter. The device
+                            (along with a rhyme scheme to match) creates a sense
+                            of complex inevitability even while it also risks
+                            being a distraction. It is notable, however, that
+                            Edgar’s best poems always end in a powerful image
+                            which tends to erase memories of difficulties
+                            experienced along the way and thus leaves us with an
+                            awareness of the poem as a resonant whole. ‘A
+                            terminating hail of asteroids’ is certainly an
+                            arresting last line. Another poem of comparable
+                            impact is ‘Forest Doxology’. Here, Edgar takes
+                            advantage of zoological research by Jane Goodall and
+                            programs by film-makers such as David Attenborough
+                            to present a disturbing parallel between chimpanzees
+                            and human apes. Like us, the chimpanzees murderously
+                            hunt in packs; like us, they can stop to admire a
+                            waterfall without quite knowing why. The paradox is
+                            that chimpanzees con-trive to do both ‘Without the
+                            power of speech’. At the poem’s end, after the
+                            waterfall viewing, Edgar notes (with a wry nod to
+                            Wittgenstein) how: ‘At length they make their way, /
+                            Holding a picture memory replays, / Whereof they
+                            cannot speak.’ Among the most satisfying poems in
+                            Transparencies are those which evoke the poet’s
+                            mother’s final months and days. Here, in poems such
+                            as ‘Mother’s Day’, ‘On the Beach’, ‘The Sense of an
+                            Ending’, and ‘The Art of the Fugue’, we encounter
+                            the usual technical expertise, but, on these
+                            occasions, see it harnessed to more direct emotions.
+                            Edgar re-members, for instance, in ‘The Art of the
+                            Fugue’, how ‘Nurses, as ever, came and went. / Small
+                            groups of relatives stood round / Their proper beds
+                            and by a mute consent / Were mutually and
+                            thoughtfully ignored. ’It is these poems (and a
+                            number of comparable ones) that persist individually
+                            in the memory, like the best poems of, say, Philip
+                            Larkin or Robert Lowell, rather than being just a
+                            part of a more general impression of extreme
+                            accomplishment. In Transparencies, as in other
+                            recent collections by Edgar, there are also a few
+                            poems which don’t rely on a strict rhyme scheme. It
+                            is interesting to ponder their relative
+                            effectiveness. Is Edgar letting himself off too
+                            easily here and ‘playing tennis without a net’, as
+                            Robert Frost argued free verse does? The truth is
+                            that Edgar’s verse is never ‘free’. The unrhymed
+                            poems still have strict stanza structures, adhere to
+                            an iambic metre and feature the same metaphorical
+                            density as the others. ‘The Returns’, for instance,
+                            is in tercets with a trimeter in the first line and
+                            pentameters in the second and third and with
+                            virtually no rhyme. It is about citizens returning
+                            to a city after being forced to flee by war. ‘The
+                            city is still there, / Of course - or rather,
+                            another city now, / Which occupies that name as it
+                            does the ground, // And people in whose mouths / A
+                            speech still recogniz-ably the same / Sounds not
+                            quite right, like a fluent foreigner.’ In the few
+                            poems where this relative openness appears, the
+                            reader senses, with gratitude perhaps, that the poet
+                            has not made a prison for himself but is free to
+                            move into, and out of, strict form as suits his
+                            needs. Transparencies is well up to the standard
+                            that Edgar has, in the past twenty years or so,
+                            increasingly set for himself. ■ Geoff Page has
+                            published twenty-one collections of poetry.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

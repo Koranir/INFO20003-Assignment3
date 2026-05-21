@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,416 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-complete-apparition.svg&quot;);
                         "
                     >
-                        Featured
+                        The Complete Apparition
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">K.F. Pearson</h3>
+                </div>
+                <img
+                    alt="Cover of The Complete Apparition"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-complete-apparition/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Complete Apparition"
+                        class="product-cover"
+                        src="/assets/books/the-complete-apparition/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        B ook Description Having no ego, nor an id, he doesn’t
+                        seem all that he should. His style is of a studied
+                        neglect of which the decisive cannot speak. He could be
+                        cosy, he could be cute if he weren’t always in dispute.
+                        Not boastful nor a sexy item the market’s long abandoned
+                        him. Left on the doorstep as a gift his wrapping has
+                        been tampered with. The Complete Apparition is an
+                        existential comedy. The Apparition is only there when
+                        perceived. Many who may evoke him, mostly fail. When he
+                        arrives he has a presence. Or he is there unannounced—in
+                        boudoir, viaduct, United Nations or outback, backyard or
+                        shopping strip, by mantel-piece, on dancefloor, in the
+                        Islands, on flatbed truck—or amongst plants or
+                        creatures. Not being there for long, there’s a tear in
+                        his eye, a catch in his breath for what will be gone,
+                        almost as quickly as him. His fractured story embraces
+                        both of Tolstoy’s ‘ two plots: a person leaves home; a
+                        stranger comes to town.’ No wonder he sings hymn,
+                        anthem, rap, popular song, nursery rhyme, bush ballad or
+                        an odd sonnet to suggest he is here. So let him contest
+                        with the fear, our fear, of fading.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-complete-apparition.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-complete-apparition/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038764</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>304</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Book Review</summary>
+                        <p>
+                            REVIEW K.F. Pearson: The Complete Apparition Posted
+                            on 1 December 2021 by Martin Duwell Melbourne: Black
+                            Pepper, 2021, 285pp. Somehow it’s hard not to warm
+                            to a book whose acknowledgements page tells us that
+                            many of the poems about “the apparition” – the
+                            character or state that the whole lengthy work is
+                            devoted to – “have been rejected by prominent
+                            magazines and anthologies. I would like to thank
+                            them for authenticating the nature of his character.
+                            The few that did take poems I do not embarrass by
+                            naming them”. And you can see why it would be
+                            difficult to get these poems into journals. Most of
+                            them are attempts to define something indefinable
+                            and their strategy is to continuously look at the
+                            subject from different angles, different
+                            perspectives and different genres: not something
+                            that produces stand-alone works. On top of this the
+                            poems are often very rough, sometimes even doggerel
+                            though – I’ll look at this later on – this seems to
+                            be a deliberate ploy on the author’s part, perhaps
+                            to avoid the unwanted elegances of symbolism.
+                            Pearson’s obsession with “the apparition” can be
+                            traced, at least for an outsider such as myself, to
+                            The Apparition’s Daybook , a slim volume of 1995,
+                            and a later volume, The Apparition at Large , from
+                            2006. Only one of the poems from these two books is
+                            included in The Complete Apparition (I think) so
+                            this isn’t going to be one of those rolling
+                            accretive projects like Pound’s Cantos or Berryman’s
+                            Dream Songs . In fact it couldn’t be, since the
+                            poems of the earlier books are first person pieces
+                            from the point of view of the central character
+                            himself. And the result is quite different to – and,
+                            in a way, more restricted than – the outsider’s
+                            attempts at definition that make up The Complete
+                            Apparition . What can be said about the Apparition
+                            himself? Although there is a certain comical paradox
+                            in a reader attempting to define in prose what more
+                            than four hundred pages of poetry doesn’t really do,
+                            it’s still a question that one has to ask and a
+                            reading strategy one has to adopt. Firstly it can be
+                            said that he has sometimes a physical manifestation
+                            and sometimes a non-physical one. As a tangible
+                            character he can appear in a number of different
+                            guises and in a number of different roles. The most
+                            important is as a man who exists in the world,
+                            regularly taking walks and watching the ducks on the
+                            lake or the Kookaburra on the Hills Hoist, but at
+                            the same time being invisible to everybody else, not
+                            because he is technically invisible but because
+                            people don’t see him or, at best, see him as
+                            something that “disturbed them at the edge of
+                            vision”. To those who are receptive he will pay a
+                            visit, and many of the best poems are about these
+                            visitations. The opening of “Johnny-come-lately”,
+                            for example: The arriviste has arrived on your
+                            doorstep, late at night. Mere pressure of the
+                            fingers opens all dark hallways of your house.
+                            There’s an almost-pad of footsteps like muted
+                            shivers from the past as they approach down corridor
+                            though you’re asleep and still sleep on a moment
+                            before the restless air requires you shift, then
+                            startle awake to something short of recognition but
+                            with a certainty of presence you could not deny, nor
+                            have the will to object to in the instant of your
+                            stirring. It’s hard to say what’s come upon you by
+                            an invasion (or your calling forth) of one beyond
+                            the realm of easy comfort . . . At other times he
+                            becomes identified with the downtrodden, appearing
+                            quite often as a swaggie “on the wallaby”: With
+                            dilly bag and walking staff, he strolls his lonely
+                            way, to meet the future or lose the past . . . In
+                            these concrete manifestations he has a specific set
+                            of interactions with those who are in the right
+                            state of mind to perceive and accept him. He isn’t a
+                            simple embodiment of saintly visitation, poetic
+                            inspiration, intercession or annunciation; in fact
+                            he needs others so that he can have a sense of his
+                            own existence. A late poem in the book says “do not
+                            disremember / yourself who are his author” and an
+                            earlier one, describing him as being in subjection
+                            to “a mistress or master” shows him wandering in
+                            ‘sleep mode’ awaiting the summons that will activate
+                            him: . . . . . He can doze, despair and await a
+                            summons. He does not himself possess a lure. His
+                            time is all the time in other’s hands. I you ask
+                            him, he could be your creature. Applicants are
+                            warned, although without one, he is, once yours, an
+                            imposing figure. He has the power of insinuation.
+                            They speak for him but he’s the more secure.
+                            Although we are in the world of paradox here – an
+                            imposing figure who doesn’t have a figure – this
+                            component of the poetry has a solidity that is
+                            reasonably easy to grasp. Indeed it invites
+                            allegorical readings. He could represent that
+                            sensation of dwindling into invisibility and
+                            irrelevance that can come to most of us late in
+                            life. Conversely he could represent a visitation
+                            which shakes us out of the conventional tracks on
+                            which we run our lives so that we realise that while
+                            we thought of ourselves as free, in actuality we
+                            were entirely constrained by “mind-forged manacles”
+                            that we couldn’t even see. We could read him as
+                            interceding – certainly this is the image that the
+                            book’s last poem leaves us with. We could read him
+                            as an Ariel figure, an embodiment of inspiration.
+                            And we could also read him as an erotic figure,
+                            specializing in night-time visitations. This latter
+                            view gets some support from reading the earlier
+                            book, The Apparition’s Daybook , which is more like
+                            a sequence and could be read as a modern version of
+                            the renaissance sequences detailing a love affair
+                            and focussing on the lover’s sense of being
+                            insubstantial when apart from the loved-one. This is
+                            certainly true of “His State”: My condition makes me
+                            suffer a state I’d not prefer, to be dependent on a
+                            certain gazer’s whim. To know when out of sight I am
+                            in no-one’s thought brings me to the brink. I am,
+                            but you don’t think. But these reasonably
+                            substantial portraits of the Apparition – as
+                            visitant, as tramp etc – are only part of the
+                            complicated fabric of this book. There are very good
+                            poems defining him negatively, especially those in
+                            which various social structures – religions, the
+                            law, military intelligence – try to cope with him
+                            and, of course, fail completely. A group of three
+                            poems early on summarily dispatches the legal world,
+                            the police world and the mercantile world, and the
+                            first of these, using the equivocal language of
+                            legal process, double negatives and all – “The
+                            unresolved not impossible non sequitur / his is,
+                            your Honour, is not incapable of repair” – is not
+                            only a lot of fun but also an example of the way
+                            language can approach the indescribable as a mesh of
+                            contradictions. He is also a creature who sometimes
+                            leans towards the messianic, “despised among men”, a
+                            “figure on the hill” – the Beatles’ fool as well as
+                            the preacher of the sermon on the mount – an avoider
+                            of activism as much as religious structures: . . . .
+                            . No mass hysteria ever could persuade him on St
+                            Peter’s balcony or in Tiananmen Square but roads or
+                            floorboards or a verge of grass that are the ways by
+                            which he finds his way can summon him like an
+                            hypothesis . . . There are also a host of theatrical
+                            references which set a frame of disguise,
+                            impersonation, exits and entrances for him – in a
+                            poem from The Apparition at Large he describes
+                            himself as “a tragedian in civilian garb”. In
+                            “Debut” he is an outsider “lured inside by a cabaret
+                            tout” who is forced to perform: the famous
+                            long-handled shepherd’s crook doesn’t drag him off
+                            the stage but onto it. And as “Any Proscenium in a
+                            Storm” says, . . . . . Less a charade, more
+                            harlequin with colour leached from clothes his hold,
+                            once curtains part, is in Republics of Suppose.
+                            Finally, there are also two memorable descriptions
+                            of him as a sufferer of “reverse Alzheimer’s” – “He
+                            doesn’t forget but is forgotten” – and as a “reverse
+                            pilgrim”, one who goes: . . . . . not to the shrine
+                            with relic or lock of a martyred saint’s hair her
+                            mother cut off when she was a babe, or on a beaten
+                            track to sacred rock or tree, but rather he’s the
+                            one who wanders to be found in drawing room, or
+                            byway, or hidden in a crowd. . . These are all
+                            concrete manifestations – even though the approach
+                            is often paradoxical – and as I’ve said, they aren’t
+                            the entire picture. Sometimes he is completely
+                            insubstantial as in “Selfie” where it’s said,
+                            “Spotlit at any camera angle / there is a sheen but
+                            nothing stable” but also in those poems which relate
+                            him to gaps. In “The Resting Place” he lives in “the
+                            discrepancy between the time / on wristwatch and the
+                            mantle clock” and in “The Finer Things” he is a
+                            “devotee of interstices” who “has spoken well of
+                            filigree”. This idea of a creature of the spaces
+                            between things is probably best expressed in “A
+                            German Poem Read in his Youth” from The Apparition’s
+                            Daybook , one of a number of poems that refer to
+                            Morgenstern’s comic poem about an architect who,
+                            much to the discomfiture of the local authorities,
+                            steals the spaces between the palings of a fence and
+                            makes an edifice from them. The book’s structure
+                            whereby seemingly endless attempts at description
+                            and analysis are brought to bear on what is
+                            conceived as an indescribable and unanalysable
+                            phenomenon seems a satisfying one to me. Each fits
+                            well with what poetry does because each of the poems
+                            is, in itself, a complete entity but is also only
+                            ever one possible approach to life. And the book
+                            uses this well by allowing the approaches to be in
+                            completely different styles and genres. There is a
+                            good deal of warm-hearted parody going on here, for
+                            a start, and you can hear snippets of Robert Frost,
+                            Kipling, Henley, Burns and Stevens – the latter’s
+                            “let be be finale of seem”, if reversed, might make
+                            a good epigraph for the project. And Les Murray’s
+                            “An Absolutely Ordinary Rainbow” – a poem dealing
+                            with an individual as anonymous and ungraspable as
+                            the Apparition – makes an appearance in “In Praise
+                            of Cowards” which begins, “Ah! the whisper sighs
+                            around the Showground. / It is heard in Fitzroy, and
+                            on Fitzroy Street”. But the apparition also appears
+                            in different settings and genres. There are a couple
+                            of Gordon- or Paterson-like gestures at the bush
+                            ballad including “Before Back of Beyond” – a nice
+                            paradoxical title – which begins in full bush ballad
+                            galloping style – “Way out where the track’s
+                            exhausted / far beyond the dingo’s cry” – before
+                            reverting to more conventional rhythms. And
+                            “Recitative” sounds like those twee late nineteenth
+                            century poems about childhoods remembered and lost:
+                            There’s a sigh that hovers near the memory of a
+                            passenger seat and an aura gone by that’s why
+                            there’s a yearning to be just returning along the
+                            track to Make Believe. . . So much for the variety
+                            of genres. There is also quite a variety of styles.
+                            Sometimes the syntactic style is very awkward –
+                            these are poems that share with others an
+                            uncomfortableness with the way English deploys a
+                            compulsory definite article “He wields stick with
+                            ferule”, “or who has stilled brass tongue of bell” –
+                            but I think the awkwardness is a kind of deliberate
+                            rawness: it’s not there in the earlier Apparition
+                            books. This is a poetry, in other words, that wants
+                            to sound more like Blake than Tennyson. And a number
+                            of poems are written in a rhymed two-line stanza
+                            style that I find very attractive, again they nod
+                            towards Blake and also to the ghazal form. Take, for
+                            example, one of the last poems, “Pebbles”: Who reads
+                            a chapter before sleep has plot lines her dream may
+                            keep. Who hesitates is taking time to weigh the
+                            waits, to find the rhyme. Who spends ten minutes
+                            with an orchid knows the earth’s good habitat. Who
+                            plucks a pebble from a pool feels water close once
+                            hand is pulled. One who observes her walking feet
+                            looks up to see who she will meet. A kookaburra on a
+                            rotary hoist lifts breakfast to a higher place. Who
+                            studies formation of a leaf, green or skeletal,
+                            finds relief. It probably belongs to a group of
+                            poems whose relationship to the apparition is a bit
+                            tenuous – “Corona Wreath”, for example, is a
+                            straightforward Covid poem in which the apparition
+                            doesn’t appear either as a figure or a set of moral
+                            imperatives – but it has that nice, raw Blakean
+                            quality. What to make of this strange and intriguing
+                            book, when all is said and done? A central
+                            hermeneutic problem is that an “outside” reader such
+                            as myself can’t really define the poet’s stake in
+                            the whole project which, since The Apparition’s
+                            Daybook was published in 1995, has now occupied its
+                            author for more than a quarter of a century. There
+                            are obviously autobiographical elements – the
+                            kookaburra on the Hills Hoist and the daphne that
+                            lines the lane recur so often that they lead a
+                            reader to think that this must be happening at the
+                            author’s home. One of the most important poems, if
+                            we are looking at this question, is “His Letter of
+                            Support” from the second book, where he has a kind
+                            of alter ego relationship with the poet, describing
+                            him as “my amanuensis”. The apparition can also be
+                            allegorised as both inspiration (something that
+                            visits the poet) and poetry (and its authors)
+                            itself, a force able to play a non-activist but
+                            important part in public affairs and to celebrate
+                            the generally uncelebrated. But these two readings
+                            are mutually exclusive: the apparition must be
+                            either outside the poet or a part of the poet’s life
+                            and personality; that is, on the inside. Pearson’s
+                            stake in all this can probably only be described by
+                            the author himself, and although that is a situation
+                            that applies to almost all poets, it’s especially
+                            complex here in this extensive and multi-focussed
+                            collection. This entry was posted in Reviews and
+                            tagged K.F. Pearson , The Apparition at Large , The
+                            Apparition's Daybook , The Complete Apparition by
+                            Martin Duwell . Bookmark the permalink . Back to top
+                            Start of StatCounter Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

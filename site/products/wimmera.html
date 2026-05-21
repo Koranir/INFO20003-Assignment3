@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,309 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/wimmera.svg&quot;);
                         "
                     >
-                        Featured
+                        Wimmera
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Homer Rieth</h3>
+                </div>
+                <img
+                    alt="Cover of Wimmera"
+                    class="product-cover-mobile"
+                    src="/assets/books/wimmera/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Wimmera"
+                        class="product-cover"
+                        src="/assets/books/wimmera/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        B ook Description it leaves its mark he says like a
+                        mirage on a melting road the one you never took the one
+                        you always took the one you said you’d never take again
+                        only a stone’s throw from bliss a spit’s yard from the
+                        fountainhead of a recurring dream Replacing the battles
+                        of heroes and gods with the struggle of mortal humans
+                        with time and space, Homer Rieth in Wimmera re-invents
+                        the epic. All the classical elements are there but they
+                        are now democratic, and ours. The narrator’s anonymous
+                        informant knows a thing or two. Objective and personal,
+                        learned and demotic, local and vast, Wimmera is the
+                        history of a region and seedbed of a vision where ‘the
+                        bunyip indeed lays down with the manticore.’ There is
+                        nothing like it anywhere. It’s an impressive
+                        achievement, and a remarkable piece of work. Paul Kane
+                        Vassar College Cover photograph: David Brooke
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 54.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/wimmera.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/wimmera/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044619</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>
+                                        in books and journals in the UK, USA,
+                                        Canada, New Zealand and
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>374</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Rieth was born in Stuttgart in 1947, of German and
+                            Georgian parents. He came to Australia in 1952. He
+                            was educated at Padua and Assumption Colleges and,
+                            following a short period in the Jesuit novitiate at
+                            Loyola, Watsonia, at the University of Melbourne.
+                        </p>
+                        <a class="bold" href="/authors/homer-rieth.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>The Weekend Australian</summary>
+                        <p>
+                            Inverse Perspectives on the Maturing Voice
+                            [reviewing Wimmera and Fuel by Andrew Sant] Geoffrey
+                            Lehmann The Weekend Australian 7/11/ 2009 Why do
+                            some poets, like some people, do their best work
+                            early, and others continue improving and peak in
+                            their late 40s or 50s? While editing an anthology of
+                            Australian poetry, this has been on my mind. Kenneth
+                            Slessor, Henry Lawson, Christopher Brennan and Banjo
+                            Paterson had virtually exhausted themselves as poets
+                            by the time they reached 40. But Slessor’s friend,
+                            R.D. FitzGerald, matured as a poet only after
+                            reaching that age. Goethe and Yeats continued
+                            developing until late. For male poets, at least, it
+                            may be necessary to have an argument with oneself if
+                            one is to continue developing. Goethe rejected the
+                            romantic storm and stress of his youth, and embraced
+                            classicism and balance. Yeats rejected the lushness
+                            of his early poetry for a language that was stripped
+                            back and closer to everyday speech, the famous ‘cold
+                            eye’ of his epitaph. With female poets, a decision
+                            to have an argument with oneself may not be needed.
+                            Biology may force the issue. When reading the poetry
+                            of Elizabeth Riddell, one of our good middle-ranking
+                            poets, I was struck by how free her poetry became
+                            once she reached her late 40s, as though a burden
+                            had been lifted from her. Jennifer Maiden, one of
+                            our best contemporary poets, has even written a poem
+                            about it, ‘Menopause as a Bee Freed from a Fairy
+                            Floss Machine’. The title of this stunningly good
+                            poem says it all. Both books, Fuel and Wimmera , are
+                            the work of mature poets. Andrew Sant was born in
+                            London in 1950 and came to Australia with his
+                            parents in 1962. Homer Rieth was born in Germany of
+                            German and Georgian parents in 1947 and came to
+                            Australia in 1952. Both poets are published by Black
+                            Pepper, founded by the feisty Kevin Pearson, himself
+                            a noted poet. Black Pepper is one of the livelier
+                            new houses that has sprung up after the large
+                            publishers decided to exit poetry publishing. That’s
+                            about where the similarities between Sant and Rieth
+                            stop. Sant has a long publishing history, going back
+                            to 1980; Fuel is his 11th published volume of
+                            poetry. He writes short, mainly domestic poems, and
+                            is able to tease significance and a sense of
+                            profundity out of everyday things with wit and
+                            ingenuity. Although a few years older than Sant,
+                            Rieth has a short publishing history, starting in
+                            2001, and Wimmera is just his second published
+                            volume of poetry. In contrast to Sant’s short poems,
+                            Wimmera is a single epic of more than 300 pages, a
+                            leviathan of a poem, cosmic in its ambition and
+                            symphonic in its approach. In 1983, as editors of an
+                            anthology, Robert Gray and I wrote: ‘Sant’s poetry
+                            seems very English in its reticence and use of the
+                            middle tone of voice. He always deals directly with
+                            experience... His strength is his interest in and
+                            close observation of other people, combined with a
+                            classical openness of style and freedom from
+                            affectation.’ These comments about Sant in 1983 are
+                            still true, except that his syntax, which was always
+                            a bit complex, has become more complex and
+                            circuitous, and his poetry is drier in tone; perhaps
+                            too dry and sinewy at times. He has continued to
+                            grow and develop as a poet because his poetry
+                            thrives on wit and intelligence rather than on
+                            hormones. Take ‘Rock Music’, for example, a poem not
+                            about a type of popular music. It’s about ‘the
+                            frequencies of stones’, the music of geology. Sant
+                            is a poet of precision and imagination. In ‘Given’,
+                            after the inaction of listening to the news and
+                            hours at a computer, he starts digging in the
+                            garden: Gigantic, the fresh spadefuls of planet;
+                            wrecked worms like swimmers fighting incredible
+                            turbulence. His adoption of the worm’s viewpoint and
+                            his choice of the word planet are quite remarkable.
+                            Perhaps the pick of the poems in this book is his
+                            elegy for a fellow poet, Margaret Scott. ‘The Fires’
+                            also may be a poem of farewell to Tasmania, the
+                            island where he has spent much of his life. Flying
+                            out of Tasmania over a bushfire, he thinks of
+                            Margaret Scott, two of whose houses were incinerated
+                            in fires, and who always said to him, in a motherly
+                            way between cigarettes, ‘Now tell me what you’ve
+                            been doing/and where you’ve been.’ He also remembers
+                            how Margaret used to keep herself awake while
+                            driving at night by repeatedly shouting, ‘Elephants!
+                            Elephants!’ Rieth’s first volume of poetry, The
+                            Dining Car Scene , published when he was in his 50s,
+                            was an elusive book. The title poem was a virtuoso
+                            piece describing with great precision a scene from
+                            Alfred Hitchcock’s North by Northwest . But it was
+                            hard to make out what he stood for. Rieth has been a
+                            teacher of Greek and Roman literature and the one
+                            thing that was clear was his love of language.
+                            Wimmera is an extraordinary poem, comprising 12
+                            books, each of two parts. Rieth moved to Minyip in
+                            the Wimmera district of Victoria in 1999. At a basic
+                            level the poem reflects Rieth’s feelings for a
+                            landscape and people he has come to love. Each book,
+                            we are told in an introductory note by Justin
+                            Clemens, ‘moves through the experience of a
+                            particular place: discoveries, establishments,
+                            characters, events, the contingencies and violence
+                            of settlement and the unexpected profusions of the
+                            natural environment.’ The poem reaches its climax in
+                            part one of Book 12, where Rieth moves from the
+                            profusions of drought and flood of the Wimmera and
+                            addresses the ‘countless curvatures of space/an
+                            atoll of time in an ocean of infinitude/the starry
+                            night is no more than time/only space only/the
+                            inaudible overheard’. The long, sinuous sentences of
+                            the poem have passages of bravura language. This is
+                            how Rieth summarises the life and death of poet Adam
+                            Lindsay Gordon: ‘trooper Gordon... between poignant
+                            poems/... had seen how over the jumps a horse
+                            instinctively picks up a/certain tempo/by the time
+                            it covers the distance the tempo has become a
+                            heartbeat/tbe grace of its motion almost
+                            supernatural/and yet he shot himself as if the shot
+                            ringing out might make for/the sound of a caesura’.
+                            This technically brilliant passage reveals one of
+                            the weaknesses of Wimmera . Gordon’s tragic suicide
+                            is treated almost flippantly. The consistently
+                            heroic tone of the poem, although it knits it
+                            together musically, sometimes places too great a
+                            distance between the reader and details that might
+                            have engaged our sympathy. My second grouch is the
+                            deliberate use of cliche, such as ‘drunk as skunks’,
+                            ‘back of beyond’. I realise that the father of
+                            European poetry, Homer, also used cliches such as
+                            ‘wine-dark sea’ but that does not justify their use
+                            here. Notwithstanding these faults, Wimmera is quite
+                            extraordinary: it reads like a young man’s poem,
+                            with its ebullience, panache, occasional passages of
+                            juddering bathos, and its hormonal music.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland review Wimmera</summary>
+                        <p>
+                            Wimmera Pamela Brown Overland , Issue 199, Winter
+                            2010 ‘Wimmera’ is a classical epic poem about the
+                            Victorian district in which Homer Rieth lives. Here,
+                            though, the poet substitutes human beings for gods
+                            and goddesses. The scope and ambition in this grand
+                            poem is laudable. Interestingly, Rieth is a long-ago
+                            migrant to Australia, and there is a distinctly
+                            European philosophical subtext here, as is to be
+                            expected in an epic - ‘so what is it then about any
+                            place/that fills and empties alike/the world with
+                            its life’. The poem does, however, have its
+                            histori­cal heroics that should please those who
+                            enjoy Australian idiosyncrasies - ‘I can still see
+                            he says Jim Hardingham’s bullockies/the bales
+                            stacked four storeys high/on top of them a bunch of
+                            shearers with the look in their eyes/of a job well
+                            done’. There are also many passages of descrip­tive,
+                            uncontrived pastoral poetry that flow easily and
+                            with a certain beauty . Although divided into twelve
+                            sections, at 360 pages the poem is a bit relentless,
+                            having little variation in tone throughout - this in
+                            spite of Rieth’s rich imaginings and admirable
+                            tenacity. It was composed as part of his Doctorate
+                            of Creative Arts, and that probably explains its
+                            length, which might be a problem in an age of
+                            shrinking attention spans. [Note: in fact, two
+                            sections of Wimmera were written after the author
+                            completed his Doctorate.] No matter how judicious
+                            and broad the reportage, range of form and topic,
+                            antitheses of allusion and the literal, I found that
+                            I began to flip through sections and felt that it
+                            might be easier to come to know the Wimmera by
+                            reading an actual history of the district. (I hear
+                            lovers of epic poetry howling!)
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

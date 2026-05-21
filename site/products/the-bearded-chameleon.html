@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,1159 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-bearded-chameleon.svg&quot;);
                         "
                     >
-                        Featured
+                        The Bearded Chameleon
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Chris Mooney-Singh</h3>
+                </div>
+                <img
+                    alt="Cover of The Bearded Chameleon"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-bearded-chameleon/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Bearded Chameleon"
+                        class="product-cover"
+                        src="/assets/books/the-bearded-chameleon/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        CLICK HERE FOR AN ANIMATED INTRODUCTION TO THE BEARDED
+                        CHAMELEON Accept you have no inkling of the power that
+                        walks upon the dragonfly water. Siberian geese each
+                        season migrate here, yet bird and lake exist beyond your
+                        will. You comprehend so little of this, truly. Brother
+                        of fish, brother of water-lotus when will you frog-kick
+                        out toward the truth? The Bearded Chameleon is a new
+                        collection from Chris Mooney-Singh, an Australian poet
+                        who commutes between Australia, Singapore and India. The
+                        poems are set in India, his country of inspiration,
+                        which beguiled him in 1989 to adopt the Sikh way of
+                        life. The title poem is a witty study of the lizard that
+                        can adapt its colours to any circumstance. Mooney-Singh
+                        speaks from his perspective as a Westerner who now
+                        sports a beard, turban and Indian dress, and by doing so
+                        merges with the landscape of Indian society. He
+                        witnesses an ancient world turning modern as a resident,
+                        not merely as a traveller or tourist. These are poems of
+                        sharp visual detail and comic irony. There are sparkling
+                        character portraits, such as that of Mrs Pritima Devi.
+                        He has a story-teller’s eye and a lyricist’s sense of
+                        music. After Octavio Paz, Mooney-Singh is the only poet
+                        who writes about the paradoxes of Indian landscape with
+                        great passion. H.S. Shivaprakash, Indian Literature
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-bearded-chameleon.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-bearded-chameleon/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044718</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>86</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Chris Mooney-Singh was born in 1956 of
+                            Australian-Irish descent. He has worked extensively
+                            in publishing, editing and education.
+                        </p>
+                        <a class="bold" href="/authors/chris-mooney-singh.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Sam Byfield, Cha: An Asian Literary Journal
+                        </summary>
+                        <p>
+                            Beyond ‘A Cultural Look and See’: Chris
+                            Mooney-Singh’s The Bearded Chameleon Sam Byfield
+                            (poet) Cha: An Asian Literary Jounal , Issue 18,
+                            September 2012 It’s not very often that the first
+                            poem in a collection involves defecation, and rarer
+                            still, I suspect, that it does so with grace and
+                            artistry. The first poem in Chris Mooney-Singh’s
+                            collection, The Bearded Chameleon , does just that
+                            and sets the scene perfectly for the works that
+                            follow. In ‘Punjab Pastoral’ we find Mooney-Singh,
+                            an Australian poet who in 1989 adopted Sikhism,
+                            squatting in a field, cotton shawl pulled up around
+                            his ears, ‘bobbing like a sunflower.’ Having moved
+                            to India in search of meaning and ‘deeper
+                            experiences,’ he questions his motivations and the
+                            wisdom of his choices, suggesting that ‘they all
+                            want to leave and yet I’ve come/to squat and shit
+                            and chew on grass and spit/for ‘a cultural look and
+                            see’.’ Perhaps in response to his own
+                            preconceptions, this poem starts and finishes with
+                            the observation that he can hear no mermaid singing;
+                            indeed, he notes, ‘I am the fool round here.’ This
+                            search for identity, for wisdom and for a
+                            ‘legitimately’ lived life is a common theme in this
+                            collection, though it is interspersed with poems of
+                            both great loss and great hope, as well as some of
+                            the most effectively wrought depictions of Asia and
+                            its people that have been published in Australia. As
+                            an Australian writing from India, Mooney-Singh can
+                            be viewed in the context of a broader pattern among
+                            the country’s poets engaging with the region - think
+                            Aitken, Cahill, Caddy, Kelen, among others.
+                            Australian poetry is clearly benefiting from the
+                            country’s growing engagement with Asia. Yet this
+                            collection is notable in that it’s not simply a
+                            tourist’s weeks or months spent in-country, but
+                            years - a whole life that’s been packed up and
+                            relocated. One of the most notable elements of The
+                            Bearded Chameleon is its ghazals. They possess a
+                            more playful tone than some of the collection’s
+                            serious offerings, and highlight both the poet’s
+                            preoccupation with the culture he is writing within
+                            and with the possibilities of language more broadly.
+                            The series ‘Bonehead Ghazals’ consists of five
+                            poems. In ‘Puzzle’ the poet writes - ‘The system
+                            sucks: can’t click, can’t knit with it./Round peg,
+                            square slot. I’m quit unfit for it’ - demonstrating
+                            a sense of lyricisms and rhythm, and also
+                            emphasising the questions around identity and
+                            purpose which pervade the collection. ‘Roses’ shifts
+                            to an exploration of the many types and connotations
+                            of ‘roses’ and again displays a sense of
+                            playfulness: ‘The redhead rose has that playboy
+                            look./the bee is hooked on the soft porn rose’ and
+                            ‘Make money, not art, says the plastic rose./I have
+                            no nose for that stillborn rose.’ ‘Belonging’ turns
+                            to the themes of entrapment and the desire to be
+                            free, and draws them together with a lovely image -
+                            ‘Absurd, this cage, so where do we belong?/In
+                            peach-faced lovebird-heaven we belong’ - while in
+                            ‘The Bearded Chameleon’, the ghazal series from
+                            which the collection derives its title, the poet
+                            writes: ‘Suburbia was a dumb cartoon:/here, typhoid
+                            sweats through each monsoon.’ Several poems in this
+                            collection deal with grief and loss. ‘Casualty’ is
+                            an unsettling description of the death of the
+                            narrator’s first wife, who passed away en-route to
+                            hospital in a taxi. This is a poem of acute loss
+                            played out in an alien environment, full of
+                            effective details. Where it would have been easy to
+                            alienate the reader through overt bathos and an
+                            absence of detail, this poem and several that follow
+                            avoid such traps. ‘Casualty’ opens with At 8 in the
+                            morning, at exactly 8 in the morning, they wheel her
+                            through swing doors banging like a poltergeist. and
+                            continues with an effective mix of image and simile:
+                            ‘a woman who gasped like a dove,’ ‘ripping off her
+                            wedding ring,’ ‘dehydration on wheels,’ ‘this
+                            absurdity of roses outside the window.’ The only
+                            questionable note comes right at the end, with
+                            Mooney repeating the opening but adding a play on
+                            words which is perhaps out of place: ‘at 8 in the
+                            morning,/at 8 in the period of your mourning.’ Some
+                            of the most effective poems in this collection are
+                            portraits. ‘Mrs Pritima Devi’ takes the form of a
+                            monologue by a school teacher who has escaped a
+                            troubled marriage and left her son behind, and who
+                            appreciates a sympathetic ear to speak to. The
+                            language and grammar of the poem bring it to life
+                            and demonstrate the Mooey-Singh’s attention to the
+                            rhythms of the language around him. In ‘Advice from
+                            an Uncle,’ a business-owner explains the realities
+                            of business to his ‘MBA-fresh, Harvard-hyped
+                            nephew,’ noting that ‘Bribes are bad, dear boy,/but
+                            we must get the job done’ and ...you must become a
+                            practical chap: serve all Superintendents of Police
+                            their God-allotted cup. Ever-practical, the Uncle
+                            even prongs incense in a brass holder before the
+                            Guru’s photo, so he, too, will turn a blind eye. The
+                            only sticking point in this poem is the short line
+                            lengths, which disrupt the flow and give a sense
+                            that the line breaks weren’t thought through,
+                            whereas many of the collection’s other works employ
+                            a longer, more natural line length. In ‘Families,’
+                            Mooney-Singh broadens out this portrait approach to
+                            capture the diversity and complexity of families in
+                            India: This family left the village, that family
+                            found the city, this family emigrated on false
+                            passports, this family placed an ad in The Times of
+                            India , this dutiful daughter got a green-card
+                            husband. Several other poems share this focus on
+                            observation and ‘naming.’ These poems are
+                            particularly effective and benefit from the narrator
+                            taking a step back. ‘Indian City,’ for instance, is
+                            comprised of a list of often contradictory images:
+                            Satellite dishes on a temple sky-line low-flying
+                            jets vultures in a flock a bicycle loaded with
+                            electrical fans In ‘Laws,’ Mooney-Singh provides a
+                            series of contrasts between the human and animal
+                            worlds, in essence noting that despite our foibles
+                            and occasional destructive urges, the natural world
+                            continues. In this same observational spirit, ‘PEEP
+                            PEEP DON’T SLEEP’ is an amusing list of signs seen
+                            while driving on Indian highways: I AM CURVECEOUS BE
+                            SLOW DRIVE ON HORSE POWER NOT ON RUM POWER The
+                            second half of The Bearded Chameleon contains
+                            several traditional love poems, dedicated to
+                            ‘Savinder,’ Mooney-Singh’s second wife. These
+                            contain strong moments, though at times lose focus
+                            and momentum. In ‘Long Distance,’ the poet has
+                            returned to Delhi from Singapore and is struggling
+                            through a rickshaw ride. Shaken and queasy, I missed
+                            home badly - the flicker of your hair, breezy as the
+                            East Coast palms The details of this ride are, as
+                            with much of the collection, strong and believable.
+                            The final two tercets, however, are somewhat unclear
+                            in their language and syntax, and detract from an
+                            otherwise strong work. By contrast, ‘Yatra, 1999’ is
+                            a more complete poem. Starting with ‘You had come to
+                            lure me/from my white-robed life/in a marble
+                            sanctuary’ it describes how his lover has come to
+                            visit him after a period of long-distance
+                            communication. In the taxi, ‘We counted the mile
+                            markers;/time was rushing to harvest/as you agreed
+                            to marry me.’ The final poem in the collection, ‘I
+                            come in Winter to a City Without You,’ continues
+                            with this theme of long distance love, of finding a
+                            way to bridge the separation of continents. The poem
+                            is a worthy finale to the collection, marking a
+                            clear and definitive finish to the themes leading up
+                            to it. There are a few moments, however, when the
+                            strong images and tone are somewhat undermined - the
+                            following lines, for instance, veer too close to
+                            clumsiness: ‘I know peach-pink lips still unlock/the
+                            zone of your aromas: this is the future/and I will
+                            always kiss your rose.’ I also question the need for
+                            this poem to constitute the whole of the
+                            collection’s third section, when the previous two
+                            amounted to over 70 pages. At the very least, the
+                            other works dedicated to Savinder seem to work well
+                            with the final poem and could have constituted a
+                            section of their own. More broadly, the allocation
+                            of poems to specific sections, as well as their
+                            ordering throughout the collection, is at times
+                            confusing, with different themes and forms being
+                            broken up and interspersed. The overall cohesion and
+                            flow might have been aided by more judicial
+                            editorial intervention. These criticisms aside, this
+                            is an impressive collection by an interesting poet.
+                            Future anthologies of Australian poets who have
+                            ‘written Asia’ should certainly contain one or more
+                            of Mooney-Singh’s offerings, especially those that
+                            engage strongly with locations and people and those
+                            which utilise the ghazal form. In a literary climate
+                            where poets sometimes end up sounding rather alike,
+                            Mooney-Singh stands out.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Phil Ilton, Mascara Literary Review</summary>
+                        <p>
+                            The Bearded Chameleon Phil Ilton Mascara Literary
+                            Review , June 2012 There are poems for the page and
+                            poems for the stage. Chris Mooney-Singh is an
+                            established live performer. His second poetry
+                            collection, The Bearded Chameleon , transposes his
+                            performative skills into poetically good reading.
+                            Mooney-Singh is a chameleon because his ‘makeup’
+                            stems from two cultures: his native Australia and
+                            India where he has mostly lived in recent decades.
+                            He is never quite at home in either, his ‘colours’
+                            change according to which country he’s in. His
+                            adoption of the Sikh faith, which forbids cutting
+                            hair, has him bearded. This theme is encapsulated in
+                            40 end-rhyme couplets tightly presented with
+                            perceptive cultural observations (‘village life is
+                            one food chain’). India, exuberant and traumatic,
+                            contrasts with Mooney-Singh’s other life: Suburbia
+                            was a dumb cartoon: here, typhoid sweats through
+                            each monsoon; There’s exquisite images of
+                            interaction between the newcomer and villagers: I
+                            wet my tongue, pretend what’s best and they are
+                            kind, pretend the rest. An ‘internal ode’ to the
+                            poet’s fauna namesake weaves engaging snippets; the
+                            chameleon is ‘prehistoric, spiky, punk’ for whom
+                            ‘sun-bathing is the reptile’s art’. ‘Abstract
+                            Studies with Monsoon Green’ distils the adopted
+                            environment’s fecundity’: The days of humid
+                            blindness are upon us, the rain has left a steamy
+                            haze of green. The mulberry limb drips into the milk
+                            pail, green are the tears upon the chilli plants.
+                            There’s an innovative reprint of humanity’s
+                            footstep: I follow footprint puddles to the pump.
+                            Mooney-Singh aims to ...learn the way of planting
+                            rice: green thumb, invite the fingers to make
+                            friends. Among captivating images of India there’s a
+                            night-driving view of a truck’s decorated rear:
+                            ‘Krishna and the milkmaids/ were dancing in our
+                            headlights’. ‘Indian Standard Time’ includes ‘eating
+                            pakoras and deep-fried gossip’ and ‘yesterday or
+                            tomorrow, neither too late, nor too early’ whether
+                            that be ‘in this birth or the next’. There’s
+                            arresting street-graphics: the lifters of dead-cows,
+                            cremation-ground caretakers, collectors of the
+                            shit-bins, bottom-feeders, vultures. And vivid
+                            imagery that could be from anywhere such as this
+                            forest-after-rain metaphor: sunlight opens up its
+                            peacock tail Personal aspects of Mooney-Singh’s
+                            journey embrace the evocative pain of witnessing his
+                            (first) wife’s death. I was helpless, a passenger
+                            during the final act of her breathing that slipped
+                            beyond even its coma as the taxi halted at the
+                            traffic light. Aftermath is poignant: ...I lift your
+                            old cup from a suitcase of last things you touched
+                            on earth. I see the lipstick: two firm petal prints.
+                            I will never clean away the kiss. ‘My Fallen’,
+                            images of deaths in Mooney-Singh’s family,
+                            innovatively commences ‘These last photos I don’t
+                            have’. Significant memories are often associated
+                            with background detail and these are captured with
+                            powerful brevity: The strident starlings of 2001
+                            still halo your head on soft grass. Mooney-Singh
+                            produces striking aphorisms including ‘The Kingdom
+                            of Heaven is a clear conscience’. ‘To the Dalits’
+                            demonstrates well-crafted rhyme is effective for
+                            invocation of traditional Indian folklore. Tradition
+                            is also invoked with the ‘ghazal’, a love song
+                            comprising couplets with an end-rhyme refrain that
+                            usually repeats the same word; Mooney-Singh diffuses
+                            the refrain’s monotony by introducing ‘unattached’
+                            prefixes which form cross-rhyme patterns - neither
+                            end-rhyme nor internal (within-a-line) rhyme, but
+                            constructed on rhyming words appearing within
+                            different lines: Make money, not art, says the
+                            plastic rose. I have no nose for that stillborn
+                            rose. Poetry got divorced from the rose, yet the New
+                            Thing’s still a fresh-worn rose Seventy million
+                            years of the rose: fossils lime the time-sworn rose.
+                            The cross-rhyme is ‘stillborn/fresh-worn’ etc.
+                            Creating effective cross-rhyme is difficult.
+                            Kipling, Hopkins and Swinburne were the only poets
+                            of whom I was aware to have crafted it well until I
+                            encountered Mooney-Singh’s ghazals; in this
+                            challenging form he rubs shoulders with the best.
+                            Innovation doesn’t always work. Coining neologisms
+                            (new words) has potential pitfalls – they can seem
+                            forced, too-clever or obscure. A neologism in ‘I
+                            Come in Winter to a City Without You’ doesn’t suffer
+                            these flaws; the now Australian-based poet and his
+                            (second) wife (temporarily in Singapore) communicate
+                            by mobile and internet, chatting in ‘glocal
+                            tongues’. ‘Glocal’ is an engaging creation: these
+                            technologies may be global but they allow for an
+                            intimacy which is effectively local. Attractive
+                            eclecticism is quirkily reflected in ‘found poems’
+                            of Indian highway-side graffiti including ‘riotous’
+                            examples like ‘HORN IS TO HONK/ PLEASE DO IT ON MY
+                            CURVES’. Mooney-Singh’s India is not all
+                            traditional. A woman who dares to reject her violent
+                            husband by deserting his family’s home evocatively
+                            observes: To move in public is no easy choice if you
+                            wear divorce’s question-mark upon your forehead.
+                            With riveting figurative language she urges: ...more
+                            women also swept beneath the family carpet. Fight! I
+                            say... Never shall we let them make us feel like
+                            wedding ornaments, like nose-rings returned
+                            dishonoured to the jeweller’s shop. The Bearded
+                            Chameleon has a pièce de résistance , ‘Another
+                            Bhagwanpur’, which opens: A country village stuck in
+                            the buffalo mud piles up its cow-pats, balancing
+                            clay pots of mosquito water on the heads of women
+                            who wear pregnancy under flimsy shawls. The
+                            metaphorically stuck-in-mud village is personified
+                            by its ‘orchestration’ of cow-pats and women’s
+                            actions. The stereotypical heads balancing pots
+                            become thought-provoking with ‘mosquito’ water -
+                            potential drama not associated with the image. Women
+                            ‘wear’ prominent pregnancies. We learn much from
+                            skilfully packed lines: The village council of five
+                            cannot fight the school’s wrong sums and
+                            cane-learning; cement walls, white-washed by
+                            government, the young men employed by opium. There’s
+                            doctors who ‘deal in snake-bite mantras’ and this
+                            arresting portrait: ...the last Gandhian
+                            freedom-fighter props up old glory on a walking
+                            stick. More transfixing language concludes this
+                            village vignette: ‘the night-long typhoid prayers to
+                            Ram.’ Sixteen lines have the reader experience a
+                            tour de force . There are flawed moments. If
+                            information becomes a poet’s ‘driver’ the poetry
+                            usually suffers; this happens with Mooney-Singh’s
+                            portraits and some traditional-story retelling. ‘Mr
+                            Chopra’ is mostly prosaic description. ‘Apartment of
+                            a Bombay Millionaire’ and ‘Mrs Pritima Devi’ are
+                            generally similar and include unnecessary
+                            didacticism. In ‘Yogesh Meets Ganesh’ and ‘Advice
+                            From An Uncle’ storytelling dissolves the poetry.
+                            There are moments when things don’t work. ‘A Punjabi
+                            Leda and the Swan’ presents an ostensibly good
+                            metaphor between the Western myth and a man raping a
+                            woman in contemporary India, but there’s awkward
+                            passages; the mental wrestling needed to wrap one’s
+                            head around these reduces effectiveness - a forced
+                            sensibility suggesting the legend doesn’t fit the
+                            poem’s context. Sometimes poetically good ‘moments’
+                            are undermined by additional figurations: Saffron
+                            priests say Out! like big sticks hunting rats along
+                            the temple drains. The images of saffron priests and
+                            big sticks hunting rats in drains are vivid; but the
+                            linking simile is not – verbal commands and running
+                            with sticks are dissimilar actions. The ‘common
+                            ground’ is intensity, a minimal likeness. Since the
+                            commands are projected by priests, effectiveness is
+                            further reduced; whatever the faith, clerics don’t
+                            undermine their authority with doing-the-shitwork
+                            frenetics. The collection has instances of
+                            overwriting. I look out into the darkness for you.
+                            Rest is the wraith that will not let me sleep. This
+                            image’s potential is under-realised with the
+                            superfluous ‘out’ and the prosey ‘let me’. Direct
+                            ‘ownership’ of the wraith and tighter presentation
+                            like (for example) ‘Rest is my wraith that will not
+                            sleep’ increases metaphorical impact. ‘I Come in
+                            Winter to a City Without You’ is curiously headed by
+                            this Mallarmé quotation: ‘Oh so dear from afar and
+                            nearby’. What is this quote’s purpose? True, it fits
+                            the theme – but Mooney-Singh’s poem says it much
+                            better than this (unusually) ordinary Mallarmé line;
+                            a redundant epigraph, it may imply credibility is
+                            sought through an artificial hitch to the famous.
+                            High-profile quotations can be epigraphically
+                            effective. But there’s risk that contrast with
+                            iconic lines may diminish one’s own and inclusion
+                            may appear to ‘name-drop’. If the same poem’s ‘the
+                            god of small transactions’ is an allusion to
+                            Arundhati Roy’s Booker-winning Indian novel The God
+                            of Small Things , should this be acknowledged? Or is
+                            it a subliminal reference to the novel? Could it be
+                            pure coincidence? Of course the reader is never
+                            ‘party’ to writers’ thoughts. It’s suffice to say
+                            that if Mooney-Singh was aware of his line’s
+                            similarity to Roy’s title, it was advisable to not
+                            use it and rely on his own words. There are minor
+                            irritants; an alcoholic’s problems are lessened with
+                            a cliché (‘all have raised a storm’) and curiously
+                            excessive use of colons and semi-colons. These
+                            ‘punctuations’ enhance pauses but frequent use
+                            impairs poetic flow and produces a ‘boy who cried
+                            wolf’ effect - reduced impact of their effective
+                            moments. The poem ‘Families’, mostly a prosaic list,
+                            has poetry in its rhythm, which leads to the other
+                            key feature of Mooney-Singh the poet: performance.
+                            It was informative to attend the collection’s
+                            launch. Prosey patches were enlivened, reflecting
+                            that a not insignificant proportion is ‘poems for
+                            the stage’. His performance embraced skilful
+                            light/shade vocals and effective nylon-string guitar
+                            accompaniment. The Bearded Chameleon progresses
+                            strong poetic qualities Mooney-Singh crafted in his
+                            first collection The Laughing Buddha Cab Company
+                            (2007). To gain full appreciation one should
+                            experience the performance.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Westerly Review</summary>
+                        <p>
+                            Australian Poetry 2011-2012 Judith Beveridge
+                            Westerly , Volume 57, Number 1 2012 Chris
+                            Mooney-Singh has lived, studied and worked in India
+                            and Indian religious communities for a number of
+                            years. The Bearded Chameleon is an engaging, often
+                            satirical account of his time there. With
+                            sure-footed control of free verse, blank verse,
+                            rhyme and oriental forms such as the ghazal,
+                            Mooney-Singh reveals the conflicts, contradictions
+                            and hypocrisies that a Westerner can experience in a
+                            country that never quite sits comfortably on his
+                            shoulders, though he has deep respect for many of
+                            its spiritual traditions. Most powerful are the
+                            poems about the death of his wife in a rural ashram,
+                            and the dramatic monologue ‘Mrs Pritima Devi’
+                            concerning a woman who has left her son, husband,
+                            and his family because she is being slowly poisoned
+                            by the mother-in-law. The poem memorably evokes, the
+                            ongoing struggle that women have for equality and
+                            recognition. Mooney-Singh’s style is often playful
+                            and there are some delightfully humorous poems about
+                            characters and Indian eccentricities, as well as the
+                            self-mocking ten-part title poem in which the poet,
+                            likening himself to a chameleon, reveals how
+                            difficult it can be to find purchase on an identity
+                            in a place as socially complex as India. Overall,
+                            the poems in this volume have a lightness of touch
+                            and an ease of style, which combined with strong
+                            subject matter, make them pleasurable and rewarding.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            The Bearded Chameleon Geoff Page The Canberra Times
+                            , 21 January 2012 Chris Mooney-Singh has also had an
+                            interesting life story (though re-telling it is
+                            rarely the intention of his poems). Raised in
+                            Canberra in the late 1950s and 1960s, Mooney-Singh
+                            adopted Sikhism in 1989. He has travelled and lived
+                            for extended periods in Singapore, India and other
+                            countries in the region. He has also become an
+                            expert in Sikh music. The Bearded Chameleon , the
+                            first of his books to be properly circulated in
+                            Australia, focusses on India. Unlike most of the
+                            work written by Australian poets travelling in that
+                            country (or living there for short periods),
+                            Mooney-Singh’s poems are written from the “inside”,
+                            as it were. Even so, the poet has no illusions about
+                            how well he knows his subject — or how well he is
+                            accepted by his new correligionists or compatriots.
+                            India is a vast topic after all. The key to this
+                            book is probably the title poem, a sequence where
+                            the poet sees himself as a chameleon, adept at
+                            fitting in no matter how difficult. He is also quick
+                            to see the irony of his self-chosen predicament: “My
+                            sun-cracked soles have drawn some sap / from green
+                            Punjab. An Aussie chap // I chew on sugarcane each
+                            week / and sport this beard — a convert Sikh. // Now
+                            turbaned like a maharajah, / I’d pass for Ranjit
+                            Singh, the Padshah — // a bit like you, chameleon —
+                            / a colour-shifting charlatan.” There’s nothing of
+                            the charlatan, however, in Mooney-Singh’s nicely
+                            balanced views of the pluses and minuses of the
+                            country which has called him. He is quite unsparing
+                            of the corruption in Indian life, the savage
+                            oppression of a great many of its citizens and yet
+                            he also leaves the reader in no doubt as to the
+                            country’s and the culture’s attractions. There are
+                            poignant monologues such as that by the unjustly
+                            treated “Mrs Pritima Devi” but also the cleverly
+                            balanced binaries in the poem “Laws” where every
+                            negative is offset by a corresponding positive. e.g.
+                            “despite the hunting season on dissidents / another
+                            mongoose crosses the road” or “despite the rise of
+                            fanatics to government / clans of macaques will rule
+                            the ruins”. As the excerpts quoted may illustrate,
+                            Mooney-Singh is a poet who is both accessible and
+                            skilled in his art. What he has to say about his
+                            adopted country should be essential reading for the
+                            naive tourist — indeed, even for the sophisticated
+                            one (who will enjoy even more its slyly observant
+                            references). Chris Mooney-Singh’s new collection of
+                            poetry The Bearded Chameleon is the work of a new
+                            voice engaging with the ‘diaspora discourse’. As a
+                            Caucasian Australian who embrace truth in the global
+                            world. Such are the rich layers of thought and
+                            experience to be found within the pages of The
+                            Bearded Chameleon .
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sunday Observer Review</summary>
+                        <p>
+                            The Reverse Diaspora - An Australian Poet’s India
+                            Ranga Chandrarathne Sunday Observer (Sri Lanka), 1
+                            January 2012 Chris Mooney-Singh’s new collection of
+                            poetry The Bearded Chameleon is the work of a new
+                            voice engaging with the ‘diaspora discourse’. As a
+                            Caucasian Australian who has converted to Sikhism,
+                            his is a kind of reverse-diasporic point of view.
+                            Mooney-Singh’s close empathy with the land of his
+                            adopted way of life and philosophy creates in the
+                            reader the impression of a second-generation
+                            ‘returnee’ to a familiar time and place, when in
+                            reality, he is a son of Antipodean soil. This is
+                            evident from the dropped hints in selected poems
+                            throughout the collection. Otherwise, this is poetry
+                            that could have been written by an Indian with all
+                            its insider knowledge. The title itself hints at
+                            Mooney-Singh’s chameleon-like position within the
+                            Indian landscape and the agility with which he
+                            writes about it. Thus, his example as a cultural
+                            convert needs its own reverse-diasporic category to
+                            differentiate it from mere travel writing. It is
+                            evident that he has lived and breathed long and deep
+                            in Northern India and his considered work codifies
+                            the vivid and changing reality of the diaspora as he
+                            commutes between Australia, Singapore and India;
+                            along the way, he deals extensively with prominent
+                            themes such as nostalgia, memory and the imaginary
+                            homeland. Ethnic, cultural and the micro-observation
+                            of regional diversity are some of the hallmarks of
+                            Mooney-Singh’s India poems. As in the classical
+                            description of diasporic writings, this poetic
+                            exploration is not only a codification of individual
+                            experiences but also a poetic documentary of the
+                            ‘collective voice’ in a highly hybridised milieu. In
+                            a way, this hybridity is manifested in
+                            Mooney-Singh’s mixed genealogy: his Australian-Irish
+                            descent, a work life domiciled in Singapore (evident
+                            from his previous collection The Laughing Buddha Cab
+                            Company ) and his ongoing transnational experiments
+                            with the Sikh way of life. Deprivation Poverty and
+                            deprivation in a typical North Indian village is
+                            brilliantly captured in ‘Punjab Pastoral’ the
+                            opening poem of the collection. Poverty is coupled
+                            with an inlander naivety on the part of the
+                            villagers who think the village tank is like ‘the
+                            Ocean’ that nobody has ever seen. In fact, this is
+                            also a classical allusion to medieval Bhakti and
+                            Sikh poetry where the metaphor of the ‘Ocean’
+                            represents eternal consciousness and is often
+                            applied to any body of water at hand. In a
+                            traditional Punjabi context a ‘tank’ was a flat
+                            ‘ocean-wide’ expanse of water, rather than a
+                            small-mouthed well. In the Post-Partition days,
+                            however, the Central Indian Government created
+                            irrigation canals with pumps controlling irrigation
+                            within Punjab and controversially to other
+                            neighbouring states such as Haryana and Rajasthan,
+                            negating the old system of using village tanks for
+                            human and animal consumption: I cannot hear the
+                            mermaid singing here beside this irrigation channel,
+                            dug with hoes and feeding sugar cane – a sudden crop
+                            of sweetest cash, yet magical as staves, ... and
+                            green-checked lungi , that is now hitched up above
+                            my knees, so that my own wet soil can drop and find
+                            its way back into landfill. It sounds quite pastoral
+                            and yet a place without a latrine, without a job for
+                            every man, a place of raw mixed opium, strained
+                            through muslin cotton, squeezed and drained... ...
+                            The only way a young man gets to leave is selling
+                            his plot for an agent’s dicy promise of a stamped
+                            visa to a foreign sweatshop. Yes, they all want to
+                            leave and yet I’ve come to squat and shit and the
+                            chew the grass and spit like village elders by the
+                            Panchayat tree. For what? A cultural look and see
+                            and then To fly back when the travel cash runs dry?
+                            They look and talk of me, the grubby kids, Dragging
+                            a stick of sugar cane in dust, and mothers loading
+                            grass onto their heads... ...I hear no mermaid
+                            singing by the canal. Panchayat: a village council
+                            of five The poet contrasts an over-fertilised and
+                            toxic pastoral landscape with the impoverished human
+                            world relying upon it at a time when everyone longs
+                            to leave. Having come for ‘a cultural look’ this
+                            should be an idealised heaven - the land of his
+                            philosophical beliefs. The harsh reality is,
+                            however, that having endured centuries of Islamic
+                            invasion, partition, war and discord, including the
+                            militant decade of the 1980s, this is now a place in
+                            agrarian and social decline - with over-reliance on
+                            deep artesian wells and pumps in a State subject to
+                            water politics, land division, unemployment and
+                            social problems such as AIDS and massive drug
+                            addiction where the Government turns a blind eye and
+                            receives its bribes. Like many diasporic poets,
+                            Mooney Singh explores with unclogged vision a place
+                            beset by man-managed tragedies, yet still attempts
+                            to link with the idea of ‘the original home’ and
+                            historic home of the ten Sikh Gurus and their
+                            disciples who created a spiritual, economic and
+                            political revolution in Punjab - the ‘Land of Five
+                            Rivers’ from the middle of the 15th to the 20th
+                            Century. Sadly, it seems such a haven seems now to
+                            exist only in the poet’s imagination and he is aware
+                            of it. Pastoral The term ‘pastoral’ for instance
+                            also carries with it all of the connotations of
+                            Western civilization, going back to the bucolic age
+                            of Homer and Hesiod in ancient Greece and Virgilian
+                            Rome. Now, however, the word ‘pastoral’ is clearly
+                            ironic in a post British-ruled sub-continent. The
+                            sources of problems for the Land of Five Rivers of
+                            the once undivided State encapsulating Pakistan run
+                            deep. ‘Punjab Pastoral’ is thus a poem which might
+                            well be catogorised according to the poetics of
+                            ‘return’. The poet visits a familiar landscape which
+                            is the ‘original home’. In his mindscape, there is
+                            still a mermaid who ‘sings by the canal’ which may
+                            allude to Eliot’s Prufrock where the mermaids sing
+                            ‘each to each’ but not to him. It’s a nod to
+                            Modernism that informs us that the author, despite
+                            his interest in Indian history is still a global
+                            poet of the post-industrial era with all its foibles
+                            and post-modern doubts. The ‘pastoral’ image of the
+                            village contrasts sharply with the harsh ground
+                            reality with ‘grubby kids, dragging a stick of sugar
+                            cane in dust’ while ‘mothers [are] loading grass
+                            onto their heads’. It is clear that the poet is not
+                            part of the landscape he wants to identify with and
+                            his cultural anchorage has almost foundered.
+                            Cultural loss is a major characteristic of diasporic
+                            life. The narrator of the poem has dual identities,
+                            but in the deepest sense is a stranger wherever he
+                            is. Memories Thus there are more poems that attempt
+                            to find firm ground to re-build memories into
+                            edifices of faith. In ‘Steel Kiss’, Mooney-Singh
+                            solidifies one of these cherished moments
+                            celebrating a lover’s lipsticked kiss on a steel cup
+                            which has been preserved unwashed over three
+                            decades. In a highly skilful manner, he returns
+                            again and again, poem after poem, during the first
+                            section of the book to a time of death and tragedy
+                            and loss of a life partner and holds each moment up
+                            to the light with deep feeling and poignancy. A
+                            primary trait of diasporic writing is the attempt on
+                            the part of the writer to negotiate with retreating
+                            history, past customs and traditions. Poetic
+                            analepsis, the major technique behind the
+                            collection, works through nostalgia, memory and
+                            reclamation as literary themes. As mentioned before
+                            in ‘Steel Kiss’, the poet attempts to reclaim
+                            history (personal history) which may be a part of
+                            collective history as well: ‘Stainless steel’ we
+                            say, long-lasting, one cup per life span, It did not
+                            rust away on a table under the pipal tree where we
+                            and squirrels took meals. How long has it been since
+                            I heard your discourse on love? Once sipped from
+                            this cup, I unpacked it today as proof you had red
+                            lips, and drank, and lived. Yet, why have I been
+                            detained among the iron gods? I gulp down milk and
+                            sorrow from new tumblers of steel, filling and
+                            draining three decades of gains and losses. Today, I
+                            lift your old cup from a suitcase of last things you
+                            touched on earth. I see the lipstick: two firm petal
+                            prints. I will never clean away the kiss. The line
+                            ‘of last things you touched on earth’ quite clearly
+                            suggests that the loved one is no more and all that
+                            is left - ‘the kiss’ on an empty cup is a powerful
+                            visual reminder of a past relationship and becomes
+                            an emblem of a love that does not forget and wants
+                            to endure. Passionate encounter In the poem ‘Pink
+                            Silk from Punjab’, the poet describes a passionate
+                            encounter with a woman and its memory which is aptly
+                            symbolised by the pink Punjabi silk. There is
+                            nothing to suggest that the character of ‘Steel
+                            Kiss’ is not the same love-making woman of this
+                            poem. She represents the continent of India, while
+                            the narrator is from another ‘continent’ and thus
+                            the act of union is played out symbolically.
+                            Interracial marriages and dating is part and parcel
+                            of diasporic life. In such a relationship clash of
+                            cultures, values and ethos is represented by the
+                            expression ‘collision of continents’. I’m still
+                            dreaming pink silk from Punjab. I’m dreaming the
+                            gentle collision of continents. The scent of her is
+                            gone from my hair. Enigmatic in the traffic as a
+                            rickshaw wallah, Why do I imagine her wobbling her
+                            head? ... The last time before she left, we wallowed
+                            like buffaloes for one hour. I am left with only the
+                            memory of our bodies, wet as fish. In the poem ‘My
+                            Fallen’ the poet evocatively narrates the emotional
+                            departure of his relations in a long and unending
+                            journey of life. The principal motif of the poem is
+                            nostalgia associated with childhood (past) peopled
+                            by his relations. These last photos I don’t have:
+                            China doll-haired sister, whom I played and fought
+                            with, you were first to fall, aged 7 - your liver
+                            coughing up in 1963 while the heart crashed down for
+                            good on a hospital floor. ... The strident starling
+                            of 2001 still halo your head on soft grass. Dad, you
+                            were stroke-struck, ... Bumpiness and a photo flip
+                            book and every other happy snap keep smiling among
+                            tall mountain gods; but I am travel-sick, bussing up
+                            the puke-green hillsides of Himachal, climbing to
+                            what summit? ‘Abstract Studies with Monsoon Green’
+                            lends novel interpretations to the colour ‘green’.
+                            In this agricultural context, green becomes a
+                            personified invisible form who comes and goes
+                            mysteriously with the days and the monsoonal moods
+                            of the season. Yet, the ‘green’ has always been
+                            there like a numinous presence as mysterious as in
+                            ‘Steel Kiss’ and ‘Pink Silk from Punjab’ On a more
+                            pragmatic level, the poem is also celebration of
+                            tropical nature: The days of humid blindness are
+                            upon us the rain has left a steamy haze of green.
+                            The mulberry limb drips into the milk pail, green
+                            are the tears upon the chili plants It is a sudden
+                            season of tractor bog, green footsteps printed in
+                            the mud It seems the white of milk has lost its
+                            green, idle days have lost their shouting children.
+                            ... I have to learn new ways of planting rice: Green
+                            thumb, invite the fingers to make friends. A salient
+                            characteristic of the poem is that it strongly
+                            evokes ‘Home’ or the ‘Old Country’ in which the
+                            narrator wishes perhaps to be a part of, but cannot,
+                            and yet it is a vital part of his emotional life.
+                            ‘Home’ is a numinous desire in the diasporic
+                            imagination. It is a hidden place of no-return,
+                            although it’s quite possible to visit the
+                            geographical location: a Punjabi village, or place
+                            of ‘monsoon green’. That aspect of loss is
+                            evocatively captured in the line ‘I have to learn
+                            new ways of planting rice’. Such is Mooney-Singh’s
+                            identification with the source of his imagination
+                            that he speaks like an ageless peasant from this
+                            milieu in the same way that Wallace Stevens speaks
+                            in metaphors within the lines of American symbolist
+                            poem ‘The Blue Guitar.’ Diasporic existence In the
+                            aptly titled poem ‘The Bearded Chameleon’, the poet
+                            skilfully dramatises the basic dilemma in diasporic
+                            existence, constantly in negotiation with diverse
+                            cultures, languages (bilingualism or
+                            multilingualism) and the sheer hybridity which
+                            virtually obliterates one’s identity. The
+                            personality that diasporic writers bear is
+                            multifaceted and such writings depict the
+                            intersection of cultures, identities and ethnicities
+                            that swing between an adopted motherland and the
+                            lost ‘Home’. The narrator compares himself to a
+                            ‘bearded chameleon’ on a Bo tree: My sun-cracked
+                            soles have drawn some sap from green Punjab, An
+                            Aussie chap, I chew on sugarcane each week and sport
+                            this beard-a convert Sikh. Now turbaned like a
+                            maharajah, I’d pass for Ranjit Singh, the Padshah- a
+                            bit like you, chameleon – a colour-shifting
+                            charlatan. Yes, since I came in my blue jeans to do
+                            write-up for magazines your form has been my best
+                            touchstone on how to live in The Zone A decade later
+                            or more or less I still reside at your address with
+                            farmers, trades-folk, holy men who can’t read book ,
+                            or use a pen. ... My pen is like your sticky tongue
+                            I snatch my image- files among the geckoes, birds on
+                            tree or plant, or dog and pig in excrement. If I
+                            could train my mind or hand not just to write, but
+                            understand... Another thought-provoking poem in the
+                            collection is ‘Families’. The poem in its own manner
+                            codifies the diversity of sub-continental
+                            ethnicities and is like a collection of snap shots
+                            of life in a melting pot of its cultures: Families
+                            of Dravidians inter-married with Aryans, Bactrans,
+                            Parthians, Scythians, Huns, Families of Arabs,
+                            Afghanis, Turks, Tartars, families of Moguls,
+                            families of White Men. Families of Ram, Shiv Ji,
+                            Kali-Durga, Guru Nanak, Mahavir and Buddha, families
+                            of Sufi renouncing all but Allah, families of Moses,
+                            Jesus, Zoroaster. Families of maharishi top-knots
+                            under turbans, ash on the forehead, third eyes of
+                            red powder; this Brahmin family wears a shaved tuft
+                            of hair, these lace skull caps are all facing Mecca.
+                            Spinning wheels, cane knives, humped bull and
+                            tractor, raw chili families, white buffalo butter,
+                            gypsy carts, truck drivers, itinerant bicycle
+                            tinkers, fish hunter families on midnight rivers.
+                            Families of fundamental Hindu and Mussalman,
+                            militant grit in the Government eye, black money
+                            families, unfair election tactics, families of
+                            bosses, families of thugs. This family fought the
+                            Moguls, this fought the British, this family chopped
+                            off heads during Partition; this family went on
+                            non-violent hunger strikes, this family plundered,
+                            that family looked on. This family left the village,
+                            that family found the city, this family migrated on
+                            false passports, this family placed an ad in The
+                            Times of India, this dutiful daughter got a
+                            green-card husband. Well-fed families, choked
+                            platforms of families, endless traffic of uncles and
+                            aunties; and this is a family of child prostitutes,
+                            this is a family of railway orphans. Families of
+                            priests, families of bureaucrats, families in
+                            business, families with one acre, beggars, street
+                            people, Dalits and tribals, castes of inheritors and
+                            the eternal outsiders. Caste systems The poem is a
+                            slice of Indian society with its classes and caste
+                            systems. What is obvious is that the class system
+                            will go on unabated with families of beggars, Dalits
+                            and outsiders. Despite change, nothing changes in
+                            the social order here. The poet has captured the
+                            diversity of the Indian human landscape which is an
+                            amalgam of ethnicities with their inherent
+                            disparities in socio-economic terms. The poem also
+                            touches on aspects of dislocation, re-location and
+                            memo-realisation. Diasporic writers while looking
+                            backward for ‘home’ also look for the new belongings
+                            that can be owned and built upon. In this process,
+                            the transformation of ‘identity’ is accompanied by
+                            change of place. One may not regain a ‘home’ in the
+                            diasporic existence. It is due to this factor that a
+                            diasporic writer often tries to realise memory or
+                            memo-realisation. One of the poems which captures
+                            the quintessential form of the lost ‘home’ is
+                            ‘Another Bhagwanpur’. The poem offers a microscopic
+                            view of a village with its cultural and class
+                            diversity, abject poverty and deprivation: A country
+                            village stuck in the buffalo mud piles up its
+                            cow-pats, balancing clay pots of mosquito water on
+                            the heads of women who wear pregnancy under flimsy
+                            shawls The village council of five cannot fight the
+                            school’s wrong sums and cane-learning; cement walls,
+                            white-washed by government, the young men employed
+                            by opium. Here buffalos don’t budge from bor trees
+                            and doctors deal in snake-bit mantras, while last
+                            Gandhian freedom fighter props up old glory on a
+                            walking stick. How poignant the hopes for a better
+                            harvest, the flimsy huts laying down for floods, the
+                            naïve child-brides of the king of malaria, the
+                            night-long typhoid prayers to Ram. Chris
+                            Mooney-Singh has admirably dealt with many issues
+                            such as the caste system in India (particularly in
+                            the two-part poem ‘To the Dalits’) and how
+                            globalisation is affecting Indian cities. There are
+                            also several narrative sketches and character
+                            monologues that again skillfully depict Indians in
+                            their home settings, or troubled circumstances such
+                            as ‘Yogesh Meets Ganesh’, an agnostic executive
+                            forced to accept the faith of his ancestors in an
+                            eleventh hour bid to save his infant son from fever;
+                            or the story of Mrs Pritima Devi, the school teacher
+                            and survivor of poisoning at the hands of her
+                            in-laws who tells her story (in Indian English blank
+                            verse) to a foreign colleague on the staff. Despite
+                            creating an epic frieze of ancient India
+                            transitioning to a modern one, there is still a
+                            feeling of reverence portrayed in between the
+                            moments of confusion, gentle satire and tragi-comic
+                            irony. In addition, Mooney-Singh’s metrical and open
+                            form virtuosity abounds, especially in his adaption
+                            of the ghazal into English while still retaining its
+                            inherent rhyme scheme, equivalent English metres and
+                            deep metaphorical conventions while delivering
+                            contemporary moments of intimate experience.
+                            Invisible sensibility Overall, Mooney-Singh delivers
+                            many gifts in a post-modern package - flawless
+                            technique, psychological insight and a knack for
+                            catching the flavour of Indian speech without
+                            turning it into parody through his role as a
+                            cultural translator. He is someone equally at home
+                            in the Indian milieu he writes about and yet retains
+                            the invisible sensibility of his Western upbringing
+                            and education which does not dominate or try to
+                            colonise its subject with ‘easy judgements’ (p29,
+                            ‘Apartment of a Bombay Millionaire’). Just as Vikram
+                            Seth masterfully wrote his tetrameter sonnet-novel
+                            The Golden Gate in the voices of satirical
+                            Californians, Mooney-Singh has done something
+                            equally deft, reversing the perspective from
+                            Australia to India, in turn, adding a deeply
+                            engaging book to the canon of diasporic literature.
+                            Whether Eastern or Western-born, The Beaded
+                            Chameleon offers both macro and micro views of the
+                            diasporic reality in which its writer is virtually
+                            caught between a cultural home that no longer
+                            exists, while coming to terms with the new ‘home’ -
+                            a modern India that is still being constructed
+                            through the tug of war of globalization. In the
+                            third and final section of the book, a single
+                            ‘homecoming’ poem - ‘I Come in Winter to a City
+                            Without You’ in seven sections, the speaker has left
+                            his partner back on the sub-continent while he
+                            ventures to his original ‘home’ to Australia. In
+                            doing so, he is forced to acknowledge that his true
+                            home is not a physical one, but the intimate
+                            relationship he is now forced to inhabit via the
+                            virtual world of ‘ennui and email’: Distant intimacy
+                            demands imaginings, a new domicile of words as the
+                            ocean swells under galaxies, out of time zones. When
+                            do we meet under stars? And thus, the collection
+                            returns us again to the symbolic ‘Ocean’ of ‘Punjab
+                            Pastoral’ which opened the collection, emphasizing
+                            that all journeys aim toward an inwardness and
+                            expansive understanding, and that all diasporas are
+                            allegories of the developing self, learning to
+                            embrace truth in the global world. Such are the rich
+                            layers of thought and experience to be found within
+                            the pages of The Bearded Chameleon .
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Rochford Street Review Review</summary>
+                        <p>
+                            Blending into the Buddha Tree Mark Roberts Rochford
+                            Street Review (rochfordstreetreview.com), 13
+                            December 2011 There is little wonder that there is a
+                            sense of ‘otherness’ running through Chris
+                            Mooney-Singh’s second major collection The Bearded
+                            Chameleon . As in his first collection, The Laughing
+                            Buddha Cab Company , Mooney-Singh is very aware that
+                            it is impossible not to stand out in either India or
+                            Australia when you are a turbaned, bearded
+                            westerner. Having converted to Sikhism in 1989 his
+                            poems reflect an inspiration which is perhaps unique
+                            to Australian poetry. But If Mooney-Singh is unique
+                            among Australian poets, his position in India is
+                            also slightly complicated. A number of times in this
+                            collection he comments on how he is perceived in his
+                            adopted land. In the first poem in the collection,
+                            ‘Punjab Pastoral’, for example, he begins by
+                            describing how much he blends into the Indian
+                            landscape: This cotton shawl is pulled up round my
+                            ears keeping out the fog as I defecate on fallow
+                            field like any other farmer. I wear a turban,
+                            bobbing like a sunflower But there is a fundamental
+                            difference here: Yes, they all want to leave and yet
+                            I’ve come to squat and shit and chew on grass and
+                            spit like village elders by the panchayat tree.
+                            ‘Punjab Pastoral’ The fundamental difference, of
+                            course, is that Mooney-Singh has a choice. He can
+                            stay, leave and come back: For what? A cultural look
+                            and see and then to fly back when the travel cash
+                            runs dry? This is a theme he returns to in a later
+                            poem, ‘Apartment of a Bombay Millionaire’. This poem
+                            begins in a mock deferential tone “Sir, you have
+                            wide windows, facing West/to the Arabian Sea”. But
+                            the trappings of wealth can’t hide the reality of
+                            every live for the vast majority: yet I find it hard
+                            to talk of ‘higher things’ seeing the tin shacks of
+                            the servant slums directly below these apartment
+                            blocks. At the same time as the poet feels disgust
+                            at the hypocrisy of the millionaire donating to the
+                            temple while ignoring the slums, he also releases
+                            that there are points where both them are more
+                            similar than he would like to admit: It’s all too
+                            easy to invent tidy aphorisms. It is high time I was
+                            gone. Mine are also the words of privilege
+                            ‘Speaking’ But there is hope in the ending as the
+                            poet understands that he must ‘escape’ back into
+                            reality. As he is washing his hands he realises: I
+                            must take myself far away from Your sparkling
+                            unblemished rose standing in this vase, And make
+                            them into useful hands. ‘Apartment of a Bombay
+                            Millionaire’ The strength of this poem lies in its
+                            almost spiritual sense of temptation. From a western
+                            tradition one thinks immediately of Satan’s role in
+                            tempting ‘virtuous men’. In the same way in this
+                            poem Mooney-Singh is escaping the temptation to cut
+                            himself off from the reality of his adopted land by
+                            retreating into an Indian version of the West. While
+                            he can sense this ‘difference’ Mooney-Singh can also
+                            see a way out. In the title poem of the collection
+                            he sees himself like the chameleon adapting and
+                            fitting in so that, over time, the ‘differenceness’
+                            fades away: My sun-cracked soles have drawn some sap
+                            from green Punjab. An Aussie chap, I chew on
+                            sugarcane each week and sport this beard – a
+                            converted Sikh but in the end his skill at
+                            disguising his difference is not as good as the
+                            chameleon: Perhaps, I will, one day, be free to
+                            blend in with the Buddha tree. ‘The Bearded
+                            Chameleon’ One of the surprising strengths of this
+                            poem, at least for me, was the poet’s use of rhyming
+                            couplets. While initially a little wary of the use
+                            of the form through a fairly long poem, Mooney-Singh
+                            manages to pull it off with remarkable skill - for
+                            the most part the poem maintains a strong internal
+                            rhythm mostly avoiding any forced rhymes that could
+                            disrupt the flow of the poem. The other strength of
+                            this collection is the way that Mooney-Singh can
+                            turn the everyday into poetry. From the stark
+                            contrast of the imagery in a poem like ‘Indian City’
+                            – “satellite dishes on a temple sky-line” and “fresh
+                            cow pats on the new overpass” - to the wonderful
+                            juxtaposition of the astrologer in ‘The Thirteenth
+                            House’ with the Stock Broker in ‘Mr Chopra’, we
+                            begin to sense that the poet has, perhaps almost a
+                            unique insight into the day to day functioning of
+                            Indian life. In the final instance the contradiction
+                            of a Australian trying to blend, like a chameleon,
+                            into the everyday of Indian life provides the major
+                            strength of this collection. Mooney-Singh has become
+                            very close to India, but he still brings the
+                            cultural baggage of the West with him. Like the
+                            Chameleon, no matter how still he stands, no matter
+                            how much he tries to blend in, we can still see the
+                            outline of a previous life if we look closely. There
+                            is much to enjoy in this book and I look forward to
+                            Mooney-Singh’s next collection.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Wet Ink Review</summary>
+                        <p>
+                            The Bearded Chameleon Lindy Warrell Wet Ink , Issue
+                            25, 2011 The delightfully titled The Bearded
+                            Chameleon refers, in the eponymous poem, to the
+                            poet, Chris Mooney Singh who writes about India as
+                            an Australian convert to Sikhism - My sun-cracked
+                            soles have drawn some sap from green Punjab. An
+                            Aussie chap, I chew on sugarcane each week And sport
+                            this beard - a convert Sikh. As the poet-chameleon,
+                            Mooney-Singh situates himself as both insider and
+                            outsider-observer but, overall, the
+                            outsider-observer dominates and, despite disclaimers
+                            in ‘Apartment of a Bombay Millionaire’, often judges
+                            - I do admit that easy judgements are A Westerner’s
+                            naive undoing. Please excuse my traveller’s stomach
+                            that needs the toilet. Through the South door? Fine,
+                            I’ll try to scrub off The self-righteous caste of
+                            ‘foreigner’ from These palms in your jasmine-scented
+                            bathroom... Mooney-Singh borrows from the Indian
+                            poetic forms, especially the Ghazal or rhyming
+                            couplets but he uses a range of styles, including
+                            short bursts of free verse. My favourite poem in
+                            this collection is ‘Families’, one of the few where
+                            the words themselves do the work of poetry instead
+                            of the pronoun ‘I’, which places the poet front and
+                            centre in the telling. Mooney-Singh’s poetry is
+                            clear and largely descriptive, but there is joy in
+                            reading poets whose work add something unique to the
+                            tapestry of Australian poetry.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

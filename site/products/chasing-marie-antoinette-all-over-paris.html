@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,188 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/chasing-marie-antoinette-all-over-paris.svg&quot;);
                         "
                     >
-                        Featured
+                        Chasing Marie Antoinette All Over Paris
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Adrienne Eberhard</h3>
+                </div>
+                <img
+                    alt="Cover of Chasing Marie Antoinette All Over Paris"
+                    class="product-cover-mobile"
+                    src="/assets/books/chasing-marie-antoinette-all-over-paris/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Chasing Marie Antoinette All Over Paris"
+                        class="product-cover"
+                        src="/assets/books/chasing-marie-antoinette-all-over-paris/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Adrienne Eberhard’s new collection Chasing Marie
+                        Antoinette all Over Paris forges connections between
+                        past and present, public and private, and human and
+                        non-human, exploring what it means to be truly at home
+                        in the world, whether her beloved Tasmania, France or
+                        Indonesia. Ranging in subject matter from native
+                        grasses, ducklings and footy games, to cave paintings,
+                        family and 9000 years-deep ancestry, she draws on
+                        personal, as well as cultural, history to investigate
+                        possibility, love and loss. With their focus on the
+                        small and the precious, these poems draw our attention
+                        to what is often overlooked, enabling us to see the
+                        extraordinary in the ordinary.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/chasing-marie-antoinette-all-over-paris.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/chasing-marie-antoinette-all-over-paris/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9780648038757</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>110</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Adrienne Eberhard is a poet whose collections
+                            include Agamemnon’s Poppies, Jane, Lady Franklin,
+                            This Woman and The Voice of Water.
+                        </p>
+                        <a class="bold" href="/authors/adrienne-eberhard.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Canberra Times</summary>
+                        <p>
+                            REVIEWS REVIEW by Geoff Page March 6 2021 - 12:00AM
+                            Adrienne Eberhard's latest collection of poetry is a
+                            reminder of the strong female tradition of Tasmanian
+                            poets Chasing Marie Antoinette All Over Paris , by
+                            Adrienne Eberhard. Black Pepper , $24.
+                            http://blackpepperpublishing.com/eberhardCMAAOP.html
+                            Adrienne Eberhard's fifth collection, Chasing Marie
+                            Antoinette All Over Paris , is a convenient reminder
+                            of what a strong tradition of female poetry Tasmania
+                            has had over the years. It began with Gwen Harwood
+                            (1920-1995) and went on to include Margaret Scott
+                            (1934-2005), Kathryn Lomer, Louise Oxley, Jane
+                            Williams, Sarah Day, Esther Ottaway and Eberhard
+                            herself (among others). Eberhard's new book is
+                            divided into four sections which reveal, in turn,
+                            various aspects of her personal interests and poetic
+                            resources. The second shows the poet's detailed
+                            knowledge of Tasmanian landscapes and flora and will
+                            have a special attraction for readers familiar with
+                            them. The poems are closely attentive and highly
+                            metaphoric. The book's title, however, comes from a
+                            sequence in its third section. It's in three parts
+                            and shows a good deal more sympathy for the
+                            &quot;Viennese&quot; queen than was demonstrated by
+                            the crowd which witnessed her execution. Part I is
+                            based on a pair of the queen's satin shoes: tiny
+                            shoes with pearl buttons and a heel that tapped
+                            authoritatively on the marble floor When I looked
+                            again there were lilies / spilling like footsteps
+                            silken each one a stab of paint a fall and you
+                            nowhere to be seen. Part III is also remarkable for
+                            that relative rarity, a high-quality,
+                            explicitly-religious contemporary poem, In
+                            &quot;Christmas Eve&quot; the poet appears to be
+                            watching her husband, at a Parisian Christmas mass,
+                            accept: the wafer containing the compression of
+                            centuries, and in the lifting voices spilling with
+                            the organ's swelling magnitude, he is caught, pinned
+                            like a butterfly, his blue eyes catching mine as he
+                            swallows. For this reader, the emotional core of the
+                            book is in the opening sequence of its final section
+                            which, from a series of photographs, evokes the life
+                            and marriage of her Dutch grandfather and his
+                            Dutch-Indies wife. They married in 1929 and lived in
+                            Java in the 1930s and 40s before emigrating to
+                            Australia after World War II. The poems here, nine
+                            in all, are not without a gloss of imperial
+                            nostalgia but their portrait of an initially
+                            rhapsodic marriage and its progressive decline,
+                            capped by the husband's internment under the
+                            Japanese, is more than moving. The last sentence of
+                            its second poem is indicative of Eberhard at her
+                            best: Her pliancy ironed out in him, into the sharp
+                            angles of shirt, collar, pocket, the only concession
+                            the buttonhole spray with its tiny white pods that
+                            could be embroidery on a lace veil. Back to top
+                            Start of StatCounter Code End of StatCounter Code
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

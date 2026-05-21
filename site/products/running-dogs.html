@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,381 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/running-dogs.svg&quot;);
                         "
                     >
-                        Featured
+                        Running Dogs
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Barry Klemm</h3>
+                </div>
+                <img
+                    alt="Cover of Running Dogs"
+                    class="product-cover-mobile"
+                    src="/assets/books/running-dogs/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Running Dogs"
+                        class="product-cover"
+                        src="/assets/books/running-dogs/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Running Dogs is a novel of Australians in the Vietnam
+                        War, told by one who was there. It tells the story
+                        behind why Post Traumatic Stress Disorder, a condition
+                        politely known as ‘battle fatigue’, was defined only as
+                        a deep-seated psychological trauma after the Vietnam
+                        War. It will open your eyes. It will tell you,
+                        surprisingly, of the camaraderie of humans under extreme
+                        pressure. This is not preaching or ideology. This is a
+                        drama that puts the reader in the midst of life and
+                        death action. We are plunged into the midst of an
+                        ambush. The attack is ruthlessly accomplished. But the
+                        jungle and pressure take their toll. With the narrator
+                        Yogi Griffin we are at the sharp end of the platoon’s
+                        life and death endeavour. Each incident is tense. A
+                        Buddhist monk dies in Yogi’s arms. Children are shot.
+                        The men begin to find their own actions unacceptable.
+                        Adopting the tactics of the Vietcong, they turn upon
+                        their officers in a frantic battle of wills. But by then
+                        their worst enemy has become themselves. Both
+                        heart-rending and comic, Running Dogs is the coalface
+                        war the official histories do not tell. Barry Klemm
+                        served in 11 Platoon in Phouc Tuy Province, South
+                        Vietnam, during the time when the novel is set, between
+                        April 1967 and March 1968. ‘Not only can we now say that
+                        the enemy cannot win but we ourselves have won the war
+                        although it is not yet at an end.’ General Westmoreland,
+                        US Commander in South Vietnam, April 1967 ‘The Tet
+                        offensive has meant nothing less that defeat for the
+                        enemy.’ General Westmoreland, March 1968 Klemm’s company
+                        tries to survive with laconic forbearance amid their
+                        Apocalypse Then . In its determined unsentimentality,
+                        Running Dogs both moves and chills as it evokes life
+                        with a Catch-22 edginess where death is always imminent.
+                        Murray Waldren, The Weekend Australian The tenor of some
+                        of the last words of the novel (‘It was a f------
+                        fiasco, wasn’t it’) recalls that of William Nagle’s The
+                        Odd Angry Shot , the other veteran’s novel with which
+                        Running Dogs can fitly stand guard. Peter Pierce, The
+                        Canberra Times
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 25.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/running-dogs.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/running-dogs/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044314</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2000, Reprinted 2005</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>173</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Barry Klemm was born in 1945. He abandoned an array
+                            of careers before concentrating on writing. He
+                            emerged in the 1990 ’ s with a series of one hour
+                            radio dramas broadcast on Radio National.
+                        </p>
+                        <a class="bold" href="/authors/barry-klemm.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Debra Adelaide, The Sydney Morning Herald
+                        </summary>
+                        <p>
+                            In short new releases Debra Adelaide The Sydney
+                            Morning Herald , 16 September 2000 Klemm has drawn
+                            on his own experiences in the Vietnam war to write
+                            this novel, but there is nothing earnest or
+                            self-indulgent, preachy or even political in any of
+                            this - nothing but bold savage writing that grips us
+                            by the throat, thrusts us into the horrors of war
+                            and never lets us go. Written in the second voice,
+                            the narrative creates the disturbing illusion of
+                            becoming our own voice, echoing madly. Episodic
+                            chapters chart the gradual disintegration of a
+                            platoon, starting with a ruthless ambush of four
+                            civilians, and ending with the last card game before
+                            going home where ‘you didn’t have to carry a rifle
+                            everywhere you went’ but where the nightmares will
+                            remain forever. The tone is both cruel and comic,
+                            drenched with irony: ‘Maybe it was a massacre, maybe
+                            it was a great victory, maybe it was a trivial
+                            skirmish in which no-one got hurt. No-one could ever
+                            tell.’ It’s a terrible and powerful reading
+                            experience.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Examiner Review</summary>
+                        <p>
+                            Dogs of an ugly war Ivy Fleming The Examiner , 21
+                            October 2000 There’s nothing pretty about Barry
+                            Klemm’s story of the Vietnam War in Running Dogs .
+                            It’s a frank account of what the war was like - and
+                            who better to tell the story than an Australian
+                            Vietnam-veteran-turned-author. The events in the
+                            book take place between April 1967 and March 1968 in
+                            Phoue Tuy province, South Vietnam. The reader takes
+                            on the identity of Pte Griffin, or Yogi Bear.
+                            Because the reader is at the centre of the action,
+                            it gets very disturbing when faced with everything
+                            from shooting a group of armed Vietnamese kids to
+                            dealing with leeches in the swampy terrain. And just
+                            when you think this bunch of soldiers can kill
+                            anything, there’s the incident where Yogi tries to
+                            save a Buddhist monk. Running Dogs provides a
+                            picture of the Vietnam War in frank detail. However,
+                            it might be a bit more than some can stomach.
+                            Although the story starts off ferociously (I had to
+                            force myself to continue despite the rough language
+                            and too-much-detail narrative) it does eventually
+                            ‘slow down’ as the soldiers come to grips with what
+                            they are doing. Shudder, and feel lucky that you’re
+                            reading it and not living it.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sunday Age Review</summary>
+                        <p>
+                            Debut Mike Shuttleworth The Sunday Age , 23 July
+                            2000 Private ‘Yogi Bear’ Griffin is a conscript
+                            fighting in the jungles of Vietnam. Klemm’s story is
+                            life-and-death stuff and while he’s particularly
+                            good at relaying the mechanics of warfare he exposes
+                            the frailties and fears of a soldier. It’s as though
+                            the reader sits at Griffin’s shoulder as he stalks
+                            the jungles and villages, listening to his innermost
+                            thoughts. Klemm, who served in Vietnam, does not
+                            preach or judge; he has refined his story to the
+                            essentials. It’s classic Australian realism. The
+                            language is as you would expect, loaded with bitter
+                            oaths, but the writing is tightly controlled and
+                            poignant. Black Pepper has something good on their
+                            hands with Klemm’s debut novel.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Weekend Australian Review</summary>
+                        <p>
+                            Other Voices Murray Waldren The Weekend Australian ,
+                            9-10 December 2000 In the rush of historic revisions
+                            of Australia’s involvement in the Vietnam War, scant
+                            what-it-was-really-like attention has been paid to
+                            front-line fever. Barry Klemm’s Running Dogs helps
+                            amend that imbalance. Set largely in South Vietnam’s
+                            then Phouc Tuy Province in 1967-68, this
+                            slice-of-life account of ‘Pig’ Battalion is moodily
+                            energetic. And quickly engaging, with its
+                            colloquial, gallows-humoured toughness. Beset by
+                            hostile environments, antagonistic officers and
+                            logistical snafus, Klemm’s company tries to survive
+                            with laconic forbearance amid their Apocalypse Then.
+                            In its determined unsentimentality, Running Dogs
+                            both moves and chills as it evokes life with a
+                            Catch-22 edginess where death is always imminent.
+                            The fears, lunacies and chaos of guerilla war
+                            confrontations are especially vivid; also memorable
+                            is the self-protective, jugular camaraderie of the
+                            soldiers.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Canberra Times Review</summary>
+                        <p>
+                            Vietnam War revisited in veteran’s tale Peter Pierce
+                            The Canberra Times , 5 August 2000 As the volume of
+                            fiction of the Indo-Chinese Wars from the United
+                            States eased in the last decade, Australians - if in
+                            small numbers - are turning to those conflicts.
+                            Recent novels have included Christopher Koch’s
+                            Highways to a War (1995), Nigel Krauth’s Freedom
+                            Highway (1999) and, earlier this year, Peter
+                            Corris’s quickie, The Vietnam Volunteer . In
+                            addition, the stream of unit histories and memoirs
+                            continues steadily. The Official History under the
+                            editorship of Peter Edwards has been completed. It
+                            is becoming easier to see the contours and demolish
+                            the myths of Australian remembering, analysis and
+                            fabrication of the wars in which the country was
+                            involved in Southeast Asia, and especially in
+                            Viatnam. The latest novel to appear, Barry Klemm’s
+                            Running Dogs , intriguingly and knowingly fixes the
+                            familiar with the unexpected. Klemm was a veteran,
+                            unlike the authors mentioned above, and indeed most
+                            Australian - if not American - novelists of the
+                            Vietnam War. The novel is set in Phuoc Tuy province,
+                            where Klemm served, from April 1967 to March 1968.
+                            He has therefore had a long time to meditate on his
+                            experiences of military life and - one guesses - to
+                            read critically in the fictions of Vietnam. A sign
+                            of that is his recourse to a staple of such writing
+                            - the use of similes that edge towards cliche as
+                            they dream of domestic rather than war settings.
+                            Thus ambush victims have heads that look like
+                            watermelons split apart with an axe, another hapless
+                            enemy’s spilt brains resemble scrambled eggs. More
+                            resourcefully, Klemm finds ‘like a discordant song’
+                            for the voices of yet unseen Vietnamese as
+                            Australians overhear them. He also disorders the
+                            standard narrative pattern of novels of the
+                            soldier’s tour of Vietnam. Instead of beginning with
+                            the introduction to members of the platoon, Klemm
+                            opens in the middle of an ambush. This is action
+                            typical, dangerous, yet unpredictable, as Klemm’s
+                            anti-hero Yogi Bear and his mates stand by ready to
+                            strike by a track that is ‘narrow and winding
+                            through the green shit’. The pleasantries of telling
+                            us something of the platoon wait till the third
+                            chapter, by which time there has also been a
+                            botched, almost comic raid on a village whose people
+                            may be sympathetic to the Viet Cong. Then along they
+                            come, with their nicknames, supposed or rumoured
+                            home lives and their liabilities on display. There
+                            is Greyman, a part-Aboriginal conscript who does not
+                            know to which world he belongs; Sniffer Gibson, ‘a
+                            freckled lad from Tasmania whose affinity with
+                            machines was stronger than with men’; Alby Dunshea,
+                            ‘a flatout arse-hole’ who neither merits a nickname
+                            nor much sympathy when he is killed in action. Yogi
+                            Bear goes through the familiar rites of passage -
+                            the first things of war - seeing an enemy corpse,
+                            suffering a wound, suffering the death of one of his
+                            own. The Viet Cong, the notional enemy, are
+                            glimpsed, respected, sometimes killed. The American
+                            allies, so often more despised than the VC in
+                            Australian novels of the war, are scarcely seen or
+                            heard in Running Dogs . Not that Yogi and his mates
+                            lack for enemies among such vain, dangerously
+                            incompetent representatives of the Australian
+                            officer class as ‘Hatrack’ (Major Haddon). The way
+                            in which others will tell of their war stories is
+                            also the object of soldiers’ weary contempt. Of a
+                            confused, frightening encounter, Yogi remarks that
+                            ‘maybe it was a massacre, maybe it was a great
+                            victory, maybe it was a trivial skirmish’. In any
+                            event, there is a painting ‘purporting to describe
+                            The Broken Hill Contact in the Canberra War Museum
+                            (sic)’. Running Dogs is a superior combat narrative
+                            to most of its Australian predecessors. It is not
+                            free from banality (‘This is a bloody war, Yogi, not
+                            a Sunday school picnic’), nor from incipiently and
+                            not altogether plausible anti-war comments: ‘This
+                            relocating populations, burning farms, destroying
+                            crops. It’s the way the bad guys carry on.’ Our guys
+                            do not pretend to be good. Yogi’s tour ends in
+                            disillusionment. The tenor of some of the last words
+                            of the novel (‘It was a f------ fiasco, wasn’t it’)
+                            recalls that of William Nagle’s The Odd Angry Shot ,
+                            the other veteran’s novel with which Running Dogs
+                            can fitly stand guard.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Social Alternatives Review</summary>
+                        <p>
+                            For Those In the Know Duncan Richardson Social
+                            Alternatives , Vol. 20 No. 1, January 2001 Barry
+                            Klemm provides a convincingly stark portrait of what
+                            it could be like to find yourself fighting in a
+                            strange, far off land against a formidable, elusive
+                            enemy, with companions not of your choosing and
+                            officers whom you don’t trust. Anyone wanting an
+                            insight into the experience of the Australian
+                            infantry soldier in Vietnam could do worse than read
+                            Running Dogs yet it would only be necessary to dip
+                            into the narrative. Part of the problem with this
+                            book as a novel is the determination with which
+                            Klemm reproduces the repetitive boredom of war,
+                            punctuated by flashes of terror, in chapter after
+                            chapter. The book is episodic, charting the
+                            disillusionment of the men in one small group
+                            engaged in searching out the Vietcong on their own
+                            territory. The Vietnamese emerge as tough,
+                            inscrutable, hardly human at times, which no doubt
+                            mirrors the views of some Australian troops at the
+                            time but one of the failings of the book is that the
+                            narrative docs not go beyond this perspective. Using
+                            a second person point of view doesn’t help this and
+                            gives the effect of an amnesia victim being filled
+                            in on what happened to him. The soldiers remain
+                            nicknames with one or two character traits and the
+                            jumps in chronology are not handled smoothly. There
+                            is also a wealth of specialised terms used by forces
+                            in Vietnam, that are not explained as if this is a
+                            book for those in-the-know.This is a pity because
+                            many readers will miss the important underlying
+                            messages about a key event in our history as this
+                            novel is unlikely to attract interest beyond those
+                            fascinated by the ‘face of battle’.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

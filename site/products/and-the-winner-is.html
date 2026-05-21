@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,202 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/and-the-winner-is.svg&quot;);
                         "
                     >
-                        Featured
+                        And The Winner Is...
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jon Weaving</h3>
+                </div>
+                <img
+                    alt="Cover of And The Winner Is..."
+                    class="product-cover-mobile"
+                    src="/assets/books/and-the-winner-is/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of And The Winner Is..."
+                        class="product-cover"
+                        src="/assets/books/and-the-winner-is/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        When Jon Weaving compiled And The Winner Is... , an
+                        anthology of Nillumbik Shire Council's Alan Marshall
+                        Short Story Award, he also wrote a practical book about
+                        Writing. The anthology itself is unique. As well as the
+                        prize-winning stories, both in the Open and Youth
+                        sections, it incorporates interviews with the authors on
+                        their craft, judges’ comments and biographies of the
+                        authors. It is a full history of the Alan Marshall
+                        Award. As importantly, it is a handbook for creative
+                        writing. Using each year's winning stories to illustrate
+                        his points, Weaving guides us through the making of a
+                        work of fiction. He discusses character, imagery,
+                        metaphor, dialogue and other components of successful
+                        storytelling. He teaches us the 'one-percenters,' those
+                        little things that make the difference in our writing.
+                        And The Winner Is... is an enjoyable anthology. It could
+                        make you a winner.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/and-the-winner-is.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/and-the-winner-is/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044152</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1997</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>175</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jon Weaving was born in London in 1955 and now lives
+                            in Melbourne with his son. His short stories have
+                            appeared in both literary and popular magazines and
+                            have won numerous awards including the Olga Masters
+                            Bicentennial Award For Literature.
+                        </p>
+                        <a class="bold" href="/authors/jon-weaving.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Sydney Smith, Write On</summary>
+                        <p>
+                            Sydney Smith Write On , April 1997 These are
+                            collected stories by the winners, since 1985, of the
+                            Eltham Alan Marshall Short Story Award. Introducing
+                            each year’s winners are bio-notes on the writers,
+                            their comments on the experience of writing, and
+                            potted tutorials by Jon Weaving on some aspect of
+                            the short story form. A few winners were left out as
+                            Jon was unable to find them to gain their permission
+                            for inclusion. The little tutorials seem adequate as
+                            signposts pointing newcomers in the right direction.
+                            I agreed with all his points, and heartily agreed
+                            with his piece on the narrative connect-a-bits: he
+                            said, she answered, it howled forlornly. The stories
+                            themselves varied widely as to approach and content.
+                            I liked Tony Lintermans’ ‘The Great Man and Three
+                            Chickens’ for its braggadocio similes, Catherine
+                            Ford’s ‘Empty’ for its unforced delivery and the
+                            beauty of its structure, and to Patrick West for
+                            ‘Cruelty’, biopsy of a deranged mind, I gave a big
+                            fat elephant stamp. Special mention to Adam Hinkle’s
+                            funny prose cartoon ‘The Haircut That Changed My
+                            Life’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Muse Review</summary>
+                        <p>
+                            Books And The Winner Is… Writers and judges discuss
+                            what makes a winning story, by Jon Weaving Robert
+                            Verdon Muse , No. 170, February 1998 Like the
+                            compiler, I wondered what it was about some of these
+                            stories that made them ‘winners’. Many appeared
+                            flawed. I found myself thinking about the
+                            non-winning entries, but of course none are
+                            included. In this rather didactic anthology of
+                            Nillumbik’s Alan Marshall Short Story Award, Jon
+                            Weaving ponders the question of how stories are to
+                            be judged. His approach brought certain questions to
+                            my own mind. Why should Gary Disher’s 1985 story
+                            ‘Poor Reception’, centering on a guilt-ridden man
+                            who seems to regard the whole of humanity as
+                            ‘perverts’, be regarded as worthy of an award, for
+                            example? It gives us no reason to accept the outlook
+                            of the protagonist as plausible. (Disher himself
+                            later said ‘I can do much better now’.) Other
+                            stories are remarkable. Gillian Mears’ ‘Relics of
+                            the Past’ (1987) portrays a woman who has been
+                            scarred by an inability to get close to her bumbling
+                            father, now dying. She is left with the mere relics
+                            of this painful relationship and the regret of his
+                            ageing mother. As we read, we are compelled to
+                            confront our own mortality. Patrick West’s ‘Cruelty’
+                            (1990) begins with the frightening statement, ‘I
+                            have always had a great capacity for cruelty’. It is
+                            an eccentric piece whose central character
+                            apparently suffers from a strange disassociation
+                            from the world she inhabits, and whose actions seem
+                            aimless. It bears the mark of eighties’ social
+                            pessimism. As she says, ‘My eyes shoot rays out and
+                            over the steaming traffic of the indigo remains of
+                            the city. I see it. It doesn’t see me. I am leaving
+                            it.’ She drives from Melbourne almost to Cairns,
+                            then simply turns round and goes home. I think that
+                            many writers who read this book - and they are
+                            likely to be its main audience - will be struck by
+                            an analogous arbitrariness in relation to the
+                            awarding of this (and maybe any) literary prize.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

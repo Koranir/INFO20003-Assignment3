@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,746 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-peastick-girl.svg&quot;);
                         "
                     >
-                        Featured
+                        The Peastick Girl
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Susan Hancock</h3>
+                </div>
+                <img
+                    alt="Cover of The Peastick Girl"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-peastick-girl/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Peastick Girl"
+                        class="product-cover"
+                        src="/assets/books/the-peastick-girl/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Is she trying to seduce him? He doesn’t know. Though not
+                        exactly distant she seems far away. The fire they have
+                        lit is young-looking, crowned with green flames; it
+                        sends its light onto the red tiles around the fireplace,
+                        each with its upright white lily, like a martyr’s
+                        emblem. The Peastick Girl is a panoramic evocation of
+                        Wellington in all its beauty and strangeness and the
+                        almost mythic force of the natural world. The novel
+                        brings its central character, 27 year old Teresa
+                        Matheson, the second of the three Matheson girls, back
+                        to Wellington after five years in Australia. Over the
+                        course of the winter she begins to write a film version
+                        of Webster’s 17th century tragedy, The Duchess of Malfi
+                        , not only to set it here but to translate the play’s
+                        vision of treachery and destruction into New Zealand
+                        terms, linking the characters and events to aspects of
+                        New Zealand’s history . The irony is that the strongest
+                        link is between the Duchess and Teresa herself. Teresa’s
+                        own decline into darkness and a state of tragic fright
+                        brings her close to the catastrophe that overtakes
+                        Webster’s heroine. Darkened though this is, much of the
+                        novel is also given to a dramatising of a large cast of
+                        characters in a comedy of manners involving young
+                        feminists who feel they have lost their way, powerful
+                        but disenfranchised Maori women who act as a chorus on
+                        pakeha behaviour and the past, Russian emigres, Rugby
+                        and its players, men in sheds, students in beanies and
+                        backpacks, great roaring assemblies in Wellington pubs.
+                        Pub life. Literature. Private life. Introversion and
+                        loss. Fear of the Matheson girls’ sinister mother, the
+                        feminist Vivien who has left her mark ( see Chapter 20,
+                        Tattoo) on many of the younger generation even after her
+                        early and mysterious death. Family secrets. Broken
+                        history. — All these consort in this vivid and ambitious
+                        novel of New Zealand life. A brave, sensuous and wildly
+                        original novel — I’ve never read anything quite like it.
+                        Helen Garner Where novels are concerned, a lot more
+                        attention should be paid to Susan Hancock's 'The
+                        Peastick Girl' . Written in prose of eloquent intensity,
+                        this does for New Zealand passions and landscapes the
+                        kind of thing the Brontës did for Yorkshire. Chris
+                        Wallace-Crabbe, The Age, 8 December 2012
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 49.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-peastick-girl.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-peastick-girl/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044749</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2012</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>494</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Hancock has set all her fictional work in New
+                            Zealand, despite spending much of her time in
+                            Europe, England and Australia.
+                        </p>
+                        <a class="bold" href="/authors/susan-hancock.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Transnational Literature Review</summary>
+                        <p>
+                            The Peastick Girl Michelle Austin Transnational
+                            Literature , Vol. 6, No. 1, November 2013 Susan
+                            Hancock’s novel is a rich and complex work that
+                            incorporates themes of feminism, national identity
+                            and transnational socio-politics into a hugely
+                            compelling narrative framework. Set in Wellington,
+                            New Zealand, the story concerns Teresa, Mollie and
+                            Cass Matheson, the three daughters of the
+                            mysteriously deceased Vivien Matheson. Each of these
+                            three main characters has their own distinct
+                            identity but, collectively, the strong and sometimes
+                            endearing characterisation works to construct a
+                            positive image of women and sisterhood. The middle
+                            sister, Teresa, is given the central role, returning
+                            from Australia, where she has been living for five
+                            years and where she believes she has discovered a
+                            demon called Arkeum. Teresa’s return opens the
+                            narrative and her emotions are the driving force of
+                            the plot as she is shown to be a troubled figure who
+                            has suffered a traumatic experience that has left
+                            her psychologically and physically damaged. On
+                            returning home she is able to resolve some of the
+                            tensions in her family and to discover the secrets
+                            kept from her by her mother which have, unknown to
+                            her, continued to affect her throughout the rest of
+                            her life. The events of her past slowly return to
+                            haunt her during the course of this discovery as she
+                            struggles to resolve an intense psychological
+                            division between her angry and seizure riddled Red
+                            Queen persona, and her other, innocent and more
+                            fragile self, the Peastick Girl. One of the
+                            wonderful points of this story is the way that the
+                            natural beauty of Teresa’s homeland is able to heal
+                            and soothe her at a tumultuous point in her life.
+                            Nature is an important motif in this novel and the
+                            descriptions of the country occur in connection with
+                            peaceful scenes to offset Teresa’s emotional state
+                            of disturbance and unrest. This complex relationship
+                            between the natural world and the emotional and
+                            social disturbance of otherwise peaceful people,
+                            then, has parallels with the social and
+                            semi-political issues that appear subtly but
+                            noticeably in the background of the novel. This is
+                            interjected with specific debates concerning the
+                            plight of Maori women and the need for them to
+                            regain the power that was stripped from them under
+                            British law. The Maori issue is conjoined with the
+                            idea of natural and native New Zealand life, while
+                            the contrasts and affinities between the novel’s
+                            main characters and the more peripheral figures of
+                            Maori women are shown to be of principal importance
+                            for reasons concerning both feminism and
+                            nationality. Cass is a filmmaker whose most recent
+                            project is a film about the Maori people. She is the
+                            figure to whom the author assigns the responsibility
+                            of reminding her two sisters about the feminism with
+                            which their mother raised them. She is also the
+                            character who continually asks important questions
+                            about women’s treatment of each other and the
+                            meaning of feminism and femaleness in contemporary
+                            society. In outlining some of the problems caused by
+                            colonisation, Hancock’s novel makes key reference to
+                            New Zealand’s political and social history and
+                            considers the effect of this on Maori women within
+                            the more established white Western women’s movement.
+                            The novel positions this issue in order to suggest
+                            that colonisation and the subsequent imposition of
+                            British, and largely Victorian, values concerning
+                            marriage, morality and gender roles has had adverse
+                            effects on the position and rights of all New
+                            Zealand born women. At the same time, the male
+                            attitudes to women in this novel, though few, are
+                            shown to be less than egalitarian. Teresa, for
+                            example, is harshly criticised by Gil, the
+                            philandering but prudish husband of her older
+                            sister, Mollie. He makes sporadic and multifarious
+                            judgements in relation to her attitude to life, her
+                            previous experiences with drugs and what he sees as
+                            her sexual promiscuity, thereby demonstrating one
+                            male perspective on the moral and largely gender
+                            specific values to which women are still expected to
+                            adhere. Mollie offers a contrast to Teresa’s freer
+                            and more adventurous persona, being described as a
+                            housewife and mother whose opinions are, in some
+                            ways, informed and confined by her husband’s
+                            patriarchal and occasionally hypocritical values.
+                            The problems of women, and the constriction that
+                            they feel, come to the forefront here, lending the
+                            novel a sympathetic tone which inspires a similarly
+                            sisterly affinity and understanding in the reader.
+                            It is this that makes the novel such a pleasure to
+                            read as it is so clearly female orientated and
+                            provides a warm and enveloping story with enough
+                            mystery at its heart to make it absorbing and
+                            enjoyable. The narrative tone engages the reader and
+                            inspires the imagination in such a way that scenes
+                            and characters come to life. Its overall effect is,
+                            therefore, a powerful one, working to promote
+                            understanding of the distinctive identity of New
+                            Zealand and its people while at the same time
+                            encouraging readers to discover more about the
+                            country and its history.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>New Zealand Studies Network Review</summary>
+                        <p>
+                            The Peastick Girl Rod Edmond Emeritus Professor of
+                            Modern Literature and Cultural History - University
+                            of Kent New Zealand Studies Network (UK), 22
+                            February 2013 Early in this novel someone remarks to
+                            its central protagonist that New Zealand is ‘a hard
+                            country to come back to’. Teresa Matheson has
+                            returned to Wellington after five years living in
+                            Melbourne and bought herself a house on the heights
+                            above the city within sight of her dead mother’s old
+                            home. The opening pages are both vertiginous and
+                            claustrophobic. Teresa is left dangling from a
+                            wooden ladder hanging from her veranda; she climbs
+                            to a ridge behind her house from where she can see
+                            both city and ocean and becomes trapped in a maze of
+                            gorse as she descends. She feels disconnected from
+                            her sisters, Mollie and Cass, and is troubled by
+                            Hugo whose former friendship with her mother
+                            provokes unease and a feeling there are disturbing
+                            things in her past that she knows nothing of. As she
+                            says to Mollie: ‘I’m here but I’m not really back;
+                            maybe you can’t get back.’ So far so familiar: the
+                            problems of returning and settling, and the
+                            questions of identity and selfhood that follow from
+                            this. But The Peastick Girl has an intensity and
+                            strangeness unusual in such ‘return of the native’
+                            narratives. Teresa’s problems are not those of
+                            social or cultural adjustment. Indeed, apart from
+                            odd moments of near-slapstick about the curious
+                            habits of young New Zealand males, the novel is
+                            pretty free of contemporary social comment or
+                            satire. Wellington is as central to this novel as
+                            Egdon Heath is to Hardy’s Return of the Native , but
+                            it is a city empty of people other than the small
+                            cast of characters who are forever meeting or
+                            glimpsing each other as they traverse its streets.
+                            Katherine Mansfield’s city has become a wild place
+                            dominated by rain, light, wind and sound. Teresa’s
+                            house is a permeable membrane open to all weathers,
+                            a mere shack whose roof leaks and windows blow in,
+                            and through which disturbing memories swirl. Hancock
+                            is running an elaborate parallel between the
+                            landscapes of the city and the mindscapes of her
+                            protagonist. As in Hopkins’s sonnet ‘No worst, there
+                            is none’, the mind ‘has mountains; cliffs of fall /
+                            Frightful, sheer, no-man-fathomed’. Teresa has an
+                            intensely close relation to the natural world,
+                            preferring to be outside than in, always thinly
+                            clad, impervious to the cold and wet that persist
+                            through most the novel. This dramatises her
+                            precarious state of mind and provides both comfort
+                            and escape from whatever it is that haunts her. The
+                            most ambitious level of the novel is the parallel it
+                            attempts between the dislocation of its protagonist
+                            and the history of New Zealand since colonisation.
+                            ‘This whole country is a lie’, Teresa remarks to
+                            Hugo; ‘We signed up a Treaty in which we described
+                            ourselves as allies of a sovereign people, and then
+                            we broke it’. The novel is haunted by the idea of
+                            treachery. As a consequence, no one is at home:
+                            ‘This was an empty country. Nobody had really
+                            written on it yet; a few furrows, sheep tracks, the
+                            scribbling of the wind’, Teresa reflects. I was
+                            reminded of the words scrawled across Colin
+                            McCahon’s ‘Northland Panels’: ‘a landscape with too
+                            few lovers.’ Teresa’s eventual lover and perhaps
+                            rescuer, Nikolai, is a Russian émigré, one of a
+                            shadowy group which inhabits the margins of the
+                            novel. Nikolai tells Teresa; ‘You are like us... you
+                            haven’t really got here yet, you haven’t really
+                            arrived’. Pakeha New Zealanders in this novel are
+                            unable to help each other. In Wellington they live
+                            dotted around the hills of the city, facing each
+                            other but apart. The feminist group, which Cass is
+                            part of, splinters once its Maori members leave. A
+                            women’s party at Mollie’s house on the Kapiti coast
+                            is not a sisterly occasion. In another scene, people
+                            gather on the beach at Makora at dusk but soon three
+                            separate fires have been lit; ‘the result of three
+                            different decisions, and disputes about the cooking
+                            and general organization of the event were turning
+                            into the event itself’. There are a number of these
+                            social gatherings punctuating the novel but none
+                            ends, as say Mrs Ramsey’s dinner in To the
+                            Lighthouse , or the assembly in the round shell
+                            house at the end of the bone people does, in harmony
+                            or reconciliation. Both Teresa and her country are
+                            shown as suffering the consequences of an original
+                            trauma from which all subsequent pain and
+                            dislocation has followed. The place of Maori
+                            themselves in this is unclear. Their representative
+                            in The Peastick Girl is Rangi, an unsatisfactory
+                            character often seen standing on headlands looking
+                            out to sea or heard making gnomic utterances.
+                            Although by the end of the novel Teresa, having
+                            learnt the terrible secret of her past, has glimpsed
+                            a possibility of how she might begin to heal, no
+                            such hope is held out for a country as unsettled and
+                            broken as New Zealand. Help, if that is what Teresa
+                            has found, begins in a deserted farmhouse in the
+                            shadow of Mt Taranaki, far away from the
+                            entanglements of family and the anomic life of the
+                            city. This account of the novel makes it seem
+                            thinner and more schematic than it is. The Peastick
+                            Girl is dense, rich, lyrical and engulfing. It pulls
+                            you in and has its way with you, brushing aside
+                            critical objections as it does. Much of its success
+                            is technical. The writing is poetic and elaborate
+                            but also very precise, repeatedly surprising in its
+                            effects, with remarkably few false notes. Teresa’s
+                            is the dominant consciousness but the point of view
+                            often shifts to other characters, and between past
+                            and present, in a manner that can momentarily
+                            wrong-foot the reader but which suits a work in
+                            which time streams rather than ticks. Hancock is a
+                            very literary writer with a playful sense of the
+                            traditions of the novel as a form. Although the
+                            shifts in point-of-view are normally unannounced, at
+                            one point, in mock deference to the limits of the
+                            realist mode in making such switches, a third-person
+                            narrator declares: ‘And here, as he stands behind
+                            her... we will leave him and begin to consider this
+                            scene so far from her point of view’. Teresa,
+                            herself a writer though little is made of this,
+                            plans to adapt The Duchess of Malfi for a New
+                            Zealand context. Chapter 10, ‘Hugo at the Newspaper
+                            Office, Aeolus, the Cave of the Winds’ refers to
+                            Joyce’s Ulysses and Odysseus’s encounter with the
+                            wind-god in the tenth book of The Odyssey. And so
+                            on. There is nothing heavy-handed about this
+                            literary referencing. In some ways The Peastick Girl
+                            is an almost offhand novel. Characters arrive
+                            unannounced and for no good reason other than the
+                            author needs them at that moment. Characters who are
+                            no longer needed simply fail to reappear. A vivid
+                            scene involving an exhilarating motorbike ride over
+                            the Rimutakas has no obvious purpose but I’m glad
+                            it’s there. Hancock pays no respect to those
+                            conventions of the form that require the author to
+                            take pains in moving a character from one place to
+                            another, or explain how it is that X knows Y.
+                            Instead she creates a fictional world as
+                            phantasmagoric as it is real, and none the less real
+                            for that. This indeterminacy, however, creates a
+                            problem of how to end the novel. In part a mystery,
+                            only part of that mystery has been revealed by the
+                            novel’s close; other secrets hinted at remain
+                            undisclosed; loose ends dangle. Perhaps this is
+                            wise. A profound mystery always creates expectations
+                            that its solution must disappoint. On the other
+                            hand, when a mystery has helped propel a novel it is
+                            frustrating to find it left partly unresolved.
+                            Hancock’s solution of this problem is to conclude
+                            the narrative with the words, ‘To be continued.’ The
+                            full-stop is teasing, and the words can mean either
+                            there is a further volume to follow, or as I think
+                            more likely, that this is a story without end. This
+                            is hardly a criticism. As I said, The Peastick Girl
+                            disarms most objections. It is one of those
+                            infrequent new New Zealand novels – Eleanor Catton’s
+                            The Rehearsal (2008) is another – that really is
+                            new.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>ANZ LitLovers LitBlog Review</summary>
+                        <p>
+                            The Peastick Girl by Susan Hancock Lisa Hill ANZ
+                            LitLovers LitBlog , 6 October 2012
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>George FM (Auckland)</summary>
+                        <p>
+                            Bookish and Awkward book review Lucinda, Time Out
+                            Bookshop (Mt Eden) 1 August 2012, George FM
+                            (Auckland)
+                            http://www.georgefm.co.nz/Best-Of-Wednesday-Breakfast-with-KirstDean-aka-The-Eens/
+                            tabid/127/articleID/116363/Default.aspx Today we’re
+                            talking about The Peastick Girl by Susan Hancock,
+                            published out of Australia but written by an ex-pat
+                            Kiwi writer, am I right? That’s right, it’s
+                            published by a really small company in Melbourne but
+                            it’s available in New Zealand, readily available. So
+                            it really is quite important that it’s written by an
+                            Australian I think, by an Australian-New Zealander,
+                            because it’s all about the New Zealand landscape and
+                            its effect on people. It’s set in Wellington and
+                            Wellington features almost like a character in it.
+                            It ’ s just incredibly Gothic and it ’ s got all
+                            these descriptions of the weather and the wind
+                            sweeping across the harbour and all the people in it
+                            are quite troubled and Gothic as well. It’s really
+                            beautiful. I really enjoy it when you get a sense of
+                            place in a book like that. Yes, absolutely. And I’m
+                            actually from Wellington so I felt really nostalgic
+                            while I was reading it, and it’s pretty much spot
+                            on. It’s all about youngish people making their way
+                            as well, so there’s lots to identify with. And so,
+                            key things, without giving too much away? Okay, so
+                            it’s basically the story of this young woman called
+                            Teresa Matheson and like Hancock she’s been living
+                            in Melbourne. She comes back to Wellington to live
+                            and what’s basically happened is that her mother has
+                            died in mysterious circumstances out on the harbour
+                            in a boat. So it’s all very mysterious when you
+                            first get into the book, and she’s got two other
+                            sisters and they’re all just trying to find their
+                            way and find their paths in life and Teresa is in
+                            the throes of a mental breakdown, so there’s a lot
+                            of madness and hallucination in big empty Wellington
+                            villas. So it’s pretty good. I’m a really big fan, I
+                            just loved it, I think it’s beautiful. It’s good to
+                            hear a ringing endorsement from you, especially
+                            someone that like you say has been a Wellington
+                            resident, so you know they weren’t messing about!
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            The Canberra Times review The Peastick Girl
+                        </summary>
+                        <p>
+                            Moody Inner Landscapes Felicity Plunkett (Poetry
+                            Editor, University of Queensland Press) 23 June
+                            2012, The Canberra Times Susan Hancock’s debut novel
+                            is ambitious and extraordinary. Composed of four
+                            books with poetic titles such as ‘Dialogue of the
+                            Insects’ and ‘The Book of the Duchess’ and wrapped
+                            in a fantastical prologue and ‘end page’, the novel
+                            ends with the words ‘to be continued’. It traces the
+                            story of Teresa Matheson, returning from Australia
+                            to her native New Zealand (where Hancock herself was
+                            born), to her sisters Mollie and Cass and to
+                            questions of self, solitude and origin. Hancock’s
+                            descriptions of landscape are elaborate and lush,
+                            taking in the physical and metaphysical. In a kind
+                            of pathetic fallacy, the landscape around Teresa
+                            seems troubled, vexed by storms or shimmering in the
+                            wake of trauma. The harbour rises ‘like a curtain of
+                            wet light’ and church spires ‘are rusty in the
+                            sunlight, smoking with damp’. At one stage
+                            characters walk ‘into an extraordinary moment where
+                            the garden sprang deep globes of blue fruit’. This
+                            is glossed: ‘For it was as though someone was
+                            shining a mirror on the sea whose reflection,
+                            lucent, trembling, burning an intense and windless
+                            blue rose like an angled plane and flooded the
+                            garden in a deep luminous atmosphere.’ The density
+                            of these descriptions creates a landscape richly
+                            layered with the fabulous, the remembered and the
+                            imagined. At times elaboration results in fresh
+                            illuminations, such as when Mollie’s (rather
+                            pompous) husband Gil is described as speaking to her
+                            ‘in the almost priestly intonation, sacerdotal,
+                            hieratic, that can govern, at certain moments, the
+                            marital antiphon’. It requires patience (and a
+                            willingness to consult the dictionary) to stay with
+                            such writing, which sometimes threatens to overwhelm
+                            other aspects of the novel, such as plot.
+                            Conventional plot, though, is not Hancock’s primary
+                            concern. At times a sudden authorial voice tears
+                            through the narrative fabric to show its seams.
+                            ‘There are scenes here we have to leave out’ is a
+                            typical intervention. Conventional plot is examined,
+                            too, by Hancock’s protagonists, especially Teresa.
+                            In ‘The Book of the Duchess’, Teresa’s emotional and
+                            mental crisis is channelled through her decision to
+                            write a screenplay of John Webster’s 17th-century
+                            play The Duchess of Malfi as a New Zealand tragedy.
+                            As Teresa writes, her own voice and that of the
+                            duchess - one of the most troubled and haunted
+                            figures in literature - merge and she lurches in and
+                            out of what might be thought of as reality. Yet
+                            ‘reality’, too, may be a construct, and if so, it is
+                            one her characters examine closely. With the
+                            exception of Mollie, newly pregnant and chasing a
+                            particularly active small child and his brother,
+                            none of the characters seems to have much to do
+                            besides reflect. This is a significant luxury,
+                            though no one seems at all comfortable within it.
+                            The novel’s episodes are intense, its characters
+                            impassioned and often agonised. The sisters’
+                            reactions to their mother’s mysterious history shape
+                            their lives, especially their romantic lives.
+                            Central to the novel is Teresa’s relationship with
+                            Hugo, variously described as looking like (dark,
+                            craggily handsome) Ted Hughes and (fair, boyishly
+                            handsome) Rupert Penny-Jones. Hugo’s first lover was
+                            the girls’ mother, and although he appears to be in
+                            love with Teresa, more striking is the dramatic
+                            intensity of their wounding encounters. At one
+                            point, visiting Mollie and Gil for dinner, Teresa
+                            and Hugo are outside engaged in passionate debate,
+                            while their hosts watch them from inside. The sense
+                            of performance is clear, though the incident results
+                            in an exacerbation of Teresa’s mental and emotional
+                            symptoms. The novel’s scale and scope are Joycean,
+                            and its venturing into character’s heads is
+                            reminiscent of a Modernist concern with charting
+                            human cognitive processes. The turmoil of the
+                            women’s experiences gives the novel a brooding inner
+                            landscape to match its fractured portrait of a moody
+                            Wellington. Questions of national reconciliation and
+                            the revelation of personal secrets underpin a novel
+                            more concerned with language than with conventional
+                            narrative, or its resolution.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            The Age review The Peastick Girl by Susan Hancock
+                        </summary>
+                        <p>
+                            The Peastick Girl Owen Richardson 16 June 2012, The
+                            Age Theresa has returned from Melbourne to her
+                            sisters in Wellington, partly to get away from her
+                            Russian boyfriend and his strange theories about the
+                            devil he thinks she has hovering about her. It’s a
+                            haunted milieu: Theresa’s mother died in mysterious
+                            circumstances some years before and her younger
+                            sister Cass also has a trauma in her past; there is
+                            also the question of Hugo, a friend to all the women
+                            whose exact relationship with their mother is hidden
+                            from them. A brief summary can’t really do justice
+                            to the complexities of this highly gifted novel.
+                            Outside the family drama there are the historical
+                            wounds inflicted on the Maori by the pakeha, and the
+                            debates around the feminist magazine Cass works on,
+                            and the meeting of race and gender politics
+                            represented by Rangi; Hancock roams around the pubs
+                            and newspaper offices and university campuses. And
+                            all this is given a lustre and intensity by her
+                            precise, musical prose, with its matchless
+                            evocations of the weather and the landscapes around
+                            Wellington and the fugitive subtleties of her
+                            characters’ inner lives. Hancock doesn’t like to
+                            spell things out; you have to be patient with this
+                            book and sometimes allow yourself to not be sure
+                            where it’s going. It’s her purpose not to tie
+                            everything up neatly and there are plot strands and
+                            themes that aren’t resolved. Tidy-minded readers may
+                            baulk at this, but it gives a sense that there is
+                            much more to this world and these characters than
+                            can easily be pinned down. The last words are ‘To Be
+                            Continued’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            NO review Sue Hancock The Peastick Girl
+                        </summary>
+                        <p>
+                            Q &amp; A Sue Hancock NO (online NZ magazine), May
+                            2012 http://www.nomagazine.co.nz/good/sue-hancock-qa
+                            An absorbing story of youth, secrets, nature and the
+                            agony of relationships, brand new novel The Peastick
+                            Girl has just hit the shelves here in NZ. NO tracked
+                            down its author, award-laden Kiwi writer and
+                            citizen-of-the-world Susan Hancock, for a peep
+                            inside her clever head. Could you explain the title
+                            of your latest novel? One of my readers wrote to me
+                            and said he couldn’t put the book down, that he read
+                            it in two great gasps, but that he still never
+                            understood the first page. Everyone always says ‘The
+                            what?’ when they hear the title, and I always say,
+                            ‘It’s explained on the first page.’ It’s about a
+                            split in the personality of one of the three
+                            sisters; in the book you find out why it happened
+                            and who it happened to. Basically there are two
+                            magical figures who inhabit one of the characters,
+                            the Red Queen - who rages and howls in the wind
+                            Something had happened to the Red Queen that made
+                            her howl like that... Her eyes bulged, the wind blew
+                            her face away. - and the silent and fragile girl who
+                            is kind of like a cabbage butterfly fluttering over
+                            the peas that are growing up the peastick frames.
+                            She is much closer to the natural world than she is
+                            to human life, and it’s her love of beauty that
+                            saves her. What initially inspired the book? This
+                            novel started out as a single image of three sisters
+                            sitting on a beach on the Kapiti coast, one warm
+                            summer evening. (So it obviously wasn’t last
+                            summer.) I had a sense of the three of them right
+                            away, even their names, though it took a while for
+                            their surname to float into my mind. So the novel
+                            started with the characters, not really with an idea
+                            or a plot. I always feel as if I met them rather
+                            than invented them - Mollie, Teresa and Cass,
+                            sitting on the beach under a sky as blue as any
+                            remembered sky ever is, with the light of the sea
+                            playing up into it. How will young New Zealanders
+                            identify with the central characters? I think we
+                            come from a fantastic country. And I think New
+                            Zealanders, especially the savvy generation who are
+                            in their twenties and thirties now (the age of most
+                            of this novel’s characters) know this. We know how
+                            remarkable it is out here; we see our country
+                            through the eyes of people who travel here; we know
+                            how independent our culture is and we know how to
+                            live a metropolitan life. There’s a lot of activity
+                            in this book - huge social scenes open up, people go
+                            off into the mountains or ride motorbikes through
+                            the Rimutaka gorge or hold parties in town, and they
+                            all talk! They gossip, they agonise about their
+                            relationships - they’re mostly in very shifting
+                            relationships, they’re seeking something. Some of
+                            them have a clearer idea about this than do others.
+                            What are some key questions dealt with in the
+                            narrative? The plot revolves around a pattern of
+                            secrets. It’s also about the ways some people get
+                            hold of the reins of a number of lives and
+                            manipulate others to the point of pretty serious
+                            damage. It’s about revenge and retribution and
+                            treachery. It’s about witnessing. One of the
+                            characters, a Russian (who, like the Maoris, comes
+                            from a broken history) says that no matter how hard
+                            you try to hide the truth, there is always someone
+                            who knows. Do you feel the novel belongs to one
+                            genre in particular? Let me turn that around a bit
+                            and say that the two novels I most admire from the
+                            twentieth century are Ulysses by James Joyce and
+                            Women in Love by D.H. Lawrence. I admire them
+                            because of their range and because they don’t try to
+                            tidy things up. And they don’t create some special
+                            voice for fiction, they don’t have so much formal
+                            narrative as narrative presented through the
+                            consciousness of the characters. They take a lot of
+                            risks; no reader can ever quite wrap up the reading
+                            experience of Ulysses, for example. I love that; the
+                            risk taking, the sense of horizons beyond the book,
+                            the closeness to characters, the crazy digressions –
+                            they’re wild novels. I don’t like ‘Tame’. How was
+                            the Kapiti coast setting integral to the plot? Well,
+                            it’s timeless; things out there are held in a very
+                            still, clear light. There are great households out
+                            there, and more of the novel’s communal and social
+                            scenes are set there than in Wellington. There’s an
+                            excruciating dinner-party in a chapter called ‘A
+                            Pleasant Evening’ where family tensions get to
+                            almost murderous levels. And underneath all that is
+                            the sense of the Maori and their dislocation, like a
+                            deeper atmosphere. And there is the sea! It’s our
+                            New Zealand medium, the sea. The Peastick Girl would
+                            make a great film. In an ideal world, who would you
+                            love to see play the main roles? Which director
+                            would you choose? I write really cinematically, so
+                            the book is very visual. And I write a lot of
+                            dialogue – so for both these reasons that book would
+                            translate very readily into film. And who would I
+                            have do it, in an ideal world? The New Zealand woman
+                            film-maker who has the most beautiful cinematic
+                            language in the world: Jane Campion, of course. As
+                            for the main roles, I think Naomi Watts would be
+                            marvelous for Mollie. (All that sweetness and
+                            vagueness, and underneath it all a strength no one
+                            much has bothered to find out about. But Mollie is
+                            only thirty-two.) For Teresa, the heroine – Jennifer
+                            Lawrence, who plays Katniss Everdeen in The Hunger
+                            Games and was also fantastic in The Winter’s Bone.
+                            Because she is so resolute! Teresa goes through a
+                            huge amount of pain and fright in the course of the
+                            year of this book, but she’s tough. Hugo, the main
+                            guy in the first half of the book is, Teresa thinks
+                            while she is looking at him on the first night that
+                            they meet, the most beautiful man that she has ever
+                            seen. And that’s his problem – because of this he’s
+                            never really had to develop his character. But he’s
+                            really charming and you find out about what has
+                            damaged him. Whenever I think about him I think
+                            about that English actor, Rupert Penry-Jones, the
+                            really gorgeous one from Spooks. I could go on at
+                            length – there are eight major roles and another
+                            twenty significant other characters and then a world
+                            of people beyond that who come into focus and vanish
+                            again as the plot takes them. What kind of
+                            literature would you like to see coming out of New
+                            Zealand? Young work is probably the best short
+                            answer - not necessarily written by the young but
+                            about the young. I think there’s a very special
+                            generation in NZ between twenty and forty-five:
+                            independent, clever, good fun and metropolitan.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

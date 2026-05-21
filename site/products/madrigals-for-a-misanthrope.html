@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,176 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/madrigals-for-a-misanthrope.svg&quot;);
                         "
                     >
-                        Featured
+                        Madrigals for a Misanthrope
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Jack Hibberd</h3>
+                </div>
+                <img
+                    alt="Cover of Madrigals for a Misanthrope"
+                    class="product-cover-mobile"
+                    src="/assets/books/madrigals-for-a-misanthrope/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Madrigals for a Misanthrope"
+                        class="product-cover"
+                        src="/assets/books/madrigals-for-a-misanthrope/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The Führer wore layered cotton waste around his dapper
+                        genitals when exhorting hordes of supplicants at those
+                        Walpurgisnacht spectacles. Bookended by Eve and Adam but
+                        haunted by the depravity of the Third Reich, Madrigals
+                        for a Misanthrope questions our place on the planet.
+                        Author of one of Australia’s most famous plays, Dimboola
+                        , Jack Hibberd is Swiftean, savage and funny. His satire
+                        flays human pretensions. The poet’s affinity with
+                        Baudelaire is given in a suite of adaptations. His
+                        laments on the deaths of lost friends form a group of
+                        mellower character portraits. Jack Hibberd has been
+                        Melbourne’s irritant-conscience for more than three
+                        decades. He writes sardonic, democratic, unpredictable
+                        verse. Alan Wearne, Sydney Morning Herald Hibberd’s
+                        talent, really, is for Jacobean revenge and spleen about
+                        the body... Poem after poem indulges a morbid disgust
+                        with human motives, an an ennui about the inevitable end
+                        of things. His linguistic zest, which is skillful and
+                        considerable, is at its best with political caricatures
+                        and his his clever takes on various poetic forms. Barry
+                        Hill, The Australian His poetry is characterised by
+                        verve and abundance in vocabulary and verse form. Gig
+                        Ryan, The Age Hibberd has a professional’s skill, an
+                        amateur’s openness... I should say that he is writing
+                        trenodies. That seems appropriate to the formality which
+                        he finds congenial, the grief at loss which pervades
+                        many of the poems, and the spanning of both public and
+                        private experience. Peter Steele Australian Book Review
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/madrigals-for-a-misanthrope.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/madrigals-for-a-misanthrope/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044462</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>104</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Jack Hibberd was born during 1940 on the plains of
+                            north-western Victoria, educated at Bendigo and at
+                            the University of Melbourne, where he clinched a
+                            medical degree.
+                        </p>
+                        <a class="bold" href="/authors/jack-hibberd.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Island</summary>
+                        <p>
+                            Reviews Poetry Survey : Jack Hibberd - Madrigals For
+                            A Misanthrope Oliver Dennis Island, No. 101, Winter
+                            2005 For someone who has long held a reputation as
+                            an irreverent dramatist, Jack Hibberd can write
+                            surprisingly formal poetry. A number of these poems
+                            are sonnets, ranging from elegies and ancestral
+                            portraits to a set of translations from Baudelaire.
+                            Acerbic and despairing, Hibberd’s work often
+                            responds to life’s cruelties (as one poem has it: ‘I
+                            comprehend / that life itself is punishment’); it
+                            also expresses disgust at our endless capacity for
+                            selfishness and violence, and specifically targets
+                            famous Nazi figures: ‘A model for tasteful
+                            totalitarians, / beyond causes, ideology, race,
+                            caste, / the über-Hitler to some historians, / a
+                            stylist, he made Stalin seem gross, daft’ (‘Reinhard
+                            Heydrich’). In contrast, Hibberd elsewhere writes a
+                            good deal about sex and the consoling influence of
+                            love: ‘Often our branches / caress, rub, touch; /
+                            not quite as often / they thrash’ (‘Siamese Love’).
+                            Excluding a fine version of ‘Le Chat’, which speaks
+                            magnificently of Jeanne Duval’s ‘coffee limbs and
+                            curls’, his metrical writing tends to appear
+                            somewhat strained. In fact, one of the most likeable
+                            poems in this collection is pure doggerel. ‘Poem No.
+                            2 for Bill’, about ‘a piebald hound’ that dies of
+                            heat exhaustion, shows him in complete control of
+                            his medium, employing language he is perhaps used to
+                            reserving for the stage.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

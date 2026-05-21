@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,401 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/brunswick-street-art-revolution.svg&quot;);
                         "
                     >
-                        Featured
+                        Brunswick Street, Art &amp; Revolution
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">
+                        Anne Rittman and Maz Wilson
+                    </h3>
+                </div>
+                <img
+                    alt="Cover of Brunswick Street, Art &amp; Revolution"
+                    class="product-cover-mobile"
+                    src="/assets/books/brunswick-street-art-revolution/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Brunswick Street, Art &amp; Revolution"
+                        class="product-cover"
+                        src="/assets/books/brunswick-street-art-revolution/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        B ook Description It had to happen. Carnaby Street was
+                        the centre of fashion in the 60s. The 70s belonged to
+                        Haight-Ashbury’s flower children. Then in the 80s
+                        Melbourne gave birth to Brunswick Street — epicentre of
+                        an emerging arts movement. Three subcultures — grungers,
+                        bohemians and radical feminists collided and brought
+                        forth a dynamic that changed the face of the inner city.
+                        The meteoric rise of Brunswick Street was a cultural
+                        explosion of art, theatre, fashion, grunge, music,
+                        drugs, diverse sexuality, celebrity and politics. - Maz
+                        Wilson Brunswick Street, Art &amp; Revolution is the
+                        story of a street that became a culture. Written by Anne
+                        Rittman and Maz Wilson, it consists of a series of
+                        interviews and colour photographs with and of the people
+                        who brought about that transformation. It teems with
+                        characters: baristas, hair-cutters, potters, comedians,
+                        painters, singers, poets, restaurateurs and more. It
+                        evokes iconic places: the Black Cat, Pigtale Pottery,
+                        The Flying Trapeze, T F Much Ballroom, Bakers, Circus Oz
+                        , Scully &amp; Trombone and the list goes on. It bursts
+                        with visual impact: performances, artworks, architecture
+                        and the Waiters’ Race for example. Here it is in its
+                        true form as a cultural, social and political history.
+                        It was a pioneering spirit which created its own centre
+                        of gravity. Early on the street had a frisson of
+                        excitement. Artists rubbing shoulders with criminals in
+                        a quarter acre block. - Rod Quantock. Laughter is the
+                        shock absorber of life! - Tim McKew It was love at first
+                        coffee . - Sandra Goldbloom Zurbo
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 88.0</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/brunswick-street-art-revolution.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/brunswick-street-art-revolution/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044978</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2017</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>470</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Anne Rittman taught art and filmmaking in Victorian
+                            Primary and Secondary schools for over 23 years. She
+                            co-founded and managed Pigtale, a design studio and
+                            small manufacturing business in Brunswick Street,
+                            Fitzroy.
+                        </p>
+                        <a class="bold" href="/authors/anne-rittman.html"
+                            >Go to Profile»</a
+                        >
+                        <h3>About the Author</h3>
+                        <p>
+                            Maz Wilson taught photography in Victorian Secondary
+                            Schools. She travelled extensively, building a
+                            worldwide photographic collection.
+                        </p>
+                        <a class="bold" href="/authors/maz-wilson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>arena MAGAZINE</summary>
+                        <p>
+                            Art and Revolution review by Grazyna Zajdow arena
+                            MAGAZINE No 151, December 2017 ‘They call it
+                            paradise, I don’t know why You call some place
+                            paradise, kiss it goodbye’ —‘The Last Resort’, Don
+                            Henley and Glen Frey Brunswick Street, Fitzroy, runs
+                            south to north from the edge of central Melbourne at
+                            Victoria Parade with its mixture of grand Victorian
+                            terraces, parks, churches and ugly
+                            mid-twentieth-century office buildings to Queens
+                            Parade. North of Queens Parade it enters North
+                            Fitzroy; while readers may not think this is
+                            particularly important, it is to the denizens of
+                            Melbourne’s inner north, and it’s an important
+                            distinction in this epic compendium of interviews
+                            and photographs about this remarkable street. Though
+                            limited by time and space, as any book about a
+                            street must be, this book is as chaotic and lively
+                            as the street itself. And while I think that
+                            Brunswick Street is in need of a social history in
+                            the manner of Janet McCalman’s biographies of
+                            Richmond (Struggletown) and Glenferrie Road, Kew
+                            (Journeyings), that can hardly be reason for
+                            criticising this particular tome. The authors, or
+                            curators really, write that ‘three
+                            subcultures—grungers, bohemians and radical
+                            feminists—collided and brought forth a dynamic that
+                            changed the face of the inner city. The meteoric
+                            rise of Brunswick Street was a cultural explosion of
+                            art, theatre, fashion, grunge, music, drugs, diverse
+                            sexuality, celebrity and politics’. I certainly
+                            wouldn’t argue with that. I guess I need to out
+                            myself here. My relationship to Brunswick Street is
+                            long indeed, though I was brought up on the other
+                            side of the Yarra River. My father had his first job
+                            in Australia in one of the sweatshops that lined the
+                            street in 1959. In the early 1970s, more than one of
+                            my friends had to visit the STD clinic in Gertrude
+                            Street, less than a block away from Brunswick
+                            Street. In 1979 I was working for a friend who
+                            booked live bands into the Aberdeen Hotel in North
+                            Fitzroy (a venue that became upmarket apartments in
+                            the late 1980s) and we spent our days in the first
+                            of the cafes that marked the effective beginning of
+                            Brunswick Street’s glory days. Our office was
+                            Baker’s, just north of Johnston Street. This marked
+                            us off from the black-clad gang at the Black Cat,
+                            two blocks away south of Johnston. I have an
+                            attachment to the place that might cloud my
+                            judgement of this book, but since so much of
+                            Melbourne’s artistic and cultural life has some
+                            measure of relationship to it, I don’t feel too
+                            compromised. One of Giuseppe Ranwri''s iconic tiled
+                            seats, Brunswick Street Brunswick Street: Art and
+                            Revolution does not seem to have a clear chronology
+                            or geographic structure. It’s mostly a series of
+                            interviews with around a hundred people and
+                            illustrated with what seems to be thousands of
+                            photographs. It begins with Greg Hunt and the Ferret
+                            Affair at the T. F. Much Ballroom. T. F. Much and
+                            its slightly later incarnation, Much More Ballroom,
+                            were held at Cathedral Hall at the southern end of
+                            the street. Cathedral Hall is now a renovated
+                            nineteenth-century lecture theatre belonging to the
+                            Australian Catholic University, but in the early
+                            1970s it was a run-down venue that was perfectly
+                            placed to host Daddy Cool, Company Caine, Captain
+                            Matchbox and other bands that led to the golden
+                            years of Australian rock. The interiors were lit by
+                            the glorious light shows of Hugh McSpedden.
+                            Marijuana was freely smoked and, not long after,
+                            Marijuana House was established down the road. By
+                            1973 Much More had morphed into the Melbourne
+                            Artists Workshop on the other side of the river in
+                            Prahran—but not before it gave birth to Soap Box
+                            Circus and then to Circus Oz. Just as the
+                            working-class population of the fifties and sixties
+                            would no longer recognise the place, so the punks,
+                            junkies, gays, lesbians, artists, performers and
+                            musicians would find recogniton hard now. T. F. Much
+                            and Much More were run by John Pinder and Bani
+                            McSpedden. John Pinder and others set up the Flying
+                            Trapeze theatre restaurant further north of
+                            Cathedral Hall. It can be safely said that
+                            Australian comedy, as we know it now, was a direct
+                            spawn of the ‘Flytrap’. Rod Quantock, Mary
+                            Kenneally, Sue Ingleton, Tim Scally, the Whittle
+                            Family and hundreds more comedians, actors and
+                            performers started, or at least performed, there.
+                            Without the Flytrap there would be no Melbourne
+                            Comedy Festival. John Pinder went on to open The
+                            Last Laugh on the Collingwood side of Smith Street,
+                            and other venues like the Comedy Club and Marijuana
+                            House hosted hundreds more acts. For many years the
+                            Melbourne Comedy Festival had its offices on the
+                            second floor of the building at the corner of
+                            Brunswick and Johnston Streets, above what is now
+                            the 7-Eleven. Once the Pram Factory (which housed
+                            the Australian Performing Group—see Bill Garner’s
+                            essay in this issue) in Carlton closed, many of the
+                            performers and artists migrated a kilometre east to
+                            Fitzroy looking for affordable spaces to live and
+                            work in. Apart from the comedy venues, theatre also
+                            opened up. Just around the corner in Victoria
+                            Street, the Universal theatre and Universal workshop
+                            were set up in 1979 in an old shoe factory. Within
+                            the one building were the theatre, the workshop, RRR
+                            community radio, a food co-op and a naturopathy
+                            school. Robyn Archer’s A Star Is Torn was first
+                            performed there, as was Wogs out of Work . Art of
+                            all sorts flourished along the strip in the eighties
+                            and nineties. Roar Studios was an artists’
+                            cooperative that included David Larwill, Richard
+                            Birmingham, Mark Schaller, Sarah Faulkner, Jill
+                            Noble, Judi Singleton and others. It was a studio
+                            and gallery space and made a huge impact on the
+                            Melbourne art scene. Further north was Pigtale
+                            Pottery and the Women’s Gallery. From there burst an
+                            explosion of ceramic and pottery art from women
+                            artists that included Deborah Halpern, Pauline
+                            McDougall, Marj Renni and many others. With the
+                            movement of artists of all sorts into Brunswick
+                            Street looking for cheap studio and rental
+                            accommodation came the cafes. The Black Cat, Bakers
+                            (where my first husband worked in the guise of a
+                            rude Italian waiter berating hung-over customers on
+                            a Sunday morning), Marios, Rhumbarella’s and so many
+                            others acted as gallery spaces as well as cheap
+                            eateries. Jo Olver at Marios tells the story that
+                            made Brunswick Street world famous. Marios had a
+                            no-bookings policy (as did most of the others), so
+                            when Jerry Seinfeld’s people rang up they were told
+                            that they would have to take their chances just like
+                            everybody else. He never came and some people
+                            revelled in the audacity of saying no to the world’s
+                            most famous comedian. I remember it made front page
+                            of The Age . The ferment of artists, musicians and
+                            cafe culture was a feast for the senses. Many people
+                            in the book try to describe what the Fringe Festival
+                            parades looked like, but the experience is very hard
+                            to transcribe onto the page. Even the photos don’t
+                            do it justice. The freedom that everyone felt to
+                            express themselves (regardless of their lack of
+                            talent) was invigorating. Acrobats on verandah
+                            roofs, dying men dancing in their huge yank tanks,
+                            followed by brass bands playing whatever. Even the
+                            local plant nursery was part of this, and upstairs
+                            exhibitions of garden art were held. Every year at
+                            the end of the football season there was an
+                            exhibition of football art in the Artists’ Garden:
+                            Wayne Carey painted as Michelangelo’s David, Billy
+                            Brownless and Gary Ablett in all their glory. There
+                            was even a painting of a woman giving birth to a
+                            football or her clitoris as football—I am not sure
+                            which. Polyester Books, Brunswick Street Painting by
+                            G. A. McCracken If there ever was a marvelous
+                            Melbourne in the twentieth century, Brunswick Street
+                            was central to it. Every human activity seems to
+                            contain the genesis of its own destruction and that
+                            is obvious here as well. Roar Studios was in a
+                            building that was owned by a woman who worked
+                            incredibly hard in the sixties to save the beautiful
+                            but decaying Victorian terraces. This led directly
+                            to the gentrification of the inner city that kept
+                            the buildings but destroyed the community. Hotels
+                            like the Evelyn, Provincial, Champion and Rob Roy
+                            that first supported the working-class population of
+                            the time and then welcomed the punks and addicts of
+                            later years finally succumbed to the demands of new
+                            residents to clean up their acts. The same people
+                            who were driven from nearby Carlton because of
+                            rising rents were then driven away from Fitzroy for
+                            the same reason. Tourists from the suburbs wanting
+                            to see the nascent gay and post-punk scenes invaded
+                            the street at weekends, and the various shops and
+                            small businesses were overtaken by restaurants and
+                            more cafes. While there is still life there, it is a
+                            shadow of itself. This is portrayed in many of the
+                            poignant stories and reflections in the
+                            book—nostalgic tales of past glories. I began above
+                            with a quote from The Eagles, a band that began with
+                            great spirit in the 1970s and ended as a bloated
+                            vision of rock-and-roll hell. In its success lay its
+                            destruction. The 400 or so pages of this book tell a
+                            similar story in words and photos. Just as the
+                            working-class population of the fifties and sixties
+                            would no longer recognise the place, so the punks,
+                            junkies, gays, lesbians, artists, performers and
+                            musicians would find recognition hard now. But if
+                            there ever was a Marvellous Melbourne in the
+                            twentieth century, Brunswick Street was central to
+                            it. Tolerance came easy when I had a fulltime job I
+                            used to be parochial, now I’m a fulltime snob The
+                            mythology of Brunswick Street I carry like a curse
+                            And I can’t find an empty seat from the Derby to the
+                            Perse… Welcome to La Rue Regret, exit Brunswick
+                            Street —John Ashton
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Review FionaCapp 030617</summary>
+                        <p>
+                            The Age / spectrum 3/6/2017 IN SHORT NON-FICTION
+                            PICK OF THE WEEK reviewed by Fiona Capp, PICK OF THE
+                            WEEK Brunswick Street: Art &amp; Revolution ANNE
+                            RITTMAN AND MAZ WILSON The inner-Melbourne suburb of
+                            Fitzroy was, despite slum clearance, still largely
+                            &quot;a backwater of seedy pubs and sleazy
+                            brothels&quot; when Maz Wilson and Anne Rittman
+                            first moved there in 1975. But the rent was cheap,
+                            drawing writers, artists, musicians, performers and
+                            radical activists who would transform the suburb and
+                            its main drag, Brunswick Street, into a vibrant
+                            bohemian enclave. Venues, galleries and shops such
+                            as Rhumbarellas, the Black Cat, the Flying Trapeze
+                            Cafe, the Troubadour, Roar Studios, the Artist's
+                            Garden, Polyester Records with its provocative
+                            catchline &quot;Totally Weird Shit&quot;, Misfit,
+                            Fetish and many more fostered and reflected the
+                            street's alternative ethos. The diverse voices, the
+                            spirit and daring of that era are captured in this
+                            exuberant landmark anthology of recollections, rants
+                            and raves by those who were there when it all began.
+                            COMMENT by Helenka Wargon Just quietly, it’s a shame
+                            the review wasn’t meatier, speaking more on the
+                            cultural contribution this collection of people made
+                            to Australia, rather than focusing on cheap rent and
+                            seedy pubs. So many of these so called ‘seedy pubs’
+                            nurtured poets and artists of all sorts that mingled
+                            together exchanged ideas on art, culture, Australian
+                            identity. Indeed, it was the ONLY place in Melbourne
+                            where ANYONE could turn up and discuss ideas such as
+                            these without having an academic degree, without a
+                            ticket to a ‘gentlemen’s club’. It was an absolute
+                            breath of fresh air and something utterly lacking
+                            right now in Melbourne. There was so much more she
+                            could make of this book; how it stands as an
+                            inspiration to this age we’re living in, as a
+                            testimony to what can be born of an area where
+                            artistic expression is welcomed and invited. Indeed,
+                            this now gentrified highly expensive real estate
+                            sits ENTIRELY off the back of it’s former spirit.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

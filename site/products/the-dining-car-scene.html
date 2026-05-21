@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,161 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-dining-car-scene.svg&quot;);
                         "
                     >
-                        Featured
+                        The Dining Car Scene
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Homer Rieth</h3>
+                </div>
+                <img
+                    alt="Cover of The Dining Car Scene"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-dining-car-scene/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Dining Car Scene"
+                        class="product-cover"
+                        src="/assets/books/the-dining-car-scene/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Thornhill strikes a customized match suavely; from a
+                        matchbook; she leans forward, into the flame, takes his
+                        hand, with the match in it... Brian Edwards has said
+                        that Homer Rieth’s poems are ‘markers of the culture’.
+                        The title poem in The Dining Car Scene , taken from
+                        Hitchcock’s North by Northwest , previews his approach.
+                        He presents an incident, a landscape, a book remembered,
+                        or the occasions of love or death, crisply and directly.
+                        Then he effortlessly goes further: he invites us into a
+                        meditation on earthly life and what it may mean. An
+                        entire period, Carlton in the Seventies, comes under his
+                        celebratory and critical eye, in his longer tour de
+                        force ‘Siberia’. And he does the delicate lyric. Any
+                        poet who enchants, writing of the outer suburb of Mount
+                        Waverley, or the music of Vaughan Williams, clearly has
+                        the skills. Homer Rieth’s first collection has been long
+                        awaited. The collection was shortlisted for the 2002
+                        Adelaide Festival Awards for Literature.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 19.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-dining-car-scene.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-dining-car-scene/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044322</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2001</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>58</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Rieth was born in Stuttgart in 1947, of German and
+                            Georgian parents. He came to Australia in 1952. He
+                            was educated at Padua and Assumption Colleges and,
+                            following a short period in the Jesuit novitiate at
+                            Loyola, Watsonia, at the University of Melbourne.
+                        </p>
+                        <a class="bold" href="/authors/homer-rieth.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Imago</summary>
+                        <p>
+                            The Dining Car Scene Imago , Vol. 13, No. 2, 2001
+                            Homer Rieth’s poems, in The Dining Car Scene , are
+                            far less complex than those of Hammial [ Bread ].
+                            They are about moments captured in time by one
+                            medium or another - in the title poem by a camera
+                            shot in a Hitchcock film - and laid out in detail,
+                            real, associated or imagined, and comparative. One
+                            has the impression of Rieth walking through streets,
+                            through the countryside, through the literature and
+                            personae of other countries, with his eyes wide
+                            open, taking note of the finer points that go to
+                            make up those surroundings and giving them equal
+                            place and significance with the large and obvious.
+                            There are three longer poems, that is of over two
+                            pages, the longest being ‘Siberia’, which deals with
+                            the various conceptual deserts, or places of the
+                            lost, created as a metaphor to the real Siberia. ‘In
+                            the end we’re all Siberians’; ‘Siberia your
+                            frontiers never end!’; and ‘Wherever you go
+                            Siberia’s waiting for you’. Mostly these are
+                            reflective poems, although a shaft of irony shoots
+                            out in a few, such as ‘War’ which satirises not only
+                            the place war holds in our society but also the
+                            clichés that surround our attitude to it and to the
+                            society that can produce it.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,661 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/other-stories.svg&quot;);
                         "
                     >
-                        Featured
+                        Other Stories
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Wayne Macauley</h3>
+                </div>
+                <img
+                    alt="Cover of Other Stories"
+                    class="product-cover-mobile"
+                    src="/assets/books/other-stories/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Other Stories"
+                        class="product-cover"
+                        src="/assets/books/other-stories/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Wayne Macauley’s Other Stories is a much-awaited
+                        collection. Here at last Macauley’s peculiar take on the
+                        world is gathered together in short stories, satires,
+                        fables and anecdotes. Many are set in the hinterland of
+                        the outer suburbs where big cars, big driveways, big
+                        houses and big skies make small people feel lost and
+                        strange. This familiar world seems eerie, like a Jeffrey
+                        Smart painting. His yarns of the margins are at the
+                        centre of our culture. Macauley’s short fiction has
+                        appeared for over a decade in our most prestigious
+                        literary magazines, including Meanjin , Overland ,
+                        Westerly , Island and Griffith Review . As novelist and
+                        playwright he is one of our most original and
+                        challenging writers and a winner of The Age Short Story
+                        Competition. His two corrosive novels, Blueprints for a
+                        Barbed-Wire Canoe and Caravan Story , won critical
+                        acclaim. For anyone who thrills to a hypnotic prose
+                        style and incisive social satire, I would urge you to
+                        discover his work! Martin Shaw, Readings Monthly
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 26.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/other-stories.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/other-stories/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044664</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2010</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>172</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Wayne Macauley is a Melbourne writer whose stories
+                            have been published in Meanjin, Westerly, Overland,
+                            Arena, HQ and other magazines.
+                        </p>
+                        <a class="bold" href="/authors/wayne-macauley.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>
+                            Emmett Stinson Known Unknowns review Other Stories
+                            Wayne MacauleyU
+                        </summary>
+                        <p>
+                            Other Stories Emmett Stinson From 3RRR Breakfasters
+                            Show, 7 September 2010 (and Emmett Stinson’s blog
+                            Known Unknowns , 7 September 2010) [From Known
+                            Unknowns 2 September 2010: This week I picked up two
+                            books that I’m very excited about. The first is
+                            Wayne Macauley’s Other Stories , which I’ll be
+                            reviewing next week. I loved his first two novels (
+                            Blueprints for a Barbed-Wire Canoe and Caravan Story
+                            ), and this collection is even better (so far). He
+                            deserves a much wider readership, and I think he’s
+                            one of the finest writers in Australia right now. So
+                            buy it now! Yes, right now!] Wayne Macauley’s Other
+                            Stories collects a variety of short fiction that he
+                            has published in literary magazines over the last
+                            eighteen (!!!) years. Despite the work’s lengthy
+                            gestation, these stories demonstrate an impressive
+                            unity of vision, as well as an extraordinary—if
+                            uniquely Australian—voice. Macauley is also the
+                            author of two excellent novels, Blueprints for a
+                            Barbed-Wire Canoe and Caravan Story , but, as good
+                            as his novels are, Other Stories reveals that he is
+                            an even better short story writer. Macauley’s prose
+                            is absolutely beautiful, as the very first sentence
+                            of his collection proves: ‘In the dog days of
+                            summer, when the earth rolls and sighs and a heat
+                            shimmer wobbles and distorts everything in the
+                            middle distance and beyond, who has not wanted, as
+                            evening falls, to take their mattress and pillow
+                            outside and sleep like a well-heeled vagabond under
+                            an open sky?’ Here readers can already see
+                            Macauley’s humour, and how his stories twist
+                            everyday situations into strange, otherworldly
+                            experiences. In this sense, Other Stories is an
+                            appropriate title for this eclectic, often
+                            experimental collection, but Macauley’s rigorous
+                            innovation is always inflected with mordant satire,
+                            resulting in work that is both affecting and
+                            hysterically funny. Consider the story ‘Bohemians’:
+                            here, a real-estate agent in a once-hip
+                            inner-Melbourne suburb faces a problem; local
+                            housing prices have skyrocketed to the point where
+                            artists and intellectuals can no longer afford to
+                            live there. The solution, of course, is to rent
+                            bohemians from a dealer; the entire story consists
+                            of a letter written by this bohemian-dealer in
+                            response to the real-estate agent. Many of his
+                            stories have similarly absurdist conceits; in ‘The
+                            Man Who Invented Television’, a man named Henry
+                            Walter invents the television set in Melbourne in
+                            1855, and, in an even more unlikely turn of events,
+                            his TV broadcasts current programs, such as The
+                            Oprah Winfrey Show. In my favourite story, ‘The
+                            Bridge’, a soldier is stranded in a remote outpost
+                            and his claustrophobic circumstances recall Samuel
+                            Beckett’s Waiting for Godot . And this is what is
+                            interesting about Macauley’s work: although his
+                            formal experimentation might bear the influence of
+                            international writers like Beckett and Kafka, his
+                            work also suggests the local inheritance of Henry
+                            Lawson and Peter Carey’s early short stories. And
+                            Other Stories ultimately is a book that is uniquely
+                            and particularly Australian. Not only does the book
+                            possess a wry, laconic tone, but also figures from
+                            Australia’s cultural history are a signal fixation
+                            in Macauley’s work: Adam Lindsay Gordon, the dig
+                            tree, the inland sea and Melbourne’s trams all play
+                            a key role in these stories. In this sense, Other
+                            Stories presents an excellent model for a truly
+                            Australian literature. While its aesthetics are
+                            influenced by the great traditions of world
+                            literature, the content remains recognizably
+                            Australian. Wayne Macauley should be recognized as
+                            one of Australia’s best living writers – that he
+                            isn’t is an indictment of Australian literary
+                            culture. This is one of the best books by an
+                            Australian I’ve read all year. Do yourself a favour
+                            and go buy it now.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            The Sunday Age review Other Stories Wayne Macauley
+                        </summary>
+                        <p>
+                            Other Stories Owen Richardson, The Sunday Age , 24
+                            October 2010 ( The Age Review of the Week) “He is
+                            one of Australia’s deadpan visionaries.” Melboume
+                            writer Wayne Macauley’s first novel Blueprints for a
+                            Barbed-Wire Canoe was published in 2004, and his
+                            second, Caravan Story , in 2007. His fiction deals
+                            in parables and allegories, satirical fantasies of
+                            the bureaucratised, neo-liberal world, and yarns
+                            that read like the dreams of some collective
+                            suburban unconscious; he is a writer of great
+                            purity, combining social critique, fertile
+                            imagination and the highest aesthetic scruples. His
+                            work is some of the best fiction Australia has to
+                            offer. This new book collects the stories he has
+                            been publishing since the early 1990s. There are 19
+                            in all, though the book is not long: many are hardly
+                            more than a couple of pages and at 21 pages, ‘The
+                            Bridge’ is the collection’s epic. Figures from the
+                            Australian past appear, such as Simpson and his
+                            donkey, and Adam Lindsay Gordon; television is
+                            invented in 19th century Melbourne; a woman’s
+                            brother turns into a tree; Death himself loiters
+                            behind the changing rooms at a suburban football
+                            ground, calling people to his dance. And just as
+                            Blueprints for a Barbed Wire Canoe was a fable about
+                            an outer suburban development, and Caravan Story
+                            about the co-optation of artists by the government,
+                            in this book, too, the fate of the city and of the
+                            artists who try to live in it are among Macauley’s
+                            preoccupations. Macauley is a moralist: there are
+                            parables of greed and corruption such as ‘Decency’s
+                            Grave’, and ‘The Dividing Spring’, in which a
+                            natural spring causes the dishonest people who drink
+                            from it to become sick. As the 1990s arrive, more
+                            and more are exposed: “the filed reports of the St
+                            John Ambulance team now stationed there permanently
+                            showed them treating up to a hundred serious cases a
+                            day.” And the spirits both of Swift’s A Modest
+                            Proposal and of Kafka’s In the Penal Colony lurk
+                            behind ‘The Farmer’s New Machine’, a story that
+                            pivots on the single line “This continent is 60 per
+                            cent arid. The human body is 60 per cent water: work
+                            it out for yourself.” One of the stories reminds you
+                            sharply of its age: in ‘So Who’s the Wrecker Then?’,
+                            from 1999, the unnamed larrikin premier is visiting
+                            a building site. Rather than throw sand at
+                            journalists, as Jeff Kennett did, he gets into a
+                            bulldozer, with which he then runs amok: first he
+                            chases after the media and then demolishes a school,
+                            a childcare centre, a hospital and a church. We all
+                            know, of course, that preachy is a bad thing for
+                            fiction to be, but the sardonic exaggerations of
+                            these stories have such clarity of outline, and the
+                            writing is so controlled, that they have the graphic
+                            power of the very best cartoons. Whether or not
+                            Macauley is arguing against the way we live now, the
+                            writing is unfailingly exact in its effects: towards
+                            the end of the first story in the book - about the
+                            night all the inhabitants of Boxstead Court, Keilor
+                            Downs, dragged their mattresses out into the street
+                            and slept under the stars - Macauley tells us that
+                            afterwards “something still lingered, some ineffable
+                            thing, like a porchlight left on all day.” The image
+                            is so right that Macauley’s discovery of it is also
+                            an ineffable thing. His opening lines pull surprises
+                            on us; they lead us down the path from our world
+                            into his alternative universes. Here he pulls the
+                            trick twice: first on the word “television”,
+                            announced with a little flourish of neo-Victorian
+                            pedantry; and then at the end: Over the course of
+                            one glorious summer, in the year 1855, in a house in
+                            a burgeoning city soon to become known as Marvellous
+                            Melbourne, the amateur inventor and professional
+                            copy clerk Henry Welter finally brought to a
+                            practical realisation the invention he had been
+                            working on assiduously for the previous 10 years,
+                            videlicet the television set, and that evening, his
+                            wife Elizabeth having retired to her bed, Henry
+                            removed himself to his study with a jug of beer and
+                            some Stilton cheese to watch re-runs of I Dream of
+                            Jeannie and later, with a hot chocolate and a
+                            biscuit, the CNN News Overnight . Then there is
+                            this, starting with mousily pompous sociological
+                            observation and ending as if in the world of some
+                            ancient myth, or of Shakespearean comedy gone
+                            terribly wrong: Given the strange and often troubled
+                            world of familial relations, and particularly those
+                            that take place in an isolated outer suburb such as
+                            M—, it is perhaps not very surprising that Ellana
+                            McLeod, the newsagent’s daughter, should end up
+                            marrying her brother. Macauley’s work is dark and
+                            more than tinged with melancholy; it is also often
+                            wildly funny. Like Bail and Murnane, he is one of
+                            Australia’s deadpan visionaries, a teller of tall
+                            and cerebral tales.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            Review of Other Stories Australian Book Review
+                        </summary>
+                        <p>
+                            Kaleidoscopic fiction Laurie Steed Australian Book
+                            Review , February 2011, No. 328 How to review a book
+                            that includes, as major characters, Simpson and his
+                            donkey, the Dig Tree, and a bus that may or may not
+                            be a tram? In the case of Wayne Macauley’s Other
+                            Stories ,it is best to read story by story, pausing
+                            only to chart connecting themes in the cultural
+                            landscape. MacAuley’s short fiction draws
+                            inspiration from a surprisingly broad range of
+                            influences. Adam Lindsay Gordon, Simpson, and the
+                            inland sea are all featured in his kaleidoscopic
+                            rendition of Australian history. The author also
+                            revisits suburbia, seeing the potential for both
+                            connection and disconnection in widening roads and
+                            disjointed communities. What sets Macauley apart
+                            from his contemporaries is his willingness to
+                            experiment with form and theme. His shortest
+                            stories, such as ‘The Streets Are Too Wide’ and the
+                            excellent ‘One Night’, are lingering images that
+                            veer closer to narrative poetry than to prose. His
+                            longer pieces weave tales about elaborate themes:
+                            his 1995 Age Short Story Competition winner, ‘Reply
+                            to a Letter’,explores the implicit bonds between a
+                            husband, a wife, and their performing bear. High
+                            concept, for the most part, takes precedent over
+                            character. In some of the shorter pieces, characters
+                            are barely developed at all. Even in the longer
+                            ones, it is difficult for the reader fully to
+                            connect with the emotional core of any of the
+                            players. Regardless, Other Stories is an excellent
+                            collection. There is much to admire here: lyrical,
+                            rhythmic prose melds effortlessly with Macauley’s
+                            uncanny ability to create an indelible image, and
+                            the author plays raconteur with great ease. The
+                            result is a thinking man’s compendium of quality
+                            literature, while the heart gets slightly short
+                            shrift.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            Crikey review Other Stories Wayne Macauley
+                        </summary>
+                        <p>
+                            Elizabeth Bryer on Wayne Macauley’s Other Stories
+                            Guest reviewer: Elizabeth Bryer, Angela Meyer’s
+                            Literary Minded 2 December 2010, Crikey Other
+                            Stories brings together Melbourne-based Wayne
+                            Macauley’s output over the past decade and counting.
+                            The collection is filled with ‘other’ stories -
+                            tales that are other, or outside the mainstream, in
+                            a double sense. They are other in subject, given
+                            that they are stories that trace the lives of
+                            characters who exist on the margins, or characters
+                            who would be otherwise unlikely contenders for
+                            centre stage in Australian literature; and they are
+                            other in an industry sense, since the collection is
+                            published not by a multinational - or even large
+                            independent - publisher, but by small outfit Black
+                            Pepper. Many are also other-worldly stories, stories
+                            about ordinary people who find themselves contending
+                            with surreal experiences. Some of the collection’s
+                            tales read as allegories. Yet this age-old form is
+                            given new life in Macauley’s hands, and most of the
+                            allegories are firmly placed in recognisable,
+                            contemporary Australian territory: the stories are
+                            populated with trams, inner-city ex-bohemian
+                            suburbs, one-street towns and places where ‘houses
+                            have crept up the valley... the skeleton bones of
+                            the new houses marching’. Other tales develop in
+                            less familiar, though still recognisable, worlds,
+                            both in setting and content: ‘Jack the Dancer Dies’
+                            has a personified death as protagonist in a poetic
+                            take on the fable ‘The Red Shoes’, while in ‘Man and
+                            Tree’ a woman’s brother transforms into a tree.
+                            Throughout, there is wry commentary on modern
+                            society, which makes the collection seem almost
+                            prophetic. For example, no sooner has a man turned
+                            into a tree than: ‘They came in their hundreds,
+                            bumping up the fire track and crashing through the
+                            bush. The local shire sealed the road, cleared a
+                            square of land for a car park, and began charging
+                            five dollars to see him’. In another story, the
+                            narrator recounts how he hires out bohemians to
+                            real-estate agents in order that ex-bohemian inner
+                            suburbs - which the bohemians were pushed out of -
+                            exude a measure of ‘character’ and ‘ambience’.
+                            Elsewhere, schoolboys who ride trams are set to work
+                            re-stumping houses in an informal labour market,
+                            until various regulations ensue and ‘records could
+                            then be matched against the previously agreed quotas
+                            and notices might then be placed in trams informing
+                            the public whether or not these targets had been
+                            reached’. In some of these stories-as-commentary,
+                            there is a Kafkaesque sense of the oppressive and
+                            ominous presence of authority and systems, such as
+                            in ‘This Bus Is Not a Tram’, in which buses are
+                            plastered with signs declaring that they are trams
+                            and all passengers are expected to take on this
+                            belief; or in ‘The Bridge’, where the protagonist
+                            dutifully carries out his superiors’ orders to guard
+                            a bridge, and throughout there is a mounting sense
+                            that the orders and subsequent occurrences are some
+                            kind of cruel psychological experiment. In another
+                            sharply critical tale, the excesses of political
+                            leaders - and their general tendency to wreak havoc
+                            - are detailed; then, in a single moment, the blame
+                            for their behaviour is squarely placed on the
+                            public’s shoulders, for our condoning their symbolic
+                            gestures and our apathy when it comes to considered,
+                            responsible voting. Meanwhile, ‘The Farmer’s New
+                            Machine’ is chilling in its portrayal of the lengths
+                            gone to in the name of progress, and in the name of
+                            supporting a lifestyle of excess on this driest of
+                            continents. The language that Macauley employs is
+                            usually simple, but is often used to great effect to
+                            create rhythmic structures. Many stories take the
+                            form of kinds of first-person testimonials, which
+                            facilitate this rhythmic style. Occasionally a
+                            metaphor is so arresting for its clarity of vision
+                            that it takes your breath away - for example, after
+                            a magical night, ‘something still lingered, some
+                            ineffable thing, like a porchlight left on all day’.
+                            At times the language is image-rich, such as in the
+                            phrase, ‘In the dog days of summer, when the earth
+                            rolls and sighs and a heat shimmer wobbles and
+                            distorts everything in the middle distance and
+                            beyond...’ The only (small) reservation I had about
+                            the collection was its occasional use of place names
+                            as short cuts for establishing setting: while
+                            ‘Keilor Downs’ may evoke some connotations for a
+                            Melburnian, would it do the same for a reader from
+                            elsewhere? Yet, all in all, this is an accomplished
+                            collection from an as-yet underappreciated
+                            Australian writer who is, nevertheless, slowly,
+                            surely achieving a significant output, both in
+                            quantity of titles and importance and relevance of
+                            the same not only to Australian literature but also
+                            to each reader. We could do much worse than learn
+                            from these tales.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            The Weekend Australian review Other Stories by Wayne
+                            Macauley
+                        </summary>
+                        <p>
+                            Shorts are back in James Ley (critic, member of the
+                            University of Western Sydney Writing and Society
+                            Research Group) The Weekend Australian , 13 November
+                            2010 The Australian short story has been undergoing
+                            something of a renaissance in recent years.
+                            Collections such as Cate Kennedy’s Dark Roots ,
+                            Steven Amsterdam’s Things We Didn’t See Coming , Nam
+                            Le’s The Boat , Paddy O’Reilly’s The End of the
+                            World , Bob Franklin’s Under Stones and Tom Cho’s
+                            Look Who’s Morphing (to name only a handful) is
+                            indicative of a renewal of interest in the form and
+                            the breadth of local talent. A notable feature of
+                            tins resurgence is its spirit of playfulness. These
+                            are writers unbounded by conventional notions of
+                            realism or literary respectability, willing to
+                            experiment with genre and incorporate fanciful or
+                            offbeat concepts into their fiction. The short story
+                            has seemingly provided a more amenable way for many
+                            contemporary authors to exploit the essential
+                            contingency of storytelling. For O’Reilly, Franklin
+                            and Cho, a robust sense of humour is an intrinsic
+                            part of this conceptual freedom. Wayne Macauley’s
+                            Other Stories can also be placed in this category.
+                            Macauley is a seasoned writer who has published two
+                            novels, Blueprints for a Barbed-Wire Canoe and
+                            Caravan Story , and has written for the theatre.
+                            Other Stories brings together short fiction written
+                            over the course of nearly two decades, most of which
+                            has appeared in a number of Australia’s literary
+                            journals. One of the most substantial inclusions,
+                            ‘The Bridge’, is a poised and darkly ironic
+                            excursion into Coetzeean allegory, but the dominant
+                            mode, and Macauley’s true métier, is a form of slyly
+                            satirical comedy. Each of the pieces in Other
+                            Stories is based on a quirky conceit of some kind.
+                            These are by turns strange, unreal or merely funny.
+                            Sometimes, as in the standout story, ‘The Man who
+                            Invented Television’, the concept is gleefully
+                            anachronistic. But each tale is crafted into a
+                            small, self-contained world. The stories roam
+                            widely, but many prowl the suburbs of Melbourne,
+                            where Macauley finds plenty to whet his satirical
+                            blade. ‘Bohemians’ is a sardonic comment on the
+                            process of inner-city gentrification; ‘Wilson’s
+                            Friends’ spins the idea of a man offering to buy a
+                            schoolboy with a price tag accidentally stuck to his
+                            sleeve into an amusing fable about the economics of
+                            workplace relations; ‘So Who’s the Wrecker Then?’,
+                            in which a politician runs amok with a bulldozer,
+                            would seem to be a not-so-veiled dig at former
+                            Victorian Premier Jeff Kennett. But there is a
+                            balancing warmth to Macauley’s fiction. His barbs
+                            can be pointed but his humour is generally
+                            forgiving. Other Stories begins with a tale in which
+                            the residents of a suburban street emerge on a mild
+                            evening to sleep under the stars and end up engaged
+                            in a love-in; it ends with a fine story based on the
+                            life and suicide of poet Adam Lindsay Gordon. In
+                            between, there are frequent intimations of the great
+                            distances that can come to exist between people:
+                            ‘The Streets are Too Wide’, which is more prose poem
+                            than story, literalises the figurative distance;
+                            while Macauley’s silent protester, slowly absorbed
+                            into the tree he is trying to save, presents an
+                            image of terrible loneliness. Yet it is the
+                            persistent and welcome note of affirmation that
+                            makes this a likable collection. In one story, a
+                            homeless man embarks on a cross-town odyssey,
+                            setting out on a quest (more Dorothean than Homeric)
+                            to find a place called Garden City so that he might
+                            ‘gather flowers for Decency’s grave’. He never gets
+                            there. He is eventually arrested while brushing his
+                            teeth with someone else’s toothbrush, having
+                            wandered into their house. The man is deluded, but
+                            by the end you are on his side. After all, going to
+                            such trouble to find flowers to put on Decency’s
+                            grave is a thoroughly decent thing to do.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            The Age review Other Stories Wayne Macauley
+                        </summary>
+                        <p>
+                            Other Stories Cameron Woodhead, The Age , 23 October
+                            2010 ( The Age Pick of the Week) Author of the
+                            acclaimed novels Blueprints for a Barbed-Wire Canoe
+                            and Caravan Story , Wayne Macauley is a compelling
+                            voice in contemporary Australian Literature. Other
+                            Stories , a collection of his short fiction,
+                            showcases his willingness to see - and interrogate -
+                            aspects of Australian culture that normally pass
+                            under the radar. Macauley is an excellent
+                            short-fiction writer; this volume a miscellany that
+                            grabs and gnaws on absurd threads of an experimental
+                            suburban dreaming. In ‘Bohemians,’ a real-estate
+                            agent employs decorative street artists to stand
+                            around, altering the atmosphere of a suburb in which
+                            they can no longer afford to live. ‘Wilson’s
+                            Friends’ is a parable that satirises the
+                            exploitation of young labour. ‘One Night’ sees a
+                            cul-de-sac in Keilor Heights invaded by people who
+                            decide to sleep outside on the road. Macauley is a
+                            spry and compassionate humorist of the postmodern
+                            soul. In lamenting the marginalisation of art from
+                            politics, he writes it back into the picture.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>
+                            Emmett Stinson Known Unknowns review Other Stories
+                            Wayne Macauley
+                        </summary>
+                        <p>
+                            Other Stories Emmett Stinson From 3RRR Breakfasters
+                            Show, 7 September 2010 (and Emmett Stinson’s blog
+                            Known Unknowns , 7 September 2010) [From Known
+                            Unknowns 2 September 2010: This week I picked up two
+                            books that I’m very excited about. The first is
+                            Wayne Macauley’s Other Stories , which I’ll be
+                            reviewing next week. I loved his first two novels (
+                            Blueprints for a Barbed-Wire Canoe and Caravan Story
+                            ), and this collection is even better (so far). He
+                            deserves a much wider readership, and I think he’s
+                            one of the finest writers in Australia right now. So
+                            buy it now! Yes, right now!] Wayne Macauley’s Other
+                            Stories collects a variety of short fiction that he
+                            has published in literary magazines over the last
+                            eighteen (!!!) years. Despite the work’s lengthy
+                            gestation, these stories demonstrate an impressive
+                            unity of vision, as well as an extraordinary—if
+                            uniquely Australian—voice. Macauley is also the
+                            author of two excellent novels, Blueprints for a
+                            Barbed-Wire Canoe and Caravan Story , but, as good
+                            as his novels are, Other Stories reveals that he is
+                            an even better short story writer. Macauley’s prose
+                            is absolutely beautiful, as the very first sentence
+                            of his collection proves: ‘In the dog days of
+                            summer, when the earth rolls and sighs and a heat
+                            shimmer wobbles and distorts everything in the
+                            middle distance and beyond, who has not wanted, as
+                            evening falls, to take their mattress and pillow
+                            outside and sleep like a well-heeled vagabond under
+                            an open sky?’ Here readers can already see
+                            Macauley’s humour, and how his stories twist
+                            everyday situations into strange, otherworldly
+                            experiences. In this sense, Other Stories is an
+                            appropriate title for this eclectic, often
+                            experimental collection, but Macauley’s rigorous
+                            innovation is always inflected with mordant satire,
+                            resulting in work that is both affecting and
+                            hysterically funny. Consider the story ‘Bohemians’:
+                            here, a real-estate agent in a once-hip
+                            inner-Melbourne suburb faces a problem; local
+                            housing prices have skyrocketed to the point where
+                            artists and intellectuals can no longer afford to
+                            live there. The solution, of course, is to rent
+                            bohemians from a dealer; the entire story consists
+                            of a letter written by this bohemian-dealer in
+                            response to the real-estate agent. Many of his
+                            stories have similarly absurdist conceits; in ‘The
+                            Man Who Invented Television’, a man named Henry
+                            Walter invents the television set in Melbourne in
+                            1855, and, in an even more unlikely turn of events,
+                            his TV broadcasts current programs, such as The
+                            Oprah Winfrey Show. In my favourite story, ‘The
+                            Bridge’, a soldier is stranded in a remote outpost
+                            and his claustrophobic circumstances recall Samuel
+                            Beckett’s Waiting for Godot . And this is what is
+                            interesting about Macauley’s work: although his
+                            formal experimentation might bear the influence of
+                            international writers like Beckett and Kafka, his
+                            work also suggests the local inheritance of Henry
+                            Lawson and Peter Carey’s early short stories. And
+                            Other Stories ultimately is a book that is uniquely
+                            and particularly Australian. Not only does the book
+                            possess a wry, laconic tone, but also figures from
+                            Australia’s cultural history are a signal fixation
+                            in Macauley’s work: Adam Lindsay Gordon, the dig
+                            tree, the inland sea and Melbourne’s trams all play
+                            a key role in these stories. In this sense, Other
+                            Stories presents an excellent model for a truly
+                            Australian literature. While its aesthetics are
+                            influenced by the great traditions of world
+                            literature, the content remains recognizably
+                            Australian. Wayne Macauley should be recognized as
+                            one of Australia’s best living writers – that he
+                            isn’t is an indictment of Australian literary
+                            culture. This is one of the best books by an
+                            Australian I’ve read all year. Do yourself a favour
+                            and go buy it now.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

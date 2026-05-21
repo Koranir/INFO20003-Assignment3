@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,232 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/the-poets-stairwell.svg&quot;);
                         "
                     >
-                        Featured
+                        The Poets' Stairwell
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Alan Gould</h3>
+                </div>
+                <img
+                    alt="Cover of The Poets' Stairwell"
+                    class="product-cover-mobile"
+                    src="/assets/books/the-poets-stairwell/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of The Poets' Stairwell"
+                        class="product-cover"
+                        src="/assets/books/the-poets-stairwell/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        ...with scarcely a disruption to her rhythm, a gaunt
+                        Indian woman in purple sari voided the
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 27.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/the-poets-stairwell.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/the-poets-stairwell/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044800</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2015</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>326</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Alan Gould was born in London in 1949 of
+                            English-Icelandic parents and lived on armed forces
+                            camps in England, Northern Ireland, Germany and
+                            Singapore before coming to Australia in 1966.
+                        </p>
+                        <a class="bold" href="/authors/alan-gould.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            The Poets' Stairwell Gillian Dooley Australian Book
+                            Review , June-July 2015, no. 372 In 1977 the
+                            aspiring poet Alan Gould travelled through Europe
+                            with his friend Kevin Hart. Just such a tour forms
+                            the narrative thread for Gould’s latest novel, The
+                            Poets’ Stairwell . This is a roman à clef and those
+                            in the know will enjoy the identification game. More
+                            interesting, though, is the intellectual journey;
+                            Gould’s virginal twenty-seven-year-old hero, Claude
+                            Boon, slowly defining his own poetic self against
+                            the austere and particular mode of his strikingly
+                            talented younger friend, Henry Luck. A vagabond he
+                            might be for these few months, but Boon is no
+                            picaro. Adventurous and willing to abet the
+                            occasional rogue, he is decidedly not one himself.
+                            Though well into adulthood, Boon undergoes a steady
+                            process of maturing and self-understanding during
+                            his journey. The subtitle of The Poets’ Stairwell
+                            could as well be ‘A Bildungsroman’. I have always
+                            been attracted to Gould’s narrative voice; his
+                            selected poems, The Past Completes Me (2005), is the
+                            only book of poetry I have ever reviewed: I liked it
+                            too. There is a genial insistence on following his
+                            own muse (perhaps Clio, as Henry Luck suggests). The
+                            narrative pace is leisurely, but there is none of
+                            the pretentiousness which so often mars ‘literary
+                            fiction’. It is true that concessions are not made
+                            to the etymologically naïve. In the first stairwell
+                            of the story, their nostrils are assaulted by ‘the
+                            fetor of concrete’. But more often a startling and
+                            amusing image is hewn from workaday materials. There
+                            are many, but it is hard to beat the image of Henry
+                            clutching the Yugoslavian Branca ‘as though she were
+                            a cupboard he had rescued from a flood’. There are
+                            acrobats and tricksters in the poets’ stairwell, but
+                            Boon keeps ascending, with Gould, admiring their
+                            antics but not ultimately distracted from his own
+                            artistic illumination.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sydney Morning Herald</summary>
+                        <p>
+                            The Poets' Stairwell Peter Pierce Sydney Morning
+                            Herald 2/4/2015 Alan Gould's ninth work of fiction,
+                            The Poets' Stairwell , is sub-titled &quot;a
+                            picaresque novel&quot;. That promise – of a tale of
+                            adventures on the road by characters open to
+                            experience and destined to be taken up by kindly and
+                            malevolent strangers – is richly fulfilled. Two
+                            London-born Australian poets, Claude Boon and Henry
+                            Luck, decide to travel overseas together. To Boon,
+                            his narrator, Gould gives details from his own life
+                            that have been rehearsed in earlier books: childhood
+                            as an army brat, the miseries of boarding school,
+                            university radicalism. The resilient Boon, witty and
+                            lonely, has to shepherd Luck through both the perils
+                            of their travels and the self-absorption of a true
+                            believer in his genius as a poet. In their
+                            conversations, many poets and philosophers are
+                            summoned – genial, ghostly presences who inform the
+                            cities and regions on the Australians' route. Boon
+                            travels optimistically: &quot;what happens might be
+                            good or bad, but its happening will be good. Spirit
+                            of the picaresque, that.&quot; Bangkok delivers the
+                            pair up to prostitutes and pythons. Next stop is
+                            London, where of course old friends from Australia
+                            are to be found, if hardly to be trusted. One of
+                            these is Eva Swart, radical and dancer, another is
+                            the anarchist Dave Beamish, who is more sinister
+                            than he seems. Boon accompanies them on a hilarious
+                            but dangerous detour to a rock concert in Leeds.
+                            Reunited with Luck, they travel to Ireland to be
+                            greeted in the language of local hospitality:
+                            &quot;And will you gentlemen not be coming along
+                            with me?&quot; Gould's ear never fails him, as he
+                            simulates the speech of rogues and dreamers of
+                            numerous nationalities, besides interpolating lines
+                            of his own verse, and Luck's Stand-up performance
+                            artists and chancers of all stripes are drawn to the
+                            indulgent Boon and the haughty Luck. Among them are
+                            a Turkish smuggler wanting a reference to help him
+                            emigrate to Australia, an American
+                            terrorist-cum-acrobat, a jailed French philosopher
+                            and cadger of cigarettes, a German truck driver who
+                            is an expert on Aquinas, a Greek who discourses on
+                            Mount Olympus, let alone Branca and Jelena Mavec,
+                            mother and daughter translators from Yugoslavia who
+                            take Boon and Luck to a poetry conference in Venice,
+                            while also enticing one of them to bed. Gould's
+                            delight in the folk who cross paths with his
+                            travellers never flags. One brilliant cameo involves
+                            a Czech janitor who says of the national poet Honza
+                            Roubik that &quot;he writes from the room where man
+                            and devil laugh together. That is our country.&quot;
+                            Gould's novel rejoices in many countries and sites,
+                            for instance the staircase that Boon mounts in
+                            Assisi at the top of which &quot;the mountains of
+                            Umbria, glistening with spring verdure, seemed to
+                            gather as though alive&quot;. Picaresque heroes are
+                            willing prey to coincidence, and people come back
+                            unexpectedly into the lives of the wandering poets,
+                            nowhere more so than in the novel's surprising and
+                            affecting last episode. This also gives the author a
+                            chance to engage in the coming commemoration by
+                            making a poignant Anzac joke. While Boon reflects
+                            that after three months on the road, &quot;a certain
+                            lassitude threatened our Grand Tour&quot;, the
+                            momentum of The Poets' Stairwell never flags. This
+                            is the sunniest and funniest work in Gould's long
+                            and distinguished career. (Peter Pierce is the
+                            editor of The Cambridge History of Australian
+                            Literature )
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

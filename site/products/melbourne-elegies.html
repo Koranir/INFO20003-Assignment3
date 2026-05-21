@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,793 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/melbourne-elegies.svg&quot;);
                         "
                     >
-                        Featured
+                        Melbourne Elegies
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">K.F. Pearson</h3>
+                </div>
+                <img
+                    alt="Cover of Melbourne Elegies"
+                    class="product-cover-mobile"
+                    src="/assets/books/melbourne-elegies/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Melbourne Elegies"
+                        class="product-cover"
+                        src="/assets/books/melbourne-elegies/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        Melbourne Elegies being an adaptation and extension of
+                        Goethe ’ s Römische Elegien is K.F. Pearson ’ s sixth
+                        collection. The sensibility is fascinating, with the
+                        shadow of the German poet in Melbourne. ‘ A work in that
+                        tradition of modern verse translation where the poet
+                        also translates cities and times ’, a homage both to
+                        Goethe ’ s Roman Elegies and to Melbourne. The German
+                        poet's discovery of 18th century Rome and of erotic love
+                        are re-mapped in a rediscovery of Melbourne after a long
+                        absence. Pearson ’ s inner city is alive with
+                        characters, observations and bars, although ‘ it ’ s all
+                        thin as smoke compared to my knowing you ’. It ’ s a
+                        very sexy book; hardly anyone is willing to be tender
+                        about another person. There is nothing like it in
+                        Australian poetry.
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 21.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/melbourne-elegies.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/melbourne-elegies/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044241</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>1999</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>62</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Ulitarra Review</summary>
+                        <p>
+                            Two Very Different ‘Melbourne’ Dreamings Paul Cliff
+                            Ulitarra , No.17/18, July 2000 Two books [Alex
+                            Skovron, Infinite City: 100 sonnetinas , K.F.
+                            Pearson, Melbourne Elegies ] from Melbourne-based
+                            poets present two very different ‘cities’, though
+                            with an unexpected resonance... As a Melbourne-based
+                            poet, Skovron has concocted a largely ‘detached,’
+                            conceptual and metaphysical city, with little
+                            specifically tangible of Melbourne itself. The
+                            opposite approach is taken by his co-citydweller
+                            K.F. Pearson who, in his sixth collection, Melbourne
+                            Elegies , positively seeks out and delights in the
+                            city’s physical specifics. (The book indicates
+                            Pearson to be a principal of the lively
+                            Fitzroy-based Black Pepper press, whose numerous
+                            publications, listed at the back of the book,
+                            include Jordie Albiston ’s well-received The Hanging
+                            of Jean Lee .) As advised by the collection title,
+                            Pearson’s departure point is the ‘Eternal City’,
+                            Rome - or rather Goethe’s eighteenth-century
+                            rendition of same in his Roman Elegies . As against
+                            Skovron’s imposed ‘fractalisation’, there is less
+                            multiplicity of voice in Pearson’s sequence - though
+                            still a striking stretch of tone. According to Hugh
+                            Tolhurst’s Introduction, the genesis of the work lay
+                            in Pearson’s finding (after a number of years
+                            publishing translations of Goethe’s Roman Elegies )
+                            that his return from Adelaide to his native
+                            Melbourne held resonance with ‘the great German
+                            poet’s [own] discovery of Rome’. The poet is
+                            constructed as ‘dreaming a personal portrait of the
+                            city where he lives’ - with some poems in the series
+                            being close translations of Goethe’s originals, some
+                            mixing Pearson’s and Goethe’s voices, arid others
+                            again being completely new, ‘non-Goethian’ additions
+                            or departures. In total, Pearson makes 40 elegies,
+                            compared to Goethe’s original 20. The sequence, in
+                            which rhyme is rigidly eschewed, ranges from
+                            childhood remembrances of yabbying with his mother’s
+                            colander in the pond at Caulfield Racecourse
+                            (‘Yabbies’), to relaying an anti-gambling
+                            pronouncement by the city’s head Anglican cleric
+                            (‘Archbishop Rayner’s Prayer’). Along the way it
+                            incorporates references to the city’s tradition of
+                            great editorial cartoonists (Leunig, Tanner,
+                            Spooner...), ‘Ms Ania Walwicz’s Cat’, and the
+                            Melbourne Comedy Festival. Frequently (as in ‘The
+                            Sun, Like Arthur Boyd’), the Melbourne detail and
+                            vernacular mode is hitched to a bigger, more formal,
+                            declamatory and oratorical mode apparently echoing
+                            Goethe’s original: ‘Already I regard / St Georges,
+                            Brunswick and Johnson streets as my spirit places. /
+                            Oh, god, tolerate me here! Cruel time will lead me
+                            later, / in a miserable cortege, down to a final
+                            place’. Admittedly I haven’t read the Goethe
+                            original, but Pearson’s collection seemed to gather
+                            momentum nicely as I proceeded. The range mixes
+                            introspection (as son, or lover) with more direct,
+                            public invocations to the poet’s fellow cityfolk,
+                            and at some points the evocation is emphatically
+                            sensual. (Although, as I say again, I haven’t read
+                            the Goethian model, I’d hazard a guess that
+                            Pearson’s evocation of the beloved in ‘Green Grocer’
+                            - ‘your clit upon my finger... / entering you from
+                            behind... your welcome lovely closure round my cock’
+                            - doesn’t religiously follow the master’s own tone.)
+                            There is also the effective transition from the
+                            lyrical to the physical in ‘The Kimono’, with its
+                            refrain: ‘you move in silk like fishes do in water’,
+                            crossing to the unexpected evocation: ‘And he
+                            followed fish. And he kissed her matutinal cunt’.
+                            There is a nice modern playfulness across the series
+                            - in titles (‘Artist With Formguide And Papaya’), or
+                            the odd, sometimes ‘beat-ish’ line: ‘console me,
+                            tungsten, thin ambassador of the night’
+                            (‘Lamplight’). Whitman’s New York is of course an
+                            earlier contriving of the metropolitan metaphor, and
+                            the great Manhattan cityman seems to nudge in at
+                            points in both Skovron’s and Pearson’s sequences.
+                            (In the conception of Skovron’s universal ‘singer’
+                            in ‘Credo’; and more directly in the tone of
+                            Pearson’s ‘Jury Duty’: ‘Nor you, my intimate juror,
+                            whom I debrief at the end of the day. / If I had
+                            never before, I would love you extremely from now’.)
+                            And finally, for all the vast difference of
+                            technique and intent, Pearson’s sequence closes in a
+                            way oddly empathic with Skovron’s, both poets toying
+                            with the metropolis’s - or Life’s - protean nature,
+                            and the issue of its ultimate meaning or unity.
+                            Pearson’s romantic invocation in his closing poem,
+                            ‘Prayer’ (‘Melbourne provide us with friends, arms
+                            still of those whom we care for. // At the closure
+                            of life, yours or mine, make certain the whelming of
+                            love / remains at its apex of flow, revolving the
+                            ball of the world’) is not unreachably distant from
+                            the life-affirmative spirit of Skovron’s penultimate
+                            poem, ‘Credo’: ‘And I really do believe in such a
+                            thing / As purity of heart... / I want to sing / The
+                            simultaneous truth of truth and illusion; / The
+                            city’s endlessness, the soul’s profusion’.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Cordite Review</summary>
+                        <p>
+                            Melbourne Elegies Charlotte Jones Cordite , No. 6-7,
+                            2000 (pg. 32) Having recently been on a trip to
+                            Melbourne K.F. Pearson’s poetry serves as a more
+                            poignant evoca­tion of those few days than the
+                            photos we forgot to take. A camera can often be a
+                            rough and clumsy tool with which to record
+                            experience. In the amateur’s hands it all too often
+                            creates cliché, reproduces the familiar and safe. Or
+                            worse, serves as some kind of lingering colonial
+                            impetus, the need to stamp ourselves on landscape, a
+                            frozen proof that we have, indeed, been there, done
+                            that. K.F. Pearson’s Melbourne Elegies , on the
+                            other hand, pays homage to the city through a very
+                            personal and original lens. I’m fully elated now,
+                            inspirited on Brunswick Street; I’m captivated by
+                            articulate past and present here, now that I follow
+                            my bent, and go through the works of the old poets
+                            with eager hand, daily with original pleasure. So
+                            begins ‘Unemployment And Its Friends’, a joyous
+                            cele­bration of alternative culture, alternative
+                            experience. Pearson suggests this unprescribed way
+                            of living allows for greater learning experiences,
+                            specifically an intense aware­ness of the sensual.
+                            The artistic, intellectual pleasure of tak­ing in
+                            the words of poets by day is transferred to the
+                            heady pleasures of flesh by night. Learning is a
+                            continuum, an experience that cannot be broken into
+                            discrete entities frames (to hark back to the
+                            metaphor of photography). Pearson’s poems repeatedly
+                            move from the political to the personal. ‘Crossing
+                            The Yarra’ questions the wisdom of a life dedicated
+                            to material wealth. Pearson suggests that love is
+                            purer in the absence of material distractions
+                            because there is no pretty wrapping paper to sustain
+                            illusion; ‘Corporate Boxes, Society Balls and
+                            Casinos, the Porsche and Lamborghini’. ‘Portsea and
+                            South of The Yarra’ revisits this territory, moving
+                            from a rejection of the showy (equated with the
+                            false) to embracing the restorative healing power of
+                            love. Pearson is at his best when tackling the
+                            personal and this he does in ‘Ms Ania Walwicz’s
+                            Cat’. It is a small tableau of a poem that begins
+                            with a potentially banal experience (the illness of
+                            a cat) and ends with the awakening desire in a
+                            Fitzroy bar. The success of this poem lies in its
+                            simplicity. It does not seek to cover the whole
+                            gamut of politics and social ills that Pearson
+                            attempts in other pieces. Woven into the narrative
+                            of the sick cat and the meeting between Pearson and
+                            the unamed friend of Ania’s is the idea of
+                            com­munity and friendship. The reward for helping
+                            another out is the possibility of new friendships
+                            and ultimately love. The friend’s deed has made her
+                            literally glow, ‘The plane of her friend’s right
+                            cheek held all May’s declining light’ which is
+                            immediately translated into desire by Pearson. While
+                            Pearson could be accused of sentimentality and
+                            occa­sional wordiness at times, it is hard to deny
+                            his deep seated attachment to his subject matter:
+                            Melbourne and the curi­ous eclectic whirr of
+                            Melburnian life. Now and forever, at mornings or in
+                            the evenings, in the long times let us reach like
+                            our ferns in their canopied shade for the light
+                            ‘Prayer’ In the final poem of Melbourne Elegies,
+                            ‘Prayer’, KF Pearson makes an emotional appeal to
+                            his reader to cele­brate and hold sacred love’s
+                            bonds. Melbourne is attributed with providing a
+                            community in which this is possible for those
+                            prepared to make the life long commitment. At the
+                            closure of life, yours and mine, make certain the
+                            whelming of love remains at its apex of flow,
+                            revolving the ball of the world. ‘Prayer’
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Antipodes Review</summary>
+                        <p>
+                            Echoes of the object of affection K.F. Pearson,
+                            Melbourne Elegies Bev Braune Antipodes , Vol. 13,
+                            No. 2, December 1999 If we are to judge K.F.
+                            Pearson’s Melbourne Elegies as a translation and
+                            ‘extension’ of Johann von Goethe’s Romische Elegies
+                            it will not enlighten us to love Goethe’s 24
+                            elegies, which the German poet wrote between 1788
+                            and 1790 to a widow with whom he had an affair while
+                            in Rome. It may be best to regard the collection, as
+                            Pearson tells us, where ‘translators find an echoed
+                            life, then theirs’ (61). It does not serve the
+                            reader well to compare Pearson with Goethe except by
+                            a Wittgenstinian resemblance in the way that Pearson
+                            has indicated. In a stricter comparison we will find
+                            ourselves overwhelmed by a lack of exacting claims
+                            regarding a sensitivity with language to which
+                            Goethe held. J.B. Leishman and Stephen Spender’s
+                            translation of Rilke’s Duino Elegies (1975), elegies
+                            which were sent by Rilke to Princess von Thurm und
+                            Taxis, demonstrates that translation from the
+                            difficult German language is neither necessarily
+                            unchartable nor unsatisfying for the reader in
+                            English. Perhaps Pearson’s translation is held back
+                            by an uncomfortable mixture of the colloquial and
+                            classical that renders his remaking of Romische
+                            Elegies in Melbourne problematic, and creates the
+                            difficulties in Melbourne Elegies in poems such as
+                            ‘Lamplight’, ‘Unemployment and Its Friends’, and
+                            ‘Portsea and South of the Yarra.’ In telling us how
+                            he finds his life in the echoed life, does Pearson
+                            tell us too much or too little? Or both? His timing
+                            makes it difficult to follow either quarrel as a
+                            distinctive distraction over the other, as in ‘Late
+                            Arrival’. On the one hand Pearson seems to be
+                            ‘representing’ encounters with his lover while on
+                            the other he ‘presents’ Goethe’s elegies, which were
+                            about Goethe’s lover. There should not be any
+                            difficulty in this, as philosopher Vincent Tomas has
+                            argued, because the creative work is an embodiment
+                            of expressive qualities that make it tricky for
+                            readers to distinguish between the two when speaking
+                            of their emotional response to the work. But it
+                            seems that Pearson is caught between the two, if
+                            that is possible. Melbourne Elegies is an intriguing
+                            collection of poetry for this very reason. We find
+                            ourselves searching with the poet for an illusive,
+                            late, or anxious object of his love. She remains
+                            strangely insubstantial, considering the hold she
+                            has on him. It seems that Pearson is embracing an
+                            erotic figure of the mind rather than Goethe’s
+                            compelling ‘Faustina’. Not all of Melbourne Elegies
+                            falls into this category, for poems such as ‘A Roll
+                            Call’ and ‘Green Grocers’ stand out in their
+                            striking passion. It is in ‘On the Death of His
+                            Mother’ that a female figure comes to life and
+                            brings us back to Pearson’s statement that the life
+                            found (Goethe’s) is merely an echo, while his
+                            (Pearson’s) is the real. Poems that focus on what is
+                            sensuous in Melbourne (‘Green Grocers’) also succeed
+                            in bringing to life some aspects of the poet’s
+                            framing. Most seem to remain hampered by the ‘echo’,
+                            not quite finding their footing in embodying the
+                            object and subject as a whole picture... Echoes are
+                            also the concern of Ouyang Yu, a poet in search of
+                            his place in the whole picture in Songs of the Last
+                            Chinese Poet ... Songs of the Last Chinese Poet
+                            discovers the abandonment of the sublime. Landscape
+                            does not reveal what is hidden so much as require to
+                            be upturned, while Melbourne Elegies attempts to
+                            elevate clandestine encounters in a pub to that of
+                            sublime self-revelation. Ironically, Pearson and Yu,
+                            both writing out of Melbourne, attain similar
+                            conclusions - that of contemporary man’s aiming to
+                            control the uncontrollable, self-impaled on desire.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Sidewalk Review</summary>
+                        <p>
+                            Earth has not anything to show more fair: songs of
+                            the city Melbourne Elegies Brian Coghlan Sidewalk ,
+                            No. 3, August 1999 There are cities and, of course,
+                            cities. Wordsworth thought there was nothing like a
+                            view from the bridge: London on a nice fine morning.
+                            Proust’s vision of Paris is a mosaic of multiform
+                            moments and fleeting impressions. Robert Musil had
+                            no particular affection for imperial Vienna. But his
+                            evocation of it transcends systems, regimes,
+                            language and culture. With Lubeck and Danzig Thomas
+                            Mann and Gunter Grass created myths which are
+                            simultaneously concrete, real and lasting; but they
+                            also give us the quintessence, ageless aura and
+                            piling up of the accumulated past. In some ways such
+                            myths of the city become more real than the passing
+                            view or ephemeral experience of both resident and
+                            visitor. In yet other ways we may be disappointed or
+                            at least disenchanted when, say, Alexandria in the
+                            here and now fails to live up to or equate with
+                            Cavafy’s stereoscopic vision of the city. Not that
+                            the myth of the city, any of them, has the function
+                            of gilding the lily or touching up the picture.
+                            Lawrence Durrell’s myth of Alexandria is full of
+                            beauty, true; but also of corruption, decay, foul
+                            smells and fouler practices. Perhaps Hugo von
+                            Hofmannsthal was quite near the target when he said
+                            that Rome in rottenness and decline was still full
+                            of unrealised possibilities. A good poet, or so one
+                            might think, can catch these myriad possibilities,
+                            sensations, habits and happenings: all suspended,
+                            recalling Neville Cardus’ wonderful phrase, in the
+                            magic hour-glass at noon. With Melbourne Elegies ,
+                            then, K.F. Pearson is in stellar company. But he has
+                            at least two things going for him before he starts:
+                            first - a self-deprecating and ironically humorous
+                            perspective on all and sundry, beginning with
+                            himself. For while these poems are self-styled
+                            ‘elegies’ there is absolutely nothing in them of the
+                            conventionally elegiac. Not, at least, as far as
+                            this reviewer, who is inclined to luxuriate in
+                            soft-focus melancholy, can discern. And then: as
+                            Sancho Panza, while Don Pearson wrestles Melbourne
+                            down onto the dissecting table, he has Johann
+                            Wolfgang von Goethe. Only with difficulty, and
+                            writing as a superannuated Germanist , do I restrain
+                            myself from writing simply ‘Goethe himself’. For
+                            Goethe has a place in German literature which has no
+                            equivalent elsewhere. It was, again, Hofmannsthal
+                            who observed: ‘We have no literature; we’ve got
+                            Goethe and a lot of little buds.’ But Goethe and -
+                            not Frankfurt his birthplace; not Weimar, ‘Court of
+                            the Muses’ and Goethe’s home for fifty-seven years -
+                            Rome ? For Pearson unequivocally adapts and extends
+                            Goethe’s Romische Elegien . In order to understand
+                            Pearson aright and also, I think, to do him justice,
+                            the story is worth telling. For it has a certain
+                            exemplary quality which, as time grinds on, one
+                            takes more and more to heart. As, evidently, does
+                            Pearson: ‘And I’m not as young as I was, nor
+                            lonely:...’ In 1786 Goethe’s legendary youth was
+                            well and truly behind him. At thirty-seven he seems
+                            to have been thinking ‘What if all be error?’ At
+                            twenty-five, with Werther , he had become celebrated
+                            throughout Europe; and a rather dubious role model
+                            as well. His early poetry, most notably that
+                            recording his ‘Strassburg idyll’, had re-created
+                            German as a poetic language. Now, ten years on, ten
+                            years as minister-for-everything at the ducal court
+                            in Weimar, he was finding good manners and behaviour
+                            ‘ comme il faut ’ rather trying. His affairs with
+                            the aristocratic Frau von Stein - was it sex, was it
+                            spirit? - was terribly worthy; but, to libido and
+                            spirit alike, increasingly stultifying. At all
+                            events, and greatly to the scandalised reaction of
+                            the court, the great Goethe simply broke out.
+                            Telling nobody he simply upped and went. South to
+                            Austria, over the Brenner, down into Italy, to Rome,
+                            Naples, Sicily and back to Rome. In Rome,
+                            particularly, he thawed out. Of course: the cynic in
+                            one’s psyche, plus, doubtless, the monstrous
+                            regiment of women, says simply: midlife crisis;
+                            Goethe off with the birds and the bees; beads and
+                            bangles and the old ‘ Sturm und Drang ’ gear taken
+                            out of mothballs. Yes of course. But there was more
+                            to it than that; there often is. In Italy Goethe was
+                            seeking, and actually thought he had found, some
+                            kind of ideal synthesis between flesh and spirit. To
+                            what extent his nightly revelatory adventures with
+                            ‘Faustinia’, a young and eager Roman widow, are hard
+                            fact doesn’t really matter much; any more than his
+                            intense and fairly well documented liaison in Milan
+                            on the way home. One thing is certain: the classical
+                            world - he was always seeing ancient and imperial
+                            Rome behind the present-day façade; it was, after
+                            all, Gibbon’s era too - gave him new life. Moreover,
+                            he came home mid-year 1788, resolved to put his old
+                            well-mannered, emotionally constricted life behind
+                            him. Clearly what a Marxist critic long ago called
+                            the ‘stifling petit-bourgeois climate of the Weimar
+                            court’ was not conducive to Goethe’s projected
+                            change-of-life. But, as Dickens says somewhere, ‘a
+                            man might try’. And Goethe did. He did two things.
+                            The order in which he did them doesn’t really
+                            matter. Christiane Vulpius was the sister of a man
+                            who wanted something from Goethe. Again the details
+                            don’t matter here. Goethe seem: to have been
+                            entranced. Christiane was beautiful - or at least
+                            pretty - straightforward, sensual and trusting:
+                            Goethe saw her as a child of nature She joined him
+                            in his house, first as partner and then, much later,
+                            as his wife. Quite obviously, and Goethe knew this,
+                            he was trying to repeat, re-run, his Roman idyll.
+                            His devotion to Christiane and hers to him is
+                            remainingly touching; and more than that. At the
+                            same time all this was happening Goethe wrote the
+                            Römische Elegian / Roman Elegies . I suppose one
+                            might say it was emotion recollected in
+                            tranquillity; except that in his case the present
+                            emotion went on and on. You can imagine the scandal.
+                            The chit-chat became legendary: from the grand Duke,
+                            Goethe’s friend, to the affronted ladies of the
+                            court, from the Herders to Schiller’s wife...
+                            everyone had an opinion. But Goethe was, after all,
+                            Goethe; and he survived it. So, no less to the
+                            point, did Christiane. So: Goethe’s retrospective
+                            view of Rome, but presented as a sentient
+                            present-day continuum, is a well-nigh perfect
+                            amalgam in which a classical cultural perspective,
+                            sensual intensity and a nicely sceptical self-irony
+                            hold a rather precarious balance. But ‘precarious
+                            balance’ is the story of Goethe’s life. He was still
+                            trying to get his diverse facets, claims and urges
+                            together when, with the Marienbader Elegie in 1822,
+                            he finally decided to ‘put the tools away’, as a
+                            plain-spoken English critic put it. He gave up girls
+                            but had no difficulty writing a lot more poetry...
+                            Pearson is thus on sure and well-trodden ground; and
+                            he knows how to take best advantage of the fact. The
+                            framework of the Römische Elegian constantly peers
+                            through his text; wryly, appraisingly, relativising
+                            it all: I cannot yet perceive the way or road that I
+                            will travel, day in, day out to her and back while
+                            precious time slips by. Pearson’s ability to fuse
+                            outside panorama, the day’s diet of sights and
+                            sounds, meaningful, trivial or irrelevant, which
+                            makes up all our days - is balanced, sometimes
+                            indeed overborne, by his love: love straight,
+                            sensual and wholly open. And why, of course,
+                            shouldn’t it triumph over all? There is, at one and
+                            the same time, something fine, frank and happily
+                            middle-aged about his love. ‘I love you with the red
+                            glow of age’, says Paul Hindemith’s Mathias the
+                            Painter, [Paul Hindemith (1895-1963), Mathis der
+                            Maler (Mathis the painter), Opera in Seven Pictures
+                            (1935)] and is able simultaneously to stand outside
+                            himself. Pearson is very close indeed to Goethe when
+                            he says: We’re not even always kissing; we often
+                            talk sensible talk; when her sleep comes upon her I
+                            lie and contemplate much; indeed in her arms I will
+                            often make poetry up: the hexameter measure with
+                            fingering hand I gently tell out on her back. She
+                            breathes in her lucid sleep and her breath inhabits
+                            me down to the depths of my being... This, of
+                            course, is one of Goethe’s most celebrated images:
+                            it embodies his longing for passion - and control,
+                            content unlimited - and absolute form: the fusion,
+                            perhaps, of what Schiller called ‘sentimental’
+                            poetry (himself) and ‘naive’ poetry (Goethe).
+                            Pearson, though, is probably to be preferred when he
+                            lazily watches his risen love re-kindling the
+                            morning fire. Here concrete reality and timeless
+                            symbol become one. Pearson’s Melbourne is part
+                            impressionism, part pointilliste -precision, part
+                            panorama. Some images are apt, resonant and wholly
+                            unforgettable: Awful governments legislate budget
+                            cuts throughout the night. Platypus, good
+                            nocturnals, forage as they’re wont to do. A Master
+                            Builder dreams a tower to frighten Qantas off its
+                            path. We, second storey, wake beside green leaves on
+                            a ginko tree. There is barely - but finely -
+                            controlled passion and moral rage in ‘John Cargher’s
+                            Singers of Renown’. Here Pearson captures not so
+                            much the daily round as the common lot. Perhaps this
+                            too is an insight that comes only with the bitter
+                            reality of middle-age: I know it is difficult for us
+                            to preserve our good name when detractors bring us
+                            rumours from our past, the spending spree when manic
+                            or double cross of a friend. These are old
+                            histories, and never told in full. But Pearson’s
+                            clear-eyed realism and frankness never give way to
+                            gloom, nor to that luxurious seduction of the
+                            ageing: self-pity. His evocation, on her death, of
+                            his mother encapsulates a whole epoch. His
+                            recollection of the ‘Brownlow Medal of sausage
+                            rolls’ rang the bell with this reviewer who in
+                            another existence was a permanently bedraggled and
+                            disappointed supporter of Aston Villa. I think, in
+                            brief, it is Pearson’s wide-angle view of Melbourne,
+                            plus the sudden zoom lens and narrow focus, that
+                            goes on echoing in the mind. Inevitably I find
+                            myself comparing and seeking equivalents. Bruce Dawe
+                            is a possibility; so too, I suppose, is Les Murray,
+                            though Pearson is without the rather aggressive
+                            sense of rectitude that I, at any rate, detect in
+                            our unofficial laureate. But perhaps that’s only
+                            because I’m a Catholic too... In any case though:
+                            looking for comparisons on the Australian highway
+                            might be a bit of a cul-de-sac. I think it could be
+                            more productive to see Pearson in the same sort of
+                            civic contexts as, say, Cavafy, Brecht in Berlin, or
+                            particularly Josef Weinheber (1892-1945).
+                            Weinheber’s star is presently in eclipse; his
+                            spiritual proximity to the Nazi ethos, and
+                            subsequent suicide, have always made it difficult to
+                            see him untrammelled. But his Vienna poems, Wein
+                            wörtlich (1935) are unique in their
+                            multi-perspective view of the city. Weinheber veers
+                            unpredictably and with total conviction between
+                            nostalgia, homesickness, playfulness and parody. And
+                            he has his own ‘voice’. Hofmannsthal, another
+                            incurable if also very critical Viennese, observed
+                            that a dialect doesn’t give you another language,
+                            but it can give you a voice of your own. This is
+                            Weinheber. This, I think, is Pearson. I should like
+                            to hear him reading, unselfconsciously intoning
+                            these verses. I once heard Henry Krips give a
+                            full-length reading of Weinheber’s poetry. Henry, of
+                            course, was a total ‘Weiner’, unblemished,
+                            unrepentant (why should he be?) and deeply soaked in
+                            Viennese Kultur ancient and modern. [Henry Krips
+                            (1912-1986) was for many years (1949-73) conductor
+                            of the Adelaide (at that time ‘South Australian’)
+                            Symphony Orchestra.] As he read Weinheber you heard
+                            the voice of the city, the over- and undertones, the
+                            colours and habits and sibboleths, the big horizon
+                            and the backyard bigot. Vienna, for better or for
+                            worse - very much the better where I am concerned -
+                            has never been, or at least seemed, the same since.
+                            I think, in sum: Pearson has his own ‘voice’ in
+                            Melbourne Elegies and one wants to hear it again and
+                            often. I don’t think poetry has given me so much
+                            sheer pleasure since I discovered Ulla Hahn. But
+                            that is another story.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review Review</summary>
+                        <p>
+                            Urbane Poetry Martin Harrison Australian Book Review
+                            , No. 211; 1999 The problem with K.F. Pearson’s
+                            Melbourne Elegies is that Goethe - on whose classic
+                            of sex-tourism, Roman Elegies 1788-1790 , these
+                            rhetorical, literary poems are loosely based - is
+                            Goethe: difficult to translate, still little read in
+                            English. It gives him problems. Pearson, to my mind,
+                            is not attempting a Poundian ‘replacement’ of an
+                            ancient text within the framework of a contemporary
+                            poetics. That would require a reckoning with the
+                            original poem’s logistics and context similar to the
+                            way that Pound’s Propertius speak electrifyingly in
+                            the context of an Empire much later than the Roman
+                            one he wrote for; or in the manner that Christopher
+                            Logue has recently converted excerpts of Homer into
+                            a form of late 20th century literary cinema. Such
+                            replacement requires that the contemporary poem
+                            convince us that the original work’s ‘loss’ - a
+                            ‘loss’ produced equally by its inaccessible
+                            aesthetic no less than by our contemporary lack of
+                            language-skill and culture - should matter to us.
+                            Pearson, however, nowhere tries to persuade us that
+                            we need Goethe or indeed need the Roman Elegies ’
+                            signal achievement-their re-location of classical
+                            measure, classical myth and classical amorality in
+                            the minds of the then contemporary German audience.
+                            Pearson’s aim is to convince us, rather, that we
+                            need a wine-drinking, amorous, humane,
+                            Melbourne-based Pearson - all written up via the
+                            writer’s urbane, somewhat unusual enthusiasm (very
+                            Melbourne) for Goethe’s poetry. Melbourne Elegies
+                            is, in other words, that most ancient of poem-forms,
+                            pastiche. But how - if you have surrendered a larger
+                            critical logic, if, that is, you have no equivalent
+                            to Pound’s, Lowell’s, Zukofsky’s, Logue’s critically
+                            motivated form of updating - do you effectively
+                            pastiche an exquisite, remote, still lively yet
+                            decidedly foreign poem? All too often in Melbourne
+                            Elegies where Pearson attempts a literal
+                            transcription (Goethe’s ‘ Sehe mit fühlendem Aug’,
+                            fühle mit sehender Hand ’ / ‘see with a sentient eye
+                            and feel with perceptive hand’- Pearson) the
+                            talkative economy of Goethe’s acquired ‘classicism’
+                            is turned into standard ‘translatese’. Likewise a
+                            variation like ‘I’m really elated now, inspirited on
+                            Brunswick Street’ (Pearson) is neither good Goethe
+                            (it is the rather famous ‘ nun auf klassiscbem Boden
+                            begeistert ’) nor good bathos. Inspirited? Worse,
+                            lines like ‘In the morning she will languorously
+                            leave our passionate bed’ or ‘Though its elasticity
+                            were (sic) going the fireside couch was quite
+                            hypnotic’ or ‘And he kissed her matutinal cunt’ are
+                            neither Goethean nor poetry. It’s a pity. I’m no
+                            supporter of Poundian methods. A poem which drew
+                            expertly on Pearson’s skills as a poet and his
+                            knowledge of Goethe (many of these poems started off
+                            as more than adequate translations) would be a
+                            marvellous thing. Melbourne Elegies , however, all
+                            too often literalises the tone of Goethe into a
+                            persona-voice which is at once intimate and
+                            fulsomely artificial, erotic yet verbose. Pearson
+                            seems stuck with it - overshadowed by Goethe,
+                            ventriloquising his metres - but unable to do more
+                            than gesture (in ‘Miss Ania Walwicz’s Cat’ or
+                            perhaps ‘Elegist to Reader’) at Goethe’s Latin
+                            models. But Goethe’s poem is full of darkness and
+                            ironies - the elegy on syphilis, for instance, the
+                            final elegies about going public and abandoning his
+                            love. And he has what his Latin originals
+                            outstandingly have - a sense of the metrical
+                            instant, a sense of vivacity in time and of its
+                            brevity. (It’s all said in Zukofsky’s ‘ Peri
+                            Poietikes ’: ‘Look in your own ear and read.’)
+                            Mainly long, often very long ‘happy’ moments capture
+                            Pearson’s attention: robust sex (straight), lots of
+                            undressing and clit, Jeff Kennett hate-sessions.
+                            Melbourne’s clearly a better place than Rome. Doubly
+                            malign, then, the goddess Typo who even there
+                            inspires ‘In Memorium’ (Sic) as the title of one the
+                            poems.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Geelong Advertiser Review</summary>
+                        <p>
+                            Melbourne stories told in verse Melbourne Elegies -
+                            Melbourne as a Palace of Love Edward Reilly Geelong
+                            Advertiser , March 1999 In his mid-thirties, that
+                            wondrous poet and man of letters, Wolfgang von
+                            Goethe, fled the ‘ truebe... und schwer ’ heavens of
+                            the Germanic North for the clear light of the
+                            classic lands. The Roemischen Elegien sing of his
+                            delight in the sheer sensuality of life and his
+                            sense of liberation on reaching the ancient city of
+                            Rome. Goethe treats of many subjects, seeing Rome as
+                            the Temple of Love, the ultimate goal of the
+                            Wanderer’s travails, and recapitulates a number of
+                            well-chosen classical myths and using them for his
+                            own ends. This is a poetry of the highest order, and
+                            has been taken as a model by Pearson in this book.
+                            Kevin Pearson is a complex figure and has in these
+                            Melbourne Elegies produced an equally complex text,
+                            using Goethe’s poems, which Pearson had previously
+                            translated and published in journals such as
+                            Southerly and Quadrant . Pearson had barely escaped
+                            with his life when a mysterious and malevolent fire
+                            in Adelaide had destroyed his collections of poetry
+                            and music. He then returned to Melbourne in 1992.
+                            Just as Goethe saw classical Rome in the double
+                            light of classical myth and his personal eroticism,
+                            he found in his native city the locus for a
+                            redeveloped creativity. But, given the displacements
+                            of time and space between Eighteenth Century Rome
+                            and contemporary Melbourne, there are differences to
+                            be expected and encountered. Beginning with
+                            ‘Southbank’, the poet invokes the occurrence of
+                            ‘bluestone’, ‘terrace house’ and ‘café’, each of
+                            which go to define Melbourne’s ‘liveable’
+                            atmosphere. Pearson’s satirical sense is evident
+                            from this point, for where Goethe had invoked Rome’s
+                            historied ‘ Steine ’ and ‘ Palaeste ’, Melbourne is
+                            far more commonplace. Moreover, where Goethe
+                            enthusiastically sees his Rome as ‘ Amors Tempel ’,
+                            our contemporary poet is stricken oddly .enough with
+                            an undefinable ‘ennui’ whilst ‘considering the Yarra
+                            and Gallery; and / considering a chardonnay’. What
+                            he’s waiting for is ‘love’, as to be concretized in
+                            an unnamed woman. The realization that without love,
+                            as Pearson rightly notes, ‘the world would be no
+                            world, nor even Melbourne be/Melbourne’. In
+                            ‘Crossing the Yarra’, Pearson extends his view of
+                            Melbourne as a city of love, his tone now quite
+                            Ovidian, unashamedly celebrating the power that this
+                            love has brought his poetry. His ideal palace of
+                            love is to be found in the unfashionable northern
+                            suburbs, far away from the ‘Corporate Boxes, Society
+                            Balls and Casinos’ of the South Yarra facades. But
+                            these Melbourne Elegies are more than a
+                            recapitulation of Goethe’s themes in a present-day
+                            setting. Rather, Pearson refreshingly extends the
+                            range and style of the poems. He remembers family in
+                            ‘On the Death of His Mother’ and ‘My Father My
+                            Enemy’, celebrates friends such as John Truscott and
+                            digresses on topics such as sport, in ‘Grand Final
+                            Week’, and music, in ‘John Cargher’s Singers of
+                            Renown’. The tone and style of Melbourne Elegies is
+                            open and breezy. It is a book which can be read
+                            easily, mapping out the poems against one’s
+                            knowledge of Melbourne’s landmarks. Pearson’s poems
+                            are enjoyable in themselves as a celebration of his
+                            loves and friendships.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

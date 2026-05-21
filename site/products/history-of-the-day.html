@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,546 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/history-of-the-day.svg&quot;);
                         "
                     >
-                        Featured
+                        History of the Day
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Stephen Edgar</h3>
+                </div>
+                <img
+                    alt="Cover of History of the Day"
+                    class="product-cover-mobile"
+                    src="/assets/books/history-of-the-day/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of History of the Day"
+                        class="product-cover"
+                        src="/assets/books/history-of-the-day/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        At that old station on North Head Inmates still tread
+                        the boards, Or something does; equipment there records
+                        The voices in the dormitories and wards, Although it’s
+                        years abandoned. Undeleted, What happened is embedded
+                        and repeated... Stephen Edgar is acknowledged as one of
+                        the most elegant and technically astonishing poets
+                        currently writing. The poems in History of the Day have
+                        an imaginative reach, a grandeur and sweep which lead us
+                        through the transfiguring intensities of love to the
+                        burdens of loss, grief and horror. They contemplate the
+                        fragile nature of consciousness when measured against
+                        the immensities of time and space. He engages language
+                        at the highest, most sophisticated level. Edgar makes
+                        crystalline forms and patterns out of language so that
+                        every word glows, catches the light, and illuminates his
+                        vision. History of the Day is, quite simply, brilliant.
+                        Some of the finest lyric poetry to have been written
+                        anywhere in recent times. Gregory Kratzmann, Australian
+                        Book Review Winner of the William Baylebridge Memorial
+                        Prize for 2009 Cover image: Helen Wright 2:00 (Doorway
+                        I) 2005
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 24.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/history-of-the-day.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/history-of-the-day/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>9781876044626</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2009</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>109</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years.
+                        </p>
+                        <a class="bold" href="/authors/stephen-edgar.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Australian Literary Review</summary>
+                        <p>
+                            Tools of the Trade: History of the Day Geoff Page
+                            Australian Literary Review, 5 May 2010 Sydney poet
+                            Stephen Edgar is another who employs traditional
+                            forms. Indeed, in recent years he has established
+                            himself internationally as one of the most expert
+                            contemporary users of metre and rhyme in the
+                            language. His seventh collection, History of the
+                            Day, has many poems that, like Petsinis’s [My
+                            Father's Tools], are satisfying aesthetically while
+                            emotionally affecting. Edgar’s characteristic stance
+                            is standing back and considering his material,
+                            sifting it for its artistic potential while being
+                            aware of its humanity or its implications for
+                            humanity. In parts I and III of History of the Day
+                            there are several deeply felt poems, most notably
+                            the poet’s memory of Gwen Harwood in ‘Nocturnal’, as
+                            well as 2:00 where the poet is visited by the ghost
+                            of a former lover. Edgar demonstrates again here
+                            that one of the eternal strengths of traditional
+                            form is felt at the end of a poem where metre and
+                            rhyme combine to give a strong sense of
+                            inevitability. It’s as if any other way of rendering
+                            these particular feelings is unthinkable. Even more
+                            rewarding, however, is Part II. It is here that
+                            Edgar’s emotions are most nakedly engaged and here,
+                            too, where he is game to risk the political. ‘Divine
+                            Rights’, for instance, is as powerful a pacifist
+                            poem as one could hope for, and far more imaginative
+                            than most. ‘The Swallows of Baghdad’ is no less so.
+                            Even more horrifyingly memorable than these two fine
+                            poems is Edgar’s sequence, ‘Those Hours Which Grew
+                            to Be Years’, based on a recent exhibition of
+                            photographs of American lynchings. In ‘Memorial’,
+                            drawn from a photograph of the public murder of
+                            Rubin Stacy in 1935, Edgar presents us not only with
+                            an ekphrastic description of the photo (or parts of
+                            it) but with some of its more appalling
+                            implications: And then you see her. At the left she
+                            stands, Behind the awful focus of suspense, Her
+                            hands crossed, mimicking his handcuffed hands, On
+                            her frocked crotch, her naked face intense And lit
+                            up with a half-embarrassed leer, A girl of twelve,
+                            maybe, too unaware To mask her downward grin... In a
+                            poem such as this all Edgar’s technical skills are
+                            at the service of something greater than themselves.
+                            We are moved to a depth we almost certainly wouldn’t
+                            be by more informal verse. As My Father’s Tools and
+                            History of the Day demonstrate in their different
+                            ways, the resources of metre and rhyme are no less
+                            viable in the modern age than is the present
+                            orthodoxy of free verse.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>mascara lit Review</summary>
+                        <p>
+                            Form and Fashion in Stephen Edgar’s Verse: History
+                            Of The Day Michelle Cahill (editor) Mascara Literary
+                            Review - Issue 6, November 2009 History of the Day
+                            is Stephen Edgar’s seventh collection. Acclaimed for
+                            his formal virtuosity, the painterly style of his
+                            images, and an objective, pondering engagement with
+                            his themes, his work stems from the modernist
+                            tradition for which temporal, aesthetic and moral
+                            categories are ordered into a wholeness: that which
+                            Stevens refers to as a ‘blessed rage for order,’ and
+                            Adam Kirsch describes as ‘its unequivocally positive
+                            character.’ But how relevant is Edgar’s quiet
+                            insistence on aesthetic and ethical authenticity in
+                            the discursive climate of postmodernity? His formal
+                            music might seem to be mannered, anachronistic, or
+                            elitist even, in its positioned detachment from the
+                            real. Reading History of the Day might seem a
+                            foreign experience, rather like learning a new
+                            language, Edgar’s work being labyrinthine and at
+                            times recondite. His polished cognizance, his
+                            formally oblique and elaborate praise of things
+                            ordinary defies a trend in contemporary poetics.
+                            Seemingly removed from the lineage of Rimbaud,
+                            Lowell, Plath or indeed Adamson, his poetry is, if
+                            challenging, deeply satisfying for its clarity, its
+                            faithfulness to measured forms of language and
+                            thought. History of The Day is a collection of
+                            modesty and harmony. An outward sign of its grace is
+                            reflected in the book’s structure. Each of three
+                            sections are inspired by the epigraph taken from
+                            Lawrence Durrell’s Balthazar so that we move from
+                            poems which encounter the intimately personal, to
+                            the those of historical irony and philosophical
+                            inflection, followed by the last sequence, a
+                            miscellany, in which poems are addressed to other
+                            poets. Edgar’s acknowledged influences include W.H.
+                            Auden, Richard Wilbur, Anthony Hecht, as well as the
+                            Australian poets Gwen Harwood and Peter Porter,
+                            among others. His sensibilities are refined, at
+                            times overwrought; his preoccupations are with the
+                            relativity of time, space, destiny and history. A
+                            poem such as ‘Space’ is a fine illustration of
+                            Edgar’s themes and style. Here, he takes a single
+                            image of a Treasury flag flapping in the breeze as
+                            an instance of the physicality of space as it exists
+                            in the mind’s eye. The images are visceral. They
+                            emphasise a perspective in which the flag is
+                            central: the way it ‘writhes’ against the ‘muscled’
+                            breeze, the ‘distortions’ of matter within ‘a
+                            moment’s frame’. The tangential observer, aware of
+                            time elapsing, journeys on towards the ‘day’s blue,
+                            contested edges.’ Broken into stanzas the poem
+                            derives its form from the Italian or Petrachan
+                            sonnet, with some license exercised to the rhyme
+                            scheme in the octave. The beguiling simplicity of
+                            its subject, the elasticity of its iambic metre, and
+                            its refined contemplation are hallmarks of Edgar’s
+                            most impressive lyrics. It’s a poem that reconciles
+                            image, form and thought effortlessly, turning
+                            adroitly from minimalism to perceptual complexity.
+                            Space-time distortions are a principal concern for
+                            the poet. In many of the poems Edgar takes a
+                            phenomenological interest in experience and how it
+                            is structured consciously. His attention to the
+                            detail of these processes enables him to amplify
+                            scenes, embellish their dimensions and surfaces, so
+                            that time is almost warped, slowed down to the
+                            shimmering speed of thought. We hear this echoed in
+                            the marvellously speculative poem ‘Dreaming At The
+                            Speed Of Light’: And every thought would undergo
+                            This rallentando, every word Would grind down to a
+                            halt Midsyllable, interminably heard, But charged
+                            with full intention even so, And purity of tone,
+                            Quantum ironies resound within the poem’s weave of
+                            internal assonance and simple rhymes. Such poems
+                            exemplify the liberating and quirky possibilities of
+                            Edgar’s formal music. The situations and figures are
+                            often more emblematic than realistic, creating the
+                            mildly disturbing effect of defamiliarisation, so
+                            that we are excluded from the engendering of
+                            illusion. The subject matter, however benign, is
+                            nuanced with a disenchantment that falls short of
+                            defeat. This kind of alienation is modernist in its
+                            impulse. There is an almost Brechtian distancing
+                            effect which along with the historical referencing
+                            of many of the poems, imbues them with complex
+                            ironies. In ‘Out of the Picture’ Edgar dramatises
+                            the dual perspective of an Impressionist painting.
+                            On the one hand is the ‘unnoticed, unmissed’
+                            feminine figure who ‘saunters between/The poplars’
+                            out of the picture towards a forgotten ending. The
+                            last stanza suggests an alternate perspective of the
+                            painting’s observer, for whom it is As pointless to
+                            depart as to delay: In either course is folded the
+                            same space. In Istanbul next year or here today: The
+                            attention given to the placement of figures, and to
+                            the spectator perspective with its minimalist
+                            interaction emphasises divisions between the
+                            viewer’s world and the picture space or the scene
+                            depicted, whether it be through a photograph of
+                            lynching as in the powerful evocation’ Those Hours
+                            Which Grew To Be Years’, through a dream, as in
+                            ‘Dream Works’ or through a camera lens, as in ‘The
+                            Swallows Of Baghdad.’ As a war poem, one could argue
+                            that ‘The Swallows Of Baghdad’ pursues its ethical
+                            argument tentatively, leaning towards a tactful,
+                            aestheticised vision of war’s brutality. The
+                            swallows with their ‘flickering wings,’ who dart
+                            through a ‘ruined roof/To perch on dreadful
+                            engines,’ are twice removed from the observer, being
+                            reminiscent of ‘a scene from Attenborough.’ Edgar’s
+                            instincts are always on the side of aesthetics,
+                            though one feels the tension between this principle
+                            and what is being represented. Moreover the poem
+                            attempts to eschew complacency in its ending lines:
+                            A camera reeling in that chamber follows Their lit
+                            flight, where—too recently to show— The cameras
+                            turned to darkness for their proof. The framing of
+                            scenes and narratives is one aspect of the poet’s
+                            architectonic finesse but it’s also a lens through
+                            which history and memory can be purposeful;
+                            intensifying and correcting time. This is
+                            beautifully realised in the book’s opening poem
+                            ‘Golden Coast,’ in which natures’s ravages are
+                            compared to those of love. Edgar’s diction
+                            juxtaposes the idyllic with the hideous, as
+                            overdeveloped skyscrapers ‘make their mark,/Their
+                            ulceration of the golden coast/ whose beauties they
+                            would sell, Under the settling sediment of dark.’
+                            Metaphysical in its dialectic and reminiscent of
+                            Herbert or Donne, the poem illuminates how memory
+                            operates within a dimension that transcends time.
+                            The idyllic moment of love’s intensity is preserved
+                            : This day unknown to time will be there when The
+                            light drifts through the shallows like a ghost And
+                            dies of hours, the skies And earth fall down and
+                            chaos comes again. How many contemporary poets would
+                            dare voice such painterly abstractions, such
+                            affirmation? A reader who might resist a title such
+                            as ‘Golden Coast,’ is convinced by the thoughtful
+                            accuracy of Edgar’s diction, which describes how
+                            ‘lights as laggardly as sound/Struggle to make the
+                            passage of the gloom.’ Like a Hopper painting, many
+                            of the poems play with a symbolic use of light and
+                            shade, and the careful placement of figures within a
+                            given scene. This attention to topographies and
+                            symmetry is distinctly metaphysical, an ordering
+                            principle pleasingly realised in ‘The Earrings.’ The
+                            central conceit of a deceased lover’s earrings,
+                            gifted to a living spouse, play on the spherical as
+                            a symbol of nuptial unity, destiny, and the amatory
+                            universe. With adroitness the poet is able to
+                            reconcile loss with recovery, the ironic with the
+                            ardent, to unify All of the properties, The pain,
+                            Pleasures, desires, memories That nothing will
+                            appease, Nothing detain, Chronological time does not
+                            correspond to memory, dream or to lived experience
+                            as the portals between past and present are
+                            traversed in language. Mystical encounters are
+                            celebrated: the dead speak, a doppelgänger
+                            contradicts himself, entering not a boardroom, but a
+                            museum ‘of lost antiquities,’ the ‘mortared ghost of
+                            locomotion surges’ in the sculptural form of a
+                            train. In the poem ‘Nocturnal,’ Edgar’s prosody
+                            echoes a Keatsian ode in its iambic rhetoric: Who
+                            ever thought they would not hear the dead? Who ever
+                            thought that they could quarantine Those who are
+                            not, who once had been? The reader is moved and
+                            surprised by the poet’s wit. The discrepancy between
+                            the recorded and real voice of the poet’s deceased
+                            partner is metonymic of the breach between memory
+                            and presence, an impasse into which the poem enters.
+                            History of The Day is a book of Escheresque passages
+                            rendered by the effects of recollection, repetition
+                            and doubling: The past is ‘Undeleted,’ Edgar writes,
+                            ‘What happened is embedded and repeated.’
+                            Speculative, ekphrastic or historical, the poems
+                            duplicate and tease semantic possibilities which we
+                            encounter in poems like ‘Parallel Worlds’ or
+                            ‘Interior With Interiors.’ This latter poem,
+                            inspired by a Ramon Casas painting depicts a scene
+                            where a woman and man are mutually abandoned to each
+                            other: she ‘self-absorbed’; he perhaps dreaming of
+                            bliss, a ‘total consummation’ from which he might
+                            soon enough be dissatisfied, ‘wishing to be
+                            elsewhere.’ The artefacts of realism: coffee pot,
+                            milk jug and vase become little more than props, or
+                            ‘servants liveried to be ignored,’ as the text,
+                            painting or poem opens to the world of boundless
+                            interiors. With idiosyncratic flair, Edgar probes
+                            the inner milieu. Yet a stronger dialectic between
+                            the individual and history than we have come to
+                            expect from him is voiced in this collection. The
+                            extrajudicial mob violence of white American
+                            supremacy is powerfully depicted in ‘Those Hours
+                            Which Grew To Be Years.’ Here Edgar critiques the
+                            historical lens in his appalled response to
+                            photographs of Frank Embree’s and Rubin Stacey’s
+                            lynchings. The naked Embree is ‘stripped/And scored
+                            with the judicial script/Of whips,’ but the poem
+                            returns a Christ-like dignity to his ‘composed
+                            face.’ Here, at his most outraged, Edgar turns
+                            poetic style to indictment. He scrambles the metres.
+                            Rarely do we see him mix the insistent accents of
+                            dactyl with the iambic and anapaest in his prosody:
+                            Take him away Airbrush him out, And all these men
+                            who stand about In the clean light of day, In
+                            another poem from the sequence, a young white girl’s
+                            voyeurism is depicted with uncharacteristic and
+                            intended vulgarity: Her hands crossed, mimicking his
+                            handcuffed hands, On her frocked crotch, her naked
+                            face intense And lit up with a half-embarrassed
+                            leer, These are poems in which the observer’s
+                            perspective, regardless of his nationality, class or
+                            race exceeds that of witness. Edgar brings into
+                            focus the crisis between the social juggernauts of
+                            supremacy and a humanist conscience. Whatever
+                            subject his poems address, no matter how grand or
+                            horrific, Stephen Edgar elegantly affirms an
+                            objective displacement, sometimes theatrical or
+                            emblematic, as moments of recollection, history, art
+                            and culture are revisited and referenced. This
+                            self-imposed distance renders him faithful to his
+                            aesthetic and ethical ideals. Repeatedly, in History
+                            Of The Day, what is beautiful is sustained by loss,
+                            to become the property of memory. The ravages of
+                            history are, at least partially, restored to
+                            dignity. Here is a work which dares, in a
+                            postmodern, Microsoft era, to entertain serious
+                            aesthetic contemplations. The speaker encounters
+                            notions of reality that are fragile, provisional and
+                            constructed within the infinite domains of
+                            space-time as he attempts to order Dimensions at the
+                            heart of matter, Immensities wound up, that mind
+                            Cannot conceive? Notes: Adam Kirsch, The Modern
+                            Element, WW Norton, New York, 2008, pg. 10
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Australian Book Review</summary>
+                        <p>
+                            Formal Music - History of the Day Paul Hetherington
+                            (poet) Australian Book Review, 20 June 2009 History
+                            of the Day is Stephen Edgar’s seventh poetry
+                            collection. His first was Queuing for the Mudd Club
+                            in 1985, and over the last twenty-four years he has
+                            been publishing poetry with a strikingly individual
+                            formal music. This latest volume further refines his
+                            superbly measured control of rhythm and cadence.
+                            There is nothing else like it in contemporary
+                            Australian poetry. Edgar’s poetry has always
+                            explored a wide variety of subjects, exhibiting a
+                            questing, cerebral and sometimes troubled
+                            sensibility. History of the Day confirms his
+                            interest in human history (and human injustice and
+                            cruelty), art and culture, and the possibility of
+                            certain kinds of illumination. Notwithstanding
+                            Edgar’s complex preoccupations, his poems - many are
+                            part narrative, part rumination - move with
+                            steadiness and grace. It is as if his measured
+                            works, his subtly judicious explorations of poetic
+                            form, are a counter-statement to the world’s
+                            imperfections; or as if the poet, through the
+                            overtly constructed framework of his poetry, is
+                            reminding the reader that he is a maker who has a
+                            responsibility to shape the language he works in. To
+                            get the best out of his poems, one needs to pay
+                            particular attention to their stories and measures;
+                            get to know their sometimes reserved poetic voice,
+                            and follow their intricate and original patterns of
+                            thought. The formality of Edgar’s writing in History
+                            of the Day occasionally creates a sense that
+                            particular poems are primarily concerned with their
+                            own aesthetic and literary considerations. This is
+                            especially true of the more filmic and painterly
+                            works, such as ‘Out of the Picture’: ‘And so, as in
+                            some formal wooded scene / By an Impressionist, /
+                            The lady with the tilted parasol / And
+                            gravel-kissing hem saunters between / The poplars.’
+                            Here, human figures and their situations are
+                            emblematic rather than realistic, and there is a
+                            nuanced distance, like a shimmer, between reader and
+                            poetic effect. However, in Edgar’s last two books -
+                            Other Summers (2006) and this one - his poetry has
+                            also ventured into the territory of direct personal
+                            utterance. Such poetry has an important place in the
+                            English-language poetic tradition, but, generally
+                            speaking, Edgar has previously eschewed the form,
+                            even in earlier poems about personal and family
+                            matters. History of the Day begins with poems about
+                            intimacy and moves quickly to poems about loss (in
+                            some cases these are the same poem). Edgar’s poetic
+                            voice is direct and polished, and these poems signal
+                            the volume’s significant preoccupation with the
+                            intersection of past and present. ‘The Earrings’ is
+                            a prime example. It shows off Edgar’s virtuosic
+                            technique - with alternating lines of iambic
+                            trimeter, monometer, tetrameter, trimeter and
+                            dimeter - while exhibiting an attractive simplicity
+                            in its diction and achieving a relaxed sense of
+                            movement throughout. Earrings, having been put aside
+                            after their original wearer passed away, were ‘long
+                            lost inside / The void / Of an old jewel box, denied
+                            / Adorning: to be eyed, / To be enjoyed’. They are
+                            given new meaning by being given to and worn by
+                            another, and the poet observes how ‘mended spheres
+                            accrue, / Blend and combine’. Such writing, with its
+                            punning attention to language, has a strongly
+                            metaphysical dimension. There are two poems in the
+                            volume’s opening section in which the speaker is
+                            visited by a ghost from the past. In one, simply
+                            entitled ‘2:00’, the poet suffers the ethereal
+                            visitation of a former intimate: ‘And so I woke up
+                            at the painted hour / And turned and found you
+                            there.’ In ‘Nocturnal’, the poet accidentally
+                            rediscovers a cassette recording of the poet Gwen
+                            Harwood years after her death. This leads him to
+                            consider how, ‘Here in the dark / I listen, tensing
+                            in distress, to each / Uncertain fragment of your
+                            speech’. In the carefully wrought context of this
+                            poem, such plain speaking is compelling and
+                            poignant. Following on from these poems, the volume
+                            repeatedly invokes notions of afterlife, dream-life,
+                            fantasy and alternative reality - even the idea of a
+                            mysterious double life. Multiple poetic doorways are
+                            provided to the myriad places of the unconscious or
+                            creative mind. As one reads, a great deal becomes
+                            insubstantial or evanesces, or is shown to be in
+                            flux. Much of significance is elusive; much that
+                            matters belongs to the imagination or to the past.
+                            The passing of time is one of the main
+                            preoccupations of this volume. In ‘Those Hours Which
+                            Grew to Be Years’, Edgar meditates on photographs of
+                            African Americans lynched in the United States in
+                            the late nineteenth and early twentieth centuries.
+                            His involved detachment is employed to good effect
+                            as these poems search after the eerie stillness of
+                            the photographic scenes they refer to: ‘In the still
+                            transfiguration of sunshine / That whites out almost
+                            all one leg and arm / Until they merge into the
+                            slender pine / He’s hanging from with an inhuman
+                            calm’ (‘Memorial’). Edgar’s control enables him to
+                            powerfully question what the documentary record or,
+                            for that matter, what art can really say about human
+                            injustice and cruelty. The poems demonstrate a great
+                            delicacy of utterance, a subtle tonal control and
+                            intricate, almost woven textures. They illuminate
+                            through extending the possibilities of language and
+                            through a clear-eyed scrutiny of human experience.
+                            [Author’s note: In “Nocturnal”, although Gwen
+                            Harwood is referred to, she is not in fact the
+                            subject of the poem and it is not her voice on the
+                            cassette.]
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

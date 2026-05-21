@@ -14,12 +14,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -63,18 +121,542 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/blueprints-for-a-barbed-wire-canoe.svg&quot;);
                         "
                     >
-                        Featured
+                        Blueprints for a Barbed-Wire Canoe
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Wayne Macauley</h3>
+                </div>
+                <img
+                    alt="Cover of Blueprints for a Barbed-Wire Canoe"
+                    class="product-cover-mobile"
+                    src="/assets/books/blueprints-for-a-barbed-wire-canoe/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Blueprints for a Barbed-Wire Canoe"
+                        class="product-cover"
+                        src="/assets/books/blueprints-for-a-barbed-wire-canoe/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        The rain fell hard and unending on the roof. All the
+                        ghosts of ur were sleeping. The night was as dark as a
+                        whale ’ s belly. She passed by swiftly, cried out
+                        softly; I wasn ’ t listening, I couldn ’ t have heard.
+                        Bram has a reluctant story to tell. Excavating common
+                        objects from the mullock heap of a failed housing
+                        estate, he records the lives of those who lived there.
+                        One-eyed Michael, fencing contractor and ideologue, his
+                        daughter Jodie, Slug the real estate agent, Layland from
+                        the Ministry and Tony the bricklayer-in-waiting: these
+                        are just some of the players in a laconic comedy of
+                        circumstance. Prize-winning short fiction writer Wayne
+                        Macauley has made, as Peter Craven has noted, ‘something
+                        almost like allegory.’ His compulsive telling ensnares
+                        us in an escalating series of remarkable events. An old
+                        leather satchel holds the documents for the fatal vessel
+                        of the title... Beguilingly simple, eccentric and
+                        original, Blueprints for a Barbed-Wire Canoe is a fable
+                        of ownership, and an elegy for a dream. stunningly
+                        written... If more Australian literature was of this
+                        quality, we’ be laughing. Cameron Woodhead, The Age
+                        Cover drawings by Ian Bracegirdle
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ None</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a
+                        class="bold"
+                        href="/samples/blueprints-for-a-barbed-wire-canoe.pdf"
+                        >Download Sample »</a
+                    >
+                    <a
+                        class="bold"
+                        href="/assets/books/blueprints-for-a-barbed-wire-canoe/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>187604442X</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2004</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>147</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Wayne Macauley is a Melbourne writer whose stories
+                            have been published in Meanjin, Westerly, Overland,
+                            Arena, HQ and other magazines.
+                        </p>
+                        <a class="bold" href="/authors/wayne-macauley.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Cameron Woodhead, The Age</summary>
+                        <p>
+                            Blueprints for a Barbed-Wire Canoe Cameron Woodhead
+                            PICK OF THE WEEK The Age , 24 January 2004 More than
+                            50 kilometres north of Melbourne, a model estate is
+                            built in a flush of quixotic enthusiasm. It turns
+                            into a town-planning disaster. Three years later the
+                            seven identical culs-de-sac are virtually abandoned
+                            - no jobs came, the freeway extension was never
+                            built and the inhabitants fled back to the city.
+                            Bram, excavating the wreckage of the site, tells the
+                            strange stories of the people who moved there. Wayne
+                            Macauley has the soul of a poet and his surreal
+                            novella is stunningly written. Blueprints for a
+                            Barbed-Wire Canoe evokes a series of quirky
+                            characters, the humour set against suburban decay.
+                            It is a satire of exquisite poise and confidence and
+                            a timely corrective to the noxious utopianism of,
+                            say, Caroline Springs advertisements. If more
+                            Australian literature was of this calibre, we ’ d be
+                            laughing.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Graham Clark, The Courier Mail</summary>
+                        <p>
+                            Paperbacks Blueprints for a Barbed-Wire Canoe Graham
+                            Clark The Courier Mail , 17 December 2005 Beguiling,
+                            eccentric, tapping the hidden heart of a different
+                            Australia - call Wayne Macauley’s work what you
+                            like, but after Bram gets through musing about life
+                            in the scrapheap of a failed housing estate; the
+                            last eventful canoe voyage of Jodie and her rabbit
+                            skin hat; the black-humoured tale of the one-eyed
+                            ideologue Michael the former fencer; Slug, the real
+                            estate agent who arrived in that
+                            government-sponsored estate with the grandest plans
+                            for making a million and eventually washed up on
+                            barren shores dispensing home brew - Macauley’s
+                            work, so the publishers say, is a fable of
+                            ownership, and an elegy for a dream. But that’s
+                            selling it short - this is original Australian
+                            writing at its best, sifting through a series of
+                            seemingly everyday events to unearth the real story
+                            of that derelict estate and its characters, which
+                            could be a parable of modern life seeking meaning
+                            anywhere.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>ANZ LitLovers LitBlog</summary>
+                        <p>
+                            Blueprints for a Barbed-Wire Canoe Lisa Hill, ANZ
+                            LitLovers LitBlog (online), 23 February 2013
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Well of Lost Plots Review</summary>
+                        <p>
+                            Blueprints for a Barbed-Wire Canoe
+                            welloflostplots.blogspot.com , 31 May 2007
+                            Blueprints for a Barbed-Wire Canoe is an odd little
+                            book and beautifully quirky. It borders on the
+                            ridiculous at times, and yet the characters motives
+                            never lose their believability. Quite a fine balance
+                            really! The author is Wayne Macauley, an acclaimed
+                            Australian short story writer. The title relates to
+                            the old saying - ‘Up shit creek in a barbed-wire
+                            canoe without a paddle’ (although I must say I have
+                            never heard of the barbed-wire canoe bit before).
+                            And in fact, the barbed-wire canoe, a symbol of
+                            hopelessness and doom (because how far can you
+                            really get in it?) becomes the symbol for the entire
+                            story. In a way that only an Australian can,
+                            Macauley writes about the suburban dream of housing
+                            estates, and sets his story in a satellite estate -
+                            one that has been built far out from the urban
+                            fringe, but lies waiting for buyers and the
+                            long-promised freeway (which sort of gains mythical
+                            status throughout the book) to catch up to it. Like
+                            the canoe, the little community is doomed before it
+                            even begins, by bad planning and shoddy workmanship.
+                            Yet despite this (or perhaps because of it),
+                            Macauley painstakingly shows us the development of a
+                            society in the estate that becomes known (by letters
+                            falling off a sign) as ur - a clear parrallel to the
+                            doomed Sumerian city of the same name. The core
+                            characters stubbornly do not leave the development,
+                            despite the lack of plumbing, electricity, and
+                            eventually income that they are subject. Instead,
+                            they band together and survive using each of their
+                            unique skills. At what point they story may verge on
+                            the ridiculous will change with every reader. Some
+                            will say it is the building of the wall around the
+                            estate (do I hear East Germany anyone?), while
+                            others will vote for the senseless deaths or the
+                            sheer lunacy of Michael’s attempts to draw attention
+                            to their plight at the end. Bram, our narrator (and
+                            now think biblical reference) tells the story if the
+                            demise of the estate and all of their dreams after
+                            the event. But how reliable is he? His is a love
+                            story, and yet the object of his affection is
+                            strangely silent and absent. I would love to hear
+                            anyone else’s thoughts on this. It’s a really
+                            original read - which makes it great. Certainly it’s
+                            not for everyone - but no good book is. Trying hard
+                            to please everyone just makes for a bland read.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Overland Review</summary>
+                        <p>
+                            Real Life? Some Recent Fiction Paul Gillen Overland
+                            , No. 182, Autumn 2006 Wayne Macauley’s Blueprints
+                            for a Barbed-Wire Canoe is an eccentric parable
+                            about a prematurely constructed housing estate
+                            abandoned by the vagaries of property development.
+                            The estate, which comes to be called, sardonically
+                            and Biblically, ‘Ur’ after most of the letters have
+                            faded from a gateway sign, could even be the same
+                            estate, a few years down the track, that is called
+                            ‘Another’ in [Joel] Deane’s novel [ Another ].
+                            Macauley commands a rich and flexible style, ranging
+                            easily through satire, intensity and reflec­tion.
+                            There is nothing in this exemplary suburban Gothic
+                            tale to place it specifically in Melbourne, or
+                            anywhere, but there is something undeniably
+                            ‘Melbourne’ about its ironic brew of community,
+                            weirdness and failure. ...Even more striking than
+                            their attachment to place is the attachment of these
+                            books to the past. Overwhelmingly, they look back.
+                            The Singing [Stephanie Bishop] and Barbed-Wire Canoe
+                            are retrospective narratives...
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Sydney Morning Herald Review</summary>
+                        <p>
+                            A descent into the wildness of isolation A. Bronwyn
+                            Rivers The Sydney Morning Herald , 5-6 June 2004
+                            With its isolated characters, gothic elements and
+                            sense of degenerating humanity, Wayne Macauley’s
+                            Blueprints for a Barbed-Wire Canoe is reminiscent of
+                            Elizabeth Jolley’s The Well , or even William
+                            Golding’s Lord of the Flies . Macauley has imagined
+                            an engagingly creepy setting. City planners create
+                            an unusual new housing development in the
+                            countryside north of Melbourne. The ‘Outer Suburban
+                            Village Development Complex’ is supposed to be a
+                            brave new type of town organised around a central
+                            square, with residents enticed by cheap housing and
+                            the promise of a fast freeway to the city. Its
+                            circular layout is mischievously suggestive of
+                            Milton Keynes or Canberra, those triumphs of
+                            20th-century city planning. But the promised freeway
+                            never eventuates, the town dies, and eventually only
+                            a few obstinate residents remain. The interest
+                            begins when officials attempt to erase this failed
+                            urban dream and the residents bunker down against
+                            the outside world. The story is perhaps intended as
+                            a salutary fable about the horrors awaiting our
+                            disaffected modern citizenry: these isolated urban
+                            dwellers, abandoned by government and their fellow
+                            citizens, descend into wildness. Macauley displays a
+                            strong sense of situation, he keeps the action
+                            moving, and he creates lasting visual images and
+                            resonant symbolism. These strengths are let down by
+                            uneven narration. The voice of the narrator, Bram,
+                            is rather bland, and too often Macauley states the
+                            obvious, rather than allowing themes to grow out of
+                            suggestion.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Bulletin Review</summary>
+                        <p>
+                            Mark Tredinnick The Bulletin , 11 May 2004 Wayne
+                            Macauley’s novel feels like a short story that got
+                            away, a dense and implausible suburban fable
+                            about... it’s hard to say what. There are times when
+                            you wonder not only how this tale will end, but if
+                            it will. Which is not to say it’s a bad book. But
+                            reading it felt like falling into a bail of barbed
+                            wire in the dark and fighting to get out till
+                            morning. The more I struggled, the more it got under
+                            my skin.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Wet Ink Review</summary>
+                        <p>
+                            The Latest Word Blueprints for a Barbed-Wire Canoe
+                            Emmett Stinson, Wet Ink , Issue 2, Autumn 2006 Wayne
+                            Macauley’s novella tells the story of a failed
+                            government-funded housing estate. Envisioned as a
+                            village of 1,000 people 50 kilometres north of
+                            Melbourne, potential residents are offered
+                            incentives, such as the building of a highway and
+                            petrol discounts, to relocate. But these promises
+                            never materialise and the community dwindles to
+                            seven people. Stranded far from the city, the
+                            remaining develop an informal commune increasingly
+                            isolated from the outside world. The novella (though
+                            billed as a novel) feels more like a bloated short
+                            story in form and scope and Macauley’s tale spirals
+                            into an absurdist surreality reminiscent of Fat Man
+                            in History -era Peter Carey. The residents of the
+                            estate (pseudo-cleverly renamed ‘Ur’ because those
+                            are the only two remaining letter of its official
+                            name - the Outer Suburban Village Development
+                            Complex) square off against vandals, government
+                            freeway builders, and the creation of an adjacent
+                            garbage tip. Eventually two are driven to a
+                            bushranger/guerilla insurgency that evokes Ned
+                            Kelly. To Macauley’s credit, the plot remains
+                            bewitching and ethereal, lending a vaguely
+                            allegorical bent to the story, which seems to
+                            reflect on Australia’s own settlement and antipodean
+                            isolation from the West, as well as the alienation
+                            of modern suburban living. Unfortunately, the
+                            characters remain flat and unbelievable - and while
+                            this may be the point, evoking ‘types’ rather than
+                            rounded characters, this approach often comes off as
+                            affected rather than effective. Bram, the novel’s
+                            narrator, claims to be in love with Jodie, but she
+                            remains a secondary character and inexplicably
+                            disappears from this short book for dozens of pages
+                            at a stretch - despite his supposed infatuation. At
+                            other points, important information is delivered
+                            after the fact (e.g., after cleaning a gunshot
+                            wound, one character conveniently mentions her
+                            background as a nurse). Macauley’s prose, though
+                            verbose enough to suggest an intellectual narrator,
+                            is staid and uncomfortably ridden with cliches (such
+                            as ‘ridden with cliches’). The book’s nadir occurs
+                            when a character literally navigates up a
+                            sewage-drenched river in a barbed-wire canoe - a
+                            premise trying so hard to be clever that it nearly
+                            cripples an otherwise enchanting story. Still, the
+                            hallucinatory power of Macauley’s tale ultimately
+                            manages to surmount these shortcomings. His novella
+                            remains ambitious and experimental - and it succeeds
+                            more often than it fails. In an era when many
+                            Australian novelists are playing it safe, Macauley’s
+                            literary gambits are refreshing even when they don’t
+                            pan out. Most impressively-for a work that is
+                            consciously literary, intellectual and experimental
+                            - Blueprints for a Barbed-Wire Canoe makes for a
+                            page-turning, accessible read. It is not a
+                            masterwork, nor even an unqualified success, but its
+                            high aspirations and ability to tackle multiple
+                            issues in a small space suggest that Wayne Macauley
+                            is an ambitious talent worth watching.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>The Age Education article</summary>
+                        <p>
+                            The Age Education Little Aussie Battlers Text Talk:
+                            Blueprints for a Barbed-Wire Canoe A bleak take on
+                            the Australian dream of owning your own home Bob
+                            Hillman (senior English teacher at Trinity Grammar
+                            School, Kew) The Age Education VCE Express, April 16
+                            2007 When I finished reading Wayne Macauley’s outer
+                            urban exploration, Blueprints for a Barbed-Wire
+                            Canoe , the first image that came into my head was a
+                            television advertisement of a husband and wife
+                            hugging one another as he leaves on a trip. The
+                            husband repositions his wife so he can gaze in
+                            wonderment at the roof of his new home, which just
+                            happens to be in one of Melbourne’s burgeoning outer
+                            estates. There are promises made within the
+                            advertisement that somehow this roof, this house,
+                            means more than just a place of residence. Likewise,
+                            Australia’s long obsession with a house being so
+                            much part on an individual’s identity and sense of
+                            self is apparent in the classic film The Castle .
+                            Both that advertisement and the film reinforce the
+                            main character Bram’s dream of ‘a vague notion of a
+                            house, a family and a happy life in the former
+                            housing estate north of Melbourne’. Macauley’s
+                            novel, however, demolishes this idea and challenges
+                            the middle-class beliefs that everyone is entitled
+                            to a supposed suburban Utopia. The problem lies in
+                            that Melbourne’s suburbs were once within sight of
+                            the city’s heart. Today, with the ever-growing
+                            population, the estates are moving further and
+                            further out. The residents in the novel become
+                            victims to a careless and negligent bureaucracy.
+                            Macauley paints a dark picture of those who are
+                            responsible for the ‘Outer Suburban Village
+                            Development Complex’. While the estate is completed
+                            ‘in record time’ and the grand opening includes
+                            dignitaries, politicians and even the Premier, it is
+                            not long before all those who should take
+                            responsibility wash their hands of ‘ the estate and
+                            the people who live there. Australians’ natural
+                            suspicion of, and aversion to, government is
+                            reinforced throughout the story. We are told of the
+                            chicanery, deception and downright fraud by those
+                            civil authorities whose job it is to look after
+                            citizens. When the residents fail to accept defeat
+                            and acknowledge that the experiment is a failure,
+                            the local council, in league with the Government,
+                            places a garbage tip next to the estate with the
+                            underhanded purpose of driving them away. A parade
+                            of representatives is sent with hollow promises and
+                            pronouncements, none of which prove sincere. When
+                            Loch and two security guards arrive at ur, the
+                            residents are presented with an eloquent declaration
+                            of support and Macauley uses the opportunity to
+                            emphasise to us ‘that there is something decidedly
+                            wrong with a system that has driven a group of
+                            otherwise ordinary citizens to this end. I am shamed
+                            bv it.’ The residents of ur have become an
+                            embarrassing reminder of governmental failure and
+                            neglect. The authorities are prepared to do anything
+                            to rid themselves and the public of a symbol of
+                            their incompetence and negligence. The Government
+                            even closes a bank account that the residents
+                            communally opened. It is suspected that the vandals
+                            who destroy some of the few civilised aspects of
+                            life in the estate are hired by those who have a
+                            vested interest in its evacuation. They become
+                            forgotten and ignored by the outside world. While
+                            Macauley describes parts of his novel as containing
+                            ‘amusing bits’, he also acknowledges that ‘there’s
+                            another side of me that is dark, troubled’. The
+                            plight and behaviour of those who eke out an
+                            existence over 11 years is nothing short of gloomy
+                            and depressing. They endure dreadful odours from the
+                            open sewerage and the tip. As the story unfolds they
+                            eat anything they can get and live in squalor. The
+                            electricity and water are turned off, their lives
+                            are miserable. There is a fine line between the awe
+                            we may feel at the indominatability of the human
+                            spirit, even in the most horrific circumstances, and
+                            the appal we feel for the steady deprivation that
+                            the residents of ur impose on themselves. There is
+                            little to celebrate as the life of each resident
+                            disintegrates. Unwashed, hungry and isolated from
+                            the outside world, they can only find some solace in
+                            each other’s company. There is a community spirit
+                            but even that collapses in the face of poverty and
+                            the idle existence away from other humans. The few
+                            moments of celebration come when outsiders arrive
+                            and offer improvements. Jodie’s arrival added ‘a new
+                            spirit of enterprise’ and Marie-Claire’s appearance,
+                            all the way from France, enlivens the mood and
+                            atmosphere for a time. One by one, however,
+                            individuals can no longer bear the deprivation of
+                            their existence. Slug perceives the hopelessness of
+                            the situation and flees in the night. Instead of
+                            understanding, those left behind ignore the
+                            contributions he has made to the community by
+                            opening a cafe, but instead delete ‘all trace of
+                            Slug’s influence’ and ‘from that day on he became
+                            ur’s much needed bete noir’. In his return there is
+                            some substance in his claim that he has done
+                            everything he can to help them with the authorities,
+                            but he is reviled and chased away with a blast from
+                            Michael’s rifle. Vito is responsible for enormous
+                            contributions with his resourcefulness. He possesses
+                            left-leaning ideologies and offers his talents as a
+                            vegetable gardener, but he too steals away in the
+                            night after finally succumbing to the reality of
+                            their plight. Even Alex disappears, driving his
+                            bulldozer through the wall built to keep the world
+                            out. Although Bram does not leave, he recognises
+                            ‘it’s an unguarded stairway, easily descended, from
+                            the warm house of solitude to the dungeon of
+                            loneliness and I had without knowing begun to
+                            descend it’. Once the improbable deaths of Nanna and
+                            Dave occur, it is left to five defiants who are
+                            under the influence of Michael. At first he is a
+                            somewhat comical eccentric, but as the tale unfolds,
+                            it is clear that he is dangerous - to himself and
+                            others. Symbolically, his visual handicap occurs
+                            when he creates the tension of a wire too tight and
+                            it snaps. Michael, too, is psychologically stretched
+                            tight and ultimately snaps. His menacing presence
+                            seems to drag the inhabitants of ur down with him,
+                            ‘no one dared argue with him’. Not even his daughter
+                            could influence him and ‘his behaviour became
+                            increasingly reckless and bizarre’. It is
+                            interesting to note the allegiance this madman is
+                            able to elicit even when it is clear his actions are
+                            not in the interest of those around him. He has
+                            become ‘like some prowling animal, his mind
+                            completely gone’. This does not, however, diminish
+                            his influence. The narrator ‘could hardly look Craig
+                            in the eye, so infected had he become with Michael’s
+                            madness’. It is a madness that is played out in the
+                            actions of Jodie, his daughter, which opens and
+                            finishes the tale. According to the blueprints for a
+                            barbed-wire canoe, she must ‘be sure you’re sick of
+                            life, say to yourself: I’ve had enough’. Her
+                            drowning in the creek and the death of Bram’s and
+                            her unborn baby is the final chapter in a tragic
+                            story. As Bram completes his archaeological dig and
+                            unearths artefacts, he writes the history of a
+                            failed estate and its destruction of those who tried
+                            to make a life out of hollow promises on ‘40
+                            hectares of abandoned farmland’.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">

@@ -12,12 +12,70 @@
             rel="preconnect"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,600&amp;family=Crimson+Text:wght@400;600&amp;family=Roboto&amp;display=swap"
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
             rel="stylesheet"
         />
         <script src="/js/cart.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
         <div class="content-area">
             <header>
                 <div class="top">
@@ -61,18 +119,402 @@
                     />
                 </div>
             </header>
-            <main>
-                <article>
+            <main class="product-page">
+                <div class="product-header">
                     <h2
                         class="section-title"
                         style="
                             --styled-asset-path: url(&quot;/assets/headers/bread.svg&quot;);
                         "
                     >
-                        Featured
+                        Bread
                     </h2>
-                </article>
-                <div class="content-with-sidebar"></div>
+                    <h3 class="section-subtitle">Philip Hammial</h3>
+                </div>
+                <img
+                    alt="Cover of Bread"
+                    class="product-cover-mobile"
+                    src="/assets/books/bread/cover.jpg"
+                />
+                <section class="product-description">
+                    <img
+                        alt="Cover of Bread"
+                        class="product-cover"
+                        src="/assets/books/bread/cover.jpg"
+                    />
+                    <h3>Description</h3>
+                    <p>
+                        just to the left of the alarm clock, just to the right
+                        of the abiding distractions The poet Philip Hammial is
+                        also is also a sculptor. His poems are word
+                        constructions, installations for the imagination. They
+                        confront and tease and strangely charm with their
+                        abrasive wit. Out of a diaspora of forms and traces of
+                        what was once functional, he creates that living object
+                        of art which dances, screams, shouts, farts, raves. Adam
+                        Aitkens Like all good Surrealists Hammial is at heart a
+                        serious poet, whose shimmering surfaces open out to
+                        social analysis and an engagement with culture and
+                        politics, resulting in a dazzling bravura poetry. Hugh
+                        Tolhurst It’s jazz on the page. Zan Ross Bread was
+                        short-listed for the New South Wales Premier’s Literary
+                        Awards, Kenneth Slessor Prize for Poetry, in 2001. The
+                        judges commented: Hammial has a strong, fascinating,
+                        individual and reliably animated style. What might be
+                        mere experimental whimsy in another writer is toughened
+                        and made memorable by his well-integrated but unyielding
+                        ethical tone: ‘His is an evacuated face. Actually, it’s
+                        an extrajudicial face permeated with suck this
+                        immunity... A scummed face. A face in the final
+                        analysis, that’s down on all fours’ (‘Howard’). This is
+                        a beautifully disciplined book, mirroring social and
+                        literary genre absurdities back and forth to achieve a
+                        stance which is extremely valuable both artistically and
+                        socially. Cover sculpture A Postmodernist Watching The
+                        Shit Hit The Fan by Philip Hammial
+                    </p>
+                </section>
+                <div class="product-sidebar">
+                    <button class="purchase bold">
+                        <span class="price">A$ 21.95</span>
+                        <span>Add to Cart</span>
+                        <svg
+                            width="15"
+                            height="16"
+                            viewBox="0 0 15 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_12_8270)">
+                                <path
+                                    d="M0.625 0.666504H3.125L4.8 9.59317C4.85715 9.9001 5.01369 10.1758 5.24222 10.372C5.47074 10.5683 5.75669 10.6725 6.05 10.6665H12.125C12.4183 10.6725 12.7043 10.5683 12.9328 10.372C13.1613 10.1758 13.3178 9.9001 13.375 9.59317L14.375 3.99984H3.75M6.25 13.9998C6.25 14.368 5.97018 14.6665 5.625 14.6665C5.27982 14.6665 5 14.368 5 13.9998C5 13.6316 5.27982 13.3332 5.625 13.3332C5.97018 13.3332 6.25 13.6316 6.25 13.9998ZM13.125 13.9998C13.125 14.368 12.8452 14.6665 12.5 14.6665C12.1548 14.6665 11.875 14.368 11.875 13.9998C11.875 13.6316 12.1548 13.3332 12.5 13.3332C12.8452 13.3332 13.125 13.6316 13.125 13.9998Z"
+                                    stroke="#DCCEBD"
+                                    stroke-width="1.6"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_8270">
+                                    <rect width="15" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </button>
+                    <a class="bold" href="/samples/bread.pdf"
+                        >Download Sample »</a
+                    >
+                    <a class="bold" href="/assets/books/bread/cover.jpg"
+                        >Download Cover »</a
+                    >
+                </div>
+                <div class="product-information">
+                    <section>
+                        <h3>Information</h3>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>ISBN</td>
+                                    <td>1876044357</td>
+                                </tr>
+                                <tr>
+                                    <td>Release</td>
+                                    <td>2000</td>
+                                </tr>
+                                <tr>
+                                    <td>Pages</td>
+                                    <td>56</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section>
+                        <h3>About the Author</h3>
+                        <p>
+                            Philip Hammial is a prolific poet and author whose
+                            work includes Bread and many earlier collections.
+                        </p>
+                        <a class="bold" href="/authors/philip-hammial.html"
+                            >Go to Profile»</a
+                        >
+                    </section>
+                </div>
+                <div class="product-reviews">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/reviews.svg&quot;);
+                        "
+                    >
+                        Reviews
+                    </h2>
+                    <details class="review">
+                        <summary>Kerry Leves, Overland</summary>
+                        <p>
+                            Solitudes that Resonate: New Poetry Bread Kerry
+                            Leves Overland , No. 166, Autumn 2002 If Lou Reed
+                            were updating his most famous song to these
+                            duty-of-care times he might add that if you are
+                            taking a walk on the wild side, you are probably
+                            moving too slowly for the good of your health.
+                            Philip Hammial’s Bread is an alert, prowling lope
+                            across the earth-clung, wormy underbelly of our
+                            culture. Hammial lifts the stone, rolls it back -
+                            shows us the efflorescence of rot underneath, decay
+                            as animal action, contempt as a three-ring circus.
+                            Hey, that stuff looks amazing - but, Jesus! it’s
+                            moving, it’s acting on us... One action is
+                            evacuation, principally of the self, which is
+                            displaced, kicked out of any certainties regularly
+                            and brutally: the party’s over, the last guest
+                            leaving with my children in tow... Hammial keeps his
+                            syntax almost insanely crisp; he’s very
+                            matter-of-fact in linking the least obvious things,
+                            the mythic ‘Fourth Reich’ and the mystical longing
+                            for a poetry that’s ‘clear and concise’; Christian
+                            hypocrisy and its dubious tradition: Fornicators
+                            dismantle a resurrection. Prepare a balcony for
+                            takeoff. What’s startling - and I think original -
+                            is the way shibboleths are torn down in a terse,
+                            colourful, street-talkin’ style: A 21st birthday -
+                            Jump on a bus &amp; give the moon, your youth &amp;
+                            a bar of soap to the bus driver. If successful (if
+                            all three items are accepted without question) get
+                            off at the next stop &amp; at the no-longer-there
+                            moon set up a howl. Persist with this until you’re
+                            taken away by the police. Hammial also serves up a
+                            lot of nasty fun at the expense of that poetic
+                            afreet, the lyrical ‘I’ - ‘an effigy of myself / to
+                            do with as you will’ - plus heads of state, (‘They
+                            are, from first / to last, pneumatics./ Anyone, even
+                            an infant, / can pump them up’), colonels, a junta,
+                            medicos, a suicide, tourists, armies and a certain
+                            ‘Howard’: ‘A face, in the final analysis, that’s
+                            down on all fours.’ Zan Ross notes on the back
+                            cover: ‘It’s jazz on the page.’ I disagree - it’s
+                            rock’n’roll, post-punk; it’s got the directness of
+                            rap along with a verbal pizzazz and intellectual
+                            fullness that rap doesn’t usually extend to, Hammial
+                            is also a kinetic artist, a portrait sculptor in
+                            scrap metal and junk oddments, an endlessly
+                            inventive materialiser of demons comical and
+                            nightmarish. One of them is on the cover. This book
+                            could be dubbed UTAOP - unfair to all other poets -
+                            because of its brilliance and acrobatic speed in
+                            getting its points across. But those are also
+                            reasons for poets and non-poets to read it.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Imago Review</summary>
+                        <p>
+                            New Writing Bread Helen Horton Imago , Vol. 13, No.
+                            2, 2001 Philip Hammial’s poems, in Bread , have the
+                            effect of chapters of a subject or life being thrown
+                            up on the screen at the same time, to take their
+                            place in what amounts to a surreal rendition of that
+                            subject or life, in order to produce its eventual
+                            meaning, or alternatively the lack of it. The method
+                            is not always easy to follow, the conclusion not
+                            always immediately obvious, and in these cases it is
+                            better to stand back a little to gain the overall
+                            effect, in the same way as is necessary with an
+                            abstract painting. One of the more simple examples
+                            is the poem ‘Correspondence’. Not all are in this
+                            mode, however. ‘An Incident in Famgusta’ is a
+                            straight telling of an incident, in starkly real
+                            detail. Satire is an integral part of Hammial’s
+                            poetry; these are not poems to be taken lightly, or
+                            to be read for light-hearted pleasure. Always there
+                            is the conviction of serious comment being made
+                            behind the associations that may sometimes appear
+                            incohesive, their meanings requiring effort to
+                            unravel. More direct are the short short poems that
+                            liberally punctuate the collection. These are
+                            telling, single subject comments, as in ‘La Mort Est
+                            Sur La Table’. Their terse lines pinpoint the
+                            smallest of observations, as in ‘Concert’: As the
+                            flautist only has one eye the crow as though on a
+                            branch can perch on the flute &amp; not be heard.
+                            The last of these luminous comments are written in
+                            prose form in the final item ‘Things to do’, which
+                            ends, ending also the collection, with the
+                            admonition: ‘Squeeze an accordion shut. Remember the
+                            sound it made. Remember it for the rest of your
+                            life.’ Philip Hammial is also a sculptor and the
+                            cover depicts one of his sculptures. It is not hard
+                            to deduce that his art and his poetry arise from the
+                            same nucleus.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Mattoid Review</summary>
+                        <p>
+                            Poetry from Black Pepper Melbourne Elegies , Bread ,
+                            Russian Ink , The Dining Car Scene Brian Edwards
+                            Mattoid , No. 55, 2006 Whereas K.F. Pearson (
+                            Melbourne Elegies ) typically invites reader
+                            compliance by emphasising the attractions of sharing
+                            and communication, Philip Hammial’s Bread collection
+                            is confrontational. Critical, satirical, and
+                            disjunctive, his poems are mostly surreal, their
+                            combinations bizarre. When Colonels, the Junta,
+                            Heads of State (including Howard), and the army
+                            become targets for satire, the modes are curiously
+                            indirect (overtly metaphorical) but also insistent.
+                            Focussing on stupidities, dullness, self-interest,
+                            and abuses of power, he mocks simple public-private
+                            distinctions while suggesting, as it were, the
+                            advisability (even the necessity) of stringent
+                            critique. Something of this humorous/serious play
+                            can be seen in the short prose poem ‘Howard’: His is
+                            an evacuated face. Actually, it’s an extrajudicial
+                            face permeated with suck this immunity as a function
+                            of fraternal arcanum. In other words, it’s a face of
+                            extortion modified to suit the present political
+                            climate - slapdash. Or, to put it simply, an about
+                            face. A packed-with-lies face. A floundering in
+                            malignancy face. An orchestrated by the lowest
+                            common denominator face. A scrummed face. A face, in
+                            the final analysis, that’s down on all fours. One
+                            can only wonder what Hammial might add following the
+                            awful opportunisms of the Tampa affair, September
+                            11, the ‘War on Terror,’ and all the way to Iraq
+                            with George, the Younger, Bush! By contrast, ‘An
+                            Incident in Famagusta,’ ‘Homeward Bound’ and
+                            ‘Stations’ are constructed as disjunctive
+                            narratives, phantasmagorical journeys in which the
+                            disconcerting play of images and ideas displaces
+                            literality for the more difficult appeals of
+                            symbolic possibilities. Similar strategies of
+                            dislocation appear in ‘Procedures’ where common
+                            events (the birth of a child, a baptism, a 21st
+                            birthday, choosing a valentine...) become the labels
+                            to which are attached short paragraphs of bizarre
+                            instructions and in ‘What to Say,’ a litany that
+                            offers harsh comfort about moments of crisis. Bread
+                            is much concerned with death. So many of the poems
+                            address horrors, from history and from nightmare;
+                            and in their witty displacements, the sounds of
+                            parodic laughter suggest, as well, tears of
+                            frustration and concern. Satire is always at least
+                            double-edged. ...These are interesting collections.
+                            Black Pepper continues to present writing that
+                            warrants attention.
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Westerly Review</summary>
+                        <p>
+                            New Poetry - 2001 Bread Alan Urquhart Westerly ,
+                            Vol. 46, November 2001 (pgs 109-125) [Text not yet
+                            available]
+                        </p>
+                    </details>
+                    <details class="review">
+                        <summary>Launch Speech by Martin Langford</summary>
+                        <p>
+                            Launch Speech Martin Langford Burning Lines [Arts
+                            and sculptural] Festival, April 2001 There is a
+                            wonderfully apt epigraph to this book: ‘He gluts
+                            himself on astonishment’, and in some ways,
+                            astonishment is the bread of the title. Bread ,
+                            like, perhaps, all of Phil’s poetry, is fuelled by
+                            astonishment - at the craziness, weirdness,
+                            dumbness, marvellousness, of the life he finds
+                            himself in. And he does, in some ways, glut himself
+                            on it - in that way artists have of returning again
+                            and again to the material which both drives them
+                            crazy and delights them, the material they can never
+                            quite get out of their system through their art.
+                            This astonishment, however, is not something which
+                            just appeared without forebears or context. Phil’s
+                            deck of literary possibilities was formed not by the
+                            Anglo-American tradition so much as by the
+                            continental modernists - the French and Spanish
+                            surrealists, the later French writers such as
+                            Michaux, Char, Jabés. There is something syncretic
+                            about the Anglo imagination: it prefers to work in
+                            consonance with a comprehensive explanation of the
+                            world. Somewhere along the line, the French diverged
+                            from that need - that thoughtfulness, that
+                            insecurity - and let the imagination loose without,
+                            as it were, feeling that they need always be
+                            beholden to reasonableness. As I read Phil’s work,
+                            it is written in the spirit of that tradition. The
+                            imagination is free to respond directly to the world
+                            without being mediated or restrained by the need to
+                            construct a plausible explanation of what is
+                            happening. For a long time, this tradition has been
+                            alien to the Australian cast of mind, and sometimes
+                            Phil has struggled to find readers because of it. I
+                            would suggest that, with the greater tolerance for
+                            alternative possibilities that is around now, with
+                            the greater expectation that poetry is a mansion
+                            with many rooms, it is worth taking another look at
+                            Phil’s verse - or a first look if you haven’t
+                            already done so. Bread seems to me to have been
+                            written out of a desire to produce something in
+                            language which was equivalent to the craziness and
+                            intensity of the world itself. And in the way that
+                            language has of being found to contain whatever it
+                            was the seeker was looking for already within it,
+                            Phil discovered a repertoire of violence and
+                            craziness already there. Many of the poems, for
+                            instance, are built around puns. But these aren’t
+                            little wry-smile puns, they are bearers of absurd or
+                            demonic alternatives (see:’ Sound’, pg. 49). Others
+                            are built around verbal patterns - recurring
+                            linguistic events might be a better term - which
+                            develop a momentum and charge of their own as the
+                            imagination takes hold. ‘Problems and Solutions’ is
+                            built around a sort of absurd folk-wisdom in which
+                            one might always knows what to do in every
+                            situation. The really absurd thing, of course, is
+                            the assumption that life is a perfectly ordinary
+                            thing, but Phil’s tone never moves from the rituals
+                            and conventions of that assumption. It is just that
+                            as his solutions get weirder, so, too, by
+                            implication, does that assumption become more
+                            absurd. I don’t recommend Phil’s solutions, by the
+                            way. I don’t think people will find them helpful at
+                            all. In some ways, Phil is a joker-poet. Reason, and
+                            reasonableness, are just the flimsiest of
+                            constructs. Having no credibility, their main
+                            attraction is as the source material for
+                            inconsistencies, puns and funny ideas. But from
+                            another angle, Phil is close to being a poet of
+                            dream. Not dreaminess: one very noticeable
+                            characteristic of this verse is its rapidity of
+                            verbal movement. But dream in the sense of being
+                            unpredictable, unsettling, vivid. There is, for
+                            instance, none of that clear distinction between
+                            ‘dream’ and ‘waking reality’ that we maintain in our
+                            everyday lives. In Phil’s memoirs of his somewhat
+                            testosterone-fired youth, ‘Travels’, he writes of
+                            how he was continually confronting authority. He has
+                            carried something of that same attitude into his
+                            writing of verse. These poems strike one as direct
+                            imaginative confrontations rather than being, say,
+                            meditations or expressions of some feeling. All
+                            this, however, is made accessible by his instinct
+                            for form, which seems to me to have gone on
+                            developing throughout his work. It is form - the
+                            lists and motifs and variations and recurring
+                            constructions - which provides the lens to his
+                            craziness, and, by being the expression of human
+                            effort in the face of something difficult, becomes a
+                            sort of implicit awe (‘Autumnal’ or ‘Me, Myself, No
+                            Other’). There are no places of rest in this poetry
+                            - unless one counts the somewhat uncomfortable
+                            tightrope of humour. But then, there aren’t, really,
+                            any places of rest anywhere. Phil Hammial is one of
+                            the distinctive voices of Australian verse, and
+                            Bread is an excellent place in which to start to
+                            explore that voice.
+                        </p>
+                    </details>
+                </div>
             </main>
         </div>
         <div class="footer-area">
