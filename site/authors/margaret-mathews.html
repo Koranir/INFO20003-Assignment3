@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Black Pepper Publishing - Margaret Mathews</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="/style/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="content-area">
+            <header>
+                <div class="desktop-top">
+                    <nav>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </nav>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                </div>
+                <div class="mobile-top">
+                    <button
+                        id="mobile-menu-button"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <img src="/assets/menu.svg" />
+                    </button>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                    <a href="/cart.html" id="cart-link-mobile">
+                        <img
+                            alt="Shopping Cart Icon"
+                            src="/assets/cart-icon.svg"
+                        />
+                    </a>
+                    <dialog id="mobile-menu">
+                        <button
+                            id="mobile-menu-close"
+                            onclick="toggleMobileMenu()"
+                        >
+                            <img
+                                alt="Close Menu Icon"
+                                src="/assets/close.svg"
+                            />
+                        </button>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </dialog>
+                </div>
+                <div class="search bold">
+                    <button class="search-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search"
+                        >
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                    </button>
+                    <input
+                        id="search-input"
+                        placeholder="Search books &amp; more"
+                        type="search"
+                    />
+                </div>
+            </header>
+            <main class="author-page">
+                <div class="repository-header">
+                    <h2 class="section-title">Margaret Mathews</h2>
+                </div>
+                <section class="author-profile">
+                    <div class="author-profile-copy">
+                        <h3>About the Author</h3>
+                        <p>
+                            Margaret Mathews is a graduate of Box Hill
+                            Institute’s Diploma of Arts (Professional Writing
+                            and Editing) course receiving Academic and Highest
+                            Achievement awards. She won the Gippsland Travel
+                            Writing competition in 2008 and was Commended in the
+                            FAW Mornington Peninsula 2008 Short Story
+                            Competition. She has been published in The Age, Good
+                            Weekend, Traveller, The Sunday Age (letters and
+                            competitions) and several small literary magazines.
+                            Margaret has three adult daughters and lives in
+                            Melbourne. Room for Delusion is her first book. She
+                            is currently writing a sequel- Hotel Del Monte.
+                        </p>
+                    </div>
+                </section>
+                <section class="author-bibliography">
+                    <h3>Titles</h3>
+                    <div class="bibliography-list">
+                        <a
+                            class="bibliography-item"
+                            href="/products/room-for-delusion.html"
+                        >
+                            <img
+                                alt="Cover of Room for Delusion"
+                                src="/assets/books/room-for-delusion/cover.jpg"
+                            />
+                            <div>
+                                <h3>Room for Delusion</h3>
+                                <p>2017</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="footer-area">
+            <footer>
+                <div class="footer-links">
+                    <a href="/submission-guidelines.html"
+                        >Submission Guidelies</a
+                    >
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html"
+                        >Terms and Conditions</a
+                    >
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="/shipping-information.html"
+                        >Shipping Information</a
+                    >
+                    <a href="/rights-and-international-sales.html"
+                        >Rights &amp; International Sales</a
+                    >
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-mailing">
+                        <p>Want to be notified when new books come out?</p>
+                        <form class="footer-mailing-form">
+                            <div class="bold">
+                                <input
+                                    placeholder="your-email@gmail.com"
+                                    type="email"
+                                />
+                            </div>
+                            <button class="bold" type="submit">
+                                Join out mailing list »
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://twitter.com/">
+                            <img alt="Twitter Logo" src="/assets/twitter.svg" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/p/Black-Pepper-Publishing-100068467657667/"
+                        >
+                            <img
+                                alt="Facebook Logo"
+                                src="/assets/facebook.svg"
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img
+                                alt="Instagram Logo"
+                                src="/assets/instagram.svg"
+                            />
+                        </a>
+                    </div>
+                    <p>© 2026 Black Pepper Publishing</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

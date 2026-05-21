@@ -1,0 +1,1899 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Black Pepper Publishing - Authors</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="/style/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="content-area">
+            <header>
+                <div class="desktop-top">
+                    <nav>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </nav>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                </div>
+                <div class="mobile-top">
+                    <button
+                        id="mobile-menu-button"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <img src="/assets/menu.svg" />
+                    </button>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                    <a href="/cart.html" id="cart-link-mobile">
+                        <img
+                            alt="Shopping Cart Icon"
+                            src="/assets/cart-icon.svg"
+                        />
+                    </a>
+                    <dialog id="mobile-menu">
+                        <button
+                            id="mobile-menu-close"
+                            onclick="toggleMobileMenu()"
+                        >
+                            <img
+                                alt="Close Menu Icon"
+                                src="/assets/close.svg"
+                            />
+                        </button>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </dialog>
+                </div>
+                <div class="search bold">
+                    <button class="search-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search"
+                        >
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                    </button>
+                    <input
+                        id="search-input"
+                        placeholder="Search books &amp; more"
+                        type="search"
+                    />
+                </div>
+            </header>
+            <main class="repository-page">
+                <div class="repository-header">
+                    <h2
+                        class="section-title"
+                        style="
+                            --styled-asset-path: url(&quot;/assets/authors.svg&quot;);
+                        "
+                    >
+                        Authors
+                    </h2>
+                </div>
+                <section class="repository-toolbar">
+                    <p>62 authors</p>
+                    <a class="bold" href="/titles.html">Browse titles</a>
+                </section>
+                <div class="author-repository">
+                    <h3 class="repository-letter">A</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Mammad Aidani</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Born in Iran, Mammad Aidani spent his childhood in
+                            the poverty stricken areas of the city of his birth,
+                            Khorramshahar, near the Persian Gulf.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/a-picture-out-of-frame.html"
+                                    >A Picture Out Of Frame</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/mammad-aidani.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jordie Albiston</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Jordie Albiston has died, aged 60. Born and raised
+                            in Melbourne, Victoria, Albiston studied music at
+                            the Victorian College of the Arts and received a
+                            Doctorate in English from La Trobe University.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/botany-bay-document.html"
+                                    >Botany Bay Document</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-hanging-of-jean-lee.html"
+                                    >The Hanging of Jean Lee</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jordie-albiston.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Amanda Anastasi</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Amanda Anastasi is a Melbourne poet whose work has
+                            appeared in unlikely places, from the walls of
+                            Artists’ Lane, Windsor to The Massachusetts Review
+                            in the US.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-inheritors.html"
+                                    >The Inheritors</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/amanda-anastasi.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>John Anderson</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            John Anderson was born in 1948 at Kyabram, Victoria,
+                            where he grew up on an orchard. The locality was
+                            once covered with thick forest and its name is
+                            thought to indicate this.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/the-forest-set-out-like-the-night.html"
+                                    >The forest set out like the night</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-shadows-keep.html"
+                                    >The shadow’s keep</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/john-anderson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">B</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Mirranda Burton</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Mirranda Burton was born in Auckland, New Zealand in
+                            1973 Since graduating from art school in South
+                            Australia in 1995, she has forged pathways in
+                            independent and commercial animation, multimedia
+                            design, printmaking and drawing.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/hidden.html">Hidden</a>
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/mirranda-burton.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">C</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Kieran Carroll</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Kieran Carroll was born in 1968. Prior to becoming a
+                            playwright, he spent the 1990s as a regularly
+                            published poet, performance poet and lyricist for
+                            literary pop band, The Beautiful Few.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/the-truth-is-longer-than-a-lie.html"
+                                    >The Truth is Longer Than a Lie</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/kieran-carrol.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>David Cohen</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            David Cohen was born in Perth, Western Australia,
+                            and now lives in Melbourne. His short fiction has
+                            appeared in HQ, Meanjin, Metro, Space: New Writing
+                            and Westerly and in the anthologies Sibling Stories
+                            (1997), The 2001 Glen Eira Literary Awards Anthology
+                            and Allnighter (2006).
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/fear-of-tennis.html"
+                                    >Fear of Tennis</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/david-cohen.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Judith Colquhoun</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Colquhoun was born in North Queensland and studied
+                            production at the National Institute of Dramatic
+                            Art. She was a film editor with ABC Television and a
+                            radio copywriter before becoming invited to write
+                            television scripts for Bellbird.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/thicker-than-water.html"
+                                    >Thicker than Water</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/judith-colquhoun.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Alan Cornell</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Alan Cornell is a Melbourne-based author who writes
+                            advertising copy for a living and other things for
+                            pleasure.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/the-gentle-art-of-tossing.html"
+                                    >The Gentle Art of Tossing</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/alan-cornell.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Alison Croggon</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Alison Croggon was born in 1962 in Transvaal, South
+                            Africa, and has three children. Alison Croggon moved
+                            as a child to England in 1966 and to Australia in
+                            1969, growing up near Ballarat and later moving to
+                            Melbourne.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-blue-gate.html"
+                                    >The Blue Gate</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/navigatio.html">Navigatio</a>
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/alison-croggon.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">D</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Louise Davenport</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Louise Davenport was born in Melbourne in 1955. Her
+                            childhood was partly spent in the Bendigo Babies’
+                            Home and the Andrew Kerr Memorial Home for Children
+                            while her mother was receiving psychiatric
+                            treatment.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/mothers-claw.html"
+                                    >Mother’s Claw</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/louise-davenport.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Louis de Paor</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Louis de Paor was born in Cork / Corcach in 1961.
+                            The name means literally ' a marshy place ’ and is
+                            the origin of the term ' bog Irish ’.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/sentences-of-earth-stone-goban-cre-is-cloth.html"
+                                    >Sentences of Earth &amp; Stone / Gobán Cré
+                                    is Cloth</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/cork-other-poems-corcach-agus-danta-eiles.html"
+                                    >Cork &amp; Other Poems / Corcach agus Dánta
+                                    Eiles</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/louis-de-paor.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>George Dreyfus</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            George Dreyfus was born in Wuppertal, Germany in
+                            1928. He left Germany in 1939 and settled in
+                            Australia. He was educated at Melbourne High School
+                            and later at the Vienna Academy of Music.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/dont-ever-let-them-get-you.html"
+                                    >Don’t Ever Let Them Get You!</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/george-dreyfus.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Colin Duckworth</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Colin Duckworth was known internationally for major
+                            works on the 18th century, especially Voltaire and
+                            French counter-revolutionary espionage, and on
+                            modern theatre, with particular reference to Samuel
+                            Beckett.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/digging-in-dark-places.html"
+                                    >Digging In Dark Places</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/summer-symphony.html"
+                                    >Summer Symphony</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/colin-duckworth.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">E</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Adrienne Eberhard</h3>
+                            <p>4 titles</p>
+                        </div>
+                        <p>
+                            Adrienne Eberhard is a poet whose collections
+                            include Agamemnon’s Poppies, Jane, Lady Franklin,
+                            This Woman and The Voice of Water.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/agamemnons-poppies.html"
+                                    >Agamemnon’s Poppies</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/jane-lady-franklin.html"
+                                    >Jane, Lady Franklin</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/this-woman.html"
+                                    >This Woman</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/chasing-marie-antoinette-all-over-paris.html"
+                                    >Chasing Marie Antoinette All Over Paris</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/adrienne-eberhard.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Stephen Edgar</h3>
+                            <p>6 titles</p>
+                        </div>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/other-summers.html"
+                                    >Other Summers</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/history-of-the-day.html"
+                                    >History of the Day</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/eldershaw.html">Eldershaw</a>
+                            </li>
+                            <li>
+                                <a href="/products/exhibits-of-the-sun.html"
+                                    >Exhibits of the Sun</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/transparencies.html"
+                                    >Transparencies</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-strangest-place.html"
+                                    >The Strangest Place</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/stephen-edgar.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Maher Abou Elsaoud</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Maher Abou Elsaoud was born in Cairo on 20 December
+                            1964. He studied film making in Paris before coming
+                            to Australia in 1991.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/cairo-paris-melbourne.html"
+                                    >Cairo Paris Melbourne</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/maher-abou-elsaoud.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jim Ewing</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Jim Ewing has a problem-his work is too original and
+                            irreverent to suit Australian publishing elites who
+                            desire their Oz literature to, in appearance and
+                            flavour, be emu stew covered by a saccharine
+                            European garnish.’ Carmel Bird, novelist, former
+                            literary editor Meanjin 'Jim Ewing writes with a
+                            spring in his step.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/two-that-got-away.html"
+                                    >Two That Got Away</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jim-ewing.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">F</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Anne Fairbairn</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Anne Fairbairn, born in 1948, is a granddaughter of
+                            poet and politician George Houston Reid (1845-1918).
+                            She is a widely published Australian poet.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/an-australian-conference-of-the-birds.html"
+                                    >An Australian Conference of the Birds</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/anne-fairbairn.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Luke Fischer</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Luke Fischer is a poet and scholar. He was born in
+                            1978 into a European family in Sydney (his mother is
+                            French and his father’s family emigrated from
+                            Eastern Europe in 1950).
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/paths-of-flight.html"
+                                    >Paths of Flight</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/luke-fischer.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Robyn Friend</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Robyn Friend was born in Melbourne in 1942 and now
+                            lives in Tasmania where she teaches creative writing
+                            and works as a community oral historian.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-butterfly-stalker.html"
+                                    >The Butterfly Stalker</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/robyn-friend.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">G</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Alan Gould</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Alan Gould was born in London in 1949 of
+                            English-Icelandic parents and lived on armed forces
+                            camps in England, Northern Ireland, Germany and
+                            Singapore before coming to Australia in 1966.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-poets-stairwell.html"
+                                    >The Poets' Stairwell</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/alan-gould.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">H</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Philip Hammial</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Philip Hammial is a prolific poet and author whose
+                            work includes Bread and many earlier collections.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/bread.html">Bread</a>
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/philip-hammial.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Susan Hancock</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Hancock has set all her fictional work in New
+                            Zealand, despite spending much of her time in
+                            Europe, England and Australia.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/sailing-through-the-amber.html"
+                                    >Sailing Through the Amber</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-peastick-girl.html"
+                                    >The Peastick Girl</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/susan-hancock.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jennifer Harrison</h3>
+                            <p>9 titles</p>
+                        </div>
+                        <p>
+                            Jennifer Harrison was born in Liverpool, Sydney, in
+                            1955, in a motorbike shop. She completed a medical
+                            degree in 1979 and her training as a psychiatrist in
+                            1990.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/sideshow-history.html"
+                                    >Sideshow History</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/michelangelos-prisoners.html"
+                                    >Michelangelo’s Prisoners</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/cabramatta-cudmirrah.html"
+                                    >Cabramatta / Cudmirrah</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/mosaics-and-mirrors-composite-poems.html"
+                                    >Mosaics and Mirrors; Composite Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/dear-b.html">Dear B</a>
+                            </li>
+                            <li>
+                                <a href="/products/folly-grief.html"
+                                    >Folly &amp; Grief</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/colombine-new-selected-poems.html"
+                                    >Colombine, New &amp; Selected Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/anywhy.html">Anywhy</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/said-the-rat-writers-at-the-water-rat-2000-2003.html"
+                                    >Said The Rat! Writers at The Water Rat
+                                    2000-2003</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jennifer-harrison.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Graham Henderson</h3>
+                            <p>4 titles</p>
+                        </div>
+                        <p>
+                            Graham Henderson was born in Melbourne in 1953. He
+                            studied Drama, Literature, Print-making, and Film at
+                            Rusden State College.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/mosaics-and-mirrors-composite-poems.html"
+                                    >Mosaics and Mirrors; Composite Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/diary-of-a-dwarf.html"
+                                    >Diary of a Dwarf</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/place-of-the-paintings-and-other-stories.html"
+                                    >Place of the Paintings and Other Stories</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-colony.html"
+                                    >The Colony</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/graham-henderson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jack Hibberd</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Jack Hibberd was born during 1940 on the plains of
+                            north-western Victoria, educated at Bendigo and at
+                            the University of Melbourne, where he clinched a
+                            medical degree.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/the-genius-of-human-imperfection.html"
+                                    >The Genius of Human Imperfection</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/madrigals-for-a-misanthrope.html"
+                                    >Madrigals for a Misanthrope</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jack-hibberd.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Vivian Hopkirk</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Hopkirk was born in Sydney. The nephew of Brett
+                            Whiteley the painter, he was educated at Christ's
+                            College, Canterbury, and Victoria University, New
+                            Zealand, he lived and studied for a decade abroad,
+                            sponsored by Cinzano in Tuscany and living as writer
+                            in residence at the Shakespeare &amp; Company
+                            Bookshop in Paris.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/meditations-of-a-flawed-groom.html"
+                                    >Meditations of a Flawed Groom</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/vivian-hopkirk.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">I</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Phil Ilton</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Phil Ilton has published four collections, including
+                            More than Words, Capsules (1996) and Not Just On the
+                            Road (based on incidents from his solo bicycle ride
+                            around Australia).
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/said-the-rat-writers-at-the-water-rat-2000-2003.html"
+                                    >Said The Rat! Writers at The Water Rat
+                                    2000-2003</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/phil-ilton.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">J</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Sandy Jeffs</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Sandy Jeffs was born in Ballarat and grew up there
+                            in the 1950s and 1960s. She graduated from La Trobe
+                            University in the 1970s and came to terms with her
+                            sexuality as part of an alternative family.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/chiaroscuro.html"
+                                    >Chiaroscuro</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/sandy-jeffs.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Judy Johnson</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>Judy Johnson was born in 1961.</p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/nomadic.html">Nomadic</a>
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/judy-johnson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">K</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>K.F. Pearson</h3>
+                            <p>8 titles</p>
+                        </div>
+                        <p>
+                            Pearson was born in Caulfield, Melbourne in 1946,
+                            and grew up on the working class side of the
+                            Racecourse. He has survived fire, lightning and
+                            gunshots, the last whilst head gardener at Koonunga
+                            Golf Course.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/mosaics-and-mirrors-composite-poems.html"
+                                    >Mosaics and Mirrors; Composite Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-complete-apparition.html"
+                                    >The Complete Apparition</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/messages-of-things.html"
+                                    >Messages of Things</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-history-of-colour.html"
+                                    >The History of Colour</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-apparitions-daybook.html"
+                                    >The Apparition’s Daybook</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/passion-war.html"
+                                    >Passion &amp; War</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/melbourne-elegies.html"
+                                    >Melbourne Elegies</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-apparition-at-large.html"
+                                    >The Apparition At Large</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/k.f.-pearson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Daniel Keene</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Daniel Keene was born in Melbourne in 1955. He has
+                            written many plays including Cho Cho San, Silent
+                            Partner, Because You Are Mine, Low, Beneath Heaven,
+                            Terminus and The Architect’s Walk.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/to-whom-it-may-concern-and-other-plays.html"
+                                    >To Whom It May Concern and other plays</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/daniel-keene.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Barry Klemm</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Barry Klemm was born in 1945. He abandoned an array
+                            of careers before concentrating on writing. He
+                            emerged in the 1990 ’ s with a series of one hour
+                            radio dramas broadcast on Radio National.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/running-dogs.html"
+                                    >Running Dogs</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/barry-klemm.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">L</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Shelton Lea</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Shelton Lea was born in 1946 in Fitzroy and found
+                            himself adopted into Toorak. At twelve he ran away
+                            from home and Carey Grammar and lived on the
+                            streets, stealing to survive.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/nebuchadnezzar.html"
+                                    >Nebuchadnezzar</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/all-travellers-we.html"
+                                    >All Travellers We</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/shelton-lea.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Phil Leask</h3>
+                            <p>3 titles</p>
+                        </div>
+                        <p>
+                            Phil Leask was born in Brisbane in 1947. He
+                            bushwalked, studied English and French at the
+                            University of Brisbane and Education at the
+                            University of Tasmania.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/by-way-of-water.html"
+                                    >By Way of Water</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/the-slow-death-of-patrick-oreilly.html"
+                                    >The Slow Death of Patrick O’Reilly</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/olhovsky-prince-of-hamburg.html"
+                                    >Olhovsky, Prince of Hamburg</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/phil-leask.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Emma Lew</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Born in 1962 in Victoria, Emma Lew completed an Arts
+                            degree at Melbourne University in 1986 and has
+                            worked as a deckhand, shop assistant, proofreader,
+                            receptionist and clerical assistant.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-wild-reply.html"
+                                    >The Wild Reply</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/emma-lew.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Alan Loney</h3>
+                            <p>3 titles</p>
+                        </div>
+                        <p>
+                            Alan Loney was born in 1940 in Lower Hutt in New
+                            Zealand. His first book of poems The bare
+                            re-membrance was published in 1971 and he printed
+                            his first book in 1974.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/anne-of-the-iron-door.html"
+                                    >Anne of the Iron Door</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-falling.html"
+                                    >The Falling</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/the-printing-of-a-masterpiece.html"
+                                    >The printing of a masterpiece</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/alan-loney.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">M</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Wayne Macauley</h3>
+                            <p>3 titles</p>
+                        </div>
+                        <p>
+                            Wayne Macauley is a Melbourne writer whose stories
+                            have been published in Meanjin, Westerly, Overland,
+                            Arena, HQ and other magazines.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/blueprints-for-a-barbed-wire-canoe.html"
+                                    >Blueprints for a Barbed-Wire Canoe</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/caravan-story.html"
+                                    >Caravan Story</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/other-stories.html"
+                                    >Other Stories</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/wayne-macauley.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Deborah Masel</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Deborah Masel, born in 1957, was an author and
+                            teacher with a special interest in Jewish mysticism.
+                            She lived in Melbourne where she lectured regularly
+                            for Jewish and interfaith groups and organisations,
+                            and wrote on aspects of Jewish mystical tradition
+                            for various publications.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/in-the-cleft-of-the-rock.html"
+                                    >In the Cleft of the Rock</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/deborah-masel.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Margaret Mathews</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Margaret Mathews is a graduate of Box Hill
+                            Institute’s Diploma of Arts (Professional Writing
+                            and Editing) course receiving Academic and Highest
+                            Achievement awards.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/room-for-delusion.html"
+                                    >Room for Delusion</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/margaret-mathews.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Patrick McCauley</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Poet Patrick McCauley and painter Raffaella Torresan
+                            have produced in The Sea Palace Hotel a group of
+                            nine paintings, three photographs and twenty poems
+                            which explore their three week visit to Colaba in
+                            Mumbai, India, during February 2016.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-sea-palace-hotel.html"
+                                    >The Sea Palace Hotel</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/patrick-mccauley.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Chris Mooney-Singh</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Chris Mooney-Singh was born in 1956 of
+                            Australian-Irish descent. He has worked extensively
+                            in publishing, editing and education.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-bearded-chameleon.html"
+                                    >The Bearded Chameleon</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/chris-mooney-singh.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Peter Murk</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            1960-2019 Peter Murk, born in 1960 in Yallourn. His
+                            immigrant father and local mother moved to Melbourne
+                            in 1967.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/posing-in-vast-spaces.html"
+                                    >Posing in Vast Spaces</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/peter-murk.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">N</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Bron Nicholls</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Bron Nicholls was born in Melbourne in 1944. After
+                            the war, her demobbed father took his family to an
+                            isolated region on the Broken Creek in Northern
+                            Victoria.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-humming-tree.html"
+                                    >The Humming Tree</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/an-imaginary-mother.html"
+                                    >An Imaginary Mother</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/bron-nicholls.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">P</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Leon Piterman</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Professor Leon Piterman is Professor of General
+                            Practice at Monash University and Director of Monash
+                            China GP Training.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/there-a-lot-of-it-going-around.html"
+                                    >There'a a lot of it going around</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/living-in-covid-times.html"
+                                    >Living in COVID Times</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/leon-piterman.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Nicholas Playford</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Nicholas Playford was born in the storeroom of a
+                            Canberra hospital on 5 May 1961, the same day that
+                            Alan Shepard became the first American to leave
+                            planet Earth and travel into space.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/the-prisoner-gains-a-blurred-skin.html"
+                                    >The Prisoner Gains a Blurred Skin</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/nicholas-playford.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Raphaëlle Pomian</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Pomian was born in 1956 in Nantes, France. She lived
+                            in Australia from 1976 until 1992. She co-wrote a
+                            play Landscapes of a Life with Graham Henderson
+                            which was performed at La Mama in 1988.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/gifts-sorrows.html"
+                                    >Gifts &amp; Sorrows</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/raphaëlle-pomian.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">R</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Homer Rieth</h3>
+                            <p>4 titles</p>
+                        </div>
+                        <p>
+                            Rieth was born in Stuttgart in 1947, of German and
+                            Georgian parents. He came to Australia in 1952. He
+                            was educated at Padua and Assumption Colleges and,
+                            following a short period in the Jesuit novitiate at
+                            Loyola, Watsonia, at the University of Melbourne.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-dining-car-scene.html"
+                                    >The Dining Car Scene</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/wimmera.html">Wimmera</a>
+                            </li>
+                            <li>
+                                <a href="/products/150-motets.html"
+                                    >150 Motets</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/the-garden-of-earth.html"
+                                    >The Garden of Earth</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/homer-rieth.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Anne Rittman</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Anne Rittman taught art and filmmaking in Victorian
+                            Primary and Secondary schools for over 23 years. She
+                            co-founded and managed Pigtale, a design studio and
+                            small manufacturing business in Brunswick Street,
+                            Fitzroy.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/brunswick-street-art-revolution.html"
+                                    >Brunswick Street, Art &amp; Revolution</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/anne-rittman.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">S</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Kirsty Sangster</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Kirsty Sangster is a poet, reviewer and essayist.
+                            She was born in Ferntree Gully in August 1970. She
+                            has read widely at writers events since winning
+                            Melbourne University’s Writers’ Competition in 1991.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/midden-places.html"
+                                    >Midden Places</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/kirsty-sangster.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Andrew Sant</h3>
+                            <p>5 titles</p>
+                        </div>
+                        <p>
+                            Andrew Sant was born in London in 1950 and educated
+                            there and in Melbourne after his family emigrated to
+                            Australia in 1962.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/album-of-domestic-exiles.html"
+                                    >Album of Domestic Exiles</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/russian-ink.html"
+                                    >Russian Ink</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/tremors-new-and-selected-poems.html"
+                                    >Tremors, New and Selected Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/fuel.html">Fuel</a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/the-bicycle-thief-other-poems.html"
+                                    >The Bicycle Thief &amp; Other Poems</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/andrew-sant.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Nicolette Stasko</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Nicolette Stasko was born in the US of Polish and
+                            Hungarian ancestry and emigrated to Australia in
+                            1979. Her first collection of poetry Abundance
+                            (1992) won the Anne Elder Award in 1993 and was
+                            shortlisted for the Dame Mary Gilmore Award, the New
+                            South Wales Premier’s Prize and the National Book
+                            Awards.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-weight-of-irises.html"
+                                    >The Weight of Irises</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/products/the-invention-of-everyday-life.html"
+                                    >The Invention of Everyday Life</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/nicolette-stasko.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">T</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Hugh Tolhurst</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Hugh Tolhurst was born in Melbourne. Educated at
+                            Carey Grammar, Taylor’s College and at Deakin
+                            University and the University of Melbourne.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/filth-and-other-poems.html"
+                                    >Filth and Other Poems</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/rockling-king.html"
+                                    >Rockling King</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/hugh-tolhurst.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Raffaella Torresan</h3>
+                            <p>2 titles</p>
+                        </div>
+                        <p>
+                            Raffaella Torresan is a visual artist and writer.
+                            She is a Melbourne institution and over the years
+                            she has collected an interesting assortment of
+                            people from the bohemian scene, of jailbirds, of
+                            artists, writers and poets.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-sea-palace-hotel.html"
+                                    >The Sea Palace Hotel</a
+                                >
+                            </li>
+                            <li>
+                                <a href="/products/la-ragazza.html"
+                                    >La Ragazza</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/raffaella-torresan.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Todd Turner</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Todd Turner was born in 1971 and raised in the
+                            western suburbs of Sydney. His parents were from
+                            farming families in the town of Koorawatha, situated
+                            on the Western Plains of New South Wales.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/woodsmoke.html">Woodsmoke</a>
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/todd-turner.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">V</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>John Vasilakakos</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            John Vasilikakos was born in Greece in 1951 and came
+                            to Australia in 1965. A graduate of Melbourne
+                            University, he has received a doctorate and
+                            published widely in Australia, Greece and America.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/the-set-up.html"
+                                    >The Set-Up</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/john-vasilakakos.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <h3 class="repository-letter">W</h3>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Alan Wearne</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Alan Wearne is the author of four books including
+                            the award winning verse novel The Nightmarkets. An
+                            Essendon supporter since 1954 he helped found the
+                            Nunawading District Junior Football League and was,
+                            for one season, a boundary umpire with the Eastern
+                            Districts Football League seconds.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/kicking-in-danger.html"
+                                    >Kicking in Danger</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/alan-wearne.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jon Weaving</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Jon Weaving was born in London in 1955 and now lives
+                            in Melbourne with his son. His short stories have
+                            appeared in both literary and popular magazines and
+                            have won numerous awards including the Olga Masters
+                            Bicentennial Award For Literature.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/and-the-winner-is.html"
+                                    >And The Winner Is...</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jon-weaving.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Jim Williams</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Jim Williams (Di Guglielmo) was born near
+                            Chikkahominy in New York State, survived his
+                            multicultural childhood and somehow managed a BS
+                            degree from Cornell University.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a href="/products/letters-from-byron.html"
+                                    >Letters from Byron</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/jim-williams.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Maz Wilson</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Maz Wilson taught photography in Victorian Secondary
+                            Schools. She travelled extensively, building a
+                            worldwide photographic collection.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/brunswick-street-art-revolution.html"
+                                    >Brunswick Street, Art &amp; Revolution</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/maz-wilson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                    <article class="repository-card author-card">
+                        <div class="author-card-heading">
+                            <h3>Rhonda Wilson</h3>
+                            <p>1 title</p>
+                        </div>
+                        <p>
+                            Rhonda Wilson has always loved listening to people
+                            tell stories. She has worked as an actor, director,
+                            teacher and oral historian.
+                        </p>
+                        <ul class="compact-title-list">
+                            <li>
+                                <a
+                                    href="/products/shelter-an-oral-history-of-marjorie-oke-house.html"
+                                    >Shelter, An Oral History of Marjorie Oke
+                                    House</a
+                                >
+                            </li>
+                        </ul>
+                        <a class="bold" href="/authors/rhonda-wilson.html"
+                            >View profile »</a
+                        >
+                    </article>
+                </div>
+            </main>
+        </div>
+        <div class="footer-area">
+            <footer>
+                <div class="footer-links">
+                    <a href="/submission-guidelines.html"
+                        >Submission Guidelies</a
+                    >
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html"
+                        >Terms and Conditions</a
+                    >
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="/shipping-information.html"
+                        >Shipping Information</a
+                    >
+                    <a href="/rights-and-international-sales.html"
+                        >Rights &amp; International Sales</a
+                    >
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-mailing">
+                        <p>Want to be notified when new books come out?</p>
+                        <form class="footer-mailing-form">
+                            <div class="bold">
+                                <input
+                                    placeholder="your-email@gmail.com"
+                                    type="email"
+                                />
+                            </div>
+                            <button class="bold" type="submit">
+                                Join out mailing list »
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://twitter.com/">
+                            <img alt="Twitter Logo" src="/assets/twitter.svg" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/p/Black-Pepper-Publishing-100068467657667/"
+                        >
+                            <img
+                                alt="Facebook Logo"
+                                src="/assets/facebook.svg"
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img
+                                alt="Instagram Logo"
+                                src="/assets/instagram.svg"
+                            />
+                        </a>
+                    </div>
+                    <p>© 2026 Black Pepper Publishing</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

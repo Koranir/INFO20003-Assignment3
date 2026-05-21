@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Black Pepper Publishing - Graham Henderson</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="/style/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="content-area">
+            <header>
+                <div class="desktop-top">
+                    <nav>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </nav>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                </div>
+                <div class="mobile-top">
+                    <button
+                        id="mobile-menu-button"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <img src="/assets/menu.svg" />
+                    </button>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                    <a href="/cart.html" id="cart-link-mobile">
+                        <img
+                            alt="Shopping Cart Icon"
+                            src="/assets/cart-icon.svg"
+                        />
+                    </a>
+                    <dialog id="mobile-menu">
+                        <button
+                            id="mobile-menu-close"
+                            onclick="toggleMobileMenu()"
+                        >
+                            <img
+                                alt="Close Menu Icon"
+                                src="/assets/close.svg"
+                            />
+                        </button>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </dialog>
+                </div>
+                <div class="search bold">
+                    <button class="search-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search"
+                        >
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                    </button>
+                    <input
+                        id="search-input"
+                        placeholder="Search books &amp; more"
+                        type="search"
+                    />
+                </div>
+            </header>
+            <main class="author-page">
+                <div class="repository-header">
+                    <h2 class="section-title">Graham Henderson</h2>
+                </div>
+                <section class="author-profile">
+                    <div class="author-profile-copy">
+                        <h3>About the Author</h3>
+                        <p>
+                            Graham Henderson was born in Melbourne in 1953. He
+                            studied Drama, Literature, Print-making, and Film at
+                            Rusden State College. He began writing stories and
+                            plays in the mid 1970s. His first collection of
+                            stories, The Anguish Of Departure, was published in
+                            1979. His first novel, The Mountain, was published
+                            by Picador in 1989. The following year it was
+                            shortlisted for The Age Book of the Year Award. He
+                            has translated from the French, in collaboration
+                            with the author, Raphaëlle Pomian, a collection of
+                            short stories, Gifts &amp; Sorrows (Black Pepper
+                            1996). He has written five collections of poems and
+                            over twenty plays. In his youth he worked
+                            extensively in the theatre as an actor and director.
+                            Diary of a Dwarf, a collection of novellas, was
+                            published by Black Pepper in 1995, followed by his
+                            collection Place of the Paintings &amp; Other
+                            Stories in 2004.
+                        </p>
+                    </div>
+                </section>
+                <section class="author-bibliography">
+                    <h3>Titles</h3>
+                    <div class="bibliography-list">
+                        <a
+                            class="bibliography-item"
+                            href="/products/mosaics-and-mirrors-composite-poems.html"
+                        >
+                            <img
+                                alt="Cover of Mosaics and Mirrors; Composite Poems"
+                                src="/assets/books/mosaics-and-mirrors-composite-poems/cover.jpg"
+                            />
+                            <div>
+                                <h3>Mosaics and Mirrors; Composite Poems</h3>
+                                <p>1996</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/diary-of-a-dwarf.html"
+                        >
+                            <img
+                                alt="Cover of Diary of a Dwarf"
+                                src="/assets/books/diary-of-a-dwarf/cover.jpg"
+                            />
+                            <div>
+                                <h3>Diary of a Dwarf</h3>
+                                <p>1995</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/place-of-the-paintings-and-other-stories.html"
+                        >
+                            <img
+                                alt="Cover of Place of the Paintings and Other Stories"
+                                src="/assets/books/place-of-the-paintings-and-other-stories/cover.jpg"
+                            />
+                            <div>
+                                <h3>
+                                    Place of the Paintings and Other Stories
+                                </h3>
+                                <p>2004</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/the-colony.html"
+                        >
+                            <img
+                                alt="Cover of The Colony"
+                                src="/assets/books/the-colony/cover.jpg"
+                            />
+                            <div>
+                                <h3>The Colony</h3>
+                                <p>2009</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="footer-area">
+            <footer>
+                <div class="footer-links">
+                    <a href="/submission-guidelines.html"
+                        >Submission Guidelies</a
+                    >
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html"
+                        >Terms and Conditions</a
+                    >
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="/shipping-information.html"
+                        >Shipping Information</a
+                    >
+                    <a href="/rights-and-international-sales.html"
+                        >Rights &amp; International Sales</a
+                    >
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-mailing">
+                        <p>Want to be notified when new books come out?</p>
+                        <form class="footer-mailing-form">
+                            <div class="bold">
+                                <input
+                                    placeholder="your-email@gmail.com"
+                                    type="email"
+                                />
+                            </div>
+                            <button class="bold" type="submit">
+                                Join out mailing list »
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://twitter.com/">
+                            <img alt="Twitter Logo" src="/assets/twitter.svg" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/p/Black-Pepper-Publishing-100068467657667/"
+                        >
+                            <img
+                                alt="Facebook Logo"
+                                src="/assets/facebook.svg"
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img
+                                alt="Instagram Logo"
+                                src="/assets/instagram.svg"
+                            />
+                        </a>
+                    </div>
+                    <p>© 2026 Black Pepper Publishing</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Black Pepper Publishing - Stephen Edgar</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="/style/index.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+            crossorigin="crossorigin"
+            href="https://fonts.gstatic.com"
+            rel="preconnect"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&amp;family=Crimson+Text:ital,wght@0,400;0,600;1,600&amp;family=Roboto:wght@100..900&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script src="/js/index.js"></script>
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <defs>
+                <filter id="embolden" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="-0.5" dy="-0.5" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 0 0.0862745 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="shape"
+                        result="effect1_innerShadow_12_6869"
+                    />
+                    <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                    />
+                    <feOffset dx="0.75" dy="0.75" />
+                    <feComposite
+                        in2="hardAlpha"
+                        operator="arithmetic"
+                        k2="-1"
+                        k3="1"
+                    />
+                    <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 1 0 0 0 0 0.909804 0 0 0 0 0.811765 0 0 0 1 0"
+                    />
+                    <feBlend
+                        mode="normal"
+                        in2="effect1_innerShadow_12_6869"
+                        result="effect2_innerShadow_12_6869"
+                    />
+                </filter>
+            </defs>
+        </svg>
+
+        <div class="content-area">
+            <header>
+                <div class="desktop-top">
+                    <nav>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </nav>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                </div>
+                <div class="mobile-top">
+                    <button
+                        id="mobile-menu-button"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <img src="/assets/menu.svg" />
+                    </button>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                    <a href="/cart.html" id="cart-link-mobile">
+                        <img
+                            alt="Shopping Cart Icon"
+                            src="/assets/cart-icon.svg"
+                        />
+                    </a>
+                    <dialog id="mobile-menu">
+                        <button
+                            id="mobile-menu-close"
+                            onclick="toggleMobileMenu()"
+                        >
+                            <img
+                                alt="Close Menu Icon"
+                                src="/assets/close.svg"
+                            />
+                        </button>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </dialog>
+                </div>
+                <div class="search bold">
+                    <button class="search-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="lucide lucide-search-icon lucide-search"
+                        >
+                            <path d="m21 21-4.34-4.34" />
+                            <circle cx="11" cy="11" r="8" />
+                        </svg>
+                    </button>
+                    <input
+                        id="search-input"
+                        placeholder="Search books &amp; more"
+                        type="search"
+                    />
+                </div>
+            </header>
+            <main class="author-page">
+                <div class="repository-header">
+                    <h2 class="section-title">Stephen Edgar</h2>
+                </div>
+                <section class="author-profile">
+                    <img
+                        alt="Portrait of Stephen Edgar"
+                        class="author-profile-portrait"
+                        src="/assets/authors/stephen-edgar/portrait.jpg"
+                    />
+                    <div class="author-profile-copy">
+                        <h3>About the Author</h3>
+                        <p>
+                            Stephen Edgar was born in Sydney in 1951. He spent
+                            the early 1970s in London before moving to Hobart,
+                            where he lived for some thirty years. Since 2005 he
+                            has lived in Sydney. He is married to the poet
+                            Judith Beveridge. He has published ten previous
+                            collections of poetry in Australia, the three most
+                            recent of which were shortlisted for the Prime
+                            Minister’s Literary Awards, Transparencies in 2018,
+                            Exhibits of the Sun in 2015, and Eldershaw in 2014
+                            (also joint winner of the Colin Roderick Award and
+                            shortlisted for the Queensland Literary Awards). His
+                            other collections are Queuing for the Mudd Club
+                            (1985), Ancient Music (1988), Corrupted Treasures
+                            (1995), Where the Trees Were (1999), Lost in the
+                            Foreground (2003), Other Summers (2006) and History
+                            of the Day (2009). In 2012 a volume of new and
+                            selected poems, The Red Sea, was published in the
+                            United States where he has a dedicated following.
+                        </p>
+                    </div>
+                </section>
+                <section class="author-bibliography">
+                    <h3>Titles</h3>
+                    <div class="bibliography-list">
+                        <a
+                            class="bibliography-item"
+                            href="/products/other-summers.html"
+                        >
+                            <img
+                                alt="Cover of Other Summers"
+                                src="/assets/books/other-summers/cover.jpg"
+                            />
+                            <div>
+                                <h3>Other Summers</h3>
+                                <p>2006</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/history-of-the-day.html"
+                        >
+                            <img
+                                alt="Cover of History of the Day"
+                                src="/assets/books/history-of-the-day/cover.jpg"
+                            />
+                            <div>
+                                <h3>History of the Day</h3>
+                                <p>2009</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/eldershaw.html"
+                        >
+                            <img
+                                alt="Cover of Eldershaw"
+                                src="/assets/books/eldershaw/cover.jpg"
+                            />
+                            <div>
+                                <h3>Eldershaw</h3>
+                                <p>2013</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/exhibits-of-the-sun.html"
+                        >
+                            <img
+                                alt="Cover of Exhibits of the Sun"
+                                src="/assets/books/exhibits-of-the-sun/cover.jpg"
+                            />
+                            <div>
+                                <h3>Exhibits of the Sun</h3>
+                                <p>2014</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/transparencies.html"
+                        >
+                            <img
+                                alt="Cover of Transparencies"
+                                src="/assets/books/transparencies/cover.jpg"
+                            />
+                            <div>
+                                <h3>Transparencies</h3>
+                                <p>2017</p>
+                            </div>
+                        </a>
+                        <a
+                            class="bibliography-item"
+                            href="/products/the-strangest-place.html"
+                        >
+                            <img
+                                alt="Cover of The Strangest Place"
+                                src="/assets/books/the-strangest-place/cover.jpg"
+                            />
+                            <div>
+                                <h3>The Strangest Place</h3>
+                                <p>poetry</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="footer-area">
+            <footer>
+                <div class="footer-links">
+                    <a href="/submission-guidelines.html"
+                        >Submission Guidelies</a
+                    >
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                    <a href="/terms-and-conditions.html"
+                        >Terms and Conditions</a
+                    >
+                    <a href="/contact.html">Contact Us</a>
+                    <a href="/shipping-information.html"
+                        >Shipping Information</a
+                    >
+                    <a href="/rights-and-international-sales.html"
+                        >Rights &amp; International Sales</a
+                    >
+                </div>
+                <div class="footer-socials">
+                    <div class="footer-mailing">
+                        <p>Want to be notified when new books come out?</p>
+                        <form class="footer-mailing-form">
+                            <div class="bold">
+                                <input
+                                    placeholder="your-email@gmail.com"
+                                    type="email"
+                                />
+                            </div>
+                            <button class="bold" type="submit">
+                                Join out mailing list »
+                            </button>
+                        </form>
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://twitter.com/">
+                            <img alt="Twitter Logo" src="/assets/twitter.svg" />
+                        </a>
+                        <a
+                            href="https://www.facebook.com/p/Black-Pepper-Publishing-100068467657667/"
+                        >
+                            <img
+                                alt="Facebook Logo"
+                                src="/assets/facebook.svg"
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img
+                                alt="Instagram Logo"
+                                src="/assets/instagram.svg"
+                            />
+                        </a>
+                    </div>
+                    <p>© 2026 Black Pepper Publishing</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
