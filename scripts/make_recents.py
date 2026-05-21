@@ -28,9 +28,11 @@ def make_recents():
                     book["title"],
                     cls="recent-title",
                     id=f"recent-title-{key}",
+                    type="button",
                 ) as but:
                     if first:
                         but.set_attribute("x-checked", "true")
+                    but.set_attribute("aria-pressed", str(first).lower())
                     first = False
 
         first = True

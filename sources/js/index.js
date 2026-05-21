@@ -64,7 +64,47 @@ function updateCartItemCount() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", updateCartItemCount);
+function setupRecentReleases() {
+    const recentButtons = Array.from(
+        document.querySelectorAll(".recent-title"),
+    );
+    const releases = recentButtons.map((button) =>
+        button.id.replace("recent-title-", ""),
+    );
+
+    function selectRecentRelease(selectedRelease) {
+        releases.forEach((release) => {
+            const isSelected = release === selectedRelease;
+            document
+                .getElementById(`recent-cover-${release}`)
+                ?.toggleAttribute("hidden", !isSelected);
+            document
+                .getElementById(`recent-description-${release}`)
+                ?.toggleAttribute("hidden", !isSelected);
+        });
+
+        recentButtons.forEach((button) => {
+            const isSelected = button.id === `recent-title-${selectedRelease}`;
+            if (isSelected) {
+                button.setAttribute("x-checked", "true");
+            } else {
+                button.removeAttribute("x-checked");
+            }
+            button.setAttribute("aria-pressed", String(isSelected));
+        });
+    }
+
+    recentButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            selectRecentRelease(button.id.replace("recent-title-", ""));
+        });
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    updateCartItemCount();
+    setupRecentReleases();
+});
 
 /**
  * @param {string} item

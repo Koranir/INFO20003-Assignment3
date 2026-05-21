@@ -19,7 +19,7 @@ def make_doc(title):
             rel="stylesheet",
             href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;1,600&family=Roboto:wght@100..900&display=swap",
         )
-        d.script(src="/js/cart.js")
+        d.script(src="/js/index.js")
     with doc.body:
         dominate.util.raw(
             """
