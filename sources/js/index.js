@@ -156,7 +156,7 @@ async function setupCartPage() {
         const itemTotal = price * count;
         cartTotal += itemTotal;
 
-        const item = document.createElement("article");
+        const item = document.createElement("section");
         item.className = "cart-item";
 
         const cover = document.createElement("img");

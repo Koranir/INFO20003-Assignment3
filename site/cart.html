@@ -50,70 +50,72 @@
           <input id="search-input" placeholder="Search books &amp; more" type="search">
         </div>
       </header>
-      <main>
+      <main class="cart-page">
         <h2 class="section-title" style="--styled-asset-path: url('/assets/cart.svg')">Cart</h2>
-        <div id="cart-items"></div>
-        <div class="billing">
-          <section>
-            <h3>Billing Information</h3>
-            <form class="billing-details">
-              <label>Email</label>
-              <input name="email" type="email">
-              <label>Title</label>
-              <input name="title" type="text">
-              <label>First Name</label>
-              <input name="name" type="text">
-              <label>Last Name</label>
-              <input name="name" type="text">
-              <label>Address</label>
-              <input name="address" type="text">
-              <label>Postcode</label>
-              <input name="postcode" type="text">
-              <label>City</label>
-              <input name="city" type="text">
-              <label>State</label>
-              <input name="state" type="text">
-              <label>Country</label>
-              <input name="country" type="text">
-              <label>Phone</label>
-              <input name="phone" type="tel">
-            </form>
-          </section>
-          <section class="order-summary">
-            <table class="order-summary-table">
-              <tbody>
-                <tr>
-                  <td>Cart</td>
-                  <td id="cart-total">A$ 0.00</td>
-                </tr>
-                <tr>
-                  <td>GST</td>
-                  <td id="cart-gst">A$ 0.00</td>
-                </tr>
-                <tr>
-                  <td>Credit Surcharge</td>
-                  <td id="cart-surcharge">A$ 0.00</td>
-                </tr>
-                <tr>
-                  <td>Shipping</td>
-                  <td id="cart-shipping">A$ 0.00</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <section class="grand-total">
-            <p id="cart-grand-total">Total: A$ 0.00</p>
-          </section>
-          <section class="checkout">
-            <h3>Pay With</h3>
-            <div class="payment-options">
-              <button class="payment-option">PayPal</button>
-              <button class="payment-option">Visa</button>
-              <button class="payment-option">MasterCard</button>
-              <button class="payment-option">Apple Pay</button>
-            </div>
-          </section>
+        <div class="billing-content-with-sidebar">
+          <div id="cart-items"></div>
+          <div class="billing-sidebar">
+            <section class="billing-information">
+              <h3>Billing Information</h3>
+              <form class="billing-details">
+                <label>Email</label>
+                <input name="email" type="email">
+                <label>Title</label>
+                <input name="title" type="text">
+                <label>First Name</label>
+                <input name="name" type="text">
+                <label>Last Name</label>
+                <input name="name" type="text">
+                <label>Address</label>
+                <input name="address" type="text">
+                <label>Postcode</label>
+                <input name="postcode" type="text">
+                <label>City</label>
+                <input name="city" type="text">
+                <label>State</label>
+                <input name="state" type="text">
+                <label>Country</label>
+                <input name="country" type="text">
+                <label>Phone</label>
+                <input name="phone" type="tel">
+              </form>
+            </section>
+            <section class="order-summary">
+              <table class="order-summary-table">
+                <tbody>
+                  <tr>
+                    <td>Cart</td>
+                    <td id="cart-total">A$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>GST</td>
+                    <td id="cart-gst">A$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Credit Surcharge</td>
+                    <td id="cart-surcharge">A$ 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td id="cart-shipping">A$ 0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
         </div>
+        <section class="grand-total">
+          <p id="cart-grand-total">Total: A$ 0.00</p>
+        </section>
+        <section class="checkout">
+          <h3>Pay With</h3>
+          <div class="payment-options">
+            <button class="purchase bold">PayPal</button>
+            <button class="purchase bold">Visa</button>
+            <button class="purchase bold">MasterCard</button>
+            <button class="purchase bold">Apple Pay</button>
+          </div>
+        </section>
       </main>
     </div>
     <div class="footer-area">

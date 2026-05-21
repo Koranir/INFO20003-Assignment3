@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 10px;
+    padding: 10px 10px 20px;
 }
 
 body::before {
@@ -734,6 +734,168 @@ td {
     font-style: normal;
     font-size: 14px;
     color: #dccebd;
+}
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.billing-content-with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    width: 100%;
+}
+
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.cart-item {
+    display: flex;
+
+    padding: 10px;
+    gap: 10px;
+}
+
+.cart-item > img {
+    width: 105px;
+    max-height: 145px;
+    object-fit: contain;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-top: 10px;
+}
+
+.cart-item-details h3 {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cart-item-details p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #e7ceba;
+    margin: 0;
+}
+
+.cart-item-totals {
+    margin: auto 0 0 auto;
+}
+
+.cart-item-totals th,
+.cart-item-totals td,
+.order-summary-table td,
+.billing-details label,
+.grand-total p,
+.checkout h3,
+.payment-option {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cart-item-totals th {
+    padding-right: 16px;
+    text-align: left;
+}
+
+.cart-item-totals td {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.billing-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    flex-grow: 1;
+}
+
+.billing-information {
+    grid-area: billing;
+}
+
+.order-summary {
+    grid-area: summary;
+}
+
+.grand-total {
+    grid-area: total;
+    justify-self: center;
+}
+
+.checkout {
+    grid-area: checkout;
+    justify-self: center;
+    width: min(100%, 470px);
+}
+
+.billing-information,
+.order-summary,
+.grand-total,
+.checkout {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.billing-information h3,
+.checkout h3 {
+    margin-bottom: 12px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.billing-details {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.billing-details input {
+    min-width: 0;
+    height: 18px;
+    box-sizing: border-box;
+    border: 1px solid #ffe8cf66;
+    border-radius: 4px;
+    background: transparent;
+    color: #dccebd;
+}
+
+.order-summary-table {
+    width: 100%;
+    margin: 0;
+    border-spacing: 0 10px;
+}
+
+.order-summary-table td:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.grand-total p {
+    margin: 0;
+    text-align: center;
+}
+
+.payment-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 .product-cover-mobile {
