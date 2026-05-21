@@ -380,3 +380,15 @@ function orderConfirmed() {
     // Move to the home page after we're done
     location.href = "/";
 }
+
+/**
+ * Toggle the mobile menu.
+ */
+function toggleMobileMenu() {
+    const menu = document.getElementById("mobile-menu");
+    if (menu.open) {
+        menu.close();
+    } else {
+        menu.showModal();
+    }
+}

@@ -81,7 +81,7 @@
 
         <div class="content-area">
             <header>
-                <div class="top">
+                <div class="desktop-top">
                     <nav>
                         <a class="rim" href="/titles.html">Titles</a>
                         <a class="rim" href="/authors.html">Authors</a>
@@ -96,6 +96,43 @@
                             src="/assets/logo-rim.svg"
                         />
                     </a>
+                </div>
+                <div class="mobile-top">
+                    <button
+                        id="mobile-menu-button"
+                        onclick="toggleMobileMenu()"
+                    >
+                        <img src="/assets/menu.svg" />
+                    </button>
+                    <a href="/index.html">
+                        <img
+                            alt="Black Pepper Publishing Logo"
+                            src="/assets/logo-rim.svg"
+                        />
+                    </a>
+                    <a href="/cart.html" id="cart-link-mobile">
+                        <img
+                            alt="Shopping Cart Icon"
+                            src="/assets/cart-icon.svg"
+                        />
+                    </a>
+                    <dialog id="mobile-menu">
+                        <button
+                            id="mobile-menu-close"
+                            onclick="toggleMobileMenu()"
+                        >
+                            <img
+                                alt="Close Menu Icon"
+                                src="/assets/close.svg"
+                            />
+                        </button>
+                        <a class="rim" href="/titles.html">Titles</a>
+                        <a class="rim" href="/authors.html">Authors</a>
+                        <a class="rim" href="/multimedia.html">Multimedia</a>
+                        <a class="rim" href="/about.html">About Us</a>
+                        <a class="rim" href="/submissions.html">Submissions</a>
+                        <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+                    </dialog>
                 </div>
                 <div class="search bold">
                     <button class="search-button">

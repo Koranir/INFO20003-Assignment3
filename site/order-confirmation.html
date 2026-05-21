@@ -32,7 +32,7 @@
             
     <div class="content-area">
       <header>
-        <div class="top">
+        <div class="desktop-top">
           <nav>
             <a class="rim" href="/titles.html">Titles</a>
             <a class="rim" href="/authors.html">Authors</a>
@@ -44,6 +44,28 @@
           <a href="/index.html">
             <img alt="Black Pepper Publishing Logo" src="/assets/logo-rim.svg">
           </a>
+        </div>
+        <div class="mobile-top">
+          <button id="mobile-menu-button" onclick="toggleMobileMenu()">
+            <img src="/assets/menu.svg">
+          </button>
+          <a href="/index.html">
+            <img alt="Black Pepper Publishing Logo" src="/assets/logo-rim.svg">
+          </a>
+          <a href="/cart.html" id="cart-link-mobile">
+            <img alt="Shopping Cart Icon" src="/assets/cart-icon.svg">
+          </a>
+          <dialog id="mobile-menu">
+            <button id="mobile-menu-close" onclick="toggleMobileMenu()">
+              <img alt="Close Menu Icon" src="/assets/close.svg">
+            </button>
+            <a class="rim" href="/titles.html">Titles</a>
+            <a class="rim" href="/authors.html">Authors</a>
+            <a class="rim" href="/multimedia.html">Multimedia</a>
+            <a class="rim" href="/about.html">About Us</a>
+            <a class="rim" href="/submissions.html">Submissions</a>
+            <a class="rim" href="/cart.html" id="cart-link">Cart</a>
+          </dialog>
         </div>
         <div class="search bold">
           <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></button>
