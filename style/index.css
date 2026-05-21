@@ -608,6 +608,7 @@ footer {
     flex-direction: column;
     gap: var(--space-2);
     padding: var(--space-3);
+    max-width: 75%;
 }
 
 .recent-title {
@@ -621,6 +622,7 @@ footer {
     font-family: var(--font-serif);
     font-size: 18px;
     font-weight: 600;
+    text-align: left;
 
     &::before {
         display: block;
