@@ -1,5 +1,4 @@
 import dominate.tags as d
-import dominate.util as du
 from make_bestsellers import make_bestsellers
 from make_doc import make_doc
 from make_featured import make_all_featured

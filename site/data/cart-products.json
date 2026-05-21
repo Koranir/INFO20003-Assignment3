@@ -1,0 +1,537 @@
+{
+    "botany-bay-document": {
+        "title": "Botany Bay Document",
+        "author": "Jordie Albiston",
+        "price": 20.95
+    },
+    "the-hanging-of-jean-lee": {
+        "title": "The Hanging of Jean Lee",
+        "author": "Jordie Albiston",
+        "price": 22.95
+    },
+    "the-inheritors": {
+        "title": "The Inheritors",
+        "author": "Amanda Anastasi",
+        "price": 20.95
+    },
+    "the-forest-set-out-like-the-night": {
+        "title": "The forest set out like the night",
+        "author": "John Anderson",
+        "price": 24.95
+    },
+    "the-shadows-keep": {
+        "title": "The shadow\u2019s keep",
+        "author": "John Anderson",
+        "price": 19.95
+    },
+    "the-blue-gate": {
+        "title": "The Blue Gate",
+        "author": "Alison Croggon",
+        "price": 19.95
+    },
+    "sentences-of-earth-stone-goban-cre-is-cloth": {
+        "title": "Sentences of Earth & Stone / Gob\u00e1n Cr\u00e9 is Cloth",
+        "author": "Louis de Paor",
+        "price": 21.95
+    },
+    "cork-other-poems-corcach-agus-danta-eiles": {
+        "title": "Cork & Other Poems / Corcach agus D\u00e1nta Eiles",
+        "author": "Louis de Paor",
+        "price": 23.95
+    },
+    "agamemnons-poppies": {
+        "title": "Agamemnon\u2019s Poppies",
+        "author": "Adrienne Eberhard",
+        "price": 24.95
+    },
+    "jane-lady-franklin": {
+        "title": "Jane, Lady Franklin",
+        "author": "Adrienne Eberhard",
+        "price": 24.95
+    },
+    "this-woman": {
+        "title": "This Woman",
+        "author": "Adrienne Eberhard",
+        "price": 25.95
+    },
+    "chasing-marie-antoinette-all-over-paris": {
+        "title": "Chasing Marie Antoinette All Over Paris",
+        "author": "Adrienne Eberhard",
+        "price": 25.95
+    },
+    "other-summers": {
+        "title": "Other Summers",
+        "author": "Stephen Edgar",
+        "price": 24.95
+    },
+    "history-of-the-day": {
+        "title": "History of the Day",
+        "author": "Stephen Edgar",
+        "price": 24.95
+    },
+    "eldershaw": {
+        "title": "Eldershaw",
+        "author": "Stephen Edgar",
+        "price": 23.95
+    },
+    "exhibits-of-the-sun": {
+        "title": "Exhibits of the Sun",
+        "author": "Stephen Edgar",
+        "price": 22.95
+    },
+    "transparencies": {
+        "title": "Transparencies",
+        "author": "Stephen Edgar",
+        "price": 24.0
+    },
+    "the-strangest-place": {
+        "title": "The Strangest Place",
+        "author": "Stephen Edgar",
+        "price": 22.95
+    },
+    "an-australian-conference-of-the-birds": {
+        "title": "An Australian Conference of the Birds",
+        "author": "Anne Fairbairn",
+        "price": 15.0
+    },
+    "paths-of-flight": {
+        "title": "Paths of Flight",
+        "author": "Luke Fischer",
+        "price": 22.95
+    },
+    "bread": { "title": "Bread", "author": "Philip Hammial", "price": 21.95 },
+    "the-poets-stairwell": {
+        "title": "The Poets' Stairwell",
+        "author": "Alan Gould",
+        "price": 27.95
+    },
+    "sideshow-history": {
+        "title": "Sideshow History",
+        "author": "Jennifer Harrison",
+        "price": 25.0
+    },
+    "michelangelos-prisoners": {
+        "title": "Michelangelo\u2019s Prisoners",
+        "author": "Jennifer Harrison",
+        "price": 19.95
+    },
+    "cabramatta-cudmirrah": {
+        "title": "Cabramatta / Cudmirrah",
+        "author": "Jennifer Harrison",
+        "price": 19.95
+    },
+    "mosaics-and-mirrors-composite-poems": {
+        "title": "Mosaics and Mirrors; Composite Poems",
+        "author": "Jennifer Harrison, Graham Henderson and K.F. Pearson",
+        "price": 19.95
+    },
+    "dear-b": {
+        "title": "Dear B",
+        "author": "Jennifer Harrison",
+        "price": 22.95
+    },
+    "folly-grief": {
+        "title": "Folly & Grief",
+        "author": "Jennifer Harrison",
+        "price": 25.95
+    },
+    "colombine-new-selected-poems": {
+        "title": "Colombine, New & Selected Poems",
+        "author": "Jennifer Harrison",
+        "price": 28.95
+    },
+    "anywhy": {
+        "title": "Anywhy",
+        "author": "Jennifer Harrison",
+        "price": 24.0
+    },
+    "the-genius-of-human-imperfection": {
+        "title": "The Genius of Human Imperfection",
+        "author": "Jack Hibberd",
+        "price": 21.95
+    },
+    "madrigals-for-a-misanthrope": {
+        "title": "Madrigals for a Misanthrope",
+        "author": "Jack Hibberd",
+        "price": 24.95
+    },
+    "chiaroscuro": {
+        "title": "Chiaroscuro",
+        "author": "Sandy Jeffs",
+        "price": 23.0
+    },
+    "nomadic": { "title": "Nomadic", "author": "Judy Johnson", "price": 24.95 },
+    "nebuchadnezzar": {
+        "title": "Nebuchadnezzar",
+        "author": "Shelton Lea",
+        "price": 24.95
+    },
+    "all-travellers-we": {
+        "title": "All Travellers We",
+        "author": "Shelton Lea",
+        "price": 20.0
+    },
+    "the-wild-reply": {
+        "title": "The Wild Reply",
+        "author": "Emma Lew",
+        "price": 21.95
+    },
+    "the-sea-palace-hotel": {
+        "title": "The Sea Palace Hotel",
+        "author": "Patrick McCauley and Raffaella Torresan",
+        "price": 25.0
+    },
+    "the-bearded-chameleon": {
+        "title": "The Bearded Chameleon",
+        "author": "Chris Mooney-Singh",
+        "price": 25.95
+    },
+    "the-complete-apparition": {
+        "title": "The Complete Apparition",
+        "author": "K.F. Pearson",
+        "price": 27.0
+    },
+    "messages-of-things": {
+        "title": "Messages of Things",
+        "author": "K.F. Pearson",
+        "price": 11.95
+    },
+    "the-history-of-colour": {
+        "title": "The History of Colour",
+        "author": "K.F. Pearson",
+        "price": 15.95
+    },
+    "the-apparitions-daybook": {
+        "title": "The Apparition\u2019s Daybook",
+        "author": "K.F. Pearson",
+        "price": 19.95
+    },
+    "passion-war": {
+        "title": "Passion & War",
+        "author": "K.F. Pearson",
+        "price": 19.95
+    },
+    "melbourne-elegies": {
+        "title": "Melbourne Elegies",
+        "author": "K.F. Pearson",
+        "price": 21.95
+    },
+    "the-apparition-at-large": {
+        "title": "The Apparition At Large",
+        "author": "K.F. Pearson",
+        "price": 24.95
+    },
+    "the-dining-car-scene": {
+        "title": "The Dining Car Scene",
+        "author": "Homer Rieth",
+        "price": 19.95
+    },
+    "wimmera": { "title": "Wimmera", "author": "Homer Rieth", "price": 54.95 },
+    "150-motets": {
+        "title": "150 Motets",
+        "author": "Homer Rieth",
+        "price": 24.95
+    },
+    "the-garden-of-earth": {
+        "title": "The Garden of Earth",
+        "author": "Homer Rieth",
+        "price": 65.0
+    },
+    "midden-places": {
+        "title": "Midden Places",
+        "author": "Kirsty Sangster",
+        "price": 24.95
+    },
+    "album-of-domestic-exiles": {
+        "title": "Album of Domestic Exiles",
+        "author": "Andrew Sant",
+        "price": 19.95
+    },
+    "russian-ink": {
+        "title": "Russian Ink",
+        "author": "Andrew Sant",
+        "price": 25.95
+    },
+    "tremors-new-and-selected-poems": {
+        "title": "Tremors, New and Selected Poems",
+        "author": "Andrew Sant",
+        "price": 27.95
+    },
+    "fuel": { "title": "Fuel", "author": "Andrew Sant", "price": 24.95 },
+    "the-bicycle-thief-other-poems": {
+        "title": "The Bicycle Thief & Other Poems",
+        "author": "Andrew Sant",
+        "price": 22.95
+    },
+    "the-weight-of-irises": {
+        "title": "The Weight of Irises",
+        "author": "Nicolette Stasko",
+        "price": 24.95
+    },
+    "filth-and-other-poems": {
+        "title": "Filth and Other Poems",
+        "author": "Hugh Tolhurst",
+        "price": 21.95
+    },
+    "rockling-king": {
+        "title": "Rockling King",
+        "author": "Hugh Tolhurst",
+        "price": 25.95
+    },
+    "woodsmoke": {
+        "title": "Woodsmoke",
+        "author": "Todd Turner",
+        "price": 22.95
+    },
+    "hidden": { "title": "Hidden", "author": "Mirranda Burton", "price": 22.0 },
+    "a-picture-out-of-frame": {
+        "title": "A Picture Out Of Frame",
+        "author": "Mammad Aidani",
+        "price": 21.95
+    },
+    "fear-of-tennis": {
+        "title": "Fear of Tennis",
+        "author": "David Cohen",
+        "price": 26.95
+    },
+    "thicker-than-water": {
+        "title": "Thicker than Water",
+        "author": "Judith Colquhoun",
+        "price": 27.95
+    },
+    "the-gentle-art-of-tossing": {
+        "title": "The Gentle Art of Tossing",
+        "author": "Alan Cornell",
+        "price": 27.95
+    },
+    "navigatio": {
+        "title": "Navigatio",
+        "author": "Alison Croggon",
+        "price": 19.95
+    },
+    "mothers-claw": {
+        "title": "Mother\u2019s Claw",
+        "author": "Louise Davenport",
+        "price": 21.95
+    },
+    "digging-in-dark-places": {
+        "title": "Digging In Dark Places",
+        "author": "Colin Duckworth",
+        "price": 20.95
+    },
+    "summer-symphony": {
+        "title": "Summer Symphony",
+        "author": "Colin Duckworth",
+        "price": 28.95
+    },
+    "cairo-paris-melbourne": {
+        "title": "Cairo Paris Melbourne",
+        "author": "Maher Abou Elsaoud",
+        "price": 44.95
+    },
+    "two-that-got-away": {
+        "title": "Two That Got Away",
+        "author": "Jim Ewing",
+        "price": 29.0
+    },
+    "the-butterfly-stalker": {
+        "title": "The Butterfly Stalker",
+        "author": "Robyn Friend",
+        "price": 26.95
+    },
+    "sailing-through-the-amber": {
+        "title": "Sailing Through the Amber",
+        "author": "Susan Hancock",
+        "price": 19.95
+    },
+    "the-peastick-girl": {
+        "title": "The Peastick Girl",
+        "author": "Susan Hancock",
+        "price": 49.95
+    },
+    "diary-of-a-dwarf": {
+        "title": "Diary of a Dwarf",
+        "author": "Graham Henderson",
+        "price": 24.95
+    },
+    "place-of-the-paintings-and-other-stories": {
+        "title": "Place of the Paintings and Other Stories",
+        "author": "Graham Henderson",
+        "price": 25.95
+    },
+    "the-colony": {
+        "title": "The Colony",
+        "author": "Graham Henderson",
+        "price": 22.95
+    },
+    "meditations-of-a-flawed-groom": {
+        "title": "Meditations of a Flawed Groom",
+        "author": "Vivian Hopkirk",
+        "price": 19.95
+    },
+    "running-dogs": {
+        "title": "Running Dogs",
+        "author": "Barry Klemm",
+        "price": 25.95
+    },
+    "by-way-of-water": {
+        "title": "By Way of Water",
+        "author": "Phil Leask",
+        "price": 22.95
+    },
+    "the-slow-death-of-patrick-oreilly": {
+        "title": "The Slow Death of Patrick O\u2019Reilly",
+        "author": "Phil Leask",
+        "price": 24.95
+    },
+    "olhovsky-prince-of-hamburg": {
+        "title": "Olhovsky, Prince of Hamburg",
+        "author": "Phil Leask",
+        "price": 28.95
+    },
+    "anne-of-the-iron-door": {
+        "title": "Anne of the Iron Door",
+        "author": "Alan Loney",
+        "price": 26.95
+    },
+    "blueprints-for-a-barbed-wire-canoe": {
+        "title": "Blueprints for a Barbed-Wire Canoe",
+        "author": "Wayne Macauley",
+        "price": null
+    },
+    "caravan-story": {
+        "title": "Caravan Story",
+        "author": "Wayne Macauley",
+        "price": null
+    },
+    "other-stories": {
+        "title": "Other Stories",
+        "author": "Wayne Macauley",
+        "price": 26.95
+    },
+    "room-for-delusion": {
+        "title": "Room for Delusion",
+        "author": "Margaret Mathews",
+        "price": 28.0
+    },
+    "posing-in-vast-spaces": {
+        "title": "Posing in Vast Spaces",
+        "author": "Peter Murk",
+        "price": 28.95
+    },
+    "the-prisoner-gains-a-blurred-skin": {
+        "title": "The Prisoner Gains a Blurred Skin",
+        "author": "Nicholas Playford",
+        "price": 21.95
+    },
+    "gifts-sorrows": {
+        "title": "Gifts & Sorrows",
+        "author": "Rapha\u00eblle Pomian",
+        "price": 19.95
+    },
+    "the-invention-of-everyday-life": {
+        "title": "The Invention of Everyday Life",
+        "author": "Nicolette Stasko",
+        "price": 25.95
+    },
+    "the-set-up": {
+        "title": "The Set-Up",
+        "author": "John Vasilakakos",
+        "price": 19.95
+    },
+    "kicking-in-danger": {
+        "title": "Kicking in Danger",
+        "author": "Alan Wearne",
+        "price": 19.95
+    },
+    "letters-from-byron": {
+        "title": "Letters from Byron",
+        "author": "Jim Williams",
+        "price": 19.95
+    },
+    "the-truth-is-longer-than-a-lie": {
+        "title": "The Truth is Longer Than a Lie",
+        "author": "Kieran Carrol",
+        "price": 23.0
+    },
+    "dont-ever-let-them-get-you": {
+        "title": "Don\u2019t Ever Let Them Get You!",
+        "author": "George Dreyfus",
+        "price": 25.95
+    },
+    "said-the-rat-writers-at-the-water-rat-2000-2003": {
+        "title": "Said The Rat! Writers at The Water Rat 2000-2003",
+        "author": "Jennifer Harrison and Phil Ilton",
+        "price": 15.0
+    },
+    "to-whom-it-may-concern-and-other-plays": {
+        "title": "To Whom It May Concern and other plays",
+        "author": "Daniel Keene",
+        "price": 22.95
+    },
+    "the-falling": {
+        "title": "The Falling",
+        "author": "Alan Loney",
+        "price": 25.95
+    },
+    "the-printing-of-a-masterpiece": {
+        "title": "The printing of a masterpiece",
+        "author": "Alan Loney",
+        "price": 26.95
+    },
+    "in-the-cleft-of-the-rock": {
+        "title": "In the Cleft of the Rock",
+        "author": "Deborah Masel",
+        "price": 27.95
+    },
+    "the-humming-tree": {
+        "title": "The Humming Tree",
+        "author": "Bron Nicholls",
+        "price": 25.0
+    },
+    "an-imaginary-mother": {
+        "title": "An Imaginary Mother",
+        "author": "Bron Nicholls",
+        "price": 24.95
+    },
+    "there-a-lot-of-it-going-around": {
+        "title": "There'a a lot of it going around",
+        "author": "Leon Piterman",
+        "price": 24.0
+    },
+    "living-in-covid-times": {
+        "title": "Living in COVID Times",
+        "author": "Leon Piterman",
+        "price": 24.0
+    },
+    "brunswick-street-art-revolution": {
+        "title": "Brunswick Street, Art & Revolution",
+        "author": "Anne Rittman and Maz Wilson",
+        "price": 88.0
+    },
+    "la-ragazza": {
+        "title": "La Ragazza",
+        "author": "Raffaella Torresan",
+        "price": 27.0
+    },
+    "and-the-winner-is": {
+        "title": "And The Winner Is...",
+        "author": "Jon Weaving",
+        "price": 19.95
+    },
+    "shelter-an-oral-history-of-marjorie-oke-house": {
+        "title": "Shelter, An Oral History of Marjorie Oke House",
+        "author": "Rhonda Wilson",
+        "price": 27.95
+    },
+    "the-beech-resort": {
+        "title": "The Beech Resort",
+        "author": "Margaret Mathews",
+        "price": 33.0
+    },
+    "piterman-on-piterman": {
+        "title": "Piterman on Piterman",
+        "author": "Leon Piterman",
+        "price": 33.0
+    }
+}

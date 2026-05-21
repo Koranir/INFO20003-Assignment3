@@ -64,6 +64,145 @@ function updateCartItemCount() {
     }
 }
 
+/**
+ * @param {number} value
+ * @return {string}
+ */
+function formatCurrency(value) {
+    return `A$ ${value.toFixed(2)}`;
+}
+
+/**
+ * @return {Promise<Object.<string, {title: string, author: string, price: number}>>}
+ */
+async function getCartProducts() {
+    const response = await fetch("/data/cart-products.json");
+    if (!response.ok) {
+        throw new Error(`Failed to load cart products: ${response.status}`);
+    }
+
+    return response.json();
+}
+
+/**
+ * @param {string} id
+ * @param {string} text
+ */
+function setText(id, text) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.textContent = text;
+    }
+}
+
+/**
+ * @param {number} total
+ */
+function updateCartTotals(total) {
+    const gst = total * 0.1;
+    const surcharge = 0;
+    const shipping = 0;
+    const grandTotal = total + gst + surcharge + shipping;
+
+    setText("cart-total", formatCurrency(total));
+    setText("cart-gst", formatCurrency(gst));
+    setText("cart-surcharge", formatCurrency(surcharge));
+    setText("cart-shipping", formatCurrency(shipping));
+    setText("cart-grand-total", `Total: ${formatCurrency(grandTotal)}`);
+}
+
+async function setupCartPage() {
+    const cartItems = document.getElementById("cart-items");
+    if (!cartItems) {
+        return;
+    }
+
+    const cart = new Cart();
+    const entries = Object.entries(cart.items()).filter(
+        ([, count]) => count > 0,
+    );
+
+    cartItems.replaceChildren();
+
+    if (entries.length === 0) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.textContent = "Your cart is empty.";
+        cartItems.append(emptyMessage);
+        updateCartTotals(0);
+        return;
+    }
+
+    let products;
+    try {
+        products = await getCartProducts();
+    } catch (error) {
+        console.error(error);
+        const errorMessage = document.createElement("p");
+        errorMessage.textContent = "Cart products could not be loaded.";
+        cartItems.append(errorMessage);
+        updateCartTotals(0);
+        return;
+    }
+
+    let cartTotal = 0;
+
+    entries.forEach(([productId, count]) => {
+        const product = products[productId];
+        if (!product) {
+            return;
+        }
+
+        const price = Number(product.price);
+        const itemTotal = price * count;
+        cartTotal += itemTotal;
+
+        const item = document.createElement("article");
+        item.className = "cart-item";
+
+        const cover = document.createElement("img");
+        cover.src = `/assets/books/${productId}/cover.jpg`;
+        cover.alt = `Cover of ${product.title}`;
+
+        const details = document.createElement("div");
+        details.className = "cart-item-details";
+
+        const title = document.createElement("h3");
+        title.textContent = product.title;
+
+        const author = document.createElement("p");
+        author.textContent = product.author;
+
+        details.append(title, author);
+
+        const totals = document.createElement("table");
+        totals.className = "cart-item-totals";
+        const totalsBody = document.createElement("tbody");
+
+        [
+            ["Price", formatCurrency(price)],
+            ["Copies", String(count)],
+            ["Total", formatCurrency(itemTotal)],
+        ].forEach(([label, value]) => {
+            const row = document.createElement("tr");
+            const heading = document.createElement("th");
+            const cell = document.createElement("td");
+
+            heading.scope = "row";
+            heading.textContent = label;
+            cell.textContent = value;
+
+            row.append(heading, cell);
+            totalsBody.append(row);
+        });
+
+        totals.append(totalsBody);
+        item.append(cover, details, totals);
+        cartItems.append(item);
+    });
+
+    updateCartTotals(cartTotal);
+}
+
 function setupRecentReleases() {
     const recentButtons = Array.from(
         document.querySelectorAll(".recent-title"),
@@ -103,6 +242,7 @@ function setupRecentReleases() {
 
 document.addEventListener("DOMContentLoaded", () => {
     updateCartItemCount();
+    setupCartPage();
     setupRecentReleases();
 });
 
@@ -118,15 +258,21 @@ function showAddedToCartDialog(item, details = {}) {
 
     const productTitle =
         details.title ||
-        document.querySelector(".product-header .section-title")?.textContent.trim() ||
+        document
+            .querySelector(".product-header .section-title")
+            ?.textContent.trim() ||
         item;
     const productAuthor =
         details.author ||
-        document.querySelector(".product-header .section-subtitle")?.textContent.trim() ||
+        document
+            .querySelector(".product-header .section-subtitle")
+            ?.textContent.trim() ||
         "";
     const productPrice =
         details.price ||
-        document.querySelector(".purchase .price")?.textContent.replace("A$ ", "") ||
+        document
+            .querySelector(".purchase .price")
+            ?.textContent.replace("A$ ", "") ||
         "";
 
     const cartDialog = document.createElement("dialog");
