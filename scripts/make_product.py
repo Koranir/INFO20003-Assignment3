@@ -87,7 +87,7 @@ def make_product(key, product):
                                 d.h3("About the Author")
                                 d.p(authors[author_key]["short_description"])
                                 d.a(
-                                    "Go to Profile»",
+                                    "Go to Profile »",
                                     href=f"/authors/{author_key}.html",
                                     cls="bold",
                                 )

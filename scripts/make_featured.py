@@ -1,3 +1,5 @@
+from os.path import exists
+
 import dominate.tags as d
 import yaml
 from paths import cover_path, portrait_path, product_page_path
@@ -6,11 +8,12 @@ from paths import cover_path, portrait_path, product_page_path
 @d.section
 def make_featured(key, book):
     with d.div(cls="images"):
-        with d.img(cls="author-portrait"):
-            d.attr(
-                src=portrait_path(book["author"]),
-                alt=f"Portrait of {book['author']}",
-            )
+        if exists(f".{portrait_path(book['author'])}"):
+            with d.img(cls="author-portrait"):
+                d.attr(
+                    src=portrait_path(book["author"]),
+                    alt=f"Portrait of {book['author']}",
+                )
         with d.img(cls="cover"):
             d.attr(
                 src=cover_path(key),
