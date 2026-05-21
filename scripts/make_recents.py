@@ -19,5 +19,5 @@ def make_recents():
         )
 
         with d.div(cls="recent-description"):
-            d.p(book["description"])
+            d.p(book["short_description"])
             d.a("Read more »", cls="bold", href=product_page_path(key))

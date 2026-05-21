@@ -21,7 +21,7 @@ def make_featured(key, book):
             d.h3(book["title"])
             d.address(book["author"])
 
-            d.p(book["description"])
+            d.p(book["short_description"])
         d.a("Read more »", cls="bold", href=product_page_path(key))
 
 
