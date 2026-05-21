@@ -78,10 +78,18 @@ with doc.body:
             with d.section(cls="checkout"):
                 d.h3("Pay With")
                 with d.div(cls="payment-options"):
-                    d.button("PayPal", cls="purchase bold")
-                    d.button("Visa", cls="purchase bold")
-                    d.button("MasterCard", cls="purchase bold")
-                    d.button("Apple Pay", cls="purchase bold")
+                    d.a("PayPal", href="/order-confirmation.html", cls="purchase bold")
+                    d.a("Visa", href="/order-confirmation.html", cls="purchase bold")
+                    d.a(
+                        "MasterCard",
+                        href="/order-confirmation.html",
+                        cls="purchase bold",
+                    )
+                    d.a(
+                        "Apple Pay",
+                        href="/order-confirmation.html",
+                        cls="purchase bold",
+                    )
 
     make_footer()
 
