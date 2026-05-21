@@ -1,5 +1,6 @@
 import dominate
 import dominate.tags as d
+import json
 import yaml
 from make_doc import make_doc
 from make_footer import make_footer
@@ -41,8 +42,16 @@ def make_product(key, product):
                         d.p(line)
 
                 with d.div(cls="product-sidebar"):
+                    cart_details = json.dumps(
+                        {
+                            "title": product["title"],
+                            "author": product["author"],
+                            "price": product["price"],
+                        }
+                    )
                     with d.button(
-                        cls="purchase bold", onclick=f"addToCart('{key}', 1)"
+                        cls="purchase bold",
+                        onclick=f"addToCart('{key}', 1, {cart_details})",
                     ):
                         d.span(f"A$ {product['price']}", cls="price")
                         d.span("Add to Cart")

@@ -177,7 +177,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('bread', 1)"
+                        onclick="
+                            addToCart('bread', 1, {
+                                title: 'Bread',
+                                author: 'Philip Hammial',
+                                price: 21.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 21.95</span>
                         <span>Add to Cart</span>

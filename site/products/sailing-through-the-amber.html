@@ -194,7 +194,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('sailing-through-the-amber', 1)"
+                        onclick="
+                            addToCart('sailing-through-the-amber', 1, {
+                                title: 'Sailing Through the Amber',
+                                author: 'Susan Hancock',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

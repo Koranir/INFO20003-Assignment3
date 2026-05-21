@@ -166,7 +166,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('passion-war', 1)"
+                        onclick="
+                            addToCart('passion-war', 1, {
+                                title: 'Passion &amp; War',
+                                author: 'K.F. Pearson',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

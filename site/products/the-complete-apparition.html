@@ -170,7 +170,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-complete-apparition', 1)"
+                        onclick="
+                            addToCart('the-complete-apparition', 1, {
+                                title: 'The Complete Apparition',
+                                author: 'K.F. Pearson',
+                                price: 27.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.0</span>
                         <span>Add to Cart</span>

@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-strangest-place', 1)"
+                        onclick="
+                            addToCart('the-strangest-place', 1, {
+                                title: 'The Strangest Place',
+                                author: 'Stephen Edgar',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

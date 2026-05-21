@@ -168,7 +168,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('other-stories', 1)"
+                        onclick="
+                            addToCart('other-stories', 1, {
+                                title: 'Other Stories',
+                                author: 'Wayne Macauley',
+                                price: 26.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 26.95</span>
                         <span>Add to Cart</span>

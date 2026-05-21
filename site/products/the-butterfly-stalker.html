@@ -168,7 +168,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-butterfly-stalker', 1)"
+                        onclick="
+                            addToCart('the-butterfly-stalker', 1, {
+                                title: 'The Butterfly Stalker',
+                                author: 'Robyn Friend',
+                                price: 26.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 26.95</span>
                         <span>Add to Cart</span>

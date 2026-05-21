@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('michelangelos-prisoners', 1)"
+                        onclick="
+                            addToCart('michelangelos-prisoners', 1, {
+                                title: 'Michelangelo\u2019s Prisoners',
+                                author: 'Jennifer Harrison',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

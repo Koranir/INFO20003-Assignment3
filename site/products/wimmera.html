@@ -165,7 +165,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('wimmera', 1)"
+                        onclick="
+                            addToCart('wimmera', 1, {
+                                title: 'Wimmera',
+                                author: 'Homer Rieth',
+                                price: 54.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 54.95</span>
                         <span>Add to Cart</span>

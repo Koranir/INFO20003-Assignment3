@@ -177,7 +177,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('exhibits-of-the-sun', 1)"
+                        onclick="
+                            addToCart('exhibits-of-the-sun', 1, {
+                                title: 'Exhibits of the Sun',
+                                author: 'Stephen Edgar',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

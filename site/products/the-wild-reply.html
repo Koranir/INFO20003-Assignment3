@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-wild-reply', 1)"
+                        onclick="
+                            addToCart('the-wild-reply', 1, {
+                                title: 'The Wild Reply',
+                                author: 'Emma Lew',
+                                price: 21.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 21.95</span>
                         <span>Add to Cart</span>

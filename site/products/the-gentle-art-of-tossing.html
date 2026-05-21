@@ -170,7 +170,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-gentle-art-of-tossing', 1)"
+                        onclick="
+                            addToCart('the-gentle-art-of-tossing', 1, {
+                                title: 'The Gentle Art of Tossing',
+                                author: 'Alan Cornell',
+                                price: 27.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.95</span>
                         <span>Add to Cart</span>

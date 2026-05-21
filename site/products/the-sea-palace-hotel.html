@@ -184,7 +184,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-sea-palace-hotel', 1)"
+                        onclick="
+                            addToCart('the-sea-palace-hotel', 1, {
+                                title: 'The Sea Palace Hotel',
+                                author: 'Patrick McCauley and Raffaella Torresan',
+                                price: 25.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.0</span>
                         <span>Add to Cart</span>

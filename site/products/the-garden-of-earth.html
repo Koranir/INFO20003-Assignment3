@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-garden-of-earth', 1)"
+                        onclick="
+                            addToCart('the-garden-of-earth', 1, {
+                                title: 'The Garden of Earth',
+                                author: 'Homer Rieth',
+                                price: 65.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 65.0</span>
                         <span>Add to Cart</span>

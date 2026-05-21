@@ -180,7 +180,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-beech-resort', 1)"
+                        onclick="
+                            addToCart('the-beech-resort', 1, {
+                                title: 'The Beech Resort',
+                                author: 'Margaret Mathews',
+                                price: 33.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 33.0</span>
                         <span>Add to Cart</span>

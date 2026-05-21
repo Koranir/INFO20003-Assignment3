@@ -166,7 +166,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('and-the-winner-is', 1)"
+                        onclick="
+                            addToCart('and-the-winner-is', 1, {
+                                title: 'And The Winner Is...',
+                                author: 'Jon Weaving',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

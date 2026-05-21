@@ -166,7 +166,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('anne-of-the-iron-door', 1)"
+                        onclick="
+                            addToCart('anne-of-the-iron-door', 1, {
+                                title: 'Anne of the Iron Door',
+                                author: 'Alan Loney',
+                                price: 26.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 26.95</span>
                         <span>Add to Cart</span>

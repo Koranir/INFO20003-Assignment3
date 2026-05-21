@@ -174,7 +174,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('thicker-than-water', 1)"
+                        onclick="
+                            addToCart('thicker-than-water', 1, {
+                                title: 'Thicker than Water',
+                                author: 'Judith Colquhoun',
+                                price: 27.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.95</span>
                         <span>Add to Cart</span>

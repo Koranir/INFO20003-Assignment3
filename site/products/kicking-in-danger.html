@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('kicking-in-danger', 1)"
+                        onclick="
+                            addToCart('kicking-in-danger', 1, {
+                                title: 'Kicking in Danger',
+                                author: 'Alan Wearne',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

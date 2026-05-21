@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-bicycle-thief-other-poems', 1)"
+                        onclick="
+                            addToCart('the-bicycle-thief-other-poems', 1, {
+                                title: 'The Bicycle Thief &amp; Other Poems',
+                                author: 'Andrew Sant',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

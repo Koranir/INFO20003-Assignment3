@@ -172,7 +172,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('gifts-sorrows', 1)"
+                        onclick="
+                            addToCart('gifts-sorrows', 1, {
+                                title: 'Gifts &amp; Sorrows',
+                                author: 'Rapha\u00eblle Pomian',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('nebuchadnezzar', 1)"
+                        onclick="
+                            addToCart('nebuchadnezzar', 1, {
+                                title: 'Nebuchadnezzar',
+                                author: 'Shelton Lea',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

@@ -767,6 +767,99 @@ td {
     }
 }
 
+.cart-dialog {
+    width: 100%;
+    max-width: 530px;
+    padding: 0;
+    border: 1px solid #e4d7c866;
+    border-radius: 10px;
+    background-color: #4b4a49f2;
+    box-shadow: 0 14px 34px #000000cc;
+    overflow: hidden;
+    margin: 100px auto auto;
+}
+
+.cart-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.cart-dialog h3 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ffe8cf66;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #dccebd;
+}
+
+.cart-dialog-product {
+    display: grid;
+    grid-template-columns: 138px 1fr auto;
+    gap: 14px;
+    align-items: start;
+    min-height: 190px;
+    padding: 16px 14px 14px;
+    border-bottom: 1px solid #ffe8cf66;
+}
+
+.cart-dialog-product img {
+    width: 138px;
+    max-height: 205px;
+    object-fit: contain;
+}
+
+.cart-dialog-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cart-dialog-details strong {
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.05;
+    color: #e7ceba;
+}
+
+.cart-dialog-details span,
+.cart-dialog-price {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #dccebd;
+}
+
+.cart-dialog-price {
+    align-self: end;
+    white-space: nowrap;
+}
+
+.cart-dialog-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 22px;
+}
+
+.cart-dialog-actions .bold {
+    box-sizing: border-box;
+    border-radius: 999px;
+    background-color: #766e62;
+    font-size: 12px;
+    color: #e7ceba;
+}
+
+.cart-dialog-actions a.bold,
+.cart-dialog-actions button.bold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 @media (max-width: 650px) {
     .product-page {
         grid-template-columns: 1fr;
@@ -786,5 +879,34 @@ td {
         height: 60vh;
         padding: 20px;
         box-sizing: border-box;
+    }
+
+    .cart-dialog-product {
+        grid-template-columns: 90px 1fr;
+        min-height: 0;
+    }
+
+    .cart-dialog-product img {
+        width: 90px;
+    }
+
+    .cart-dialog-details strong {
+        font-size: 24px;
+    }
+
+    .cart-dialog-details span,
+    .cart-dialog-price {
+        font-size: 16px;
+    }
+
+    .cart-dialog-price {
+        grid-column: 2;
+        align-self: start;
+    }
+
+    .cart-dialog-actions {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 14px;
     }
 }

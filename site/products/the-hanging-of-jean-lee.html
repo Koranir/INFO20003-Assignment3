@@ -167,7 +167,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-hanging-of-jean-lee', 1)"
+                        onclick="
+                            addToCart('the-hanging-of-jean-lee', 1, {
+                                title: 'The Hanging of Jean Lee',
+                                author: 'Jordie Albiston',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

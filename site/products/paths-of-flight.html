@@ -152,7 +152,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('paths-of-flight', 1)"
+                        onclick="
+                            addToCart('paths-of-flight', 1, {
+                                title: 'Paths of Flight',
+                                author: 'Luke Fischer',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

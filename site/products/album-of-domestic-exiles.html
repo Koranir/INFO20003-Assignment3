@@ -172,7 +172,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('album-of-domestic-exiles', 1)"
+                        onclick="
+                            addToCart('album-of-domestic-exiles', 1, {
+                                title: 'Album of Domestic Exiles',
+                                author: 'Andrew Sant',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

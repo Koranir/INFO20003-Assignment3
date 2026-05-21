@@ -173,7 +173,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-printing-of-a-masterpiece', 1)"
+                        onclick="
+                            addToCart('the-printing-of-a-masterpiece', 1, {
+                                title: 'The printing of a masterpiece',
+                                author: 'Alan Loney',
+                                price: 26.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 26.95</span>
                         <span>Add to Cart</span>

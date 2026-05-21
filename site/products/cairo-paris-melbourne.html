@@ -184,7 +184,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('cairo-paris-melbourne', 1)"
+                        onclick="
+                            addToCart('cairo-paris-melbourne', 1, {
+                                title: 'Cairo Paris Melbourne',
+                                author: 'Maher Abou Elsaoud',
+                                price: 44.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 44.95</span>
                         <span>Add to Cart</span>

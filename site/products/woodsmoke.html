@@ -182,7 +182,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('woodsmoke', 1)"
+                        onclick="
+                            addToCart('woodsmoke', 1, {
+                                title: 'Woodsmoke',
+                                author: 'Todd Turner',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

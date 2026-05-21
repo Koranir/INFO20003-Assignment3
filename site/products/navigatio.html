@@ -167,7 +167,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('navigatio', 1)"
+                        onclick="
+                            addToCart('navigatio', 1, {
+                                title: 'Navigatio',
+                                author: 'Alison Croggon',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

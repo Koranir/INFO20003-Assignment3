@@ -200,7 +200,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('la-ragazza', 1)"
+                        onclick="
+                            addToCart('la-ragazza', 1, {
+                                title: 'La Ragazza',
+                                author: 'Raffaella Torresan',
+                                price: 27.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.0</span>
                         <span>Add to Cart</span>

@@ -191,7 +191,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-peastick-girl', 1)"
+                        onclick="
+                            addToCart('the-peastick-girl', 1, {
+                                title: 'The Peastick Girl',
+                                author: 'Susan Hancock',
+                                price: 49.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 49.95</span>
                         <span>Add to Cart</span>

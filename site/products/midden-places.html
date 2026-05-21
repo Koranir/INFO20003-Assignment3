@@ -168,7 +168,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('midden-places', 1)"
+                        onclick="
+                            addToCart('midden-places', 1, {
+                                title: 'Midden Places',
+                                author: 'Kirsty Sangster',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

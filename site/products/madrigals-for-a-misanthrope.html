@@ -177,7 +177,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('madrigals-for-a-misanthrope', 1)"
+                        onclick="
+                            addToCart('madrigals-for-a-misanthrope', 1, {
+                                title: 'Madrigals for a Misanthrope',
+                                author: 'Jack Hibberd',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

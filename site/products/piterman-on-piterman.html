@@ -165,7 +165,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('piterman-on-piterman', 1)"
+                        onclick="
+                            addToCart('piterman-on-piterman', 1, {
+                                title: 'Piterman on Piterman',
+                                author: 'Leon Piterman',
+                                price: 33.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 33.0</span>
                         <span>Add to Cart</span>

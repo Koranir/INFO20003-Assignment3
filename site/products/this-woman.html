@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('this-woman', 1)"
+                        onclick="
+                            addToCart('this-woman', 1, {
+                                title: 'This Woman',
+                                author: 'Adrienne Eberhard',
+                                price: 25.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.95</span>
                         <span>Add to Cart</span>

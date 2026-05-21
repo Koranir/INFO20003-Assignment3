@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('chiaroscuro', 1)"
+                        onclick="
+                            addToCart('chiaroscuro', 1, {
+                                title: 'Chiaroscuro',
+                                author: 'Sandy Jeffs',
+                                price: 23.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 23.0</span>
                         <span>Add to Cart</span>

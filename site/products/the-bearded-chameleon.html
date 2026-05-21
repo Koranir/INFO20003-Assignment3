@@ -173,7 +173,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-bearded-chameleon', 1)"
+                        onclick="
+                            addToCart('the-bearded-chameleon', 1, {
+                                title: 'The Bearded Chameleon',
+                                author: 'Chris Mooney-Singh',
+                                price: 25.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.95</span>
                         <span>Add to Cart</span>

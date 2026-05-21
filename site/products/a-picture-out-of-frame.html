@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('a-picture-out-of-frame', 1)"
+                        onclick="
+                            addToCart('a-picture-out-of-frame', 1, {
+                                title: 'A Picture Out Of Frame',
+                                author: 'Mammad Aidani',
+                                price: 21.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 21.95</span>
                         <span>Add to Cart</span>

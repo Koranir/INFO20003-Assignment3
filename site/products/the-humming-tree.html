@@ -175,7 +175,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-humming-tree', 1)"
+                        onclick="
+                            addToCart('the-humming-tree', 1, {
+                                title: 'The Humming Tree',
+                                author: 'Bron Nicholls',
+                                price: 25.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.0</span>
                         <span>Add to Cart</span>

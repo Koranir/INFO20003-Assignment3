@@ -168,7 +168,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('rockling-king', 1)"
+                        onclick="
+                            addToCart('rockling-king', 1, {
+                                title: 'Rockling King',
+                                author: 'Hugh Tolhurst',
+                                price: 25.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.95</span>
                         <span>Add to Cart</span>

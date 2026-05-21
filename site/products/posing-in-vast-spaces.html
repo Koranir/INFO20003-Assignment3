@@ -170,7 +170,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('posing-in-vast-spaces', 1)"
+                        onclick="
+                            addToCart('posing-in-vast-spaces', 1, {
+                                title: 'Posing in Vast Spaces',
+                                author: 'Peter Murk',
+                                price: 28.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 28.95</span>
                         <span>Add to Cart</span>

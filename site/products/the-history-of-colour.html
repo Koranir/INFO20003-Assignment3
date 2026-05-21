@@ -162,7 +162,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-history-of-colour', 1)"
+                        onclick="
+                            addToCart('the-history-of-colour', 1, {
+                                title: 'The History of Colour',
+                                author: 'K.F. Pearson',
+                                price: 15.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 15.95</span>
                         <span>Add to Cart</span>

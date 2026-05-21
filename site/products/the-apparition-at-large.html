@@ -172,7 +172,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-apparition-at-large', 1)"
+                        onclick="
+                            addToCart('the-apparition-at-large', 1, {
+                                title: 'The Apparition At Large',
+                                author: 'K.F. Pearson',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

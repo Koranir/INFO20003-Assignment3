@@ -170,7 +170,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-set-up', 1)"
+                        onclick="
+                            addToCart('the-set-up', 1, {
+                                title: 'The Set-Up',
+                                author: 'John Vasilakakos',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

@@ -173,7 +173,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('dont-ever-let-them-get-you', 1)"
+                        onclick="
+                            addToCart('dont-ever-let-them-get-you', 1, {
+                                title: 'Don\u2019t Ever Let Them Get You!',
+                                author: 'George Dreyfus',
+                                price: 25.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.95</span>
                         <span>Add to Cart</span>

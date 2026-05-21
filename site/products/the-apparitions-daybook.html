@@ -166,7 +166,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-apparitions-daybook', 1)"
+                        onclick="
+                            addToCart('the-apparitions-daybook', 1, {
+                                title: 'The Apparition\u2019s Daybook',
+                                author: 'K.F. Pearson',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

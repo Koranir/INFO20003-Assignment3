@@ -164,7 +164,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('melbourne-elegies', 1)"
+                        onclick="
+                            addToCart('melbourne-elegies', 1, {
+                                title: 'Melbourne Elegies',
+                                author: 'K.F. Pearson',
+                                price: 21.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 21.95</span>
                         <span>Add to Cart</span>

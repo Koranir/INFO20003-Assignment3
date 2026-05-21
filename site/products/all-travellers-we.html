@@ -193,7 +193,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('all-travellers-we', 1)"
+                        onclick="
+                            addToCart('all-travellers-we', 1, {
+                                title: 'All Travellers We',
+                                author: 'Shelton Lea',
+                                price: 20.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 20.0</span>
                         <span>Add to Cart</span>

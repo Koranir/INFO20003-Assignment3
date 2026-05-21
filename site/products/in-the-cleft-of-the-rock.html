@@ -175,7 +175,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('in-the-cleft-of-the-rock', 1)"
+                        onclick="
+                            addToCart('in-the-cleft-of-the-rock', 1, {
+                                title: 'In the Cleft of the Rock',
+                                author: 'Deborah Masel',
+                                price: 27.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.95</span>
                         <span>Add to Cart</span>

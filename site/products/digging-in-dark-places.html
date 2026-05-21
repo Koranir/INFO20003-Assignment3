@@ -155,7 +155,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('digging-in-dark-places', 1)"
+                        onclick="
+                            addToCart('digging-in-dark-places', 1, {
+                                title: 'Digging In Dark Places',
+                                author: 'Colin Duckworth',
+                                price: 20.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 20.95</span>
                         <span>Add to Cart</span>

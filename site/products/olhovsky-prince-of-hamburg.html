@@ -182,7 +182,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('olhovsky-prince-of-hamburg', 1)"
+                        onclick="
+                            addToCart('olhovsky-prince-of-hamburg', 1, {
+                                title: 'Olhovsky, Prince of Hamburg',
+                                author: 'Phil Leask',
+                                price: 28.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 28.95</span>
                         <span>Add to Cart</span>

@@ -178,7 +178,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('transparencies', 1)"
+                        onclick="
+                            addToCart('transparencies', 1, {
+                                title: 'Transparencies',
+                                author: 'Stephen Edgar',
+                                price: 24.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.0</span>
                         <span>Add to Cart</span>

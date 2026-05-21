@@ -166,7 +166,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('meditations-of-a-flawed-groom', 1)"
+                        onclick="
+                            addToCart('meditations-of-a-flawed-groom', 1, {
+                                title: 'Meditations of a Flawed Groom',
+                                author: 'Vivian Hopkirk',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

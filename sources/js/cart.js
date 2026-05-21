@@ -68,15 +68,64 @@ document.addEventListener("DOMContentLoaded", updateCartItemCount);
 
 /**
  * @param {string} item
- * @param {number} count
+ * @param {{title?: string, author?: string, price?: string | number}} details
  */
-function addToCart(item, count) {
-    new Cart().add(item, count);
-    updateCartItemCount();
+function showAddedToCartDialog(item, details = {}) {
+    const existingDialog = document.querySelector(".cart-dialog");
+    if (existingDialog) {
+        existingDialog.remove();
+    }
 
-    var cartDialog = document.createElement("dialog");
+    const productTitle =
+        details.title ||
+        document.querySelector(".product-header .section-title")?.textContent.trim() ||
+        item;
+    const productAuthor =
+        details.author ||
+        document.querySelector(".product-header .section-subtitle")?.textContent.trim() ||
+        "";
+    const productPrice =
+        details.price ||
+        document.querySelector(".purchase .price")?.textContent.replace("A$ ", "") ||
+        "";
+
+    const cartDialog = document.createElement("dialog");
     cartDialog.setAttribute("class", "cart-dialog");
-    cartDialog.innerHTML = "<h3>Added to Cart</h3>";
+    cartDialog.innerHTML = `
+        <h3>Added to Cart</h3>
+        <div class="cart-dialog-product">
+            <img
+                src="/assets/books/${item}/cover.jpg"
+                alt="Cover of ${productTitle}"
+            >
+            <div class="cart-dialog-details">
+                <strong>${productTitle}</strong>
+                <span>${productAuthor}</span>
+            </div>
+            <span class="cart-dialog-price">A$ ${productPrice}</span>
+        </div>
+        <div class="cart-dialog-actions">
+            <a href="/cart.html" class="bold">View Cart &raquo;</a>
+            <button type="button" class="bold" value="cancel">Continue Browsing</button>
+        </div>
+    `;
+
+    cartDialog
+        .querySelector("button")
+        .addEventListener("click", () => cartDialog.close());
+    cartDialog.addEventListener("close", () => cartDialog.remove());
+
     document.body.append(cartDialog);
     cartDialog.showModal();
+}
+
+/**
+ * @param {string} item
+ * @param {number} count
+ * @param {{title?: string, author?: string, price?: string | number}} details
+ */
+function addToCart(item, count, details = {}) {
+    new Cart().add(item, count);
+    updateCartItemCount();
+    showAddedToCartDialog(item, details);
 }

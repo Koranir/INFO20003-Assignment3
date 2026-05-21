@@ -172,7 +172,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('room-for-delusion', 1)"
+                        onclick="
+                            addToCart('room-for-delusion', 1, {
+                                title: 'Room for Delusion',
+                                author: 'Margaret Mathews',
+                                price: 28.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 28.0</span>
                         <span>Add to Cart</span>

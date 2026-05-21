@@ -178,7 +178,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-truth-is-longer-than-a-lie', 1)"
+                        onclick="
+                            addToCart('the-truth-is-longer-than-a-lie', 1, {
+                                title: 'The Truth is Longer Than a Lie',
+                                author: 'Kieran Carrol',
+                                price: 23.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 23.0</span>
                         <span>Add to Cart</span>

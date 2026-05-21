@@ -188,7 +188,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('running-dogs', 1)"
+                        onclick="
+                            addToCart('running-dogs', 1, {
+                                title: 'Running Dogs',
+                                author: 'Barry Klemm',
+                                price: 25.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 25.95</span>
                         <span>Add to Cart</span>

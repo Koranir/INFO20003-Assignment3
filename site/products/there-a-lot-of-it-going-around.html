@@ -180,7 +180,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('there-a-lot-of-it-going-around', 1)"
+                        onclick="
+                            addToCart('there-a-lot-of-it-going-around', 1, {
+                                title: 'There\'a a lot of it going around',
+                                author: 'Leon Piterman',
+                                price: 24.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.0</span>
                         <span>Add to Cart</span>

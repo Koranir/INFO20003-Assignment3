@@ -171,7 +171,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('fear-of-tennis', 1)"
+                        onclick="
+                            addToCart('fear-of-tennis', 1, {
+                                title: 'Fear of Tennis',
+                                author: 'David Cohen',
+                                price: 26.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 26.95</span>
                         <span>Add to Cart</span>

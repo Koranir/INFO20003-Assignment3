@@ -169,7 +169,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('diary-of-a-dwarf', 1)"
+                        onclick="
+                            addToCart('diary-of-a-dwarf', 1, {
+                                title: 'Diary of a Dwarf',
+                                author: 'Graham Henderson',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

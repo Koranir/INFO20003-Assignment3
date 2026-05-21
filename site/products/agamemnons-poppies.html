@@ -162,7 +162,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('agamemnons-poppies', 1)"
+                        onclick="
+                            addToCart('agamemnons-poppies', 1, {
+                                title: 'Agamemnon\u2019s Poppies',
+                                author: 'Adrienne Eberhard',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

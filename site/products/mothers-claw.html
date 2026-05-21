@@ -161,7 +161,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('mothers-claw', 1)"
+                        onclick="
+                            addToCart('mothers-claw', 1, {
+                                title: 'Mother\u2019s Claw',
+                                author: 'Louise Davenport',
+                                price: 21.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 21.95</span>
                         <span>Add to Cart</span>

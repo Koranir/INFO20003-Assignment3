@@ -155,7 +155,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('150-motets', 1)"
+                        onclick="
+                            addToCart('150-motets', 1, {
+                                title: '150 Motets',
+                                author: 'Homer Rieth',
+                                price: 24.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.95</span>
                         <span>Add to Cart</span>

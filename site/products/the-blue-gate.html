@@ -164,7 +164,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-blue-gate', 1)"
+                        onclick="
+                            addToCart('the-blue-gate', 1, {
+                                title: 'The Blue Gate',
+                                author: 'Alison Croggon',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

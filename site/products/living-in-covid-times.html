@@ -181,7 +181,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('living-in-covid-times', 1)"
+                        onclick="
+                            addToCart('living-in-covid-times', 1, {
+                                title: 'Living in COVID Times',
+                                author: 'Leon Piterman',
+                                price: 24.0,
+                            })
+                        "
                     >
                         <span class="price">A$ 24.0</span>
                         <span>Add to Cart</span>

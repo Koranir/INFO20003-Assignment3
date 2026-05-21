@@ -151,7 +151,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-poets-stairwell', 1)"
+                        onclick="
+                            addToCart('the-poets-stairwell', 1, {
+                                title: 'The Poets\' Stairwell',
+                                author: 'Alan Gould',
+                                price: 27.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.95</span>
                         <span>Add to Cart</span>

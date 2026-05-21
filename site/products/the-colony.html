@@ -167,7 +167,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-colony', 1)"
+                        onclick="
+                            addToCart('the-colony', 1, {
+                                title: 'The Colony',
+                                author: 'Graham Henderson',
+                                price: 22.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 22.95</span>
                         <span>Add to Cart</span>

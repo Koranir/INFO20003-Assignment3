@@ -167,7 +167,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('the-dining-car-scene', 1)"
+                        onclick="
+                            addToCart('the-dining-car-scene', 1, {
+                                title: 'The Dining Car Scene',
+                                author: 'Homer Rieth',
+                                price: 19.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 19.95</span>
                         <span>Add to Cart</span>

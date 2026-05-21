@@ -151,7 +151,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('tremors-new-and-selected-poems', 1)"
+                        onclick="
+                            addToCart('tremors-new-and-selected-poems', 1, {
+                                title: 'Tremors, New and Selected Poems',
+                                author: 'Andrew Sant',
+                                price: 27.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 27.95</span>
                         <span>Add to Cart</span>

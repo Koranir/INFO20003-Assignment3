@@ -176,7 +176,13 @@
                 <div class="product-sidebar">
                     <button
                         class="purchase bold"
-                        onclick="addToCart('colombine-new-selected-poems', 1)"
+                        onclick="
+                            addToCart('colombine-new-selected-poems', 1, {
+                                title: 'Colombine, New &amp; Selected Poems',
+                                author: 'Jennifer Harrison',
+                                price: 28.95,
+                            })
+                        "
                     >
                         <span class="price">A$ 28.95</span>
                         <span>Add to Cart</span>
