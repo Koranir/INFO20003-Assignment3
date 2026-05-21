@@ -86,8 +86,6 @@ body {
 }
 
 main {
-    box-sizing: content-box;
-
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
@@ -569,6 +567,7 @@ footer {
 
     & img {
         width: 100%;
+        padding-left: var(--space-3);
     }
 }
 
@@ -624,6 +623,8 @@ footer {
     font-weight: 600;
     text-align: left;
 
+    transition: color 0.25s ease-out;
+
     &::before {
         display: block;
         width: 6px;
@@ -631,6 +632,10 @@ footer {
         border-radius: var(--radius-pill);
         content: "";
         background-color: var(--color-gold-border);
+
+        transition:
+            color 0.25s ease-out,
+            height 0.25s ease-out;
     }
 
     &[x-checked="true"] {

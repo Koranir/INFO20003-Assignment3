@@ -49,18 +49,15 @@ class Cart {
 }
 
 function updateCartItemCount() {
-    const element = document.getElementById("cart-link");
-    if (element) {
-        const cart = new Cart();
-        var count = 0;
+    const cart = new Cart();
+    var count = 0;
 
-        for (const item_count of Object.values(cart.items())) {
-            count += item_count;
-        }
+    for (const item_count of Object.values(cart.items())) {
+        count += item_count;
+    }
 
+    for (const element of document.querySelectorAll("#cart-link")) {
         element.textContent = `Cart (${count})`;
-    } else {
-        console.warn("No cart element");
     }
 }
 
@@ -379,4 +376,7 @@ function addToCart(item, count, details = {}) {
  */
 function orderConfirmed() {
     localStorage.removeItem("cart");
+
+    // Move to the home page after we're done
+    location.href = "/";
 }
