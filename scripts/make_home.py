@@ -23,14 +23,14 @@ with doc.body:
                     make_all_featured()
 
             with d.div(cls="content-with-sidebar"):
-                with d.article():
+                with d.article(cls="recent-releases"):
                     d.h2(
                         "Recent Releases",
                         cls="section-title",
                         style="--styled-asset-path: url('/assets/recent-releases.svg')",
                     )
 
-                    with d.div(cls="recent-releases"):
+                    with d.div(cls="recents"):
                         make_recents()
                 with d.section(cls="sidebar"):
                     d.h2(

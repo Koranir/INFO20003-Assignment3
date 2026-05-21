@@ -7,17 +7,44 @@ def make_recents():
     books = yaml.full_load(open("sources/books.yaml", "r"))
     recents = yaml.full_load(open("sources/recents.yaml", "r"))
 
-    with d.div(cls="recent-wheel"):
+    with d.div(cls="recents-left"):
+        first = True
         for key, book in [(key, books[key]) for key in recents]:
-            d.button(book["title"], cls="recent-title")
+            with d.img(
+                cls="recent-cover",
+                src=cover_path(key),
+                alt=f"Cover of {book['title']}",
+                id=f"recent-cover-{key}",
+            ) as img:
+                if not first:
+                    img.set_attribute("hidden", "")
+                first = False
 
-    for key, book in [(key, books[key]) for key in recents]:
-        d.img(
-            cls="recent-cover",
-            src=cover_path(key),
-            alt=f"Cover of {book['title']}",
-        )
+    with d.div(cls="recents-right"):
+        with d.section(cls="recent-wheel"):
+            first = True
+            for key, book in [(key, books[key]) for key in recents]:
+                with d.button(
+                    book["title"],
+                    cls="recent-title",
+                    id=f"recent-title-{key}",
+                ) as but:
+                    if first:
+                        but.set_attribute("x-checked", "true")
+                    first = False
 
-        with d.div(cls="recent-description"):
-            d.p(book["short_description"])
-            d.a("Read more »", cls="bold", href=product_page_path(key))
+        first = True
+        for key, book in [(key, books[key]) for key in recents]:
+            with d.section(
+                cls="recent-description",
+                id=f"recent-description-{key}",
+            ) as sect:
+                d.p(book["short_description"])
+                d.a(
+                    "Read more »",
+                    cls="bold",
+                    href=product_page_path(key),
+                )
+                if not first:
+                    sect.set_attribute("hidden", "")
+                first = False
