@@ -666,11 +666,16 @@ footer {
     grid-row: 1;
 }
 
+.recents-left {
+    display: grid;
+    align-items: start;
+}
+
 .recents-right {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: start;
+    justify-items: end;
     gap: var(--space-9);
     padding-top: 50px;
 }
@@ -723,21 +728,84 @@ footer {
 }
 
 .recent-cover {
+    grid-column: 1;
+    grid-row: 1;
     width: 70%;
     max-width: 600px;
     border: 1px solid var(--color-soft-border);
     mask-image: linear-gradient(to right, black 70%, transparent 100%);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.recent-cover[data-state="inactive"] {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+}
+
+.recent-cover[data-state="active"] {
+    opacity: 1;
+    transform: none;
+}
+
+.recent-descriptions {
+    width: min(100%, 300px);
+    justify-self: end;
+}
+
+.recent-descriptions.is-ready {
+    position: relative;
+
+    transition: height 0.45s ease;
 }
 
 .recent-description {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
-    max-width: 300px;
     padding: var(--space-3);
+}
 
-    &[hidden] {
-        display: none;
+.recent-description[hidden] {
+    display: none;
+}
+
+.recent-descriptions.is-ready .recent-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+
+    transition:
+        opacity 0.45s ease,
+        transform 0.45s ease;
+}
+
+.recent-descriptions.is-ready .recent-description[hidden] {
+    display: flex;
+}
+
+.recent-descriptions.is-ready .recent-description[data-state="inactive"] {
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+}
+
+.recent-descriptions.is-ready .recent-description[data-state="active"] {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .recent-title,
+    .recent-title::before,
+    .recent-cover,
+    .recent-description {
+        transition: none;
     }
 }
 

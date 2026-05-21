@@ -35,18 +35,19 @@ def make_recents():
                     but.set_attribute("aria-pressed", str(first).lower())
                     first = False
 
-        first = True
-        for key, book in [(key, books[key]) for key in recents]:
-            with d.section(
-                cls="recent-description",
-                id=f"recent-description-{key}",
-            ) as sect:
-                d.p(book["short_description"])
-                d.a(
-                    "Read more »",
-                    cls="bold",
-                    href=product_page_path(key),
-                )
-                if not first:
-                    sect.set_attribute("hidden", "")
-                first = False
+        with d.div(cls="recent-descriptions"):
+            first = True
+            for key, book in [(key, books[key]) for key in recents]:
+                with d.section(
+                    cls="recent-description",
+                    id=f"recent-description-{key}",
+                ) as sect:
+                    d.p(book["short_description"])
+                    d.a(
+                        "Read more »",
+                        cls="bold",
+                        href=product_page_path(key),
+                    )
+                    if not first:
+                        sect.set_attribute("hidden", "")
+                    first = False

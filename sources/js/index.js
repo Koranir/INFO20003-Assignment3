@@ -258,19 +258,66 @@ function setupRecentReleases() {
     const recentButtons = Array.from(
         document.querySelectorAll(".recent-title"),
     );
+    if (recentButtons.length === 0) {
+        return;
+    }
+
     const releases = recentButtons.map((button) =>
         button.id.replace("recent-title-", ""),
     );
+    const descriptionContainer = document.querySelector(".recent-descriptions");
+    const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+    );
+    let currentRelease =
+        recentButtons
+            .find((button) => button.getAttribute("x-checked") === "true")
+            ?.id.replace("recent-title-", "") || releases[0];
+    let autoCycleTimeoutId = null;
+    let autoCycleStopped = false;
+
+    function setReleasePanelState(element, isSelected) {
+        if (!element) {
+            return;
+        }
+
+        element.dataset.state = isSelected ? "active" : "inactive";
+        element.removeAttribute("hidden");
+        element.setAttribute("aria-hidden", String(!isSelected));
+
+        if (element.classList.contains("recent-description")) {
+            element.toggleAttribute("inert", !isSelected);
+        }
+    }
+
+    function updateDescriptionContainerHeight(selectedRelease) {
+        if (!descriptionContainer) {
+            return;
+        }
+
+        const activeDescription = document.getElementById(
+            `recent-description-${selectedRelease}`,
+        );
+        if (!activeDescription) {
+            return;
+        }
+
+        descriptionContainer.style.height = `${activeDescription.scrollHeight}px`;
+    }
 
     function selectRecentRelease(selectedRelease) {
+        currentRelease = selectedRelease;
+
         releases.forEach((release) => {
             const isSelected = release === selectedRelease;
-            document
-                .getElementById(`recent-cover-${release}`)
-                ?.toggleAttribute("hidden", !isSelected);
-            document
-                .getElementById(`recent-description-${release}`)
-                ?.toggleAttribute("hidden", !isSelected);
+            setReleasePanelState(
+                document.getElementById(`recent-cover-${release}`),
+                isSelected,
+            );
+            setReleasePanelState(
+                document.getElementById(`recent-description-${release}`),
+                isSelected,
+            );
         });
 
         recentButtons.forEach((button) => {
@@ -282,13 +329,65 @@ function setupRecentReleases() {
             }
             button.setAttribute("aria-pressed", String(isSelected));
         });
+
+        updateDescriptionContainerHeight(selectedRelease);
     }
+
+    function clearAutoCycle() {
+        if (autoCycleTimeoutId === null) {
+            return;
+        }
+
+        window.clearTimeout(autoCycleTimeoutId);
+        autoCycleTimeoutId = null;
+    }
+
+    function scheduleNextAutoCycle() {
+        clearAutoCycle();
+
+        if (
+            autoCycleStopped ||
+            prefersReducedMotion.matches ||
+            document.hidden ||
+            releases.length < 2
+        ) {
+            return;
+        }
+
+        autoCycleTimeoutId = window.setTimeout(() => {
+            const currentIndex = releases.indexOf(currentRelease);
+            const nextIndex = (currentIndex + 1) % releases.length;
+            selectRecentRelease(releases[nextIndex]);
+            scheduleNextAutoCycle();
+        }, 5000);
+    }
+
+    selectRecentRelease(currentRelease);
+    descriptionContainer?.classList.add("is-ready");
+    updateDescriptionContainerHeight(currentRelease);
 
     recentButtons.forEach((button) => {
         button.addEventListener("click", () => {
+            autoCycleStopped = true;
+            clearAutoCycle();
             selectRecentRelease(button.id.replace("recent-title-", ""));
         });
     });
+
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            clearAutoCycle();
+            return;
+        }
+
+        scheduleNextAutoCycle();
+    });
+
+    window.addEventListener("resize", () => {
+        updateDescriptionContainerHeight(currentRelease);
+    });
+
+    scheduleNextAutoCycle();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
