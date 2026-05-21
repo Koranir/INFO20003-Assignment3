@@ -992,10 +992,20 @@ td {
 }
 
 .cart-dialog-details span,
-.cart-dialog-price {
+.cart-dialog-price,
+#order-confirmation-table-body {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: #dccebd;
+}
+
+#order-confirmation-table-body > tr td:first-child {
+    text-align: left;
+}
+
+#order-confirmation-table-body > tr td:last-child {
+    text-align: right;
+    white-space: nowrap;
 }
 
 .cart-dialog-price {

@@ -96,6 +96,14 @@ function setText(id, text) {
 }
 
 /**
+ * @return {Array<[string, number]>}
+ */
+function getCartEntries() {
+    const cart = new Cart();
+    return Object.entries(cart.items()).filter(([, count]) => count > 0);
+}
+
+/**
  * @param {number} total
  */
 function updateCartTotals(total) {
@@ -117,10 +125,7 @@ async function setupCartPage() {
         return;
     }
 
-    const cart = new Cart();
-    const entries = Object.entries(cart.items()).filter(
-        ([, count]) => count > 0,
-    );
+    const entries = getCartEntries();
 
     cartItems.replaceChildren();
 
@@ -203,6 +208,55 @@ async function setupCartPage() {
     updateCartTotals(cartTotal);
 }
 
+async function setupOrderConfirmationPage() {
+    const orderConfirmationTableBody = document.getElementById(
+        "order-confirmation-table-body",
+    );
+    if (!orderConfirmationTableBody) {
+        return;
+    }
+
+    const entries = getCartEntries();
+    let products = {};
+
+    try {
+        products = await getCartProducts();
+    } catch (error) {
+        console.error(error);
+    }
+
+    orderConfirmationTableBody.replaceChildren();
+
+    let totalCost = 0;
+
+    entries.forEach(([productId, count]) => {
+        const price = Number(products[productId]?.price || 0);
+        totalCost += price * count;
+
+        const row = document.createElement("tr");
+        const title = document.createElement("td");
+        const itemCount = document.createElement("td");
+
+        title.scope = "row";
+        title.textContent = products[productId]?.title || productId;
+        itemCount.textContent = "x" + String(count);
+
+        row.append(title, itemCount);
+        orderConfirmationTableBody.append(row);
+    });
+
+    const totalRow = document.createElement("tr");
+    const totalHeading = document.createElement("td");
+    const totalCell = document.createElement("td");
+
+    totalHeading.scope = "row";
+    totalHeading.textContent = "Total";
+    totalCell.textContent = formatCurrency(totalCost);
+
+    totalRow.append(totalHeading, totalCell);
+    orderConfirmationTableBody.append(totalRow);
+}
+
 function setupRecentReleases() {
     const recentButtons = Array.from(
         document.querySelectorAll(".recent-title"),
@@ -243,6 +297,7 @@ function setupRecentReleases() {
 document.addEventListener("DOMContentLoaded", () => {
     updateCartItemCount();
     setupCartPage();
+    setupOrderConfirmationPage();
     setupRecentReleases();
 });
 
