@@ -1,5 +1,3 @@
-"use strict";
-
 class Cart {
     constructor() {
         /** @type {Object.<string, number>} */
@@ -67,3 +65,18 @@ function updateCartItemCount() {
 }
 
 document.addEventListener("DOMContentLoaded", updateCartItemCount);
+
+/**
+ * @param {string} item
+ * @param {number} count
+ */
+function addToCart(item, count) {
+    new Cart().add(item, count);
+    updateCartItemCount();
+
+    var cartDialog = document.createElement("dialog");
+    cartDialog.setAttribute("class", "cart-dialog");
+    cartDialog.innerHTML = "<h3>Added to Cart</h3>";
+    document.body.append(cartDialog);
+    cartDialog.showModal();
+}

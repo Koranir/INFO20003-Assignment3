@@ -41,7 +41,9 @@ def make_product(key, product):
                         d.p(line)
 
                 with d.div(cls="product-sidebar"):
-                    with d.button(cls="purchase bold"):
+                    with d.button(
+                        cls="purchase bold", onclick=f"addToCart('{key}', 1)"
+                    ):
                         d.span(f"A$ {product['price']}", cls="price")
                         d.span("Add to Cart")
                         dominate.util.raw(
