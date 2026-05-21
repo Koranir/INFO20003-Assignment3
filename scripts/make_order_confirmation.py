@@ -26,7 +26,7 @@ with doc.body:
 
                 with d.div(cls="confirmation-cancel-okay"):
                     d.a("Cancel Order", href="/", cls="bold warning")
-                    d.a("Okay", href="/", cls="bold purchase")
+                    d.button("Okay", onclick="orderConfirmed()", cls="bold purchase")
 
     make_footer()
 

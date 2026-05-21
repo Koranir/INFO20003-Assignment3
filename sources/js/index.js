@@ -302,6 +302,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /**
+ * Show a modal dialog confirming a particular item with this id was added to the cart.
+ * TODO: Use the JSON product data instead of scraping the page, this is an old impl.
  * @param {string} item
  * @param {{title?: string, author?: string, price?: string | number}} details
  */
@@ -361,6 +363,7 @@ function showAddedToCartDialog(item, details = {}) {
 }
 
 /**
+ * Add an item to the cart, showing a dialog.
  * @param {string} item
  * @param {number} count
  * @param {{title?: string, author?: string, price?: string | number}} details
@@ -369,4 +372,11 @@ function addToCart(item, count, details = {}) {
     new Cart().add(item, count);
     updateCartItemCount();
     showAddedToCartDialog(item, details);
+}
+
+/**
+ * Clear the cart after an order is confirmed, to emulate a successful checkout.
+ */
+function orderConfirmed() {
+    localStorage.removeItem("cart");
 }
