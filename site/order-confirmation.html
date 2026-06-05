@@ -67,9 +67,10 @@
             <a class="rim" href="/cart.html" id="cart-link">Cart</a>
           </dialog>
         </div>
-        <div class="search bold">
-          <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></button>
-          <input id="search-input" placeholder="Search books &amp; more" type="search">
+        <div class="search bold" role="search">
+          <button aria-label="Search" class="search-button" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></button>
+          <input aria-controls="search-results" aria-expanded="false" autocomplete="off" id="search-input" placeholder="Search books &amp; more" type="search">
+          <div class="search-results" hidden="hidden" id="search-results"></div>
         </div>
       </header>
       <main class="cart-page">

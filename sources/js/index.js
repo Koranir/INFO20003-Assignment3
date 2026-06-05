@@ -69,16 +69,306 @@ function formatCurrency(value) {
     return `A$ ${value.toFixed(2)}`;
 }
 
+let cartProductsCache = null;
+
 /**
  * @return {Promise<Object.<string, {title: string, author: string, price: number}>>}
  */
 async function getCartProducts() {
-    const response = await fetch("/data/cart-products.json");
-    if (!response.ok) {
-        throw new Error(`Failed to load cart products: ${response.status}`);
+    if (!cartProductsCache) {
+        cartProductsCache = fetch("/data/cart-products.json").then(
+            (response) => {
+                if (!response.ok) {
+                    throw new Error(
+                        `Failed to load cart products: ${response.status}`,
+                    );
+                }
+
+                return response.json();
+            },
+        );
     }
 
-    return response.json();
+    return cartProductsCache;
+}
+
+const SEARCH_RESULT_LIMIT = 8;
+
+/**
+ * @param {Object.<string, {title: string, author: string, price: number}>} products
+ * @param {string} query
+ * @return {Array<{id: string, title: string, author: string}>}
+ */
+function getTitleSearchResults(products, query) {
+    const trimmedQuery = query.trim();
+    if (!trimmedQuery) {
+        return [];
+    }
+
+    const items = Object.entries(products).map(([id, product]) => ({
+        id,
+        title: product.title,
+        author: product.author || "",
+    }));
+    const lowerQuery = trimmedQuery.toLowerCase();
+    const fragments = lowerQuery.split(/\s+/).filter(Boolean);
+    const seen = new Set();
+
+    const byStartIndexThenTitle = (left, right) =>
+        left.startIndex - right.startIndex ||
+        left.item.title.localeCompare(right.item.title);
+
+    // const exactCaseMatches = items
+    //     .map((item) => ({
+    //         item,
+    //         startIndex: item.title.indexOf(trimmedQuery),
+    //     }))
+    //     .filter((match) => match.startIndex !== -1)
+    //     .sort(byStartIndexThenTitle);
+
+    // exactCaseMatches.forEach((match) => seen.add(match.item.id));
+
+    const exactCaseInsensitiveMatches = items
+        .map((item) => ({
+            item,
+            startIndex: item.title.toLowerCase().indexOf(lowerQuery),
+        }))
+        .filter((match) => match.startIndex !== -1 && !seen.has(match.item.id))
+        .sort(byStartIndexThenTitle);
+
+    exactCaseInsensitiveMatches.forEach((match) => seen.add(match.item.id));
+
+    const approximateMatches = items
+        .filter(
+            (item) =>
+                !seen.has(item.id) &&
+                fragments.every((fragment) =>
+                    item.title.toLowerCase().includes(fragment),
+                ),
+        )
+        .sort((left, right) => left.title.localeCompare(right.title))
+        .map((item) => ({ item }));
+
+    return [
+        // ...exactCaseMatches,
+        ...exactCaseInsensitiveMatches,
+        ...approximateMatches,
+    ]
+        .slice(0, SEARCH_RESULT_LIMIT)
+        .map((match) => match.item);
+}
+
+function setupHeaderSearch() {
+    const input = document.getElementById("search-input");
+    const resultsPanel = document.getElementById("search-results");
+
+    if (!input || !resultsPanel) {
+        return;
+    }
+
+    const searchContainer = input.closest(".search");
+    if (!searchContainer) {
+        return;
+    }
+
+    const searchButton = searchContainer.querySelector(".search-button");
+
+    let products = {};
+    let hasLoadedProducts = false;
+    let hasLoadError = false;
+    let currentResults = [];
+
+    function setExpanded(isExpanded) {
+        input.setAttribute("aria-expanded", String(isExpanded));
+    }
+
+    function closeResults() {
+        resultsPanel.hidden = true;
+        setExpanded(false);
+    }
+
+    function openResults() {
+        resultsPanel.hidden = false;
+        setExpanded(true);
+    }
+
+    /**
+     * @param {string} message
+     */
+    function renderSearchMessage(message) {
+        const emptyMessage = document.createElement("p");
+        emptyMessage.className = "search-empty";
+        emptyMessage.textContent = message;
+        resultsPanel.replaceChildren(emptyMessage);
+        currentResults = [];
+        openResults();
+    }
+
+    function renderResults() {
+        const query = input.value.trim();
+        resultsPanel.replaceChildren();
+
+        if (!query) {
+            currentResults = [];
+            closeResults();
+            return;
+        }
+
+        if (hasLoadError) {
+            renderSearchMessage("Search is unavailable.");
+            return;
+        }
+
+        if (!hasLoadedProducts) {
+            renderSearchMessage("Loading results...");
+            return;
+        }
+
+        currentResults = getTitleSearchResults(products, query);
+
+        if (currentResults.length === 0) {
+            renderSearchMessage("No matching titles.");
+            return;
+        }
+
+        currentResults.forEach((result) => {
+            const resultLink = document.createElement("a");
+            resultLink.className = "search-result";
+            resultLink.href = `/products/${result.id}.html`;
+
+            const cover = document.createElement("img");
+            cover.className = "search-result-cover";
+            cover.src = `/assets/books/${result.id}/cover.jpg`;
+            cover.alt = `Cover of ${result.title}`;
+
+            const details = document.createElement("span");
+            details.className = "search-result-details";
+
+            const title = document.createElement("span");
+            title.className = "search-result-title";
+            title.textContent = result.title;
+
+            const author = document.createElement("span");
+            author.className = "search-result-author";
+            author.textContent = result.author;
+
+            details.append(title, author);
+            resultLink.append(cover, details);
+            resultsPanel.append(resultLink);
+        });
+
+        openResults();
+    }
+
+    /**
+     * @return {HTMLAnchorElement[]}
+     */
+    function getResultLinks() {
+        return Array.from(resultsPanel.querySelectorAll(".search-result"));
+    }
+
+    /**
+     * @param {number} fallbackIndex
+     * @param {number} offset
+     */
+    function focusResult(fallbackIndex, offset = 0) {
+        const resultLinks = getResultLinks();
+
+        if (resultLinks.length === 0) {
+            return;
+        }
+
+        const focusedIndex = resultLinks.indexOf(document.activeElement);
+        const nextIndex =
+            focusedIndex === -1
+                ? fallbackIndex
+                : (focusedIndex + offset + resultLinks.length) %
+                  resultLinks.length;
+
+        resultLinks[nextIndex].focus();
+    }
+
+    input.addEventListener("input", renderResults);
+    input.addEventListener("focus", renderResults);
+    input.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeResults();
+            return;
+        }
+
+        if (event.key === "ArrowDown") {
+            if (resultsPanel.hidden) {
+                renderResults();
+            }
+
+            if (currentResults.length > 0) {
+                event.preventDefault();
+                focusResult(0);
+            }
+            return;
+        }
+
+        if (event.key === "ArrowUp") {
+            if (currentResults.length > 0) {
+                event.preventDefault();
+                focusResult(currentResults.length - 1);
+            }
+        }
+    });
+
+    resultsPanel.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            input.focus();
+            closeResults();
+            return;
+        }
+
+        if (event.key === "ArrowDown") {
+            event.preventDefault();
+            focusResult(0, 1);
+            return;
+        }
+
+        if (event.key === "ArrowUp") {
+            event.preventDefault();
+            focusResult(currentResults.length - 1, -1);
+        }
+    });
+
+    searchButton?.addEventListener("click", () => {
+        input.focus();
+        renderResults();
+    });
+
+    document.addEventListener("pointerdown", (event) => {
+        if (
+            !(event.target instanceof Element) ||
+            !searchContainer.contains(event.target)
+        ) {
+            closeResults();
+        }
+    });
+
+    searchContainer.addEventListener("focusout", (event) => {
+        if (
+            !(event.relatedTarget instanceof Element) ||
+            !searchContainer.contains(event.relatedTarget)
+        ) {
+            closeResults();
+        }
+    });
+
+    getCartProducts()
+        .then((loadedProducts) => {
+            products = loadedProducts;
+            hasLoadedProducts = true;
+            renderResults();
+        })
+        .catch((error) => {
+            console.error(error);
+            hasLoadError = true;
+            renderResults();
+        });
 }
 
 /**
@@ -392,6 +682,7 @@ function setupRecentReleases() {
 
 document.addEventListener("DOMContentLoaded", () => {
     updateCartItemCount();
+    setupHeaderSearch();
     setupCartPage();
     setupOrderConfirmationPage();
     setupRecentReleases();

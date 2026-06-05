@@ -59,8 +59,8 @@ def make_header():
             d.a("Submissions", href="/submissions.html", cls="rim")
             d.a("Cart", href="/cart.html", cls="rim", id="cart-link")
 
-    with d.div(cls="search bold"):
-        with d.button(cls="search-button"):
+    with d.div(cls="search bold", role="search"):
+        with d.button(cls="search-button", type="button", **{"aria-label": "Search"}):
             du.raw(
                 s='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>'
             )
@@ -68,4 +68,10 @@ def make_header():
             type="search",
             placeholder="Search books & more",
             id="search-input",
+            autocomplete="off",
+            **{
+                "aria-controls": "search-results",
+                "aria-expanded": "false",
+            },
         )
+        d.div(id="search-results", cls="search-results", hidden=True)

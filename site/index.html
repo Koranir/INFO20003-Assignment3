@@ -131,8 +131,12 @@
                         <a class="rim" href="/cart.html" id="cart-link">Cart</a>
                     </dialog>
                 </div>
-                <div class="search bold">
-                    <button class="search-button">
+                <div class="search bold" role="search">
+                    <button
+                        aria-label="Search"
+                        class="search-button"
+                        type="button"
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -150,10 +154,18 @@
                         </svg>
                     </button>
                     <input
+                        aria-controls="search-results"
+                        aria-expanded="false"
+                        autocomplete="off"
                         id="search-input"
                         placeholder="Search books &amp; more"
                         type="search"
                     />
+                    <div
+                        class="search-results"
+                        hidden="hidden"
+                        id="search-results"
+                    ></div>
                 </div>
             </header>
             <main>
@@ -170,11 +182,6 @@
                         <section>
                             <div class="images">
                                 <img
-                                    alt="Portrait of Jennifer Harrison"
-                                    class="author-portrait"
-                                    src="/assets/authors/jennifer-harrison/portrait.jpg"
-                                />
-                                <img
                                     alt="Cover of Sideshow History"
                                     class="cover"
                                     src="/assets/books/sideshow-history/cover.jpg"
@@ -183,7 +190,7 @@
                             <div class="details">
                                 <div class="details-text">
                                     <h3>Sideshow History</h3>
-                                    <address>Jennifer Harrison</address>
+                                    <address>Amanda Anastasi</address>
                                     <p>
                                         Jennifer Harrison has always been
                                         interested in performers, their choices
