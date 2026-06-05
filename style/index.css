@@ -848,6 +848,10 @@ footer {
 .recent-descriptions {
     width: min(100%, 300px);
     justify-self: end;
+
+    & p {
+        margin: 0;
+    }
 }
 
 .recent-descriptions.is-ready {
