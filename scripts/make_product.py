@@ -1,6 +1,7 @@
+import json
+
 import dominate
 import dominate.tags as d
-import json
 import yaml
 from make_doc import make_doc
 from make_footer import make_footer
@@ -41,6 +42,11 @@ def make_product(key, product):
                     for line in product["long_description"].split("\n"):
                         d.p(line)
 
+                with d.details(cls="product-description-mobile", open=""):
+                    d.summary("Description")
+                    for line in product["long_description"].split("\n"):
+                        d.p(line)
+
                 with d.div(cls="product-sidebar"):
                     cart_details = json.dumps(
                         {
@@ -77,8 +83,8 @@ def make_product(key, product):
                     )
 
                 with d.div(cls="product-information"):
-                    with d.section():
-                        d.h3("Information")
+                    with d.details(open=""):
+                        d.summary("Information")
                         with d.table():
                             with d.tbody():
                                 with d.tr():
@@ -90,18 +96,20 @@ def make_product(key, product):
                                 with d.tr():
                                     d.td("Pages")
                                     d.td(str(product["page_count"]))
-                    with d.section():
-                        # Split author by ', ' and ' and ' to get individual author names, then replace spaces with dashes and lowercase for the URLs
-                        for author in product["author"].split(", "):
-                            for sub_author in author.split(" and "):
-                                author_key = sub_author.replace(" ", "-").lower()
-                                d.h3("About the Author")
-                                d.p(authors[author_key]["short_description"])
-                                d.a(
-                                    "Go to Profile »",
-                                    href=f"/authors/{author_key}.html",
-                                    cls="bold",
-                                )
+                    with d.details(open=""):
+                        d.summary("About the Author")
+
+                        with d.div(cls="author-infos"):
+                            # Split author by ', ' and ' and ' to get individual author names, then replace spaces with dashes and lowercase for the URLs
+                            for author in product["author"].split(", "):
+                                for sub_author in author.split(" and "):
+                                    author_key = sub_author.replace(" ", "-").lower()
+                                    d.p(authors[author_key]["short_description"])
+                                    d.a(
+                                        "Go to Profile »",
+                                        href=f"/authors/{author_key}.html",
+                                        cls="bold",
+                                    )
 
                 if not len(product["reviews"]) == 0:
                     with d.div(cls="product-reviews"):

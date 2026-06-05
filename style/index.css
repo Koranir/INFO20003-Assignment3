@@ -104,8 +104,8 @@ h2.section-title {
     font-weight: 600;
 }
 
-h3 {
-    width: fit-content;
+h3,
+summary {
     margin: 0;
     color: var(--color-heading);
     font-family: var(--font-serif);
@@ -182,7 +182,7 @@ footer {
 }
 
 section,
-.product-reviews details {
+details {
     border: 1px solid var(--color-gold-border);
     border-radius: var(--radius-md);
     background-color: var(--color-surface);
@@ -919,27 +919,31 @@ footer {
         "description description sidebar"
         "description description information"
         "reviews reviews reviews";
-    gap: 20px;
+    gap: var(--space-5);
     padding-top: var(--space-3);
 
     & p {
         margin: 0;
     }
 
+    & details,
     & section {
         display: flex;
         flex-direction: column;
-        gap: var(--space-3);
         padding: var(--space-3);
     }
 
-    & section.product-description {
+    & .product-description {
         grid-area: description;
         display: block;
 
         & h3 {
             margin-bottom: var(--space-3);
         }
+    }
+
+    & .product-description-mobile {
+        display: none;
     }
 }
 
@@ -964,10 +968,11 @@ footer {
 }
 
 .product-sidebar,
-.product-information {
+.product-information,
+.author-infos {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--space-5);
 }
 
 .product-sidebar {
@@ -991,19 +996,19 @@ footer {
     align-items: center;
     gap: var(--space-6);
     padding: var(--space-3);
+}
 
-    & details {
-        width: 100%;
+details {
+    width: 100%;
+    padding: var(--space-3);
+
+    & summary {
+        margin: -10px;
         padding: var(--space-3);
+    }
 
-        & summary {
-            margin: -10px;
-            padding: var(--space-3);
-        }
-
-        &[open] summary {
-            margin-bottom: 0;
-        }
+    &[open] summary {
+        margin-bottom: 0;
     }
 }
 
@@ -1600,6 +1605,15 @@ footer {
         max-width: 100%;
         object-fit: contain;
         padding: 0 var(--space-6);
+    }
+
+    .product-description {
+        display: none !important;
+    }
+
+    .product-description-mobile {
+        display: flex !important;
+        grid-area: description;
     }
 
     .cart-dialog-product {
