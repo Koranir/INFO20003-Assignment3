@@ -94,6 +94,7 @@ main {
 
 h2.section-title {
     content: var(--styled-asset-path);
+    color: var(--color-muted);
     max-width: 100%;
 
     margin: 0;
