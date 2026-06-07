@@ -21,6 +21,4 @@ prettier -w site/authors.html
 prettier -w site/authors/*.html
 prettier -w site/data/*.json
 
-cp -r ./assets ./site/assets
-cp -r ./style ./site/style
-cp -r ./js ./site/js
+cp -r ./assets ./style ./js ./site
