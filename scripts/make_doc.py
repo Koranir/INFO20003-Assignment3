@@ -1,13 +1,16 @@
 import dominate
 import dominate.tags as d
+from paths import page_path, set_page_depth
 
 
-def make_doc(title):
+def make_doc(title, depth=0):
+    set_page_depth(depth)
+
     doc = dominate.document(title=f"Black Pepper Publishing - {title}")
     with doc.head:
         d.meta(charset="UTF-8")
         d.meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        d.link(rel="stylesheet", href="/style/index.css")
+        d.link(rel="stylesheet", href=page_path("style/index.css"))
 
         # <link rel="preconnect" href="https://fonts.googleapis.com">
         # <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +22,7 @@ def make_doc(title):
             rel="stylesheet",
             href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;1,600&family=Roboto:wght@100..900&display=swap",
         )
-        d.script(src="/js/index.js")
+        d.script(src=page_path("js/index.js"))
     with doc.body:
         dominate.util.raw(
             """

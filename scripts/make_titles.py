@@ -3,7 +3,7 @@ import yaml
 from make_doc import make_doc
 from make_footer import make_footer
 from make_header import make_header
-from paths import cover_path, product_page_path
+from paths import asset_path, cover_path, page_path, product_page_path
 
 
 def sorted_books(books):
@@ -22,12 +22,12 @@ with doc.body:
                 d.h2(
                     "Titles",
                     cls="section-title",
-                    style="--styled-asset-path: url('/assets/titles.svg')",
+                    style=f"--styled-asset-path: url('{asset_path('titles.svg')}')",
                 )
 
             with d.section(cls="repository-toolbar"):
                 d.p(f"{len(books)} titles")
-                d.a("Browse authors", href="/authors.html", cls="bold")
+                d.a("Browse authors", href=page_path("authors.html"), cls="bold")
 
             with d.div(cls="title-repository"):
                 for key, book in sorted_books(books):

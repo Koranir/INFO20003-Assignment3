@@ -5,6 +5,7 @@ from make_featured import make_all_featured
 from make_footer import make_footer
 from make_header import make_header
 from make_recents import make_recents
+from paths import asset_path, page_path
 
 doc = make_doc("Cart")
 with doc.body:
@@ -15,7 +16,7 @@ with doc.body:
             d.h2(
                 "Cart",
                 cls="section-title",
-                style="--styled-asset-path: url('/assets/cart.svg')",
+                style=f"--styled-asset-path: url('{asset_path('cart.svg')}')",
             )
 
             with d.div(cls="billing-content-with-sidebar"):
@@ -27,7 +28,7 @@ with doc.body:
                         with d.form(
                             cls="billing-details",
                             id="billing-details",
-                            action="/order-confirmation.html",
+                            action=page_path("order-confirmation.html"),
                             method="get",
                         ):
                             d.label("Email", fr="billing-email")

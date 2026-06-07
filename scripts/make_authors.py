@@ -5,7 +5,15 @@ import yaml
 from make_doc import make_doc
 from make_footer import make_footer
 from make_header import make_header
-from paths import cover_path, portrait_path, product_page_path
+from paths import (
+    asset_path,
+    author_page_path,
+    cover_path,
+    page_path,
+    portrait_fs_path,
+    portrait_path,
+    product_page_path,
+)
 
 
 def sorted_authors(authors):
@@ -13,7 +21,7 @@ def sorted_authors(authors):
 
 
 def make_author_page(author_key, author, books):
-    doc = make_doc(author["name"])
+    doc = make_doc(author["name"], depth=1)
     author_books = [(key, books[key]) for key in author["books"] if key in books]
 
     with doc.body:
@@ -25,7 +33,7 @@ def make_author_page(author_key, author, books):
                     d.h2(author["name"], cls="section-title")
 
                 with d.section(cls="author-profile"):
-                    if exists(f".{portrait_path(author['name'])}"):
+                    if exists(portrait_fs_path(author["name"])):
                         d.img(
                             src=portrait_path(author["name"]),
                             alt=f"Portrait of {author['name']}",
@@ -68,12 +76,12 @@ def make_author_index(authors, books):
                     d.h2(
                         "Authors",
                         cls="section-title",
-                        style="--styled-asset-path: url('/assets/authors.svg')",
+                        style=f"--styled-asset-path: url('{asset_path('authors.svg')}')",
                     )
 
                 with d.section(cls="repository-toolbar"):
                     d.p(f"{len(authors)} authors")
-                    d.a("Browse titles", href="/titles.html", cls="bold")
+                    d.a("Browse titles", href=page_path("titles.html"), cls="bold")
 
                 with d.div(cls="author-repository"):
                     current_letter = None
@@ -102,7 +110,7 @@ def make_author_index(authors, books):
                                     )
                             d.a(
                                 "View profile »",
-                                href=f"/authors/{key}.html",
+                                href=author_page_path(key),
                                 cls="bold",
                             )
 

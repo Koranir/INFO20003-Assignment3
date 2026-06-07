@@ -6,12 +6,13 @@ import yaml
 from make_doc import make_doc
 from make_footer import make_footer
 from make_header import make_header
+from paths import asset_path, author_page_path, cover_path, page_path
 
 authors = yaml.full_load(open("sources/authors.yaml", "r"))
 
 
 def make_product(key, product):
-    doc = make_doc(product["title"])
+    doc = make_doc(product["title"], depth=1)
     with doc.body:
         with d.div(cls="content-area"):
             make_header()
@@ -21,19 +22,19 @@ def make_product(key, product):
                     d.h2(
                         product["title"],
                         cls="section-title",
-                        style=f"--styled-asset-path: url('/assets/headers/{key}.svg')",
+                        style=f"--styled-asset-path: url('{asset_path(f'headers/{key}.svg')}')",
                     )
                     d.h3(product["author"], cls="section-subtitle")
 
                 d.img(
-                    src=f"/assets/books/{key}/cover.jpg",
+                    src=cover_path(key),
                     alt=f"Cover of {product['title']}",
                     cls="product-cover-mobile",
                 )
 
                 with d.section(cls="product-description"):
                     d.img(
-                        src=f"/assets/books/{key}/cover.jpg",
+                        src=cover_path(key),
                         alt=f"Cover of {product['title']}",
                         cls="product-cover",
                     )
@@ -75,10 +76,14 @@ def make_product(key, product):
                         </svg>
                         """
                         )
-                    d.a("Download Sample »", href=f"/samples/{key}.pdf", cls="bold")
+                    d.a(
+                        "Download Sample »",
+                        href=page_path(f"samples/{key}.pdf"),
+                        cls="bold",
+                    )
                     d.a(
                         "Download Cover »",
-                        href=f"/assets/books/{key}/cover.jpg",
+                        href=cover_path(key),
                         cls="bold",
                     )
 
@@ -107,7 +112,7 @@ def make_product(key, product):
                                     d.p(authors[author_key]["short_description"])
                                     d.a(
                                         "Go to Profile »",
-                                        href=f"/authors/{author_key}.html",
+                                        href=author_page_path(author_key),
                                         cls="bold",
                                     )
 
@@ -116,7 +121,7 @@ def make_product(key, product):
                         d.h2(
                             "Reviews",
                             cls="section-title",
-                            style="--styled-asset-path: url('/assets/reviews.svg')",
+                            style=f"--styled-asset-path: url('{asset_path('reviews.svg')}')",
                         )
 
                         for review in product["reviews"]:

@@ -1,3 +1,14 @@
+const SCRIPT_SRC = document.currentScript?.getAttribute("src") || "";
+const SITE_ROOT = SCRIPT_SRC.match(/^(.*)js\/index\.js$/)?.[1] || "";
+
+/**
+ * @param {string} path
+ * @return {string}
+ */
+function sitePath(path) {
+    return SITE_ROOT + path;
+}
+
 class Cart {
     constructor() {
         /** @type {Object.<string, number>} */
@@ -92,7 +103,7 @@ let cartProductsCache = null;
  */
 async function getCartProducts() {
     if (!cartProductsCache) {
-        cartProductsCache = fetch("/data/cart-products.json").then(
+        cartProductsCache = fetch(sitePath("data/cart-products.json")).then(
             (response) => {
                 if (!response.ok) {
                     throw new Error(
@@ -250,11 +261,11 @@ function setupHeaderSearch() {
         currentResults.forEach((result) => {
             const resultLink = document.createElement("a");
             resultLink.className = "search-result";
-            resultLink.href = `/products/${result.id}.html`;
+            resultLink.href = sitePath(`products/${result.id}.html`);
 
             const cover = document.createElement("img");
             cover.className = "search-result-cover";
-            cover.src = `/assets/books/${result.id}/cover.jpg`;
+            cover.src = sitePath(`assets/books/${result.id}/cover.jpg`);
             cover.alt = `Cover of ${result.title}`;
 
             const details = document.createElement("span");
@@ -468,7 +479,7 @@ async function setupCartPage() {
         item.className = "cart-item";
 
         const cover = document.createElement("img");
-        cover.src = `/assets/books/${productId}/cover.jpg`;
+        cover.src = sitePath(`assets/books/${productId}/cover.jpg`);
         cover.alt = `Cover of ${product.title}`;
 
         const details = document.createElement("div");
@@ -779,7 +790,7 @@ function showAddedToCartDialog(item, details = {}) {
         <h3>Added to Cart</h3>
         <div class="cart-dialog-product">
             <img
-                src="/assets/books/${item}/cover.jpg"
+                src="${sitePath(`assets/books/${item}/cover.jpg`)}"
                 alt="Cover of ${productTitle}"
             >
             <div class="cart-dialog-details">
@@ -789,7 +800,7 @@ function showAddedToCartDialog(item, details = {}) {
             <span class="cart-dialog-price">A$ ${productPrice}</span>
         </div>
         <div class="cart-dialog-actions">
-            <a href="/cart.html" class="bold">View Cart &raquo;</a>
+            <a href="${sitePath("cart.html")}" class="bold">View Cart &raquo;</a>
             <button type="button" class="bold" value="cancel">Continue Browsing</button>
         </div>
     `;
@@ -822,7 +833,7 @@ function orderConfirmed() {
     localStorage.removeItem("cart");
 
     // Move to the home page after we're done
-    location.href = "/";
+    location.href = sitePath("index.html");
 }
 
 /**

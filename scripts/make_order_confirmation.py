@@ -5,6 +5,7 @@ from make_featured import make_all_featured
 from make_footer import make_footer
 from make_header import make_header
 from make_recents import make_recents
+from paths import asset_path, page_path
 
 doc = make_doc("Order Confirmation")
 with doc.body:
@@ -15,7 +16,7 @@ with doc.body:
             d.h2(
                 "Order Confirmed",
                 cls="section-title",
-                style="--styled-asset-path: url('/assets/order-confirmed.svg')",
+                style=f"--styled-asset-path: url('{asset_path('order-confirmed.svg')}')",
             )
 
             with d.section(cls="order-confirmation"):
@@ -25,7 +26,7 @@ with doc.body:
                 d.p("An email will be sent when the order is finalised.")
 
                 with d.div(cls="confirmation-cancel-okay"):
-                    d.a("Cancel Order", href="/", cls="bold warning")
+                    d.a("Cancel Order", href=page_path("index.html"), cls="bold warning")
                     d.button("Okay", onclick="orderConfirmed()", cls="bold purchase")
 
     make_footer()
