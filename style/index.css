@@ -97,14 +97,15 @@ h2.section-title {
     max-width: 100%;
 
     margin: 0;
+    margin-top: var(--space-3);
     font-family: var(--font-display);
     font-size: 40px;
     font-style: italic;
     font-weight: 600;
 }
 
-h3 {
-    width: fit-content;
+h3,
+summary {
     margin: 0;
     color: var(--color-heading);
     font-family: var(--font-serif);
@@ -181,7 +182,7 @@ footer {
 }
 
 section,
-.product-reviews details {
+details {
     border: 1px solid var(--color-gold-border);
     border-radius: var(--radius-md);
     background-color: var(--color-surface);
@@ -319,7 +320,7 @@ nav {
     & input {
         width: 100%;
         margin: 0;
-        padding: 10px 1px 6px;
+        padding: var(--space-2) var(--space-1);
         border: 0;
         outline: 0;
         color: var(--color-muted);
@@ -403,6 +404,7 @@ button.bold {
         align-items: center;
         padding: 0;
         border: 0;
+        height: 28px;
         color: var(--color-muted);
         background-color: transparent;
         cursor: pointer;
@@ -709,7 +711,7 @@ footer {
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    padding: var(--space-6) var(--space-3);
+    padding: var(--space-3);
 }
 
 .bestsellers {
@@ -745,7 +747,7 @@ footer {
 .recent-releases {
     flex-basis: 400px;
     flex-grow: 2;
-    padding: 21px var(--space-3) var(--space-3);
+    padding: var(--space-3);
 }
 
 .recents {
@@ -846,6 +848,10 @@ footer {
 .recent-descriptions {
     width: min(100%, 300px);
     justify-self: end;
+
+    & p {
+        margin: 0;
+    }
 }
 
 .recent-descriptions.is-ready {
@@ -913,27 +919,31 @@ footer {
         "description description sidebar"
         "description description information"
         "reviews reviews reviews";
-    gap: 20px;
+    gap: var(--space-5);
     padding-top: var(--space-3);
 
     & p {
         margin: 0;
     }
 
+    & details,
     & section {
         display: flex;
         flex-direction: column;
-        gap: var(--space-3);
         padding: var(--space-3);
     }
 
-    & section.product-description {
+    & .product-description {
         grid-area: description;
         display: block;
 
         & h3 {
             margin-bottom: var(--space-3);
         }
+    }
+
+    & .product-description-mobile {
+        display: none;
     }
 }
 
@@ -942,7 +952,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-6);
+    gap: var(--space-2);
     margin-bottom: var(--space-3);
 }
 
@@ -958,14 +968,17 @@ footer {
 }
 
 .product-sidebar,
-.product-information {
+.product-information,
+.author-infos {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3);
+    gap: var(--space-5);
 }
 
 .product-sidebar {
     grid-area: sidebar;
+
+    display: grid;
 }
 
 .product-information {
@@ -985,19 +998,29 @@ footer {
     align-items: center;
     gap: var(--space-6);
     padding: var(--space-3);
+}
 
-    & details {
-        width: 100%;
+details {
+    width: 100%;
+    padding: var(--space-3);
+
+    & summary {
+        display: block;
+
+        margin: -10px;
         padding: var(--space-3);
+        padding-left: calc(var(--space-3) + 1em);
 
-        & summary {
-            margin: -10px;
-            padding: var(--space-3);
-        }
+        background-image: url("/assets/chevron-up.svg");
+        background-position: 0.4em 50%;
+        background-size: 1em 1em;
+        background-repeat: no-repeat;
+    }
 
-        &[open] summary {
-            margin-bottom: 0;
-        }
+    &[open] summary {
+        margin-bottom: 0;
+
+        background-image: url("/assets/chevron-down.svg");
     }
 }
 
@@ -1344,6 +1367,21 @@ footer {
         text-align: right;
         white-space: nowrap;
     }
+
+    & input {
+        background: var(--color-button);
+        color: var(--color-text);
+        border: 1px solid var(--color-gold-border);
+        border-radius: var(--radius-sm);
+        color: var(--color-muted);
+        background: transparent;
+        width: 4em;
+    }
+
+    & button {
+        padding: 4px 14px;
+        margin-right: -4px;
+    }
 }
 
 .cart-item-totals th,
@@ -1423,6 +1461,10 @@ footer {
         color: var(--color-muted);
         background: transparent;
     }
+
+    & input:user-invalid {
+        background-color: var(--color-warning);
+    }
 }
 
 .order-summary-table {
@@ -1476,10 +1518,9 @@ footer {
 /* Cart dialog */
 
 .cart-dialog {
-    width: 100%;
+    width: 90%;
     max-width: 530px;
     margin: 100px auto auto;
-    padding: 0;
     overflow: hidden;
     border: 1px solid var(--color-soft-border);
     border-radius: var(--radius-md);
@@ -1550,7 +1591,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-4);
-    padding: var(--space-7);
+    padding: var(--space-7) var(--space-7) var(--space-3) var(--space-7);
 
     & .bold {
         border-radius: var(--radius-pill);
@@ -1589,10 +1630,27 @@ footer {
     .product-cover-mobile {
         display: block;
         place-self: center;
-        height: 60vh;
+        height: 100%;
+        max-height: 60vh;
         max-width: 100%;
         object-fit: contain;
-        padding: var(--space-6);
+        padding: 0 var(--space-6);
+    }
+
+    .product-description {
+        display: none !important;
+    }
+
+    .product-description-mobile {
+        display: flex !important;
+        grid-area: description;
+    }
+
+    .product-sidebar {
+        grid-template-columns: 1fr 1fr;
+    }
+    .product-sidebar > *:first-child {
+        grid-column: 1 / 3;
     }
 
     .cart-dialog-product {
@@ -1601,6 +1659,7 @@ footer {
 
         & img {
             width: 90px;
+            grid-row: 1 / 3;
         }
     }
 
@@ -1616,14 +1675,13 @@ footer {
 
     .cart-dialog-price {
         grid-column: 2;
-        align-self: start;
         font-size: 16px;
+        text-align: right;
     }
 
     .cart-dialog-actions {
         grid-template-columns: 1fr;
         gap: var(--space-3);
-        padding: var(--space-4);
     }
 }
 
