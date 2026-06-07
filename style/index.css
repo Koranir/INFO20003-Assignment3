@@ -1461,6 +1461,10 @@ details {
         color: var(--color-muted);
         background: transparent;
     }
+
+    & input:user-invalid {
+        background-color: var(--color-warning);
+    }
 }
 
 .order-summary-table {
