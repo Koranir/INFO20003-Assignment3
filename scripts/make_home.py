@@ -5,7 +5,7 @@ from make_featured import make_all_featured
 from make_footer import make_footer
 from make_header import make_header
 from make_recents import make_recents
-from paths import asset_path
+from make_section_title import make_section_title
 
 doc = make_doc("Home")
 with doc.body:
@@ -14,31 +14,19 @@ with doc.body:
 
         with d.main():
             with d.article():
-                d.h2(
-                    "Featured",
-                    cls="section-title",
-                    style=f"--styled-asset-path: url('{asset_path('featured.svg')}')",
-                )
+                make_section_title("Featured", "featured.svg")
 
                 with d.div(cls="featured"):
                     make_all_featured()
 
             with d.div(cls="content-with-sidebar"):
                 with d.article(cls="recent-releases"):
-                    d.h2(
-                        "Recent Releases",
-                        cls="section-title",
-                        style=f"--styled-asset-path: url('{asset_path('recent-releases.svg')}')",
-                    )
+                    make_section_title("Recent Releases", "recent-releases.svg")
 
                     with d.div(cls="recents"):
                         make_recents()
                 with d.section(cls="sidebar"):
-                    d.h2(
-                        "Bestsellers",
-                        cls="section-title",
-                        style=f"--styled-asset-path: url('{asset_path('bestsellers.svg')}')",
-                    )
+                    make_section_title("Bestsellers", "bestsellers.svg")
 
                     with d.div(cls="bestsellers"):
                         make_bestsellers()

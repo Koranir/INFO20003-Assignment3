@@ -6,7 +6,8 @@ import yaml
 from make_doc import make_doc
 from make_footer import make_footer
 from make_header import make_header
-from paths import asset_path, author_page_path, cover_path, page_path
+from make_section_title import make_section_title
+from paths import author_page_path, cover_path, page_path
 
 authors = yaml.full_load(open("sources/authors.yaml", "r"))
 
@@ -19,11 +20,7 @@ def make_product(key, product):
 
             with d.main(cls="product-page"):
                 with d.div(cls="product-header"):
-                    d.h2(
-                        product["title"],
-                        cls="section-title",
-                        style=f"--styled-asset-path: url('{asset_path(f'headers/{key}.svg')}')",
-                    )
+                    make_section_title(product["title"], f"headers/{key}.svg")
                     d.h3(product["author"], cls="section-subtitle")
 
                 d.img(
@@ -118,11 +115,7 @@ def make_product(key, product):
 
                 if not len(product["reviews"]) == 0:
                     with d.div(cls="product-reviews"):
-                        d.h2(
-                            "Reviews",
-                            cls="section-title",
-                            style=f"--styled-asset-path: url('{asset_path('reviews.svg')}')",
-                        )
+                        make_section_title("Reviews", "reviews.svg")
 
                         for review in product["reviews"]:
                             with d.details(cls="review"):

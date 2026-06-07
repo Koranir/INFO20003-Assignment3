@@ -5,7 +5,8 @@ from make_featured import make_all_featured
 from make_footer import make_footer
 from make_header import make_header
 from make_recents import make_recents
-from paths import asset_path, page_path
+from make_section_title import make_section_title
+from paths import page_path
 
 doc = make_doc("Cart")
 with doc.body:
@@ -13,11 +14,7 @@ with doc.body:
         make_header()
 
         with d.main(cls="cart-page"):
-            d.h2(
-                "Cart",
-                cls="section-title",
-                style=f"--styled-asset-path: url('{asset_path('cart.svg')}')",
-            )
+            make_section_title("Cart", "cart.svg")
 
             with d.div(cls="billing-content-with-sidebar"):
                 d.div(id="cart-items")

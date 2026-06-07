@@ -553,6 +553,7 @@ button.bold {
 
     & section {
         display: flex;
+        align-items: center;
         flex-basis: 300px;
         flex-grow: 1;
         gap: var(--space-3);
@@ -595,8 +596,10 @@ button.bold {
 
 .images {
     position: relative;
-    min-width: 150px;
-    height: 100%;
+    width: 150px;
+    max-width: 25vw;
+    aspect-ratio: 2 / 3;
+    flex-shrink: 0;
 
     & img.author-portrait,
     & img.cover {
@@ -606,12 +609,12 @@ button.bold {
     & img.author-portrait {
         bottom: 0;
         z-index: 1;
-        width: 55px;
+        width: 33%;
     }
 
     & img.cover {
         top: 50%;
-        width: 123px;
+        width: 80%;
         max-height: 100%;
         object-fit: contain;
         transform: translateY(-50%);

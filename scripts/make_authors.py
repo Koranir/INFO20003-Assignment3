@@ -5,8 +5,8 @@ import yaml
 from make_doc import make_doc
 from make_footer import make_footer
 from make_header import make_header
+from make_section_title import make_section_title
 from paths import (
-    asset_path,
     author_page_path,
     cover_path,
     page_path,
@@ -30,7 +30,7 @@ def make_author_page(author_key, author, books):
 
             with d.main(cls="author-page"):
                 with d.div(cls="repository-header"):
-                    d.h2(author["name"], cls="section-title")
+                    make_section_title(author["name"])
 
                 with d.section(cls="author-profile"):
                     if exists(portrait_fs_path(author["name"])):
@@ -73,11 +73,7 @@ def make_author_index(authors, books):
 
             with d.main(cls="repository-page"):
                 with d.div(cls="repository-header"):
-                    d.h2(
-                        "Authors",
-                        cls="section-title",
-                        style=f"--styled-asset-path: url('{asset_path('authors.svg')}')",
-                    )
+                    make_section_title("Authors", "authors.svg")
 
                 with d.section(cls="repository-toolbar"):
                     d.p(f"{len(authors)} authors")
