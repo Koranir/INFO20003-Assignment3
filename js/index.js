@@ -21,9 +21,9 @@ class Cart {
         this.syncCart();
 
         if (this.cart[product_id]) {
-            this.cart[product_id] += count;
+            this.cart[product_id] += Number(count);
         } else {
-            this.cart[product_id] = count;
+            this.cart[product_id] = Number(count);
         }
 
         localStorage.setItem("cart", JSON.stringify(this.cart));
@@ -36,7 +36,11 @@ class Cart {
     set(product_id, count) {
         this.syncCart();
 
-        this.cart[product_id] = count;
+        if (count == 0) {
+            delete this.cart[product_id];
+        } else {
+            this.cart[product_id] = Number(count);
+        }
 
         localStorage.setItem("cart", JSON.stringify(this.cart));
     }
@@ -509,6 +513,7 @@ async function setupCartPage() {
                     );
                     new Cart().set(productId, event.target.value);
                     setupCartPage();
+                    updateCartItemCount();
                 });
 
                 cell.append(input);
@@ -532,6 +537,7 @@ async function setupCartPage() {
         deleteButton.addEventListener("click", () => {
             new Cart().set(productId, 0);
             setupCartPage();
+            updateCartItemCount();
         });
         totalsBody.append(delButtonRow);
 
