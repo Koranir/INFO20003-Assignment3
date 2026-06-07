@@ -24,36 +24,106 @@ with doc.body:
                 with d.div(cls="billing-sidebar"):
                     with d.section(cls="billing-information"):
                         d.h3("Billing Information")
-                        with d.form(cls="billing-details"):
-                            d.label("Email")
-                            d.input_(type="email", name="email")
+                        with d.form(
+                            cls="billing-details",
+                            id="billing-details",
+                            action="/order-confirmation.html",
+                            method="get",
+                        ):
+                            d.label("Email", fr="billing-email")
+                            d.input_(
+                                id="billing-email",
+                                type="email",
+                                name="email",
+                                autocomplete="email",
+                                required=True,
+                            )
 
-                            d.label("Title")
-                            d.input_(type="text", name="title")
+                            d.label("Title", fr="billing-title")
+                            d.input_(
+                                id="billing-title",
+                                type="text",
+                                name="title",
+                                autocomplete="honorific-prefix",
+                                maxlength=20,
+                            )
 
-                            d.label("First Name")
-                            d.input_(type="text", name="name")
+                            d.label("First Name", fr="billing-first-name")
+                            d.input_(
+                                id="billing-first-name",
+                                type="text",
+                                name="first_name",
+                                autocomplete="given-name",
+                                required=True,
+                            )
 
-                            d.label("Last Name")
-                            d.input_(type="text", name="name")
+                            d.label("Last Name", fr="billing-last-name")
+                            d.input_(
+                                id="billing-last-name",
+                                type="text",
+                                name="last_name",
+                                autocomplete="family-name",
+                                required=True,
+                            )
 
-                            d.label("Address")
-                            d.input_(type="text", name="address")
+                            d.label("Address", fr="billing-address")
+                            d.input_(
+                                id="billing-address",
+                                type="text",
+                                name="address",
+                                autocomplete="street-address",
+                                required=True,
+                            )
 
-                            d.label("Postcode")
-                            d.input_(type="text", name="postcode")
+                            d.label("Postcode", fr="billing-postcode")
+                            d.input_(
+                                id="billing-postcode",
+                                type="text",
+                                name="postcode",
+                                autocomplete="postal-code",
+                                pattern="[A-Za-z0-9][A-Za-z0-9 -]{2,9}",
+                                maxlength=10,
+                                title="Enter a valid postcode",
+                                required=True,
+                            )
 
-                            d.label("City")
-                            d.input_(type="text", name="city")
+                            d.label("City", fr="billing-city")
+                            d.input_(
+                                id="billing-city",
+                                type="text",
+                                name="city",
+                                autocomplete="address-level2",
+                                required=True,
+                            )
 
-                            d.label("State")
-                            d.input_(type="text", name="state")
+                            d.label("State", fr="billing-state")
+                            d.input_(
+                                id="billing-state",
+                                type="text",
+                                name="state",
+                                autocomplete="address-level1",
+                                required=True,
+                            )
 
-                            d.label("Country")
-                            d.input_(type="text", name="country")
+                            d.label("Country", fr="billing-country")
+                            d.input_(
+                                id="billing-country",
+                                type="text",
+                                name="country",
+                                autocomplete="country-name",
+                                required=True,
+                            )
 
-                            d.label("Phone")
-                            d.input_(type="tel", name="phone")
+                            d.label("Phone", fr="billing-phone")
+                            d.input_(
+                                id="billing-phone",
+                                type="tel",
+                                name="phone",
+                                autocomplete="tel",
+                                pattern=r"[0-9()+\-\s]{8,20}",
+                                title="Use 8 to 20 digits, spaces, or phone symbols",
+                                required=True,
+                            )
                     with d.section(cls="order-summary"):
                         with d.table(cls="order-summary-table"):
                             with d.tbody():
@@ -78,18 +148,20 @@ with doc.body:
             with d.section(cls="checkout"):
                 d.h3("Pay With")
                 with d.div(cls="payment-options"):
-                    d.a("PayPal", href="/order-confirmation.html", cls="purchase bold")
-                    d.a("Visa", href="/order-confirmation.html", cls="purchase bold")
-                    d.a(
-                        "MasterCard",
-                        href="/order-confirmation.html",
-                        cls="purchase bold",
-                    )
-                    d.a(
-                        "Apple Pay",
-                        href="/order-confirmation.html",
-                        cls="purchase bold",
-                    )
+                    for label, value in (
+                        ("PayPal", "paypal"),
+                        ("Visa", "visa"),
+                        ("MasterCard", "mastercard"),
+                        ("Apple Pay", "apple_pay"),
+                    ):
+                        d.button(
+                            label,
+                            type="submit",
+                            form="billing-details",
+                            name="payment_method",
+                            value=value,
+                            cls="purchase bold",
+                        )
 
     make_footer()
 

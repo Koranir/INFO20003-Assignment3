@@ -80,27 +80,27 @@
           <div class="billing-sidebar">
             <section class="billing-information">
               <h3>Billing Information</h3>
-              <form class="billing-details">
-                <label>Email</label>
-                <input name="email" type="email">
-                <label>Title</label>
-                <input name="title" type="text">
-                <label>First Name</label>
-                <input name="name" type="text">
-                <label>Last Name</label>
-                <input name="name" type="text">
-                <label>Address</label>
-                <input name="address" type="text">
-                <label>Postcode</label>
-                <input name="postcode" type="text">
-                <label>City</label>
-                <input name="city" type="text">
-                <label>State</label>
-                <input name="state" type="text">
-                <label>Country</label>
-                <input name="country" type="text">
-                <label>Phone</label>
-                <input name="phone" type="tel">
+              <form action="/order-confirmation.html" class="billing-details" id="billing-details" method="get">
+                <label for="billing-email">Email</label>
+                <input autocomplete="email" id="billing-email" name="email" required="required" type="email">
+                <label for="billing-title">Title</label>
+                <input autocomplete="honorific-prefix" id="billing-title" maxlength="20" name="title" type="text">
+                <label for="billing-first-name">First Name</label>
+                <input autocomplete="given-name" id="billing-first-name" name="first_name" required="required" type="text">
+                <label for="billing-last-name">Last Name</label>
+                <input autocomplete="family-name" id="billing-last-name" name="last_name" required="required" type="text">
+                <label for="billing-address">Address</label>
+                <input autocomplete="street-address" id="billing-address" name="address" required="required" type="text">
+                <label for="billing-postcode">Postcode</label>
+                <input autocomplete="postal-code" id="billing-postcode" maxlength="10" name="postcode" pattern="[A-Za-z0-9][A-Za-z0-9 -]{2,9}" required="required" title="Enter a valid postcode" type="text">
+                <label for="billing-city">City</label>
+                <input autocomplete="address-level2" id="billing-city" name="city" required="required" type="text">
+                <label for="billing-state">State</label>
+                <input autocomplete="address-level1" id="billing-state" name="state" required="required" type="text">
+                <label for="billing-country">Country</label>
+                <input autocomplete="country-name" id="billing-country" name="country" required="required" type="text">
+                <label for="billing-phone">Phone</label>
+                <input autocomplete="tel" id="billing-phone" name="phone" pattern="[0-9()+\-\s]{8,20}" required="required" title="Use 8 to 20 digits, spaces, or phone symbols" type="tel">
               </form>
             </section>
             <section class="order-summary">
@@ -133,10 +133,10 @@
         <section class="checkout">
           <h3>Pay With</h3>
           <div class="payment-options">
-            <a class="purchase bold" href="/order-confirmation.html">PayPal</a>
-            <a class="purchase bold" href="/order-confirmation.html">Visa</a>
-            <a class="purchase bold" href="/order-confirmation.html">MasterCard</a>
-            <a class="purchase bold" href="/order-confirmation.html">Apple Pay</a>
+            <button class="purchase bold" form="billing-details" name="payment_method" type="submit" value="paypal">PayPal</button>
+            <button class="purchase bold" form="billing-details" name="payment_method" type="submit" value="visa">Visa</button>
+            <button class="purchase bold" form="billing-details" name="payment_method" type="submit" value="mastercard">MasterCard</button>
+            <button class="purchase bold" form="billing-details" name="payment_method" type="submit" value="apple_pay">Apple Pay</button>
           </div>
         </section>
       </main>
