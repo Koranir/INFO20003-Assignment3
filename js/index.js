@@ -31,6 +31,18 @@ class Cart {
 
     /**
      * @param {String} product_id
+     * @param {number} new_count
+     */
+    set(product_id, count) {
+        this.syncCart();
+
+        this.cart[product_id] = count;
+
+        localStorage.setItem("cart", JSON.stringify(this.cart));
+    }
+
+    /**
+     * @param {String} product_id
      * @return {number}
      */
     get(product_id) {
@@ -481,11 +493,47 @@ async function setupCartPage() {
 
             heading.scope = "row";
             heading.textContent = label;
-            cell.textContent = value;
+
+            if (label === "Copies") {
+                const input = document.createElement("input");
+                input.setAttribute("type", "number");
+                input.setAttribute("min", "1");
+                input.setAttribute("step", "1");
+                input.setAttribute("value", value);
+
+                input.addEventListener("change", (event) => {
+                    console.log(
+                        "Updating cart:",
+                        productId,
+                        event.target.value,
+                    );
+                    new Cart().set(productId, event.target.value);
+                    setupCartPage();
+                });
+
+                cell.append(input);
+            } else {
+                cell.textContent = value;
+            }
 
             row.append(heading, cell);
             totalsBody.append(row);
         });
+
+        const deleteButton = document.createElement("button");
+        deleteButton.className = "bold";
+        deleteButton.textContent = "Delete";
+        const delButtonRow = document.createElement("tr");
+        const delButtonCell = document.createElement("td");
+        delButtonCell.colSpan = 2;
+        delButtonCell.append(deleteButton);
+        delButtonRow.append(delButtonCell);
+
+        deleteButton.addEventListener("click", () => {
+            new Cart().set(productId, 0);
+            setupCartPage();
+        });
+        totalsBody.append(delButtonRow);
 
         totals.append(totalsBody);
         item.append(cover, details, totals);

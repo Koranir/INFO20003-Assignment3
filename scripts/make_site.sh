@@ -23,4 +23,4 @@ prettier -w site/data/*.json
 
 ln -rsfn ./assets ./site/assets
 ln -rsfn ./style ./site/style
-ln -rsfn ./sources/js ./site/js
+ln -rsfn ./js ./site/js
