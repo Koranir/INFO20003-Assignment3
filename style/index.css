@@ -631,6 +631,7 @@ button.bold {
 .details {
     justify-content: space-between;
     gap: 18px;
+    height: 100%;
 }
 
 /* Footer */
@@ -1373,18 +1374,33 @@ details {
     }
 
     & input {
-        background: var(--color-button);
-        color: var(--color-text);
-        border: 1px solid var(--color-gold-border);
-        border-radius: var(--radius-sm);
-        color: var(--color-muted);
-        background: transparent;
-        width: 4em;
+        width: 5em;
     }
 
     & button {
         padding: 4px 14px;
         margin-right: -4px;
+    }
+}
+
+.billing-content-with-sidebar {
+    & input {
+        min-width: 0;
+        height: 24px;
+        border: 1px solid var(--color-gold-border);
+        border-radius: var(--radius-sm);
+        color: var(--color-muted);
+        background: var(--color-button);
+        padding-left: 1.5em;
+
+        background-image: url("../assets/edit.svg");
+        background-position: 0.4em 50%;
+        background-size: 0.8em;
+        background-repeat: no-repeat;
+    }
+
+    & input:user-invalid {
+        background: var(--color-warning);
     }
 }
 
@@ -1456,19 +1472,6 @@ details {
     grid-template-columns: max-content minmax(0, 1fr);
     align-items: center;
     gap: 10px 20px;
-
-    & input {
-        min-width: 0;
-        height: 18px;
-        border: 1px solid var(--color-gold-border);
-        border-radius: var(--radius-sm);
-        color: var(--color-muted);
-        background: transparent;
-    }
-
-    & input:user-invalid {
-        background-color: var(--color-warning);
-    }
 }
 
 .order-summary-table {
@@ -1535,15 +1538,31 @@ details {
         background-color: rgba(0, 0, 0, 0.55);
     }
 
-    & h3 {
+    & .cart-dialog-header {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+
         width: 100%;
-        padding: 10px 20px;
         border-bottom: 1px solid var(--color-gold-border);
-        color: var(--color-muted);
-        font-family: var(--font-sans);
-        font-size: 24px;
-        font-weight: 400;
-        text-align: center;
+
+        & h3 {
+            padding: 10px 20px;
+            color: var(--color-muted);
+            font-family: var(--font-sans);
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        & button {
+            display: flex;
+            align-items: center;
+
+            background: none;
+            border: none;
+
+            justify-self: right;
+        }
     }
 }
 

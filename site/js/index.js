@@ -787,7 +787,11 @@ function showAddedToCartDialog(item, details = {}) {
     const cartDialog = document.createElement("dialog");
     cartDialog.setAttribute("class", "cart-dialog");
     cartDialog.innerHTML = `
-        <h3>Added to Cart</h3>
+        <div class="cart-dialog-header">
+            <div></div>
+            <h3>Added to Cart</h3>
+            <button type="button" value="cancel"><img src="${sitePath("assets/close.svg")}"></img></button>
+        </div>
         <div class="cart-dialog-product">
             <img
                 src="${sitePath(`assets/books/${item}/cover.jpg`)}"

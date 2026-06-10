@@ -23,8 +23,12 @@ with doc.body:
                 d.p("An email will be sent when the order is finalised.")
 
                 with d.div(cls="confirmation-cancel-okay"):
-                    d.a("Cancel Order", href=page_path("index.html"), cls="bold warning")
-                    d.button("Okay", onclick="orderConfirmed()", cls="bold purchase")
+                    d.a(
+                        "Cancel Order", href=page_path("index.html"), cls="bold warning"
+                    )
+                    d.button(
+                        "Back to Home", onclick="orderConfirmed()", cls="bold purchase"
+                    )
 
     make_footer()
 
